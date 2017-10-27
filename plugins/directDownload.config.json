@@ -1,0 +1,12 @@
+{
+    "settings": {
+        "autoopen": false,
+        "copyimages": false,
+        "dldir": "C:\\Users\\SATURN\\Desktop",
+        "imagemodals": false,
+        "itp": true,
+        "overwrite": false,
+        "prompt": false,
+        "showinstead": false
+    }
+}
