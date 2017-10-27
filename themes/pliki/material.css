@@ -45,6 +45,33 @@
 	--Bar: var(--accent-color);
 }
 
+/*bd update button fix*/
+.bd-pfbtn{
+    font-weight: 600;
+    position: relative;
+    top: -37px;
+    left: 80px;
+    background: var(--accent-color);
+}
+
+/* Tempfixes */
+.container-2OU7Cz { /* This is just because the mac max/min/close buttons are on dark bg */
+    background: var(--lvl1) !important;
+}
+.channelTextArea-os01xC { /* Fix chat input too high */
+    margin: 0 !important;
+}
+.base-3AoPqv { /* Fix weird right margin on the app */
+    margin-right: 0 !important;
+}
+.titleWrapper-3Vi_wz { /* Fix title header height */
+    height: 56px;
+}
+.title-qAcLxz { /* Fix title header height and bg color */
+    background-color: var(--lvl3) !important;
+    height: 56px;
+}
+
 /*avatar wiekszy na chacie*/
 .chat .avatar-large {
      width: 60px !important;
@@ -299,7 +326,7 @@ img[alt*=":sparkling_heart:"] { animation: heartbeat 1s infinite;}
 }
 
 
-/* Kolorowy znaczek nowych wiadomoœci #1DB954 (spoko zielony)*/
+/* Kolorowy znaczek nowych wiadomo?ci #1DB954 (spoko zielony)*/
 .chat>.content .messages .divider span {background: #181818; border-radius: 2px;}
 .messages-wrapper .messages .divider:before {background-color: transparent !important;}
 .messages-wrapper .messages .divider-red + .divider {margin-top: 20px !important;}
@@ -1294,7 +1321,6 @@ top:80px;left:115px;width:150px;display:flex!important;}
 .content-region #bd-customcss-attach-controls::after {
     width: 100%;
     padding: 10px;
-    content:"To add custom settings to the theme, copy the following\A code in your custom CSS and replace the things you want\A to change:\A \A :root {\A --accent-color: #7289DA !important;\A --notification-color: #FFFFFF !important;\A --important-notification-color: #F04747 !important;\A}\A\A Don't forget to save/update when you're done!\A\A And if you're too lazy to manually copy it,\A just go to bit.ly/BMTsettings and directly copy/paste\Athe code. ";
     background: #43B581;
     margin-top: 10px;
     display: block;
