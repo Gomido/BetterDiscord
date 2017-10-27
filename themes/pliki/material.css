@@ -1,3 +1,4 @@
+
 :root {
     --version:"Lilek Material Theme v2.2.4";
     --accent-color: #5191E2; /*Zmieniacz koloru glownego*/
@@ -44,12 +45,93 @@
 	--Mention: #7289da;
 	--Bar: var(--accent-color);
 }
+div[class*="titleBar-"] {
+    height: 0px;
+    margin-top: 0px;
+}
+div[class*="titleBar-"]:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6px;
+    height: 14px;
+    z-index: 3002;
+    -webkit-app-region: drag;
+}
+div[class*="titleBar-"]:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6px;
+    z-index: 3002;
+}
+div[class*="wordmark-"], div[class*="winButton-"] svg {
+    display: none;
+}
+div[class*="winButton-"] {
+    top: 9px;
+    height: 30px;
+    width: 30px;
+    right: 8px;
+    background-position: center;
+    opacity: .6;
+    transition: 200ms ease;
+}
+div[class*="winButton-"]:hover {
+    background-color: transparent;
+    opacity: 1;
+}
+div[class*="titleBar-"] div:nth-of-type(2) {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMVYxeiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTIwIDcuNDFMMTguNTkgNiAxMyAxMS41OSA3LjQxIDYgNiA3LjQxIDExLjU5IDEzIDYgMTguNTkgNy40MSAyMCAxMyAxNC40MSAxOC41OSAyMCAyMCAxOC41OSAxNC40MSAxMyAyMCA3LjQxeiIvPgogIDwvZz4KPC9zdmc+);
+}
+div[class*="titleBar-"] div:nth-of-type(3) {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMVYxeiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTggMTNINnY3aDd2LTJIOHYtNXptLTIgMGgyVjhoNVY2SDZ2N3ptNyA1djJoN3YtN2gtMnY1aC01em0wLTEydjJoNXY1aDJWNmgtN3oiLz4KICA8L2c+Cjwvc3ZnPg);
+}
+div[class*="titleBar-"] div:nth-of-type(4) {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xOSAxOXYtMkg3djJoMTJ6Ii8+CiAgICA8cGF0aCBkPSJNMSAyNWgyNFYxSDF2MjR6Ii8+CiAgPC9nPgo8L3N2Zz4=);
+    margin-left: 8px;
+}
 
+
+.chat [class*='titleWrapper-'] [class*='flex-'] [class*='flex-'],
+#friends [class*='flex-'] [class*='flex-']:last-of-type,
+[class*='activityFeed-'] [class*='flex-'] [class*='flex-']:last-of-type {
+    margin-right: 98px;
+}
+.chat [class*='titleWrapper-'] [class*='flex-'] [class*='flex-']:after,
+#friends [class*='flex-'] [class*='flex-']:last-of-type:after,
+[class*='activityFeed-'] [class*='flex-'] [class*='flex-']:last-of-type:after {
+    content: '';
+    width: 1px;
+    height: 22px;
+    background-color: hsla(240,6%,97%,.1);
+}
+
+.guilds-wrapper .guilds {
+    padding: 18px 0 18px 10px;
+}
+.guilds-wrapper+div[class*="base-"] {
+    border-radius: 0;
+}
+div[class*="base-"] div[class*="channels-"] {
+    border-radius: 0;
+}
 /*bd update button fix*/
+.bd-updatebtn {
+    top:-36px;
+    position:absolute;
+    left:80px;
+    background:var(--accent-color);
+    font-weight:600;
+}
+
 .bd-pfbtn{
     font-weight: 600;
     position: relative;
-    top: -37px;
+    top: -36px;
     left: 80px;
     background: var(--accent-color);
 }
@@ -491,8 +573,8 @@ img[alt*=":sparkling_heart:"] { animation: heartbeat 1s infinite;}
 .container-iksrDt {
 	background: #282828; 
 	height: 71px; 
-	margin-left: -70px;
-	width: 290px;
+	margin-left: 0px;/*-70*/
+	width: 220px; /*290*/
 	z-index: 9;
 	border-top: 2px solid var(--accent-color) !important;
 }
@@ -2038,7 +2120,7 @@ top:80px;left:115px;width:150px;display:flex!important;}
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 100px;
+    bottom: 25px; /*100*/
     z-index: 1;
     content: "";
     display: block;
@@ -2069,7 +2151,7 @@ top:80px;left:115px;width:150px;display:flex!important;}
     display: block;
     position: fixed;
     left: 0px;
-    bottom: 71px;
+    bottom: 12px; /*71*/
     z-index: -1;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48, 48, 48, 0)), color-stop(60%, rgba(48, 48, 48, 1)), color-stop(100%, rgba(48, 48, 48, 1)));
     background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, rgba(48, 48, 48, 1) 60%, rgba(48, 48, 48, 1) 100%);
