@@ -1,9 +1,8 @@
-//META{"name":"Material Theme","description":"Beta","author":"Lilek + BeardDesign","version":"1.2.1"}*//{}
+//META{"name":"Material ","description":"Beta","author":"Lilek + BeardDesign","version":"1.2.1"}*//{}
 
 
-@import url(https://rawgit.com/Gomido/BetterDiscord/master/pliki/material.css);
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/material.css");
 @import url(https://rawgit.com/BeardDesign1/Material-design-theme-ressources/master/code-files/beta/notifications.css);
 @import url(https://rawgit.com/FroztySeven/BetterDiscord/master/BeardMaterial_Addons/ClassicServerDropdown/code.css);
 @import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
 @import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus_BeardFixes.css);
-
