@@ -1,0 +1,85 @@
+/* =========================================== */
+/* ============== SPECIAL LABELS ============= */
+/* =========================================== */
+
+/* base */
+.avatar-large[style*="186609657928744962"]+.comment .timestamp::before,/*Lilek*/
+.avatar-large[style*="187263626329980929"]+.comment .timestamp::before,/*krzysiek*/
+.avatar-large[style*="280433159236091914"]+.comment .timestamp::before,/*Mentos*/
+.avatar-large[style*="284122164582416385"]+.comment .timestamp::before,
+.avatar-large[style*="71575679543549952"]+.comment .timestamp::before,
+.avatar-large[style*="173449041181409281"]+.comment .timestamp::before,
+.avatar-large[style*="258591131758100481"]+.comment .timestamp::before,
+.avatar-large[style*="167335587488071682"]+.comment .timestamp::before {
+    text-transform: uppercase;
+    border: 1px solid #9866ff;
+    border-radius: 3px;
+    font-weight: 400;
+    margin: 0;
+    color: #fefefe;
+    font-size: 10px;
+    outline: none;
+    margin-right: 7px;
+    padding: 2px 6px;
+    padding-bottom: 3px;
+    line-height: 16px;
+    top: -2px;
+    position: relative;
+}
+
+/* Beta Tester */
+.avatar-large[style*="280433159236091914"]+.comment .timestamp::before,
+.avatar-large[style*="269929826075410432"]+.comment .timestamp::before,
+.avatar-large[style*="284122164582416385"]+.comment .timestamp::before,
+.avatar-large[style*="71575679543549952"]+.comment .timestamp::before,
+.avatar-large[style*="173449041181409281"]+.comment .timestamp::before,
+.avatar-large[style*="258591131758100481"]+.comment .timestamp::before,
+
+.avatar-large[style*="274950159195176963"]+.comment .timestamp::before {
+    content: 'Cwel';
+    border-color: #ffa066;
+    background: #e56b2e;
+    box-shadow: 0 0 5px 1px #5C482E, inset 0 0 10px rgba(92, 68, 46, 0.7);
+}
+
+/* Supporter */
+.avatar-large[style*="167335587488071682"]+.comment .timestamp::before,
+.avatar-large[style*="98270968945864704"]+.comment .timestamp::before {
+    content: 'Supporter';
+    border-color: #FF6666;
+    background: #e52e2e;
+    box-shadow: 0 0 5px 1px #5c2e2e, inset 0 0 10px rgba(92, 46, 46, 0.7);
+}
+
+/* Turbo User */
+/* 5/12/2018 */ .avatar-large[style*="187263626329980929"]+.comment .timestamp::before {
+    content: 'Krzyś';
+    border-color: #0BD5D3;
+    background: #0BD5A0;
+    box-shadow: 0 0 5px 1px #0BD5D3, inset 0 0 10px rgba(62,169,230, 0.7);
+ }
+
+/* Plugin Developer */
+.avatar-large[style*="284122164582416385"]+.comment .timestamp::before,
+.avatar-large[style*="249746236008169473"]+.comment .timestamp::before,
+.avatar-large[style*="278543574059057154"]+.comment .timestamp::before {
+    content: 'Plugin Developer';
+    border-color: #9f72c2;
+    background: #604575;
+    box-shadow: 0 0 5px 1px #3f3b42, inset 0 0 10px rgba(63,59,66, 0.7);
+    /*border-color: #d8d8d8;
+    background: #9e9e9e;
+    box-shadow: 0 0 5px 1px #3a3a3a, inset 0 0 10px rgba(58,58,58, 0.7);*/
+}
+
+/* Staff special labels */
+.avatar-large[style*="186609657928744962"]+.comment .timestamp::before /*Lilek*/
+ {
+    content: 'Twitchcord Head Developer';
+    border-color: #2bb6fc;
+    background: #2bb6fc;
+    box-shadow: 0 0 5px 1px #2bb6fc, inset 0 0 10px rgba(43,182,252, 0.7);
+}
+.avatar-large[style*="186609657928744962"]+.comment .timestamp::before {
+    content: 'Lilek';
+}
