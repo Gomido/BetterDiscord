@@ -172,11 +172,11 @@
 /* ============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.avatar-large[style*="186609657928744962"]+.comment .username-wrapper::after,
+.avatar-large[style*="28043315923609191"]+.comment .username-wrapper::after,
 /*--- channel members wrap ---*/
-.avatar-small[style*="186609657928744962"]+.member-inner .member-username-inner::before,
+.avatar-small[style*="28043315923609191"]+.member-inner .member-username-inner::before,
 /*--- friends list ---*/
-.avatar-small[style*="186609657928744962"]+.discord-tag .username::after {
+.avatar-small[style*="28043315923609191"]+.discord-tag .username::after {
     content: '';
     background: url('https://www.twitchcord.com/twitchcord-theme/images/admin.png');
 }
