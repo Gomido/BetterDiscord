@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/labels.css");
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
-
-
 /*
 ---------------------------
 | VARIABLE DECLARATIONS
@@ -1868,12 +1866,12 @@ textarea {
 }
 
 .guilds-wrapper .guilds .guild.unread:not(.selected) .guild-inner {
-    box-shadow: rgba(43, 117, 252, .8) 0px 0px 15px!important;
+   /* box-shadow: rgba(43, 117, 252, .8) 0px 0px 15px!important;*/
 }
 
 .guilds-wrapper .guilds .guild.unread:not(.selected) .guild-inner a {
-    border-color: #2B75FC;
-    box-shadow: inset 0 0 0 2px var(--chat-color), rgba(43, 117, 252, .8) 0px 0px 15px!important;
+    border-color: #2bb6fc;
+   /* box-shadow: inset 0 0 0 2px var(--chat-color), rgba(43, 117, 252, .8) 0px 0px 15px!important;*/
 }
 
 .guilds-wrapper .guilds .guild .avatar-small {
@@ -5759,7 +5757,7 @@ button {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-
+/*
 @-webkit-keyframes redPulse {
     from {
         background-color: var(--important-notification-color);
@@ -5788,7 +5786,7 @@ button {
         background-color: var(--important-notification-color);
         -webkit-box-shadow: 0 0 9px #333;
     }
-}
+}*/
 
 .new-messages-indicator {
     top: 50px;
@@ -8471,7 +8469,7 @@ content: "";
 .message-25xg43 .timestamp::before, .messages-popout-wrap .timestamp::before {
     content: none!important;
 }
-
+/*
 .dms:not(:empty)::before {
     content: 'Masz nową wiadomość.';
     pointer-events: none;
@@ -8526,9 +8524,9 @@ content: "";
     transform-style: preserve-3d;  
     -webkit-animation: animJelly 1s forwards, slide-in-right 1s forwards 6s;
     animation: animJelly 1s forwards, slide-in-right 1s forwards 6s;
-}
+}*/
 
-
+/*
 @-webkit-keyframes animJelly { 
     0% { -webkit-transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
     2.083333% { -webkit-transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -8633,7 +8631,6 @@ content: "";
     100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
 
-
 @-webkit-keyframes slide-in-right {
     to {
         right: -1000px;
@@ -8666,7 +8663,7 @@ content: "";
         border-color: #2B75FC;
         box-shadow: 0 0 15px rgba(43, 117, 252 0.6), inset 0 0 10px rgba(43, 117, 252 0.4);
     }
-}
+}*/
 
 .context-menu .item-toggle .label {
     max-width: 150px;
@@ -9996,7 +9993,7 @@ content: "";
 .input-MwQhcX::-webkit-input-placeholder {
     color: #999!important;
 }
-
+/*
 @keyframes glow3 {
     0% {
         border-color: #2B75FC;
@@ -10006,7 +10003,7 @@ content: "";
         border-color: #2B75FC;
         box-shadow: 0 0 35px 3px rgba(43, 117, 252 0.6), inset 0 0 25px 3px rgba(43, 117, 252 0.4);
     }
-}
+}*/
 
 .emptyState-1B1ZoL {
     background: var(--dark-modal-bg)!important;
@@ -10092,7 +10089,7 @@ content: "";
     top: 100px;
     padding: 0 20px;
 }
-
+/*
 @keyframes fly {
     0% {
         -webkit-transform: scale(-2, 2);
@@ -10167,7 +10164,7 @@ content: "";
         box-shadow: 25px 5px #000000, 30px 5px #000000, 35px 5px #000000, 40px 5px #000000, 45px 5px #000000, 50px 5px #000000, 20px 10px #000000, 25px 10px #BBBBBB, 30px 10px #BBBBBB, 35px 10px #BBBBBB, 40px 10px #BBBBBB, 45px 10px #BBBBBB, 50px 10px #BBBBBB, 55px 10px #000000, 60px 10px #000000, 15px 15px #000000, 20px 15px #BBBBBB, 25px 15px #FFFFFF, 30px 15px #FFFFFF, 35px 15px #FFFFFF, 40px 15px #FFFFFF, 45px 15px #FFFFFF, 50px 15px #FFFFFF, 55px 15px #BBBBBB, 60px 15px #BBBBBB, 65px 15px #000000, 10px 20px #000000, 15px 20px #BBBBBB, 20px 20px #FFFFFF, 25px 20px #FFFFFF, 30px 20px #FFFFFF, 35px 20px #FFFFFF, 40px 20px #FFFFFF, 45px 20px #FFFFFF, 50px 20px #FFFFFF, 55px 20px #FFFFFF, 60px 20px #FFFFFF, 65px 20px #BBBBBB, 70px 20px #000000, 10px 25px #000000, 15px 25px #BBBBBB, 20px 25px #000000, 25px 25px #FFFFFF, 30px 25px #000000, 35px 25px #FFFFFF, 40px 25px #FFFFFF, 45px 25px #FFFFFF, 50px 25px #FFFFFF, 55px 25px #FFFFFF, 60px 25px #FFFFFF, 65px 25px #FFFFFF, 70px 25px #BBBBBB, 75px 25px #000000, 5px 30px #000000, 10px 30px #BBBBBB, 15px 30px #FFFFFF, 20px 30px #000000, 25px 30px #FFFFFF, 30px 30px #000000, 35px 30px #FFFFFF, 40px 30px #FFFFFF, 45px 30px #FFFFFF, 50px 30px #FFFFFF, 55px 30px #000000, 60px 30px #000000, 65px 30px #000000, 70px 30px #FFFFFF, 75px 30px #BBBBBB, 80px 30px #000000, 5px 35px #000000, 10px 35px #BBBBBB, 15px 35px #FFFFFF, 20px 35px #000000, 25px 35px #FFFFFF, 30px 35px #000000, 35px 35px #FFFFFF, 40px 35px #FFFFFF, 45px 35px #FFFFFF, 50px 35px #000000, 55px 35px #FFFFFF, 60px 35px #FFFFFF, 65px 35px #000000, 70px 35px #FFFFFF, 75px 35px #BBBBBB, 80px 35px #000000, 5px 40px #000000, 10px 40px #BBBBBB, 15px 40px #FFFFFF, 20px 40px #FFFFFF, 25px 40px #FFFFFF, 30px 40px #FFFFFF, 35px 40px #FFFFFF, 40px 40px #FFFFFF, 45px 40px #FFFFFF, 50px 40px #FFFFFF, 55px 40px #FFFFFF, 60px 40px #BBBBBB, 65px 40px #000000, 70px 40px #FFFFFF, 75px 40px #000000, 5px 45px #000000, 10px 45px #BBBBBB, 15px 45px #FD0E1B, 20px 45px #FFFFFF, 25px 45px #FD0E1B, 30px 45px #FFFFFF, 35px 45px #FD0E1B, 40px 45px #FFFFFF, 45px 45px #FFFFFF, 50px 45px #FFFFFF, 55px 45px #FFFFFF, 60px 45px #000000, 65px 45px #FFFFFF, 70px 45px #FFFFFF, 75px 45px #BBBBBB, 80px 45px #000000, 5px 50px #000000, 10px 50px #BBBBBB, 15px 50px #FFFFFF, 20px 50px #FD0E1B, 25px 50px #FFFFFF, 30px 50px #FD0E1B, 35px 50px #FFFFFF, 40px 50px #FFFFFF, 45px 50px #FFFFFF, 50px 50px #FFFFFF, 55px 50px #FFFFFF, 60px 50px #FFFFFF, 65px 50px #FFFFFF, 70px 50px #FFFFFF, 75px 50px #BBBBBB, 80px 50px #000000, 5px 55px #000000, 10px 55px #BBBBBB, 15px 55px #FFFFFF, 20px 55px #FFFFFF, 25px 55px #FFFFFF, 30px 55px #FFFFFF, 35px 55px #FFFFFF, 40px 55px #FFFFFF, 45px 55px #FFFFFF, 50px 55px #FFFFFF, 55px 55px #FFFFFF, 60px 55px #FFFFFF, 65px 55px #FFFFFF, 70px 55px #FFFFFF, 75px 55px #BBBBBB, 80px 55px #000000, 10px 60px #000000, 15px 60px #BBBBBB, 20px 60px #FFFFFF, 25px 60px #FFFFFF, 30px 60px #FFFFFF, 35px 60px #FFFFFF, 40px 60px #FFFFFF, 45px 60px #FFFFFF, 50px 60px #FFFFFF, 55px 60px #FFFFFF, 60px 60px #FFFFFF, 65px 60px #FFFFFF, 70px 60px #FFFFFF, 75px 60px #BBBBBB, 80px 60px #000000, 10px 65px #000000, 15px 65px #BBBBBB, 20px 65px #FFFFFF, 25px 65px #FFFFFF, 30px 65px #FFFFFF, 35px 65px #FFFFFF, 40px 65px #FFFFFF, 45px 65px #FFFFFF, 50px 65px #FFFFFF, 55px 65px #FFFFFF, 60px 65px #FFFFFF, 65px 65px #FFFFFF, 70px 65px #BBBBBB, 75px 65px #000000, 15px 70px #000000, 20px 70px #BBBBBB, 25px 70px #BBBBBB, 30px 70px #FFFFFF, 35px 70px #FFFFFF, 40px 70px #FFFFFF, 45px 70px #FFFFFF, 50px 70px #FFFFFF, 55px 70px #FFFFFF, 60px 70px #BBBBBB, 65px 70px #BBBBBB, 70px 70px #000000, 20px 75px #000000, 25px 75px #000000, 30px 75px #BBBBBB, 35px 75px #BBBBBB, 40px 75px #BBBBBB, 45px 75px #BBBBBB, 50px 75px #BBBBBB, 55px 75px #BBBBBB, 60px 75px #000000, 65px 75px #000000, 30px 80px #000000, 35px 80px #000000, 40px 80px #000000, 45px 80px #000000, 50px 80px #000000, 55px 80px #000000;
     }
 }
-
+*/
 #friends .friends-table .friends-row .friends-suggestion-inner {
     width: 228px!important;
     height: auto;
@@ -10191,13 +10188,13 @@ content: "";
 #friends .friends-table .friends-row .friends-suggestion-inner .friends-suggestion-info .friends-suggestion-platforms {
     margin-left: 10px;
 }
-
+/*
 @keyframes pulse {
     to {
         opacity: 0;
         transform: scale(1);
     }
-}
+}*/
 
 .userPopout-4pfA0d .avatar-1BXaQj {
     width: 127px!important;
