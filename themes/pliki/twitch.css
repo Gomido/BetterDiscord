@@ -1648,11 +1648,6 @@ textarea {
     margin-bottom: 10px;
 }
 
-.message-group .comment .edited {
-    color: rgba(255, 255, 255, 0.4) !important;
-    cursor: help!important;
-    font-size: 12px;
-}
 
 .message-group a {
     color: var(--links-color)!important;
