@@ -42,20 +42,6 @@
 .avatar-large[style*="177744816665395200"]+.comment .timestamp::before,
 .avatar-large[style*="269929826075410432"]+.comment .timestamp::before,
 .avatar-large[style*="284122164582416385"]+.comment .timestamp::before,
-.avatar-large[style*="71575679543549952"]+.comment .timestamp::before,
-.avatar-large[style*="173449041181409281"]+.comment .timestamp::before,
-.avatar-large[style*="258591131758100481"]+.comment .timestamp::before,
-.avatar-large[style*="111476801762537472"]+.comment .timestamp::before,
-.avatar-large[style*="96269247411400704"]+.comment .timestamp::before,
-.avatar-large[style*="90076279646212096"]+.comment .timestamp::before,
-.avatar-large[style*="112008049975099392"]+.comment .timestamp::before,
-.avatar-large[style*="111894694652280832"]+.comment .timestamp::before,
-.avatar-large[style*="212749887803097088"]+.comment .timestamp::before,
-.avatar-large[style*="250322741406859265"]+.comment .timestamp::before,
-.avatar-large[style*="318401651029442560"]+.comment .timestamp::before,
-.avatar-large[style*="98270968945864704"]+.comment .timestamp::before,
-.avatar-large[style*="98829797735559168"]+.comment .timestamp::before,
-.avatar-large[style*="274950159195176963"]+.comment .timestamp::before {
     content: 'Beta Tester';
     border-color: #ffa066;
     background: #e56b2e;
@@ -84,16 +70,16 @@
 }
 
 /* Aetheryx's special label */
-.avatar-large[style*="284122164582416385"]+.comment .timestamp::before {
-    content: 'Twitchcord Head Developer';
+.avatar-large[style*="280433159236091914"]+.comment .timestamp::before {
+    content: 'Mentos cwel';
     border-color: #ff6395;
     background: #b82553;
     box-shadow: 0 0 5px 1px #9e1842, inset 0 0 10px rgba(158,24,66, 0.7);
 }
 
 /* Baked's special label */
-.avatar-large[style*="97549189629636608"]+.comment .timestamp::before {
-   content: 'Twitchcord Creator';
+.avatar-large[style*="186609657928744962"]+.comment .timestamp::before {
+   content: 'Lilek';
    text-transform: uppercase;
    border: 1px solid #9866ff;
    border-radius: 3px;
