@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/labels.css");
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
-//META{"name":"TESTSKIN","description":"Wersja beta","author":"Lilek","version":"0.0.6"}*//{}
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/labels.css");
-@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
 
 
 /*
@@ -4275,19 +4271,7 @@ button {
     background-size: contain!important;
 }
 
-[class*="avatar"][style*="/assets/6debd47ed13483642cf09e832ed0bc1b.png"],
-[class*="avatar"][style*="/assets/322c936a8c8be1b803cd94861bdfa868.png"],
-[class*="avatar"][style*="/assets/0e291f67c9274a1abdddeb3fd919cbaa.png"],
-[class*="avatar"][style*="/assets/1cbd08c76f8af6dddce02c5138971129.png"],
-[class*="avatar"][style*="/assets/dd4dbc0016779df1378e7812eabaa04d.png"],
-[class*="avatar"]>[class*="image-"][style*="/assets/6debd47ed13483642cf09e832ed0bc1b.png"],
-[class*="avatar"]>[class*="image-"][style*="/assets/322c936a8c8be1b803cd94861bdfa868.png"],
-[class*="avatar"]>[class*="image-"][style*="/assets/0e291f67c9274a1abdddeb3fd919cbaa.png"],
-[class*="avatar"]>[class*="image-"][style*="/assets/1cbd08c76f8af6dddce02c5138971129.png"],
-[class*="avatar"]>[class*="image-"][style*="/assets/dd4dbc0016779df1378e7812eabaa04d.png"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/twitchcord-ava.png') no-repeat center !important;
-    background-size: contain!important;
-}
+
 
 .userPopout-4pfA0d .image-EVRGPw[style*="/assets/6debd47ed13483642cf09e832ed0bc1b.png"],
 .userPopout-4pfA0d .image-EVRGPw[style*="/assets/322c936a8c8be1b803cd94861bdfa868.png"],
@@ -4377,6 +4361,10 @@ button {
     border: 1px solid var(--top-nav-color);
 }
 
+.btn-quote{
+	margin-top:4px;
+}
+
 .private-channel-call .button-exit.voice {
     border-radius: 0;
     font-weight: 400;
@@ -4397,6 +4385,7 @@ button {
 .wrapper-2xO9RX,
 .ui-call-avatar.voice .ui-call-avatar-status {
     border-radius: 0;
+	 background: var(--important-notification-color);
 }
 
 .context-menu .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
@@ -5747,7 +5736,7 @@ button {
     opacity: 1;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
-    background: url('https://i.imgur.com/M6nuh2x.png') no-repeat center !important;
+    background: url('https://i.imgur.com/oFaysa2.png') no-repeat center !important;
     background-size: contain!important;
     background-position: 0 0 !important;
     width: 20px;
@@ -5756,9 +5745,7 @@ button {
     margin-right: -10px;
 }
 
-.ui-standard-sidebar-view .emoji {
-    content: url('https://www.twitchcord.com/twitchcord-theme/images/emojis/turbo/smiley.png');
-}
+
 
 .sprite-3pvJkd:hover {
     -webkit-transform: none;
