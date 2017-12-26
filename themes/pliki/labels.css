@@ -10,7 +10,7 @@
 .avatar-large[style*="71575679543549952"]+.comment .timestamp::before,
 .avatar-large[style*="173449041181409281"]+.comment .timestamp::before,
 .avatar-large[style*="258591131758100481"]+.comment .timestamp::before,
-.avatar-large[style*="167335587488071682"]+.comment .timestamp::before {
+.avatar-large[style*="276796566294102016"]+.comment .timestamp::before {
     text-transform: uppercase;
     border: 1px solid #9866ff;
     border-radius: 3px;
@@ -36,16 +36,16 @@
 .avatar-large[style*="258591131758100481"]+.comment .timestamp::before,
 
 .avatar-large[style*="274950159195176963"]+.comment .timestamp::before {
-    content: 'Cwel';
+    content: 'Cwel MENTOS';
     border-color: #ffa066;
     background: #e56b2e;
     box-shadow: 0 0 5px 1px #5C482E, inset 0 0 10px rgba(92, 68, 46, 0.7);
 }
 
 /* Supporter */
-.avatar-large[style*="167335587488071682"]+.comment .timestamp::before,
+.avatar-large[style*="276796566294102016"]+.comment .timestamp::before,
 .avatar-large[style*="98270968945864704"]+.comment .timestamp::before {
-    content: 'Supporter';
+    content: 'Najlepszy pracownik';
     border-color: #FF6666;
     background: #e52e2e;
     box-shadow: 0 0 5px 1px #5c2e2e, inset 0 0 10px rgba(92, 46, 46, 0.7);
