@@ -3,6 +3,7 @@
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
 
 
+
 /*
 ---------------------------
 | VARIABLE DECLARATIONS
@@ -10,7 +11,7 @@
 89B6FA - jasny niebieski
 2B75FC - ciemny niebieski
 
-
+Fbd-custom
 ---------------------------
 */
 :root {
@@ -610,15 +611,13 @@ textarea {
 }
 
 .message-group .comment .message.mentioned .mention {
-    color: #fff!important;
-    background-color: var(--button-color)!important;
+    color: var(--button-color)!important;
     padding: 2px 4px;
     transition: background-color 0.2s;
 }
 
 .message-group .comment .message.mentioned .mention:hover {
-    color: #fff;
-    background-color: var(--button-color-hover)!important;
+    color: var(--button-color-hover)!important;
     transition: background-color 0.2s;
 }
 
@@ -2088,7 +2087,7 @@ textarea {
 .chat>.content .messages .divider span {background: #181818; border-radius: 2px;}
 .messages-wrapper .messages .divider:before {background-color: transparent !important;}
 .messages-wrapper .messages .divider-red + .divider {margin-top: 20px !important;}
-.messages-wrapper .messages .divider.divider-red span {color: var(--button-color) !important;}
+.messages-wrapper .messages .divider.divider-red span {color: var(--button-color) !important; font-size:12px !important}
 .messages-wrapper .messages .divider.divider-red > div {background: var(--button-color) !important;}
 
 .chat .divider:before{display:none;}
@@ -9570,14 +9569,7 @@ content: "";
     height: 300px;
     margin-left:auto;
     margin-right:auto;
-    background:url('https://www.twitchcord.com/twitchcord-theme/images/link-frames.png') 0 0!important;
-    transform: scale(0.5);
-    -webkit-animation: linkAnimation 1.3s linear;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function:step-start;
-    animation: linkAnimation 1.3s linear;
-    animation-fill-mode: forwards;
-    animation-timing-function:step-start;
+
 }
 
 .messages-popout .empty-placeholder .body {
@@ -9586,41 +9578,6 @@ content: "";
     line-height: 24px!important;
 }
 
-@-webkit-keyframes linkAnimation {
-    0%{ background-position: -720px 0px;}
-    7%{ background-position: -1440px 0px;}
-    14%{ background-position: -960px 0px;}
-    21%{ background-position: -1200px 0px;}
-    28%{ background-position: -720px 0px;}
-    35%{ background-position: -1440px 0px;}
-    42%{ background-position: -960px 0px;}
-    49%{ background-position: -1200px 0px;}
-    56%{ background-position: -720px 0px;}
-    63%{ background-position: -1440px 0px;}
-    70%{ background-position: -960px 0px;}
-    77%{ background-position: -1200px 0px;}
-    84%{ background-position: 0px 0px;}
-    91%{ background-position: -240px 0px;}
-    100%{ background-position: -480px 0px;}
-}
-
-@keyframes linkAnimation {
-    0%{ background-position: -720px 0px;}
-    7%{ background-position: -1440px 0px;}
-    14%{ background-position: -960px 0px;}
-    21%{ background-position: -1200px 0px;}
-    28%{ background-position: -720px 0px;}
-    35%{ background-position: -1440px 0px;}
-    42%{ background-position: -960px 0px;}
-    49%{ background-position: -1200px 0px;}
-    56%{ background-position: -720px 0px;}
-    63%{ background-position: -1440px 0px;}
-    70%{ background-position: -960px 0px;}
-    77%{ background-position: -1200px 0px;}
-    84%{ background-position: 0px 0px;}
-    91%{ background-position: -240px 0px;}
-    100%{ background-position: -480px 0px;}
-}
 
 .modal-3HOjGZ .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-thumb {
     background: var(--button-color-hover)!important;
@@ -10165,6 +10122,20 @@ div#bd-customcss-detach-container::before {
     display: block;
     line-height: 50px;
 }
+.content-region #bd-customcss-attach-controls::after {
+    width: 100%;
+    padding: 5px;
+    content:"Aby zmienić kolor wejdz na: http://bit.ly/skindiscord. I skopiuj co tam jest, wstaw kolory, daj SAVE.";
+    background: var(--button-color);
+    margin-top: 10px;
+    display: block;
+    border-radius: 2px;
+    font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+    white-space: pre;
+    color: var(--white10);
+    margin-bottom: 0px;
+    width:auto;
+}
 
 #bd-customcss-detach-container {
     margin-top: 0;
@@ -10201,7 +10172,8 @@ div#bd-customcss-detach-container::before {
 
 .content-region #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
     background: var(--titlebar-color-alt2);
-    box-shadow: 0px 1px 0px 0px var(--titlebar-color) inset;
+    box-shadow: 0px 1px 0px 0px var(--titlebar-color) inset
+;
 }
 
 .content-region .cm-s-material .CodeMirror-gutters, #bd-customcss-detach-container .cm-s-material .CodeMirror-gutters {
