@@ -16,13 +16,13 @@
 :root {
     --version: "LadnySkin v0.0.6";
  
-    --dark-modal-bg: #141414;
+    --dark-modal-bg: #303030;
     --titlebar-color: #141414;
     --chat-color: #303030;
     --channels-color: #212121;
     --channels-color-darken: #110f17;
-    --titlebar-color-alt: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom,#201d2e 0, #121016 100%);
-    --titlebar-color-alt2: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom, #121016 0, #201d2e 100%);
+    --titlebar-color-alt: #303030;
+    --titlebar-color-alt2: #303030;
     --top-nav-color: #141414;
 
     --links-color: #2BA1FC;
@@ -4132,7 +4132,7 @@ button {
 }
 
 .avatar-large[style*="/assets/f78426a064bc9dd24847519259bc42af.png"]+.comment .user-name::before {
-    content: 'Twitchcord Bot';
+    content: 'Clyde';
     color: #fff;
     visibility: visible;
 }
