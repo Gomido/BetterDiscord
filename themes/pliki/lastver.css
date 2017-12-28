@@ -25,22 +25,23 @@
     --titlebar-color-alt2: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom, #121016 0, #201d2e 100%);
     --top-nav-color: #141414;
 
-    --links-color: #2bb6fc;
-    --button-color: #2bb6fc;
-    --button-color-hover: #89B6FA;
+    --links-color: #2BA1FC;
+    --button-color: #2BA1FC;
+    --button-color-hover: #2B75FC;
 
-    --important-notification-color: #2bb6fc;
-    --important-notification-color-hover: #89B6FA;
+    --important-notification-color: #2BA1FC;
+    --important-notification-color-hover: #2B75FC;
 
-    --dark-text-tint: #89B6FA;
+    --dark-text-tint: #575757;
     --dark-text-normal: #99aab5;
     --dark-text-header: #dad8de;
+
 
     --font: 'Helvetica Neue', Helvetica, Arial, Whitney, sans-serif;
     --font-coding: 'Roboto Mono', Menlo, Consolas, Monaco, monospace;
 }
 /* =========================== */
-
+163, 129, 233
 /*
 ---------------------------
 | CHEEKY PSEUDOELEMENTS
@@ -265,7 +266,7 @@ textarea {
 
 .embed .embed-author-icon {
     border-radius: 0;
-    border: 1px solid #2B75FC;
+    border: 1px solid var(--links-color);
     height: 30px;
     width: 30px;
 }
@@ -312,7 +313,7 @@ textarea {
     left: 0;
     right: 0;
     border-radius: 0;
-    background-color: #2B75FC;
+    background-color: var(--links-color);
     opacity: 0.9;
 }
 
@@ -685,7 +686,7 @@ textarea {
 }
 
 .textArea-20yzAH:focus {
-    box-shadow: inset 0 0 0 1px #2B75FC, 0 0 6px -2px #2B75FC;
+    box-shadow: inset 0 0 0 1px var(--links-color), 0 0 6px -2px var(--links-color);
     -webkit-transition: -webkit-box-shadow 0.12s ease-in;
     transition: -webkit-box-shadow 0.12s ease-in;
     transition: box-shadow 0.12s ease-in;
@@ -1475,7 +1476,7 @@ textarea {
 .channel-members h2 {
     padding: 0;
     color: #cbc8d0!important;
-    box-shadow: 0 -1px 0 #57A5FD inset;
+    box-shadow: 0 -1px 0 var(--button-color) inset;
     margin-bottom: 7px;
     padding-bottom: 9px;
     text-transform: capitalize;
@@ -1680,7 +1681,7 @@ textarea {
 }
 
 .popout-open .header-1tSljs {
-    background: #2B75FC;
+    background: var(--links-color);
 }
 
 .header-1tSljs:hover {
@@ -2836,7 +2837,7 @@ textarea {
 .buttonPrimaryLinkDefault-1PQflF:active, .buttonTransparentLinkDefault-3hKeOz:active, .buttonLinkDefault-3J8pja:active, .bd-pfbtn.bd-updatebtn:active, .remove-2smEDx:active, .secondaryButton-16bxiT:active,
 #instant-invite-modal-advanced .form-actions .btn-default:active, .detected-platform-accounts-modal .btn-group .btn-default:active, .create-guild-container.deprecated .form-actions .btn-default:active {
     background: rgba(100,65,164,.1)!important;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: background .12s ease-in,color .12s ease-in,box-shadow .12s ease-in;
 }
 
@@ -3299,129 +3300,6 @@ textarea.input-2YozMi {
     line-height: 16px;
 }
 
-/* NSFW channel settings image */
-.ui-standard-sidebar-view .channel-settings-overview img {
-    content: url('https://www.twitchcord.com/twitchcord-theme/images/pirate-pixelart.png');
-    width: 200px;
-    height: 237px;
-}
-
-/* No Integrations image */
-.ui-standard-sidebar-view .guild-settings-integrations .image-3Y4mXQ {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/kirby-pixelart.gif') no-repeat center!important;
-    width: 128px!important;
-    height: 128px!important;
-    background-size: 100%!important;
-}
-
-/*No Emojis image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/a7371de3223292c6f31f8aeed62f17c1.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/ghostface-pixelart.png') no-repeat center!important;
-    width: 128px!important;
-    height: 128px!important;
-    background-size: 100%!important;
-}
-
-/* No Webhooks image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/97b178f31f0ec28b41387b78891d5b7a.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/shyguy-pixelart.png') no-repeat center!important;
-    width: 165px!important;
-    height: 165px!important;
-    background-size: 100%!important;
-}
-
-/* No Bans image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/789de85a973b1d974a21aa03c1e14323.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/bowser-pixelart.png') no-repeat center!important;
-    width: 220px!important;
-    height: 202px!important;
-    background-size: 100%!important;
-}
-
-/* No Invites image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/712a0fd4d14a1caadd31cb0745e91238.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/charmander-pixelart.png') no-repeat center!important;
-    width: 175px!important;
-    height: 175px!important;
-    background-size: 100%!important;
-    margin-top: 40px;
-}
-
-/* No Games image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/d01c53acda73318e5b39676ef8242eb7.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/mushroomguys-pixelart.gif') no-repeat center!important;
-    width: 500px!important;
-    height: 220px!important;
-    background-size: 100%!important;
-}
-
-/* No Authorized Apps image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/b47564b3086d0d8d941aae95a4b7b78c.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/metroid-pixelart.png') no-repeat center!important;
-    width: 200px!important;
-    height: 148px!important;
-    background-size: 100%!important;
-}
-
-/* No Connections image */
-.ui-standard-sidebar-view .image-3Y4mXQ[style*='background-image: url("/assets/e9aaf1824f17126a7992e5ad98752389.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/rupees-pixelart.png') no-repeat center!important;
-    width: 500px!important;
-    height: 109px!important;
-    background-size: 100%!important;
-}
-
-/* Private Messages - LFG channel - Connect to Voice image */
-/* dark mode image */ .image-3Y4mXQ[style*='background-image: url("/assets/a8fd82cc52f43902aa1113fdda7c1ef7.svg")'],
-/* light mode image */ .image-3Y4mXQ[style*='background-image: url("/assets/7d12b6a6565c106a587c1d1f06690ca9.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/shells-pixelart.gif') no-repeat center!important;
-    width: 500px!important;
-    height: 160px!important;
-    background-size: 50%!important;
-}
-
-/* Private Messages - LFG channel - No Groups Available image */
-/* dark mode image */ .image-3Y4mXQ[style*='background-image: url("/assets/131dcaaa628405e6d0ebee7708111c7a.svg")'],
-/* light mode image */ .image-3Y4mXQ[style*='background-image: url("/assets/d0320d29cdef93b8e2baf889a28d32e0.svg")'] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/skull-pixelart.png') no-repeat center!important;
-    width: 192px!important;
-    height: 192px!important;
-    background-size: 100%!important;
-}
-
-/* New ToS modal image */
-img[src="/assets/a13cfdd7220132fff399a76c3ed64519.svg"] {
-    content: url('https://www.twitchcord.com/twitchcord-theme/images/pokemon-pixelart.png')!important;
-    width: 150px!important;
-    height: 167px!important;
-    background-size: 100%!important;
-}
-
-/* LFG party full popout image */
-.private-channel-recipients-invite .error-state.party-full .icon {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/princesspeach-pixelart.png') no-repeat center!important;
-    width: 68px!important;
-    height: 120px!important;
-    background-size: 100%!important;
-}
-
-/* No friends online, group up and play a game - Activity feed */
-.activityFeed-HeiGwL .image-1QuRMw {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/zelda-pixelart.png') no-repeat center!important;
-    width: 200px!important;
-    height: 163px!important;
-    background-size: 100%!important;
-    margin-bottom: 20px;
-}
-
-/* No friends - Group DM popout */
-.private-channel-recipients-invite .error-state .icon {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/pokeball-pixelart.png') no-repeat center!important;
-    width: 90px!important;
-    height: 90px!important;
-    background-size: 100%!important;
-}
-
 .ui-standard-sidebar-view .custom-container .custom-header {
     padding-top: 10px;
 }
@@ -3609,7 +3487,7 @@ img[src="/assets/a13cfdd7220132fff399a76c3ed64519.svg"] {
 .user-settings-games .game-name-input:focus {
     background-color: var(--channels-color)!important;
     border-color: none!important;
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color);
 }
 
 .description-3MVziF.primary-2giqSn, .labelDescriptor-1BebCl.primary-2giqSn {
@@ -3977,7 +3855,7 @@ button {
     position: absolute;
     pointer-events: none;
     border-radius: 0;
-    background-color: #2B75FC;
+    background-color: var(--links-color);
     top: 10px;
     right: 5px;
     border: 3px solid var(--top-nav-color);
@@ -3986,7 +3864,7 @@ button {
 
 .title-qAcLxz .iconBadge-1FYlQB:after, .headerBar-cxbhPD .iconBadge-1FYlQB:after, .titleCall-3X0yGQ .iconBadge-1FYlQB:after {
     content: '';
-    background: #2B75FC;
+    background: var(--links-color);
     height: 5px;
     width: 5px;
     display: block;
@@ -4819,7 +4697,7 @@ button {
 
 .search.focused .search-bar {
     background-color: var(--chat-color)!important;
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color);
     transition: box-shadow 0.12s ease-in, width 0.2s ease-in-out;
     width: 320px!important;
 }
@@ -6639,7 +6517,7 @@ div[class*="modal-"] {
 }
 
 .search-popout .search-query .search-for {
-    color: #b38dff;
+    color: var(--links-color);
     font-size: 14px;
     line-height: 20px;
     text-transform: capitalize;
@@ -6750,14 +6628,14 @@ div[class*="modal-"] {
 
 .keybind-shortcut.dim span {
     background-color: var(--chat-color);
-    color: #8770c0;
+    color: var(--button-color);
     border-radius: 0!important;
     font-size: 11px;
     padding: 4px 10px;
 }
 
 .keybind-shortcut span {
-    border: 1px solid #8770c0;
+    border: 1px solid var(--button-color);
     padding: 5px 6px 4px;
     margin-right: 3px;
     border-radius: 2px;
@@ -6773,8 +6651,8 @@ div[class*="modal-"] {
     padding-bottom: 4px;
     -webkit-box-shadow: inset 0 -4px 0 #453a5e;
     box-shadow: inset 0 -4px 0 #453a5e;
-    border: 1px solid #8770c0;
-    color: #8770c0;
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
 }
 
 .invite-modal {
@@ -7096,7 +6974,7 @@ div[class*="modal-"] {
 .search.opened .search-bar,
 .search .popout-open {
     background: var(--chat-color)!important;
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color);
     transition: box-shadow 0.12s ease-in;
     width: 320px!important;
 }
@@ -7236,11 +7114,7 @@ div[class*="modal-"] {
     background-color: transparent!important;
 }
 
-.user-settings-voice .preview-overlay img {
-    content: url('https://www.twitchcord.com/twitchcord-theme/images/boo-pixelart.gif');
-    width: 64px;
-    height: 64px;
-}
+
 
 .layer .ui-standard-sidebar-view .scrollerWrap-2uBjct .user-settings-voice .h3-gDcP8B {
     color: #fff!important;
@@ -7488,7 +7362,7 @@ div[class*="switchDisabled"][class*=valueUnchecked]::after {
 .ui-select>.Select.is-focused .Select-control,
 .form.deprecated .Select.is-focused .Select-control,
 .Select.is-focused .Select-control {
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe!important;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color)!important;
     transition: box-shadow 0.2s;
 }
 
@@ -8375,7 +8249,7 @@ content: "";
 
 .private-channels .channel.btn-friends.selected a {
     background: var(--titlebar-color)!important;
-    border: 1px solid #2B75FC;
+    border: 1px solid var(--links-color);
     transition: background-color 0.2s, border-color 0.2s;
 }
 
@@ -8640,11 +8514,7 @@ content: "";
     position: relative;
 }
 
-.channel-notices .channel-notice.quickswitcher-notice {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/toad-pixelart.png') no-repeat 50%;
-    background-size: 70px;
-    background-position: 85px 20px;
-}
+
 
 .channel-notices .channel-notice.invite::before {
     content: '';
@@ -8670,7 +8540,7 @@ content: "";
 
 .channel-notices .channel-notice .close:active {
     background-color: rgba(100,65,164,.1)!important;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: background-color .12s ease-in,color .12s ease-in,box-shadow .12s ease-in;
 }
 
@@ -9020,7 +8890,7 @@ content: "";
 }
 
 #friends .friends-table .friends-row .friends-column-actions .friends-action:first-of-type {
-    background-color: #2B75FC!important;
+    background-color: var(--links-color)!important;
 }
 
 #friends .friends-table .friends-row .friends-column-actions .friends-action:nth-of-type(2) {
@@ -9035,7 +8905,7 @@ content: "";
 
 #friends .friends-table .friends-row .friends-column-actions .friends-action:hover,
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
-    background-color: #2B75FC!important;
+    background-color: var(--links-color)!important;
     transition: background-color 0.2s;
 }
 
@@ -12543,7 +12413,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .emoji-picker .premium-promo .premium-promo-close:active {
     background-color: rgba(100,65,164,.1)!important;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: background-color .12s ease-in,color .12s ease-in,box-shadow .12s ease-in;
 }
 
@@ -12725,13 +12595,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     font-size: 16px;
 }
 
-.user-settings-keybinds .image-3Y4mXQ {
-    width: 200px!important;
-    height: 200px!important;
-    position: relative;
-    display: block;
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/chompy-pixelart.gif') no-repeat!important;
-}
+
 
 .cardWarning-31DHBH .primary-2giqSn {
     color: #fff!important;
@@ -13971,7 +13835,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .ui-standard-sidebar-view .bda-slist li svg:active {
     background: rgba(100,65,164,.1)!important;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: background .12s ease-in,color .12s ease-in,box-shadow .12s ease-in;
 }
 
@@ -14119,7 +13983,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .close-3ejNTg:active {
     background: rgba(100,65,164,.1)!important;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: background .12s ease-in,color .12s ease-in,box-shadow .12s ease-in;
 }
 
@@ -14235,13 +14099,13 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .modal-content.need-help-modal .form-inner ul li:hover {
     opacity: 1;
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color);
     transition: box-shadow 0.2s ease-in, opacity 0.2s ease-in;
 }
 
 .modal-content.need-help-modal .form-inner ul li:active{
     opacity: 1;
-    box-shadow: 0 0 6px 0 #7d5bbe, inset 0 0 0 1px rgba(100,65,164,.5)!important;
+    box-shadow: 0 0 6px 0 var(--button-color), inset 0 0 0 1px rgba(100,65,164,.5)!important;
     transition: box-shadow 0.2s ease-in, opacity 0.2s ease-in;
 }
 
@@ -14348,7 +14212,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .bd-blue .region-select-modal .region-select-modal-option:hover,
 .region-select-modal .region-select-modal-option:hover {
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color);
     transition: box-shadow 0.2s;
 }
 
@@ -15318,7 +15182,7 @@ Forum style start
     color: #dac8ff !important;
 }
 .card-2WxYqG .content-1RjmSK:hover {
-    box-shadow: inset 0 0 0 1px #7d5bbe, 0 0 6px -2px #7d5bbe !important;
+    box-shadow: inset 0 0 0 1px var(--button-color), 0 0 6px -2px var(--button-color) !important;
 }
 .card-2WxYqG .content-1RjmSK:hover .background-2k0Oi2 {
     opacity: .6;
@@ -16179,29 +16043,14 @@ Forum style start
     text-transform: capitalize;
 }
 
-.root-2sNHUF .empty-2dxE7O .emptyIconStreamerMode-JSeTNu {
-    margin: 0;
-    width: 200px;
-    height: 166px;
-    position: relative;
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/supersonic-pixelart.gif') no-repeat 50%!important;
-    background-size: 200px 166px!important;
-}
+
 
 .root-2sNHUF .empty-2dxE7O .emptyIconStreamerMode-JSeTNu + .emptyText-AUFSH0 {
     position: relative;
     margin-top: 40px;
 }
 
-.root-2sNHUF .empty-2dxE7O .emptyIconFriends-2q_v-C,
-.root-2sNHUF .empty-2dxE7O .emptyIconGuilds-3jp5gX {
-    transform: scale(0.6);
-    margin: 0;
-    width: 256px;
-    height: 256px;
-    position: relative;
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/yoshi-pixelart.gif') no-repeat 50%!important;
-}
+
 
 .root-2sNHUF .empty-2dxE7O .spinner {
     margin-top: -100px;
@@ -16237,12 +16086,12 @@ Forum style start
 }
 
 .keybind-shortcut {
-    color: #8770c0;
+    color: var(--button-color);
     font-family: var(--font)!important;
 }
 
 .keybind-shortcut span .bind-arrow.up *,.keybind-shortcut span  .bind-arrow.down *,.keybind-shortcut span  .bind-arrow.left,.keybind-shortcut span  .bind-arrow.right * {
-    fill: #8770c0!important;
+    fill: var(--button-color)!important;
 }
 
 .keyboard-shortcuts-modal .modal-title .content {

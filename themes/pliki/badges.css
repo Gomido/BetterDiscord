@@ -50,7 +50,6 @@
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
 .avatar-large[style*="187263626329980929"]+.comment .username-wrapper::after,
 .avatar-large[style*="280433159236091914"]+.comment .username-wrapper::after,/*mentos*/
-.avatar-large[style*="270532835431940096"]+.comment .username-wrapper::after,
 .avatar-large[style*="71575679543549952"]+.comment .username-wrapper::after,
 .avatar-large[style*="173449041181409281"]+.comment .username-wrapper::after,
 .avatar-large[style*="258591131758100481"]+.comment .username-wrapper::after,
@@ -68,7 +67,6 @@
 /*--- channel members wrap ---*/
 .avatar-small[style*="187263626329980929"]+.member-inner .member-username-inner::before,
 .avatar-small[style*="280433159236091914"]+.member-inner .member-username-inner::before,
-.avatar-small[style*="270532835431940096"]+.member-inner .member-username-inner::before,
 .avatar-small[style*="71575679543549952"]+.member-inner .member-username-inner::before,
 .avatar-small[style*="173449041181409281"]+.member-inner .member-username-inner::before,
 .avatar-small[style*="258591131758100481"]+.member-inner .member-username-inner::before,
@@ -86,7 +84,7 @@
 /*--- friends list ---*/
 .avatar-small[style*="187263626329980929"]+.discord-tag .username::after,
 .avatar-small[style*="280433159236091914"]+.discord-tag .username::after,
-.avatar-small[style*="270532835431940096"]+.discord-tag .username::after,
+.avatar-small[style*=""]+.discord-tag .username::after,
 .avatar-small[style*="71575679543549952"]+.discord-tag .username::after,
 .avatar-small[style*="173449041181409281"]+.discord-tag .username::after,
 .avatar-small[style*="258591131758100481"]+.discord-tag .username::after,
@@ -133,7 +131,7 @@
 /*--- friends list ---*/
 /* 5/12/2018 */ .avatar-small[style*="270532835431940096"]+.discord-tag .username::before {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/turbo.png');
+    background: url('https://i.imgur.com/kXkgUKX.png');
 }
 
 /* =========================================== */
