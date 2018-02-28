@@ -1,0 +1,18 @@
+/*//META{"name":"FlatDiscordTheme","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.2"}*//*/
+
+/*  */
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/flat.css");
+
+
+:root {
+    --avatars: 50%;
+    --borders: 1;
+    --chatanim: 0;
+    --chatspacing: 15px;
+    --titlebar: #1f1f1f;
+    --chatbackground: #2e2e2e;
+    --channellistcolor: #191919;
+    --guildlistcolor: #141414;
+    --accentcolor: #3191D9;
+    --version: "Discord Theme v1.2.5.2"
+}
