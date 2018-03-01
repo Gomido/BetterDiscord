@@ -8,7 +8,7 @@
     --chatbackground: #303030;
     --channellistcolor: #111111;
     --guildlistcolor: #191919;
-    --accentcolor: #3191D9;
+    --accentcolor: #31d947;
     --version: "Discord Theme v1.2.5.2"
 }
 
@@ -41,6 +41,34 @@
 .wordmark-2L03Wr svg {
     display: none
 }
+
+/* avatary na glosowkach - pasek a nie kolko */
+.avatarSpeaking-3teDH6, .avatarDefault-3jtQoc, .avatarContainer-303pFz {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    z-index: 10;
+}
+
+.avatarSpeaking-3teDH6::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    width: 4px;
+    height: 20px;
+    background: var(--accentcolor);
+}
+
+.avatarSpeaking-3teDH6::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    left: -5px;
+    width: 100%;
+    background: linear-gradient(to right, var(--accentcolor) 0%, transparent 35%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 .typeWindows-15E0Ys {
     margin-top: 4px;
@@ -1128,7 +1156,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 .nameDefaultVoice-1swZoh,
 .nameLockedText-2fGz07,
 .nameLockedVoice-wNOMNa {
-    color: #888888!important
+    color: #727272!important
 }
 
 .iconCollapsed-1INdMX,
@@ -2607,7 +2635,8 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .container-3lnMWU {
-    border-bottom: 0 solid #36393f
+    border-bottom: 0 solid #36393f;
+    background-color: var(--titlebar)
 }
 
 .popout header {
@@ -3293,6 +3322,7 @@ margin-top: 5px;
 .theme-dark .header-ygd_5b {
     color: #cecece
 }
+
 
 .coverImage-2oiOoS {
     -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, .2) 10%, #fff)
@@ -4293,6 +4323,10 @@ margin-top: 5px;
     color: #929292
 }
 
+.message-group a {
+    color: var(--accentcolor) !important;
+  }
+
 .need-help-modal.deprecated a:hover {
     color: #cecece
 }
@@ -4791,8 +4825,8 @@ margin-top: 5px;
 }
 
 .theme-dark .attachment-1Vom9D {
-    background-color: transparent;
-    border-color: transparent
+    background-color: var(--channellistcolor);
+    border-color: var(--accentcolor)
 }
 
 .metadata-2t2-gW {
@@ -5126,7 +5160,7 @@ margin-top: 5px;
 }
 
 .replyer {
-    background: #333!important;
+    background: transparent!important;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important;
     color: #fff!important
 }
