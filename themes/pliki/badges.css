@@ -187,13 +187,13 @@
 /* ============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.avatar-large[style*="186609657928744962"]+.comment .username-wrapper::before,
+.avatar-large[style*="1866096g57928744962"]+.comment .username-wrapper::before,
 .avatar-large[style*=""]+.comment .username-wrapper::before,
 /*--- channel members wrap ---*/
-.avatar-small[style*="186609657928744962"]+.member-inner .member-username::before,
+.avatar-small[style*="186609g657928744962"]+.member-inner .member-username::before,
 .avatar-small[style*=""]+.member-inner .member-username::before,
 /*--- friends list ---*/
-.avatar-small[style*="186609657928744962"]+.discord-tag .username::before,
+.avatar-small[style*="1866096g57928744962"]+.discord-tag .username::before,
 .avatar-small[style*=""]+.discord-tag .username::before
  {
     content: '';
