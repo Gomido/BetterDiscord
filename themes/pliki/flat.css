@@ -8,8 +8,8 @@
     --chatbackground: #303030;
     --channellistcolor: #111111;
     --guildlistcolor: #191919;
-    --accentcolor: #31d947;
-    --version: "Discord Theme v1.2.5.2"
+    --accentcolor: #31d963;
+    --version: "Flat Discord Theme v1.2.5.2"
 }
 
 
@@ -25,9 +25,17 @@
     
 }
 .category-3rCtoh{
-
     background-color: var(--channellistcolor);
 }
+
+
+.highlight {
+    background-color: var(--accentcolor);
+    background: var(--accentcolor);
+    color: #fff;
+  }
+
+  
 
 /*kolor gier*/
 
@@ -38,9 +46,6 @@
 
 /*status*/
 
-.wordmark-2L03Wr svg {
-    display: none
-}
 
 /* avatary na glosowkach - pasek a nie kolko */
 .avatarSpeaking-3teDH6, .avatarDefault-3jtQoc, .avatarContainer-303pFz {
@@ -97,6 +102,9 @@
     padding: 3.5px;
     background-color: rgba(83, 83, 83, .3);
     transition: .3s ease-in-out
+}
+.wordmark-2L03Wr svg {
+    display: none
 }
 
 .wordmark-2L03Wr::before {
@@ -1169,11 +1177,13 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 
 .contentHoveredText-2HYGIY {
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    background-color: #202020;
 }
 
 .contentSelectedText-3j5CXt {
     transform: scale(1.0);
+    background-color: #353535;
     transition: all .2s ease-in-out
 }
 
@@ -1408,19 +1418,18 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .aka-2Ba14Z {
-    background: #252525;
-
+    background: var(--accentcolor);
     color: #fff
 }
 
 .theme-dark #friends .tab-bar .tab-bar-item .badge {
-    background-color: #4790f0;
+    background-color: var(--accentcolor);
     color: #fff;
     animation: mention-flash 1.5s linear infinite
 }
 
 .theme-dark #friends .tab-bar .tab-bar-item.selected .badge {
-    background-color: #478bf0;
+    background-color: var(--accentcolor);
     color: #fff
 }
 
@@ -1461,6 +1470,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 .callAvatar-i2aKmR .callAvatarStatus-2ybelh {
     border-radius: var(--avatars)
 }
+
 
 .callAvatarBorder-OF5XZJ.video-WCePbA.selected-3pqJJJ:not(.speaking-dRlv0T) {
     border-radius: var(--avatars);
@@ -2798,7 +2808,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .popout-open .header-1tSljs {
-    background-color:#006cfa
+    background-color:var(--guildlistcolor)
 }
 
 .autocomplete-1TnWNR {
@@ -2806,7 +2816,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .autocomplete-1TnWNR {
-    background-color: #252525;
+    background-color: var(--guildlistcolor);
     border: none!important;
     border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)))
 }
@@ -3085,7 +3095,7 @@ margin-top: 5px;
 }
 
 .reaction.reaction-me {
-    background: #353535!important;
+    background: var(--guildlistcolor)!important;
     border: 1px solid var(--accentcolor)!important;
 }
 
@@ -3111,7 +3121,8 @@ margin-top: 5px;
 }
 
 .theme-dark .reaction:hover {
-    background: rgb(202, 9, 9)
+    background: #181818;
+    border: 1px solid var(--accentcolor)!important;
 }
 
 .theme-dark .message-group .comment .markup pre {
@@ -3535,7 +3546,7 @@ margin-top: 5px;
 .theme-dark .side-2nYO0F .itemDefault-3NDwnY:hover,
 .theme-dark .side-2nYO0F .itemHover-3rojsB:hover {
     background-color: rgba(71, 71, 71, .6);
-    color: #f6f6f7;
+    color: var(--accentcolor);
 
     transition: background-color .2s ease-in-out
 }
@@ -3545,7 +3556,11 @@ margin-top: 5px;
     transition: all .2s ease-in-out
 }
 
-
+.checked-2TahvT{
+    background-color: var(--accentcolor);
+    border-color: var(--accentcolor);
+    background: var(--accentcolor)
+}
 
 .side-2nYO0F .itemSelected-3XxAMf {
     background-color: var(--accentcolor);
