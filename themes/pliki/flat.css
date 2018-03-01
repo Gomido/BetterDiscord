@@ -1,4 +1,3 @@
-
 :root {
     --avatars: 50%;
     --borders: 1;
@@ -6,7 +5,7 @@
     --chatspacing: 15px;
     --titlebar: #212121;
     --chatbackground: #303030;
-    --channellistcolor: #111111;
+    --channellistcolor: #252525;
     --guildlistcolor: #191919;
     --accentcolor: #31d963;
     --version: "Flat Discord Theme v1.2.5.2"
@@ -35,7 +34,6 @@
     color: #fff;
   }
 
-  
 
 /*kolor gier*/
 
@@ -45,6 +43,134 @@
 .channel-members .member.member-status-offline .member-inner .member-activity-text strong {color: #636b75}
 
 /*status*/
+
+.message.mentioned .mention {
+    color: var(--accentcolor)!important;
+}
+.message-group .mentioned .message-text:after {
+    border-left: 3px solid var(--accentcolor);
+    border-radius: 0;
+    background: transparent;
+    left: -3px;
+}
+.message-group .mentioned .markup {
+    background: var(--channellistcolor)!important;
+    height: auto!important;
+    margin-top: 9px!important;
+    margin-bottom: 5px;
+    padding: 3px 8px 5px 8px!important;
+}
+
+.channel-members h2 {
+    padding:0;
+    color: #cbc8d0!important;
+    box-shadow: 0 -1px 0 var(--accentcolor) inset;
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: 19px;
+    letter-spacing: 0;
+    margin-right: 9px;
+}
+
+.channels-3g2vYe button.button-1aU9q1 {
+    top: 5px;
+    margin: 0 5px;
+    background: none!important;
+}
+
+.channels-3g2vYe button.button-1aU9q1[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNyw0LjQ0MDg5MjFlLTE2IEM4LjY1Njg1NDI1LDAgMTAsMS4zNDMxNDU3NSAxMCwzIEwxMCw5IEMxMCwxMC42NTY4NTQyIDguNjU2ODU0MjUsMTIgNywxMiBDNS4zNDMxNDU3NSwxMiA0LDEwLjY1Njg1NDIgNCw5IEw0LDMgQzQsMS4zNDMxNDU3NSA1LjM0MzE0NTc1LDQuNDQwODkyMWUtMTYgNywwIEw3LDQuNDQwODkyMWUtMTYgWiBNMTQsOSBDMTQsMTIuNTMgMTEuMzksMTUuNDQgOCwxNS45MyBMOCwxOSBMNiwxOSBMNiwxNS45MyBDMi42MSwxNS40NCAwLDEyLjUzIDAsOSBMMiw5IEMyLDExLjc2MTQyMzcgNC4yMzg1NzYyNSwxNCA3LDE0IEM5Ljc2MTQyMzc1LDE0IDEyLDExLjc2MTQyMzcgMTIsOSBMMTQsOSBMMTQsOSBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1IDMpIi8+CiAgPC9nPgo8L3N2Zz4K"],
+.channels-3g2vYe button.button-1aU9q1[style*="/assets/4bc527c257233fc69b94342d77bcb9ee.svg"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/mute2.png') no-repeat 50% !important;
+    height: 20px!important;
+    width: 22px!important;
+}
+
+.channels-3g2vYe button.button-1aU9q1[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDI0IDApIj4KICAgIDxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPgogICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjEgMykiPgogICAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTYsOSBDMTYsMTAuMTkgMTUuNjYsMTEuMyAxNS4xLDEyLjI4IEwxMy44NywxMS4wNSBDMTQuMTQsMTAuNDMgMTQuMyw5Ljc0IDE0LjMsOSBMMTYsOSBMMTYsOSBaIE0xMiw5LjE2IEw2LDMuMTggTDYsMyBDNiwxLjM0MzE0NTc1IDcuMzQzMTQ1NzUsNC40NDA4OTIxZS0xNiA5LDAgQzEwLjY1Njg1NDIsMCAxMiwxLjM0MzE0NTc1IDEyLDMgTDEyLDkgTDEyLDkuMTYgTDEyLDkuMTYgWiBNMTIuNTQsMTQuODEgQzExLjc3LDE1LjI3IDEwLjkxLDE1LjU4IDEwLDE1LjcyIEwxMCwxOSBMOCwxOSBMOCwxNS43MiBDNC43MiwxNS4yMyAyLDEyLjQxIDIsOSBMMy43LDkgQzMuNywxMiA2LjI0LDE0LjEgOSwxNC4xIEM5LjgxLDE0LjEgMTAuNiwxMy45MSAxMS4zMSwxMy41OCBMOS42NSwxMS45MiBMOSwxMiBDNy4zNDMxNDU3NSwxMiA2LDEwLjY1Njg1NDIgNiw5IEw2LDguMjggTDEyLjU0LDE0LjgxIFoiLz4KICAgICAgPHBvbHlnb24gZmlsbD0iI0YwNDc0NyIgcG9pbnRzPSIxLjI3IDEgMTggMTcuNzMgMTYuNzMgMTkgMCAyLjI3Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"],
+.channels-3g2vYe button.button-1aU9q1[style*="/assets/896770bf2d6ed0358ed0adefdbe96a24.svg"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/unmute.png') no-repeat 50% !important;
+    height: 20px!important;
+    width: 22px!important;
+}
+
+.channels-3g2vYe button.button-1aU9q1[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE3LjQzLDUuODQgQzE3LjgsNi44MiAxOCw3Ljg5IDE4LDkgTDE4LDE3IEMxOCwxOC42NTY4NTQyIDE2LDE5IDE2LDE5IEwxMiwxOSBMMTIsMTEuMjcgTDYsMTcuMjcgTDYsMTkgTDQuMjcsMTkgTDEuNzcsMjEuNSBMMTcuNDMsNS44NCBaIE05LDAgQzExLjUzLDAgMTMuODIsMS4wNCAxNS40NSwyLjcyIEwxNC4wNCw0LjE0IEMxMi43NywyLjgyIDExLDIgOSwyIEM1LjEzNDAwNjc1LDIgMiw1LjEzNDAwNjc1IDIsOSBMMiwxMSBMNiwxMSBMNiwxMi4xOCBMMC41LDE3LjY3IEMwLjE5LDE3LjE5IDAsMTYuNjIgMCwxNiBMMCw5IEMtMS4zMzIyNjc2M2UtMTUsNC4wMjk0MzcyNSA0LjAyOTQzNzI1LDEuMzMyMjY3NjNlLTE1IDksNC40NDA4OTIxZS0xNiBMOSwwIFogTTE2LDExIEwxNiw5IEMxNiw4LjQ2IDE1Ljk0LDcuOTQgMTUuODMsNy40NCBMMTIuMjcsMTEgTDE2LDExIFoiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDIxIDIpIi8+CiAgICA8cG9seWdvbiBmaWxsPSIjRjA0NzQ3IiBwb2ludHM9IjEuMjcgMTkuNSAwIDE4LjIyIDE3LjcyIC41IDE5IDEuNzciIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDIwIDQpIi8+CiAgPC9nPgo8L3N2Zz4K"],
+.channels-3g2vYe button.button-1aU9q1[style*="/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/undeafen2.png') no-repeat 50% !important;
+    height: 20px!important;
+    width: 22px!important;
+}
+
+.channels-3g2vYe button.button-1aU9q1[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMywxMSBDMyw2IDcsMiAxMiwyIEwxMiw0IEM4LjEzNDAwNjc1LDQgNSw3LjEzNDAwNjc1IDUsMTEgTDUsMTMgTDksMTMgTDksMjEgTDYsMjEgQzQuMzQzMTQ1NzUsMjEgMywxOS42NTY4NTQyIDMsMTggTDMsMTEgWiBNMjEsMTEgTDIxLDE4IEMyMSwxOS42NTY4NTQyIDE5LjY1Njg1NDIsMjEgMTgsMjEgTDE1LDIxIEwxNSwxMyBMMTksMTMgTDE5LDExIEMxOSw3LjEzNDAwNjc1IDE1Ljg2NTk5MzIsNCAxMiw0IEwxMiwyIEMxNywyIDIxLDYgMjEsMTEgWiIvPgogIDwvZz4KPC9zdmc+Cg=="],
+.channels-3g2vYe button.button-1aU9q1[style*="/assets/c7c47afdf35d5a3e06233319d3aa7674.svg"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/deafen.png') no-repeat 50% !important;
+    height: 20px!important;
+    width: 22px!important;
+}
+
+.channels-3g2vYe .button-1aU9q1 svg[name="Gear"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/settings.png') no-repeat 50% !important;
+    height: 20px!important;
+    width: 20px!important;
+    top: 5px;
+    margin: 0 5px;
+}
+
+.iconSpacing-5GIHkT svg[name="Gear"] {
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/settings-small3.png') no-repeat 50% !important;
+    height: 16px!important;
+    width: 16px!important;
+    opacity: .3;
+    margin-top: 2px;
+}
+.channels-3g2vYe .button-1aU9q1:hover svg[name="Gear"] {
+    animation: rotate360 4s infinite linear;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.guilds-wrapper .guilds .friends-icon {
+    background-image: url('https://www.twitchcord.com/twitchcord-theme/images/chat-boxes.png') !important;
+    background-size: 28px!important;
+    top: 2px;
+    position: relative;
+}
+.guilds-wrapper .guilds>div.guild:first-of-type .badge {
+    bottom: 25px;
+    right: -5px;
+    border-color: var(--titlebar);
+    box-shadow: none;
+}
+
+
+/*ZNACZNIK WIADOMOSCI WOKOL AVATARA SERWERA*/
+
+.guilds-wrapper .guilds .guild-placeholder {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guilds-wrapper .guilds .guild .avatar-small {
+    border-radius: 0;
+    background-size: 42px 42px;
+    margin: 0;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner a {
+    border: 2px solid var(--guildlistcolor);
+    box-sizing: border-box;
+}
+
+.guilds-wrapper .guilds .guild.unread .guild-inner a {
+    border-color: var(--accentcolor);
+   /* box-shadow: inset 0 0 0 2px var(--chat-color), rgba(43, 117, 252, .8) 0px 0px 15px!important;*/
+}
 
 
 /* avatary na glosowkach - pasek a nie kolko */
@@ -965,14 +1091,14 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .guilds-wrapper .guilds .guild .guild-inner {
     background: var(--guildlistcolor);
-    border-radius: var(--avatars)!important;
+    border-radius: 0px!important;
     cursor: pointer;
     font-size: 18px;
     line-height: 50px;
     overflow: hidden;
     text-align: center;
     transition: all .2s ease-in-out;
-    background-color: #353535!important
+    background-color: var(--guildlistcolor)!important
 }
 
 .guilds-wrapper .guilds .guild .guild-inner:hover {
@@ -986,8 +1112,6 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     background: #1f1f1f;
     border-radius: var(--avatars);
     box-shadow: 0 0 30px #000;
-    transform: scale(1.08);
-    transition: all .2s ease-in-out
 }
 
 .guilds-wrapper .guilds-add {
@@ -1005,15 +1129,21 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .guilds-wrapper .guilds .guild.unread:before {
-    background: #ffffff;
-    margin-left:-1px;
+    background: var(--guildlistcolor);
+    margin-left:0px;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
 
 .guilds-wrapper .guilds .guild.selected:before {
     background: var(--accentcolor);
-    left:-13px;
+    left:-15px;
+    height:50px;
+    top:20px;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
+}
+.guilds-wrapper .guilds .guild.unread:not(.selected) .guild-inner a {
+    border-color: var(--accentcolor);
+   /* box-shadow: inset 0 0 0 2px var(--chat-color), rgba(43, 117, 252, .8) 0px 0px 15px!important;*/
 }
 
 .create-guild-container.deprecated {
@@ -2291,7 +2421,6 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     position: absolute;
     top: 8px;
     width: 4px;
-    box-shadow: 0 0 10px var(--accentcolor); /* test*/
 }
 
 .channelTextArea-os01xC {
@@ -2874,11 +3003,67 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     background-color: var(--chatbackground)
 }
 
-.message-group .comment {
-    background: var(--titlebar);
-    padding: 10px;
-    border-radius: calc(0px * var(--borders) + 5px * (1 - var(--borders)));
-    transition: all .2s ease-in-out
+.comment::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: -20px;
+    top: 0px;
+    display: block;
+    transition: all 200ms ease;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent rgba(0, 0, 0, .1) transparent transparent;
+}
+.comment {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 0 3px 3px 3px!important;
+    padding: 0px 7px 10px 10px;
+}
+
+.message-group {
+    border: none;
+    padding: 7px 0px;
+}
+
+.messages .divider {
+    margin: 25px 6px 25px 20px
+}
+
+.message-group .embed {
+    border-left-color: #353535!important;
+}
+
+.message-group-blocked {
+    background: var(--titlebar)!important;
+    border: 0px solid #181818!important;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    transition: 300ms ease
+}
+
+.message-group-blocked:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2)!important
+}
+
+.friends-table .messages .message-group-blocked-btn,
+.messages-wrapper .messages .message-group-blocked-btn {
+    background: var(--lvl2)!important;
+    color: var(--white5)!important;
+    border-radius: 3px;
+    opacity: .6
+}
+
+.message-group .comment .edited {
+    font-size: 0;
+    width: 13px!important;
+    height: 13px!important;
+    display: inline-block;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGMuMzktLjM5LjM5LTEuMDIgMC0xLjQxbC0yLjM0LTIuMzRjLS4zOS0uMzktMS4wMi0uMzktMS40MSAwbC0xLjgzIDEuODMgMy43NSAzLjc1IDEuODMtMS44M3oiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+    background-size: 100%;
+    opacity: .3;
+    line-height: 23px
 }
 
 .message-group:not(.hide-overflow) .comment {
@@ -2956,11 +3141,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     position: relative
 }
 
-.message-group .mentioned .message-text:after {
-    background: rgba(250, 166, 26, .2);
-    border-left: 4px solid #faa61a;
-    border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important
-}
+
 
 .theme-dark .message-group .edit-message .edit-operation {
     color: #797979
@@ -3210,8 +3391,8 @@ margin-top: 5px;
 }
 
 .theme-dark .wrapper-uAa07y {
-    background: #2b2b2b;
-    border-color: #000;
+    background: var(--titlebar);
+    border-color: var(--accentcolor);
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
 
@@ -3393,7 +3574,7 @@ margin-top: 5px;
 	text-align:center;}
 	
 	.messages-wrapper .messages .divider span {
-    background: var(--titlebar) !important
+    background: rgba(0, 0, 0, .05) !important
 }
 .chat .divider.divider-red > span{
 	color: var(--accentcolor) !important;
@@ -3404,7 +3585,7 @@ margin-top: 5px;
 	
 .message-group.has-divider{border-color:transparent;}
 .chat .divider > span{color:var(--accentcolor) !important;background: var(--titlebar) !important;border-radius:3px;position:relative;text-align:center;left:0px;}
-.chat .divider{height:28px;background-color:var(--titlebar);}
+.chat .divider{height:28px;background-color:rgba(0, 0, 0, .05);}
 
 .theme-dark .chat .has-more button {
     background: #1d1d1d;
