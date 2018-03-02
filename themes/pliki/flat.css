@@ -1,4 +1,3 @@
-
 :root {
     --avatars: 50%;
     --borders: 1;
@@ -7,7 +6,7 @@
     --titlebar: #212121;
     --chatbackground: #303030;
     --channellistcolor: #252525;
-    --guildlistcolor: #191919;
+    --guildlistcolor: #2c2c2c;
     --accentcolor: #31d963;
     --version: "Flat Discord Theme v1.2.5.2"
 }
@@ -1103,7 +1102,7 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 .guilds-wrapper .guilds .guild .guild-inner:hover {
-    transform: scale(1.00);
+    transform: scale(1.08); /*zoom jak najedziemy na serwer*/
     box-shadow: 0 0 20px #000;
     filter: brightness(120%);
     transition: all .2s ease-in-out
@@ -1111,15 +1110,16 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .guilds-wrapper .guilds .guild.selected {
     background: #1f1f1f;
+    transform: scale(1.04);
     border-radius: var(--avatars);
     box-shadow: 0 0 30px #000;
 }
 
 .guilds-wrapper .guilds-add {
-    background: #171717;
-    border: 1px dashed #535559;
+    background: var(--guildlistcolor);
+    border: 1px dashed #868686;
     border-radius: var(--avatars);
-    color: #535559
+    color: #868686
 }
 
 .guilds-wrapper .guilds-error {
@@ -1309,12 +1309,13 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .contentHoveredText-2HYGIY {
     transition: all .2s ease-in-out;
-    background-color: #202020;
+    background-color: #1d1d1d;
 }
 
 .contentSelectedText-3j5CXt {
+    
     transform: scale(1.0);
-    background-color: #353535;
+    background-color: #1a1919;
     transition: all .2s ease-in-out
 }
 
@@ -2416,11 +2417,11 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 .unread-23Kvxk {
     background-color: #ffffff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
-    height: 25px;
+    height: 30px;
     left: 0;
     margin-top: -4px;
     position: absolute;
-    top: 8px;
+    top: 5px;
     width: 4px;
 }
 
@@ -5808,7 +5809,7 @@ margin-top:14px
 }
 
 .message-group .avatar-large[style*="avatars/186609657928744962"]+.comment .old-h2 .timestamp::before {
-    content: "Najlepszy Lider";
+    content: "Lilek";
     background: #265ea5
 }
 
