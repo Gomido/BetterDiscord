@@ -1,3 +1,4 @@
+
 :root {
     --avatars: 50%;
     --borders: 1;
@@ -3578,7 +3579,7 @@ margin-top: 5px;
 }
 .chat .divider.divider-red > span{
 	color: var(--accentcolor) !important;
-	background-color:var(--titlebar) !important;
+	background-color:rgba(0, 0, 0, .05) !important;
 	border-radius:3px;
 	text-align:center;
 	left:0px;}
