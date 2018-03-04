@@ -1,4 +1,5 @@
 
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -6772,7 +6773,7 @@ margin-top:3px;
 .citar-btn {
     opacity: .8;
     color: #fff!important;
-    background-color: #4c4c4c!important;
+    background-color: transparent!important;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important
 }
 
