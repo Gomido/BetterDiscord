@@ -88,7 +88,7 @@
 .channel-members .member.member-status-dnd .member-inner .member-activity-text strong {color: #f04747}
 .channel-members .member.member-status-offline .member-inner .member-activity-text strong {color: #636b75}
 
-/*status*/
+/*status bar na dole*/
 
 .message.mentioned .mention {
     color: var(--accentcolor)!important;
@@ -107,6 +107,8 @@
     padding: 3px 8px 5px 8px!important;
 }
 
+
+/*udki po prawej*/
 .channel-members h2 {
     padding:0;
     color: #cbc8d0!important;
@@ -2364,6 +2366,9 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 
+.or{
+    display:none;
+    }
 
 .content-2mSKOj {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
@@ -7228,9 +7233,9 @@ top:20px;
 .avatar-large {
 	left: 2px;
 	bottom: 2px;
-    width: 45px;
-    height: 45px;
-    background-size: 45px 45px;
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
 }
 
 .message-group .avatar-large+.comment .old-h2 .timestamp::before {
