@@ -1,14 +1,20 @@
+/*//META{"name":"TestTheme","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.2"}*//*/
+
+/*  
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
+*/
+
 :root {
     --avatars: 0%;
     --borders: 1;
     --chatanim: 0;
-    --chatspacing: 10px;
+    --chatspacing: 12px;
     --titlebar: #212121;
     --chatbackground: #303030;
     --channellistcolor: #252525;
     --guildlistcolor: #2c2c2c;
     --headercolor: #161616;
-    --accentcolor: #0289f7;
+    --accentcolor: #348AFF;
     --hovercolor: #eeeeee;
     --rs-spacing: 2px; /* spacing between avatar and status */
     --rs-width: 2px; /* width of the status */
@@ -7923,9 +7929,9 @@ top:20px;
 .avatar-large {
 	left: 2px;
 	bottom: 2px;
-    width: 45px;
-    height: 45px;
-    background-size: 45px 45px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
 }
 
 .message-group .avatar-large+.comment .old-h2 .timestamp::before {
