@@ -4942,6 +4942,8 @@ body:active .menu-3BZuDT:not(:active) {
     background: var(--headercolor);
 }
 
+
+
 .textArea-20yzAH {
     color: #faf9fa;
     background: var(--headercolor);
@@ -4982,7 +4984,7 @@ body:active .menu-3BZuDT:not(:active) {
 .textAreaEdit-1qc9VQ,
 .textAreaEnabledNoAttach-1zE_2h,
 .textAreaForm-2NWGTp {
-    padding: 16px 40px 6px 20px;
+    padding: 6px 40px 6px 20px;
 }
 
 .innerNoAutocomplete-kaUXJZ {
