@@ -1,3 +1,4 @@
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -280,9 +281,6 @@
 
 /*status bar na dole*/
 
-.message.mentioned .mention {
-    color: var(--accentcolor)!important;
-}
 .message-group .mentioned .message-text:after {
     border-left: 3px solid var(--accentcolor);
     border-radius: 0;
@@ -382,7 +380,7 @@
       -webkit-box-shadow: 0 0 0 0 var(--accentcolor);
     }
     70% {
-        -webkit-box-shadow: 0 0 0 1px rgba(204,169,44, 0);
+        -webkit-box-shadow: 0 0 0 3px rgba(204,169,44, 0);
     }
     100% {
         -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
@@ -1041,7 +1039,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 
 .guilds-wrapper .guilds .guild .guild-inner a {
-    border: 2px solid var(--headercolor);
+    border: 3px solid var(--headercolor);
     box-sizing: border-box;
 }
 
