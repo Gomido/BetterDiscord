@@ -5,14 +5,27 @@
 
 
 :root {
-    --avatars: 50%;
+    --avatars: 0%;
     --borders: 1;
     --chatanim: 0;
-    --chatspacing: 15px;
-    --titlebar: #1f1f1f;
-    --chatbackground: #2e2e2e;
-    --channellistcolor: #191919;
-    --guildlistcolor: #141414;
-    --accentcolor: #3191D9;
-    --version: "Discord Theme v1.2.5.2"
+    --chatspacing: 10px;
+    --titlebar: #212121;
+    --chatbackground: #303030;
+    --channellistcolor: #252525;
+    --guildlistcolor: #2c2c2c;
+    --headercolor: #161616;
+    --accentcolor: #2ECC71;/*3078D0*/
+    --hovercolor: #eeeeee;
+    --rs-spacing: 2px; /* spacing between avatar and status */
+    --rs-width: 2px; /* width of the status */
+    --rs-popout-spacing: 3px; /* spacing between avatar and status for user popouts */
+    --rs-popout-width: 4px; /* width of the status for user popouts */
+    --rs-profile-spacing: 3px; /* spacing between avatar and status on modals/profiles */
+    --rs-profile-width: 4px; /* width of the status on modals/profiles */
+    --rs-online-color: #5eb543; /* color for online status */
+    --rs-idle-color: #faa61a; /* color for idle status */
+    --rs-dnd-color: #f04747; /* color for dnd status */
+    --rs-offline-color: #636b75; /* color for offline status */
+    --rs-invisible-color: #747f8d; /* color for invisible status - Note this will only show for your own invisibility */
+    --rs-streaming-color: #643da7; /* color for streaming status */}
 }
