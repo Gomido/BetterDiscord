@@ -1,76 +1,76 @@
 /* base */
 .avatar-large[style*="186609657928744962"]+.comment .timestamp::before,/*Lilek*/
+.avatar-large[style*="131422437907759105"]+.comment .timestamp::before,/*adv*/
 .avatar-large[style*="187263626329980929"]+.comment .timestamp::before,/*krzysiek*/
 .avatar-large[style*="280433159236091914"]+.comment .timestamp::before,/*Mentos*/
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before,/*zagro*/
 .avatar-large[style*="270532835431940096"]+.comment .timestamp::before, /*mleczko*/
-.avatar-large[style*="276796566294102016"]+.comment .timestamp::before /*asusa*/{
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before /*ami*/{
     text-transform: uppercase;
     border: 1px solid #9866ff;
-    border-radius: 3px;
+    border-radius: 1px;
     font-weight: 400;
     margin: 0;
     color: #fefefe;
     font-size: 10px;
     outline: none;
-    margin-right: 7px;
+    margin-right: 10px;
     padding: 2px 6px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     line-height: 16px;
     top: -2px;
     position: relative;
 }
 
-/* Beta Tester */
+
 .avatar-large[style*="270532835431940096"]+.comment .timestamp::before
 {
     content: 'Mleczak';
     border-color: #C9E2FA;
     background: #494A4A;
-    box-shadow: 0 0 5px 1px #494A4A, inset 0 0 10px rgba(73, 74, 74, 0.7);
+    /*box-shadow: 0 0 5px 1px #494A4A, inset 0 0 10px rgba(73, 74, 74, 0.7);*/
 }
-.avatar-large[style*="280433159236091914"]+.comment .timestamp::before {
-    content: 'Cwel MENTOS';
-    border-color: #ffa066;
-    background: #e56b2e;
-    box-shadow: 0 0 5px 1px #5C482E, inset 0 0 10px rgba(92, 68, 46, 0.7);
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before {
+    content: 'Brzydal';
+    border-color: #f874c1;
+    background: rgb(180, 0, 84);
+   /* box-shadow: 0 0 5px 1px #5C482E, inset 0 0 10px rgba(92, 68, 46, 0.7);*/
 }
 
-/* Supporter */
-.avatar-large[style*="276796566294102016"]+.comment .timestamp::before {
+
+.avatar-large[style*=""]+.comment .timestamp::before {
     content: 'Najlepszy Kierownik';
     border-color: #0483F9;
     background: #379DFC;
-    box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);
+   /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
 }
-
-/* Turbo User */
-/* 5/12/2018 */ .avatar-large[style*="187263626329980929"]+.comment .timestamp::before {
+.avatar-large[style*="187263626329980929"]+.comment .timestamp::before {
     content: 'Krzyś';
     border-color: #0BD5D3;
-    background: #0BD5A0;
-    box-shadow: 0 0 5px 1px #0BD5D3, inset 0 0 10px rgba(62,169,230, 0.7);
+    background: #09666b;
+   /* box-shadow: 0 0 5px 1px #0BD5D3, inset 0 0 10px rgba(62,169,230, 0.7);*/
  }
 
-/* Plugin Developer */
+
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before {
-    content: 'Zagro';
+    content: 'Cweluszek';
     border-color: #9f72c2;
     background: #604575;
-    box-shadow: 0 0 5px 1px #3f3b42, inset 0 0 10px rgba(63,59,66, 0.7);
-    /*border-color: #d8d8d8;
-    background: #9e9e9e;
-    box-shadow: 0 0 5px 1px #3a3a3a, inset 0 0 10px rgba(58,58,58, 0.7);*/
+  /*  box-shadow: 0 0 5px 1px #3f3b42, inset 0 0 10px rgba(63,59,66, 0.7);*/
 }
 
-/* Staff special labels */
+
 .avatar-large[style*="186609657928744962"]+.comment .timestamp::before /*Lilek*/
  {
     content: 'Lilek';
     border-color: #DB004D;
     background: #890020;
-    box-shadow: 0 0 5px 1px #890020, inset 0 0 10px rgba(137, 0, 32, 0.7);
+    /*box-shadow: 0 0 5px 1px #890020, inset 0 0 10px rgba(137, 0, 32, 0.7);*/
 }
-.avatar-large[style*="186609657928744962"]+.comment .timestamp::before {
-    content: 'Lilek';
+
+.avatar-large[style*="131422437907759105"]+.comment .timestamp::before {
+    content: 'Menel';
+    border-color: #3a3a3a;
+    background: #6F6F6F;
+   /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
 }
