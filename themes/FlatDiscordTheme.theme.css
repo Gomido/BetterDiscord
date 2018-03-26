@@ -2,30 +2,7 @@
 
 /*  */
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/flat.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/labels.css");
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
 
-
-:root {
-    --avatars: 0%; /*50% - okrągłe avatary, 0%- kwadrat*/
-    --borders: 1; /* 0- okragle (role, okienka itp)*/
-    --chatanim: 0; /* zjebane, 1 odpala animke jak ktos napisze, chat jedzie jak wysle wiadomosc, jak my wyslemy to animke powiela 3 razy*/
-    --chatspacing: 10px;/*odstepy miedzy wiadomoscimi*/
-    --titlebar: #212121;/* pasek z napisem discord i iksem, minimalizuj*/
-    --chatbackground: #303030; /*tlo pod chatem*/
-    --channellistcolor: #252525; /* tlo pod kanalami na serwerze*/
-    --guildlistcolor: #2c2c2c; /*tlo pod serwerami*/
-    --headercolor: #161616; /*kolor na gorze serwera, opis, temat, nazwa serwera*/
-    --accentcolor: #2ECC71;/*3078D0*/ /* kolor skina*/
-    --hovercolor: #eeeeee; /* kolor jak najedziemy na guzik*/
-    --rs-spacing: 2px; /* odstep miedzy avatarem a statusem */
-    --rs-width: 2px; /* wielkosc ramki obok avka */
-    --rs-popout-spacing: 3px; /* odstep avka i statusu w profliu */
-    --rs-popout-width: 4px; /* widocznosc, wielkosc statusu */
-    --rs-profile-spacing: 3px; /* odstepu w modalach (okna wyskakujace itp) */
-    --rs-profile-width: 4px; /* to samo co wyzej ale status */
-    --rs-online-color: #5eb543; /* kolor online */
-    --rs-idle-color: #faa61a; /*kolor ramki statusu zajety */
-    --rs-dnd-color: #f04747; /* kolor nie przeszkadzac */
-    --rs-offline-color: #636b75; /* kolor offline */
-    --rs-invisible-color: #747f8d; /* niewidoczny - widzimiy tylko my*/
-    --rs-streaming-color: #643da7; /*kolor streamowania */}
-}
