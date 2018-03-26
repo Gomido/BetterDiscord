@@ -1,4 +1,32 @@
-/*//META{"name":"FlatDiscordTheme","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.2"}*//*/
+/*//META{"name":"FlatDiscordTheme","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.4"}*//*/
 
 /*  */
 @import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/flat.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/labels.css");
+@import url("https://rawgit.com/Gomido/BetterDiscord/master/themes/pliki/badges.css");
+:root {
+    --avatars: 0%;
+    --borders: 1;
+    --chatanim: 0;
+    --chatspacing: 10px;
+    --titlebar: #212121;
+    --chatbackground: #303030;
+    --channellistcolor: #252525;
+    --guildlistcolor: #2c2c2c;
+    --headercolor: #161616;
+    --accentcolor: #0289f7;
+    --hovercolor: #eeeeee;
+    --rs-spacing: 2px; /* osdtep miedzy ramka a avatarem */
+    --rs-width: 2px; /* wielkosc ramki wokol avatara */
+    --rs-popout-spacing: 3px; /* odleglosc miedzy statusem a nickiem */
+    --rs-popout-width: 4px; /* odleglosc mniedzy popoutami */
+    --rs-profile-spacing: 3px; /* odstep miedzy ludkami gdzies tam, chuj wie gdzie */
+    --rs-profile-width: 4px; /* widocznosc profli */
+    --rs-online-color: #5eb543; /* online */
+    --rs-idle-color: #faa61a; /* zajety */
+    --rs-dnd-color: #f04747; /* dnd */
+    --rs-offline-color: #636b75; /* offline */
+    --rs-invisible-color: #747f8d; /* niewidoczny */
+    --rs-streaming-color: #643da7; /* stream */
+}
