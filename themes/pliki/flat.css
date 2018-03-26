@@ -95,7 +95,19 @@
 	flex:100%;
 	order:9999999999;
 }
+/* mniejsze zablokowane wiadomosci*/
 
+.message-group-blocked {
+  background: var(--chatbackground);
+  margin: 0px;
+  border:  none;
+}
+
+.message-group-blocked .message-group-blocked-btn {
+  font-size: 9px;
+  padding: 6px 20px;
+  text-align: left;
+}
 
 
 /* 16. Channel Search Pop out */
