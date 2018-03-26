@@ -10,19 +10,19 @@
     --headercolor: #161616;
     --accentcolor: #0289f7;
     --hovercolor: #eeeeee;
-    --rs-spacing: 2px; /* spacing between avatar and status */
-    --rs-width: 2px; /* width of the status */
-    --rs-popout-spacing: 3px; /* spacing between avatar and status for user popouts */
-    --rs-popout-width: 4px; /* width of the status for user popouts */
-    --rs-profile-spacing: 3px; /* spacing between avatar and status on modals/profiles */
-    --rs-profile-width: 4px; /* width of the status on modals/profiles */
-    --rs-online-color: #5eb543; /* color for online status */
-    --rs-idle-color: #faa61a; /* color for idle status */
-    --rs-dnd-color: #f04747; /* color for dnd status */
-    --rs-offline-color: #636b75; /* color for offline status */
-    --rs-invisible-color: #747f8d; /* color for invisible status - Note this will only show for your own invisibility */
-    --rs-streaming-color: #643da7; /* color for streaming status */
-    --version: "Flat Discord Theme v1.2.5.2";
+    --rs-spacing: 2px; /* odstep miedzy ramka a avatarem */
+    --rs-width: 2px; /* wielkosc ramki wokol avatara */
+    --rs-popout-spacing: 3px; /* odleglosc miedzy statusem a nickiem */
+    --rs-popout-width: 4px; /* odleglosc mniedzy popoutami */
+    --rs-profile-spacing: 3px; /* odstep miedzy ludkami gdzies tam, chuj wie gdzie */
+    --rs-profile-width: 4px; /* widocznosc profli */
+    --rs-online-color: #5eb543; /* online */
+    --rs-idle-color: #faa61a; /* zajety */
+    --rs-dnd-color: #f04747; /* dnd */
+    --rs-offline-color: #636b75; /* offline */
+    --rs-invisible-color: #747f8d; /* niewidoczny */
+    --rs-streaming-color: #643da7; /* stream */
+    --version: "Flat Discord Theme v1.2.5.4";
 
     /*BIALE*/
 
