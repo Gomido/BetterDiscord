@@ -7916,3 +7916,15 @@ top:20px;
     content: "Menel ";
     background: #F5CCBO
 }
+
+.message-group .avatar-large[style*="avatars/369188986775666689"]+.comment .old-h2 .timestamp::before {
+    content: "Brzydal ";
+    background: #FF007E
+}
+
+
+
+.message-group .avatar-large[style*="avatars/186600666192543744"]+.comment .old-h2 .timestamp::before {
+    content: "Szeryf ";
+    background: #1A5B35
+}
