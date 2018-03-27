@@ -4997,11 +4997,10 @@ body:active .menu-3BZuDT:not(:active) {
     color: var(--accentcolor)!important;
 }
 
-
 /* 26. Chat Typing Bar */
 
 .chat form .typing-3eiiL_ {
-    background: var(--headercolor) !important;
+    background: var(--headercolor)!important;
     bottom: 100%;
     padding-left: 20px;
     z-index: 0;
@@ -5011,22 +5010,23 @@ body:active .menu-3BZuDT:not(:active) {
     -ms-transform: scale(1);
     transform: scale(1);
     width: auto;
+    height:10px;
     padding-right: 20px;
-    padding-top: 0px;
-    border-radius: 5px 5px 0 0;
+    padding-top: px;
+    border-radius: 1px 1px 0 0;
     margin-left: 15px;
     color: var(--white10);
-    box-shadow: 0 -3px 20px rgba(0, 0, 0, .1);
+
     opacity: 1;
     transition: all 200ms ease;
     overflow-y: visible!important;
 	z-index: 5;
 }
 .typing-3eiiL_ .text-1rI06- {
-    line-height: 26px
+    line-height: 20px
 }
 .typing-3eiiL_ .ellipsis--nKTEd {
-    height: 31px
+    height: 25px
 }
 
  #app-mount .status.status-typing {
