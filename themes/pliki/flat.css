@@ -76,6 +76,11 @@
     color: #fff;
   }
 
+ /*gry*/
+ .activityFeed--1mYMS .headerBar-cxbhPD {
+     background: var(--headercolor) !important;
+ }
+
   /*Smarter embeds*/
   .message-group .accessory{
 	display: flex;
