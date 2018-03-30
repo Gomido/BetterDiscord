@@ -84,11 +84,11 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 /* ============== ======================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-/* 5/12/2018 */ .avatar-large[style*=""]+.comment .username-wrapper::before,
+/* 5/12/2018 */ .avatar-large[style*="141944217474826240"]+.comment .username-wrapper::before,
 /*--- channel members wrap ---*/
-/* 5/12/2018 */ .avatar-small[style*=""]+.member-inner .member-username::before,
+/* 5/12/2018 */ .avatar-small[style*="141944217474826240"]+.member-inner .member-username::before,
 /*--- friends list ---*/
-/* 5/12/2018 */ .avatar-small[style*=""]+.discord-tag .username::before {
+/* 5/12/2018 */ .avatar-small[style*="141944217474826240"]+.discord-tag .username::before {
     content: '';
     background: url('https://i.imgur.com/kXkgUKX.png');
 }
