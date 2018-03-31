@@ -5025,7 +5025,7 @@ body:active .menu-3BZuDT:not(:active) {
     opacity: 1;
     transition: all 200ms ease;
     overflow-y: visible!important;
-	z-index: 5;
+	z-index: 1;
 }
 .typing-3eiiL_ .text-1rI06- {
     line-height: 20px
