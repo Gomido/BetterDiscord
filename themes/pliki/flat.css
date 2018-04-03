@@ -62,6 +62,7 @@
 
 
 
+
 /*HAMBURGER*/
 
 .h5-3KssQU, .title-3i-5G_, #twitchcord-settings .h3-gDcP8B {
@@ -380,6 +381,7 @@
     }
   }
 
+
 /*wieksze okno emotek */
 .emojiPicker-3g68GS .scroller-fzNley {
     height: 500px;
@@ -398,11 +400,6 @@
     color: #fff;
   }
 
- /*gry*/
- .activityFeed--1mYMS .headerBar-cxbhPD {
-     background: var(--headercolor) !important;
- }
-
   /*Smarter embeds*/
   .message-group .accessory{
 	display: flex;
@@ -419,19 +416,7 @@
 	flex:100%;
 	order:9999999999;
 }
-/* mniejsze zablokowane wiadomosci*/
 
-.message-group-blocked {
-  background: var(--chatbackground);
-  margin: 0px;
-  border:  none;
-}
-
-.message-group-blocked .message-group-blocked-btn {
-  font-size: 9px;
-  padding: 6px 20px;
-  text-align: left;
-}
 
 
 /* 16. Channel Search Pop out */
@@ -513,13 +498,17 @@
     padding: 0px 6px 1px 0px;
 }
 
-
 /*kolor gier*/
-
-.channel-members .member.member-status-online .member-inner .member-activity-text strong {color: #43b581}
-.channel-members .member.member-status-idle .member-inner .member-activity-text strong {color: #faa61a}
+.channel-members .member-2FrNV0 .activityText-258pdj strong {
+    color: #888888;
+}
+/*
+.channel-members .member.statusOnline-1Mp2_H .member-inner .activity-1PAe08 strong {color: #43b581}
+.channel-members .member.member-status-idle .member-inner .member-2FrNV0-activity-text strong {color: #faa61a}
 .channel-members .member.member-status-dnd .member-inner .member-activity-text strong {color: #f04747}
 .channel-members .member.member-status-offline .member-inner .member-activity-text strong {color: #636b75}
+*/
+
 
 /* 18. Context Menu   */
 
@@ -764,6 +753,8 @@
 }
 /* 10. Avatars */
 
+
+
 .avatar-large, 
 .avatar-profile, 
 .avatar-small, 
@@ -817,7 +808,73 @@
     left: 0px !important;
 }
 
-
+/* User Status 2 */
+/* DND */
+.statusDnd-35xAXU:not(.statusProfile-29OBzn) {
+    width: 115%!important;
+    height: 115%!important;
+    box-sizing: border-box;
+    top: -8%!important;
+    left: -8%!important;
+    border: 2.5px solid #f71e1e!important;
+    border-radius: 1px !important;
+	background:none;
+	opacity: 1 !important;
+    animation: pulse 3s linear infinite !important;
+}
+/* ONLINE */
+.statusOnline-1Mp2_H:not(.statusProfile-29OBzn) {
+    width: 115%!important;
+    height: 115%!important;
+    box-sizing: border-box;
+    top: -8%!important;
+    left: -8%!important;
+    border: 2.5px solid #1fcf45!important;
+    border-radius: 1px !important;
+	background:none;
+	opacity: 1 !important;
+    animation: pulse 3s linear infinite !important;
+}
+/* AWAY */
+.statusIdle-2AQdvu:not(.statusProfile-29OBzn) {
+    width: 115%!important;
+    height: 115%!important;
+    box-sizing: border-box;
+    top: -8%!important;
+    left: -8%!important;
+    border: 2.5px solid #faa61a!important;
+    border-radius: 1px !important;
+	background:none;
+	opacity: 1 !important;
+    animation: pulse 3s linear infinite !important;
+}
+/* STREAM */
+.statusStreaming-1bZ3Hq:not(.statusProfile-29OBzn) {
+    width: 115%!important;
+    height: 115%!important;
+    box-sizing: border-box;
+    top: -8%!important;
+    left: -8%!important;
+    border: 2.5px solid #593695!important;
+    border-radius: 1px !important;
+	background:none;
+	opacity: 1 !important;
+    animation: pulse 3s linear infinite !important;
+}
+/* OFFLINE */
+.statusInvisible-2ci18Q:not(.statusProfile-29OBzn), .statusOffline-jZXr_u:not(.statusProfile-29OBzn) {
+    width: 115%!important;
+    height: 115%!important;
+    box-sizing: border-box;
+    top: -8%!important;
+    left: -8%!important;
+    border: 2.5px solid #747f8d!important;
+    border-radius: 1px !important;
+	background:none;
+	opacity: 1 !important;
+    animation: pulse 3s linear infinite !important;
+}
+/* User Status 2 */
 
 /* 5. DM Message List */
 
@@ -883,18 +940,24 @@
     background: none!important;
 }
 
+.content-3JzEqq {
+    background-color: transparent !important;
+}
 
-.channel-members .member .member-username{
+.channel-members .member-2FrNV0 .member-username{
 	font-size:15px;
 }
-.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:active, .theme-dark .channel-members .member:hover.popout-open, .theme-dark .channel-members .member:hover.popout-open:active {
-	background: var(--guildlistcolor) !important;
-	border-left: 2px solid var(--accentcolor);
+.theme-dark .channel-members .member-2FrNV0.popout-open {
+    background: var(--guildlistcolor) !important;
+    border-left: 2px solid var(--accentcolor)!important;
 }
-.theme-dark .channel-members .member:hover {
+
+
+.theme-dark .channel-members .member-2FrNV0:hover {
 	background: var(--chatbackground) !important;
 	border-left: 2px solid var(--hovercolor);
 }
+
 
 /*nowe ikony*/
 
@@ -1054,8 +1117,6 @@
     border-radius: 1px!important;
     box-shadow: none;
 }
-
-
 
 /*settings icons*/
 .user-settings-modal .tab-bar.SIDE .tab-bar-item::before {
@@ -1956,7 +2017,6 @@ background-color: var(--titlebar)
 .icon-3rMtHF:hover{
     opacity: .9
 }
-
 
 /*Upload animation*/
 
@@ -4942,7 +5002,7 @@ body:active .menu-3BZuDT:not(:active) {
 .theme-dark .autocomplete-1TnWNR {
     background-color: var(--guildlistcolor);
     border: none!important;
-    border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)))
+    border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
 }
 
 .theme-dark .selectorSelected-2M0IGv {
@@ -5324,6 +5384,7 @@ body:active .menu-3BZuDT:not(:active) {
     color: var(--accentcolor)!important;
 }
 
+
 /* 26. Chat Typing Bar */
 
 .chat form .typing-3eiiL_ {
@@ -5374,7 +5435,14 @@ body:active .menu-3BZuDT:not(:active) {
 .message-group .edit-message {
     margin: 6px -26px 0 -69px;
 }
+ /*gry*/
+ .headerBar-cxbhPD {
+     background: var(--headercolor) !important;
+ }
 
+ .activityFeed--1mYMS .flex-lFgbSz .flex-3B1Tl4 .horizontal-2BEEBe .horizontal-2VE-Fw .flex-3B1Tl4 .directionRow-yNbSvJ .justifyStart-2yIZo0 .alignCenter-3VxkQP .noWrap-v6g9vO .headerBar-cxbhPD {
+     background: var(--chatbackground) !important;
+ }
 
 /*przypiete wiadomosci*/
 
