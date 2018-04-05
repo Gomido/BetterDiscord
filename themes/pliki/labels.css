@@ -71,8 +71,8 @@
 
 .avatar-large[style*="131422437907759105"]+.comment .timestamp::before {
     content: 'Menel';
-    border-color: #3a3a3a;
-    background: #6F6F6F;
+    border-color: #FB2384;
+    background: #ff69b4;
    /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
 }
 
@@ -82,4 +82,11 @@
     border-color: #00a048;
     background: #1A5B35;
    /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
+}
+
+.avatar-large[style*="141944217474826240"]+.comment .timestamp::before,
+.avatar-large[style*="141944217474826240"]+.comment .timestamp::before {
+    content: 'BOXI';
+    border-color: #4E018A;
+    background: #7C01DB;
 }
