@@ -110,11 +110,11 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 .avatar-small[style*=""]+.discord-tag .username::after,
 .avatar-small[style*=""]+.discord-tag .username::after {
     content: '';
-    background: url('https://i.imgur.com/FNw4A3r.png');
+    background: url('https://i.imgur.com/jNMfV4I.png');
 }
 
 /* ============================================== */
-/* ============== VERIFIED BADGES  ============== */
+/* ============== VERIFIED BADGES https://www.twitchcord.com/twitchcord-theme/images/verified5.png ============== */
 /* ============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
@@ -124,7 +124,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 /*--- friends list ---*/
 .avatar-small[style*="numGoesHere"]+.discord-tag .username::after {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/verified5.png');
+    background: url('https://i.imgur.com/Ss0SehC.png');
 }
 
 /* ============================================== */
