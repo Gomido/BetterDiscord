@@ -118,11 +118,11 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 /* ============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.avatar-large[style*="numGoesHere"]+.comment .username-wrapper::after,
+.avatar-large[style*="131422437907759105"]+.comment .username-wrapper::after,
 /*--- channel members wrap ---*/
-.avatar-small[style*="numGoesHere"]+.member-inner .member-username-inner::before,
+.avatar-small[style*="131422437907759105"]+.member-inner .member-username-inner::before,
 /*--- friends list ---*/
-.avatar-small[style*="numGoesHere"]+.discord-tag .username::after {
+.avatar-small[style*="131422437907759105"]+.discord-tag .username::after {
     content: '';
     background: url('https://i.imgur.com/Ss0SehC.png');
 }
