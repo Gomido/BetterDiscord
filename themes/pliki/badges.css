@@ -110,7 +110,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 .avatar-small[style*=""]+.discord-tag .username::after,
 .avatar-small[style*=""]+.discord-tag .username::after {
     content: '';
-    background: url('https://i.imgur.com/jZUkZW5.png');
+    background: url('https://www.twitchcord.com/twitchcord-theme/images/developer-badge.png');
 }
 
 /* ============================================== */
