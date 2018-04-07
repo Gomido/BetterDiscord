@@ -4,6 +4,7 @@
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before,/*zagro*/
 .avatar-large[style*="186600666192543744"]+.comment .timestamp::before, /*kwasek*/
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before, /*orshik*/
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before, /*ami*/
 .avatar-large[style*="185347449991200769"]+.comment .timestamp::before, /*emel*/
 .avatar-large[style*="141944217474826240"]+.comment .timestamp::before, /*boxidro*/
 {
@@ -25,6 +26,14 @@
 
 /*Emel*/
 .avatar-large[style*="185347449991200769"]+.comment .timestamp::before {
+    content: 'Kozak';
+    border-color:#52cff2;
+    background: #2f74ce;
+  /*  box-shadow: 0 0 5px 1px #30bbd3, inset 0 0 10px rgba(48, 167, 210, 0.7);*/
+}
+
+/*ami*/
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before {
     content: 'Kozak';
     border-color:#52cff2;
     background: #2f74ce;
