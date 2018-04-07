@@ -1,12 +1,13 @@
 
 /* base */
 .avatar-large[style*="131422437907759105"]+.comment .timestamp::before,/*adv*/
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before, /*Amnezja*/
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before,/*zagro*/
 .avatar-large[style*="186600666192543744"]+.comment .timestamp::before, /*kwasek*/
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before, /*orshik*/
 .avatar-large[style*="185347449991200769"]+.comment .timestamp::before, /*emel*/
 .avatar-large[style*="141944217474826240"]+.comment .timestamp::before, /*boxidro*/
-.avatar-large[style*="369188986775666689"]+.comment .timestamp::before /*ami*/{
+{
     text-transform: uppercase;
     border: 1px solid #ffffff;
     border-radius: 1px;
@@ -30,8 +31,6 @@
     background: #2f74ce;
   /*  box-shadow: 0 0 5px 1px #30bbd3, inset 0 0 10px rgba(48, 167, 210, 0.7);*/
 }
-.avatar-large[style*="185347449991200769"]+.comment .timestamp::before 
-
 
 /*Mleczko*/
 /*.avatar-large[style*="270532835431940096"]+.comment .timestamp::before
@@ -42,15 +41,6 @@
     /*box-shadow: 0 0 5px 1px #494A4A, inset 0 0 10px rgba(73, 74, 74, 0.7);
 }
 */
-
-
-/*Amnezja*/
-.avatar-large[style*="369188986775666689"]+.comment .timestamp::before {
-    content: 'Ami';
-    border-color: #f874c1;
-    background: #b40054;
-   /* box-shadow: 0 0 5px 1px #5C482E, inset 0 0 10px rgba(92, 68, 46, 0.7);*/
-}
 
 
 /*.avatar-large[style*=""]+.comment .timestamp::before {
@@ -75,6 +65,14 @@
     border-color: #9f72c2;
     background: #604575;
   /*  box-shadow: 0 0 5px 1px #3f3b42, inset 0 0 10px rgba(63,59,66, 0.7);*/
+}
+
+/*ami*/
+.avatar-large[style*="369188986775666689"]+.comment .timestamp::before {
+    content: 'Ami';
+    border-color:#C10334;
+    background: #FF0042;
+  /*  box-shadow: 0 0 5px 1px #30bbd3, inset 0 0 10px rgba(48, 167, 210, 0.7);*/
 }
 
 
