@@ -132,13 +132,13 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 /* ============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.avatar-large[style*=""]+.comment .username-wrapper::after,
+.avatar-large[style*="186609657928744962"]+.comment .username-wrapper::after,
 /*--- channel members wrap ---*/
-.avatar-small[style*=""]+.member-inner .member-username-inner::before,
+.avatar-small[style*="186609657928744962"]+.member-inner .member-username-inner::before,
 /*--- friends list ---*/
-.avatar-small[style*=""]+.discord-tag .username::after {
+.avatar-small[style*="186609657928744962"]+.discord-tag .username::after {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/admin.png');
+    background: url('https://i.imgur.com/MldFegN.png');
 }
 
 /* ============================================== */
