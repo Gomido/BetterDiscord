@@ -1,4 +1,3 @@
-
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -18,9 +17,9 @@
     --rs-popout-width: 4px; /* odleglosc mniedzy popoutami */
     --rs-profile-spacing: 3px; /* odstep miedzy ludkami gdzies tam, chuj wie gdzie */
     --rs-profile-width: 4px; /* widocznosc profli */
-    --rs-online-color: #5eb543; /* online */
+    --rs-online-color: #1fcf45; /* online */
     --rs-idle-color: #faa61a; /* zajety */
-    --rs-dnd-color: #f04747; /* dnd */
+    --rs-dnd-color: #f71e1e; /* dnd */
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
@@ -757,7 +756,7 @@
 .avatar-xlarge, 
 .avatar-xsmall, 
 .avatar-xxlarge {
-	border-radius: 1px !important;
+	border-radius: 2.5px !important;
 	background-size: cover !important;
 }
 [class*="avatar-"] .status, .channel-members [class*="avatar-"] .status {
@@ -765,26 +764,26 @@
     width: 100%;
     background-color: transparent;
 	bottom: -2px !important;
-	border-radius: 1px !important;
+	border-radius: 2.5px !important;
 	right: -2px !important;
 }
 [class*="avatar-"] .status-online {
-	border: 2px solid var(--rs-online-color) !important;
+	border: 2.5px solid var(--rs-online-color) !important;
 }
 [class*="avatar-"] .status-idle {
-	border: 2px solid var(--rs-idle-color) !important;
+	border: 2.5px solid var(--rs-idle-color) !important;
 }
 [class*="avatar-"] .status-dnd {
-	border: 2px solid var(--rs-dnd-color) !important;
+	border: 2.5px solid var(--rs-dnd-color) !important;
 }
 [class*="avatar-"] .status-offline {
-	border: 2px solid var(--rs-offline-color) !important;
+	border: 2.5px solid var(--rs-offline-color) !important;
 }
 [class*="avatar-"] .status-invisible {
-	border: 2px solid var(--rs-invisible-color) !important;
+	border: 2.5px solid var(--rs-invisible-color) !important;
 }
 [class*="avatar-"] .status-streaming {
-	border: 2px solid var(--rs-streaming-color) !important;
+	border: 2.5px solid var(--rs-streaming-color) !important;
 }
 .container-iksrDt [class*="avatar-"]:hover {
     opacity: 1 !important;
@@ -812,7 +811,7 @@
     box-sizing: border-box;
     top: -8%!important;
     left: -8%!important;
-    border: 2.5px solid #f71e1e!important;
+    border: 2.5px solid var(--rs-dnd-color)!important;
     border-radius: 1px !important;
 	background:none;
 	opacity: 1 !important;
@@ -825,7 +824,7 @@
     box-sizing: border-box;
     top: -8%!important;
     left: -8%!important;
-    border: 2.5px solid #1fcf45!important;
+    border: 2.5px solid var(--rs-online-color)!important;
     border-radius: 1px !important;
 	background:none;
 	opacity: 1 !important;
@@ -838,7 +837,7 @@
     box-sizing: border-box;
     top: -8%!important;
     left: -8%!important;
-    border: 2.5px solid #faa61a!important;
+    border: 2.5px solid var(--rs-idle-color)!important;
     border-radius: 1px !important;
 	background:none;
 	opacity: 1 !important;
@@ -864,7 +863,7 @@
     box-sizing: border-box;
     top: -8%!important;
     left: -8%!important;
-    border: 2.5px solid #747f8d!important;
+    border: 2.5px solid var(--rs-offline-color)!important;
     border-radius: 1px !important;
 	background:none;
 	opacity: 1 !important;
