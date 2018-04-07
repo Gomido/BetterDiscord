@@ -4,6 +4,7 @@
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before,/*zagro*/
 .avatar-large[style*="186600666192543744"]+.comment .timestamp::before, /*kwasek*/
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before, /*orshik*/
+.avatar-large[style*="185347449991200769"]+.comment .timestamp::before, /*orshik*/
 .avatar-large[style*="369188986775666689"]+.comment .timestamp::before /*ami*/{
     text-transform: uppercase;
     border: 1px solid #ffffff;
@@ -21,7 +22,17 @@
     position: relative;
 }
 
+/*Emel*/
+.avatar-large[style*="185347449991200769"]+.comment .timestamp::before {
+    content: 'Kozak';
+    border-color:#52cff2;
+    background: #2f74ce;
+  /*  box-shadow: 0 0 5px 1px #30bbd3, inset 0 0 10px rgba(48, 167, 210, 0.7);*/
+}
+.avatar-large[style*="185347449991200769"]+.comment .timestamp::before 
 
+
+/*Mleczko*/
 /*.avatar-large[style*="270532835431940096"]+.comment .timestamp::before
 {
     content: 'Mleczak';
@@ -31,6 +42,8 @@
 }
 */
 
+
+/*Amnezja*/
 .avatar-large[style*="369188986775666689"]+.comment .timestamp::before {
     content: 'Ami';
     border-color: #f874c1;
@@ -40,11 +53,14 @@
 
 
 /*.avatar-large[style*=""]+.comment .timestamp::before {
-    content: 'Najlepszy Kierownik';
+    content: '';
     border-color: #0483F9;
     background: #379DFC;
    /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);
 }
+
+
+
 .avatar-large[style*="187263626329980929"]+.comment .timestamp::before {
     content: 'Krzyś';
     border-color: #0BD5D3;
@@ -52,7 +68,7 @@
    /* box-shadow: 0 0 5px 1px #0BD5D3, inset 0 0 10px rgba(62,169,230, 0.7);
  }*/
 
-
+/*Zagro*/
 .avatar-large[style*="186817801741271040"]+.comment .timestamp::before {
     content: 'Cweluszek';
     border-color: #9f72c2;
@@ -69,6 +85,8 @@
     /*box-shadow: 0 0 5px 1px #890020, inset 0 0 10px rgba(137, 0, 32, 0.7);
 }*/
 
+
+/*ADV*/
 .avatar-large[style*="131422437907759105"]+.comment .timestamp::before {
     content: 'Menel';
     border-color: #FB2384;
@@ -76,6 +94,8 @@
    /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
 }
 
+
+/*Kwasek i orshik*/
 .avatar-large[style*="186600666192543744"]+.comment .timestamp::before,
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before {
     content: 'szeryf';
@@ -84,6 +104,8 @@
    /* box-shadow: 0 0 5px 1px #0C7EE8, inset 0 0 10px rgba(12, 126, 232, 0.7);*/
 }
 
+
+/*Boxidro*/
 .avatar-large[style*="141944217474826240"]+.comment .timestamp::before,
 .avatar-large[style*="141944217474826240"]+.comment .timestamp::before {
     content: 'BOXI';
