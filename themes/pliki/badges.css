@@ -124,7 +124,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 /*--- friends list ---*/
 .avatar-small[style*="131422437907759105"]+.discord-tag .username::after {
     content: '';
-    background: url('hhttps://i.imgur.com/PLnsbia.png');
+    background: url('https://i.imgur.com/PLnsbia.png');
 }
 
 /* ============================================== */
