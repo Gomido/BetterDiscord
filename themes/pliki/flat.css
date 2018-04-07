@@ -1,3 +1,4 @@
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -53,9 +54,7 @@
     --black9:rgba(0,0,0,.9);/*var(--black9)*/
     --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
-.activityUserPopout-1nmgaw .activity-3NviKQ{
-    background: var(--headercolor);
-}
+
 ::-moz-selection {
     color: #fff;
     background: var(--accentcolor);
@@ -1553,7 +1552,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     z-index: 999999999999999999999;
     position: fixed;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--accentcolor);
     height: auto;
     top: 8px;
@@ -2686,7 +2685,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 	border-radius: 0px !important;
 }
 .headerPlaying-2Q7mBy {
-    background: var(--accentcolor);
+    background: var(--guildlistcolor);
 }
 .role-3rahR_ {
     border-width: 1px!important;
@@ -3962,7 +3961,6 @@ body:active .menu-3BZuDT:not(:active) {
   .root-2sNHUF .avatar-1BXaQj {
     height: 128px;
     width: 128px;
-    border: 2px solid var(--accentcolor);
     position: relative;
     top: 75px;
     margin-left: 25px;
@@ -3981,7 +3979,7 @@ body:active .menu-3BZuDT:not(:active) {
   
   .bd-blue .root-2sNHUF .tab-bar .tab-bar-item,
   .root-2sNHUF .tab-bar .tab-bar-item {
-    color: #acacac9f;
+    color: #e4e4e4;
     border-bottom: 3px solid transparent;
     position: relative;
   }
@@ -3995,7 +3993,7 @@ body:active .menu-3BZuDT:not(:active) {
   
   .bd-blue .root-2sNHUF .tab-bar .tab-bar-item:hover,
   .root-2sNHUF .tab-bar .tab-bar-item:hover {
-    border-color: 3px solid transparent;
+    border-color: 3px solid #FFFFFF;
     color: var(--accentcolor);
   }
   
@@ -4016,9 +4014,9 @@ body:active .menu-3BZuDT:not(:active) {
   .root-2sNHUF .status-3jUEha {
     height: 16px;
     width: 16px;
-    bottom: -2px;
-    right: -2px;
-    border: 2px solid var(--accentcolor);
+    bottom: 0px;
+    right: 0px;
+
   }
   
   .root-2sNHUF .listRow-1wEi-U .status-3jUEha {
@@ -4216,7 +4214,7 @@ body:active .menu-3BZuDT:not(:active) {
     border: none;
     padding-bottom: 5px;
     color: #FFFFFF !important;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 30px;
   }
   
@@ -4240,11 +4238,11 @@ body:active .menu-3BZuDT:not(:active) {
   
   .root-2sNHUF .activityProfile-2pymp0 {
     min-height: 30px;
-    top: 50px;
+    top: 56px;
     padding: 20px 30px 15px;
     position: relative;
     background: var(--channellistcolor);
-    box-shadow: inset 0 20px 60px -20px var(--headercolor);
+    box-shadow: inset 0 25px 60px -20px var(--headercolor);
     margin-bottom: 50px;
     border-bottom: 1px solid var(--guildlistcolor);
   }
@@ -4326,7 +4324,7 @@ body:active .menu-3BZuDT:not(:active) {
   
   .root-2sNHUF .userInfoSection-2WJxMm .userInfoSectionHeader-pmdPGs {
     font-size: 18px;
-    color: #322f37;
+    color: #FFFFFF;
     font-weight: 400;
     text-transform: capitalize;
   }
@@ -4343,6 +4341,15 @@ body:active .menu-3BZuDT:not(:active) {
     font-size: 12px;
     transition: border-color 0.2s, background-color 0.2s, color 0.2s;
   }
+
+ .lookFilled-luDKDo.colorGreen-22At8E{
+      color:var(--accentcolor);
+      background-color: #ffffff;
+ }
+  .lookInverted-2lPGe7.colorGreen-22At8E {
+    color:var(--accentcolor);
+    background-color: #ffffff;
+  }
   
   .root-2sNHUF button:hover,
   .root-2sNHUF button:active {
@@ -4354,7 +4361,7 @@ body:active .menu-3BZuDT:not(:active) {
   
   .root-2sNHUF .empty-2dxE7O {
     padding-top: 0;
-    background-color: var(--channellistcolor);
+    background-color: var(--headercolor);
     position: relative;
     overflow: hidden;
   }
@@ -4363,7 +4370,7 @@ body:active .menu-3BZuDT:not(:active) {
     margin: 0;
     font-size: 16px;
     line-height: 16px;
-    color: var(--headercolor);
+    color: #ffffff;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -4416,13 +4423,17 @@ body:active .menu-3BZuDT:not(:active) {
 
 
 .activity-3NviKQ {
-    background-color: #2b2b2b
+    background-color: var(--titlebar)
 }
 
 .mask-2vyqAW {
     -webkit-mask: none!important;
     -webkit-mask-size: 0!important;
     border-radius: var(--avatars)
+}
+
+.guild.folder .badge.folder.count{
+    background: var(--accentcolor);
 }
 
 #autocomplete-popout {
@@ -7471,11 +7482,59 @@ margin-top:3px;
     background-color: #595959;
     color: var(--accentcolor)
 }
-
-.bot-tag {
-    background: var(--accentcolor);
-    border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
-}
+/*-------------------*/
+.notice .platform-icon {
+    margin-right: 5px;
+    margin-top: 0;
+    transform: scale(0.75);
+  }
+  
+  .message-group h2 span {
+    color: #747475 !important;
+  }
+  
+  .reset-folylf {
+    transition: opacity 0.2s;
+  }
+  
+  .reset-folylf:hover {
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  
+  .botTag-1OwMgs, .botTagRegular-288-ZL, .botTagInvert-gorWR_,
+  .bot-tag, .bd-blue .bot-tag, .channel-members .bot-tag, .message-group .bot-tag {
+    background-color: transparent !important;
+    background: url("https://www.twitchcord.com/twitchcord-theme/images/moderator.png");
+    background-repeat: no-repeat;
+    font-size: 1px;
+    margin-left: 0;
+    margin-right: 7px;
+    padding: 0;
+    border-radius: 0;
+    color: transparent !important;
+    width: 18px;
+    line-height: 18px !important;
+    cursor: default;
+    pointer-events: none;
+    height: 18px !important;
+    float: left;
+  }
+  
+  .channel-members .bot-tag, .bd-blue .bot-tag, .message-group .bot-tag {
+    margin-left: 0;
+  }
+  
+  .botTag-1OwMgs {
+    top: -0px;
+    position: relative;
+  }
+  
+  .header-3mZJcV .headerBotTag-1I8GCn {
+    float: left;
+    margin-left: 0;
+    padding-right: 0;
+  }
 
 .buttonOutlined-38aLSW {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
