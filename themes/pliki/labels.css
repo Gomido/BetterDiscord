@@ -6,7 +6,7 @@
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before, /*orshik*/
 .avatar-large[style*="369188986775666689"]+.comment .timestamp::before, /*ami*/
 .avatar-large[style*="185347449991200769"]+.comment .timestamp::before, /*emel*/
-.avatar-large[style*="141944217474826240"]+.comment .timestamp::before, /*boxidro*/
+.avatar-large[style*="141944217474826240"]+.comment .timestamp::before /*boxidro*/
 {
     text-transform: uppercase;
     border: 1px solid #ffffff;
