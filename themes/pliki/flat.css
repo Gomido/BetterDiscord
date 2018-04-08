@@ -5781,7 +5781,7 @@ body:active .menu-3BZuDT:not(:active) {
 /*przypiete wiadomosci*/
 
 
-.theme-dark .themed-popout {
+.theme-dark .popout .messages-popout-wrap {
     background-color: var(--headercolor) !important;
     border-left: 2px solid var(--accentcolor);
 	border-right: 2px solid var(--accentcolor);
