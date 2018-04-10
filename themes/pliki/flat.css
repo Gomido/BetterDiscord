@@ -4435,7 +4435,10 @@ body:active .menu-3BZuDT:not(:active) {
 .guild.folder .badge.folder.count{
     background: var(--accentcolor);
 }
-
+.lookFilled-luDKDo.colorGreen-22At8E:hover {
+    color:#FFFFFF;
+    background: var(--accentcolor);
+} 
 #autocomplete-popout {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
