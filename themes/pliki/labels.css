@@ -5,7 +5,6 @@
 .avatar-large[style*="302182935698735104"]+.comment .timestamp::before, /*orshik*/
 .avatar-large[style*="369188986775666689"]+.comment .timestamp::before, /*ami*/
 .avatar-large[style*="185347449991200769"]+.comment .timestamp::before, /*emel*/
-/*.avatar-large[style*="186609657928744962"]+.comment .timestamp::before, lolek*/
 .avatar-large[style*="141944217474826240"]+.comment .timestamp::before /*boxidro*/
 {
     text-transform: uppercase;
@@ -102,7 +101,7 @@
 
 
 /*Boxidro*/
-.avatar-large[style*="141944217474826240"]+.comment .timestamp::before, {
+.avatar-large[style*="141944217474826240"]+.comment .timestamp::before {
     content: 'BOXI';
     border-color: #4E018A;
     background: #7C01DB;
