@@ -1,4 +1,3 @@
-
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -124,7 +123,7 @@
   div[class*="switchDisabled"][class*=valueUnchecked],
   #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch,
   #bd-settingspane-container .ui-switch-wrapper .ui-switch {
-    background: linear-gradient(to right, #312e36, #37343d);
+
   }
   
   div[class*="switchEnabled"]::after,
@@ -2471,7 +2470,6 @@ html[lang="ko"] .uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3{
 .guilds-wrapper, 
 .channels-wrap .flexChild-1KGW5q, 
 .container-iksrDt, 
-.container-3lnMWU, 
 #friends .friends-header, 
 .chat .title-wrap, 
 .popout.popout-bottom-right.no-arrow.no-shadow,
@@ -2633,6 +2631,11 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 	top: 1px;
 	background: var(--headercolor);
 	z-index: 100 !important;
+}
+
+.container-3lnMWU {
+    border-bottom: 0px solid #36393f;
+    background-color: var(--headercolor)
 }
 
 
@@ -3621,6 +3624,16 @@ body:active .menu-3BZuDT:not(:active) {
     background-color: #4e4e4e
 }
 
+.create-guild-container.deprecated .action.create .action-icon {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQsNEgyMEExLDEgMCAwLDEgMjEsNVY5QTEsMSAwIDAsMSAyMCwxMEg0QTEsMSAwIDAsMSAzLDlWNUExLDEgMCAwLDEgNCw0TTksOEgxMFY2SDlWOE01LDZWOEg3VjZINU04LDE2SDExVjEzSDEzVjE2SDE2VjE4SDEzVjIxSDExVjE4SDhWMTZaIiAvPjwvc3ZnPg==) 50% no-repeat;
+    background-size: 33%;
+}
+
+.create-guild-container.deprecated .action.join .action-icon {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTE5ODcgMTk4OSAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMTk4NyAxOTg5IDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTE5NjcsMTk5M2gtMTZjLTAuNiwwLTEsMC40LTEsMXY0YzAsMC42LDAuNCwxLDEsMWgxNmMwLjYsMCwxLTAuNCwxLTF2LTRDLTE5NjYsMTk5My40LTE5NjYuNCwxOTkzLTE5NjcsMTk5M3ogTS0xOTgwLDE5OTdoLTJ2LTJoMlYxOTk3eiBNLTE5NzcsMTk5N2gtMXYtMmgxVjE5OTd6Ii8+PHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSItMTk3Mi40LDIwMDQuNiAtMTk3NC45LDIwMDIuMSAtMTk3Ni4zLDIwMDMuNSAtMTk3NC44LDIwMDUgLTE5NzksMjAwNSAtMTk3OSwyMDA3IC0xOTc0LjgsMjAwNyAtMTk3Ni4zLDIwMDguNSAtMTk3NC45LDIwMDkuOSAtMTk3Mi40LDIwMDcuNCAtMTk3MSwyMDA2ICIvPjwvc3ZnPg==) 50% no-repeat;
+    background-size: 33%;
+}
+
 .aka-2Ba14Z {
     background: var(--accentcolor);
     color: var(--textcolor);
@@ -4433,7 +4446,7 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .guild.folder .badge.folder.count{
-    background: var(--accentcolor);
+    background: var(--accentcolor) !important;
 }
 .lookFilled-luDKDo.colorGreen-22At8E:hover {
     color:#FFFFFF;
@@ -5163,10 +5176,7 @@ body:active .menu-3BZuDT:not(:active) {
     width: 240px
 }
 
-.container-3lnMWU {
-    border-bottom: 0 solid #36393f;
-    background-color: var(--titlebar)
-}
+
 
 .popout header {
     background-color: #191919;
@@ -5839,6 +5849,9 @@ body:active .menu-3BZuDT:not(:active) {
     background-color: var(--titlebar);
 }
 
+.feed-jRZy6x{
+    background: var(--chatbackground);    
+}
 
 .activityFeed-HeiGwL {
     background: var(--accentcolor) !important; 
@@ -6678,11 +6691,10 @@ body:active .menu-3BZuDT:not(:active) {
 .itemBrand-mC9YR4 {
     color: var(--accentcolor)
 }
-
-.itemBrandSelected-3LxxzT {
-    background-color: var(--accentcolor);
-    color: #fff
+.itemBrandSelected-3LxxzT .item-3879bf .selected-eNoxEK{
+    background: var(--accentcolor)
 }
+
 
 .cardPrimaryEditable-2IQ7-V[style*="background-color: rgb(114, 137, 218);"] {
     background-color: var(--accentcolor)!important
@@ -8127,7 +8139,7 @@ margin-top:3px;
 .theme-dark .contextMenu-uoJTbz {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     animation: context-menu 200ms ease;
-    background: #252525;
+    background: var(--headercolor);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5)
 }
 
@@ -8588,6 +8600,7 @@ top:20px;
 }
 
 .ui-switch-wrapper input {
+    background: var(--accentcolor);
     position: absolute;
     opacity: 0;
     cursor: pointer;
