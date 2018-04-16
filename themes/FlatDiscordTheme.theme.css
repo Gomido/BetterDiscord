@@ -15,17 +15,18 @@
     --channellistcolor: #252525;
     --guildlistcolor: #2c2c2c;
     --headercolor: #161616;
-    --accentcolor: #0289f7;
-    --hovercolor: #eeeeee;
+    --accentcolor: #037699; /*#44D62C*/
+    --hovercolor: #eeeeee; 
+    --textcolor:#ffffff; /* kolor czcionek na niektorych elementach.*/
     --rs-spacing: 2px; /* osdtep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
     --rs-popout-spacing: 3px; /* odleglosc miedzy statusem a nickiem */
     --rs-popout-width: 4px; /* odleglosc mniedzy popoutami */
     --rs-profile-spacing: 3px; /* odstep miedzy ludkami gdzies tam, chuj wie gdzie */
     --rs-profile-width: 4px; /* widocznosc profli */
-    --rs-online-color: #5eb543; /* online */
+    --rs-online-color: #1fcf45; /* online */
     --rs-idle-color: #faa61a; /* zajety */
-    --rs-dnd-color: #f04747; /* dnd */
+    --rs-dnd-color: #f71e1e; /* dnd */
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
