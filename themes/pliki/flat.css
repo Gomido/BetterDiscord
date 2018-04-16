@@ -1,3 +1,4 @@
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -8,9 +9,9 @@
     --channellistcolor: #252525;
     --guildlistcolor: #2c2c2c;
     --headercolor: #161616;
-    --accentcolor: #0289f7; /*44D62C*/
+    --accentcolor: #037699; /*#44D62C*/
     --hovercolor: #eeeeee; 
-    --textcolor:#FFFFFF; /* kolor czcionek na niektorych elementach.*/
+    --textcolor:#ffffff; /* kolor czcionek na niektorych elementach.*/
     --rs-spacing: 2px; /* osdtep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
     --rs-popout-spacing: 3px; /* odleglosc miedzy statusem a nickiem */
@@ -53,6 +54,22 @@
     --black9:rgba(0,0,0,.9);/*var(--black9)*/
     --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
+/*TENCZA*/
+
+
+[style*="avatars/186609657928744962"].avatar-large+.comment h2 strong {
+    animation: rainbow3 0.1s linear infinite;
+}
+@keyframes rainbow3 {
+    0%{text-shadow: 0 0 6px #ff0000, 0 0 6px #ff0000, 0 0 5px #ff0000, 0 0 4px #ff0000;} 
+    20%{text-shadow: 0 0 6px orange, 0 0 6px orange, 0 0 5px orange, 0 0 4px orange;} 
+    40%{text-shadow: 0 0 6px yellow, 0 0 6px yellow, 0 0 5px yellow, 0 0 4px yellow;} 
+    60%{text-shadow: 0 0 6px #00ff00, 0 0 6px #00ff00, 0 0 5px #00ff00, 0 0 4px #00ff00;} 
+    80%{text-shadow: 0 0 6px #0000ff, 0 0 6px #0000ff, 0 0 5px #0000ff, 0 0 4px #0000ff;} 
+    90%{text-shadow: 0 0 6px #ff0000, 0 0 6px #ff0000, 0 0 5px #ff0000, 0 0 4px #ff0000;}
+
+}
+
 
 ::-moz-selection {
     color: #fff;
@@ -426,26 +443,44 @@
 }
 
 
+.theme-dark .searchPopout-38pRYh { border-radius: 0; background-color: #282b30; top: 6px; }
+.theme-dark .searchPopout-38pRYh .results-group:first-of-type { border-top: none; }
+.theme-dark .searchPopout-38pRYh .results-group .header { color: #cacbce; padding: 0 10px 0; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1 { border-radius: 0; height: 32px; padding: 0; }
+.theme-dark .searchPopout-38pRYh .search-option .filter { color: #79868e; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1 .filter { color: #99aab5; }
+.theme-dark .searchPopout-38pRYh .search-option .answer { color: #99aab5; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1 .answer { color: #79868e; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1.selected { background-color: #42474f; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1.selected:after { background: none; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1:after { background: none; }
+.theme-dark .searchPopout-38pRYh .results-group .search-learn-more { top: 4px; }
+.theme-dark .searchPopout-38pRYh .results-group .search-clear-history { top: 4px; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1.selected:before { background: 0px; }
+.theme-dark .searchPopout-38pRYh .option-1MvVr1 strong { color: #99aab5; }
+
 
 /* 16. Channel Search Pop out */
 
-.search-popout {
-	background-color: var(--headercolor) !important;
+.theme-dark .searchPopout-38pRYh {
+    background-color: var(--headercolor) !important;
+    margin-top: -18px !important;
+    border-radius: 0px !important;
+    border-left: 2px solid var(--accentcolor) !important;
+    border-right: 2px solid var(--accentcolor) !important;
+    border-bottom: 2px solid var(--accentcolor) !important;
+    border-top: 0px solid transparent !important;
 }
-.search-popout .option {
+.theme-dark .searchPopout-38pRYh .option-1MvVr1 {
     border-left: 2px solid transparent;
     border-radius: 0px;
 }
-.search-popout .option:after {
-	display: none;
-}
-.search-popout .option.selected {
-    background-color: var(--headercolor) !important;
-	border-left: 2px solid var(--accentcolor) !important;
-}
-.search-popout .option.selected:active {
-    background-color: var(--guildlistcolor) !important;
-	border-left: 2px solid var(--accentcolor) !important;
+
+
+.theme-dark .searchPopout-38pRYh .option-1MvVr1.selected-_bTXUG {
+    background-color: var(--titlebar) !important;
+   /* border-left: 2px solid var(--accentcolor) !important;*/
+    
 }
 .search-popout .search-option .filter, .search-popout .option .filter {
     color: var(--accentcolor);
@@ -459,6 +494,9 @@
     border-bottom: 2px solid var(--accentcolor) !important;
     border-top: 0px solid transparent !important;
 }
+
+
+
 .searchAnswer-yD90ey, .searchFilter-1fJ0cd {
     background-color: var(--chatbackground) !important;
 }
@@ -522,20 +560,31 @@
 
 .contextMenu-uoJTbz {
     background: var(--guildlistcolor) !important;
+    border: 1px solid var(--titlebar) !important;
     border-radius: 2px;
     padding: 0px 0px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.4)!important;
     animation: opacity 100ms ease, context-open-new 300ms cubic-bezier(0,0,0,1);
     transform-origin: top;
     padding-top: 15px;
+    z-index: 99999999;
     padding-bottom: 15px;
-    border: 1px solid var(--guildlistcolor) !important;
 }
-
+.contextMenu-uoJTbz {
+    background: var(--headercolor) !important;
+    border: 1px solid var(--titlebar) !important;
+    border-radius: 2px;
+    padding: 10px 0px;
+    padding: 0;
+    margin: 0px 10px;
+    z-index: 99999999;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.6) !important;
+  }
 .theme-dark.contextMenu-uoJTbz .contextMenu-uoJTbz{
     transform-origin: 0 0!important;
-}
-
+}.contextMenu-uoJTbz .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-track-piece {
+    background: var(--titlebar) !important;
+  }
 .contextMenu-uoJTbz.invertY, .contextMenu-uoJTbz.undefined {
     animation: opacity 50ms linear, context-open-new 150ms cubic-bezier(.2,0,0,1);
     transform-origin: bottom!important;
@@ -2464,7 +2513,6 @@ html[lang="ko"] .uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3{
 }
 
 
-
 /*cienie*/
 .channel-members-wrap, 
 .guilds-wrapper, 
@@ -2654,10 +2702,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 
 /* 23. User Popup */
 
-.rolesList-2RhjNd {
-	overflow: hidden;
-    overflow-y: auto;
-}
+
 .bodyTitle-18hsd9, .member-perms-header {
     color: #d1d1d3;
 }
@@ -2690,76 +2735,123 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 .headerPlaying-2Q7mBy {
     background: var(--guildlistcolor);
 }
+/* ======================================== */
+.contentNoImagesUserPopout-1G2YsO {
+  padding: 15px;
+}
+
+.headerStreaming-3F-wjT .contentNoImagesUserPopout-1G2YsO {
+  padding: 5px 10px;
+}
+
+.contentNoImagesUserPopout-1G2YsO:empty {
+  display: none;
+}
+
 .role-3rahR_ {
-    border-width: 1px!important;
-    border-style: solid!important;
-    border-radius: 2px!important;
-    box-sizing: content-box!important;
-    height: 16px!important;
-    margin: 3px!important;
-    padding: 2px!important;
-    display: block!important;
-    position: relative;
-    line-height: 16px;
-    font-size: 10px!important;
-    font-weight: 400!important;
-    text-transform: uppercase;
-    overflow: hidden;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 2px !important;
+  box-sizing: content-box !important;
+  height: 16px !important;
+  margin: 3px !important;
+  padding: 2px !important;
+  display: block !important;
+  position: relative;
+  line-height: 16px;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: border-color 0.2s;
 }
 
 .role-3rahR_::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    border-width: 10px;
-    border-style: solid;
-    border-color: inherit;
-    box-sizing: border-box;
-    opacity: 0.5;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: inherit;
+  box-sizing: border-box;
+  opacity: 0.3;
 }
 
 .roleName-DUQZ9m {
-    margin: 0 4px;
+  margin: 0 4px;
+  color: #fff;
+}
+
+.role-3rahR_.addButton-3RuTE0 {
+  border: none !important;
+  background: none !important;
+  line-height: 24px !important;
+  width: 16px !important;
+}
+
+.role-3rahR_.addButton-3RuTE0:hover {
+  color: var(--accentcolor) !important;
+}
+
+.role-3rahR_.addButton-3RuTE0::before {
+  display: none !important;
+}
+
+.role-3rahR_.addButton-3RuTE0 .addButtonIcon-3GVNfn {
+  height: 10px;
+  width: 10px;
 }
 
 .roleCircleButton-sMOdib {
-    padding: 0;
-    position: absolute;
-    z-index: 2;
-    height: 22px;
-    top: -1px;
-    left: -1px;
-    border-radius: 2px 0 0 2px;
-    width: 22px;
-    display: flex!important;
-    transition: transform 0.2s;
-    transform: translateX(-30px);
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  height: 22px;
+  top: -1px;
+  left: 0;
+  border-radius: 2px 0 0 2px;
+  width: 100%;
+  opacity: 0;
+  display: flex !important;
+  background: var(--accentcolor) !important;
+  transition: opacity 0.2s;
 }
 
-.roleCircle-3-vPZq { display: none; }
+.roleCircle-3-vPZq {
+  display: none;
+}
 
 .addButton-3RuTE0 {
-    line-height: 10px;
-    width: 22px;
-    box-sizing: border-box;
-    height: 22px;
+  line-height: 10px;
+  width: 22px;
+  box-sizing: border-box;
+  height: 22px;
 }
 
 .roleRemoveIcon-2iu0iE {
-    display: block;
+  display: block;
+}
+
+.roleRemoveIcon-2iu0iE .fill {
+  fill: var(--textcolor);
+}
+
+.role-3rahR_:hover {
+  border-color: var(--accentcolor) !important;
+  transition: border-color 0.2s;
 }
 
 .role-3rahR_:hover .roleCircleButton-sMOdib {
-    transition: transform 0.2s;
-    transform: translateX(0);
+  transition: opacity 0.2s;
+  opacity: 0.9;
 }
 
 .addButtonIcon-3GVNfn {
-    height: 7px;
-    width: 7px;
+  height: 7px;
+  width: 7px;
 }
 
 /*	AUDIO AND VIDEO CHAT/SCREENSHARING */
@@ -3115,6 +3207,7 @@ body:active .menu-3BZuDT:not(:active) {
     border-color: rgba(0, 0, 0, .5)
 }
 
+
 .messages-popout .message-group .avatar-large {
     margin: 0 20px 0 0;
     border-radius: var(--avatars)
@@ -3135,7 +3228,7 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button {
-    background-color: #4c4c4c;
+    background-color: transparent;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     color: #fff
 }
@@ -3149,7 +3242,7 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .search-results-wrap .action-buttons .jump-button {
-    background-color: #4c4c4c;
+    background-color: transparent;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     color: #fff
 }
@@ -3226,7 +3319,7 @@ body:active .menu-3BZuDT:not(:active) {
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after,
 .guilds-wrapper .guilds .guild.video .guild-inner:after {
-    border-radius: var(--avatars)
+    border-radius: var(--avatars)z
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
@@ -4016,7 +4109,7 @@ body:active .menu-3BZuDT:not(:active) {
     z-index: 2;
     position: relative;
     background-color: var(--chatbackground);
-    background-image: url("http://wallpaper-gallery.net/images/black-abstract-wallpaper-hd/black-abstract-wallpaper-hd-17.jpg");
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-143966.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4705,15 +4798,15 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .search-results-wrap .search-result::before {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #131313)
+    background-image: linear-gradient(0deg, transparent, transparent)
 }
 
 .theme-dark .search-results-wrap .search-result::after {
-    background-image: linear-gradient(180deg, transparent 0, #131313 100%)
+    background-image: linear-gradient(180deg, transparent 0, transparent 100%)
 }
 
 .theme-dark .search-results-wrap .search-result .hit {
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .3)
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3)
 }
 
 .theme-dark .search-results-wrap .search-result .search-result-message.hit,
@@ -4728,11 +4821,11 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .search-results-wrap .search-result .hit {
-    background: #353535
+    background: var(--chatbackground);
 }
 
 .theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
-    background: #353535
+    background: var(--chatbackground);
 }
 
 .search-results-wrap .search-result .search-result-message .message-group {
@@ -6052,7 +6145,7 @@ body:active .menu-3BZuDT:not(:active) {
     margin-right: 0px
 }
 
-
+/*
 .reaction {
     border-radius: 0;
     border: 1px solid transparent!important;
@@ -6087,6 +6180,127 @@ body:active .menu-3BZuDT:not(:active) {
 .theme-dark .reaction:hover {
     background: #181818;
     border: 1px solid var(--accentcolor)!important;
+}
+*/
+
+
+.message-group .reaction {
+  background: none;
+  position: relative;
+}
+
+.message-group .reaction, .message-group .reaction .emoji {
+  border-radius: 50%;
+  border: none;
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  background: var(--headercolor);
+  margin-bottom: 20px !important;
+}
+
+.message-group .reaction .emoji {
+  margin: 2px !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: none;
+  background: var(--channe);
+}
+
+.message-group .reaction.reaction-me {
+  background: rgba(20, 184, 102, 0.15);
+}
+
+.message-group .reaction.reaction-me .emoji {
+  background-color: rgba(20, 184, 102, 0.15) !important;
+}
+
+.message-group .reaction {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-right: 4px;
+  transform: none !important;
+}
+
+.message-group .reaction .reaction-count {
+  position: absolute !important;
+  color: #fff !important;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  width: 36px;
+  font-size: 11px;
+  letter-spacing: 0;
+  top: 34px;
+  margin: 0 auto;
+  z-index: 5;
+  text-align: center;
+  display: block;
+  min-width: 32px !important;
+  transition: opacity 0.2s;
+}
+
+.message-group:hover .reactions .reaction-count {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.message-group:hover .reactions .reaction-me .reaction-count {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.message-group .reactions .btn-reaction {
+  visibility: visible;
+  opacity: 0.4 !important;
+  width: 24px;
+  height: 24px;
+  margin-top: -16px;
+  background: url("https://i.imgur.com/LjpaBqp.png") 50% no-repeat;
+}
+
+.message-group .reaction::before, .message-group .reaction::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.message-group .reaction.reaction-me::after {
+  opacity: 1;
+}
+
+.message-group .reaction.reaction-me::before {
+  -webkit-box-shadow: inset 0 0 7px #14b866;
+  box-shadow: inset 0 0 7px #14b866;
+  top: 1px;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: 0.6s 1 pulseReact cubic-bezier(0.075, 0.82, 0.165, 1), 0.6s 1 fadeOut;
+  animation: 0.6s 1 pulseReact cubic-bezier(0.075, 0.82, 0.165, 1), 0.6s 1 fadeOut;
+}
+
+.message-group .reaction.reaction-me::after {
+  top: 1px;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 0 0 0 2px #14b866;
+  box-shadow: 0 0 0 2px #14b866;
+}
+
+@keyframes pulseReact {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
 }
 
 .theme-dark .message-group .comment .markup pre {
@@ -6386,7 +6600,7 @@ body:active .menu-3BZuDT:not(:active) {
 }
 
 .theme-dark .chat .jump-to-present-bar {
-    background-color: rgba(33, 33, 33, .9);
+    background-color: var(--headercolor);
     transition: background-color .3s ease-in-out;
     border-radius: 0
 }
@@ -7523,8 +7737,8 @@ margin-top:3px;
     background: url("https://www.twitchcord.com/twitchcord-theme/images/moderator.png");
     background-repeat: no-repeat;
     font-size: 1px;
-    margin-left: 0;
-    margin-right: 7px;
+    margin-left: 5x;
+    margin-right: 5px;
     padding: 0;
     border-radius: 0;
     color: transparent !important;
@@ -8189,54 +8403,47 @@ margin-top:3px;
     background: #1f1f1f!important;
     color: #fff
 }
+---------------------------
+| Plugin: PermissionsViewer by Zerebos
+---------------------------
+*/
+.member-perms {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
 
-.member-perms .member-perm {
-    background-color: #131313!important;
-    border: 1px solid #000!important;
-    border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important;
-    color: #b9b9b9!important
+.perm-details {
+  top: 10px;
+  position: relative;
+}
+
+.userPopout-4pfA0d .body-3rkFrF .member-perms-header::before {
+  background: url("https://www.twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
+  height: 11px;
+  top: 11px;
+}
+
+#permissions-modal-wrapper .modal-wrapper {
+  z-index: 10000 !important;
 }
 
 #permissions-modal-wrapper #permissions-modal {
-    border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important
-}
-
-#permissions-modal-wrapper .header {
-    background-color: #252525!important
-}
-
-#permissions-modal-wrapper .role-side {
-    background: #2b2b2b!important
+  border-radius: 0 !important;
+  background: var(--guildlistcolor) !important;
+  border: 1px solid var(--titlebar) !important;
+  width: 466px !important;
 }
 
 #permissions-modal-wrapper .perm-side {
-    background-color: #272727!important
+  width: 275px !important;
+  background-color: #36393f;
 }
 
-#permissions-modal-wrapper .perm-item {
-    box-shadow: none!important
+#permissions-modal-wrapper .role-side {
+  width: 175px !important;
 }
 
-#permissions-modal-wrapper .role-item {
-    background-color: rgba(51, 51, 51, 1)!important;
-    border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))!important;
-    padding: 6px!important;
-    margin-bottom: 5px!important;
-    cursor: pointer!important;
-    color: #dcddde!important;
-    box-shadow: inset 0 -1px 3px rgba(0, 0, 0, .3)!important;
-    transition: background-color .3s ease-in-out!important
-}
-
-#permissions-modal-wrapper .role-item:hover {
-    background-color: rgba(71, 71, 71, .6)!important;
-    transition: background-color .3s ease-in-out!important
-}
-
-#permissions-modal-wrapper .role-item.selected {
-    background-color: rgba(48, 48, 48, 1)!important;
-    transition: background-color .3s ease-in-out!important
-}
+/* ======================================== */
 
 .citar-btn {
     opacity: .8;
