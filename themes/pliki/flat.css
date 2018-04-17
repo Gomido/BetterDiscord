@@ -7644,14 +7644,14 @@ margin-top:3px;
 }
 
 .lookFilled-luDKDo.colorBrand-3PmwCE {
-    background-color: #4c4c4c;
+    background-color: var(--guildlistcolor);
     color: #fff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
-    box-shadow: 0 2px 1px rgba(0, 0, 0, .3)
+   /* box-shadow: 0 2px 1px rgba(0, 0, 0, .3)*/
 }
 
 .lookFilled-luDKDo.colorBrand-3PmwCE:hover {
-    background-color: #5a5a5a
+    background-color: var(--channellistcolor)
 }
 
 .upload-modal .footer .button-primary {
