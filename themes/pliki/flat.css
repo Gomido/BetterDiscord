@@ -23,7 +23,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.6.0";
+    --version: "Flat Discord Theme v1.2.6.1";
 
     /*BIALE*/
 
@@ -3805,7 +3805,9 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 }
 
 
-
+#friends .friends-table .friends-row .friends-column-guilds .avatar-small{
+    background:transparent;
+}
 
 
 .theme-dark #friends .tab-bar .tab-bar-item.selected {
