@@ -1,3 +1,5 @@
+
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -652,18 +654,11 @@
 /*pasek z serwerami*/
 
 .guilds-wrapper .guilds>div.guild:first-child {
-    margin-top: -48px;
+    margin-top: -10px;
     width: 70px;
     margin-left: -10px;
 	border-bottom: 2px solid var(--accentcolor);
-    position: fixed;
     z-index: 2;
-    
-    
-}
-.guilds-wrapper .guilds>div.guild:first-child .guild-inner a{
-    height: 50px;
-    
 }
 .guilds-wrapper .guilds>div.guild:first-child {
     height: 50px;
@@ -677,9 +672,6 @@
 }
 .friends-icon {
     background-image: url(https://cdn.rawgit.com/0mniscient/Discord-Themes/59c36317/Themes/chatIcon.svg)!important;
-}
-.guilds-wrapper .guilds {
-    padding: 48px 0px 70px 10px !important;
 }
 /* 10. Avatars */
 
@@ -1037,10 +1029,12 @@
 	font-weight: 500;
 	text-align:center;
 	border-radius:3px;
-	margin-left:15px;}
+    margin-left:15px;
+}
 
 .channel-members h2:first-of-type{
-	margin-top:0px !important;
+    margin-top:0px !important;
+    
 }
 
 .channels-3g2vYe button.button-1aU9q1 {
@@ -1061,7 +1055,8 @@
 
 
 .theme-dark .member-2FrNV0:hover .content-3JzEqq {
-	background: var(--chatbackground) !important;
+    background: var(--chatbackground) !important;
+    border-radius: 0px !important;
 	border-left: 3px solid var(--hovercolor);
 }
 
@@ -1851,6 +1846,10 @@ width:18px;
 height: 18px;
 }
 
+.guilds-wrapper.folderopen {
+    margin-top: -8px;
+    width: 70px;
+}
 
 .serverfolders-modal .form-header, .serverfolders-modal .form-actions{
 background:#141414!important;
@@ -1914,12 +1913,7 @@ a[href="/channels/@me"] .badge {
     animation: mention-flash 1.5s linear infinite;
     background: var(--accentcolor);
 }
-.container-iksrDt{
-height:48px;
-background-color: var(--titlebar)
 
-
-}
 /*File upload and icons*/
 .attachmentInner-3e5fpm .progress-32_u4R {
     background: var(--lvl1);
@@ -2593,14 +2587,28 @@ html[lang="ko"] .uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3{
     padding-bottom: 8px;
 }
 .headerNormal-3Vn9nT {
-    background-color: var(--guildlistcolor) !important;
+    background-color: var(--guildlistcolor) !important ;
+    border-top: 1px solid var(--accentcolor);
+    border-left: 1px solid var(--accentcolor);
+    border-right: 1px solid var(--accentcolor);
 }
 .body-3ljq11, .footer-2wFs91 {
-	background-color: var(--headercolor) !important;
+    background-color: var(--headercolor) !important;
+    border-left: 1px solid var(--accentcolor);
+    border-right: 1px solid var(--accentcolor);
 }
 .footer-2wFs91 {
-	border-top: 2px solid var(--accentcolor)!important;
+    border-bottom: 1px solid var(--accentcolor)!important;
+    border-left: 1px solid var(--accentcolor)!important;
+    border-right: 1px solid var(--accentcolor)!important;
+    border-top: 1px solid var(--accentcolor)!important;
 }
+
+
+.theme-dark .note-2AtC_s textarea:focus {
+    background-color: var(--titlebar);
+}
+
 .quickMessage-OCo-Q0 {
 	background-color: var(--guildlistcolor) !important;
 	border-color: var(--guildlistcolor) !important;
@@ -2916,7 +2924,6 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .alt-2vq4VR .item-rK1j5B:nth-of-type(1) .status{
     background-color: var(--rs-online-color);
-
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -3678,10 +3685,12 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 .iconDefault-xzclSQ,
 .nameCollapsed-3_ChMu,
 .nameDefault-Lnjrwm {
-    color: #797979!important;
+    color: #b3b3b3!important;
 }
 
-
+.checkboxMute-2C_Srg:before{
+    background: transparent !important;
+}
 
 .contentMutedText-Lcl-Wj {
     transition: all .2s ease-in-out
@@ -3689,7 +3698,11 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .nameMutedText-1YDcP-,
 .nameMutedVoice-26k4cP {
-    color: #2b2b2b
+    color: #3d3d3d
+}
+
+.iconMuted-Hb4ttQ, .nameMuted-1n0LSj {
+    color: #3d3d3d;
 }
 
 .contentUnreadText-3oxASB {
@@ -4290,11 +4303,11 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
   }
   
   
-  .bd-blue .root-2sNHUF .tab-bar .tab-bar-item:hover,
-  .root-2sNHUF .tab-bar .tab-bar-item:hover {
-    border-color: 3px solid #FFFFFF;
-    color: var(--accentcolor);
-  }
+  .tab-bar.TOP .tab-bar-item:hover {
+    border-bottom: 2px solid #FFF;
+    color: #FFFFFF;
+}
+
   
   .root-2sNHUF .header-2Lg0Oe {
     opacity: 1;
@@ -4711,11 +4724,26 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
   .userPopout-11hFKo {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
+    border: 2px solid var(--accentcolor) !important;
+}
+
+.headerSpotify-26yUf5 {
+    background: var(--guildlistcolor);
+    border-top: 1px solid var(--accentcolor);
+    border-left: 1px solid var(--accentcolor);
+    border-right: 1px solid var(--accentcolor);
+}
+
+.headerPlaying-2Q7mBy{
+    border-top: 1px solid var(--accentcolor);
+    border-left: 1px solid var(--accentcolor);
+    border-right: 1px solid var(--accentcolor);
 }
 
 
 .activity-3NviKQ {
-    background-color: var(--titlebar)
+    background-color: var(--titlebar);
+
 }
 
 .mask-2vyqAW {
@@ -6226,7 +6254,6 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
     border-radius: 3px;
     font-size: 15px;
     pointer-events: none;
-    color: var(--white10);
     transition: opacity 100ms ease;
     padding:0;
 }
@@ -6260,7 +6287,8 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 }
 
 .container-iksrDt {
-	position: relative;
+    position: relative;
+    height:48px;
 	top: 1px;
 	background: var(--headercolor);
 	z-index: 100 !important;
@@ -7189,13 +7217,13 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 .theme-dark .cardPrimaryOutline-2YyAz2 {
     border: none;
     border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
-    background-color: rgba(0, 0, 0, .3);
+    background-color: var(--titlebar);
     transition: all .2s ease-in-out
 }
 
 .theme-dark .cardPrimaryOutline-2YyAz2:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    background:var(--headercolor)
 }
 
 .theme-dark .user-settings-keybinds .keybind-group {
@@ -8803,7 +8831,7 @@ color:#fff;
   }
   
   .tooltip.tooltip-bottom {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   .tooltip.tooltip-right,
@@ -8897,8 +8925,8 @@ color:#fff;
     background: #1f1f1f!important;
     color: #fff
 }
----------------------------
-| Plugin: PermissionsViewer by Zerebos
+/*---------------------------
+/*Plugin: PermissionsViewer by Zerebos
 ---------------------------
 */
 .member-perms {
