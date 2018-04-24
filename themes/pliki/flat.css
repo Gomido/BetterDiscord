@@ -405,8 +405,6 @@
   }
 /*=========================================*/
 
-
-
 /*wieksze okno emotek */
 .emojiPicker-3g68GS .scroller-fzNley {
     height: 500px;
@@ -1829,7 +1827,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 /*DirectDownload plugin*/
 body #files_directDownload{
 left:70px;
-bottom:48px;
+bottom:70px;
 width:240px;
 height:calc(100% - 56px - 70px);
 pointer-events: none;
@@ -6114,11 +6112,11 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
   margin-top: 0;
   margin-bottom: 0;
   padding: 26px 0px;
-  font-size: 0.875rem;
+  /*font-size: 0.875rem;*/
   line-height: 1.125rem;
   overflow:hidden;
   letter-spacing: normal;
-  min-height:1px;
+  min-height:0px;
   transition: all 200ms ease;
   padding-right: 80px;
   opacity: 0.6;
@@ -8651,10 +8649,13 @@ color:#fff;
 }
 
 .theme-dark .attachment-1Vom9D {
-    background-color: var(--channellistcolor);
-    border-color: var(--accentcolor)
+    background-color: var(--titlebar);
+    border-color: var(--accentcolor);
+    border-radius: 0px;
 }
-
+.attachment-1Vom9D .progressContainer-2UlXr2 .progress-33epXr .progress-32_u4R {
+    background-color: var(--accentcolor) !important;
+}
 .metadata-2t2-gW {
     color: #cecece
 }
