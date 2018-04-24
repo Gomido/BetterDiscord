@@ -2223,10 +2223,10 @@ a[href="/channels/@me"] .badge {
 
 /* Facebook */
 .connectedAccountIcon-2nYV8J[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] {
-    content: url(/assets/c926e69c482dac25b8e940db74496813.png);
+    content: url(https://discordapp.com/assets/c926e69c482dac25b8e940db74496813.png);
 }
 .accountBtnInner-3zsU2z[style='background-image: url("/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png");'] {
-    background-image: url(/assets/c926e69c482dac25b8e940db74496813.png)!important;
+    background-image: url(https://discordapp.com/assets/c926e69c482dac25b8e940db74496813.png)!important;
 }
 /*/Connected Accounts*/
 
@@ -6121,13 +6121,13 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
   min-height:1px;
   transition: all 200ms ease;
   padding-right: 80px;
-  opacity: 0.64;
+  opacity: 0.6;
   background: var(--headercolor)!important;
   margin:0;
   color: rgba(255,255,255,.7);
 }
 .theme-dark .attachButtonDivider-3tknGJ{
-    display: none;
+display: none;
 }
 
 .attachButton-Di6YUh{
@@ -6136,15 +6136,17 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     top:0;
     left:0;
     height:100%;
-    width:100%;
+    width:20px;
     padding:0;
     opacity:0.24;
     background-image: url(https://i.imgur.com/Ebr2IjG.png)!important;
-    background-size: 21px !important;
+    background-size: 20px !important;
     background-position: 50%!important;
     background-repeat: no-repeat!important;
     margin:0;
+    margin-left:30px;
     transition: all 200ms ease;
+    
 }
 
 .attachButton-Di6YUh:hover {
