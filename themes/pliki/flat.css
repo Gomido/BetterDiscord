@@ -2693,9 +2693,14 @@ html[lang="ko"] .uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3{
 .authedApp-2JX_oI,
 .modal-3HOjGZ .message-25xg43,
 .theme-dark .autocomplete-1TnWNR,
+
 /*.menu-3BZuDT*/
  {
     box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
+}
+
+ {
+  box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
 }
 
 /* 23. User Popup */
@@ -5793,6 +5798,17 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 	border-bottom: 2px solid var(--accentcolor);
 }
 
+.layer-kosS71{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+      transform:none!important;
+      transition:all 0.3s cubic-bezier(.4,0,0,1);
+  }
+
+span {
+    -webkit-backface-visibility: hidden!important;
+}
+
 .popout-open .header-1tSljs {
     background-color: var(--headercolor);
 }
@@ -6128,6 +6144,9 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 display: none;
 }
 
+.textArea-20yzAH{
+    padding-left: 25px;
+  }
 .attachButton-Di6YUh{
     fill:transparent!important;
     position: absolute;
@@ -6262,6 +6281,7 @@ display: none;
 
 .theme-dark .themedPopout-1uUNjn .header-2Z2FaH{
     border-radius: 0px;
+    margin-top:-2px !important;
     background-color: var(--headercolor) !important;
 }
 .theme-dark .messagesPopoutWrap-1VBR-j .messagesPopout-MzE43I .message-group {
