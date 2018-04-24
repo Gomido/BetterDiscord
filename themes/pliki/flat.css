@@ -11,7 +11,7 @@
     --accentcolor: #037699; /*#44D62C*/
     --hovercolor: #eeeeee; 
     --textcolor:#ffffff; /* kolor czcionek na niektorych elementach.*/
-    --rs-spacing: 0px; /* odstep miedzy ramka a avatarem */
+    --rs-spacing: 0px; /* osdtep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
     --rs-popout-spacing: 0px; /* odleglosc miedzy statusem a nickiem */
     --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
@@ -559,21 +559,6 @@
 .channel-members .member.member-status-offline .member-inner .member-activity-text strong {color: #636b75}
 */
 
-/*status bar na dole*/
-
-.message-group .mentioned .message-text:after {
-    border-left: 3px solid var(--accentcolor);
-    border-radius: 0;
-    background: transparent;
-    left: -3px;
-}
-.message-group .mentioned .markup {
-    background: var(--channellistcolor)!important;
-    height: auto!important;
-    margin-top: 9px!important;
-    margin-bottom: 5px;
-    padding: 3px 8px 5px 8px!important;
-}
 
 
 .ui-standard-sidebar-view .sidebar-region .sidebar, .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
@@ -657,7 +642,24 @@
 }
 /*========================================*/
 
-/*mention*/
+
+/*wzmianka*/
+
+.message-group .mentioned .message-text:after {
+    border-left: 3px solid var(--accentcolor);
+    border-radius: 0;
+    background: transparent;
+    left: -3px;
+}
+.message-group .mentioned .markup {
+    background: var(--headercolor)!important;
+    height: auto!important;
+    margin-top: 9px!important;
+    margin-bottom: 5px;
+    padding: 3px 8px 5px 8px!important;
+}
+
+
 @-webkit-keyframes mentionpulse {
     0% {
       -webkit-box-shadow: 0 0 0 0 var(--accentcolor);
@@ -9560,9 +9562,9 @@ top:20px;
 }
 
 .container-iksrDt .avatar-small {
-    width: 50px;
-    height: 50px;
-    background-size: 50px 50px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
 }
 
 /*stare
