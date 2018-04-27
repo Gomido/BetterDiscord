@@ -1,3 +1,7 @@
+/*//META{"name":"TEST","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.4"}*//*/
+/*  */
+
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -23,7 +27,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.6.1";
+    --version: "Flat Discord Theme v1.2.6.2";
 
     /*BIALE*/
 
@@ -2699,9 +2703,7 @@ html[lang="ko"] .uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3{
     box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
 }
 
- {
-  box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
-}
+
 
 /* 23. User Popup */
 
@@ -3728,9 +3730,6 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1)
 }
 
-.create-guild-container.deprecated .action:hover.create .btn {
-    background-color: var(--accentcolor)
-}
 
 .form.deprecated .form-actions {
     background-color: #252525!important;
@@ -3798,6 +3797,10 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 
 .create-guild-container.deprecated .action.create .action-header {
     color: var(--accentcolor)
+}
+
+.create-guild-container.deprecated .action.join .action-header {
+    color: var(--accentcolor);
 }
 
 .create-guild-container.deprecated .action .action-body {
@@ -4045,6 +4048,12 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 .create-guild-container.deprecated .action.join .btn{
     background: var(--accentcolor)
 }
+
+
+.create-guild-container.deprecated .action:hover.create .btn {
+    background-color: var(--guildlistcolor) !important;
+}
+
 
 .create-guild-container.deprecated .action:hover.join .btn {
     background: var(--guildlistcolor) !important;
@@ -4795,6 +4804,10 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
     color:#FFF;
     background-color: var(--accentcolor);
   }
+
+  .theme-dark .lookOutlined-1c5nhl.colorPrimary-2KuK5O:hover{
+      border-color:var(--accentcolor)
+  }
   
   .root-2sNHUF button:hover,
   .root-2sNHUF button:active {
@@ -5153,7 +5166,8 @@ body:active .alt-2vq4VR.menu-3BZuDT:not(:active) {
 	border-right: 2px solid var(--accentcolor);
     border-bottom: 2px solid var(--accentcolor);
     top:-5px;
-    right:5px;
+    right:3px;
+    z-index:5
 }
 
 .search-header {
@@ -5966,7 +5980,7 @@ span {
     -webkit-animation-duration: calc(.8s * var(--chatanim) + 0s * (1 - var(--chatanim)));
     animation-timing-function: ease;
     -webkit-animation-timing-function: ease;
-    visibility: visible!important
+   /* visibility: visible!important*/
 }
 
 .theme-dark .message-group:not(.has-divider) {
@@ -5977,7 +5991,7 @@ span {
     -webkit-animation-duration: calc(.8s * var(--chatanim) + 0s * (1 - var(--chatanim)));
     animation-timing-function: ease;
     -webkit-animation-timing-function: ease;
-    visibility: visible!important
+   /* visibility: visible!important*/
 }
 
 @keyframes slideDown {
