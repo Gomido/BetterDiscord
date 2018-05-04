@@ -1,3 +1,7 @@
+/*//META{"name":"TEST","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.4"}*//*/
+/*  */
+
+
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -3119,14 +3123,66 @@ icon-kyxXVr.icon-file.unknown{
 .contentNoImagesUserPopout-PCCPyZ:empty {
   display: none;
 }
+/*perm role*/
+.member-perm.role-3rahR_{
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 0px !important;
+    box-sizing: content-box !important;
+    height: 16px !important;
+    margin: 1px !important;
+    padding: 2px !important;
+    display: block !important;
+    position: relative;
+    line-height: 16px;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  
+  .member-perm.role-3rahR_::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: inherit;
+    box-sizing: border-box;
+    opacity: 0.3;
+  }
+  
+  .name.roleName-DUQZ9m{
+    margin: 0 4px;
+    color: #fff;
+  }
+  
 
+  .perm-circle.roleCircle-3-vPZq {
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    height: 22px;
+    top: -1px;
+    left: 0;
+    border-radius: 2px 0 0 2px;
+    width: 100%;
+    opacity: 0;
+    display: flex !important;
+    background: var(--accentcolor) !important;
+    transition: opacity 0.2s;
+  }
 
 /* ROLE*/
 
-.role-2irmRk {
+.role-2irmRk{
   border-width: 1px !important;
   border-style: solid !important;
-  border-radius: 2px !important;
+  border-radius: 0px !important;
   box-sizing: content-box !important;
   height: 16px !important;
   margin: 3px !important;
@@ -4931,7 +4987,13 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     padding: 0;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
   }
+
+  
   .listAvatar-1NlAhb{
+      top:0px;
+  }
+
+  .avatar-large.listAvatar-1NlAhb{
       top:0px;
   }
   
@@ -9921,7 +9983,7 @@ Plugin: PermissionsViewer by Zerebos
 ---------------------------*/
 .member-perms {
   margin-bottom: 10px;
-  padding: 3px 10px;
+  padding: 0px 10px;
 }
 
 .perm-details {
@@ -9956,6 +10018,15 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 /* ======================================== */
+
+#bd-settingspane-container .bda-header .trashIcon{
+cursor: pointer;
+display: block;
+position: absolute;
+right: 50px;
+top:5px;
+}
+
 
 .citar-btn {
     opacity: .8;
