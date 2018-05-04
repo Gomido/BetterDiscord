@@ -25,10 +25,8 @@
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
     --version: "Flat Discord Theme v1.2.6.8";
-    --lvl1:#303030;/*var(--lvl1)*/
-    --lvl2:#212121;/*var(--lvl2)*/
-    --lvl25: #191919;
-    --lvl3:#141414;/*var(--lvl3)*/
+
+	
     /*BIALE*/
 
     --white0:rgba(255,255,255,0);/*var(--white0)*/
