@@ -12,9 +12,9 @@
     --accentcolor2: #eeeeee; 
     --badgecolor: #0289f7; 
     --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
-    --rs-spacing: 0px; /* osdtep miedzy ramka a avatarem */
+    --rs-spacing: 1px; /* osdtep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
-    --rs-popout-spacing: 0px; /* odleglosc miedzy statusem a nickiem */
+    --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
     --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
     --rs-profile-spacing: 0px; /* odstep w profilu */
     --rs-profile-width: 4px; /* widocznosc ramki statusu w proflu */
@@ -908,6 +908,12 @@
 	background-size: cover !important;
 }
 
+.statusDndProfile-33i43o, .statusIdleProfile-3lQI6a, .statusOnlineProfile-C7N-xU, .statusInvisibleProfile-3iFEOq, .statusOfflineProfile-9tGGr-  {
+    -webkit-box-shadow: inset 0 0 0 2px transparent;
+    box-shadow: inset 0 0 0 2px transparent;
+}
+
+
 /*Radial status*/
 .app {
     --radial-status: 1;
@@ -926,7 +932,7 @@
 	left: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
 	padding: var(--rs-spacing) !important;
 	transition: all 200ms ease !important;
-	border: var(--rs-width) solid #636b75 !important;
+	border: var(--rs-width) solid #636b75 !important;*/
 	margin: 0 !important;
 }
 
@@ -1219,10 +1225,10 @@
 }
 .private-channels .channel.selected a {
 	background-color: var(--guildlistcolor);
-	border-left: 2px solid var(--accentcolor);
+	border-left: 2px solid var(--accentcolor) !important;
 }
 .private-channels .channel.selected:hover a {
-	border-left: 2px solid var(--accentcolor2) !important;
+	border-left: 2px solid var(--accentcolor2);
 }
 .private-channels .channel:hover a {
 	background-color: var(--guildlistcolor);
@@ -2400,11 +2406,11 @@ a[href="/channels/@me"] .badge {
 /*   End Upload Modal   */
 
 
-.attachmentInner-3e5fpm .progress-32_u4R {
+.attachmentInner-3e5fpm .progress-2XXRYo {
     background: var(--titlebarcolor);
 }
 
-.progress-32_u4R .progressBar-mI5LOq {
+.progress-2XXRYo .progressBar-3u8FBM {
     background-color: var(--accentcolor);
 }
 
@@ -2542,8 +2548,6 @@ a[href="/channels/@me"] .badge {
 
 .connectedAccountIcon-3P3V6F[src="/assets/4662875160dc4c56954003ebda995414.png"] {
     content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggc3R5bGU9ImZpbGw6I2ZmZiIgZD0iTTE2IDMuMDM4Yy0uNTkuMjYtMS4yMi40MzctMS44ODUuNTE3LjY3Ny0uNDA3IDEuMTk4LTEuMDUgMS40NDMtMS44MTYtLjYzNC4zNy0xLjMzNy42NC0yLjA4NS43OS0uNTk4LS42NC0xLjQ1LTEuMDQtMi4zOTYtMS4wNC0xLjgxMiAwLTMuMjgyIDEuNDctMy4yODIgMy4yOCAwIC4yNi4wMy41MS4wODUuNzUtMi43MjgtLjEzLTUuMTQ3LTEuNDQtNi43NjYtMy40MkMuODMgMi41OC42NyAzLjE0LjY3IDMuNzVjMCAxLjE0LjU4IDIuMTQzIDEuNDYgMi43MzItLjUzOC0uMDE3LTEuMDQ1LS4xNjUtMS40ODctLjQxdi4wNGMwIDEuNTkgMS4xMyAyLjkxOCAyLjYzMyAzLjIyLS4yNzYuMDc0LS41NjYuMTE0LS44NjUuMTE0LS4yMSAwLS40MS0uMDItLjYxLS4wNTguNDIgMS4zMDQgMS42MyAyLjI1MyAzLjA3IDIuMjgtMS4xMi44OC0yLjU0IDEuNDA0LTQuMDcgMS40MDQtLjI2IDAtLjUyLS4wMTUtLjc4LS4wNDUgMS40Ni45MyAzLjE4IDEuNDc0IDUuMDQgMS40NzQgNi4wNCAwIDkuMzQtNSA5LjM0LTkuMzMgMC0uMTQgMC0uMjgtLjAxLS40Mi42NC0uNDYgMS4yLTEuMDQgMS42NC0xLjd6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=)!important;
-    -ms-transform: scale(.8);
-    transform: scale(.8)
 }
 
 .accountBtnInner-sj5jLs[style='background-image: url("/assets/4662875160dc4c56954003ebda995414.png");'] {
@@ -2566,7 +2570,6 @@ a[href="/channels/@me"] .badge {
 /* Spotify */
 .connectedAccountIcon-3P3V6F[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] {
     content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTY4cHgiIHdpZHRoPSIxNjhweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTY4IDE2OCI+IDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Im04My45OTYgMC4yNzdjLTQ2LjI0OSAwLTgzLjc0MyAzNy40OTMtODMuNzQzIDgzLjc0MiAwIDQ2LjI1MSAzNy40OTQgODMuNzQxIDgzLjc0MyA4My43NDEgNDYuMjU0IDAgODMuNzQ0LTM3LjQ5IDgzLjc0NC04My43NDEgMC00Ni4yNDYtMzcuNDktODMuNzM4LTgzLjc0NS04My43MzhsMC4wMDEtMC4wMDR6bTM4LjQwNCAxMjAuNzhjLTEuNSAyLjQ2LTQuNzIgMy4yNC03LjE4IDEuNzMtMTkuNjYyLTEyLjAxLTQ0LjQxNC0xNC43My03My41NjQtOC4wNy0yLjgwOSAwLjY0LTUuNjA5LTEuMTItNi4yNDktMy45My0wLjY0My0yLjgxIDEuMTEtNS42MSAzLjkyNi02LjI1IDMxLjktNy4yOTEgNTkuMjYzLTQuMTUgODEuMzM3IDkuMzQgMi40NiAxLjUxIDMuMjQgNC43MiAxLjczIDcuMTh6bTEwLjI1LTIyLjgwNWMtMS44OSAzLjA3NS01LjkxIDQuMDQ1LTguOTggMi4xNTUtMjIuNTEtMTMuODM5LTU2LjgyMy0xNy44NDYtODMuNDQ4LTkuNzY0LTMuNDUzIDEuMDQzLTcuMS0wLjkwMy04LjE0OC00LjM1LTEuMDQtMy40NTMgMC45MDctNy4wOTMgNC4zNTQtOC4xNDMgMzAuNDEzLTkuMjI4IDY4LjIyMi00Ljc1OCA5NC4wNzIgMTEuMTI3IDMuMDcgMS44OSA0LjA0IDUuOTEgMi4xNSA4Ljk3NnYtMC4wMDF6bTAuODgtMjMuNzQ0Yy0yNi45OS0xNi4wMzEtNzEuNTItMTcuNTA1LTk3LjI4OS05LjY4NC00LjEzOCAxLjI1NS04LjUxNC0xLjA4MS05Ljc2OC01LjIxOS0xLjI1NC00LjE0IDEuMDgtOC41MTMgNS4yMjEtOS43NzEgMjkuNTgxLTguOTggNzguNzU2LTcuMjQ1IDEwOS44MyAxMS4yMDIgMy43MyAyLjIwOSA0Ljk1IDcuMDE2IDIuNzQgMTAuNzMzLTIuMiAzLjcyMi03LjAyIDQuOTQ5LTEwLjczIDIuNzM5eiIvPjwvc3ZnPg==)!important;
-    transform: scale(.8)
 }
 .accountBtnInner-sj5jLs[style='background-image: url("/assets/f0655521c19c08c4ea4e508044ec7d8c.png");'] {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTY4cHgiIHdpZHRoPSIxNjhweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTY4IDE2OCI+IDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Im04My45OTYgMC4yNzdjLTQ2LjI0OSAwLTgzLjc0MyAzNy40OTMtODMuNzQzIDgzLjc0MiAwIDQ2LjI1MSAzNy40OTQgODMuNzQxIDgzLjc0MyA4My43NDEgNDYuMjU0IDAgODMuNzQ0LTM3LjQ5IDgzLjc0NC04My43NDEgMC00Ni4yNDYtMzcuNDktODMuNzM4LTgzLjc0NS04My43MzhsMC4wMDEtMC4wMDR6bTM4LjQwNCAxMjAuNzhjLTEuNSAyLjQ2LTQuNzIgMy4yNC03LjE4IDEuNzMtMTkuNjYyLTEyLjAxLTQ0LjQxNC0xNC43My03My41NjQtOC4wNy0yLjgwOSAwLjY0LTUuNjA5LTEuMTItNi4yNDktMy45My0wLjY0My0yLjgxIDEuMTEtNS42MSAzLjkyNi02LjI1IDMxLjktNy4yOTEgNTkuMjYzLTQuMTUgODEuMzM3IDkuMzQgMi40NiAxLjUxIDMuMjQgNC43MiAxLjczIDcuMTh6bTEwLjI1LTIyLjgwNWMtMS44OSAzLjA3NS01LjkxIDQuMDQ1LTguOTggMi4xNTUtMjIuNTEtMTMuODM5LTU2LjgyMy0xNy44NDYtODMuNDQ4LTkuNzY0LTMuNDUzIDEuMDQzLTcuMS0wLjkwMy04LjE0OC00LjM1LTEuMDQtMy40NTMgMC45MDctNy4wOTMgNC4zNTQtOC4xNDMgMzAuNDEzLTkuMjI4IDY4LjIyMi00Ljc1OCA5NC4wNzIgMTEuMTI3IDMuMDcgMS44OSA0LjA0IDUuOTEgMi4xNSA4Ljk3NnYtMC4wMDF6bTAuODgtMjMuNzQ0Yy0yNi45OS0xNi4wMzEtNzEuNTItMTcuNTA1LTk3LjI4OS05LjY4NC00LjEzOCAxLjI1NS04LjUxNC0xLjA4MS05Ljc2OC01LjIxOS0xLjI1NC00LjE0IDEuMDgtOC41MTMgNS4yMjEtOS43NzEgMjkuNTgxLTguOTggNzguNzU2LTcuMjQ1IDEwOS44MyAxMS4yMDIgMy43MyAyLjIwOSA0Ljk1IDcuMDE2IDIuNzQgMTAuNzMzLTIuMiAzLjcyMi03LjAyIDQuOTQ5LTEwLjczIDIuNzM5eiIvPjwvc3ZnPg==)!important;
@@ -2872,11 +2875,11 @@ html[lang="ko"] .uploadModalIn-1z07Vv .uploadDropModal-2kTwbc .bgScale-1otPtc{
 /*-----/EMBED VIDEO-----*/
 
 /*File upload and icons*/
-.attachmentInner-3e5fpm .progress-32_u4R {
+.attachmentInner-3e5fpm .progress-2XXRYo {
     background: var(--titlebarcolor);
 }
 
-.progress-32_u4R .progressBar-mI5LOq {
+.progress-2XXRYo .progressBar-3u8FBM {
     background-color: var(--accentcolor);
 }
 
@@ -3047,7 +3050,7 @@ icon-kyxXVr.icon-file.unknown{
 .cardPrimaryEditable-3KtE4g,
 .authedApp-mj2Hmd,
 .modal-3HD5ck .message-25xg43,
-.theme-dark .autocomplete-1vrmpx
+
  {
     box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
 }
@@ -3138,6 +3141,11 @@ icon-kyxXVr.icon-file.unknown{
     transition: border-color 0.2s;
   }
   
+.member-perm.role-3rahR_:hover {
+    border-color: var(--accentcolor) !important;
+    transition: border-color 0.2s;
+  }
+
   .member-perm.role-3rahR_::before {
     content: '';
     position: absolute;
@@ -4052,7 +4060,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 
 .guilds-wrapper .guilds .guild.selected {
     background: var(--headercolor);
-    transform: scale(1.04);
+   /* transform: scale(1.04);*/
     border-radius: var(--avatars);
 }
 /*
@@ -4871,6 +4879,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   .root-SR8cQa .tabBarContainer-1s1u-z {
     padding-left: 230px;
     position: absolute;
+    background-color:var(--headercolor);
     top: 0;
     width: 100%;
     box-sizing: border-box;
@@ -4878,21 +4887,24 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   
   .bd-blue .root-SR8cQa .tab-bar .tab-bar-item,
   .root-SR8cQa .tab-bar .tab-bar-item {
-    color: #e4e4e4;
+    color: #afafaf;
     border-bottom: 3px solid transparent;
     position: relative;
+    bottom:2px;
   }
   
   .bd-blue .root-SR8cQa .tab-bar .tab-bar-item.selected,
   .root-SR8cQa .tab-bar .tab-bar-item.selected {
     border-bottom: 3px solid var(--accentcolor);
     color: #FFFFFF;
+    bottom:2px;
   }
   
   
   .tab-bar.TOP .tab-bar-item:hover {
     border-bottom: 2px solid #FFF;
     color: #FFFFFF;
+    
 }
 
   
@@ -4902,7 +4914,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     z-index: 2;
     position: relative;
     background-color: var(--chatbackground);
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-143966.jpg");
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-496143.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4923,7 +4935,9 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   
   .root-SR8cQa .tab-bar.tabBar-2MuP6- {
     margin: -1px 0;
-  }
+}
+
+
   
   .root-SR8cQa .username-3gJmXY {
     font-size: 22px;
@@ -4991,6 +5005,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 
   .avatar-large.listAvatar-1NlAhb{
       top:0px;
+      left:1px;
   }
   
   .root-SR8cQa .listRow-hutiT_:hover {
@@ -5130,17 +5145,19 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   .root-SR8cQa .topSectionPlaying-1J5E4n {
     border: none;
     margin: 0;
-    background: none;
   }
 
+  .listenAlongIcon-2WbU7U:hover{
+      color:var(--accentcolor);
+  }
   
   .root-SR8cQa .activityProfile-2bJRaP {
     min-height: 30px;
     top: 56px;
     padding: 20px 30px 15px;
     position: relative;
-    background: var(--channellistcolor);
-    box-shadow: inset 0 25px 60px -20px var(--headercolor);
+   background: var(--titlebar);
+   /* box-shadow: inset 0 25px 60px -20px var(--headercolor);*/
     margin-bottom: 50px;
     border-bottom: 1px solid var(--guildlistcolor);
   }
@@ -5327,6 +5344,19 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   .userPopout-3XzG_A {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     margin-bottom:10px;
+    margin-right:20px;
+    margin-left:10px;
+    box-shadow: 0 0 0px transparent, 0 0px 0px transparent !important;
+}
+
+.popout-3sVMXz {
+    /* -webkit-box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1); */
+    /* -webkit-filter: blur(0); */
+    border-radius: 0px;
+    box-shadow: 0 0 1px rgba(0,0,0,.0), 0 1px 4px rgba(0,0,0,.0);
+    contain: layout;
+    /* padding: 0; */
+    z-index: 1000;
 }
 
 .headerSpotify-zpWxgT {
@@ -5353,7 +5383,9 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     -webkit-mask-size: 0!important;
     border-radius: var(--avatars)
 }
-
+.avatarHintInner-Dco91E{
+    color:var(--accentcolor2);
+}
 
 /* FOLDERY*/
 .guild.folder .badge.folder.count{
@@ -5725,11 +5757,10 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     overflow: hidden;
 }
 .unread-1Dp-OI {
-    background-color: #ffffff;
+    background-color: var(--accentcolor2);
     height: 34px;
     left: 0px;
     margin-top: -5px;
-    position: absolute;
     top: 5px;
     width: 2px;
     border-radius:0px;
@@ -7387,7 +7418,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
     box-shadow: 0 3px 6px rgba(0, 0, 0, .5)
 }
 
-.theme-dark .embedInner-t4ag7g {
+.theme-dark .embedInner-1-fpTo {
     background-color: var(--titlebar);
     border-color: var(--titlebar)
 }
@@ -9555,10 +9586,10 @@ color:#fff;
     border-color: var(--accentcolor);
     border-radius: 0px;
 }
-.attachment-33OFj0 .progressContainer-2UlXr2 .progress-33epXr .progress-32_u4R {
+.attachment-33OFj0 .progressContainer-2UlXr2 .progress-33epXr .progress-2XXRYo {
     background-color: var(--accentcolor) !important;
 }
-.metadata-2t2-gW {
+.metadata-3WGS0M {
     color: #cecece
 }
 
@@ -9568,8 +9599,8 @@ color:#fff;
     color: #cecece
 }
 
-.progress-32_u4R,
-.progressBar-mI5LOq {
+.progress-2XXRYo,
+.progressBar-3u8FBM {
     background-color: var(--accentcolor);
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
