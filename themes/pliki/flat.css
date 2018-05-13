@@ -3086,6 +3086,7 @@ icon-kyxXVr.icon-file.unknown{
 .channels-wrap .flexChild-faoVW3, 
 #friends .friends-header, 
 .chat .title-wrap, 
+#dv-mount,
 .popout.popout-bottom-right.no-arrow.no-shadow,
 .chat form .channel-text-area-default, 
 .search-results-wrap, 
@@ -6538,7 +6539,6 @@ span {
 }
 
 .imageWrapper-2p5ogY {
-    margin: 5px 0;
     border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
 }
 
