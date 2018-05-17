@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.6.8";
+    --version: "Flat Discord Theme v1.2.6.9";
 
     
     /*BIALE*/
@@ -1402,34 +1402,34 @@
 
 .button-2b6hmh[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNyw0LjQ0MDg5MjFlLTE2IEM4LjY1Njg1NDI1LDAgMTAsMS4zNDMxNDU3NSAxMCwzIEwxMCw5IEMxMCwxMC42NTY4NTQyIDguNjU2ODU0MjUsMTIgNywxMiBDNS4zNDMxNDU3NSwxMiA0LDEwLjY1Njg1NDIgNCw5IEw0LDMgQzQsMS4zNDMxNDU3NSA1LjM0MzE0NTc1LDQuNDQwODkyMWUtMTYgNywwIEw3LDQuNDQwODkyMWUtMTYgWiBNMTQsOSBDMTQsMTIuNTMgMTEuMzksMTUuNDQgOCwxNS45MyBMOCwxOSBMNiwxOSBMNiwxNS45MyBDMi42MSwxNS40NCAwLDEyLjUzIDAsOSBMMiw5IEMyLDExLjc2MTQyMzcgNC4yMzg1NzYyNSwxNCA3LDE0IEM5Ljc2MTQyMzc1LDE0IDEyLDExLjc2MTQyMzcgMTIsOSBMMTQsOSBMMTQsOSBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1IDMpIi8+CiAgPC9nPgo8L3N2Zz4K"],
 .button-2b6hmh[style*="/assets/4bc527c257233fc69b94342d77bcb9ee.svg"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/mute2.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/o9QdEo7.png') no-repeat 50% !important;
     height: 20px!important;
     width: 22px!important;
 }
 
 .button-2b6hmh[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDI0IDApIj4KICAgIDxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPgogICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjEgMykiPgogICAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTYsOSBDMTYsMTAuMTkgMTUuNjYsMTEuMyAxNS4xLDEyLjI4IEwxMy44NywxMS4wNSBDMTQuMTQsMTAuNDMgMTQuMyw5Ljc0IDE0LjMsOSBMMTYsOSBMMTYsOSBaIE0xMiw5LjE2IEw2LDMuMTggTDYsMyBDNiwxLjM0MzE0NTc1IDcuMzQzMTQ1NzUsNC40NDA4OTIxZS0xNiA5LDAgQzEwLjY1Njg1NDIsMCAxMiwxLjM0MzE0NTc1IDEyLDMgTDEyLDkgTDEyLDkuMTYgTDEyLDkuMTYgWiBNMTIuNTQsMTQuODEgQzExLjc3LDE1LjI3IDEwLjkxLDE1LjU4IDEwLDE1LjcyIEwxMCwxOSBMOCwxOSBMOCwxNS43MiBDNC43MiwxNS4yMyAyLDEyLjQxIDIsOSBMMy43LDkgQzMuNywxMiA2LjI0LDE0LjEgOSwxNC4xIEM5LjgxLDE0LjEgMTAuNiwxMy45MSAxMS4zMSwxMy41OCBMOS42NSwxMS45MiBMOSwxMiBDNy4zNDMxNDU3NSwxMiA2LDEwLjY1Njg1NDIgNiw5IEw2LDguMjggTDEyLjU0LDE0LjgxIFoiLz4KICAgICAgPHBvbHlnb24gZmlsbD0iI0YwNDc0NyIgcG9pbnRzPSIxLjI3IDEgMTggMTcuNzMgMTYuNzMgMTkgMCAyLjI3Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"],
 .button-2b6hmh[style*="/assets/896770bf2d6ed0358ed0adefdbe96a24.svg"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/unmute.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/4PIHWkw.png') no-repeat 50% !important;
     height: 20px!important;
     width: 22px!important;
 }
 
 .button-2b6hmh[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE3LjQzLDUuODQgQzE3LjgsNi44MiAxOCw3Ljg5IDE4LDkgTDE4LDE3IEMxOCwxOC42NTY4NTQyIDE2LDE5IDE2LDE5IEwxMiwxOSBMMTIsMTEuMjcgTDYsMTcuMjcgTDYsMTkgTDQuMjcsMTkgTDEuNzcsMjEuNSBMMTcuNDMsNS44NCBaIE05LDAgQzExLjUzLDAgMTMuODIsMS4wNCAxNS40NSwyLjcyIEwxNC4wNCw0LjE0IEMxMi43NywyLjgyIDExLDIgOSwyIEM1LjEzNDAwNjc1LDIgMiw1LjEzNDAwNjc1IDIsOSBMMiwxMSBMNiwxMSBMNiwxMi4xOCBMMC41LDE3LjY3IEMwLjE5LDE3LjE5IDAsMTYuNjIgMCwxNiBMMCw5IEMtMS4zMzIyNjc2M2UtMTUsNC4wMjk0MzcyNSA0LjAyOTQzNzI1LDEuMzMyMjY3NjNlLTE1IDksNC40NDA4OTIxZS0xNiBMOSwwIFogTTE2LDExIEwxNiw5IEMxNiw4LjQ2IDE1Ljk0LDcuOTQgMTUuODMsNy40NCBMMTIuMjcsMTEgTDE2LDExIFoiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDIxIDIpIi8+CiAgICA8cG9seWdvbiBmaWxsPSIjRjA0NzQ3IiBwb2ludHM9IjEuMjcgMTkuNSAwIDE4LjIyIDE3LjcyIC41IDE5IDEuNzciIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDIwIDQpIi8+CiAgPC9nPgo8L3N2Zz4K"],
 .button-2b6hmh[style*="/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/undeafen2.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/xVITagL.png') no-repeat 50% !important;
     height: 20px!important;
     width: 22px!important;
 }
 
 .button-2b6hmh[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMywxMSBDMyw2IDcsMiAxMiwyIEwxMiw0IEM4LjEzNDAwNjc1LDQgNSw3LjEzNDAwNjc1IDUsMTEgTDUsMTMgTDksMTMgTDksMjEgTDYsMjEgQzQuMzQzMTQ1NzUsMjEgMywxOS42NTY4NTQyIDMsMTggTDMsMTEgWiBNMjEsMTEgTDIxLDE4IEMyMSwxOS42NTY4NTQyIDE5LjY1Njg1NDIsMjEgMTgsMjEgTDE1LDIxIEwxNSwxMyBMMTksMTMgTDE5LDExIEMxOSw3LjEzNDAwNjc1IDE1Ljg2NTk5MzIsNCAxMiw0IEwxMiwyIEMxNywyIDIxLDYgMjEsMTEgWiIvPgogIDwvZz4KPC9zdmc+Cg=="],
 .button-2b6hmh[style*="/assets/c7c47afdf35d5a3e06233319d3aa7674.svg"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/deafen.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/jy7EfjI.png') no-repeat 50% !important;
     height: 20px!important;
     width: 22px!important;
 }
 
 .button-2b6hmh svg[name="Gear"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/settings.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/7hIi8fx.png') no-repeat 50% !important;
     height: 20px!important;
     width: 20px!important;
     top: 2px;
@@ -1437,7 +1437,7 @@
 }
 
 .iconSpacing-3JkGQO svg[name="Gear"] {
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/settings-small3.png') no-repeat 50% !important;
+    background: url('https://i.imgur.com/CSWu7Lb.png') no-repeat 50% !important;
     height: 16px!important;
     width: 16px!important;
     opacity: .3;
@@ -1831,7 +1831,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 
 /* avatary na glosowkach - pasek a nie kolko */
-.avatarSpeaking-1wJCNq, .avatarDefault-35WC3R, .avatarContainer-303pFz {
+.avatarSpeaking-1wJCNq, .avatarDefault-35WC3R, .avatarContainer-72bSfM {
     border-color: transparent !important;
     box-shadow: none !important;
     z-index: 10;
@@ -1846,7 +1846,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     background: var(--accentcolor);
 }
 
-.avatarSpeaking-1wJCNq::after { /*nie dziala*/
+.avatarSpeaking-1wJCNq::after {
     content: "";
     position: absolute;
     height: 20px;
@@ -2807,6 +2807,28 @@ html[lang="ko"] .uploadModalIn-1z07Vv .uploadDropModal-2kTwbc .bgScale-1otPtc{
 /*/Upload animation*/
 
 
+
+
+
+/*Clyde*/
+
+.theme-dark .message-group.is-local-bot-message {
+    border-color: transparent;
+    box-shadow: none !important;
+}
+
+
+
+
+.theme-dark .wrapperAudio-1jDe0Q {
+    background-color: var(--headercolor);
+}
+
+
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+        background-color: var(--accentcolor);
+    }
+
 /*-----EMBED VIDEO-----*/
 
 .embedVideoActionsInner-24mu2S {
@@ -3054,7 +3076,7 @@ icon-kyxXVr.icon-file.unknown{
   }
   /*Voice*/
   .container-1UB9sr{
-    z-index: 5;
+    z-index: 6;
   }
   /*Top bar*/
   #friends .friends-header, .chat .title-wrap{
@@ -4129,8 +4151,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 
 .guilds-wrapper .guilds .guild .guild-inner:hover {
  /*zoom jak najedziemy na serwer
-    box-shadow: 0 0 10px  var(--accentcolor);*/
-    filter: brightness(110%);
+    box-shadow: 0 0 10px  var(--accentcolor);
+    filter: brightness(105%);*/
     transition: all .2s ease-in-out
 }
 
@@ -6576,6 +6598,10 @@ span {
     padding: 7px 0px;
 }
 
+.spinner-2enMB9{
+    color: var(--accentcolor);
+}
+
 .messages .divider {
     margin: 25px 6px 25px 20px
 }
@@ -7221,6 +7247,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
     font-weight: 500;
     height:50px;
     padding: 10px;
+    border-bottom: 1px solid var(--headercolor);
 }
 
 .accountDetails-3k9g4n .username{
