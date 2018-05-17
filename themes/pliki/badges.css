@@ -43,7 +43,7 @@
 .avatar-small[style*="186817801741271040"]+.discord-tag .username::after,
 .avatar-small[style*="186609657928744962"]+.discord-tag .username::after {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/beta-tester2.png');
+    background: url('https://i.imgur.com/oW0syjV.png');
 }
 
 /* =============================================== */
@@ -60,7 +60,7 @@
 .avatar-small[style*="186609657928744962"]+.discord-tag .username::after,
 .avatar-small[style*="369188986775666689"]+.discord-tag .username::after {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/donor.png');
+    background: url('https://i.imgur.com/XjbdzLu.png');
 }
 
 /* ============================================== */
@@ -94,7 +94,7 @@
 .avatar-small[style*=""]+.discord-tag .username::after,
 .avatar-small[style*=""]+.discord-tag .username::after {
     content: '';
-    background: url('https://www.twitchcord.com/twitchcord-theme/images/developer-badge.png');
+    background: url('https://i.imgur.com/P42b2aV.png');
 }
 
 /* ============================================== */
