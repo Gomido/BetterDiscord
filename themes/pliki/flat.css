@@ -1,3 +1,5 @@
+
+@import url("https://intrnl.github.io/discordcustomizations/emojiNotoBlobs/dist/themefile.css");
 :root {
     --avatars: 0%;
     --borders: 1;
@@ -24,7 +26,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.6.9";
+    --version: "Flat Discord Theme v1.2.6.8";
 
     
     /*BIALE*/
@@ -9437,7 +9439,7 @@ color:#fff;
   .botTag-2WPJ74, .botTagRegular-2HEhHi, .botTagInvert-gorWR_,
   .bot-tag, .bd-blue .bot-tag, .channel-members .bot-tag, .message-group .bot-tag {
     background-color: transparent !important;
-    background: url("https://www.twitchcord.com/twitchcord-theme/images/moderator.png");
+    background: url("https://i.imgur.com/Z5hnGJ9.png");
     background-repeat: no-repeat;
     font-size: 1px;
     margin-left: 5x;
@@ -9894,9 +9896,11 @@ color:#fff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
 
-.wanderingCubesItem-35kyMu {
+.wanderingCubesItem-WPXqao {
     background-color: var(--accentcolor)
 }
+
+
 
 .spinner-wandering-cubes .spinner-item {
     background-color: var(--accentcolor)
@@ -10853,4 +10857,3 @@ top:20px;
     background: #875DFE
 }
 */
-
