@@ -1,4 +1,3 @@
-
 @import url("https://intrnl.github.io/discordcustomizations/emojiNotoBlobs/dist/themefile.css");
 :root {
     --avatars: 0%;
@@ -443,6 +442,7 @@
 .emojiPicker-3m1S-j .category-2U57w6{
     color:#FFF;
     background-color: var(--titlebar);
+    width:315px;
 }
 
 .categories-1feg4n {
@@ -2183,6 +2183,130 @@ a[href="/channels/@me"] .badge {
     animation: mention-flash 1.5s linear infinite;
     background: var(--badgecolor);
 }
+
+
+
+
+.theme-dark .message-2qRu38 {
+    background-color: var(--chatbackground);
+}
+
+
+/*MARKDOWN LABEL*/
+
+
+.theme-dark .markup .hljs[class~="java" i]::before,
+.theme-dark .markup .hljs[class~="sql" i]::before,
+.theme-dark .markup .hljs[class~="ruby" i]::before,
+.theme-dark .markup .hljs[class~="coffee" i]::before,
+.theme-dark .markup .hljs[class~="xl" i]::before,
+.theme-dark .markup .hljs[class~="py" i]::before,
+.theme-dark .markup .hljs[class~="python" i]::before,
+.theme-dark .markup .hljs[class~="html" i]::before,
+.theme-dark .markup .hljs[class~="md" i]::before,
+.theme-dark .markup .hljs[class~="markdown" i]::before,
+.theme-dark .markup .hljs[class~="bash" i]::before,
+.theme-dark .markup .hljs[class~="js" i]::before,
+.theme-dark .markup .hljs[class~="javascript" i]:before,
+.theme-dark .markup .hljs[class~="css" i]::before,
+.theme-dark .markup .hljs[class~="vb" i]::before,
+.theme-dark .markup .hljs[class~="visualbasic" i]::before,
+.theme-dark .markup .hljs[class~="lua" i]::before,
+.theme-dark .markup .hljs[class~="php" i]::before,
+.theme-dark .markup .hljs[class~="swift" i]::before,
+.theme-dark .markup .hljs[class~="makefile" i]::before,
+.theme-dark .markup .hljs[class~="go" i]::before,
+.theme-dark .markup .hljs[class~="ini" i]::before,
+.theme-dark .markup .hljs[class~="rust" i]::before,
+.theme-dark .markup .hljs[class~="prolog" i]::before,
+.theme-dark .markup .hljs[class~="ts" i]::before, 
+.theme-dark .markup .hljs[class~="typescript" i]::before,
+.theme-dark .markup .hljs[class~="http" i]::before,
+.theme-dark .markup .hljs[class~="json" i]::before,
+.theme-dark .markup .hljs[class~="xml" i]::before,
+.theme-dark .markup .hljs[class~="less" i]::before{width: 100%;height: 16px;position: relative;display: -webkit-box;margin-top: -8px;color: #fff;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom: 5px solid var(--headercolor);line-height: 15px !important;}
+
+.theme-dark .markup .hljs[class~="java" i],
+.theme-dark .markup .hljs[class~="sql" i],
+.theme-dark .markup .hljs[class~="ruby" i],
+.theme-dark .markup .hljs[class~="coffee" i],
+.theme-dark .markup .hljs[class~="xl" i],
+.theme-dark .markup .hljs[class~="py" i],
+.theme-dark .markup .hljs[class~="python" i],
+.theme-dark .markup .hljs[class~="html" i],
+.theme-dark .markup .hljs[class~="md" i],
+.theme-dark .markup .hljs[class~="markdown" i],
+.theme-dark .markup .hljs[class~="js" i],
+.theme-dark .markup .hljs[class~="javascript" i],
+.theme-dark .markup .hljs[class~="css" i],
+.theme-dark .markup .hljs[class~="bash" i],
+.theme-dark .markup .hljs[class~="vb" i],
+.theme-dark .markup .hljs[class~="visualbasic" i],
+.theme-dark .markup .hljs[class~="lua" i],
+.theme-dark .markup .hljs[class~="php" i],
+.theme-dark .markup .hljs[class~="swift" i],
+.theme-dark .markup .hljs[class~="makefile" i],
+.theme-dark .markup .hljs[class~="go" i],
+.theme-dark .markup .hljs[class~="ini" i],
+.theme-dark .markup .hljs[class~="rust" i],
+.theme-dark .markup .hljs[class~="prolog" i],
+.theme-dark .markup .hljs[class~="ts" i], 
+.theme-dark .markup .hljs[class~="typescript" i],
+.theme-dark .markup .hljs[class~="http" i],
+.theme-dark .markup .hljs[class~="json" i],
+.theme-dark .markup .hljs[class~="xml" i],
+.theme-dark .markup .hljs[class~="less" i]{padding: .5em !important;}
+
+.theme-dark .markup .hljs[class~="js" i]::before, .theme-dark .markup .hljs[class~="javascript" i]::before{content: " Javascript";background: #165eab;}
+
+.theme-dark .markup .hljs[class~="css" i]::before{content: " Cascading Style Sheet";background: #ab6f16;}
+
+.theme-dark .markup .hljs[class~="bash" i]::before{content: " Bash";background: #ab1663;}
+
+.theme-dark .markup .hljs[class~="markdown" i]::before, .theme-dark .markup .hljs[class~="md" i]::before{content: " Markdown";background: #ab2e16;}
+
+.theme-dark .markup .hljs[class~="html" i]::before{content: " HTML";background: #16ab6f;}
+
+.theme-dark .markup .hljs[class~="xl" i]::before{content: " eXtensible Language";background: #4872a8;}
+
+.theme-dark .markup .hljs[class~="coffee" i]::before{content: " Coffee (Javascript)";background: #3a1b1b;}
+
+.theme-dark .markup .hljs[class~="ruby" i]::before{content: " Ruby";background: #e73e3e;}
+
+.theme-dark .markup .hljs[class~="sql" i]::before{content: " SQL";background: #4474ca;}
+
+.theme-dark .markup .hljs[class~="java" i]::before{content: " Java";background: #eb2d2f;}
+
+.theme-dark .markup .hljs[class~="py" i]::before, .theme-dark .markup .hljs[class~="python" i]::before{content: " Python";background: #1622ab;}
+
+.theme-dark .markup .hljs[class~="vb" i]::before, .theme-dark .markup .hljs[class~="visualbasic" i]::before{content: " Visual Basic";background: #839700;}
+
+.theme-dark .markup .hljs[class~="lua" i]::before{content: " Lua";background: #2ecc71;}
+
+.theme-dark .markup .hljs[class~="php" i]::before{content: " Php";background: #6e81b6;}
+
+.theme-dark .markup .hljs[class~="swift" i]::before{content: " Swift";background: #fd7837;}
+
+.theme-dark .markup .hljs[class~="makefile" i]::before{content: " Makefile";background: #8a2b0f;}
+
+.theme-dark .markup .hljs[class~="go" i]::before{content: " Go";background: #75cede;}
+
+.theme-dark .markup .hljs[class~="ini" i]::before{content: " ini";background: #5a75c0;}
+
+.theme-dark .markup .hljs[class~="rust" i]::before{content: " Rust";background: #000;}
+
+.theme-dark .markup .hljs[class~="prolog" i]::before{content: " Prolog";background: #ef4d25;}
+
+.theme-dark .markup .hljs[class~="ts" i]::before, .theme-dark .markup .hljs[class~="typescript" i]::before{content: " TypeScript";background: #03324c;}
+
+.theme-dark .markup .hljs[class~="http" i]::before{content: " HTTP";background: #618f10;}
+
+.theme-dark .markup .hljs[class~="json" i]::before{content: " Json";background: #108f66;}
+
+.theme-dark .markup .hljs[class~="xml" i]::before{content: " XML";background: #8444af;}
+
+.theme-dark .markup .hljs[class~="less" i]::before{content: " Less";background: #1d365d;}
+
 
 /*   Upload Modal   */
 /* ================ */
@@ -6888,6 +7012,13 @@ span {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: all 100ms ease;
+}
+
+
+.attachButtonPlay-ZnFdQr {
+    fill: white!important;
+    transform: scale(0.60) translate(10px, 10px);
+    position: absolute;
 }
 
 .theme-dark .inner-zqa7da{
