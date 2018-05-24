@@ -5628,6 +5628,10 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     border-right: 1px solid var(--accentcolor);
 }
 
+.assetsLargeImageUserPopout-3Pp8BK{
+    border-radius:0px;
+}
+
 .headerPlaying-j0WQBV{
     border-top: 1px solid var(--accentcolor);
     border-left: 1px solid var(--accentcolor);
@@ -7181,7 +7185,7 @@ form .channelTextArea-rNsIhG {
 	border-right: 2px solid var(--accentcolor);
     border-bottom: 2px solid var(--accentcolor);
     height:600px;
-    margin-top:13px; 
+    margin-top:3px; 
     border-radius: 0px;
 }
 
@@ -7191,7 +7195,7 @@ form .channelTextArea-rNsIhG {
 	border-right: 2px solid var(--accentcolor);
     border-bottom: 2px solid var(--accentcolor);
     height:600px;
-    margin-top:10px; 
+    margin-top:0px; 
     border-radius: 0px;
 
 }
