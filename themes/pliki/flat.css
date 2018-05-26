@@ -2191,7 +2191,7 @@ a[href="/channels/@me"] .badge {
 }
 
 
-/*MARKDOWN LABEL*/
+/*MARKDOWN LABEL*
 
 
 .theme-dark .markup .hljs[class~="java" i]::before,
@@ -2937,11 +2937,11 @@ html[lang="ko"] .uploadModalIn-1z07Vv .uploadDropModal-2kTwbc .bgScale-1otPtc{
 
 /*Clyde*/
 
-.theme-dark .message-group.is-local-bot-message {
+.message-group.hide-overflow.is-local-bot-message {
     border-color: transparent;
     box-shadow: none !important;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 80%, #2b2b2b00)!important;
 }
-
 
 
 
