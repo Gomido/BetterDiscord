@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.6.8";
+    --version: "Flat Discord Theme v1.2.7.0";
 
     
     /*BIALE*/
@@ -110,25 +110,6 @@
 
 /*HAMBURGER*/
 
-.h5-3KssQU, .title-3i-5G_, #twitchcord-settings .h3-gDcP8B {
-    font-size: 12px !important;
-    letter-spacing: 0;
-    color: #fff !important;
-  }
-  
-  
-  div[class*="switchDisabled"]:before {
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-  }
-  
   .modal-3HD5ck div[class*="switchEnabled"],
   .modal-3HD5ck div[class*="switchDisabled"],
   #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch,
@@ -212,9 +193,9 @@
     background-color: rgba(255, 255, 255, 0.9);
     margin: 1px 0 0 1px;
   }
-  
-  
-  #twitchcord-hamburger-menu-container {
+/*HAMBURGER*/
+
+#twitchcord-hamburger-menu-container {
     position: fixed;
     z-index: 99;
     box-sizing: border-box;
@@ -231,9 +212,7 @@
     -webkit-transform: translate3d(-200%, 0, 0);
     transform: translate3d(-200%, 0, 0);
   }
-  .divider-1G01Z9 {
-    margin: 10px 0;
-  }
+  
   #twitchcord-hamburger-menu-container[opened] {
     transition-duration: 400ms;
     -webkit-transform: translate3d(0, 0, 0);
@@ -243,7 +222,7 @@
   .tc-logo-bg {
     height: 29px;
     width: 309px;
-    background: var(--titlebar);
+    background: var(--headercolor);
     position: absolute;
     top: 0;
     left: 0;
@@ -271,7 +250,7 @@
   }
   
   .tc-hamburger-a:hover {
-    background-color: var(--titlebar);
+    background-color: var(--accentcolor);
     transition: background-color 0.2s;
   }
   
@@ -280,6 +259,14 @@
     margin-top: 29px;
   }
   
+  .tc-hamburger-middle {
+    display: none;
+  }
+  
+  .tc-hamburger-bottom {
+    position: absolute;
+    bottom: 0;
+  }
   
   .tc-hamburger-heading {
     width: 309px;
@@ -291,10 +278,11 @@
   }
   
   .tc-hamburger-heading.support {
-    background: transparent;}
+    background: var(--headercolor) url(" ") no-repeat;
+  }
   
   .tc-hamburger-heading.social {
-    background: transparent;
+    background: var(--headercolor) url(" ") no-repeat;
   }
   
   .tc-hamburger-options-inner,
@@ -305,7 +293,10 @@
     padding: 10px;
   }
   
-
+  .tc-hamburger-support-inner, .tc-hamburger-social-inner {
+    margin: 10px;
+  }
+  
   #twitchcord-hamburger-menu-container .margin-bottom-40 {
     margin-bottom: 10px;
     margin-top: -10px;
@@ -313,33 +304,39 @@
   }
   
   #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::before {
-    background-image: url("https://www.twitchcord.com/twitchcord-theme/images/hamburger-icon.png");
+    background-image: url("https://twitchcord.github.io/twitchcord-theme/images/hamburger-icon.png");
     background-size: 10px 7px !important;
     background-repeat: no-repeat;
     background-position: 0;
     text-indent: 20px;
   }
   
-  .typeMacOS-3IiWed #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::before {
+  .platform-osx .guilds-wrapper {
+    margin-top: 0;
+  }
+  
+  .typeMacOS-3EmCyP #twitchcord-hamburger-clicker {
+    left: 80px;
+  }
+  
+  .typeMacOS-3EmCyP #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::before {
     text-indent: 57px;
     background-position: 160px;
     transition: text-indent 0.2s, background-position 0.2s;
   }
-
   
-  
-  [tc-opened] .typeMacOS-3IiWed #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::before {
+  [tc-opened] .typeMacOS-3EmCyP #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::before {
     text-indent: 0;
     background-position: 103px;
     transition: text-indent 0.2s, background-position 0.2s;
   }
   
-  .typeMacOS-3IiWed #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::after {
+  .typeMacOS-3EmCyP #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::after {
     text-indent: 50px;
     transition: text-indent 0.2s;
   }
   
-  [tc-opened] .typeMacOS-3IiWed #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::after {
+  [tc-opened] .typeMacOS-3EmCyP #twitchcord-hamburger-menu-container + .wordmark-2iDDfm::after {
     text-indent: -6px;
     transition: text-indent 0.2s;
   }
@@ -348,11 +345,12 @@
     text-indent: 20px;
   }
   
-  #twitchcord-hamburger-menu-container .title-3i-5G_ {
+  #twitchcord-hamburger-menu-container .title-31JmR4 {
     margin-top: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color:var(--accentcolor2)
   }
   
   #twitchcord-hamburger-menu-container div[class*="switchEnabled"],
@@ -361,6 +359,79 @@
     height: 10px;
   }
   
+  .tc-hamburger-social-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tc-hamburger-social-li {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .tc-hamburger-social-a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .tc-hamburger-social-a:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  
+  .tc-hamburger-social-a.facebook {
+    background: url("https://twitchcord.github.io/twitchcaord-theme/images/facebook-icon.png") no-repeat 50%;
+  }
+  
+  .tc-hamburger-social-a.twitter {
+    background: url("https://twitchcord.github.io/twitdchcord-theme/images/twitter-icon.png") no-repeat 50%;
+    margin-left: -6px;
+  }
+  
+  .tc-hamburger-social-a.discord {
+    background: url("https://twitchcord.github.io/twaitchcord-the me/images/discord-icon.png") no-repeat 50%;
+    margin-left: -4px;
+  }
+  
+  .tc-hamburger-social-a.github {
+    background: url("https://twitchcord.github.io/twitchcdord-theme/images/github-icon.png") no-repeat 50%;
+  }
+  
+  .tc-hamburger-social-a.twitch {
+    background: url("https://twitchcord.github.io/twitchcdord-theme/images/twitch-icon.png") no-repeat 50%;
+  }
+  
+  .tc-hamburger-social-a.patreon {
+    background: url("https://twitchcord.github.io/twitcdhcord-theme/images/patreon-icon.png") no-repeat 50%;
+  }
+  
+  .tc-hamburger-social-a.website {
+    background: url("https://twitchcord.github.io/twitchcdord-theme/images/website-icon.png") no-repeat 50%;
+    margin-right: 0;
+  }
+  
+  .tc-hamburger-social-a-span.tooltip.tooltip-black {
+    bottom: 40px;
+    left: -40px !important;
+    width: 120px;
+    opacity: 0;
+    animation: none !important;
+    pointer-events: none;
+  }
   
   .tc-hamburger-opened .guilds-wrapper .guild-separator::before,
   .tc-hamburger-opened .guilds-wrapper .guild-separator::after {
@@ -416,7 +487,7 @@
     display: none;
   }
   
-  body[tc-opened] .container-2OU7Cz, body[tc-opened] .ui-standard-sidebar-view {
+  body[tc-opened] .container-2lgZY8, body[tc-opened] .ui-standard-sidebar-view {
     pointer-events: none;
   }
   
@@ -428,6 +499,7 @@
       opacity: 0.65;
     }
   }
+  
 /*=========================================*/
 
 /*wieksze okno emotek */
@@ -3226,8 +3298,12 @@ icon-kyxXVr.icon-file.unknown{
 .membersWrap-2h-GB4, .theme-dark .search-results-wrap {
     z-index: 4;
   }
+  .private-channels{
+      z-index:4;
+  }
 
 /*cienie*/
+.private-channels,
 .private-channels .scrollerWrap-2lJEkd::before,
 .guilds-wrapper .guild.guilds-add::before,
 .channels-wrap .flexChild-faoVW3, 
@@ -3280,7 +3356,7 @@ icon-kyxXVr.icon-file.unknown{
 }
 .member-perms-header {
     margin-bottom: 0px;
-    padding-bottom: 8px;
+    padding-bottom: 28px;
 }
 .headerNormal-T_seeN {
     background-color: var(--guildlistcolor) !important ;
@@ -3332,6 +3408,396 @@ icon-kyxXVr.icon-file.unknown{
     border-top: 1px solid var(--accentcolor)!important;
 }
 
+
+
+/*==={ USER POPOUTS }===*/
+
+.statusProfile-3ynqtt{
+    display: none !important;
+}
+.userPopout-3XzG_A {
+    width: 320px;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    position: relative;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  /* user bg area: https://i.imgur.com/5UYFuyZ.png */
+  .userPopout-3XzG_A .avatarWrapper-3H_478 {
+    border-radius: 0;
+    margin-bottom: -1px;
+    border-left: 1px solid var(--accentcolor);
+    border-right: 1px solid var(--accentcolor);
+    z-index:10;
+  }
+  
+  .userPopout-3XzG_A .headerStreaming-2FjmGz .textRow-19NEd_ {
+    padding: 5px;
+  }
+  
+  /* activity buttons: https://i.imgur.com/SoVVuTV.png */
+  .userPopout-3XzG_A .actionsUserPopout-2xcO1O button {
+    width: 42%;
+    margin: 0 10px 15px 15px;
+    flex: 1;
+  }
+  
+  ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 10px;
+    background-color: transparent;
+  }
+  
+  .userPopout-3XzG_A .avatar-16XVId {
+    border-radius: 0;
+    background-color: var(--headercolor);
+    border: none;
+    height: 120px;
+    width: 318px;
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-496143.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .userPopout-3XzG_A .root-3-B5F3 {
+    padding: 0px 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .userPopout-3XzG_A .root-3-B5F3:empty {
+    display: none;
+  }
+  
+  
+  
+  
+  .body-3iLsc4 {
+    background-color: var(--headercolor) !important;
+    padding: 0;
+    border-bottom: none;
+  }
+  
+  .bodyTitle-Y0qMQz, .headerText-1HLrL7 {
+    margin-left: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 13px;
+    cursor: text;
+    color: #fff !important;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  
+  .note-3HfJZ5 textarea {
+    outline: none;
+    resize: none;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 2px 10px;
+    width: 100%;
+    max-height: 88px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: var(--font) !important;
+    margin-top: 3px;
+  }
+  
+  .note-3HfJZ5 textarea:focus {
+    background: transparent;
+  }
+  
+  .footer-1fjuF6 {
+    background-color: var(--headercolor) !important;
+    border-top: 1px solid var(--accentcolor) !important;
+  }
+  
+  .body-3iLsc4 .note-3HfJZ5 textarea {
+    margin-top: 10px;
+    padding: 0 15px 10px 15px;
+  }
+  
+  .quick-message {
+    width: 100%;
+    line-height: 18px;
+    padding: 8px 10px;
+    resize: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  
+
+  
+  .assetsSmallImageActivityFeed-2LNxrO, .assetsSmallImageUserPopout-2yc71g {
+    bottom: 3px;
+    position: absolute;
+    right: -10px;
+  }
+  
+  .assetsLargeImage-eYwpTX, .assetsSmallImage-3_3Bzj {
+    border: 4px solid var(--titlebar);
+    background-color: var(--titlebar);
+  }
+  
+  
+  
+  .mask-3OgeRz, .assetsLargeMaskProfile-1Qkfen, .avatarMasked-3y6o4j, .assetsLargeMaskUserPopout-12EBBc {
+    border-radius: var(--avatars);
+    -webkit-mask: none;
+    mask: none;
+  }
+  
+  
+  /************************************************/
+  /*
+  ---------------------------
+  | VARIABLE DECLARATIONS
+  ---------------------------
+  */
+  .orrie-buttonRed, .bda-slist .orrie-buttonRed {
+    margin-right: 0;
+  }
+  
+  .orrie-flex {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+  
+  [src="/assets/a5eba102f5b5e413df2b65c73f288afa.svg"] {
+    content: url("https://twitchcord.github.io/twitchcord-theme/images/block.png");
+  }
+  
+  .bd-pfbtn.bd-themerepobutton {
+    left: 0 !important;
+  }
+  
+  .themerepo-modal .modal-3HD5ck {
+    width: 988px;
+  }
+
+  
+  .userPopout-3XzG_A .image-33JSyf {
+    width: 80px !important;
+    height: 80px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4) !important;
+    top: -25px;
+    position: relative;
+    margin: 0px 10px;
+    background-color: var(--headercolor);
+    z-index: 4;
+  }
+  
+  .userPopout-3XzG_A .headerText-2sdzFM {
+    content: '';
+    width: 320px;
+    height: 70px;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.84902) 100%);
+    padding: 6px 10px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 30px;
+    bottom: 0;
+    pointer-events: none;
+  }
+  
+  .userPopout-3XzG_A .headerTop-3C2Zn0 {
+    padding: 0;
+    position: relative;
+    height: 120px;
+  }
+  
+  .userPopout-3XzG_A .headerPlaying-j0WQBV {
+    background: none;
+  }
+  
+  .userPopout-3XzG_A .headerTag-2pZJzA {
+    font-size: 16px;
+    line-height: 24px;
+    top: 30px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 270px;
+  }
+  
+  .userPopout-3XzG_A .headerName-fajvi9 {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: rgba(23, 20, 31, 0.7);
+    padding: 5px 15px;
+    font-size: 12px;
+    box-sizing: border-box;
+    z-index: 1;
+    padding-left: 103px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .userPopout-3XzG_A .headerName-fajvi9::before {
+    content: "AKA:";
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 5px;
+    opacity: 0.7;
+  }
+
+
+  .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7 {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    color: #fff !important;
+    background: repeating-linear-gradient(45deg, #242424, #242424 10px, #181818 10px, #181818 20px);
+    background-repeat: repeat-x;
+    border-top: 3px solid var(--accentcolor);
+    border-bottom: 1px solid var(--accentcolor);
+    transition: all 0.2s;
+    width: 300%;
+    -webkit-animation: 10s linear 0s normal none infinite infiniteLeft;
+    animation: 10s linear 0s normal none infinite infiniteLeft;
+    z-index:5;
+}
+  
+  .userPopout-3XzG_A .headerTag-2pZJzA > .username {
+    color: #fff;
+    font-weight: 700;
+    max-width: 210px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .userPopout-3XzG_A .headerTag-2pZJzA > .discriminator {
+    font-size: 11px;
+    position: relative;
+    top: -7px;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.5;
+  }
+  
+  .userPopout-3XzG_A .headerText-1HLrL7{
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    margin: 0;
+    margin-top: -1px;
+    background: var(--titlebar);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accentcolor2) !important;
+  }
+  
+  .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    margin: 0;
+    margin-top: -1px;
+    background: var(--headercolor);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accentcolor2) !important;
+  }
+  
+  .userPopout-3XzG_A .bodyAlignCenter-1KzvJk {
+    padding: 10px 15px;
+  }
+  
+  .userPopout-3XzG_A .note-3HfJZ5 textarea:focus {
+    background-color: transparent !important;
+  }
+  
+
+  
+  .userPopout-3XzG_A .activityUserPopout-2yItg2 .bodyNormal-2D39hT {
+    align-items: center;
+  }
+  
+  .userPopout-3XzG_A .activity-11LB_k {
+    padding: 0;
+    background-color: var(--titlebar);
+    overflow: hidden;
+  }
+  
+  .userPopout-3XzG_A .assetsLargeImageUserPopout-3Pp8BK {
+    height: 74px;
+    width: 74px;
+  }
+  
+  .userPopout-3XzG_A .assets-VMAukC {
+    position: relative;
+    padding: 10px 15px;
+    padding-right: 0;
+  }
+  
+  .userPopout-3XzG_A .details-38sfDr {
+    margin-top: 0;
+  }
+  
+  .userPopout-3XzG_A .contentImagesUserPopout-1vLdRA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 13px 5px;
+  }
+  
+  .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz::before,
+  .userPopout-3XzG_A .headerPlaying-j0WQBV .activityUserPopout-2yItg2 .headerText-1HLrL7::before {
+    content: '';
+    background: url("https://twitchcord.github.io/twitchcord-theme/images/user-ico-micro.png") no-repeat 50% !important;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 1px;
+    left: -5px;
+    opacity: 0.7;
+    margin-right: 1px;
+    display: inline-block;
+  }
+  
+  .userPopout-3XzG_A .headerPlaying-j0WQBV .activityUserPopout-2yItg2 .headerText-1HLrL7::before {
+    background: url("https://twitchcord.github.io/twitchcord-theme/images/games-ico-micro.png") no-repeat 50% !important;
+  }
+  
+  .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz ~ .bodyTitle-Y0qMQz::before {
+    background: url("https://twitchcord.github.io/twitchcord-theme/images/note-ico-micro.png") no-repeat 50% !important;
+  }
+  
+  .userPopout-3XzG_A .activityUserPopout-2yItg2 .playTime-2uWd1Z {
+    opacity: 0.6;
+  }
+  
+  
 /* ======================================== */
 
 
@@ -4601,6 +5067,15 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     color: #fff
 }
 
+.lookOutlined-3sRXeN.colorGreen-29iAKY{
+    color: #fff
+    
+}
+
+.contents-18-Yxp{
+    font-size: 12px;
+}
+
 #friends .friends-table {
     margin-top: 0
 }
@@ -4699,12 +5174,12 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     box-shadow: inset 0 -4px 0 #caccce
 }
 
-.keybind-shortcut.dark span {
-    -webkit-box-shadow: inset 0 -4px 0 rgba(35, 39, 42, .6);
-    background-color: #383838;
-    border-color: #202225;
-    box-shadow: inset 0 -4px 0 rgba(35, 39, 42, .6);
-    color: #95989d
+.theme-dark .keybindShortcut-1BD6Z1 span {
+    -webkit-box-shadow: inset 0 -4px 0 rgba(35, 39, 42, .1);
+    background-color: var(--guildlistcolor);
+    border-color: var(--headercolor);
+    box-shadow: inset 0 -4px 0 rgba(35, 39, 42, .1);
+    color: var(--textcolor)
 }
 
 
@@ -5017,7 +5492,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     align-items: center;
   }
   
-  /*.userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7::before,
+  .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7::before,
   .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::before {
     content: '';
     background: #f00;
@@ -5025,7 +5500,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     height: 10px;
     border-radius: 50%;
     position: absolute;
-    top: 132px;
+    top: 135px;
     left: 15px;
   }
   
@@ -5036,13 +5511,13 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    top: 132px;
+    top: 135px;
     left: 15px;
     position: absolute;
     animation: live-pulse 2s;
     animation-iteration-count: infinite;
   }
-  */
+  
   .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::before,
   .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::after {
     top: 25px;
@@ -5409,9 +5884,6 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     margin: 0;
   }
 
-  .listenAlongIcon-2WbU7U:hover{
-      color:var(--accentcolor);
-  }
   
   .root-SR8cQa .activityProfile-2bJRaP {
     min-height: 30px;
@@ -5480,7 +5952,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     right: 20px;
     width: 20px;
     height: 30px;
-    background: url("https://www.twitchcord.com/twitchcord-theme/images/dots-vertical.png") no-repeat 50%;
+    background: url("https://i.imgur.com/HCl3Rrx.png") no-repeat 50%;
   }
   
   .root-SR8cQa .header-QKLPzZ .headerInfo-30uryT .nameTag-m8r81H .discriminator {
@@ -5506,6 +5978,11 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     text-transform: capitalize;
   }
   
+  .buttonInvertedPurple-WtBglX{
+      color:var(--accentcolor2);
+  }
+
+
   .root-SR8cQa .buttonBrandInverted-VFL7Yc,
   .root-SR8cQa .buttonGreenFilled-6QHNrw {
     cursor: pointer;
@@ -5535,6 +6012,10 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 
   .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover{
       border-color:var(--accentcolor)
+  }
+
+  .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover{
+     border-color:var(--accentcolor2);
   }
   
   .root-SR8cQa button:hover,
@@ -5628,6 +6109,27 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     border-right: 1px solid var(--accentcolor);
 }
 
+
+.userPopout-3XzG_A .timeBarUserPopout-AWPFf2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.userPopout-3XzG_A .bar-3urHkF, .barInner-3NDaY_ {
+    border-radius: 0px;
+}
+
+.userPopout-3XzG_A .playButtonWrapper-3-YFAn{
+    margin-left: 0px;
+    margin-right: 20px; 
+}
+
+.userPopout-3XzG_A .button-1Pkqso{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+}
+
 .assetsLargeImageUserPopout-3Pp8BK{
     border-radius:0px;
 }
@@ -5719,7 +6221,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     transition: box-shadow .3s ease-in-out
 }
 
-.theme-dark .resultFocused-2geRUA {
+.theme-dark .resultFocused-3aIoYe {
     background-color: rgba(0, 0, 0, .2)
 }
 
@@ -7897,6 +8399,11 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 
 
 
+.theme-dark .inviteRow-2poi6Q:hover
+{
+    background-color: var(--headercolor)
+}
+
 .inviteModal-1di4Hk {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
@@ -8347,9 +8854,8 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 
 .theme-dark .side-8zPYf6 .itemDefault-3Jdr52:hover,
 .theme-dark .side-8zPYf6 .itemHover-EnbcjT:hover {
-    background-color: rgba(71, 71, 71, .6);
-    color: var(--accentcolor);
-
+    background-color: var(--titlebar);
+    color: var(--textcolor);
     transition: background-color .2s ease-in-out
 }
 
@@ -8420,6 +8926,20 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 .theme-dark .desc-2dKaro {
     color: #cecece
 }
+
+
+/*emoji na serwerze*/
+.card-FDVird.active-nvdKfC:before, .card-FDVird:hover:before {
+    background: var(--titlebar);
+    opacity: 1;
+    border-radius: 0px;
+}
+
+.theme-dark .emoji-alias-input .emoji-input{
+    background-color: var(--guildlistcolor);
+}
+
+
 
 .theme-dark .input-2YozMi {
     background-color: rgba(0, 0, 0, .1);
@@ -8606,7 +9126,40 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
 
-.theme-dark .selectableItem-3PW5_y:hover {
+
+
+
+/*auditlog*/
+
+.theme-dark .popoutList-T9CKZQ {
+    background: var(--guildlistcolor);
+    border-radius: var(--avatars);
+    border-color: var(--accentcolor);
+}
+
+.flex-1xMQg5 .flex-1O1GKY.horizontal-1ae9ci .horizontal-2EEEnY .flex-1O1GKY .directionRow-3v3tfG .justifyStart-2NDFzi .alignCenter-1dQNNs .noWrap-3jynv6 .selectableItem-1MP3MQ .selected-31soGA{
+    color: var(--textcolor);
+    background: var(--accentcolor);
+    }
+
+
+    .theme-dark .headerClickable-2IVFo9 {
+        background: var(--titlebar);
+    }
+
+    .theme-dark .headerDefault-1wrJcN{
+        background: var(--titlebar);
+    }
+
+    .theme-dark .headerExpanded-CUEwZ5{
+        background: var(--titlebar);
+    }
+
+    .theme-dark .changeDetails-bk98pu {
+        background-color: var(--titlebar);
+    }
+
+.theme-dark .selectableItem-1MP3MQ:hover {
     background-color: rgba(0, 0, 0, .2);
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
@@ -10044,7 +10597,8 @@ color:#fff;
     stroke: var(--accentcolor)
 }
 .inner-1gJC7_ .pulsingEllipsis-3YiXRF {
-    border-radius: 50%;
+   /* border-radius: 50%;*/
+   display: none;
 }
 .theme-dark .path2-3n_CYd {
     opacity: .6;
@@ -10439,7 +10993,7 @@ Plugin: PermissionsViewer by Zerebos
 ---------------------------*/
 .member-perms {
   margin-bottom: 10px;
-  padding: 0px 10px;
+  padding: 0px 120px;
 }
 
 .perm-details {
@@ -10448,7 +11002,7 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 .userPopout-3XzG_A .body-3iLsc4 .member-perms-header::before {
-  background: url("https://www.twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
+  background: url("http://twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
   height: 11px;
   top: 11px;
 }
