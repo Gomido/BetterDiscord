@@ -7230,6 +7230,7 @@ span {
 }
 
 .spinner-2enMB9{
+    display:none;
     color: var(--accentcolor);
 }
 
