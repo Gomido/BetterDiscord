@@ -12,7 +12,7 @@
     --accentcolor2: #eeeeee; 
     --badgecolor: #0289f7; 
     --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
-    --rs-spacing: 1px; /* osdtep miedzy ramka a avatarem */
+    --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
     --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
     --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.0";
+    --version: "Flat Discord Theme v1.2.7.1";
 
     
     /*BIALE*/
@@ -3491,7 +3491,6 @@ icon-kyxXVr.icon-file.unknown{
     color: #fff !important;
     font-weight: 400;
     font-size: 13px;
-    text-transform: capitalize;
   }
   
   .note-3HfJZ5 textarea {
