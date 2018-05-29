@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.1";
+    --version: "Flat Discord Theme v1.2.7.2";
 
     
     /*BIALE*/
@@ -1292,7 +1292,6 @@
   overflow: hidden;
   line-height: 55px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1),0 2px rgba(255,255,255,.05) inset!important;
 }
 /*--/Friends Search bar--*/
 
@@ -3303,7 +3302,7 @@ icon-kyxXVr.icon-file.unknown{
   }
 
 /*cienie*/
-.private-channels,
+.private-channels,.scrollerWrap-2lJEkd::before,
 .private-channels .scrollerWrap-2lJEkd::before,
 .guilds-wrapper .guild.guilds-add::before,
 .channels-wrap .flexChild-faoVW3, 
@@ -3430,7 +3429,7 @@ icon-kyxXVr.icon-file.unknown{
     margin-bottom: -1px;
     border-left: 1px solid var(--accentcolor);
     border-right: 1px solid var(--accentcolor);
-    z-index:10;
+    z-index:6;
   }
   
   .userPopout-3XzG_A .headerStreaming-2FjmGz .textRow-19NEd_ {
@@ -3450,13 +3449,14 @@ icon-kyxXVr.icon-file.unknown{
     background-color: transparent;
   }
   
+  /*tlo w popoucie*/
   .userPopout-3XzG_A .avatar-16XVId {
     border-radius: 0;
     background-color: var(--headercolor);
     border: none;
     height: 120px;
     width: 318px;
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-496143.jpg");
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-631952.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -3573,9 +3573,6 @@ icon-kyxXVr.icon-file.unknown{
     justify-content: flex-end;
   }
   
-  [src="/assets/a5eba102f5b5e413df2b65c73f288afa.svg"] {
-    content: url("https://twitchcord.github.io/twitchcord-theme/images/block.png");
-  }
   
   .bd-pfbtn.bd-themerepobutton {
     left: 0 !important;
@@ -3599,8 +3596,12 @@ icon-kyxXVr.icon-file.unknown{
     top: -25px;
     position: relative;
     margin: 0px 10px;
-    background-color: var(--headercolor);
-    z-index: 4;
+    border-top:1px solid var(--accentcolor);
+    border-bottom:1px solid var(--accentcolor);
+    border-left:1px solid var(--accentcolor);
+    border-right:1px solid var(--accentcolor);
+    background-color: transparent !important;
+    z-index:8 !important;
   }
   
   .userPopout-3XzG_A .headerText-2sdzFM {
@@ -3616,9 +3617,13 @@ icon-kyxXVr.icon-file.unknown{
     position: absolute;
     text-align: left;
     align-items: flex-start;
+    border-bottom:1px solid var(--accentcolor);
+    border-left:1px solid var(--accentcolor);
+    border-right:1px solid var(--accentcolor);
     padding-left: 30px;
     bottom: 0;
     pointer-events: none;
+    z-index:6
   }
   
   .userPopout-3XzG_A .headerTop-3C2Zn0 {
@@ -3635,11 +3640,12 @@ icon-kyxXVr.icon-file.unknown{
     font-size: 16px;
     line-height: 24px;
     top: 30px;
+    left:-10px;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 270px;
+    width: 2170px;
   }
   
   .userPopout-3XzG_A .headerName-fajvi9 {
@@ -3647,22 +3653,22 @@ icon-kyxXVr.icon-file.unknown{
     position: absolute;
     top: -50px;
     left: 0;
-    background: rgba(23, 20, 31, 0.7);
     padding: 5px 15px;
-    font-size: 12px;
+    font-size: 13px;
     box-sizing: border-box;
     z-index: 1;
     padding-left: 103px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    z-index:4 !important;
   }
   
   .userPopout-3XzG_A .headerName-fajvi9::before {
     content: "AKA:";
     color: #fff;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 5px;
     opacity: 0.7;
   }
@@ -4992,6 +4998,7 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     transition: all .2s ease-in-out
 }
 
+
 .channel-members-loading {
     -webkit-filter: grayscale(100%)brightness(60%);
     filter: grayscale(100%)brightness(60%)
@@ -5643,14 +5650,14 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     
 }
 
-  
+  /*tlo w profilu*/
   .root-SR8cQa .header-QKLPzZ {
     opacity: 1;
     padding: 0;
     z-index: 2;
     position: relative;
     background-color: var(--chatbackground);
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-496143.jpg");
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-631952.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -6970,8 +6977,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 
 
 .emoji.jumboable {
-    height: 38px;
-    width: 38px;
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -11000,6 +11007,7 @@ Plugin: PermissionsViewer by Zerebos
   top: 10px;
   position: relative;
 }
+
 
 .userPopout-3XzG_A .body-3iLsc4 .member-perms-header::before {
   background: url("http://twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
