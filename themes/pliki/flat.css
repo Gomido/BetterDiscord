@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.2";
+    --version: "Flat Discord Theme v1.2.7.1";
 
     
     /*BIALE*/
@@ -3603,6 +3603,24 @@ icon-kyxXVr.icon-file.unknown{
     background-color: transparent !important;
     z-index:8 !important;
   }
+
+  .headerXbox-3G-4PF{
+
+    border-top:1px solid var(--accentcolor);
+    border-bottom:1px solid var(--accentcolor);
+    border-left:1px solid var(--accentcolor);
+    border-right:1px solid var(--accentcolor);
+  }
+
+  .headerXbox-3G-4PF .button-1Pkqso {
+      margin-left:10px !important;
+  }
+
+  
+  .headerXbox-3G-4PF .assets-VMAukC {
+    padding-left:0px !important;
+    padding-top:0px !important;
+}
   
   .userPopout-3XzG_A .headerText-2sdzFM {
     content: '';
@@ -3773,7 +3791,7 @@ icon-kyxXVr.icon-file.unknown{
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 13px 5px;
+    padding-right: 20px;
   }
   
   .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz::before,
@@ -10396,6 +10414,25 @@ color:#fff;
     background-color: var(--badgecolor);
     border-radius: 0px;
 }
+
+.message-group .comment .message.mentioned .mention {
+    color: var(--accentcolor) !important;
+  }
+  
+  .message-group .comment .message.mentioned .mention:hover {
+    color: var(--accentcolor) !important;
+  }
+
+  .theme-dark .message-group .comment .markup .mention {
+    color: var(--accentcolor);
+    background: transparent;
+
+  }
+
+  .theme-dark .message-group .comment .markup .mention:hover {
+        background-color: transparent;
+        color: var(--accentcolor2)
+    }
 
 /* .unread-nWfX3W .unreadBar-17qm9c.mention-1f5kbO {
     background-color: var(--important-notification-color);
