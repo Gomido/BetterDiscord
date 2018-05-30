@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.1";
+    --version: "Flat Discord Theme v1.2.7.2";
 
     
     /*BIALE*/
@@ -3699,7 +3699,7 @@ icon-kyxXVr.icon-file.unknown{
     color: #fff !important;
     background: repeating-linear-gradient(45deg, #242424, #242424 10px, #181818 10px, #181818 20px);
     background-repeat: repeat-x;
-    border-top: 3px solid var(--accentcolor);
+    border-top: 1px solid var(--accentcolor);
     border-bottom: 1px solid var(--accentcolor);
     transition: all 0.2s;
     width: 300%;
