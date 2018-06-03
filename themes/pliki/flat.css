@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.2";
+    --version: "Flat Discord Theme v1.2.7.1";
 
     
     /*BIALE*/
@@ -2248,8 +2248,7 @@ margin-bottom: 0!important
 .guilds-wrapper .guilds .guild .badge,
 a[href="/channels/@me"] .badge {
     color: var(--textcolor);
-    border: 1px solid var(--chatbackground);
-    border-radius: 1px!important;
+    border-radius: 0px!important;
     animation: mention-flash 1.5s linear infinite;
     background: var(--badgecolor);
 }
@@ -3625,8 +3624,8 @@ icon-kyxXVr.icon-file.unknown{
   .userPopout-3XzG_A .headerText-2sdzFM {
     content: '';
     width: 320px;
-    height: 70px;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.84902) 100%);
+    height: 10px;
+    /*background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.84902) 100%);*/
     padding: 6px 10px;
     box-sizing: border-box;
     flex: 1 1 auto;
@@ -3638,9 +3637,8 @@ icon-kyxXVr.icon-file.unknown{
     border-bottom:1px solid var(--accentcolor);
     border-left:1px solid var(--accentcolor);
     border-right:1px solid var(--accentcolor);
-    padding-left: 30px;
+    padding-left: 20px;
     bottom: 0;
-    pointer-events: none;
     z-index:6
   }
   
@@ -3657,7 +3655,7 @@ icon-kyxXVr.icon-file.unknown{
   .userPopout-3XzG_A .headerTag-2pZJzA {
     font-size: 16px;
     line-height: 24px;
-    top: 30px;
+    top: -25px;
     left:-10px;
     position: relative;
     text-overflow: ellipsis;
@@ -3669,7 +3667,7 @@ icon-kyxXVr.icon-file.unknown{
   .userPopout-3XzG_A .headerName-fajvi9 {
     width: 100%;
     position: absolute;
-    top: -50px;
+    top: -110px;
     left: 0;
     padding: 5px 15px;
     font-size: 13px;
@@ -6179,9 +6177,41 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     color:var(--accentcolor2);
 }
 
+/*ust powiadomien*/
+
+.box-mmYMsp {
+    border-radius: 0px;
+}
+
+.theme-dark .cardPrimaryOutline-29Ujqw {
+    background: var(--titlebar);
+    border-color: var(--headercolor);
+    border-radius: 0px;
+}
+
+
+.theme-dark .button-mM-y8i {
+    -webkit-box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 1px 5px 0 rgba(0,0,0,.3);
+    background-color: var(--headercolor);
+    border-radius: 0px;
+    box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 1px 5px 0 rgba(0,0,0,.3);
+}
+
+.theme-dark .button-mM-y8i:hover {
+    -webkit-box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 1px 5px 0 rgba(0,0,0,.3);
+    background-color: var(--guildlistcolor);
+    border-radius: 0px;
+    box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 1px 5px 0 rgba(0,0,0,.3);
+}
+
+
+
 /* FOLDERY*/
 .guild.folder .badge.folder.count{
     background: var(--badgecolor) !important;
+    height: 12px;
+    top: -2px;
+    right: 32px;
 }
 
 #autocomplete-popout .autocomplete-arrow-wrapper{
@@ -7253,9 +7283,8 @@ span {
     padding: 7px 0px;
 }
 
-.spinner-2enMB9{
+.theme-dark .members-1998pB .spinner-2enMB9{
     display:none;
-    color: var(--accentcolor);
 }
 
 .messages .divider {
@@ -8367,7 +8396,8 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 
 .theme-dark .embedInner-1-fpTo {
     background-color: var(--titlebar);
-    border-color: var(--titlebar)
+    border-color: var(--titlebar);
+    border-radius: 0px;
 }
 
 .embed-wrapper {
