@@ -8,9 +8,9 @@
     --channellistcolor: #252525;
     --guildlistcolor: #303030;
     --headercolor: #161616;
-    --accentcolor: #0289f7; /*#44D62C*/
+    --accentcolor: #3C77FE; /*#44D62C*/
     --accentcolor2: #eeeeee; 
-    --badgecolor: #0289f7; 
+    --badgecolor: #3C77FE; 
     --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
     --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
     --rs-width: 2px; /* wielkosc ramki wokol avatara */
@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.1";
+    --version: "Flat Discord Theme v1.2.7.3";
 
     
     /*BIALE*/
@@ -3406,13 +3406,33 @@ icon-kyxXVr.icon-file.unknown{
     border-top: 1px solid var(--accentcolor)!important;
 }
 
+/*sidebar*/
+.theme-dark .sidebar-1-SQro {
+    background: var(--titlebar);
+}
 
+.theme-dark .reactionSelected-1pqISm {
+background: var(--guildlistcolor);
+border-radius: 0px;
+}
+.theme-dark .reactors-Blmlhw{
+    background: var(--guildlistcolor);
+}
 
 /*==={ USER POPOUTS }===*/
 
 .userPopout-3XzG_A .statusProfile-3ynqtt{
     display: none !important;
 }
+
+.image-3fVkBI {
+    background: url("https://vgy.me/HAhg3L.png") no-repeat center !important;
+    width: 437px;
+    height: 365px;
+    margin-left: -70px;
+  }
+
+
 .userPopout-3XzG_A {
     width: 320px;
     border-radius: 0;
@@ -3428,7 +3448,6 @@ icon-kyxXVr.icon-file.unknown{
     margin-bottom: -1px;
     border-left: 1px solid var(--accentcolor);
     border-right: 1px solid var(--accentcolor);
-    z-index:6;
   }
   
   .userPopout-3XzG_A .headerStreaming-2FjmGz .textRow-19NEd_ {
@@ -3442,24 +3461,27 @@ icon-kyxXVr.icon-file.unknown{
     flex: 1;
   }
   
+
+  /*tlo w okienku*/
+  .userPopout-3XzG_A .avatar-16XVId {
+    border-radius: 0;
+    background-color: var(--titlebar);
+    border: none;
+    height: 120px;
+    width: 318px;
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-71809.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  
   ::-webkit-scrollbar {
     border-radius: 0px;
     width: 10px;
     background-color: transparent;
   }
-  
-  /*tlo w popoucie*/
-  .userPopout-3XzG_A .avatar-16XVId {
-    border-radius: 0;
-    background-color: var(--headercolor);
-    border: none;
-    height: 120px;
-    width: 318px;
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-631952.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+
   
   .userPopout-3XzG_A .root-3-B5F3 {
     padding: 0px 5px;
@@ -3490,6 +3512,11 @@ icon-kyxXVr.icon-file.unknown{
     color: #fff !important;
     font-weight: 400;
     font-size: 13px;
+  }
+
+
+  .theme-dark .root-SR8cQa .note-QfFU8y textarea:focus{
+      background: var(--headercolor);
   }
   
   .note-3HfJZ5 textarea {
@@ -3544,8 +3571,8 @@ icon-kyxXVr.icon-file.unknown{
   }
   
   .assetsLargeImage-eYwpTX, .assetsSmallImage-3_3Bzj {
-    border: 4px solid var(--titlebar);
-    background-color: var(--titlebar);
+    border: 4px solid var(--headercolor);
+    background-color: var(--headercolor);
   }
   
   
@@ -3562,48 +3589,7 @@ icon-kyxXVr.icon-file.unknown{
   ---------------------------
   | VARIABLE DECLARATIONS
   ---------------------------
-  */
-  .orrie-buttonRed, .bda-slist .orrie-buttonRed {
-    margin-right: 0;
-  }
-  
-  .orrie-flex {
-    margin-top: 10px;
-    justify-content: flex-end;
-  }
-  
-  
-  .bd-pfbtn.bd-themerepobutton {
-    left: 0 !important;
-  }
-  
-  .themerepo-modal .modal-3HD5ck {
-    width: 988px;
-  }
-
-  
-  .userPopout-3XzG_A .image-33JSyf {
-    width: 80px !important;
-    height: 80px !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4) !important;
-    top: -25px;
-    position: relative;
-    margin: 0px 10px;
-    border-top:1px solid var(--accentcolor);
-    border-bottom:1px solid var(--accentcolor);
-    border-left:1px solid var(--accentcolor);
-    border-right:1px solid var(--accentcolor);
-    background-color: transparent !important;
-    z-index:8 !important;
-  }
-
-  .headerXbox-3G-4PF{
+  */  .headerXbox-3G-4PF{
 
     border-top:1px solid var(--accentcolor);
     border-bottom:1px solid var(--accentcolor);
@@ -3620,12 +3606,63 @@ icon-kyxXVr.icon-file.unknown{
     padding-left:0px !important;
     padding-top:0px !important;
 }
+.orrie-buttonRed, .bda-slist .orrie-buttonRed {
+    margin-right: 0;
+  }
+  
+  .orrie-flex {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+  
+  [src="/assets/a5eba102f5b5e413df2b65c73f288afa.svg"] {
+    content: url("https://twitchcord.github.io/twitchcord-theme/images/block.png");
+  }
+  
+  .bd-pfbtn.bd-themerepobutton {
+    left: 0 !important;
+  }
+  
+  .themerepo-modal .modal-3HD5ck {
+    width: 988px;
+  }
+  
+  .userPopout-3XzG_A .status-oxiHuE {
+    position: absolute;
+    left: 10px;
+    bottom: 18px;
+    height: 6px;
+    width: 6px;
+    box-shadow: none;
+    border: 2px solid var(--headercolor);
+  }
+  
+  .userPopout-3XzG_A .image-33JSyf {
+    width: 80px !important;
+    height: 80px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border-top:1px solid var(--accentcolor);
+    border-bottom:1px solid var(--accentcolor);
+    border-left:1px solid var(--accentcolor);
+    border-right:1px solid var(--accentcolor);
+    top: -25px;
+    position: relative;
+    margin: 0px 10px;
+    background-color: var(--headercolor);
+    z-index: 6;
+  }
+  
   
   .userPopout-3XzG_A .headerText-2sdzFM {
     content: '';
     width: 320px;
-    height: 10px;
-    /*background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.84902) 100%);*/
+    height: 35px;
+    /*background: var(--accentcolor);*/
     padding: 6px 10px;
     box-sizing: border-box;
     flex: 1 1 auto;
@@ -3634,12 +3671,9 @@ icon-kyxXVr.icon-file.unknown{
     position: absolute;
     text-align: left;
     align-items: flex-start;
-    border-bottom:1px solid var(--accentcolor);
-    border-left:1px solid var(--accentcolor);
-    border-right:1px solid var(--accentcolor);
-    padding-left: 20px;
+    padding-left: 30px;
     bottom: 0;
-    z-index:6
+    z-index: 2 !important;
   }
   
   .userPopout-3XzG_A .headerTop-3C2Zn0 {
@@ -3655,56 +3689,38 @@ icon-kyxXVr.icon-file.unknown{
   .userPopout-3XzG_A .headerTag-2pZJzA {
     font-size: 16px;
     line-height: 24px;
-    top: -25px;
-    left:-10px;
+    top: 0px;
+    left:-20px;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 2170px;
+    width: 270px;
   }
   
   .userPopout-3XzG_A .headerName-fajvi9 {
     width: 100%;
     position: absolute;
-    top: -110px;
+    top: -85px;
     left: 0;
     padding: 5px 15px;
-    font-size: 13px;
+    font-size: 12px;
     box-sizing: border-box;
     z-index: 1;
     padding-left: 103px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    z-index:4 !important;
   }
   
   .userPopout-3XzG_A .headerName-fajvi9::before {
     content: "AKA:";
     color: #fff;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     margin-right: 5px;
     opacity: 0.7;
   }
-
-
-  .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7 {
-    font-size: 11px;
-    text-transform: uppercase;
-    padding-left: 32px;
-    color: #fff !important;
-    background: repeating-linear-gradient(45deg, #242424, #242424 10px, #181818 10px, #181818 20px);
-    background-repeat: repeat-x;
-    border-top: 1px solid var(--accentcolor);
-    border-bottom: 1px solid var(--accentcolor);
-    transition: all 0.2s;
-    width: 300%;
-    -webkit-animation: 10s linear 0s normal none infinite infiniteLeft;
-    animation: 10s linear 0s normal none infinite infiniteLeft;
-    z-index:5;
-}
   
   .userPopout-3XzG_A .headerTag-2pZJzA > .username {
     color: #fff;
@@ -3725,18 +3741,7 @@ icon-kyxXVr.icon-file.unknown{
     opacity: 0.5;
   }
   
-  .userPopout-3XzG_A .headerText-1HLrL7{
-    height: 34px;
-    line-height: 34px;
-    padding: 0 15px;
-    margin: 0;
-    margin-top: -1px;
-    background: var(--titlebar);
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accentcolor2) !important;
-  }
-  
+  .userPopout-3XzG_A .headerText-1HLrL7,
   .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz {
     height: 34px;
     line-height: 34px;
@@ -3744,10 +3749,14 @@ icon-kyxXVr.icon-file.unknown{
     margin: 0;
     margin-top: -1px;
     background: var(--headercolor);
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--accentcolor2) !important;
+    text-transform: capitalize;
+    border-top: 1px solid var(--headercolor);
+    border-bottom: 1px solid var(--headercolor);
   }
+  
   
   .userPopout-3XzG_A .bodyAlignCenter-1KzvJk {
     padding: 10px 15px;
@@ -3757,7 +3766,22 @@ icon-kyxXVr.icon-file.unknown{
     background-color: transparent !important;
   }
   
-
+  .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7 {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    color: #fff !important;
+    background: repeating-linear-gradient(45deg, #242424, #242424 10px, #181818 10px, #181818 20px);
+    background-repeat: repeat-x;
+    border-top: 3px solid var(--accentcolor);
+    border-bottom: 1px solid var(--accentcolor);
+    transition: all 0.2s;
+    width: 300%;
+    -webkit-animation: 10s linear 0s normal none infinite infiniteLeft;
+    animation: 10s linear 0s normal none infinite infiniteLeft;
+    z-index:6;
+}
+  
   
   .userPopout-3XzG_A .activityUserPopout-2yItg2 .bodyNormal-2D39hT {
     align-items: center;
@@ -3765,7 +3789,7 @@ icon-kyxXVr.icon-file.unknown{
   
   .userPopout-3XzG_A .activity-11LB_k {
     padding: 0;
-    background-color: var(--titlebar);
+    background-color: var(--headercolor);
     overflow: hidden;
   }
   
@@ -5518,8 +5542,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::before {
     content: '';
     background: #f00;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     position: absolute;
     top: 135px;
@@ -5530,8 +5554,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
   .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::after {
     content: '';
     background: #f00;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     top: 135px;
     left: 15px;
@@ -5618,6 +5642,18 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     bottom: 40px;
     right: 20px;
   }
+
+  .root-SR8cQa .headerInfo-30uryT + button {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.actionButton-3W1xZa{
+    position: absolute;
+    bottom: 20px;
+    right: 10px; 
+}
   
   .root-SR8cQa .body-3ND3kc {
     display: flex;
@@ -5672,8 +5708,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     padding: 0;
     z-index: 2;
     position: relative;
-    background-color: var(--chatbackground);
-    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-631952.jpg");
+    background-color: var(--headercolor);
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-71809.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -6000,11 +6036,10 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
     text-transform: capitalize;
   }
   
-  .buttonInvertedPurple-WtBglX{
-      color:var(--accentcolor2);
-  }
-
-
+  .buttonInvertedPurple-WtBglX {
+    background-color: var(--accentcolor);
+    color: var(--accentcolor2);
+}
   .root-SR8cQa .buttonBrandInverted-VFL7Yc,
   .root-SR8cQa .buttonGreenFilled-6QHNrw {
     cursor: pointer;
@@ -7194,15 +7229,19 @@ span {
     border-radius: 0 0 0 0
 }
 
-.autocomplete-1vrmpx.autocomplete-i9yVHs {
-    margin-bottom:12px;
+
+.message-group .edit-message .autocomplete-1vrmpx.autocomplete-i9yVHs {
+    margin-bottom:0px;
 }
 
+
+.autocomplete-1vrmpx.autocomplete-i9yVHs {
+    margin-bottom:-12px;
+}
 
 .theme-dark .autocomplete-1vrmpx {
     background-color: var(--headercolor);
     border: none!important;
-    bottom: 50px;
     border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
     z-index:6
 }
@@ -10481,11 +10520,13 @@ color:#fff;
     bottom: 70px;
 }
 
-.emojiButton-2wRZts>.sprite-2iCowe,
-.channel-textarea-emoji>.sprite-item {
-    display: none
+.spriteNormal-1wvG5n.sprite-2iCowe{
+    display: none;
 }
 
+.spriteHovered-3lIo93.sprite-2iCowe{
+display: none;
+}
 
 .message+div .edit-message .edit-container-outer{
         left:20px;
