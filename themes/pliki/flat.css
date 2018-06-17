@@ -24,7 +24,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.7.5";
+    --version: "Flat Discord Theme v1.2.7.6";
 
 
     /*BIALE*/
@@ -1896,22 +1896,21 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 
 .guilds-wrapper .guilds .guild .guild-inner a {
-    border: 1px solid var(--headercolor);
+    border: 2px solid var(--headercolor);
     box-shadow: var(--headercolor);
     box-sizing: border-box;
 }
 
 .guilds-wrapper .guilds .guild.unread .guild-inner a {
     border-color: var(--accentcolor);
-    box-shadow: inset 0 0 0 2px var(--accentcolor), rgba(43, 117, 252, .8) 0px 0px 15px!important;
 }
 
 /*fix do ikony i ramki nowych wiadomości*/
 .iconSizeLarge-161qtT{
 height:44px;
 width:44px;
-margin-top:4px;
-margin-left:4px;
+margin-top:3px;
+margin-left:3px;
 }
 
 .noIcon-1a_FrS.iconSizeLarge-161qtT{
@@ -3439,9 +3438,13 @@ border-radius: 0px;
 }
 
 /*==={ USER POPOUTS }===*/
-
+/*status na okienku co wyskakuje*/
 .userPopout-3XzG_A .statusProfile-3ynqtt{
-    display: none !important;
+width:108px !important;
+height:108px !important;
+z-index: 15;
+top:-67px !important;
+left:8px !important;
 }
 
 .image-3fVkBI {
@@ -3665,10 +3668,6 @@ border-radius: 0px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    border-top:2px solid var(--accentcolor);
-    border-bottom:2px solid var(--accentcolor);
-    border-left:2px solid var(--accentcolor);
-    border-right:2px solid var(--accentcolor);
     top: -65px;
     position: relative;
     margin: 0px 10px;
@@ -4846,8 +4845,8 @@ body:active .alt-3btY0e.menu-Sp6bN1:not(:active) {
 .guilds-wrapper .guilds .guild.selected:before {
     background: var(--accentcolor);
     left:-15px;
-    height:55px;
-    top:17px;
+    height:50px;
+    top:20px;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
 .guilds-wrapper .guilds .guild.unread:not(.selected) .guild-inner a {
@@ -8627,6 +8626,15 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 #user-profile-modal .guilds .section+.section {
     border-top: 0 solid #f0f0f0
 }
+
+
+/* avek wspolnych serwerów*/
+.root-SR8cQa .listScroller-2_vlfo .iconInactive-98JN5i{
+border-radius: 0px;
+width:50px;
+height:52px;
+}
+
 
 .theme-dark .elevationLow-5GEz9e {
     -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
