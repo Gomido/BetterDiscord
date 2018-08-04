@@ -65,7 +65,24 @@
 .theme-dark .messagesWrapper-3lZDfY {
     background-color: var(--chatbackground);
 }
+.contentCozy-3XX413 {
+    margin-left: 90px !important;
+}
 
+.containerCozy-jafyvG {
+    padding-bottom: 12px;
+    padding-top: 20px;
+}
+.large-3ChYtB {
+    height: 50px;
+    width: 50px;
+}
+.theme-dark .markup-2BOw-j code {
+    background: var(--headercolor)!important;
+}
+
+.markup-2BOw-j pre {
+    border-radius: 0px;}
 
 .theme-dark .divider-3gKybi:not(.red-1YQ4s7) span {
     color: var(--accentcolor);
@@ -979,13 +996,13 @@ border: transparent;
 
 /*wzmianka*/
 
-.message-group .mentioned .message-text:after {
+.isMentionedCozy-3isp7y:after {
     border-left: 3px solid var(--accentcolor);
     border-radius: 0;
     background: transparent;
     left: -3px;
 }
-.message-group .mentioned .markup {
+.theme-dark .isMentioned-N-h9aa  {
     background: var(--headercolor)!important;
     height: auto!important;
     margin-top: 9px!important;
