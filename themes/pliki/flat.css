@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
@@ -261,10 +260,6 @@ border: transparent;
 .guild-1EfMGQ .guildIcon-CT-ZDq {
     border-radius: 0px !important;
 }
-.iconSizeLarge-161qtT {
-    height: 44px !important;
-    width: 44px !important;
-}
 .theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
     background: var(--accentcolor) !important;
 }
@@ -274,21 +269,13 @@ border: transparent;
 }
 
 .guild-1EfMGQ .guildInner-3DSoA4 {
-    border-radius: 0px !important;
+    border-radius: 0% !important;
     cursor: pointer;
     font-size: 18px;
     line-height: 45px;
     overflow: hidden;
     text-align: center;
 }
-.guild-1EfMGQ .guildInner-3DSoA4 a {
-    display: block;
-    height: 47px !important;
-    width: 51px !important;
-    margin-top:0px !important;
-    margin-left:0px !important;
-}
-
 .foldercontainer .guild-1EfMGQ:not(.selected-ML3OIq) .guildInner-3DSoA4 {
     border-radius: 0px !important;
     transition: border-radius 1s;
@@ -2237,10 +2224,10 @@ border: transparent;
 
 /*fix do ikony i ramki nowych wiadomości*/
 .iconSizeLarge-161qtT{
-height:44px;
-width:44px;
-margin-top:3px;
-margin-left:3px;
+height:52px;
+width:52px;
+margin-top:0px;
+margin-left:0px;
 }
 
 .noIcon-1a_FrS.iconSizeLarge-161qtT{
