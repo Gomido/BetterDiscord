@@ -1,3 +1,5 @@
+/*//META{"name":"TEST","description":"Ciemny skin z ładnymi dodatkami.","author":"Lolek","version":"1.2.5.4"}*//*/
+/*  */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
@@ -164,6 +166,16 @@
     z-index: 2;
 }
 
+
+.theme-dark .wrapper-3WhCwL {
+    background-color: transparent;
+    color: var(--accentcolor);
+}
+
+.theme-dark .markup-2BOw-j a {
+    color: var(--accentcolor);
+    font-weight: 600;
+}
 
 .private-channels .search-bar input {
     pointer-events: initial;
@@ -1093,7 +1105,7 @@ border: transparent;
 /*pasek z serwerami*/
 
 
-.guilds-wrapper .guilds>div.guild:first-child {
+.guilds-1q_RqH .guilds>div.guild:first-child {
     margin-top: -48px;
     width: 70px;
     margin-left: -10px;
@@ -8337,13 +8349,14 @@ form .channelTextArea-rNsIhG {
     margin-top:-2px !important;
     background-color: var(--headercolor) !important;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .message-group {
-    background-color: var(--headercolor) !important;
-    border-color: var(--headercolor) !important;
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    background-color: var(--guildlistcolor) !important;
+    border-color: var(--guildlistcolor) !important;
+    border-radius:0px;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .message-group:hover {
+.theme-dark .messageGroupWrapper-o-Zw7G:hover {
     border-radius: 0px;
-    background-color: var(--headercolor) !important;
+    background-color: var(--guildlistcolor) !important;
     border-color: var(--accentcolor) !important;
 }
 
