@@ -121,7 +121,7 @@
     background-color: var(--chatbackground);
 }
 .contentCozy-3XX413 {
-    margin-left: 10px !important;
+    margin-left: 5px;
 }
 
 
@@ -131,7 +131,7 @@
 
 .headerCozyMeta-rdohGq{
 
-        margin-left: -40px !important;
+        margin-left: -50px !important;
     } 
 
 
@@ -1162,12 +1162,16 @@ height:55px !important;
     }
 
 .container-1YxwTf .avatar-17mtNa {
-        right: 90px;
-        top: -10px;
-        margin: 0;
-        opacity: 1; }
-    
+    right: 90px;
+    top: -10px;
+    margin: 0;
+    opacity: 1; }
 
+
+/*avek zablokowanego*/
+ .messageGroupBlocked-3wrQQX.messageGroupBlocked-JqfeE2.revealed-1_RKsf .container-1YxwTf .avatar-17mtNa {
+    right: 80px;
+}
 
   .foldercontainer {
     padding: 15px 0px 70px 10px;
@@ -1236,6 +1240,13 @@ height:55px !important;
     pointer-events: none; }
   
 
+    /*blocked user*/
+.theme-dark .wrapper-39oAo3 {
+    background-color:var(--headercolor);}
+
+.theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: var(--headercolor);
+  }
 /* Avatary */
 
 .avatar-large,
@@ -7868,9 +7879,8 @@ span {
 }
 
 .theme-dark .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
-    background: var(--titlebar)!important;
+    background: var(--channellistcolor)!important;
     border-radius: 0px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     transition: 300ms ease;
 }
 
@@ -7884,11 +7894,12 @@ span {
     margin: 6px 6px 6px 19px;
 }
 
-
+.button-3Jq0g9{
+    margin-top:4px;
+}
 
 .theme-dark .messageGroupBlocked-3wrQQX.revealed-1_RKsf {
-    background: var(--titlebar);
-    border-color: var(--accentcolor);
+    background: var(--channellistcolor);
 }
 
 .messages-3amgkR .comment .edited {
