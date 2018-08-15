@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 :root {
     --avatars: 50%;
     --borders: 1;
@@ -79,7 +81,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.8.0";
+    --version: "Flat Discord Theme v1.2.7.9";
 
 
     /*BIALE*/
@@ -1175,6 +1177,14 @@ height:55px !important;
     padding: 15px 0px 70px 10px;
     margin: 0px;
 }
+.guildsWrapper-5TJh6A .guilds-1q_RqH {
+  align-items: center;
+  position: relative;
+  height: calc(100% - 70px); }
+
+.guilds-1q_RqH > .guild-1EfMGQ:not(.guildsAdd-21_IdK):last-of-type {
+  margin-bottom: 30px !important; }
+
 
 .guilds-wrapper.folderopen .guilds{
     padding: 0px 0px 70px 10px !important;
@@ -1202,7 +1212,7 @@ height:55px !important;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 20px;
+    bottom: 25px;
     z-index: 1;
     content: "";
     display: block;
@@ -2211,7 +2221,7 @@ height:55px !important;
 }
 .guilds-wrapper .guilds .guild .avatar-small {
     border-radius: 50%;
-    background-size: 42px 42px;
+    background-size: 45px 45px;
     margin: 0;
 
 }.theme-dark .guild-1EfMGQ.unread-qLkInr:before {
@@ -2232,13 +2242,13 @@ height:55px !important;
     border-radius: 50%;
     left: 50%;
     top: 50%;
-    height: 50px;
-    width: 50px;
+    height: 52px;
+    width: 52px;
     transform: translate(-50%, -50%) scale(1);
-z-index: -2; }
+    z-index: -2; }
   
   .guild-1EfMGQ.unread-qLkInr a::after {
-    box-shadow: 0 0 0 2px var(--lvl1) inset, 0 0 0 var(--notification-width) var(--accentcolor), 0 0 0 23px rgba(255, 255, 255, 0), 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 0 2px var(--headercolor) inset, 0 0 0 var(--notification-width) var(--accentcolor), 0 0 0 23px rgba(255, 255, 255, 0), 0 2px 20px rgba(0, 0, 0, 0.1) !important;
     animation: guild-notifs 0.8s cubic-bezier(0.2, 0, 0, 1); }
 
 
@@ -3106,11 +3116,6 @@ a[href="/channels/@me"] .badge {
 .icon-3rMtHF:hover{
     opacity: .9
 }
-.guildsWrapper-5TJh6A{
-    
-    margin-top:-5px;
-}
-
 
 .theme-dark .unreadMentionsBar-1VrBNe {
     -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.0);
@@ -3176,13 +3181,7 @@ a[href="/channels/@me"] .badge {
     top: 50%;
     transform: translate(-50%, -50%); }
   
-  .guildsWrapper-5TJh6A .scroller-wrap {
-    margin-bottom: 0px; }
-  
-  .guildsWrapper-5TJh6A .guilds-1q_RqH {
-    z-index: 6;
-    padding-bottom: 0px !important; }
-  
+
   /*/"new mentions" arrows*/
   .stop-animations .guilds-1q_RqHWrapper-5TJh6A .guilds-1q_RqH .friendsOnline-_wi_fM {
     transform: translate(-50%, 0) !important; }
@@ -3726,14 +3725,20 @@ icon-kyxXVr.icon-file.unknown{
   }
 
 
+  .guildsWrapper-5TJh6A{
+      z-index:4;
+  }
+
 /*cienie*/
 .private-channels, .scrollerWrap-2lJEkd::before,
 .private-channels .scrollerWrap-2lJEkd::before,
 .guilds-wrapper .guildsAdd-21_IdK::before,
+.guildsWrapper-5TJh6A,
 .channels-wrap .flexChild-faoVW3,
 #friends .friends-header,
 .chat .title-wrap,
 #dv-mount,
+.scroller-2FKFPG,
 .popout.popout-bottom-right.no-arrow.no-shadow,
 .chat form .channel-text-area-default,
 .search-results-wrap,
@@ -8570,7 +8575,6 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 .theme-dark .container-2Thooq {
     position: relative;
     height:70px;
-	top: 1px;
 	background: var(--headercolor);
 	z-index: 100 !important;
 }
