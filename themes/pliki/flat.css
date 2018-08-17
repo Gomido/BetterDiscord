@@ -30,7 +30,7 @@
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.8.1";
+    --version: "Flat Discord Theme v1.2.8.0";
 
 
     /*BIALE*/
@@ -4248,7 +4248,20 @@ icon-kyxXVr.icon-file.unknown{
   .ui-switch-checkbox:active + .ui-switch::before {
     left: -4px;
     width: 23px; }
-  
+
+.checked-3_4uQ9{
+    background-color: var(--accentcolor) !important;
+    border-color: var(--accentcolor) !important
+    }
+.checkbox-1ix_J3 polyline[stroke="#43b581"] {
+        stroke: #ffffff !important; }
+      
+.checkbox-1ix_J3 polyline[stroke="#7289da"] {
+        stroke: var(--accentcolor) !important; }
+      
+.checkbox-1ix_J3 polyline[stroke="transparent"] {
+        stroke: transparent !important; }
+      
   .switch-3wwwcV::before,
   .ui-switch::after {
     content: "";
