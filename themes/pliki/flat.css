@@ -717,9 +717,7 @@ border: transparent;
 }
 
 /*badge plugin*/
-.BE-badge-chat {
-    margin-bottom: 0px !important;
-}
+
 .BE-badge-popout {
     margin-bottom: 3px !important;
 }
@@ -741,23 +739,26 @@ border: transparent;
 .ace_gutter-layer{
     background: var(--titlebar)
 }
+
 /*Smarter embeds*/
-  .messages-3amgkR .accessory{
+.container-1YxwTf .container-1e22Ot {
 	display: flex;
 	flex-flow: row wrap;
 }
-.messages-3amgkR .accessory>*:not(:last-of-type){
-	margin-right:10px;
-}
-.messages-3amgkR .accessory>*{
-	margin-top:5px;
-}
-.reactions-1xb2Ex{
-	width:100%;
-	flex:100%;
-	order:9999999999;
+
+.container-1YxwTf .container-1e22Ot > :not(:last-of-type){
+	margin-right: 10px;
 }
 
+.container-1YxwTf .container-1e22Ot > *{
+	margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+	width: 100%;
+	flex: 100%;
+	order: 9999999999;
+}
 /* Szukajka po kliku */
 
 
@@ -1097,12 +1098,16 @@ border: transparent;
   .guilds-wrapper .guilds {
     padding: 48px 0px 70px 10px !important;
   }
+
+
   .chat-3bRxxu .large-3ChYtB:hover {
     opacity: 1;
     filter: brightness(93%) contrast(110%) !important;
 }
 
-
+.theme-dark .chat-3bRxxu form {
+    background-color: var(--headercolor);
+}
 .container-1YxwTf .image-33JSyf {
 width:55px!important;
 height:55px !important;
@@ -4091,23 +4096,21 @@ icon-kyxXVr.icon-file.unknown{
    */
 
 /*Lolek*/
-.image-33JSyf.profile-ZOdGIb[style*="avatars/186609657928744962"]::before,
 .image-33JSyf.large-3ChYtB[style*="avatars/186609657928744962"]::before {
   display: inline-block !important;
   content: "}"; }
 
-.image-33JSyf.profile-ZOdGIb[style*="avatars/186609657928744962"]::after,
 .image-33JSyf.large-3ChYtB[style*="avatars/186609657928744962"]:hover::before {
   display: inline-block !important;
   content: "Najlepszy skinmejker discorda" !important; }
 
   /*Zagro*/
-  .image-33JSyf.profile-ZOdGIb[style*="avatars/186817801741271040"]::before,
+
   .image-33JSyf.large-3ChYtB[style*="avatars/186817801741271040"]::before {
     display: inline-block !important;
     content: "}"; }
   
-  .image-33JSyf.profile-ZOdGIb[style*="avatars/186817801741271040"]::after,
+
   .image-33JSyf.large-3ChYtB[style*="avatars/186817801741271040"]:hover::before {
     display: inline-block !important;
     content: "ʕ•ᴥ•ʔ" !important; }
@@ -4149,58 +4152,6 @@ icon-kyxXVr.icon-file.unknown{
     left:50px;
     z-index: 100 !important}
   
-  .image-33JSyf.profile-ZOdGIb::before,
-  .image-33JSyf.profile-ZOdGIb::after {
-    display: none !important; }
-  
-  .image-33JSyf.profile-ZOdGIb {
-    pointer-events: none; }
-  
-  .image-33JSyf.profile-ZOdGIb::before {
-    color: var(--white5);
-    font-size: 25px;
-    z-index: 1;
-    position: relative;
-    font-family: BMTicons;
-    right: -130px;
-    top: 50px;
-    background: transparent;
-    border-radius: 50%;
-    padding: 0px;
-    pointer-events: initial !important;
-    cursor: pointer;
-    transition: 100ms ease; }
-  
-  .image-33JSyf.profile-ZOdGIb:hover::before {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    color: var(--accentcolor); }
-  
-  .image-33JSyf.profile-ZOdGIb::after {
-    color: var(--white4);
-    font-size: 14.4px;
-    z-index: 1;
-    position: relative;
-    transform: translate(calc(-100% + 10px), 0);
-    right: -360px;
-    top: 25px;
-    width: auto;
-    background: var(--accentcolor);
-    color: var(--white10);
-    padding: 3px 10px;
-    border-radius: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: 200ms ease;
-    white-space: nowrap; }
-  
-  .image-33JSyf.profile-ZOdGIb:hover::after {
-    opacity: 1;
-    transform: translate(-100%, 0);
-    transition: 200ms cubic-bezier(0, 0, 0, 1); }
-  
-  .mask-3OgeRz {
-    -webkit-mask: none !important;
-    mask: none !important; }
   /*switches*/
   
 .bda-slist .ui-switch-wrapper {
