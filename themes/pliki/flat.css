@@ -7545,7 +7545,6 @@ border-radius: 0px;
 }
 
 
-
 /* FOLDERY*/
 .guild-1EfMGQ.folder .badge-1GsMF2.folder.count{
     background: var(--badgecolor) !important;
@@ -8557,10 +8556,15 @@ span {
 }
 
 .theme-dark .autocomplete-1vrmpx {
-    background-color: var(--headercolor);
-    border: none!important;
-    border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
-    z-index:6
+        background-color: #252525 !important;
+        border-radius: 0px;
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 0;
+        z-index: 10;    
+        border-radius: calc(0px * var(--borders) + 10px * (1 - var(--borders)));
 }
 
 .theme-dark .selectorSelected-1_M1WV {
