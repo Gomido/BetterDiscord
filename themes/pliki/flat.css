@@ -3550,13 +3550,13 @@ icon-kyxXVr.icon-file.unknown{
   }
 
 /*cienie*/
+
 .privateChannels-1nO12o, .scrollerWrap-2lJEkd::before,
 .privateChannels-1nO12o .scrollerWrap-2lJEkd::before,
 .guilds-wrapper .guildsAdd-21_IdK::before,
 .guildsWrapper-5TJh6A,
 .channels-wrap .flexChild-faoVW3,
 #dv-mount,
-.scroller-2FKFPG.scroller-2wx7Hm,
 .popout.popout-bottom-right.no-arrow.no-shadow,
 .chat form .channel-text-area-default,
 .search-results-wrap,
@@ -3574,15 +3574,18 @@ icon-kyxXVr.icon-file.unknown{
 .channelTextArea-1LDbYG,
 #friends .friends-header, .chat .title-wrap,
 .privateChannels-1nO12o .search-bar{
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
 }
 .chat .titleWrapper-1l0xT9, .header-2o-2hj {
-    box-shadow: 0 2px 15px rgba(0,0,0,.9);
+    box-shadow: 0 2px 15px rgba(0,0,0,.4);
   }
   .scroller-2v3d_F {
-    box-shadow: 0 0px 15px rgba(0,0,0,.9);
+    box-shadow: 0 0px 15px rgba(0,0,0,.4);
   }
-
+  .scroller-2FKFPG.scroller-2wx7Hm{
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+   
+  }
 .root-SR8cQa.lookFilled-1Gx00P.colorGreen-29iAKY{
   background-color: var(--accentcolor);
 }
@@ -8374,7 +8377,14 @@ border-radius: 0px;
     margin-bottom: 0
 }
 
-
+.listeningAlong-2UPsxf {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1));
+    background-color: var(--titlebar);
+    transition: all 500ms ease;
+    border: none; }
+  
 .emoji.jumboable {
     height: 40px;
     width: 40px;
