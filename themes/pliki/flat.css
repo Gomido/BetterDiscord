@@ -760,6 +760,11 @@ border: transparent;
     border-radius: 0px;
     width: 100%;
 }
+.theme-dark .tier1Banner-1B_WXY {
+    background-color: var(--titlebar);
+    border-radius: 0px;
+}
+
 /*gry nitro, biblioteka*/
 
 .theme-dark .gameLibrary-TTDw4Y{
@@ -2011,6 +2016,12 @@ height:55px !important;
 #user-settings .item-PXvHYJ:nth-of-type(8) {
     color: var(--accentcolor) !important; }
   
+
+.theme-dark .side-8zPYf6 .itemDefault-3Jdr52:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--white10); }
+      
+
   #user-settings .item-PXvHYJ:nth-of-type(8).selected-3s45Ha {
     color: #fff !important;
     background: var(--accentcolor) !important; }
@@ -2028,6 +2039,7 @@ height:55px !important;
   .itemBrand-mC9YR4 {
     color: var(--accentcolor); }
   
+    
   #user-settings .item-PXvHYJ:active:nth-of-type(8)::before,
   #user-settings .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:active:nth-of-type(8)::before,
   #user-settings .item-PXvHYJ.selected-3s45Ha:nth-of-type(8)::before,
@@ -4085,8 +4097,9 @@ icon-kyxXVr.icon-file.unknown{
     transform: translate(-50%, 0) !important; }
   
   .guildsWrapper-5TJh6A .guilds-1q_RqH .homeIcon-1FoKUJ {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') !important;
-    background-size: 60% !important;
+    background-image: url('https://raw.githubusercontent.com/CompletelyUnbelievable/ThemeResource/master/GuildsBar/Images/Moving_Discord_Logo.gif') !important;
+    /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') !important;*/
+    background-size: 100% !important;
     background-repeat: no-repeat;
     background-position: 50%;
     height: 50px;
@@ -6399,7 +6412,9 @@ border-radius: 0px;
 
 .theme-dark .headerBar-UHpsPw {
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 2px 0 rgba(0, 0, 0, .06);
-    background: #353535;
+    background: var(--headercolor);
+    height:50px;
+    border-bottom: 2px solid var(--accentcolor);
     box-shadow: 0 1px 0 rgba(0, 0, 0, .2), 0 2px 0 rgba(0, 0, 0, .06)
 }
 
@@ -9538,6 +9553,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 .chat .title-qAcLxz, #friends .headerBar-UHpsPw, .chat .titleCall-3X0yGQ {
     box-shadow: none!important;
     background: var(--headercolor)!important;
+    border-bottom: 2px solid var(--accentcolor);
     z-index: 999;
     height: 50px;
 }
