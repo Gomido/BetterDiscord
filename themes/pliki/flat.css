@@ -24,13 +24,13 @@
     --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
     --rs-profile-spacing: 0px; /* odstep w profilu */
     --rs-profile-width: 4px; /* widocznosc ramki statusu w proflu */
-    --rs-online-color: #1fcf45; /* online */
+    --rs-online-color: #31db2b; /* online */
     --rs-idle-color: #faa61a; /* zajety */
     --rs-dnd-color: #f71e1e; /* dnd */
     --rs-offline-color: #636b75; /* offline */
     --rs-invisible-color: #747f8d; /* niewidoczny */
     --rs-streaming-color: #643da7; /* stream */
-    --version: "Flat Discord Theme v1.2.8.2";
+    --version: "Flat Discord Theme v1.2.8.3";
 
 
     /*BIALE*/
@@ -686,8 +686,9 @@ border: transparent;
     background-color: var(--titlebar);
     border-left: 1px solid var(--accentcolor);
     border-right: 1px solid var(--accentcolor);
-
 }
+
+
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track-piece{
     background-color:var(--titlebar) !important;
 }
@@ -709,11 +710,12 @@ border: transparent;
 }
 
 .categories-1feg4n {
-    border-top:0px solid var(--titlebar);
+    border-top:1px solid var(--accentcolor);
     border-left: 1px solid var(--accentcolor);
     border-right: 1px solid var(--accentcolor);
     border-bottom: 1px solid var(--accentcolor);
     margin:0px !important;
+
 }
 .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
     background-color: var(--guildlistcolor);
@@ -754,7 +756,84 @@ border: transparent;
     background: var(--titlebar)
 }
 
-/*Smarter embeds*/
+.thumbnail-NKY26f {
+    border-radius: 0px;
+    width: 100%;
+}
+/*gry nitro, biblioteka*/
+
+.theme-dark .gameLibrary-TTDw4Y{
+    background-color: var(--chatbackground);
+}
+.theme-dark .applicationStore-1pNvnv {
+    background-color: var(--chatbackground);
+}
+
+.theme-dark .searchBox-3Y2Vi7 {
+    background-color: var(--titlebar);
+}
+
+.theme-dark .optionActive-KkAdqq {
+    background: var(--headercolor);
+    color: #f6f6f7;
+}
+
+.theme-dark .optionNormal-12VR9V:hover {
+    background-color: var(--guildlistcolor);
+}
+
+.theme-dark .popout-2sKjHu {
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    background: var(--titlebar);
+    border-color: transparent;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+}
+
+.popout-2xBvMR {
+    border-radius: 0px;}
+
+.tileWrapper-2khh-w {
+    border-radius: 0px;
+    }
+
+.checkbox-1ix_J3.box-mmYMsp.checked-3_4uQ9{
+    background-color: var(--accentcolor)!important;
+    border-color: var(--accentcolor)!important;
+    }
+
+.theme-dark .itemBackground-1jfD8p:before {
+    background: radial-gradient(ellipse at top,transparent,rgb(22, 22, 22)),-webkit-gradient(linear,left top,right top,from(rgb(22, 22, 22)),color-stop(40%,transparent),color-stop(60%,transparent),to(rgb(22, 22, 22))),-webkit-gradient(linear,left bottom,left top,from(rgb(22, 22, 22)),color-stop(25%,transparent));}
+
+.theme-dark .announcingNitro-3Ptg6m {
+    border-color: #4f545c;
+    color: var(--accentcolor);
+    }
+
+.theme-dark .premium-39U29H, .theme-light .premium-39U29H {
+    background-image: -webkit-gradient(linear,left top,right top,from(rgb(22, 22, 22)),to(rgb(22, 22, 22)));
+    background-image: linear-gradient(90deg,rgb(22, 22, 22),rgb(22, 22, 22));
+    }
+
+.theme-dark .arrow-1QsYio, .theme-light .arrow-1QsYio {
+    background-color:var(--channellistcolor);
+    color: var(--accentcolor2);
+    }
+
+.theme-dark .overlappingBorder-1ysb12 {
+    border-color: var(--accentcolor);
+    }
+
+.paginationItemContainer-2q8AX7 {
+    border-radius: 0px;}
+
+.overlappingBorder-1ysb12 {
+    border: 2px solid var(--accentcolor);
+    border-radius: 0px;}
+
+.applicationMedia-1PPJ39 {
+    border-radius: 0px;}
+
+    /*Smarter embeds*/
 .container-1YxwTf .container-1e22Ot {
 	display: flex;
 	flex-flow: row wrap;
@@ -773,10 +852,16 @@ border: transparent;
 	flex: 100%;
 	order: 9999999999;
 }
-/* Szukajka po kliku */
+/* udostepnianie ekranu*/
+.theme-dark .tiles-2aXG_k {
+    background: var(--titlebar);}
+    
+    /* Szukajka po kliku */
 
 
-/* Search Popout */
+.popoutBottom-1YbShG{
+    top:56px !important;
+}
 .popout-3sVMXz .container-3ayLPN {
     background: var(--headercolor);
     border-radius: 0px !important;
@@ -1666,7 +1751,6 @@ height:55px !important;
 	background-repeat:no-repeat;
 	padding-top: 19px;
 	padding-bottom: 6px;
-	font-weight: 600;
 	text-align:center;
 	border-radius:3px;
     margin-left:15px;
@@ -5973,6 +6057,9 @@ border-radius: 0px;
     position: relative
 
 }
+.theme-dark .searchBar-1MOL6S {
+    background-color: var(--titlebar);
+}
 
 .search-bar-tag {
     background: #4c4c4c;
@@ -8882,7 +8969,7 @@ span {
   line-height: 1.125rem;
   overflow:hidden;
   letter-spacing: normal;
-  min-height:18px;
+  min-height:19px;
   transition: all 200ms ease;
   padding-right: 80px;
   background: var(--headercolor)!important;
@@ -9386,9 +9473,13 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 }
 .theme-dark .gameLibrary-TTDw4Y .lookFilled-1Gx00P.colorPrimary-3b3xI6
 {
-    background-color: var(--chatbackground);
+    background-color: var(--titlebar);
     color: #fff;
-    border: 1px solid var(--accentcolor);
+}
+.theme-dark .gameLibrary-TTDw4Y .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover
+{
+    background-color: var(--accentcolor);
+    color: #fff;
 }
 
 .theme-dark .gameLibrary-TTDw4Y .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
@@ -11428,12 +11519,16 @@ color:var(--accentcolor2);
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     color: #fff
 }
+.headerButtonColor-G7_f-V {
+    background: var(--guildlistcolor);
+    color: #fff;
+}
 
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
     background-color: var(--channellistcolor);
     color: #fff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
-   /* box-shadow: 0 2px 1px rgba(0, 0, 0, .3)*/
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled{
     background-color: var(--accentcolor);
@@ -12176,7 +12271,7 @@ display: none;
 
 .theme-dark .attachment-33OFj0 {
     background-color: var(--titlebar);
-    border-color: var(--accentcolor);
+    /*border-color: var(--accentcolor);*/
     border-radius: 0px;
 }
 .attachment-33OFj0 .progressContainer-2UlXr2 .progress-33epXr .progress-2XXRYo {
