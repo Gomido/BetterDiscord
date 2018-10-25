@@ -1,3 +1,4 @@
+@import url("https://intrnl.github.io/discordcustomizations/emojiNotoBlobs/dist/themefile.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @font-face {
     font-family: 'BMTicons';
@@ -873,9 +874,31 @@ border: transparent;
 .tileWrapper-2khh-w {
     border-radius: 0px;
     }
+    .container-CpszHS:not(.disabled-29eJ21):hover {
+        border-color: var(--accentcolor);
+        border-radius: 0px;
+    }
+
+    /*podglad nakładki*/ 
+    .wrapper-3jrx9n {
+        border: 2px solid var(--accentcolor);
+        border-radius: 0px;
+    }
+
+    .selected-mKYnfr.option-n0icdO,
+    .option-n0icdO:hover {
+        background-color: var(--accentcolor);
+        border-color: var(--accentcolor);
+    }
+
+    
+    .option-n0icdO {
+        background-color: var(--channellistcolor);
+        border-radius: 0px;
+    }
+
 
 .checkbox-1ix_J3.box-mmYMsp.checked-3_4uQ9{
-    background-color: var(--accentcolor)!important;
     border-color: var(--accentcolor)!important;
     }
 
