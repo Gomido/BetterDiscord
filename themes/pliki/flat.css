@@ -62,6 +62,10 @@
     --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
 
+
+.popoutTopRight-3BzFIE {
+    margin-top: 0px;
+}
 .popoutBottom-1YbShG{ 
     margin-top: 1px;
 }
@@ -13585,7 +13589,7 @@ top:20px;
       color: transparent;
       height: 15px;
       width: 15px;
-      background-size: 150%;
+      background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
       bottom: -10px;
@@ -13613,8 +13617,9 @@ top:20px;
   
   /* Lolek */
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0%0D%0APSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2%0D%0AZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI2ZhYTYxYSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJN%0D%0AMiwxMSBMMCwwIEw1LjUsNyBMOSwwIEwxMi41LDcgTDE4LDAgTDE2LDExIEwyLDExIEwyLDExIFog%0D%0ATTE2LDE0IEMxNiwxNC41NTIyODQ3IDE1LjU1MjI4NDcsMTUgMTUsMTUgTDMsMTUgQzIuNDQ3NzE1%0D%0AMjUsMTUgMiwxNC41NTIyODQ3IDIsMTQgTDIsMTMgTDE2LDEzIEwxNiwxNCBaIiB0cmFuc2Zvcm09%0D%0AInRyYW5zbGF0ZSgzIDQpIi8+CiAgICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4KICA8%0D%0AL2c+Cjwvc3ZnPgo=);
-    transition: filter .2s ease-in-out;
+   /*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0%0D%0APSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2%0D%0AZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI2ZhYTYxYSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJN%0D%0AMiwxMSBMMCwwIEw1LjUsNyBMOSwwIEwxMi41LDcgTDE4LDAgTDE2LDExIEwyLDExIEwyLDExIFog%0D%0ATTE2LDE0IEMxNiwxNC41NTIyODQ3IDE1LjU1MjI4NDcsMTUgMTUsMTUgTDMsMTUgQzIuNDQ3NzE1%0D%0AMjUsMTUgMiwxNC41NTIyODQ3IDIsMTQgTDIsMTMgTDE2LDEzIEwxNiwxNCBaIiB0cmFuc2Zvcm09%0D%0AInRyYW5zbGF0ZSgzIDQpIi8+CiAgICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4KICA8%0D%0AL2c+Cjwvc3ZnPgo=);*/ 
+   background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+   transition: filter .2s ease-in-out;
   }
   
   /* francuz */
@@ -13625,8 +13630,9 @@ top:20px;
   
   /*zagro*/
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::before {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAw%0D%0AIDAgNDggNDg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OCIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0i%0D%0AaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9Ikljb25zIj48Zz48cGF0aCBkPSJN%0D%0AMzUuNzI5MzcsMjUuNzQ2NThsMC44MzU2Ni0wLjgyNzA0YzEuNjExMDEtMS42MTEwMSwyLjQxMjIx%0D%0ALTMuNzQ3NTQsMi40MTIyMS01Ljg2Njg0ICAgIGMwLTIuMTI3OTEtMC44MDEyLTQuMjU1ODMtMi40%0D%0AMTIyMS01Ljg2Njg0Yy0zLjIyMjAyLTMuMjIyMDItOC41MDMwNC0zLjIyMjAyLTExLjczMzY4LDBs%0D%0ALTAuODI3MDQsMC44MzU2NmwtMC44MzU2Ni0wLjgzNTY2ICAgIGMtMy4yMjIwMi0zLjIyMjAyLTgu%0D%0ANTAzMDQtMy4yMjIwMi0xMS43MjUwNiwwYy0xLjYxOTYzLDEuNjExMDEtMi40MjA4MiwzLjczODky%0D%0ALTIuNDIwODIsNS44NjY4NCAgICBjMCwyLjExOTMsMC44MDEyLDQuMjU1ODMsMi40MjA4Miw1Ljg2%0D%0ANjg0bDAuODI3MDQsMC44MjcwNGwxMS4zMDc2OCwxMS4zMDc2OWMwLjIzNTI0LDAuMjM1MjQsMC42%0D%0AMTY2NywwLjIzNTE3LDAuODUxODMtMC4wMDAxNiAgICBMMzUuNzI5MzcsMjUuNzQ2NTgiIHN0eWxl%0D%0APSJmaWxsOiNFRjRCNTM7Ii8+PHBhdGggZD0iICAgIE0zNS43MjkzNywyNS43NDY1OGwwLjgzNTY2%0D%0ALTAuODI3MDRjMS42MTEwMS0xLjYxMTAxLDIuNDEyMjEtMy43NDc1NCwyLjQxMjIxLTUuODY2ODRj%0D%0AMC0yLjEyNzkxLTAuODAxMi00LjI1NTgzLTIuNDEyMjEtNS44NjY4NCAgICBjLTMuMjIyMDItMy4y%0D%0AMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzMzNjgsMGwtMC44MjcwNCwwLjgzNTY2bC0wLjgzNTY2%0D%0ALTAuODM1NjZjLTMuMjIyMDItMy4yMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzI1MDYsMCAgICBj%0D%0ALTEuNjE5NjMsMS42MTEwMS0yLjQyMDgyLDMuNzM4OTItMi40MjA4Miw1Ljg2Njg0YzAsMi4xMTkz%0D%0ALDAuODAxMiw0LjI1NTgzLDIuNDIwODIsNS44NjY4NGwwLjgyNzA0LDAuODI3MDRsMTEuMzA3Njgs%0D%0AMTEuMzA3NjkgICAgYzAuMjM1MjQsMC4yMzUyNCwwLjYxNjY3LDAuMjM1MTcsMC44NTE4My0wLjAw%0D%0AMDE2TDM1LjcyOTM3LDI1Ljc0NjU4IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMzAzMDMwO3N0%0D%0Acm9rZS13aWR0aDowLjc7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5k%0D%0AO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIvPjxwYXRoIGQ9IiAgICBNMTEuNDU1OTgsMTkuODU2NDRj%0D%0AMCwwLjQzNjgyLDAuMDQwNjQsMC44NzQ1LDAuMTIyMTMsMS4zMDYyOSIgc3R5bGU9ImZpbGw6bm9u%0D%0AZTtzdHJva2U6IzMwMzAzMDtzdHJva2Utd2lkdGg6MC43O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0%0D%0Acm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiLz48cGF0aCBkPSIgICAg%0D%0ATTE3LjA2NTA1LDEzLjA0NTNjLTEuMzE1MSwwLjI1Mjk5LTIuNTY5NTcsMC44ODU0Ny0zLjU4MTU0%0D%0ALDEuODk3NDNjLTAuNzQ4MDksMC43NDQxMS0xLjI4NzcsMS42MTk4OC0xLjYyMTI2LDIuNTU0NzEi%0D%0AIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMzMDMwMzA7c3Ryb2tlLXdpZHRoOjAuNztzdHJva2Ut%0D%0AbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7%0D%0AIi8+PC9nPjwvZz48L3N2Zz4=);
-    transition: filter .2s ease-in-out;
+    background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        
+    /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAw%0D%0AIDAgNDggNDg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OCIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0i%0D%0AaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9Ikljb25zIj48Zz48cGF0aCBkPSJN%0D%0AMzUuNzI5MzcsMjUuNzQ2NThsMC44MzU2Ni0wLjgyNzA0YzEuNjExMDEtMS42MTEwMSwyLjQxMjIx%0D%0ALTMuNzQ3NTQsMi40MTIyMS01Ljg2Njg0ICAgIGMwLTIuMTI3OTEtMC44MDEyLTQuMjU1ODMtMi40%0D%0AMTIyMS01Ljg2Njg0Yy0zLjIyMjAyLTMuMjIyMDItOC41MDMwNC0zLjIyMjAyLTExLjczMzY4LDBs%0D%0ALTAuODI3MDQsMC44MzU2NmwtMC44MzU2Ni0wLjgzNTY2ICAgIGMtMy4yMjIwMi0zLjIyMjAyLTgu%0D%0ANTAzMDQtMy4yMjIwMi0xMS43MjUwNiwwYy0xLjYxOTYzLDEuNjExMDEtMi40MjA4MiwzLjczODky%0D%0ALTIuNDIwODIsNS44NjY4NCAgICBjMCwyLjExOTMsMC44MDEyLDQuMjU1ODMsMi40MjA4Miw1Ljg2%0D%0ANjg0bDAuODI3MDQsMC44MjcwNGwxMS4zMDc2OCwxMS4zMDc2OWMwLjIzNTI0LDAuMjM1MjQsMC42%0D%0AMTY2NywwLjIzNTE3LDAuODUxODMtMC4wMDAxNiAgICBMMzUuNzI5MzcsMjUuNzQ2NTgiIHN0eWxl%0D%0APSJmaWxsOiNFRjRCNTM7Ii8+PHBhdGggZD0iICAgIE0zNS43MjkzNywyNS43NDY1OGwwLjgzNTY2%0D%0ALTAuODI3MDRjMS42MTEwMS0xLjYxMTAxLDIuNDEyMjEtMy43NDc1NCwyLjQxMjIxLTUuODY2ODRj%0D%0AMC0yLjEyNzkxLTAuODAxMi00LjI1NTgzLTIuNDEyMjEtNS44NjY4NCAgICBjLTMuMjIyMDItMy4y%0D%0AMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzMzNjgsMGwtMC44MjcwNCwwLjgzNTY2bC0wLjgzNTY2%0D%0ALTAuODM1NjZjLTMuMjIyMDItMy4yMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzI1MDYsMCAgICBj%0D%0ALTEuNjE5NjMsMS42MTEwMS0yLjQyMDgyLDMuNzM4OTItMi40MjA4Miw1Ljg2Njg0YzAsMi4xMTkz%0D%0ALDAuODAxMiw0LjI1NTgzLDIuNDIwODIsNS44NjY4NGwwLjgyNzA0LDAuODI3MDRsMTEuMzA3Njgs%0D%0AMTEuMzA3NjkgICAgYzAuMjM1MjQsMC4yMzUyNCwwLjYxNjY3LDAuMjM1MTcsMC44NTE4My0wLjAw%0D%0AMDE2TDM1LjcyOTM3LDI1Ljc0NjU4IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMzAzMDMwO3N0%0D%0Acm9rZS13aWR0aDowLjc7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5k%0D%0AO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIvPjxwYXRoIGQ9IiAgICBNMTEuNDU1OTgsMTkuODU2NDRj%0D%0AMCwwLjQzNjgyLDAuMDQwNjQsMC44NzQ1LDAuMTIyMTMsMS4zMDYyOSIgc3R5bGU9ImZpbGw6bm9u%0D%0AZTtzdHJva2U6IzMwMzAzMDtzdHJva2Utd2lkdGg6MC43O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0%0D%0Acm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiLz48cGF0aCBkPSIgICAg%0D%0ATTE3LjA2NTA1LDEzLjA0NTNjLTEuMzE1MSwwLjI1Mjk5LTIuNTY5NTcsMC44ODU0Ny0zLjU4MTU0%0D%0ALDEuODk3NDNjLTAuNzQ4MDksMC43NDQxMS0xLjI4NzcsMS42MTk4OC0xLjYyMTI2LDIuNTU0NzEi%0D%0AIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMzMDMwMzA7c3Ryb2tlLXdpZHRoOjAuNztzdHJva2Ut%0D%0AbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7%0D%0AIi8+PC9nPjwvZz48L3N2Zz4=);*/transition: filter .2s ease-in-out;
   }
   
 
@@ -13641,9 +13647,283 @@ top:20px;
     /*mleczko*/
 
     .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0%0D%0Ab3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZl%0D%0AcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEi%0D%0AIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93%0D%0Ad3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTgg%0D%0ANTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU4IDU4OyIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSI+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojQ0MyRTQ4OyIgcG9pbnRzPSIyOSw1NSAw%0D%0ALDE5IDU4LDE5ICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZDMzk1MjsiIHBvaW50cz0iNTgs%0D%0AMTkgMCwxOSAxMCwzIDQ4LDMgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRjc2MzYzOyIgcG9p%0D%0AbnRzPSI0Mi4xNTQsMTkgNDgsMyAxMCwzIDE1Ljg0NiwxOSAiLz4NCjxwb2x5Z29uIHN0eWxlPSJm%0D%0AaWxsOiNGNDlBOUE7IiBwb2ludHM9IjQyLDE5IDI5LDMgMTYsMTkgIi8+DQo8cG9seWdvbiBzdHls%0D%0AZT0iZmlsbDojQ0I0NjVGOyIgcG9pbnRzPSIxNS44NDYsMTkgMjksNTUgNDIuMTU0LDE5ICIvPg0K%0D%0APGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxn%0D%0APg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4N%0D%0ACjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+%0D%0ADQo=);
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
         transition: filter .2s ease-in-out;
       }
-  
-  
-  
+
+
+      
+      /* suprajs z blobami */
+      
+      .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+
+      .small-5Os1Bb:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+      .large-3ChYtB[style*="270532835431940096"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .small-5Os1Bb[style*="270532835431940096"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG[style*="270532835431940096"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
+    .profile-ZOdGIb[style*="270532835431940096"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .profile-ZOdGIb:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
+
+
+
+    
+    .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+
+      .small-5Os1Bb:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+      .large-3ChYtB[style*="186609657928744962"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .small-5Os1Bb[style*="186609657928744962"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG[style*="186609657928744962"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
+    .profile-ZOdGIb[style*="186609657928744962"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .profile-ZOdGIb:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
+
+    .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+
+      .small-5Os1Bb:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        border-radius: var(--avatars);
+        z-index: -1;
+      }
+
+      .large-3ChYtB[style*="186817801741271040"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .small-5Os1Bb[style*="186817801741271040"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG[style*="186817801741271040"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .popout-2fzvxG:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
+    .profile-ZOdGIb[style*="186817801741271040"]::after {
+        background-image: url(https://discordemoji.com/assets/emoji/BlobRave.gif);
+        background-size: 80% !important;
+        background-color:var(--chatbackground);
+        z-index:10 !important;
+    }
+
+    .profile-ZOdGIb:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      top: -2px;
+      left: -2px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      border-radius: 0%;
+      z-index: -1;
+    }
+
