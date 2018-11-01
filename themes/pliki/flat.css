@@ -69,7 +69,7 @@
 .popoutBottom-1YbShG{ 
     margin-top: 1px;
 }
- /* Version Displayed */
+ /* Version Displayed 
  body:before {
 	content: "Zagro nie dokuczaj !!";
 	z-index: 1000000000000000000000000;
@@ -127,7 +127,7 @@ span:not(.spinner-item) {
 		-webkit-transform: translate(-50%, -100%);
 		transform: translate(-50%, -100%);
 	}
-}
+}*/
 
   .guildsWrapper-5TJh6A .scroller-wrap { 
     margin-top: -16px !important;
@@ -1202,6 +1202,7 @@ border: transparent;
     height: auto!important;
     margin-top: 9px!important;
     margin-bottom: 5px;
+    margin-left: 0px;
     padding: 3px 8px 5px 8px!important;
 }
 
@@ -9806,10 +9807,7 @@ body:active .popout-bottom[style*="overflow: hidden; visibility: visible;"]:not(
 
 }
 
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: var(--titlebar);
-    color: #f6f6f7;
-}
+
 .missingAccess-3szpts{
     background-color: var(--chatbackground)
 }
@@ -11927,6 +11925,10 @@ color:var(--accentcolor2);
     background-color: var(--accentcolor);
 }
 
+.lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+    background-color: var(--accentcolor);
+}
+
 .notice-2FJMB4{
     border-radius: 0xp;
 }
@@ -13648,7 +13650,7 @@ top:20px;
     bottom: -8px;
     right: -8px;
     pointer-events: none;
-    filter: drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor));
+    filter: drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor));
     z-index:99999!important}
   
 /*kongresja mleczko*/
@@ -13666,7 +13668,7 @@ top:20px;
       bottom: -10px;
       right: -10px;
       pointer-events: none;
-      filter: drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor));
+      filter: drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor));
       z-index:99999!important}
     
 
@@ -13684,7 +13686,7 @@ top:20px;
       bottom: -10px;
       right: -10px;
       pointer-events: none;
-      filter: drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor)) drop-shadow(0 0 2px var(--headercolor)) !important;
+      filter: drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) !important;
       z-index:99999!important}
     
 
