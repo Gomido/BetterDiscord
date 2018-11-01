@@ -844,6 +844,10 @@ border: transparent;
 
 /*gry nitro, biblioteka*/
 
+.exclusive-3zP8if {
+    background: var(--accentcolor);
+}
+
 .theme-dark .gameLibrary-TTDw4Y{
     background-color: var(--chatbackground);
 }
@@ -3754,7 +3758,8 @@ icon-kyxXVr.icon-file.unknown{
    
   }
 .root-SR8cQa.lookFilled-1Gx00P.colorGreen-29iAKY{
-  background-color: var(--accentcolor);
+  background-color: transparent;
+  border:1px solid var(--accentcolor);
 }
 
 
@@ -4134,6 +4139,15 @@ icon-kyxXVr.icon-file.unknown{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: #393939; }
+
+    .guild-1EfMGQ.audio-3vVhBi:after, .guild-1EfMGQ.video-15yGu3:after {
+        right: 0px;
+        top: 0px;
+    }
+    .theme-dark .guild-1EfMGQ.audio-3vVhBi:after, .theme-dark .guild-1EfMGQ.video-15yGu3:after {
+        background-color: var(--headercolor);
+    }
+
   /*tlo domku*/
   .guild-1EfMGQ a::after {
     content: "";
@@ -6364,7 +6378,8 @@ border-radius: 0px;
     color: #cecece
 }
 .create-guild-container.deprecated .action .btn{
-    background: var(--accentcolor);
+    background: transparent;
+    border: 1px solid var(--accentcolor);
 }
 
 .or{
@@ -6507,6 +6522,13 @@ border-radius: 0px;
 .theme-dark .questionMark-CWEQZn:hover {
     background-color: var(--chatbackground);
 }
+
+
+.lookFilled-1Gx00P.colorRed-1TFJan{
+    background-color: transparent;
+    border: 1px solid #f04747;
+}
+
 .lookOutlined-3sRXeN.colorRed-1TFJan:hover {
     border-color: rgba(240,71,71,.6);
     background: #f71e1e;
@@ -6667,17 +6689,18 @@ border-radius: 0px;
 /*guziki dolacz do serwera*/
 
 .create-guild-container.deprecated .action.join .btn{
-    background: var(--accentcolor)
+    background: transparent;
+    border:1px solid var(--accentcolor);
 }
 
 
 .create-guild-container.deprecated .action:hover.create .btn {
-    background-color: var(--guildlistcolor) !important;
+    background-color: var(--accentcolor) !important;
 }
 
 
 .create-guild-container.deprecated .action:hover.join .btn {
-    background: var(--guildlistcolor) !important;
+    background: var(--accentcolor) !important;
 }
 
 .form.deprecated .btn-primary {
@@ -6686,19 +6709,20 @@ border-radius: 0px;
     color: #fff
 }
 
-.form.deprecated .btn-primary:hover {
-    background-color: var(--guildlistcolor)!important
-}
+
 
 .create-guild-container.deprecated .join-server .btn-primary{
-    background-color: var(--accentcolor)!important
+    background-color: transparent!important;
+    border: 1px solid var(--accentcolor);
 }
 .create-guild-container.deprecated .join-server .btn-primary:hover{
-    background-color: var(--guildlistcolor)!important
+    background-color: var(--accentcolor)!important
 }
 .create-guild-container.deprecated .join-server h5 {
     color: var(--accentcolor);
 }
+
+
 
 /*----------------*/
 
@@ -7504,13 +7528,15 @@ border-radius: 0px;
 }
 
   .lookFilled-1Gx00P.colorGrey-2DXtkV {
-    background-color: var(--accentcolor);
+    background-color: transparent;
+    border: 2px solid var(--accentcolor);
     color: #fff;
 }
 
 .lookFilled-1Gx00P.colorGreen-29iAKY{
       color:#FFF;
-      background-color: var(--accentcolor)
+      background-color: transparent;
+      border: 1px solid var(--accentcolor);
  }
 
   .lookInverted-2D7oAl.colorGreen-29iAKY {
@@ -7518,19 +7544,30 @@ border-radius: 0px;
     background-color: var(--accentcolor);
   }
 
-  .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover{
-      border-color:var(--accentcolor)
+  .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6{
+    border:1px solid var(--accentcolor);  
   }
 
+  .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover{
+      border-color:var(--accentcolor);
+      background-color:var(--accentcolor)
+  }
+
+  .lookOutlined-3sRXeN.colorWhite-rEQuAQ{
+    background-color:transparent;
+    border-color:var(--accentcolor);
+ }
+
   .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover{
-     border-color:var(--accentcolor2);
+     background-color:var(--accentcolor);
+     border-color:var(--accentcolor);
   }
 
   .root-SR8cQa button:hover,
   .root-SR8cQa button:active {
-    background-color: #FFF !important;
-    border-color: #FFF !important;
-    color: var(--accentcolor) !important;
+    background-color: var(--accentcolor) !important;
+    border-color: var(--accentcolor) !important;
+    color: #FFF !important;
     transition: border-color 0.2s, background-color 0.2s, color 0.2s;
   }
 
@@ -7717,10 +7754,27 @@ border-radius: 0px;
     display:none;
 }
 
+
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
     color:#FFFFFF;
     background: var(--accentcolor);
 }
+
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6 {
+    color: #fff;
+    border: 1px solid var(--accentcolor);
+    right:10px;
+}
+
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp{
+    background-image: none;
+}
+
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover {
+    color: #fff;
+    background: var(--accentcolor)
+}
+
 #autocomplete-popout {
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)))
 }
@@ -8418,8 +8472,11 @@ border-radius: 0px;
     filter: grayscale(100%)brightness(130%)
 }
 
+
+
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: var(--guildlistcolor);
+    background-color: transparent;
+    border: 1px solid var(--accentcolor);
     color: #fff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     box-shadow: 0 2px 1px rgba(0, 0, 0, .3)
@@ -11686,14 +11743,34 @@ color:var(--accentcolor2);
 
 .form-deprecated .btn-primary,
 .form.deprecated .btn-primary {
-    background-color: #4c4c4c;
+    background-color: transparent;
+    border: 1px solid var(--accentcolor);
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     color: #fff
 }
 
 .form-deprecated .btn-primary:hover,
 .form.deprecated .btn-primary:hover {
-    background-color: #5a5a5a
+    background-color: var(--accentcolor)
+}
+
+.regionSelect-3lf4eE:hover button {
+    background-color: var(--accentcolor);
+    border: 1px solid var(--accentcolor);
+    color: #fff;
+}
+
+.regionSelect-3lf4eE button{
+    color: #FFF;
+}
+
+.regionSelect-3lf4eE .regionSelectInner-24f4Ce,
+.regionSelect-3lf4eE button{
+    border-radius: 0;
+}
+
+.regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce, .regionSelect-3lf4eE:hover button {
+    border-color:var(--accentcolor);
 }
 
 .regionSelectModal-QBpi1R {
@@ -11840,13 +11917,18 @@ color:var(--accentcolor2);
 }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: var(--guildlistcolor);
+    background-color: transparent;
+    border: 1px solid var(--accentcolor);
     color: #fff;
     border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
     box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled{
     background-color: var(--accentcolor);
+}
+
+.notice-2FJMB4{
+    border-radius: 0xp;
 }
 
 /* Help Modal */
@@ -12049,10 +12131,16 @@ color:var(--accentcolor2);
 
 
 .lookInverted-2D7oAl.colorBrand-3pXr91{
-background-color: var(--accentcolor);
+background-color: transparent;
+border: 1px solid var(--accentcolor);
 color:#fff;
-
 }
+.theme-dark .lookInverted-2D7oAl.hoverGrey-2CBXu0.hasHover-3X1-zV:hover{
+    background-color: var(--accentcolor);
+    color:#FFF;
+}
+
+
 
 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
     background-color: var(--accentcolor)
@@ -13629,3 +13717,55 @@ top:20px;
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0%0D%0Ab3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZl%0D%0AcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEi%0D%0AIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93%0D%0Ad3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTgg%0D%0ANTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU4IDU4OyIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSI+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojQ0MyRTQ4OyIgcG9pbnRzPSIyOSw1NSAw%0D%0ALDE5IDU4LDE5ICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZDMzk1MjsiIHBvaW50cz0iNTgs%0D%0AMTkgMCwxOSAxMCwzIDQ4LDMgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRjc2MzYzOyIgcG9p%0D%0AbnRzPSI0Mi4xNTQsMTkgNDgsMyAxMCwzIDE1Ljg0NiwxOSAiLz4NCjxwb2x5Z29uIHN0eWxlPSJm%0D%0AaWxsOiNGNDlBOUE7IiBwb2ludHM9IjQyLDE5IDI5LDMgMTYsMTkgIi8+DQo8cG9seWdvbiBzdHls%0D%0AZT0iZmlsbDojQ0I0NjVGOyIgcG9pbnRzPSIxNS44NDYsMTkgMjksNTUgNDIuMTU0LDE5ICIvPg0K%0D%0APGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxn%0D%0APg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4N%0D%0ACjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+%0D%0ADQo=);
         transition: filter .2s ease-in-out;
       }
+
+
+      
+.container-3cGP6G {
+	width: 128px;
+	padding: 8px 0;
+	border: none;
+}
+
+.container-3cGP6G .button-38aScr {
+	width: 100%;
+	margin: 0;
+	padding: 8px 12px !important;
+	text-align: center;
+	color: #aaa;
+	font-size: 0.8em;
+	font-weight: 500;
+	border-radius: 0 !important;
+	justify-content: flex-start;
+	transition: 200ms ease all;
+}
+
+.container-3cGP6G .button-38aScr:hover,
+.item-2J1YMK:active {
+	background: rgba(255,255,255,0.05) !important;
+	color: #aaa;
+}
+
+.container-3cGP6G .button-38aScr .contents-18-Yxp {
+	font-size: 13px !important;
+	text-align: left !important;
+}
+
+.item-2J1YMK:active {
+	box-shadow: none !important;
+}
+
+
+
+
+.buttonContainer-37UsAw > * {
+	visibility: visible;
+	opacity: 0;
+	transform: translateX(8px);
+	transition: 200ms var(--default-animation);
+}
+
+.buttonContainer-37UsAw > .popout-open,
+.content-3dzVd8:hover .buttonContainer-37UsAw > * {
+	opacity: 1;
+	transform: translateX(0);
+}
