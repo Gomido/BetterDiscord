@@ -1221,15 +1221,7 @@ a {
 }
 
 #dv-mount {
-  background-color: var(--headercolor);
-  bottom: 0;
-  box-sizing: border-box;
-  display: flex;
-  height: 71px;
-  justify-content: center;
-  position: absolute;
-  width: 240px;
-  z-index: 256;
+  background-color: var(--headercolor) !important;
 }
 
 /*DirectDownload plugin*/
@@ -8620,7 +8612,7 @@ margin-left: 118%;
   
 /*kongresja*/
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before {
-    background-image: url(ddata:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNCIgdmVyc2lvbj0iMS4xIiB3aWR0%0D%0AaD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6%0D%0ALy9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9l%0D%0AbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRm%0D%0ALXN5bnRheC1ucyMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMjguNCkiPjxwYXRoIGQ9%0D%0AIm05LjU5OTkgMS40NTY0IDEuNTUwMSA0Ljc2OTkgNS4wMTUgMC4wMDAyLTQuMDU3IDIuOTQ4MiAx%0D%0ALjU1IDQuNzcwMy00LjA1ODEtMi45NDgtNC4wNTc3IDIuOTQ4IDEuNTQ5Ny00Ljc3MDMtNC4wNTc1%0D%0ALTIuOTQ4MiA1LjAxNTQtMC4wMDAyeiIgZmlsbD0iI2YxYzQwZiIgc3Ryb2tlPSIjZjM5YzEyIiBz%0D%0AdHJva2Utd2lkdGg9Ii42OTc1NSIgdHJhbnNmb3JtPSJtYXRyaXgoMS40MzM2IDAgMCAxLjQzMzYg%0D%0ALTEuNzYwMiAxMDI4LjkpIi8+PC9nPjwvc3ZnPg==);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNCIgdmVyc2lvbj0iMS4xIiB3aWR0%0D%0AaD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6%0D%0ALy9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9l%0D%0AbGVtZW50cy8xLjEvIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRm%0D%0ALXN5bnRheC1ucyMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMjguNCkiPjxwYXRoIGQ9%0D%0AIm05LjU5OTkgMS40NTY0IDEuNTUwMSA0Ljc2OTkgNS4wMTUgMC4wMDAyLTQuMDU3IDIuOTQ4MiAx%0D%0ALjU1IDQuNzcwMy00LjA1ODEtMi45NDgtNC4wNTc3IDIuOTQ4IDEuNTQ5Ny00Ljc3MDMtNC4wNTc1%0D%0ALTIuOTQ4MiA1LjAxNTQtMC4wMDAyeiIgZmlsbD0iI2YxYzQwZiIgc3Ryb2tlPSIjZjM5YzEyIiBz%0D%0AdHJva2Utd2lkdGg9Ii42OTc1NSIgdHJhbnNmb3JtPSJtYXRyaXgoMS40MzM2IDAgMCAxLjQzMzYg%0D%0ALTEuNzYwMiAxMDI4LjkpIi8+PC9nPjwvc3ZnPg==);
     transition: filter .2s ease-in-out;
   }
 
