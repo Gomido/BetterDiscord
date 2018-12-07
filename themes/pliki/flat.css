@@ -34,6 +34,8 @@
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
 
+
+
   --shadow: rgba(0,0,0,.8);
 
     /*BIALE*/
@@ -4233,13 +4235,13 @@ box-sizing: border-box;
 
 .popout-3sVMXz .messagesPopoutWrap-1MQ1bW {
   border-radius: 0 !important;
-  border-left: 2px solid var(--accentcolor);
-  border-right: 2px solid var(--accentcolor);
-  border-bottom: 2px solid var(--accentcolor);
-  border-top: 0px;
+  border-left: 2px solid var(--accentcolor) !important;
+  border-right: 2px solid var(--accentcolor) !important;
+  border-bottom: 2px solid var(--accentcolor) !important;
+  border-top: 0px !important;
   animation: popoutanim 300ms cubic-bezier(.4, 0, 0, 1), opacity 100ms ease 100ms backwards;
   transform-origin: 50% -10%;
-  box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,.9) !important;
   margin-top: 0px;
   
 }
@@ -4297,6 +4299,7 @@ box-sizing: border-box;
     transition: all 200ms ease!important;
     background-size: 100%!important;
 }
+
 .button-3Jq0g9:hover, .reactionBtn-2na4rd:hover {
     opacity: 0.7!important;
     transition: all 0ms ease!important;
@@ -4851,11 +4854,56 @@ left:8px !important;
 
 /* activity buttons: https://i.imgur.com/SoVVuTV.png */
 .userPopout-3XzG_A .actionsUserPopout-2xcO1O button {
-  width: 42%;
   margin: 0 10px 15px 15px;
   flex: 1;
 }
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ:disabled{
+background-color: transparent;
+    border-color: var(--accentcolor)}
+/*---------------------------
+Plugin: PermissionsViewer by Zerebos
+---------------------------*/
+.member-perms {
+  margin-bottom: 10px;
+  padding: 0px 120px;
+}
 
+.perm-details {
+  top: 10px;
+  position: relative;
+}
+
+
+.userPopout-3XzG_A .body-3iLsc4 .member-perms-header::before {
+  background: url("http://twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
+  height: 11px;
+  top: 11px;
+}
+
+#permissions-modal-wrapper .modal-wrapper {
+  z-index: 10000 !important;
+}
+
+#permissions-modal-wrapper #permissions-modal {
+  border-radius: 0 !important;
+  background: var(--guildlistcolor) !important;
+  border: 1px solid var(--titlebar) !important;
+  width: 466px !important;
+}
+
+#permissions-modal-wrapper .perm-side {
+  width: 275px !important;
+  background-color: #36393f;
+}
+
+#permissions-modal-wrapper .role-side {
+  width: 175px !important;
+}
+/*badge plugin*/
+
+.BE-badge-popout{
+    margin-bottom: 2px;
+  }
 
 /*tlo w okienku*/
 .userPopout-3XzG_A .avatarWrapper-3H_478 {
@@ -5027,17 +5075,8 @@ left:8px !important;
 ---------------------------
 | VARIABLE DECLARATIONS
 ---------------------------
-*/  .headerXbox-3G-4PF{
+*/  
 
-  border-top:1px solid var(--accentcolor);
-  border-bottom:1px solid var(--accentcolor);
-  border-left:1px solid var(--accentcolor);
-  border-right:1px solid var(--accentcolor);
-}
-
-.headerXbox-3G-4PF .button-1Pkqso {
-    margin-left:10px !important;
-}
 
 
 .headerXbox-3G-4PF .assets-VMAukC {
@@ -5549,7 +5588,7 @@ margin:15px;}
 
 .item-1GzJrl.leave-1DRJfn .icon-2doZ3q {
   -webkit-mask: url("https://discordapp.com/assets/00de6b3cbb5c4dbcec817c91262f5f5b.svg");
-  background-color: #A1021C!important;
+  background-color: #ec042b!important;
   opacity: 0.7;
 }
 
@@ -5558,8 +5597,9 @@ margin:15px;}
   font-weight: 600;
 }
 
+
 .item-1GzJrl.leave-1DRJfn {
-  color: #A1021C !important;
+  color: #ec042b !important;
 }
 
 .item-1GzJrl:hover.invite-271nFU .icon-2doZ3q {
@@ -6384,6 +6424,11 @@ height:52px;
 .inviteRow-2L02ae:hover {
   background-color: var(--titlebar) !important;
   border-radius: 0px;
+}
+
+
+.iconActiveLarge-2nzn9z{
+  border-radius: var(--avatars);
 }
 
 .inviteRow-2L02ae .wrapper-2F3Zv8 {
@@ -8670,7 +8715,11 @@ margin-left: 118%;
    background-color:var(--accentcolor);
    border-color:var(--accentcolor);
 }
-
+.lookInverted-2D7oAl.colorBrand-3pXr91{
+  background-color: transparent !important;
+  border: 1px solid var(--accentcolor) !important;
+  color: #FFF !important;
+}
 .root-SR8cQa button:hover,
 .root-SR8cQa button:active {
   background-color: var(--accentcolor) !important;
