@@ -4807,11 +4807,19 @@ border-radius: 0px;}
 
 
 
+.theme-dark #autocomplete-popout .autocomplete-header-background{
+  background-color: var(--headercolor);
+  border-radius: 0px !important; 
+}
 
+.theme-dark #autocomplete-popout section {
+  background-color: var(--titlebar);
+  color: #FFF;
+}
 
-
-
-
+.theme-dark #autocomplete-popout .row.selected {
+ background: var(--headercolor);
+}
 
 
   /* 15.c. Autocomplete */
@@ -5043,6 +5051,16 @@ Plugin: PermissionsViewer by Zerebos
 .BE-badge-popout{
     margin-bottom: 2px;
   }
+
+  .BE-badge.BE-badge-popout {
+    margin-bottom: 2px !important;
+}
+
+/* spoiler*/
+
+.spoilerWarning-2aAZq1{
+  border-radius:0px;
+}
 
 /*tlo w okienku*/
 .userPopout-3XzG_A .avatarWrapper-3H_478 {
@@ -5914,6 +5932,9 @@ margin:15px;}
   border-radius: 0px;
   bottom:10px !important;
 }
+.attachment-33OFj0{
+  border-radius:0px
+}
 
 .attachPopoutRow-KrE-f6{
   padding:4px;
@@ -6565,6 +6586,10 @@ height:52px;
   border-radius: 0px;
 }
 
+.wrapper-35wsBm{
+  border-radius: 0px;
+}
+
 
 .iconActiveLarge-2nzn9z{
   border-radius: var(--avatars);
@@ -6630,6 +6655,15 @@ height:52px;
   -webkit-mask-size: 52px 52px;
   background-color: var(--chatbackground);
   color: var(--accentcolor);
+}
+
+.theme-dark .or-3THJsp {
+  border-color: var(--guildlistcolor);
+  color: var(--guildlistcolor);
+}
+
+.wrapper-2ZbzR9{
+  border-radius: 0px !important;
 }
 
 .avatar-uploader-inner {
@@ -6698,6 +6732,12 @@ height:52px;
 }
 
 /*buttony*/ 
+
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled{
+  background-color: transparent;
+  border-color: var(--accentcolor);
+}
 
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:disabled {
   background-color: transparent;
