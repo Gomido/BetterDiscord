@@ -136,6 +136,7 @@ a {
 }
 
 
+
 .container-2lgZY8{
   background-color: var(--headercolor);
 }
@@ -556,8 +557,12 @@ border-radius: 0px;
 /* -- BD EDITS -- */
 /* Main CSS Box */
 .ace-monokai {
-  background-color: var(--titlebar);
+  background-color: var(--titlebar) !important;
   color: white;
+}
+
+#bd-settingspane-container .bd-pfbtn {
+  border-radius: 0px !important;
 }
 
 
@@ -1193,11 +1198,16 @@ border-radius: 0px;
     background: var(--titlebar);
     transition: 0ms ease; 
     z-index:-10;}
-  
 
+
+    .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ:first-of-type .guildInner-3DSoA4 a:hover::before,
+    .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4 .avatar-small:hover::before,
+    .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4 .guildIcon-CT-ZDq:hover::before {
+      background: rgba(255, 255, 255, 0.06);
+      transition: 0ms ease; }
 
     .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ {
-      height: 58px;}
+      height: 55px;}
     
   
   
@@ -1267,6 +1277,12 @@ border-radius: 0px;
 .delete-msg-btn
 {
   margin-top:3px !important;
+}
+
+/*trash icon - theme/plugin utility*/ 
+#bd-settingspane-container .bda-header .trashIcon {
+  right: 60px;
+  top: 5px;
 }
 
 /*DirectDownload plugin*/
@@ -1644,8 +1660,9 @@ body #files_directDownload{
 }
 
 .bda-slist li {
-  background-color: var(--titlebar);
-  border-color: var(--guildlistcolor);
+  background-color: var(--titlebar) !important;
+  border-color: var(--guildlistcolor) !important;
+  max-height: 400px;
 }
 
 .button-mM-y8i {
@@ -5106,6 +5123,16 @@ Plugin: PermissionsViewer by Zerebos
 #permissions-modal-wrapper .role-side {
   width: 175px !important;
 }
+
+/*TOP ROLE PLUGIN*/ 
+.TRE-tag{
+  border-radius: 0px !important;
+  height: 17px !important;
+}
+
+
+
+
 /*badge plugin*/
 
 .BE-badge-popout{
@@ -5223,6 +5250,8 @@ Plugin: PermissionsViewer by Zerebos
   outline: none;
   margin-bottom: 2px;
 }
+
+
 
 
 
@@ -5578,6 +5607,10 @@ margin:15px;}
 
 .userPopout-3XzG_A .activityUserPopout-2yItg2 .playTime-2uWd1Z {
   opacity: 0.6;
+}
+
+.contentNoImagesUserPopout-PCCPyZ {
+  padding-left: 10px !important;
 }
 
 
