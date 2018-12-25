@@ -1281,8 +1281,8 @@ border-radius: 0px;
 
 /*trash icon - theme/plugin utility*/ 
 #bd-settingspane-container .bda-header .trashIcon {
-  right: 60px;
-  top: 5px;
+  right: 60px !important;
+  top: 5px !important;
 }
 
 /*DirectDownload plugin*/
@@ -3066,6 +3066,11 @@ a,
 }
 
   /* 8.c Blocked Messages */
+  .messageGroupBlocked-3wrQQX{
+    display: none
+  }
+
+
 .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
   background: var(--titlebar) !important;
   color: var(--accentcolor)!important;
