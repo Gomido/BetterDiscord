@@ -405,8 +405,14 @@ border-radius: 0px;
 
 
 
-
 /* 12. Modals */
+
+
+.backdrop-1wrmKB{
+  opacity: 0.7 !important;
+}
+
+
 .topSectionNormal-2-vo2m,
 #permissions-modal-wrapper .header {
   background-color: var(--guildlistcolor) !important;
@@ -1527,14 +1533,14 @@ body #files_directDownload{
 
 .checkbox-1ix_J3.round-2jCFai.checked-3_4uQ9{
     background-color: var(--accentcolor) !important;
-    border-color: var(--accentcolor) !important
+    border-color: var(--accentcolor2) !important
     }
 
 .checkbox-1ix_J3 polyline[stroke="#43b581"] {
         stroke: #ffffff !important; }
       
-.checkbox-1ix_J3 polyline[stroke="#7289da"] {
-        stroke: var(--accentcolor) !important; }
+/*.checkbox-1ix_J3 polyline[stroke="#7289da"] {
+        stroke: var(--accentcolor) !important; }*/
       
 .checkbox-1ix_J3 polyline[stroke="transparent"] {
         stroke: transparent !important; }
@@ -2099,6 +2105,7 @@ div.platform-win #user-settings .item-PXvHYJ:nth-of-type(21)::before {
 
 /*/settings icons*/
 
+/*voice test*/ 
 
   /* 3.d. Buttons, Switches, and Bars */
 
@@ -2122,7 +2129,7 @@ div.platform-win #user-settings .item-PXvHYJ:nth-of-type(21)::before {
 .checkbox .checkbox-inner input[type=checkbox]:checked+span,
 .checked-3_4uQ9 {
   background-color: var(--accentcolor) !important;
-  border-color: var(--accentcolor) !important;
+  border-color: var(--accentcolor2) !important;
   border-radius: 0px;
 }
 
@@ -2216,6 +2223,15 @@ color: var(--dnd) !important;
 .grandfatheredMessage-2QgLnw {
   justify-content: center;
 }
+
+.banner-3Kac2g{
+  border-radius: 0px;
+}
+.giftButton-3hOWFt {
+  opacity: .9;
+  top:5px;
+}
+
 
 .details-39BP6c,
 .applications-304ue7,
@@ -3620,10 +3636,7 @@ box-sizing: border-box;
   transition: all .2s ease-in-out;
 }
 
-#friends .friends-table .friends-row .friends-column-guilds .more-mutual-guilds-btn:hover {
-  background-color: var(--accentcolor2);
-  border-color: var(--accentcolor2) !important;
-}
+
 
 #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
   background-color: var(--dnd) !important;
@@ -7438,8 +7451,14 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 /*/Upload animation*/
 
-
-
+/*friend guild remove*/ 
+.ra-serveritem-inner {
+  background: var(--guildlistcolor);
+  border-radius: 0px;
+}
+.ra-icon img {
+  border-radius: var(--avatars);
+}
 /*Clyde*/
 
 .theme-dark .isLocalBot-38G0P0 {
@@ -7477,6 +7496,18 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   background-color: var(--headercolor);
 }
 
+.notches-1sAcEM {
+  background-image: none !important;
+  -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='8'%20height='20'%20fill='%2336393f'><path%20fill-rule='evenodd'%20d='M0%200h8v20H0V0zm4%202a2%202%200%200%200-2%202v12a2%202%200%201%200%204%200V4a2%202%200%200%200-2-2z'/></svg>");
+  -webkit-mask-repeat: repeat-x;
+  width: 100%;
+  background-color: var(--guildlistcolor);
+}
+
+
+.theme-dark .progress-1IcQ3A, .theme-light .progress-1IcQ3A {
+  background-color: var(--accentcolor);
+}
 
 .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
       background-color: var(--accentcolor);
@@ -7944,11 +7975,11 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 .bubble-3we2di,
 #pubslayer .ui-tab-bar-item.selected:hover {
-  background-color: var(--accentcolor2) !important;
+  background-color: var(--accentcolor) !important;
 }
 
 .bubble-3we2di:before {
-  border-top-color: var(--accentcolor2) !important;
+  border-top-color: var(--accentcolor) !important;
 }
 
 .input-cIJ7To:focus {
