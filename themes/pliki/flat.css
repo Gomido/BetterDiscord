@@ -208,8 +208,10 @@ a {
 
 .private-channel-call,
 .video-1FfuMD {
-  background-color: var(--guildlistcolor) !important;
+  background-color: var(--channellistcolor) !important;
 }
+
+
 
 .inner-zqa7da { /*chat na dole*/
   background-color: var(--headercolor) !important;
@@ -544,15 +546,6 @@ border-radius: 0px;
     color: #666;
 }
 
-/* znaczki w profilach */
-/* Nitro */
-.topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj { background-image: url(https://discordapp.com/assets/379d2b3171722ef8be494231234da5d1.svg); }
-/* HypeSquad */
-.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z { background-image: url(https://discordapp.com/assets/0aae6033ad41cdda515a62cf72075afa.svg); }
-/* Staff */
-.topSectionNormal-2-vo2m .profileBadgeStaff-13GO7z { background-image: url(https://discordapp.com/assets/7cfd90c8062139e4804a1fa59f564731.svg); }
-/* Partner */
-.topSectionNormal-2-vo2m .profileBadgePartner-SjK6L2 { background-image: url(https://discordapp.com/assets/a0e288a458c48dfcf548dadc277e42e6.svg); }
 
 /* -- BD EDITS -- */
 /* Main CSS Box */
@@ -933,20 +926,20 @@ border-radius: 0px;
   margin: 0 8px;
 }
 
-.title-3qD0b-,
-.header-2o-2hj,
-.headerBar-UHpsPw {
+.container-2Rl01u{
   box-shadow: none;
+  top:-2px;
   border-bottom: 2px solid var(--accentcolor) !important;
 }
 
 .headerBar-UHpsPw.titleCall-_b9o8P {
-  border-bottom: none !important;
+  border-bottom: 2px solid var(--accentcolor) !important;
 }
 
 .headerBar-UHpsPw {
   height: 48px;
   padding: 0 8px 0 12px;
+  border-bottom: 2px solid var(--accentcolor);
 }
 
 .header-2o-2hj .name-3YKhmS {
@@ -959,14 +952,12 @@ border-radius: 0px;
 .guildsWrapper-5TJh6A .guilds-1q_RqH>div.guild-1EfMGQ:first-child .guildInner-3DSoA4 a,
 .guildsWrapper-5TJh6A .guilds-1q_RqH>div.guild-1EfMGQ:first-child .homeIcon-1FoKUJ {
   width: 100%;
-  transition: all 1s ease-in-out;
 }
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH>.guild-1EfMGQ:first-child .guildInner-3DSoA4 {
   border-bottom: 2px solid var(--accentcolor);
   border-radius: 0px !important;
   background-color: var(--headercolor) !important;
-  transition: all .5s ease-in-out;
 }
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH>div.guild-1EfMGQ:first-child  {
@@ -1204,7 +1195,8 @@ border-radius: 0px;
     .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4 .avatar-small:hover::before,
     .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4 .guildIcon-CT-ZDq:hover::before {
       background: rgba(255, 255, 255, 0.06);
-      transition: 0ms ease; }
+      transition: 0ms ease;
+          }
 
     .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ {
       height: 55px;}
@@ -2509,7 +2501,7 @@ display: none;
 
 .channels-Ie2l6A, 
 .container-PNkimc {
-  z-index: 2;
+  z-index: 4 !important;
 }
 
   /* 5.e. Unread Indicator */
@@ -2696,6 +2688,7 @@ display: none;
 .unreadBar-3YD_k9 {
   background-color: var(--chatbackground);
   border: 1px solid var(--accentcolor);
+  border-radius: 0px;
   transition: background-color .2s ease-in-out;
 }
 
@@ -3569,7 +3562,6 @@ box-sizing: border-box;
   position: absolute;
   height: 48px;
   width: 1px;
-  border-left: 2px solid var(--accentcolor);
   z-index:10;
 }
 
@@ -4256,7 +4248,7 @@ box-sizing: border-box;
 .authedApp-mj2Hmd,
 .modal-3HD5ck .message-2qRu38,
 .theme-dark .autocomplete-1vrmpx,
-.menu-Sp6bN1,
+.menu-Sp6bN1,.video-1FfuMD,
 #permissions-modal-wrapper .role-side {
   box-shadow: 0 2px 10px var(--shadow) !important;
 }
@@ -4736,11 +4728,11 @@ background:var(--titlebar);
 }
 
 .emojiPicker-3m1S-j .stickyHeader-1SS0JU {
-  background: var(--accentcolor);
+  background: var(--titlebar);
   left: 8px;
   position: absolute;
   top: 0;
-  width: 94%;
+  width: 96% !important;
   z-index: 1
 }
 
@@ -4861,10 +4853,10 @@ background:var(--titlebar);
 
 
 
-.pickerButtons-v-PPYK {
+  .buttons-205you {
   right: 0 !important;
   top: 0 !important;
-  height: 44px !important;
+  height: 45px !important;
   padding-top:13px;
 }
 
@@ -5087,8 +5079,9 @@ left:8px !important;
   flex: 1;
 }
 .lookOutlined-3sRXeN.colorWhite-rEQuAQ:disabled{
-background-color: transparent;
-    border-color: var(--accentcolor)}
+  background-color: transparent;
+  border-color: var(--accentcolor)
+  }
 /*---------------------------
 Plugin: PermissionsViewer by Zerebos
 ---------------------------*/
@@ -5102,11 +5095,15 @@ Plugin: PermissionsViewer by Zerebos
   position: relative;
 }
 
+.member-perms-title{
+  margin-right:190px !important; 
+}
+
 
 .userPopout-3XzG_A .body-3iLsc4 .member-perms-header::before {
   background: url("http://twitchcord.com/twitchcord-theme/images/privacy-ico-micro.png") no-repeat 50% !important;
   height: 11px;
-  top: 11px;
+  top: 11px !important;
 }
 
 #permissions-modal-wrapper .modal-wrapper {
@@ -5117,7 +5114,7 @@ Plugin: PermissionsViewer by Zerebos
   border-radius: 0 !important;
   background: var(--guildlistcolor) !important;
   border: 1px solid var(--titlebar) !important;
-  width: 466px !important;
+  width: 470px !important;
 }
 
 #permissions-modal-wrapper .perm-side {
@@ -5127,6 +5124,11 @@ Plugin: PermissionsViewer by Zerebos
 
 #permissions-modal-wrapper .role-side {
   width: 175px !important;
+}
+
+#permissions-modal-wrapper .perm-side {
+  width: 275px !important;
+  background-color: var(--guildlistcolor);
 }
 
 /*TOP ROLE PLUGIN*/ 
@@ -5273,13 +5275,16 @@ Plugin: PermissionsViewer by Zerebos
 
 
 
-.mask-3OgeRz, .assetsLargeMaskProfile-1Qkfen, .avatarMasked-3y6o4j, .assetsLargeMaskUserPopout-12EBBc {
+.mask-3OgeRz, .assetsLargeMaskProfile-1Qkfen, .avatarMasked-3y6o4j{
   border-radius: var(--avatars);
   -webkit-mask: none;
   mask: none;
 }
 
-
+.assetsLargeMaskUserPopout-12EBBc {
+  mask: none !important;
+  -webkit-mask-image: none;
+}
 
 .container-1YxwTf > .content-3dzVd8:first-child {
   position: relative;
@@ -5303,23 +5308,6 @@ Plugin: PermissionsViewer by Zerebos
   padding: 0;
 }
 
-
-/* Badges */
-.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z{
-  background-image:url(https://discordapp.com/assets/3a050fcc884255231b99b7033c776070.svg)
-}
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3-1YbjMX{
-  background-image:url(https://discordapp.com/assets/2a085ed9c86f3613935a6a8667ba8b89.svg)
-}
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR{
-  background-image:url(https://discordapp.com/assets/d3478c6bd5cee0fc600e55935ddc81aa.svg)
-}
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1-xN6tES{
-  background-image:url(https://discordapp.com/assets/1115767aed344e96a27a12e97718c171.svg)
-}
-.topSectionNormal-2-vo2m .profileBadgeEarlySupporter-PQB_0a {
-  background-image: url(https://discordapp.com/assets/ce15562552e3d70c56d5408cfeed2ffd.svg);
-}
 
 /************************************************/
 /*
@@ -5898,7 +5886,7 @@ margin:15px;}
 
   /* 15.h. Group DM Invite Popout */
 .modal-3HD5ck {
-  background-color: var(--guildlistcolor) !important;
+  background-color: var(--titlebar) !important;
   border-radius: 0px;
 }
 
@@ -5943,6 +5931,40 @@ margin:15px;}
   display: none;
 } 
 
+.theme-dark .header-3ZP1MY, .theme-light .header-3ZP1MY {
+  color: var(--accentcolor);
+}
+
+
+.theme-dark .action-1lSjCi, .theme-light .action-1lSjCi{
+  background: var(--guildlistcolor);
+  border: 1px solid var(--accentcolor);
+  border-radius: 0px;
+}
+
+.theme-dark .join-33Tr-7 .actionButton-2PeQbJ, .theme-light .join-33Tr-7 .actionButton-2PeQbJ {
+  background-color: transparent;
+  border: 1px solid var(--accentcolor);
+  border-radius: 0px;
+}
+
+.theme-dark .join-33Tr-7:hover .actionButton-2PeQbJ, .theme-light .join-33Tr-7:hover .actionButton-2PeQbJ {
+  background-color: var(--accentcolor);
+}
+
+.theme-dark .actionButton-2PeQbJ, .theme-light .actionButton-2PeQbJ {
+  background-color: transparent;
+  border: 1px solid var(--accentcolor);
+  border-radius: 0px;
+}
+
+.theme-dark .or-3THJsp, .theme-light .or-3THJsp{
+  display: none;
+}
+
+.theme-dark .create-3jownz:hover .actionButton-2PeQbJ, .theme-light .create-3jownz:hover .actionButton-2PeQbJ {
+  background-color: var(--accentcolor);
+}
   /* 15.i. Tooltips */
 .tooltip {
   border-radius: 0px !important;
@@ -6716,28 +6738,27 @@ height:52px;
   background-color: var(--chatbackground) !important;
 }
   /* 17.d. Join or Create New Guild */
-.create-guild-container-new.deprecated .create-or-join header,
-.create-guild-container-new.deprecated h5,
-.create-guild-container-new.deprecated .join-server .sample-link {
+  .theme-light .sampleLink-KPFu3I  {
   color: var(--accentcolor)
 }
 
-.create-guild-container-new.deprecated { background-color: transparent }
-
-.create-guild-container-new.deprecated .action.create .action-icon {
-  background-image: url(../assets/add-btn.png);
+.theme-light .title-2CFvp_ {
+  color: var(--accentcolor);
 }
 
-.create-guild-container-new.deprecated .action.join .action-icon {
-  background-image: url(../assets/join-btn.png);
+.theme-dark .title-2CFvp_ {
+  color: var(--accentcolor);
 }
 
-.create-guild-container.deprecated .form.deprecated .form-inner,
-.create-guild-container.deprecated,
-.regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3:hover,
-.create-guild-container-new.deprecated .form.deprecated .form-inner {
-  background-color: var(--chatbackground) !important;
+.theme-light .title-2Dc-Cb {
+  color: var(--accentcolor);
 }
+
+
+.theme-dark .title-2Dc-Cb {
+  color: var(--accentcolor);
+}
+
 
 .create-guild-container-new.deprecated .action {
   background: var(--titlebar);
@@ -6755,19 +6776,13 @@ height:52px;
   background-color: var(--accentcolor2);
 }
 
-.create-guild-container-new.deprecated .create-or-join .actions .or {
-  background-image: none;
-  -webkit-mask: url('https://ellexidecodes.github.io/Discord-Themes/assets/or.svg');
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 52px 52px;
-  background-color: var(--chatbackground);
-  color: var(--accentcolor);
+.theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce, .theme-dark .regionSelect-3lf4eE:hover button, .theme-light .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce, .theme-light .regionSelect-3lf4eE:hover button {
+  border-color: var(--accentcolor);
 }
 
-.theme-dark .or-3THJsp {
-  border-color: var(--guildlistcolor);
-  color: var(--guildlistcolor);
+.theme-dark .regionSelect-3lf4eE:hover button, .theme-light .regionSelect-3lf4eE:hover button {
+  background-color: var(--accentcolor);
+  color: #fff;
 }
 
 .wrapper-2ZbzR9{
@@ -6782,6 +6797,7 @@ height:52px;
 .regionSelect-3lf4eE .regionSelectInner-24f4Ce,
 .regionSelect-3lf4eE button {
   border-color: var(--guildlistcolor);
+  border-radius: 0px;
 }
 
 .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
@@ -6833,6 +6849,15 @@ height:52px;
 .secondaryAccent-24W-RJ.hover-3nZwuJ.green-1kY_LT {
 	fill: var(--online) !important;
 }
+
+.theme-dark .create-3jownz .actionHeader-2CT5c7, .theme-light .create-3jownz .actionHeader-2CT5c7 {
+  color: var(--accentcolor);
+}
+
+.theme-dark .join-33Tr-7 .actionHeader-2CT5c7, .theme-light .join-33Tr-7 .actionHeader-2CT5c7 {
+  color: var(--accentcolor);
+}
+
 
 /*esc */ 
 .theme-dark .keybind-KpFkfr{
@@ -8007,24 +8032,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 .bf-toolbar .format:hover {
   background: var(--guildlistcolor);}
   
-  /* 20.a.2. Permission Viewer */
-#permissions-modal-wrapper #permissions-modal {
-  border-color: var(--chatbackground);
-}
-
-#permissions-modal-wrapper .perm-side {
-  background: transparent !important
-}
-
-#permissions-modal-wrapper .role-item {
-  border: 1px solid transparent;
-}
-
-#permissions-modal-wrapper .role-item:hover {
-  background-color: transparent !important;
-  border-color: var(--accentcolor2);
-}
-
+  
   /* 20.a.3. Character Counter */
 span#charcounter {
   color: rgba(255, 255, 255, .3);
