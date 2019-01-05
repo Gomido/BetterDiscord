@@ -6925,6 +6925,13 @@ border: 1px solid var(--accentcolor);
 color: #fff;
 }
 
+.lookInverted-2D7oAl.colorGreen-29iAKY:disabled {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid var(--accentcolor);
+  color: #fff; 
+}
+
 .lookFilled-1Gx00P.colorGreen-29iAKY:disabled{
   background-color: transparent;
   border-radius: 0px;
@@ -7453,11 +7460,11 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 /*friend guild remove*/ 
 .ra-serveritem-inner {
-  background: var(--guildlistcolor);
-  border-radius: 0px;
+  background: var(--guildlistcolor) !important;
+  border-radius: 0px !important;
 }
 .ra-icon img {
-  border-radius: var(--avatars);
+  border-radius: var(--avatars) !important;
 }
 /*Clyde*/
 
@@ -7720,11 +7727,17 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .contentWrapper-3WC1ID:only-child {
-  background-color: var(--chatbackground) !important;
+  border-radius: 0px;
 }
 
+.iconInactive-98JN5i {
+  border-radius: var(--avatars);
+}
 
-
+.theme-dark .pill-1dHPfk {
+  background-color: var(--headercolor);
+  border-radius: 0px !important
+}
 
 /* 18. Login Page */
 .input-cIJ7To:focus {
