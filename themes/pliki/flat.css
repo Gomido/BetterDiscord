@@ -119,8 +119,32 @@ a {
 
  12. Modals
 */
+/* pasek na glosowce*/ 
+.avatarSpeaking-1wJCNq, .avatarDefault-35WC3R, .avatarContainer-72bSfM {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  z-index: 10;
+}
 
+.avatarSpeaking-1wJCNq::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 4px;
+  height: 20px;
+  background: var(--accentcolor);
+}
 
+.avatarSpeaking-1wJCNq::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  left: -5px;
+  width: 100%;
+  background: linear-gradient(to right, var(--accentcolor) 0%, transparent 35%) !important;
+  opacity: 0.5;
+  z-index: -1;
+}
 
 /* 1. Title Bar */
 .appMount-3VJmYg {
@@ -355,9 +379,9 @@ border-radius: 0px;
 }
 
 .theme-dark .search-results-wrap{
-  border-left:2px solid var(--accentcolor);
-  border-right:2px solid var(--accentcolor);
-  border-bottom:2px solid var(--accentcolor);
+  border-left: 2px solid var(--accentcolor);
+  border-right: 2px solid var(--accentcolor);
+  border-bottom: 2px solid var(--accentcolor);
   margin-bottom: 2px;
 }
 
@@ -409,7 +433,7 @@ border-radius: 0px;
 
 
 .backdrop-1wrmKB{
-  opacity: 0.7 !important;
+  opacity: 0.6 !important;
 }
 
 
@@ -1236,7 +1260,8 @@ border-radius: 0px;
   border-bottom: 2px solid var(--accentcolor);
   padding: 0px;
   height: 46px;
-  box-shadow: 0px 0px transparent !important
+  box-shadow: 0px 0px transparent !important;
+  z-index: 10 !important;
 }
 
 .privateChannels-1nO12o .searchBar-6Kv8R2 input {
@@ -3075,9 +3100,7 @@ a,
 }
 
   /* 8.c Blocked Messages */
-  .messageGroupBlocked-3wrQQX{
-    display: none
-  }
+
 
 
 .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
@@ -3089,6 +3112,7 @@ a,
 .messageGroupBlocked-3wrQQX {
   background: var(--titlebar) !important;
   border-color: var(--headercolor) !important;
+  border-radius: 0px;
 }
 
   /* 8.d Chat Dividers */
@@ -3407,8 +3431,6 @@ box-sizing: border-box;
 }
 .inner-zqa7da .attachButton-1UjEWA:hover{
   opacity:.9!important;
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
   transition: all 100ms ease;
 }
 
@@ -3422,6 +3444,57 @@ box-sizing: border-box;
 .chat-3bRxxu form {
   margin: 0px;
 }
+
+
+
+.channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .textArea-2Spzkt,
+.channelTextArea-1LDbYG .inner-zqa7da .buttons-205you,
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus + .buttons-205you  {
+  opacity: 1;
+}
+
+
+.textArea-2Spzkt {
+  padding-right: 180px;
+}
+
+.buttons-205you {
+  padding-right: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.buttons-205you>.button-38aScr {
+  margin: 0;
+  background: none;
+  transform: none;
+  transition: none;
+  opacity: 0.24;
+  width: 40px;
+  transition: all 200ms ease;
+}
+
+
+.buttons-205you>.button-38aScr>.contents-18-Yxp {
+  opacity: 1;
+}
+
+.buttons-205you .icon-3D60ES {
+  transition: none;
+  transform: scale(.85714) !important;
+}
+
+.inner-zqa7da:hover .buttons-205you>.button-38aScr {
+  opacity: 0.3;
+}
+
+.inner-zqa7da .buttons-205you>.button-38aScr:hover,
+.inner-zqa7da .buttons-205you>.button-38aScr.active-23Nm0T,
+.inner-zqa7da .buttons-205you>.button-38aScr.popout-open {
+  opacity: 1;
+}
+
 
   /* 8.l. Typing Bar */
 .chat-3bRxxu form .typing-2GQL18 {
@@ -4354,7 +4427,7 @@ box-sizing: border-box;
 .scrollerWrap-2lJEkd .scroller-2CvAgC::-webkit-scrollbar-thumb,
 .chat-3bRxxu .textArea-2Spzkt::-webkit-scrollbar-thumb,
 .sb-menu-scroller::-webkit-scrollbar-thumb {
-  background-color: var(--accentcolor) !important;
+  background-color: #1d1d1d !important;
   border-color: transparent !important;
   border-radius: 0px;
 }
@@ -4545,7 +4618,9 @@ box-sizing: border-box;
   color: #FFF;
 }
 
-
+.theme-brand .content-Qb0rXO{
+  color:#FFF;
+}
 
 
 /*wieksze okno emotek */
@@ -4592,7 +4667,7 @@ box-sizing: border-box;
 
 .highlight {
   background: rgba(26, 205, 250, 0.3);
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 .popoutTopRight-3BzFIE {
@@ -4864,16 +4939,6 @@ background:var(--titlebar);
   border-radius: 0px;}
 
 
-
-
-  .buttons-205you {
-  right: 0 !important;
-  top: 0 !important;
-  height: 45px !important;
-  padding-top:13px;
-}
-
-
 .send-button {
   top:0 !important;
   bottom: 0 !important;
@@ -4886,13 +4951,12 @@ background:var(--titlebar);
 .theme-dark .channel-textarea-emoji:hover,
 .theme-dark .channel-textarea-emoji:active{
   opacity:1;
-  transition: all 100ms ease;
-  -ms-transform: scale(1.2);
-  transform: scale(1.2)
 }
 
 
-
+.theme-brand .content-Qb0rXO{
+  color:#FFF;
+}
 
 .theme-dark #autocomplete-popout .autocomplete-header-background{
   background-color: var(--headercolor);
@@ -4949,8 +5013,11 @@ height: 100%;
 }
 .headerNormal-T_seeN {
   background-color: var(--guildlistcolor) !important ;
-
 }
+
+
+
+
 .body-3iLsc4, .footer-1fjuF6 {
   background-color: var(--headercolor) !important;
   border-left: 1px solid var(--accentcolor);
@@ -5428,8 +5495,13 @@ Plugin: PermissionsViewer by Zerebos
   display: none;
 }
 
+.theme-dark .mobileIndicator-329Gd6 {
+  color: #FFFFFF !important;
+}
 
-
+.channel-2QD9_O:hover .mobileIndicator-3gyhuE, .channel-2QD9_O.selected-1HYmZZ .mobileIndicator-3gyhuE{
+color: #FFFFFF !important;
+}
 .userPopout-3XzG_A .headerText-2sdzFM {
   content: '';
   width: 320px;
@@ -8065,6 +8137,12 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
   /* 20.a. Plugin Optimization */
+
+  /* quoter*/ 
+  .container-1YxwTf .btn-quote {
+    margin-top:3px !important;
+    transition: all .2s ease-in-out
+  }
     /* 20.a.1. BetterFormatting */
 .bf-toolbar:before {
   background: var(--titlebar) !important;
