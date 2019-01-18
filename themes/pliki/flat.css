@@ -591,6 +591,15 @@ a {
   background-color: var(--headercolor);
   margin-bottom:-1px;
 }
+.name-2WpE7M{
+  color: #a3a3a3;
+  font-weight: 600;
+}
+
+.name-2WpE7M:hover{
+  color: #FFF;
+}
+
 
 /* 14. Bulk Loud Colors */
 
@@ -7729,7 +7738,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   background-color: rgba(33, 219, 135, 0.6) !important;
 }
 
-#bd-settingspane-container .bda-slist li[data-name="FlatDiscordTheme"] .scroller-wrap::before {
+#bd-settingspane-container .bda-slist li[data-name="TESTQQUIET"] .scroller-wrap::before {
   content: "Accent color";
   position: relative;
   left: 0;
