@@ -3094,6 +3094,10 @@ a,
 /* ==================== */
 /*   End Upload Modal   */
 
+.anchor-3Z-8Bb {
+  color: var(--accentcolor);
+}
+
 .attachmentInner-3e5fpm .progress-2XXRYo {
   background: var(--titlebarcolor);
 }
@@ -3976,13 +3980,10 @@ box-sizing: border-box;
     vertical-align: text-top;
     transition: 300ms ease; }
   
-  .theme-dark .container-3gCOGc .headerBar-UHpsPw .tabBar-1E2ExX .item-3HpYcP.notSelected-1N1G5p:hover .wrapper-232cHJ {
-    color: var(--accentcolor);
-    background: var(--white4); }
-  
+
   .theme-dark .container-3gCOGc .headerBar-UHpsPw .tabBar-1E2ExX .item-3HpYcP.itemSelected-1qLhcL .wrapper-232cHJ {
-    background: var(--accentcolor);
-    color: var(--white0); }
+    background: var(--white9);
+    color: var(--black9); }
   
   .theme-dark .container-3gCOGc .headerBar-UHpsPw .tabBar-1E2ExX .item-3HpYcP.primarySelected-3uHKZn .wrapper-232cHJ {
     background: var(--accentcolor); }
@@ -5449,11 +5450,12 @@ z-index:50}
 
   /* 15.d. User Popout */
 /* 23. User Popup */
+/*role hider*/
+#app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3 {overflow-y:scroll;max-height:110px}
+#app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar {width:2px;background:transparent}
+#app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar-thumb {background:var(--titlebar)}
 
 
-.bodyTitle-18hsd9, .member-perms-header {
-  color: #d1d1d3;
-}
 .member-perms {
 height: 0px;
 margin-top: 0px;
@@ -5615,13 +5617,14 @@ Plugin: PermissionsViewer by Zerebos
   padding: 0px 120px;
 }
 
+
 .perm-details {
   top: 10px;
   position: relative;
 }
 
 .member-perms-title{
-  margin-right:190px !important; 
+  margin-right:120px !important; 
 }
 
 
