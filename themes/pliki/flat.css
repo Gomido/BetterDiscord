@@ -7,7 +7,7 @@
 :root {
   --home-color: #eee;
   --home-size: 36px;
-  --avatars: 0%; /* 0% - kwadratowe avatary*/
+  --avatars: 50%; /* 0% - kwadratowe avatary*/
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
   --chatanim: 0;
   --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
@@ -16,10 +16,10 @@
   --channellistcolor: #252525; /*kolor listy kanalow, uzytkownikow*/
   --guildlistcolor: #303030; /*kolor tla serwerów*/
   --headercolor: #161616; /*kolor paska na górze kanału/serwera*/
-  --accentcolor: #0084ff; /*kolor skina*/
+  --accentcolor: #3F85FF; /*kolor skina*/
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu*/
-  --badgecolor: #0084ff; /*kolor znaczników nowych wiadomości, serwerów czy wzmianek*/
-  --notification-width: 3px;
+  --badgecolor: #3F85FF; /*kolor znaczników nowych wiadomości, serwerów czy wzmianek*/
+  --notification-width:3px;
   --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
   --rs-spacing: 2px; /* odstep miedzy ramka a avatarem */
   --rs-width: 2px; /* wielkosc ramki wokol avatara */
@@ -27,7 +27,7 @@
   --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
   --rs-profile-spacing: 0px; /* odstep w profilu */
   --rs-profile-width: 4px; /* widocznosc ramki statusu w proflu */
-  --online: #63db2b; /* online */
+  --online: #23D700; /* online */
   --idle: #faa61a; /* zajety */
   --dnd: #f71e1e; /* dnd */
   --offline: #636b75; /* offline */
@@ -1790,30 +1790,34 @@ body #files_directDownload{
 .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 a .connectedAccountOpenIcon-2cNbq5 {
   position: relative; }
 
-.root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 a .connectedAccountOpenIcon-2cNbq5::after,
-.container-2Thooq .avatar-small::after {
-  content: "";
-  background: var(--white10);
-  border-radius: var(--avatars);
-  display: block;
-  width: 100%;
-  padding-top: 100%;
-  height: 0;
-  position: absolute;
-  opacity: 0;
-  transform: scale(1.4);
-  transition: all 300ms ease, visibility 0ms 300ms;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-  pointer-events: none; }
-
-.root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 a .connectedAccountOpenIcon-2cNbq5:active::after,
-.container-2Thooq .avatar-small:active::after {
-  opacity: 0.1;
-  transition: all 300ms ease, visibility 0ms;
-  visibility: visible;
-  animation: scale 100ms cubic-bezier(0.2, 0, 0, 1), opacity 50ms ease; }
-
+  .container-2Thooq .inner-1W0Bkn::after {
+    content: "";
+    background: var(--white9);
+    border-radius: var(--avatars);
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 300ms ease, visibility 0ms 300ms;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    pointer-events: none; }
+  
+  .container-2Thooq .inner-1W0Bkn:active::after {
+    opacity: 0.2;
+    transition: all 300ms ease, visibility 0ms;
+    visibility: visible;
+    animation: scale 100ms cubic-bezier(0.2, 0, 0, 1), opacity 50ms ease; }
+  
+  .container-2Thooq .avatar-3JE4B3 .inner-1W0Bkn:hover {
+    opacity: 0.8; }
+  
+  .container-2Thooq .avatar-3JE4B3:hover {
+    opacity: 1; }
+  
 /*Skype*/
 .connectedAccountIcon-3P3V6F[src="/assets/5be6cc17e596c02e7506f2776cfb1622.png"] {
   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTQ5MSA0OTMgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTQ5MSA0OTMgMTYgMTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO30uc3Qxe2ZpbGw6bm9uZTt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTQ4Myw1MDQuNGMtMiwwLTIuOS0xLTIuOS0xLjdjMC0wLjQsMC4zLTAuNiwwLjctMC42YzAuOCwwLDAuNiwxLjIsMi4yLDEuMmMwLjgsMCwxLjMtMC40LDEuMy0wLjljMC0wLjMtMC4xLTAuNi0wLjctMC43bC0xLjgtMC40Yy0xLjQtMC40LTEuNy0xLjEtMS43LTEuOGMwLTEuNSwxLjQtMi4xLDIuNy0yLjFjMS4yLDAsMi42LDAuNywyLjYsMS42YzAsMC40LTAuMywwLjYtMC43LDAuNmMtMC43LDAtMC42LTEtMi0xYy0wLjcsMC0xLjEsMC4zLTEuMSwwLjhjMCwwLjUsMC42LDAuNiwxLjEsMC43bDEuMywwLjNjMS40LDAuMywxLjgsMS4yLDEuOCwxLjlDLTQ4MC4yLDUwMy41LTQ4MS4xLDUwNC40LTQ4Myw1MDQuNCBNLTQ3Ny41LDUwMkwtNDc3LjUsNTAyTC00NzcuNSw1MDJDLTQ3Ny42LDUwMS45LTQ3Ny42LDUwMi00NzcuNSw1MDJjMC4xLTAuMywwLjEtMC43LDAuMS0xYzAtMC44LTAuMS0xLjUtMC40LTIuMmMtMC4zLTAuNy0wLjctMS4zLTEuMi0xLjhjLTAuNS0wLjUtMS4xLTAuOS0xLjgtMS4yYy0wLjctMC4zLTEuNC0wLjQtMi4yLTAuNGMtMC40LDAtMC43LDAtMS4xLDAuMWgwbDAuMSwwbC0wLjEsMGwwLjEsMGMtMC41LTAuMy0xLTAuNC0xLjUtMC40Yy0wLjksMC0xLjcsMC4zLTIuMywxcy0xLDEuNC0xLDIuM2MwLDAuNiwwLjEsMS4xLDAuNCwxLjZsMC0wLjFsMCwwLjFjMCwwLDAsMCwwLTAuMWMtMC4xLDAuMy0wLjEsMC42LTAuMSwxYzAsMC44LDAuMSwxLjUsMC40LDIuMmMwLjMsMC43LDAuNywxLjMsMS4yLDEuOGMwLjUsMC41LDEuMSwwLjksMS44LDEuMmMwLjcsMC4zLDEuNCwwLjQsMi4yLDAuNGMwLjMsMCwwLjcsMCwxLTAuMWwtMC4xLDBsMC4xLDBsLTAuMSwwYzAuNSwwLjMsMSwwLjQsMS42LDAuNGMwLjksMCwxLjctMC4zLDIuMy0xYzAuNi0wLjYsMS0xLjQsMS0yLjNDLTQ3Ny4xLDUwMy00NzcuMyw1MDIuNS00NzcuNSw1MDIiLz48cmVjdCB4PSItNDkxIiB5PSI0OTMiIGNsYXNzPSJzdDEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjwvc3ZnPg==) !important; }
@@ -2211,6 +2215,15 @@ div.platform-win #user-settings .item-PXvHYJ:nth-of-type(21)::before {
 
 /*/settings icons*/
 
+
+/*game avtivity*/
+.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s{
+  background-color: var(--titlebar);
+}
+
+.theme-dark .addGamePopout-2RY8Ju {
+  background-color: var(--channellistcolor);
+}
 /*voice test*/ 
 
   /* 3.d. Buttons, Switches, and Bars */
@@ -2235,7 +2248,7 @@ div.platform-win #user-settings .item-PXvHYJ:nth-of-type(21)::before {
 .checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span,
 .checked-3_4uQ9 {
   background-color: var(--accentcolor) !important;
-  border-color: var(--accentcolor2) !important;
+  border-color: var(--accentcolor) !important;
   border-radius: 0px;
 }
 
@@ -3057,6 +3070,7 @@ a,
   padding-bottom: 10px;
 }
 
+
 .icon-2shpbb {
   -webkit-mask-size: 95%;
   -webkit-mask-position: center;
@@ -3094,10 +3108,125 @@ a,
 /* ==================== */
 /*   End Upload Modal   */
 
-.anchor-3Z-8Bb {
+/*MARKDOWN LABEL*/
+
+
+.theme-dark .markup-2BOw-j .hljs[class~="java" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="sql" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="ruby" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="coffee" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="xl" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="py" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="python" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="html" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="md" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="markdown" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="bash" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="js" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="javascript" i]:before,
+.theme-dark .markup-2BOw-j .hljs[class~="css" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="vb" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="visualbasic" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="lua" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="php" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="swift" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="makefile" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="go" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="ini" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="rust" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="prolog" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="ts" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="typescript" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="http" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="json" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="xml" i]::before,
+.theme-dark .markup-2BOw-j .hljs[class~="less" i]::before{width: 100%;height: 16px;position: relative;display: -webkit-box;margin-top: -8px;color: #fff;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom: 5px solid var(--headercolor);line-height: 15px !important;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="java" i],
+.theme-dark .markup-2BOw-j .hljs[class~="sql" i],
+.theme-dark .markup-2BOw-j .hljs[class~="ruby" i],
+.theme-dark .markup-2BOw-j .hljs[class~="coffee" i],
+.theme-dark .markup-2BOw-j .hljs[class~="xl" i],
+.theme-dark .markup-2BOw-j .hljs[class~="py" i],
+.theme-dark .markup-2BOw-j .hljs[class~="python" i],
+.theme-dark .markup-2BOw-j .hljs[class~="html" i],
+.theme-dark .markup-2BOw-j .hljs[class~="md" i],
+.theme-dark .markup-2BOw-j .hljs[class~="markdown" i],
+.theme-dark .markup-2BOw-j .hljs[class~="js" i],
+.theme-dark .markup-2BOw-j .hljs[class~="javascript" i],
+.theme-dark .markup-2BOw-j .hljs[class~="css" i],
+.theme-dark .markup-2BOw-j .hljs[class~="bash" i],
+.theme-dark .markup-2BOw-j .hljs[class~="vb" i],
+.theme-dark .markup-2BOw-j .hljs[class~="visualbasic" i],
+.theme-dark .markup-2BOw-j .hljs[class~="lua" i],
+.theme-dark .markup-2BOw-j .hljs[class~="php" i],
+.theme-dark .markup-2BOw-j .hljs[class~="swift" i],
+.theme-dark .markup-2BOw-j .hljs[class~="makefile" i],
+.theme-dark .markup-2BOw-j .hljs[class~="go" i],
+.theme-dark .markup-2BOw-j .hljs[class~="ini" i],
+.theme-dark .markup-2BOw-j .hljs[class~="rust" i],
+.theme-dark .markup-2BOw-j .hljs[class~="prolog" i],
+.theme-dark .markup-2BOw-j .hljs[class~="ts" i],
+.theme-dark .markup-2BOw-j .hljs[class~="typescript" i],
+.theme-dark .markup-2BOw-j .hljs[class~="http" i],
+.theme-dark .markup-2BOw-j .hljs[class~="json" i],
+.theme-dark .markup-2BOw-j .hljs[class~="xml" i],
+.theme-dark .markup-2BOw-j .hljs[class~="less" i]{padding: .5em !important;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="js" i]::before, .theme-dark .markup-2BOw-j .hljs[class~="javascript" i]::before{content: " Javascript";background: #165eab;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="css" i]::before{content: " Cascading Style Sheet";background: #ab6f16;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="bash" i]::before{content: " Bash";background: #ab1663;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="markdown" i]::before, .theme-dark .markup-2BOw-j .hljs[class~="md" i]::before{content: " Markdown";background: #ab2e16;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="html" i]::before{content: " HTML";background: #16ab6f;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="xl" i]::before{content: " eXtensible Language";background: #4872a8;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="coffee" i]::before{content: " Coffee (Javascript)";background: #3a1b1b;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="ruby" i]::before{content: " Ruby";background: #e73e3e;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="sql" i]::before{content: " SQL";background: #4474ca;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="java" i]::before{content: " Java";background: #eb2d2f;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="py" i]::before, .theme-dark .markup-2BOw-j .hljs[class~="python" i]::before{content: " Python";background: #1622ab;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="vb" i]::before, .theme-dark .markup-2BOw-j .hljs[class~="visualbasic" i]::before{content: " Visual Basic";background: #839700;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="lua" i]::before{content: " Lua";background: #2ecc71;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="php" i]::before{content: " Php";background: #6e81b6;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="swift" i]::before{content: " Swift";background: #fd7837;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="makefile" i]::before{content: " Makefile";background: #8a2b0f;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="go" i]::before{content: " Go";background: #75cede;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="ini" i]::before{content: " ini";background: #5a75c0;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="rust" i]::before{content: " Rust";background: #000;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="prolog" i]::before{content: " Prolog";background: #ef4d25;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="ts" i]::before, .theme-dark .markup-2BOw-j .hljs[class~="typescript" i]::before{content: " TypeScript";background: #03324c;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="http" i]::before{content: " HTTP";background: #618f10;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="json" i]::before{content: " Json";background: #108f66;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="xml" i]::before{content: " XML";background: #8444af;}
+
+.theme-dark .markup-2BOw-j .hljs[class~="less" i]::before{content: " Less";background: #1d365d;}
+
+.anchor-3Z-8Bb.fileNameLink-9GuxCo
+{
   color: var(--accentcolor);
 }
-
 .attachmentInner-3e5fpm .progress-2XXRYo {
   background: var(--titlebarcolor);
 }
@@ -3294,6 +3423,7 @@ a,
 .chat-3bRxxu .newMessagesBar-mujexs {
   background-color: var(--accentcolor) !important;
   border-radius: 0px;
+  z-index: 10000;
 }
 
 
@@ -4456,7 +4586,7 @@ box-sizing: border-box;
   left: 0px !important;
 }
 
-.container-2Thooq .avatar-small {
+.container-2Thooq .avatarSmall-3ACRaI {
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
@@ -4692,7 +4822,7 @@ box-sizing: border-box;
   border-radius: var(--avatars);
   opacity: 0;
   position: absolute;
-  left: calc(50% + 0.5px);
+  left: calc(48% + 0.5px);
   top: calc(50% + 0px);
   -ms-transform: translate(-50%, -50%) scale(1.3);
   transform: translate(-50%, -50%) scale(1.3);
@@ -4963,7 +5093,7 @@ box-sizing: border-box;
 }
 
 .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G:hover {
-  background-color: var(--guildlistcolor) !important;
+  background-color: var(--titlebar) !important;
   border-color: var(--accentcolor) !important;
   border-radius:0px;
 }
@@ -4985,6 +5115,7 @@ box-sizing: border-box;
 
 .jumpButton-3DTcS_ {
   background-color: var(--accentcolor) !important;
+  color: #FFFFFF !important;
   border-radius: 0px;
 }
 
@@ -5075,6 +5206,21 @@ box-sizing: border-box;
 
 
 /*wieksze okno emotek */
+
+.emojiPicker-3m1S-j .searchBar-2_Yu-C input {
+  color: var(--white9) !important;
+  border-bottom: 2px solid var(--white2);
+  padding-bottom: 3px;
+  padding-right: 25px;
+  height: 30px; }
+
+.emojiPicker-3m1S-j .searchBar-2_Yu-C input:focus {
+  border-bottom: 2px solid var(--accentcolor); }
+
+.emojiPicker-3m1S-j .searchBar-2_Yu-C input::-webkit-input-placeholder {
+  color: var(--white6) !important; }
+
+
 .emojiPicker-3m1S-j .scroller-3vODG7 {
   height: 500px;
   background-color: var(--titlebar);
@@ -6474,7 +6620,7 @@ margin:15px;}
 .guilds-1q_RqH .guildPlaceholder-1ioaid {
   width: 70px !important;
   height:64px !important;
-  top:-5px;
+  margin-top:0px;
   border-radius: 0 !important;
   background-position: 50%;
   background-color: #43B581 !important;
@@ -6748,7 +6894,7 @@ margin:15px;}
     .alt-3btY0e.menu-Sp6bN1 {
       border-radius: 0 !important;
       width: 240px !important;
-      bottom: 28px !important;
+      bottom: 24px !important;
       top: initial !important;
       height: 70px !important;
       display: block;
@@ -7199,6 +7345,13 @@ height:52px;
 }
 
 
+.wrapper-2ZbzR9{
+  border-radius: 0px;
+}
+
+.actionButton-2PeQbJ{
+  border-radius: 0px;
+}
 
 .messages-3amgkR .welcomeMessage-3_Mcht .anchor-3Z-8Bb,
 .messages-3amgkR .welcomeMessage-3_Mcht .h1-1IDj26 {
@@ -7211,8 +7364,13 @@ height:52px;
 .form .btn-primary:hover {
   filter: brightness(93%) contrast(110%); }
 
+
+  .theme-dark .join-33Tr-7 .actionHeader-2CT5c7, .theme-light .join-33Tr-7 .actionHeader-2CT5c7 {
+    color: var(--accentcolor);
+}
+
 .animator-US5i9g .action-1lSjCi.join-33Tr-7 .actionButton-2PeQbJ {
-  background: #3ca374; }
+  background: var(--accentcolor); }
 
 .animator-US5i9g .action-1lSjCi {
   background: var(--guildlistcolor);
@@ -7240,7 +7398,7 @@ height:52px;
   background: var(--accentcolor); }
 
 .animator-US5i9g .action-1lSjCi.join-33Tr-7:active {
-  background: #3CA374; }
+  background: var(--accentcolor); }
 
 .animator-US5i9g .action-1lSjCi .actionHeader-2CT5c7 {
   transition: all 200ms ease; }
@@ -7260,7 +7418,7 @@ body .animator-US5i9g .action-1lSjCi.create-3jownz:active .actionButton-2PeQbJ {
   color: var(--accentcolor) !important; }
 
 body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
-  color: #3CA374 !important; }
+  color: var(--accentcolor) !important; }
 
 .animator-US5i9g p {
   color: var(--white5); }
@@ -8037,54 +8195,42 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 
-.uploadModal-2ifh8j .footer-3mqk7D button {
-  background-color: transparent;
-  min-width: 36px;
-  max-width: 36px;
-  margin-top: -3px;
-  margin-right: 20px;
-  transition: all .2s ease-in-out;
-  color: transparent;
-}
+#bd-settingspane-container .bda-slist li[data-name="FlatDiscordTheme"] .bda-description {
+  display: none; }
 
-.uploadModal-2ifh8j .footer-3mqk7D button[type*="submit"]{
-  -webkit-mask-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/check.svg);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  background-color: rgba(33, 219, 135, 0.6) !important;
-}
+#bd-settingspane-container .bda-slist li[data-name="FlatDiscordTheme"] .scroller-wrap {
+  position: relative; }
 
 #bd-settingspane-container .bda-slist li[data-name="FlatDiscordTheme"] .scroller-wrap::before {
   content: "Kolor Akcentu";
   position: relative;
   left: 0;
-  color: var(--accentcolor2);
+  color: #FFF;
   background: var(--accentcolor);
   display: inline-block;
   padding: 30px;
   margin: 5px;
-  border-radius: 2px;
+  border-radius: 0px;
   margin-top: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   width: auto;
 }
 
-.uploadModal-2ifh8j .footer-3mqk7D button[type*="button"]{
-  -webkit-mask: url(https://ellexidecodes.github.io/Discord-Themes/assets/cancel.svg);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  background-color: rgba(240, 71, 71, 0.6) !important;
-}
+#bd-settingspane-container .bda-slist li[data-name="FlatDiscordTheme"] .scroller-wrap::after {
+  content: "Kolor Powiadomień";
+  position: relative;
+  left: 0;
+  color: #FFFFFF;
+  background: var(--badgecolor);
+  display: inline-block;
+  padding: 30px;
+  margin: 5px;
+  border-radius: 0px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  width: auto; }
 
-.uploadModal-2ifh8j .footer-3mqk7D button[type*="submit"]:hover{
-  background-color: #21db87 !important;
-  transform: scale(1.5);
-}
 
-.uploadModal-2ifh8j .footer-3mqk7D button[type*="button"]:hover{
-  background-color: #f04747;
-  transform: scale(1.5);
-}
 
   /* 17.f. Game Preview Modal */
 .gamePreview-9weYR2 {
@@ -9636,6 +9782,17 @@ margin-left: 118%;
   border: 1px solid var(--accentcolor) !important;
   color: #FFF !important;
 }
+
+.lookInverted-2D7oAl.colorBrand-3pXr91:hover{
+  background-color: var(--accentcolor) !important;
+  border: 1px solid var(--accentcolor) !important;
+  color: #FFF !important;
+}
+
+.lookLink-9FtZy-.colorWhite-rEQuAQ:hover .contents-18-Yxp {
+  background-image: none;
+}
+
 .root-SR8cQa button:hover,
 .root-SR8cQa button:active {
   background-color: var(--accentcolor) !important;
