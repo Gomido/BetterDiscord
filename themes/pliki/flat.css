@@ -3381,7 +3381,7 @@ a,
 .chat-3bRxxu .newMessagesBar-mujexs {
   background-color: var(--accentcolor) !important;
   border-radius: 0px;
-  z-index: 10000 !important;
+  z-index: 3 !important;
 }
 
 
@@ -4563,7 +4563,7 @@ box-sizing: border-box;
   mask-image: none;
 }
   
-  /* 11.b. Status */
+  /* 11.b. Radial Status */
   .wrapper-2F3Zv8 [class*="status"],
   [class*="memberOffline-"] [class*="avatarOffline-"]::after {
       width:100%!important;
@@ -4640,7 +4640,7 @@ box-sizing: border-box;
   .wrapper-2F3Zv8 [class*="status"][class*="typing"] {
       width: 100% !important;
       background-color: rgba(0, 0, 0, 0.4) !important;
-    right: 0 !important;
+      right: 0 !important;
   }
   .wrapper-2F3Zv8 [class*="status"][class*="typing"] [class*="spinner"] [class*="inner"] {
       left: 1px !important;
@@ -4665,10 +4665,10 @@ box-sizing: border-box;
       right: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
       bottom: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
       left: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
-    padding: var(--rs-popout-spacing) !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    box-sizing: content-box;
+      padding: var(--rs-popout-spacing) !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      box-sizing: content-box;
   }
   
   [class*="theme-"] .root-2sNHUF .header-2Lg0Oe .wrapper-2F3Zv8 [class*="status"] {
@@ -4683,7 +4683,7 @@ box-sizing: border-box;
   [class*="theme-"] .root-2sNHUF .wrapper-2F3Zv8 > a {
     width: inherit;
       height: inherit;
-    border-radius: inherit;
+      border-radius: inherit;
       position: absolute;
       z-index: 1;
   }
@@ -9043,7 +9043,7 @@ margin-left: 118%;
       right: -10px;
       pointer-events: none;
       filter: drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) drop-shadow(0 0 1px var(--headercolor)) !important;
-      z-index:99999!important}
+      z-index:2!important}
       
 
 /* Lolek */
