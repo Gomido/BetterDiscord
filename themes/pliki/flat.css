@@ -1152,10 +1152,10 @@ a {
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH .dms-rcsEnV:not(:empty)::after {
  visibility: hidden;}
-
+/* znaczek server
 .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.selected-ML3OIq::after {
   display: none; }
-
+*/
 .dms-rcsEnV .guild-1EfMGQ {
   animation: opacity 300ms cubic-bezier(0.4, 0, 0, 1), height 300ms cubic-bezier(0.4, 0, 0, 1); }
 
@@ -2395,7 +2395,7 @@ color: var(--dnd) !important;
 }
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH {
-  padding: 0px 0px 80px 10px !important;
+  padding: 0px 0px 140px 10px !important;
 }
 
 .guildsWrapper-5TJh6A .scrollerWrap-1IAIlv{ 
@@ -2422,7 +2422,7 @@ color: var(--dnd) !important;
   background-color: var(--accentcolor);
   color: #fff;
 }
-  /* 4.b. Guilds */
+  /* 4.b. Guilds */ 
 .guild-1EfMGQ .guildInner-3DSoA4 {
   background-color: transparent !important;
   overflow: visible;
@@ -2430,7 +2430,7 @@ color: var(--dnd) !important;
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr:hover:before,
 .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.selected-ML3OIq:before {
-  background: var(--accentcolor);
+  background: transparent;
   border-radius: 20px;
   height: 40px;
   margin-top: -20px;
@@ -2438,7 +2438,8 @@ color: var(--dnd) !important;
 }
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr:before {
-display: none;
+  transition: all .2s ease;
+  background: transparent;
 }
 
 .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr.selected-ML3OIq:before {
@@ -2447,6 +2448,12 @@ display: none;
 
 .guildsWrapper-5TJh6A .guildsError-3cFMtY {
   border-radius: calc(var(--avatars) + 1px) !important;
+}
+/*disvocer*/ 
+
+.theme-dark .pageWrapper-1PgVDX {
+  background-color: var(--headercolor);
+  color: #fff;
 }
 
   /* 4.c. Guilds Add */
@@ -2459,7 +2466,6 @@ display: none;
   margin: 0px;
   position: absolute;
   left: 0;
-  bottom: 0px;
   color: transparent;
   height: 70px;
   width: 70px;
@@ -2467,23 +2473,38 @@ display: none;
   z-index: 1000;
 }
 
+.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l) {
+  bottom: 0px;
+}
+
+.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK.guildsDiscover-oiBX_l {
+  bottom: 60px;
+}
 
 .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK::after {
-  background: var(--accentcolor);
   transition: all 200ms ease;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 10px;
+  bottom: 20px;
   z-index: 1;
   content: "";
   height: 50px;
   width: 50px;
-  content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
   background-position: 50%;
   background-repeat: no-repeat;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .25), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px var(--white1) inset;
   line-height: 53px;
+}
+
+.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l)::after {
+  background: var(--accentcolor);
+  content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+}
+
+.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK.guildsDiscover-oiBX_l::after {
+  content: '';
+  background: var(--accentcolor) url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center no-repeat;
 }
 
 .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:hover::after {
@@ -2495,21 +2516,51 @@ display: none;
   opacity: 1
 }
 
-.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK::before {
+.guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l)::before {
   content: "";
   width: 70px;
-  height: 150px;
+  height: 160px;
   position: absolute;
   left: 0px;
-  bottom: -30px;
+  bottom: 0px;
   z-index: -1;
-  background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, var(--guildlistcolor) 60%, var(--guildlistcolor) 100%);
+  background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, var(--guildlistcolor) 15%, var(--guildlistcolor) 100%);
   pointer-events: none;
 }
 
-.guildsWrapper-5TJh6A.folderopen .guild-1EfMGQ.guildsAdd-21_IdK::before {
+.guildsWrapper-5TJh6A.folderopen .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l)::before {
   width: 140px;
 }
+
+
+.body-2lagau {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-top: 120px;
+}
+
+.pageHeader-3615mp {
+  height: 46px;
+  width:100%;
+  position: absolute;
+  background: var(--headercolor);
+  border-bottom: 2px solid var(--accentcolor);
+  border-radius: 0px;
+  z-index:10;
+}
+.pageHeader-3615mp::before {
+  min-height: 46px;
+  background: var(--headercolor);
+  content: "Odkryj serwery społeczności";
+  color: #fff;
+  padding: 0 16px 0 24px;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 47px;
+  font-weight: 500;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4) !important; }
 
   /* 4.d. Badges */
   html .tabBadge-3smxHS {
@@ -5563,7 +5614,7 @@ z-index:50}
   /* 15.d. User Popout */
 /* 23. User Popup */
 /*role hider*/
-#app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3 {overflow-y:scroll;max-height:110px}
+#app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3 {overflow-y:scroll;max-height:112px}
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar {width:2px;background:transparent}
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar-thumb {background:var(--titlebar)}
 
@@ -9176,7 +9227,7 @@ margin-left: 118%;
 
     .streaming-2_dnHe {
       animation: streaming-flash 1.5s linear infinite; }
-*/
+
  .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7::before,
 .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::before {
   content: '';
@@ -9185,7 +9236,7 @@ margin-left: 118%;
   height: 12px;
   border-radius: 50%;
   position: absolute;
-  top: 225px;
+  bottom: 372px !important;
   left: 15px;
 }
 
@@ -9196,17 +9247,23 @@ margin-left: 118%;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  top: 225px;
+  top: 205px !important;
   left: 15px;
   position: absolute;
   animation: live-pulse 2s;
   animation-iteration-count: infinite;
 }
+*/
+.verified-3uJH7V {
+  margin-left: -3px;
+  margin-right: 3px;
+  margin-top: 5px;
+}
 
 .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::before,
 .root-SR8cQa .topSectionStreaming-1Tpf5X .headerText-1HLrL7::after {
-  top: 25px;
-  left: 32px;
+  top: 23px;
+  left: 25px;
 }
 
 .root-SR8cQa .contentNoImagesProfile-3LoZbH .nameWrap-3Z4G_9 {
