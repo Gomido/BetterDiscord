@@ -272,6 +272,78 @@ a {
   overflow: visible; }
 
  /*New version(works on click)*/
+ .privateChannels-1nO12o .searchBar-6Kv8R2 {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  height: 50px;
+  width: 25px;
+  border: none;
+  border-radius: 40px;
+  background: var(--headercolor);
+  box-shadow: 2px 2px 2px #111 !important;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.privateChannels-1nO12o .searchBar-6Kv8R2 .searchBarInner-1_Tg2R {
+  height: 100%;
+  width: 100%;
+}
+
+.privateChannels-1nO12o .searchBar-6Kv8R2 .searchBarInner-1_Tg2R::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  bottom: 0;
+  right: 0;
+  background: url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center/20px no-repeat;
+  pointer-events: none;
+}
+
+.privateChannels-1nO12o .searchBar-6Kv8R2 .searchBarInner-1_Tg2R::before {
+  content: 'Szukaj konwersacji';
+  position: absolute;
+  height: 100%;
+  width: 180px;
+  bottom: 0;
+  right: 0vw;
+  color: white;
+  opacity: .7;
+  font-size: 12px;
+  line-height: 25px;
+  transition: all .2s ease-in-out;
+  pointer-events: none;
+}
+
+.privateChannels-1nO12o .searchBar-6Kv8R2 input::placeholder {
+  color: transparent;
+}
+
+.privateChannels-1nO12o .searchBar-6Kv8R2:hover {
+  width: 200px;
+}
+.privateChannels-1nO12o .searchBar-6Kv8R2:hover {
+  background-color: var(--accentcolor);
+  box-shadow: 0 51.28px 76.92px rgba(0, 0, 0, 0.3), 0 -5.13px 0px rgba(0, 0, 0, 0.2) inset, 0 10.26px 5.13px rgba(255, 255, 255, 0.05) inset; }
+
+.privateChannels-1nO12o .scrollerWrap-2lJEkd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+
+
+
+/*
 .privateChannels-1nO12o .searchBar-6Kv8R2 {
   position: absolute;
   background: transparent;
@@ -347,7 +419,7 @@ a {
 
 .privateChannels-1nO12o .channel-2QD9_O .wrapper-2F3Zv8:hover {
   z-index: 1; }
-
+*/
 .privateChannels-1nO12o .scrollerWrap-2lJEkd {
   flex-direction: column; }
 
@@ -560,6 +632,11 @@ a {
 }
 
 /* 13. Games Tab, Library, and Store */
+
+.theme-dark .itemBackground-2vEldQ:before {
+    background: radial-gradient(ellipse at top,rgba(54,57,63,0),#303030),-webkit-gradient(linear,left top,right top,from(#303030),color-stop(40%,rgba(54,57,63,0)),color-stop(60%,rgba(54,57,63,0)),to(#303030)),-webkit-gradient(linear,left bottom,left top,from(#303030),color-stop(25%,rgba(54,57,63,0)));
+  }
+  
 .gameLibrary-TTDw4Y,
 .applicationStore-1pNvnv,
 .itemBackground-1jfD8p {
@@ -1235,6 +1312,7 @@ a {
 .searchBar-2_Yu-C,
 .searchBar-2_Yu-C .searchBarInner-1_Tg2R {
   background-color: transparent !important;
+  border: none;
 }
 
 
@@ -2486,14 +2564,13 @@ color: var(--dnd) !important;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 20px;
+  bottom: 10px;
   z-index: 1;
   content: "";
   height: 50px;
   width: 50px;
   background-position: 50%;
   background-repeat: no-repeat;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .25), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px var(--white1) inset;
   line-height: 53px;
 }
 
@@ -2508,7 +2585,7 @@ color: var(--dnd) !important;
 }
 
 .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:hover::after {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, .4), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
   background-color: var(--accentcolor);
 }
 
@@ -2519,12 +2596,12 @@ color: var(--dnd) !important;
 .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l)::before {
   content: "";
   width: 70px;
-  height: 160px;
+  height: 130px;
   position: absolute;
   left: 0px;
   bottom: 0px;
   z-index: -1;
-  background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, var(--guildlistcolor) 15%, var(--guildlistcolor) 100%);
+  background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, var(--guildlistcolor) 5%, var(--guildlistcolor) 100%);
   pointer-events: none;
 }
 
@@ -2583,7 +2660,7 @@ color: var(--dnd) !important;
   /* 4.e. Unread Indicator */
   .unreadMentionsIndicatorBottom-BXS58x {
     z-index: 1000;
-    bottom: 60px;
+    bottom: 125px;
   }
 
   .unreadMentionsIndicatorTop-gA6RCh {
@@ -2879,7 +2956,6 @@ color: var(--dnd) !important;
 .unread-1xRYoj,
 .unreadBar-3YD_k9 {
   background-color: var(--chatbackground);
-  border: 1px solid var(--accentcolor);
   border-radius: 0px;
   transition: background-color .2s ease-in-out;
 }
@@ -3801,7 +3877,7 @@ box-sizing: border-box;
 
 .theme-dark .search-results-wrap .search-result .hit {
   -webkit-box-shadow: none !important;
-  background-color: #36393f;
+  background-color: #303030;
   box-shadow: none !important;
   border-radius:0px;
 }
@@ -5554,7 +5630,7 @@ background:var(--titlebar);
 
 
 .input-3Xdcic{
-  background-color: var(--guildlistcolor);
+  background-color: var(--headercolor);
   border-radius: 0px;}
 
 
@@ -5811,7 +5887,7 @@ Plugin: PermissionsViewer by Zerebos
 
 #permissions-modal-wrapper .perm-side {
   width: 275px !important;
-  background-color: #36393f;
+  background-color: #303030;
 }
 
 #permissions-modal-wrapper .role-side {
@@ -7566,7 +7642,13 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
   color: var(--white0); }
 
 
-
+/*color picker*/ 
+.colorPickerSwatch-5GX3Ve,
+.colorPickerSwatch-5GX3Ve.default-cS_caM,
+.colorPickerSwatch-5GX3Ve.custom-2SJn4n
+ {
+  border-radius: 0px;
+}
 
 
 /*esc */ 
@@ -7575,6 +7657,10 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 }
 
 /*buttony*/ 
+
+.cancelAllButton-16p7ma{
+  margin-right:10px;
+}
 .theme-dark .learnMoreButton-1OUyxs:hover{
   background-color: var(--accentcolor) !important;
 }
@@ -8416,8 +8502,8 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .select-2TCrqx .Select-control {
-  background-color: var(--titlebar) !important;
-  border-color: var(--titlebar) !important;
+  background-color: var(--headercolor) !important;
+  border-color: var(--headercolor) !important;
 }
 
 .select-2TCrqx .Select-option.is-selected {
@@ -8445,7 +8531,9 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 .input-cIJ7To:focus {
   border-color: var(--accentcolor2);
 }
-
+.theme-dark .input-cIJ7To.focused-1mmYsC{
+  border-color: var(--accentcolor) !important;
+}
 .authBox-hW6HRx {
   background: var(--chatbackground);
 }
@@ -8459,7 +8547,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .input-cIJ7To {
-  background-color: var(--chatbackground) !important;
+  background-color: var(--headercolor) !important;
   border-radius: 0px;
 }
 
