@@ -1038,21 +1038,21 @@ a {
 }
 
 .titleBar-AC4pGV .winButtonClose-1HsbF- {
-	background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/cancel.svg) !important;
+	background-image: url(https://gomido.github.io/img/cancel.svg) !important;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 18px;
 }
 
 .titleBar-AC4pGV .winButton-iRh8-Z:nth-child(3) {
-	background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/fullscreen.svg) !important;
+	background-image: url(https://gomido.github.io/img/fullscreen.svg) !important;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 18px;
 }
 
 .titleBar-AC4pGV .winButton-iRh8-Z:nth-child(4) {
-	background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/minimize.svg) !important;
+	background-image: url(https://gomido.github.io/img/minimize.svg) !important;
 	background-repeat: no-repeat;
 	background-position: center 7px;
 	background-size: 18px;
@@ -1322,6 +1322,8 @@ a {
 .searchBar-2_Yu-C .searchBarInner-1_Tg2R {
   background-color: transparent !important;
   border: none;
+  padding-right:2px;
+  padding-top:0px;
 }
 
 
@@ -1447,7 +1449,7 @@ a {
 
 .homeIcon-1FoKUJ {
   background-color: var(--home-color);
-  -webkit-mask: url(https://ellexidecodes.github.io/Discord-Themes/assets/home.svg);
+  -webkit-mask: url(https://gomido.github.io/img/home.svg);
   -webkit-mask-size: var(--home-size);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -2360,19 +2362,19 @@ svg[name*="Checkmark"] {
 }
 
 .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="PersonWaving"] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/friends.svg);
+  background-image: url(https://gomido.github.io/img/friends.svg);
 }
 
 .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Store"] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/store.svg);
+  background-image: url(https://gomido.github.io/img/store.svg);
 }
 
 .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Library"] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/library.svg);
+  background-image: url(https://gomido.github.io/img/library.svg);
 }
 
 .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Activity"] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/activity.svg);
+  background-image: url(https://gomido.github.io/img/activity.svg);
 }
 
 .theme-light .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6 {
@@ -3105,19 +3107,19 @@ color: var(--dnd) !important;
 }
 
 .theme-light .container-2Thooq  .button-2b6hmh[style*='url("/assets/4bc527c257233fc69b94342d77bcb9ee.svg")'] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/mic-dark.svg) !important;
+  background-image: url(https://gomido.github.io/img/mic-dark.svg) !important;
 }
 
 .theme-light .container-2Thooq  .button-2b6hmh[style*='url("/assets/896770bf2d6ed0358ed0adefdbe96a24.svg")'] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/mic-off-dark.svg) !important;
+  background-image: url(https://gomido.github.io/img/mic-off-dark.svg) !important;
 }
 
 .theme-light .container-2Thooq  .button-2b6hmh[style*='url("/assets/c7c47afdf35d5a3e06233319d3aa7674.svg")'] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/sound-dark.svg) !important;
+  background-image: url(https://gomido.github.io/img/sound-dark.svg) !important;
 }
 
 .theme-light .container-2Thooq  .button-2b6hmh[style*='url("/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg")'] {
-  background-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/sound-off-dark.svg) !important;
+  background-image: url(https://gomido.github.io/img/sound-off-dark.svg) !important;
 }
 
   /* 6.d. Listening Along */
@@ -3165,7 +3167,9 @@ color: var(--dnd) !important;
 }
   /* 7.b. Hoisted Roles */
 .membersGroup-v9BXpm {
+  color: var(--accentcolor) !important;
   border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, transparent, var(--accentcolor), transparent);
   border-image-slice: 1;
   padding: 19px 16px 6px 16px;
   margin: 4px 0px 10px 15px;
@@ -3173,6 +3177,8 @@ color: var(--dnd) !important;
   border-radius: 0px;
   width: 225px;
 }
+
+
 .theme-dark .container-VSDcQc .sectionTag-pXyto9{
   background-color:  var(--guildlistcolor);
   color: var(--accentcolor)
@@ -3399,11 +3405,11 @@ a,
 
 #app-mount .chat-3bRxxu .messageGroupBlocked-3wrQQX {
   display:block!important;
-  width:180px;
+  width:250px;
   border-radius:0px;
   float:right;
-  margin-top:2px;
-  margin-right:10px;
+  margin-top:1px;
+  margin-right:11px;
   background: transparent;
   border-color: transparent;
 }
@@ -3423,7 +3429,7 @@ a,
   width:initial;
   margin:initial;
   float:initial;
-  margin:20px;
+  margin:10px;
 }
 
 #app-mount .chat-3bRxxu .dividerContent-2L12VI{
@@ -4592,6 +4598,9 @@ box-sizing: border-box;
 [style*="background-color: rgb(24, 25, 28)"] {
   background-color: var(--guildlistcolor) !important;
 }
+.small-1CUeBa, .xsmall-3czJwD {
+  border-radius: 0px;
+}
 
 .downloadProgressCircle-neZab7 {
   top: 5px;
@@ -5301,9 +5310,6 @@ box-sizing: border-box;
   .button-3Jq0g9, .reactionBtn-2na4rd {
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 0.4;
-    width: 18px!important;
-    height: 18px!important;
     margin-top: 3px;
     transition: all 200ms ease!important;
     background-size: 100%!important;
@@ -5330,11 +5336,11 @@ box-sizing: border-box;
 
 .messages-3amgkR .reactions-1xb2Ex .reactionBtn-2na4rd {
   visibility: visible;
-  opacity: 0.4 !important;
-  width: 24px;
-  height: 24px;
+  opacity: 0.5 !important;
+  width: 10px;
+  height: 10px;
   margin-top: 0px;
-  background: url("https://i.imgur.com/LjpaBqp.png") 50% no-repeat;
+  background: url(https://gomido.github.io/img/plus.svg) 50% no-repeat;
 }
 
 
@@ -6725,7 +6731,7 @@ margin:15px;}
   height: 100%;
   width: 24px;
   background-color: #eee;
-  -webkit-mask: url("https://ellexidecodes.github.io/Discord-Themes/assets/check.svg");
+  -webkit-mask: url(https://gomido.github.io/img/check.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: 95%;
@@ -6914,7 +6920,7 @@ margin:15px;}
 .check-2by_h9 {
   background-image: none !important;
   background-color: var(--accentcolor);
-  -webkit-mask-image: url(https://ellexidecodes.github.io/Discord-Themes/assets/check.svg);
+  -webkit-mask-image: url(https://gomido.github.io/img/check.svg);
   -webkit-mask-size: 18px;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -6996,7 +7002,7 @@ margin:15px;}
 }
 
 .item-1Yvehc.itemSubMenu-1vN_Yn::after {
-  content: url(https://ellexidecodes.github.io/Discord-Themes/assets/arrow.svg);
+  content: url(https://gomido.github.io/img/arrow.svg);
   position: absolute;
   right: 5px;
   opacity: .6;
@@ -7722,6 +7728,10 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
   margin-right:10px;
 }
 
+.disabledButtonColor-34LjTT {
+  background-color: transparent;
+  border: 1px solid var(--accentcolor)
+}
 
 .disabledButton-3apIHo {
   background-color: transparent;
@@ -8097,7 +8107,6 @@ border-radius: 0px;}
 }
 
 
-
 /* ==================== */
 /*   End Upload Modal   */
 
@@ -8113,6 +8122,7 @@ border-radius: 0px;}
   
 .progress-2XXRYo .progressBar-3u8FBM {
   background-color: var(--accentcolor); }
+
 
 /*   End Upload Modal   */
 /*Upload animation*/
@@ -9216,6 +9226,7 @@ margin-left: 118%;
 /*kongresja mleczko*/
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before,
+.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before
 {
       content: '';
@@ -9253,6 +9264,11 @@ margin-left: 118%;
    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0%0D%0APSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2%0D%0AZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI2ZhYTYxYSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJN%0D%0AMiwxMSBMMCwwIEw1LjUsNyBMOSwwIEwxMi41LDcgTDE4LDAgTDE2LDExIEwyLDExIEwyLDExIFog%0D%0ATTE2LDE0IEMxNiwxNC41NTIyODQ3IDE1LjU1MjI4NDcsMTUgMTUsMTUgTDMsMTUgQzIuNDQ3NzE1%0D%0AMjUsMTUgMiwxNC41NTIyODQ3IDIsMTQgTDIsMTMgTDE2LDEzIEwxNiwxNCBaIiB0cmFuc2Zvcm09%0D%0AInRyYW5zbGF0ZSgzIDQpIi8+CiAgICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4KICA8%0D%0AL2c+Cjwvc3ZnPgo=);
    
   }
+
+  /* krzys */
+  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before {
+    background-image: url(https://gomido.github.io/img/arrow.svg)
+   }
   
 /* francuz */
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="235728701348773888"]::before {
