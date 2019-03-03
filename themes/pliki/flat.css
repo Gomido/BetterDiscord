@@ -21,7 +21,7 @@
   --badgecolor: #3F85FF; /*kolor znaczników nowych wiadomości, serwerów czy wzmianek*/
   --notification-width:3px;
   --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
-  --rs-spacing: 2px; /* odstep miedzy ramka a avatarem */
+  --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
   --rs-width: 2px; /* wielkosc ramki wokol avatara */
   --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
   --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
@@ -123,7 +123,6 @@ a {
 .avatarSpeaking-1wJCNq, .avatarDefault-35WC3R, .avatarContainer-72bSfM {
   border-color: transparent !important;
   box-shadow: none !important;
-  z-index: 10;
 }
 
 .avatarSpeaking-1wJCNq::before {
@@ -436,7 +435,8 @@ a {
   overflow: hidden;
   line-height: 47px;
   font-weight: 500;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4) !important; }
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4) !important; 
+  z-index: 20;}
 
 /*--/Friends Search bar--*/
 
@@ -503,21 +503,52 @@ a {
   transition: all 200ms ease;
   }
   
-  .theme-dark .closeButton-1tv5uR {
-      border-color: #5a5a5a;
-  }
+/* Close Button */
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR {
+  border: none;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0.8;
+  position: relative; }
+
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR svg {
+  display: none; }
+
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR:hover {
+  background-color: transparent;
+  opacity: 1; }
+
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR::after {
+  content: "";
+  background: var(--white6);
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: 300ms ease; }
+
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR:active::after {
+  opacity: 0.1;
+  transform: scale(1.2);
+  animation: scale 100ms cubic-bezier(0.4, 0, 0, 1), opacity 100ms ease; }
+
+.theme-dark .standardSidebarView-3F1I7i .closeButton-1tv5uR:active {
+  background-color: transparent;
+  transform: none; }
+
+.theme-dark .standardSidebarView-3F1I7i .esc-text {
+  color: rgba(255, 255, 255, 0.25); }
+
+/* End Close Button */
+
   .theme-dark .keybind-KpFkfr {
       color: #5a5a5a;
   }
-  .theme-dark .standardSidebarView-3F1I7i .btn-close {
-      border-color: #5a5a5a;
-      transition: background-color .2s ease-in-out
-  }
-  
-  .theme-dark .standardSidebarView-3F1I7i .btn-close:hover {
-      background-color: hsla(0, 0%, 0%, 0.3);
-      transition: background-color .2s ease-in-out
-  }
+
   
   .theme-dark .standardSidebarView-3F1I7i .esc-text {
       color: #5a5a5a
@@ -620,7 +651,7 @@ a {
 
 .footer-2yfCgX,
 #permissions-modal-wrapper .role-side {
-  background-color: var(--titlebar) !important;
+  background-color: var(--guildlistcolor) !important;
 }
 
 .metalloriff-changelog-scroller,
@@ -1179,8 +1210,6 @@ a {
 }
 
 
-
-
 /*otoczka wiadomosci, serwer*/ 
 .guild-1EfMGQ a::after {
   content: "";
@@ -1195,14 +1224,14 @@ a {
 
 /*efekt otrzymania wiadomosci serwer*/ 
 .guild-1EfMGQ.unread-qLkInr a::after {
-  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 8px rgba(255, 255, 255, 0), 0 2px 6px rgba(0, 0, 0, 0.1) !important;
-  animation: guild-notifs 0.6s cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 4px rgba(255, 255, 255, 0), 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+  animation: guild-notifs 1s cubic-bezier(0.2, 0, 0, 1);
   top:50% }
 
   
 /*efekt otrzymania wiadomosci pw*/ 
 .dms-rcsEnV .guild-1EfMGQ a::after {
-  box-shadow: 0 0 0 -2px var(--guildlistcolor) inset, 0 0 0 -2px var(--badgecolor), 0 0 0 8px rgba(255, 255, 255, 0), 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 -2px var(--guildlistcolor) inset, 0 0 0 -2px var(--badgecolor), 0 0 0 8px rgba(255, 255, 255, 0), 0 2px 4px rgba(0, 0, 0, 0.1) !important;
   animation: scale-center 1s cubic-bezier(0.44, 0.37, 0, 1.25), guild-notifs 0.8s cubic-bezier(0.2, 0, 0, 1);
   z-index: -1 }
 
@@ -1215,14 +1244,14 @@ a {
     transform: translate(-50%, -50%) scale(0); } }
 
 .guild-1EfMGQ.unread-qLkInr a:hover::after {
-  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 23px rgba(255, 255, 255, 0), 0 2px 20px rgba(0, 0, 0, 0.1) !important; }
+  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 4px rgba(255, 255, 255, 0), 0 2px 4px rgba(0, 0, 0, 0.1) !important; }
 
 @keyframes guild-notifs {
   0% {
-    box-shadow: 0 0 0 -2px var(--guildlistcolor) inset, 0 0 0 -15px var(--badgecolor), 0 0 0 0px var(--white8), 0 2px 20px rgba(0, 0, 0, 0.1); } }
+    box-shadow: 0 0 0 -2px var(--guildlistcolor) inset, 0 0 0 -15px var(--badgecolor), 0 0 0 0px var(--white8), 0 2px 4px rgba(0, 0, 0, 0.1); } }
 
 .guild-1EfMGQ.unread-qLkInr.selected-ML3OIq a::after {
-  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 23px rgba(255, 255, 255, 0), 0 2px 20px rgba(0, 0, 0, 0.1) !important; }
+  box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 4px rgba(255, 255, 255, 0), 0 2px 4px rgba(0, 0, 0, 0.1) !important; }
 
 .guildsWrapper-5TJh6A .mention-1f5kbO,
 .guildsWrapper-5TJh6A .unread-qLkInr {
@@ -1703,7 +1732,7 @@ body #files_directDownload{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 1px 0px var(--white3) inset !important;
     background: var(--white10) !important;
     visibility: visible;
-    z-index: 2;
+  
     margin: 0;
     transform: translate(-1px, 0); }
   
@@ -1842,9 +1871,13 @@ body #files_directDownload{
 
 .theme-dark .card-FDVird:before,
 .side-8zPYf6 .item-PXvHYJ:hover {
-	background-color: var(--headercolor) !important; 
-  border-color: var(--headercolor) !important;
+	background-color: var(--titlebar) !important; 
+  border-color: var(--titlebar) !important;
   border-radius:0px;
+}
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item:hover {
+  background-color: var(--titlebar);
+  color: #FFF;
 }
 
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked,
@@ -1857,6 +1890,7 @@ body #files_directDownload{
   background-color: var(--titlebar) !important;
   border-color: var(--guildlistcolor) !important;
   max-height: 400px;
+  border-radius: 0px;
 }
 
 .button-mM-y8i {
@@ -2607,7 +2641,7 @@ color: var(--dnd) !important;
 .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK:not(.guildsDiscover-oiBX_l)::before {
   content: "";
   width: 70px;
-  height: 130px;
+  height: 80px;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -3007,10 +3041,16 @@ color: var(--dnd) !important;
   margin-left:-15px !important;
 }
 
+.username-_4ZSMR:hover{
+  background: var(--titlebar);
+  text-decoration: none;
+}
+
+
 .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 .headerText-1HLrL7 {
   font-size: 11px;
   text-transform: uppercase;
-  padding-left: 32px;
+  /*padding-left: 32px;*/
   color: #fff !important;
   background: repeating-linear-gradient(45deg, #242424, #242424 10px, #181818 10px, #181818 20px);
   background-repeat: repeat-x;
@@ -3081,9 +3121,9 @@ color: var(--dnd) !important;
     0% {
       box-shadow: 0 0px 1px rgba(89, 54, 149, 0), 0 0 0 1px rgba(89, 54, 149, 0.4); }
     50% {
-      box-shadow: 0 0px 0px 2px rgba(89, 54, 149, 0.3), 0 0 0 2px rgba(89, 54, 149, 0.7); }
+      box-shadow: 0 0px 0px 1px rgba(89, 54, 149, 0.3), 0 0 0 1px rgba(89, 54, 149, 0.7); }
     100% {
-      box-shadow: 0 0px 0px 4px rgba(89, 54, 149, 0), 0 0 0px 4px rgba(89, 54, 149, 0); } }
+      box-shadow: 0 0px 0px 1px rgba(89, 54, 149, 0), 0 0 0px 1px rgba(89, 54, 149, 0); } }
   
       .streaming-2_dnHe {
         animation: streaming-flash 2s linear infinite; }
@@ -3377,17 +3417,7 @@ a,
   transition: box-shadow .1s ease-in-out
 }
   /* 8.b Messages */
-.containerCozy-jafyvG:not(:last-child) {
-  padding: 15px 0px !important;
-}
 
-.container-1YxwTf:last-of-type {
-  margin-bottom: 30px !important;
-}
-
-.messagesWrapper-3lZDfY .containerCozy-jafyvG:last-child {
-  padding-top: 15px !important;
-}
 
 .wrapper-FtzxDk.vertical-V37hAW.flex-101GKY.directionColumn-35P_nr.wrapper-2h3Puq.vertical-V37hAW.flex-101GKY.directionColumn-35P_nr.alignEnd-1D6PQi.spacer-1fA9zc {
   margin-top: 55px !important;
@@ -3401,6 +3431,10 @@ a,
       height: 39px;
       border-radius: 0px;
 
+}
+
+.messageGroupBlocked-3wrQQX:last-child {
+  margin-bottom: 30px !important;
 }
 
 #app-mount .chat-3bRxxu .messageGroupBlocked-3wrQQX {
@@ -3454,8 +3488,8 @@ a,
 
   /* 8.d Chat Dividers */
 .chat-3bRxxu .divider-3gKybi {
-  height: 28px;
   background-color: transparent;
+  margin-bottom:20px;
 }
 
 .friends-table .messages-3amgkR .divider:not(.red) span,
@@ -3518,7 +3552,7 @@ a,
   left: -0px;
 }
 .theme-dark .isMentioned-N-h9aa  {
-  background: var(--headercolor)!important;
+  background: var(--titlebar)!important;
   height: auto!important;
   margin-top: 9px!important;
   margin-bottom: 5px;
@@ -3886,40 +3920,6 @@ box-sizing: border-box;
   height: 31px
 }
 
-  /* 8.m. Notification Bar */
-  .notice-2FJMB4,
-  #pluginNotice{
-  line-height: 38px;
-  width: 100%;
-  transition: all .2s linear;
-}
-
-.notice-2FJMB4:hover,
-#pluginNotice:hover {
-  font-size: 14px !important;
-  line-height: 38px;
-  width: 100%;
-}
-
-.notice-2FJMB4:hover .dismiss-SCAH9H {
-  height: 36px;
-  right: 100px;
-  transition: all .2s linear;
-}
-
-.notice-2FJMB4 .button-1MICoQ,
-.noticePremiumGrandfathered-ollUxF .premiumIcon-2lve6h {
-  transform: scale(0);
-  opacity: 0;
-  display: inline-block !important;
-  transition: transform .1s linear, opacity .2s linear;
-}
-
-.notice-2FJMB4:hover .button-1MICoQ, 
-.noticePremiumGrandfathered-ollUxF:hover .premiumIcon-2lve6h  {
-  transform: none;
-  opacity: 1;
-}
 
   /* 8.n. Search Results */
   .searchResultsWrap-2DKFzt .searchHeader-1l-wpR {
@@ -5275,10 +5275,20 @@ box-sizing: border-box;
   color: #fff !important;
 }
 
+.actionButtons-1sUUug{
+  top:35px;
+  right: 25px;
+}
+
 .jumpButton-3DTcS_ {
-  background-color: var(--accentcolor) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--accentcolor);
   color: #FFFFFF !important;
   border-radius: 0px;
+}
+
+.jumpButton-3DTcS_:hover {
+  background-color: var(--accentcolor) !important;
 }
 
 .hasMoreButton-1MELpI {
@@ -6657,7 +6667,7 @@ margin:15px;}
 
 .item-1GzJrl.leave-1DRJfn .icon-2doZ3q {
   -webkit-mask: url("https://discordapp.com/assets/00de6b3cbb5c4dbcec817c91262f5f5b.svg");
-  background-color: #fa4e6b!important;
+  background-color: #f01438!important;
   opacity: 0.7;
 }
 
@@ -6668,7 +6678,8 @@ margin:15px;}
 
 
 .item-1GzJrl.leave-1DRJfn {
-  color: #fa4e6b !important;
+  color: #f01438 !important;
+  font-weight: 600;
 }
 
 
@@ -6697,7 +6708,7 @@ margin:15px;}
 
   /* 15.h. Group DM Invite Popout */
 .modal-3HD5ck {
-  background-color: var(--titlebar) !important;
+  background-color: var(--guildlistcolor) !important;
   border-radius: 0px;
 }
 
@@ -7746,6 +7757,13 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
   border-color: var(--accentcolor);
 }
 
+.disabledButtonColor-1aUKuC {
+  background-color: transparent;
+  border: 1px solid var(--accentcolor);
+  color: #FFF;
+
+}
+
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:disabled {
   background-color: transparent;
   border-color: var(--accentcolor);
@@ -7761,6 +7779,23 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .lookFilled-1Gx00P.colorRed-1TFJan:hover{
   color: #fff;
   background: #d84040
+}
+
+.lookGhost-2Fn_0-.colorGrey-2DXtkV {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid var(--accentcolor);
+  color: #747f8d;
+}
+.lookGhost-2Fn_0-.colorBrand-3pXr91 {
+  background-color: var(--accentcolor);
+  border-radius: 0px;
+  border: 1px solid var(--accentcolor);
+  color: #FFF;
+}
+
+.lookGhost-2Fn_0- .contents-18-Yxp{
+  line-height: 12px;
 }
 
 .lookLink-9FtZy-.colorWhite-rEQuAQ
@@ -8564,7 +8599,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
   /* 17.l. Generic Modal */
 .footer-2yfCgX {
-  box-shadow: inset 0 1px 0 var(--titlebar) !important;
+  box-shadow: inset 0 1px 0 var(--guildlistcolor) !important;
 }
 
 .select-2TCrqx .Select-menu-outer {
@@ -9153,39 +9188,49 @@ div.reply-item {
 }
 
 /*dymki chatu*/
-.chat-3bRxxu .containerCozy-jafyvG:not(:last-child),
-.chat-3bRxxu .container-1YxwTf:last-child {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 15px 7px 10px 10px !important;
-  margin: 20px 10px 20px 100px;
-  border-radius: 0px;
-}
 
-.chat-3bRxxu .container-1YxwTf .headerCozy-2N9HOL {
-  margin-left: -80px;
-}
-
-.chat-3bRxxu .container-1YxwTf .headerCozy-2N9HOL .wrapper-2F3Zv8 {
-  margin-left: 10px;
-  margin-right: 35px;
-}
-
-.chat-3bRxxu .contentCozy-3XX413 {
-  margin-left: 5px;
-}
-
-.chat-3bRxxu .containerCozy-jafyvG .large-3ChYtB.wrapper-2F3Zv8:after {
-content: ' ';
-height: 0;
-width: 0;
-border: 9px solid transparent;
-border-width: 0 10px 10px 0;
-border-right-color: rgba(0, 0, 0, 0.1);
-position: absolute;
-margin-top: -105%;
-margin-left: 118%;
-}
-
+  .chat-3bRxxu .messages-3amgkR {
+    background: var(--chatbackground) !important; }
+  
+  .container-1YxwTf {
+    background: #2B2B2B;
+    padding: 0px 7px 10px 10px;
+    margin: 20px 10px 20px 100px;
+    overflow: visible; }
+  
+  .container-1YxwTf:last-of-type {
+    margin-bottom: 30px !important; }
+  
+  .container-1YxwTf::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: -20px;
+    top: 0px;
+    display: block;
+    transition: all 200ms ease;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #2B2B2B transparent transparent; }
+  
+  .container-1YxwTf .avatar-17mtNa {
+    left: -90px;
+    top: -10px;
+    margin: 0;
+    opacity: 1; }
+  
+  .container-1YxwTf .headerCozyMeta-rdohGq {
+    margin-left: -40px; }
+  
+  .messages-3amgkR .divider-32i8lo {
+    margin: 25px 6px 25px 20px;
+    display: none; }
+  
+  .content-3dzVd8, .localBotMessage-1cGMdw {
+    padding: 0;
+    margin: 0; }
+  
 
 .containerCozyBounded-1rKFAn {
   overflow: visible;
@@ -9261,7 +9306,7 @@ margin-left: 118%;
 
 /* Lolek */
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before {
-   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0%0D%0APSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2%0D%0AZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI2ZhYTYxYSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJN%0D%0AMiwxMSBMMCwwIEw1LjUsNyBMOSwwIEwxMi41LDcgTDE4LDAgTDE2LDExIEwyLDExIEwyLDExIFog%0D%0ATTE2LDE0IEMxNiwxNC41NTIyODQ3IDE1LjU1MjI4NDcsMTUgMTUsMTUgTDMsMTUgQzIuNDQ3NzE1%0D%0AMjUsMTUgMiwxNC41NTIyODQ3IDIsMTQgTDIsMTMgTDE2LDEzIEwxNiwxNCBaIiB0cmFuc2Zvcm09%0D%0AInRyYW5zbGF0ZSgzIDQpIi8+CiAgICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4KICA8%0D%0AL2c+Cjwvc3ZnPgo=);
+   background-image: url(https://gomido.github.io/img/elleCrown.svg);
    
   }
 
@@ -9272,24 +9317,24 @@ margin-left: 118%;
   
 /* francuz */
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="235728701348773888"]::before {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQg%0D%0AU1ZHIDEuMC8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMtU1ZHLTIwMDEwOTA0%0D%0AL0RURC9zdmcxMC5kdGQnPjxzdmcgaGVpZ2h0PSIzMiIgc3R5bGU9Im92ZXJmbG93OnZpc2libGU7%0D%0AZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNS45IDMyIiB2aWV3Qm94PSIwIDAgMTUuOSAzMiIg%0D%0Ad2lkdGg9IjE1LjkiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y%0D%0AZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxn%0D%0APjxnIGlkPSJfeDI0Xy1zaWduXzFfIj48ZyBpZD0iX3gyNF8tc2lnbiI+PHJlY3QgaGVpZ2h0PSI2%0D%0AIiBpZD0iVG9wIiBzdHlsZT0iZmlsbDojMzRCNjdBOyIgd2lkdGg9IjQiIHg9IjUuNyIvPjxyZWN0%0D%0AIGhlaWdodD0iNiIgaWQ9IkJvdHRvbSIgc3R5bGU9ImZpbGw6IzM0QjY3QTsiIHdpZHRoPSI0IiB4%0D%0APSI1LjciIHk9IjI2Ii8+PHBvbHlnb24gaWQ9IlNoYWRvdyIgcG9pbnRzPSI1LjcsMjcgOS43LDMx%0D%0AIDkuNywyNyAiIHN0eWxlPSJmaWxsOiMwQkE1NUY7Ii8+PHBhdGggZD0iTTEuMSwyMi4zYzEuNCww%0D%0ALjcsMy42LDEuNCw1LjgsMS40YzIuNCwwLDMuNy0xLDMuNy0yLjYgICAgICAgIGMwLTEuNC0xLjEt%0D%0AMi4zLTMuOS0zLjJjLTMuOS0xLjQtNi40LTMuNS02LjQtNi45YzAtNCwzLjMtNyw4LjgtN2MyLjcs%0D%0AMCw0LjYsMC41LDUuOSwxLjJsLTEuMiw0LjJDMTIuOSw4LjksMTEuMiw4LjMsOSw4LjMgICAgICAg%0D%0AIGMtMi4zLDAtMy40LDEuMS0zLjQsMi4yYzAsMS41LDEuMywyLjEsNC4zLDMuM2M0LjEsMS41LDYs%0D%0AMy43LDYsN2MwLDMuOS0zLDcuMi05LjQsNy4yYy0yLjcsMC01LjMtMC43LTYuNi0xLjRMMS4xLDIy%0D%0ALjN6IiBpZD0iUyIgc3R5bGU9ImZpbGw6IzM0QjY3QTsiLz48L2c+PC9nPjwvZz48L3N2Zz4=);
+    background-image: url(https://gomido.github.io/img/dolar.svg);
     
   }
   
 /*zagro*/
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::before {
-   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAw%0D%0AIDAgNDggNDg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0OCA0OCIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0i%0D%0AaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9Ikljb25zIj48Zz48cGF0aCBkPSJN%0D%0AMzUuNzI5MzcsMjUuNzQ2NThsMC44MzU2Ni0wLjgyNzA0YzEuNjExMDEtMS42MTEwMSwyLjQxMjIx%0D%0ALTMuNzQ3NTQsMi40MTIyMS01Ljg2Njg0ICAgIGMwLTIuMTI3OTEtMC44MDEyLTQuMjU1ODMtMi40%0D%0AMTIyMS01Ljg2Njg0Yy0zLjIyMjAyLTMuMjIyMDItOC41MDMwNC0zLjIyMjAyLTExLjczMzY4LDBs%0D%0ALTAuODI3MDQsMC44MzU2NmwtMC44MzU2Ni0wLjgzNTY2ICAgIGMtMy4yMjIwMi0zLjIyMjAyLTgu%0D%0ANTAzMDQtMy4yMjIwMi0xMS43MjUwNiwwYy0xLjYxOTYzLDEuNjExMDEtMi40MjA4MiwzLjczODky%0D%0ALTIuNDIwODIsNS44NjY4NCAgICBjMCwyLjExOTMsMC44MDEyLDQuMjU1ODMsMi40MjA4Miw1Ljg2%0D%0ANjg0bDAuODI3MDQsMC44MjcwNGwxMS4zMDc2OCwxMS4zMDc2OWMwLjIzNTI0LDAuMjM1MjQsMC42%0D%0AMTY2NywwLjIzNTE3LDAuODUxODMtMC4wMDAxNiAgICBMMzUuNzI5MzcsMjUuNzQ2NTgiIHN0eWxl%0D%0APSJmaWxsOiNFRjRCNTM7Ii8+PHBhdGggZD0iICAgIE0zNS43MjkzNywyNS43NDY1OGwwLjgzNTY2%0D%0ALTAuODI3MDRjMS42MTEwMS0xLjYxMTAxLDIuNDEyMjEtMy43NDc1NCwyLjQxMjIxLTUuODY2ODRj%0D%0AMC0yLjEyNzkxLTAuODAxMi00LjI1NTgzLTIuNDEyMjEtNS44NjY4NCAgICBjLTMuMjIyMDItMy4y%0D%0AMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzMzNjgsMGwtMC44MjcwNCwwLjgzNTY2bC0wLjgzNTY2%0D%0ALTAuODM1NjZjLTMuMjIyMDItMy4yMjIwMi04LjUwMzA0LTMuMjIyMDItMTEuNzI1MDYsMCAgICBj%0D%0ALTEuNjE5NjMsMS42MTEwMS0yLjQyMDgyLDMuNzM4OTItMi40MjA4Miw1Ljg2Njg0YzAsMi4xMTkz%0D%0ALDAuODAxMiw0LjI1NTgzLDIuNDIwODIsNS44NjY4NGwwLjgyNzA0LDAuODI3MDRsMTEuMzA3Njgs%0D%0AMTEuMzA3NjkgICAgYzAuMjM1MjQsMC4yMzUyNCwwLjYxNjY3LDAuMjM1MTcsMC44NTE4My0wLjAw%0D%0AMDE2TDM1LjcyOTM3LDI1Ljc0NjU4IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMzAzMDMwO3N0%0D%0Acm9rZS13aWR0aDowLjc7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5k%0D%0AO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIvPjxwYXRoIGQ9IiAgICBNMTEuNDU1OTgsMTkuODU2NDRj%0D%0AMCwwLjQzNjgyLDAuMDQwNjQsMC44NzQ1LDAuMTIyMTMsMS4zMDYyOSIgc3R5bGU9ImZpbGw6bm9u%0D%0AZTtzdHJva2U6IzMwMzAzMDtzdHJva2Utd2lkdGg6MC43O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0%0D%0Acm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiLz48cGF0aCBkPSIgICAg%0D%0ATTE3LjA2NTA1LDEzLjA0NTNjLTEuMzE1MSwwLjI1Mjk5LTIuNTY5NTcsMC44ODU0Ny0zLjU4MTU0%0D%0ALDEuODk3NDNjLTAuNzQ4MDksMC43NDQxMS0xLjI4NzcsMS42MTk4OC0xLjYyMTI2LDIuNTU0NzEi%0D%0AIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMzMDMwMzA7c3Ryb2tlLXdpZHRoOjAuNztzdHJva2Ut%0D%0AbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7%0D%0AIi8+PC9nPjwvZz48L3N2Zz4=);
+   background-image: url(https://gomido.github.io/img/heart.svg);
 }
   
 /*kongresja*/
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0%0D%0Ab3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZl%0D%0AcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEi%0D%0AIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93%0D%0Ad3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkw%0D%0ALjY2NyA0OTAuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTAuNjY3IDQ5%0D%0AMC42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGQzEw%0D%0ANzsiIGN4PSIyNDUuMzMzIiBjeT0iMjQ1LjMzMyIgcj0iMTYwIi8+DQo8Zz4NCgk8cGF0aCBzdHls%0D%0AZT0iZmlsbDojRkZENTRGOyIgZD0iTTI0NS4zMzMsNjRDMjUxLjIyNCw2NCwyNTYsNTkuMjI0LDI1%0D%0ANiw1My4zMzNWMTAuNjY3QzI1Niw0Ljc3NiwyNTEuMjI0LDAsMjQ1LjMzMywwDQoJCWMtNS44OTEs%0D%0AMC0xMC42NjcsNC43NzYtMTAuNjY3LDEwLjY2N3Y0Mi42NjdDMjM0LjY2Nyw1OS4yMjQsMjM5LjQ0%0D%0AMiw2NCwyNDUuMzMzLDY0eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkQ1NEY7IiBkPSJNMjQ1%0D%0ALjMzMyw0MjYuNjY3Yy01Ljg5MSwwLTEwLjY2Nyw0Ljc3Ni0xMC42NjcsMTAuNjY3VjQ4MGMwLDUu%0D%0AODkxLDQuNzc2LDEwLjY2NywxMC42NjcsMTAuNjY3DQoJCWM1Ljg5MSwwLDEwLjY2Ny00Ljc3Niwx%0D%0AMC42NjctMTAuNjY3di00Mi42NjdDMjU2LDQzMS40NDIsMjUxLjIyNCw0MjYuNjY3LDI0NS4zMzMs%0D%0ANDI2LjY2N3oiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkZENTRGOyIgZD0iTTQ4MCwyMzQuNjY3%0D%0AaC00Mi42NjdjLTUuODkxLDAtMTAuNjY3LDQuNzc2LTEwLjY2NywxMC42NjdjMCw1Ljg5MSw0Ljc3%0D%0ANiwxMC42NjcsMTAuNjY3LDEwLjY2N0g0ODANCgkJYzUuODkxLDAsMTAuNjY3LTQuNzc2LDEwLjY2%0D%0ANy0xMC42NjdDNDkwLjY2NywyMzkuNDQyLDQ4NS44OTEsMjM0LjY2Nyw0ODAsMjM0LjY2N3oiLz4N%0D%0ACgk8cGF0aCBzdHlsZT0iZmlsbDojRkZENTRGOyIgZD0iTTY0LDI0NS4zMzNjMC01Ljg5MS00Ljc3%0D%0ANi0xMC42NjctMTAuNjY3LTEwLjY2N0gxMC42NjdDNC43NzYsMjM0LjY2NywwLDIzOS40NDIsMCwy%0D%0ANDUuMzMzDQoJCUMwLDI1MS4yMjQsNC43NzYsMjU2LDEwLjY2NywyNTZoNDIuNjY3QzU5LjIyNCwy%0D%0ANTYsNjQsMjUxLjIyNCw2NCwyNDUuMzMzeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkQ1NEY7%0D%0AIiBkPSJNMTQwLjA5Niw4NC4zOTVjMS45MDksMy4zMDcsNS40NCw1LjM0MSw5LjI1OSw1LjMzM2Mx%0D%0ALjg3MywwLjAwNywzLjcxNS0wLjQ4Niw1LjMzMy0xLjQyOQ0KCQljNS4xMDItMi45NDYsNi44NDkt%0D%0AOS40NjksMy45MDQtMTQuNTcxbC0yMS4zMzMtMzYuOTQ5Yy0yLjk3OS01LjA4Mi05LjUxNC02Ljc4%0D%0ANy0xNC41OTYtMy44MDgNCgkJYy01LjAzNSwyLjk1MS02Ljc2Myw5LjQwMS0zLjg3OCwxNC40NzRM%0D%0AMTQwLjA5Niw4NC4zOTV6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDU0RjsiIGQ9Ik0zNTAu%0D%0ANTcxLDQwNi4yNzJjLTIuOTgtNS4wODItOS41MTUtNi43ODYtMTQuNTk3LTMuODA2Yy01LjAzMywy%0D%0ALjk1Mi02Ljc2MSw5LjQtMy44NzgsMTQuNDczDQoJCWwyMS4zMzMsMzYuOTQ5YzEuOTA5LDMuMzA3%0D%0ALDUuNDQsNS4zNDEsOS4yNTksNS4zMzNjMS44NzMsMC4wMDcsMy43MTUtMC40ODYsNS4zMzMtMS40%0D%0AMjljNS4xMDItMi45NDYsNi44NDktOS40NjksMy45MDQtMTQuNTcxDQoJCUwzNTAuNTcxLDQwNi4y%0D%0ANzJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDU0RjsiIGQ9Ik00MTEuNjA1LDE2MGMxLjg3%0D%0AMywwLjAwNywzLjcxNS0wLjQ4Niw1LjMzMy0xLjQyOWwzNi45NDktMjEuMzMzDQoJCWM1LjIyLTIu%0D%0ANzMxLDcuMjM4LTkuMTc2LDQuNTA3LTE0LjM5NmMtMi43MzEtNS4yMi05LjE3Ni03LjIzOC0xNC4z%0D%0AOTYtNC41MDdjLTAuMjY2LDAuMTM5LTAuNTI1LDAuMjg5LTAuNzc4LDAuNDVsLTM2Ljk0OSwyMS4z%0D%0AMzMNCgkJYy01LjEwMiwyLjk0Ni02Ljg0OSw5LjQ3LTMuOTA0LDE0LjU3MWMxLjkwNSwzLjMsNS40%0D%0AMjYsNS4zMzMsOS4yMzcsNS4zMzNWMTYweiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkQ1NEY7%0D%0AIiBkPSJNNzMuNzI4LDMzMi4wOTZsLTM2Ljk0OSwyMS4zMzNjLTUuMTAyLDIuOTQ2LTYuODQ5LDku%0D%0ANDY5LTMuOTA0LDE0LjU3MQ0KCQljMS45MDUsMy4zLDUuNDI2LDUuMzMzLDkuMjM3LDUuMzMzYzEu%0D%0AODczLDAuMDA3LDMuNzE1LTAuNDg2LDUuMzMzLTEuNDI5bDM2Ljk0OS0yMS4zMzNjNS4yMi0yLjcz%0D%0AMSw3LjIzOC05LjE3Niw0LjUwNy0xNC4zOTYNCgkJYy0yLjczMS01LjIyLTkuMTc2LTcuMjM4LTE0%0D%0ALjM5Ni00LjUwN2MtMC4yNjYsMC4xMzktMC41MjUsMC4yODktMC43NzgsMC40NUw3My43MjgsMzMy%0D%0ALjA5NnoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkZENTRGOyIgZD0iTTM2Ljc3OSwxMzcuMjM3%0D%0AbDM2Ljk0OSwyMS4zMzNjMS42MTMsMC45MzksMy40NDYsMS40MzMsNS4zMTIsMS40MjkNCgkJYzUu%0D%0AODkxLDAsMTAuNjY2LTQuNzc2LDEwLjY2Ni0xMC42NjdjMC0zLjgxLTIuMDMzLTcuMzMxLTUuMzMz%0D%0ALTkuMjM3bC0zNi45NDktMjEuMzMzYy00Ljk3Mi0zLjE2LTExLjU2NC0xLjY5Mi0xNC43MjQsMy4y%0D%0ANzkNCgkJcy0xLjY5MiwxMS41NjQsMy4yNzksMTQuNzI0YzAuMjUzLDAuMTYxLDAuNTEyLDAuMzEx%0D%0ALDAuNzc4LDAuNDVMMzYuNzc5LDEzNy4yMzd6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDU0%0D%0ARjsiIGQ9Ik00NTMuODg4LDM1My40MjlsLTM2Ljk0OS0yMS4zMzNjLTQuOTcyLTMuMTYtMTEuNTY0%0D%0ALTEuNjkyLTE0LjcyNCwzLjI3OQ0KCQljLTMuMTYsNC45NzEtMS42OTIsMTEuNTY0LDMuMjc5LDE0%0D%0ALjcyNGMwLjI1MywwLjE2MSwwLjUxMywwLjMxMSwwLjc3OCwwLjQ1bDM2Ljk0OSwyMS4zMzNjMS42%0D%0AMTksMC45NDMsMy40NiwxLjQzNiw1LjMzMywxLjQyOQ0KCQljNS44OTEsMCwxMC42NjYtNC43NzYs%0D%0AMTAuNjY2LTEwLjY2N2MwLTMuODExLTIuMDMzLTcuMzMyLTUuMzMzLTkuMjM3VjM1My40Mjl6Ii8+%0D%0ADQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDU0RjsiIGQ9Ik0zMzYsODguMjk5YzEuNjE5LDAuOTQz%0D%0ALDMuNDYsMS40MzYsNS4zMzMsMS40MjljMy44MTgsMC4wMDgsNy4zNDktMi4wMjcsOS4yNTktNS4z%0D%0AMzNsMjEuMzMzLTM2Ljk0OQ0KCQljMi45MTEtNS4xMjEsMS4xMTktMTEuNjMzLTQuMDAyLTE0LjU0%0D%0ANGMtNS4wNzMtMi44ODMtMTEuNTIxLTEuMTU2LTE0LjQ3MywzLjg3OGwtMjEuMzMzLDM2Ljk0OQ0K%0D%0ACQlDMzI5LjE2OCw3OC44MjQsMzMwLjkwNiw4NS4zNDYsMzM2LDg4LjI5OXoiLz4NCgk8cGF0aCBz%0D%0AdHlsZT0iZmlsbDojRkZENTRGOyIgZD0iTTE1NC42NjcsNDAyLjM2OGMtNS4xMDItMi45NDUtMTEu%0D%0ANjI1LTEuMTk4LTE0LjU3MSwzLjkwNGwtMjEuMzMzLDM2Ljk0OQ0KCQljLTIuOTQ1LDUuMTAyLTEu%0D%0AMTk4LDExLjYyNSwzLjkwNCwxNC41NzFjMS42MTksMC45NDMsMy40NiwxLjQzNiw1LjMzMywxLjQy%0D%0AOWMzLjgxOCwwLjAwOCw3LjM1LTIuMDI3LDkuMjU5LTUuMzMzbDIxLjMzMy0zNi45NDkNCgkJYzIu%0D%0AOTQtNS4xMDUsMS4xODYtMTEuNjI3LTMuOTE5LTE0LjU2N0MxNTQuNjcxLDQwMi4zNywxNTQuNjY5%0D%0ALDQwMi4zNjksMTU0LjY2Nyw0MDIuMzY4eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4N%0D%0ACjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8%0D%0AZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+%0D%0ADQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
+    background-image: url(https://gomido.github.io/img/sunny.svg);
     
   }
 
 /*mleczko*/
     .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0%0D%0Ab3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZl%0D%0AcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEi%0D%0AIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93%0D%0Ad3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTgg%0D%0ANTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU4IDU4OyIgeG1sOnNwYWNlPSJw%0D%0AcmVzZXJ2ZSI+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojQ0MyRTQ4OyIgcG9pbnRzPSIyOSw1NSAw%0D%0ALDE5IDU4LDE5ICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZDMzk1MjsiIHBvaW50cz0iNTgs%0D%0AMTkgMCwxOSAxMCwzIDQ4LDMgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRjc2MzYzOyIgcG9p%0D%0AbnRzPSI0Mi4xNTQsMTkgNDgsMyAxMCwzIDE1Ljg0NiwxOSAiLz4NCjxwb2x5Z29uIHN0eWxlPSJm%0D%0AaWxsOiNGNDlBOUE7IiBwb2ludHM9IjQyLDE5IDI5LDMgMTYsMTkgIi8+DQo8cG9seWdvbiBzdHls%0D%0AZT0iZmlsbDojQ0I0NjVGOyIgcG9pbnRzPSIxNS44NDYsMTkgMjksNTUgNDIuMTU0LDE5ICIvPg0K%0D%0APGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxn%0D%0APg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4N%0D%0ACjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+%0D%0ADQo=);
+        background-image: url(https://gomido.github.io/img/diamond.svg);
         
       }
 
