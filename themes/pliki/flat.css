@@ -651,7 +651,7 @@ a {
 
 .footer-2yfCgX,
 #permissions-modal-wrapper .role-side {
-  background-color: var(--guildlistcolor) !important;
+  background-color: var(--titlebar) !important;
 }
 
 .metalloriff-changelog-scroller,
@@ -814,6 +814,22 @@ a {
   opacity: .3;
   margin-top: 2px;
 }
+
+/*Toast*/ 
+.toast,
+.bd-toast{
+  border-radius: 0px !important;
+}
+
+.toast .toast-avatar{
+  border-radius: var(--avatars) !important;
+  
+}
+
+.FriendNotifications-settings .type-toast{
+  border-radius: 0px !important;
+}
+
 
 /*ustawienia tlo*/ 
 .theme-dark .sidebarRegion-VFTUkN {
@@ -1506,6 +1522,12 @@ a {
   margin-right: 20px !important;
   margin-top: 5px !important;
 }
+ 
+#bd-settingspane-container .editIcon{
+  margin-right: 5px !important;
+  margin-top: 5px !important;
+}
+
 
 /*DirectDownload plugin*/
 body #files_directDownload{
@@ -2788,7 +2810,11 @@ color: var(--dnd) !important;
   opacity: 0.6;
 }
 
-
+.moreUsers-1s5Her {
+  background-color: var(--chatbackground);
+  color: #FFF;
+  border-radius: 10px;
+}
 
   /* 5.d. Channels */
 .content-20Aix8 {
@@ -3605,9 +3631,13 @@ a,
 }
 
 .chat-3bRxxu .hasMore-3e72_v button {
-  background: var(--guildlistcolor) !important;
-  border: 1px solid var(--guildlistcolor) !important;
+  background: transparent;
   color: var(--accentcolor) !important;
+}
+
+.theme-dark .hasMore-3e72_v button:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none
 }
 
 .theme-dark .jumpToPresentBar-9P20AM {
@@ -5075,7 +5105,8 @@ box-sizing: border-box;
 
 /*tlo serwerow bez avatara*/
 .theme-dark .guild-1EfMGQ .guildIcon-CT-ZDq {
-    background-color: var(--titlebar);
+    background-color: var(--headercolor);
+    z-index: 10 !important;
 }
 
 /* 13. Roundness */
@@ -5276,8 +5307,8 @@ box-sizing: border-box;
 }
 
 .actionButtons-1sUUug{
-  top:35px;
-  right: 25px;
+  top:5px;
+  right: 18px;
 }
 
 .jumpButton-3DTcS_ {
@@ -6708,7 +6739,7 @@ margin:15px;}
 
   /* 15.h. Group DM Invite Popout */
 .modal-3HD5ck {
-  background-color: var(--guildlistcolor) !important;
+  background-color: var(--titlebar) !important;
   border-radius: 0px;
 }
 
@@ -6721,6 +6752,7 @@ margin:15px;}
 
 .modal-3HD5ck .searchBar-2_Yu-C {
   background-color: var(--guildlistcolor) !important;
+  border-radius: 0px;
 }
 
 .friendSelected--wQP3f {
@@ -7025,8 +7057,18 @@ margin:15px;}
   opacity: 1;
 }
 
+.botTag-ymWxY6 {
+  bottom:8px;
+  left: 5px;
+}
 
-/*bot tag*/ 
+.botTag-2WPJ74, .botTagRegular-2HEhHi, .botTagInvert-gorWR_,
+.bot-tag, .bd-blue .bot-tag, .channel-members .bot-tag, .messages-3amgkR .bot-tag {
+border: 1px solid rgba(0, 199, 255, 0.5);
+background: rgba(0, 199, 255, 0.1);
+color: rgba(0, 199, 255, 1)}
+
+/*bot tag znaczek
 .botTag-2WPJ74, .botTagRegular-2HEhHi, .botTagInvert-gorWR_,
 .bot-tag, .bd-blue .bot-tag, .channel-members .bot-tag, .messages-3amgkR .bot-tag {
   background-color: transparent !important;
@@ -7042,12 +7084,11 @@ margin:15px;}
   float: left;
   top:2px;
 }
-
+*/
 
 .botTag-2WPJ74 {
   border-radius: 0px;
   margin-left: 8px;
-
 }
   /* 16.b. Status Picker */
   .alt-3btY0e .item-1GzJrl {
@@ -8389,8 +8430,8 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   top:-1px;
 }
 .theme-dark .headerCozyMeta-rdohGq .botTagRegular-2HEhHi.botTag-2WPJ74.botTagCozy-1875JY.botTag-2BhDSU{
-  left:-15px;
-  top:0px;
+  margin-left:8px;
+  top:-2px;
 }
 
 .theme-dark .wrapperAudio-1jDe0Q {
@@ -8599,7 +8640,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
   /* 17.l. Generic Modal */
 .footer-2yfCgX {
-  box-shadow: inset 0 1px 0 var(--guildlistcolor) !important;
+  box-shadow: none !important;
 }
 
 .select-2TCrqx .Select-menu-outer {
@@ -9570,6 +9611,12 @@ div.reply-item {
   bottom: 20px;
   right: 10px;
 }
+
+.actionButtons-14P9IC{
+  top:2px;
+  right: 6px
+}
+
 
 .root-SR8cQa .body-3ND3kc {
   display: flex;
