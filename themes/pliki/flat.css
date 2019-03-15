@@ -2445,8 +2445,8 @@ svg[name*="Checkmark"] {
   background-image: url(https://gomido.github.io/img/friends.svg);
 }
 
-.privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Store"] {
-  background-image: url(https://gomido.github.io/img/store.svg);
+.privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Nitro"] {
+  background-image: url(https://gomido.github.io/img/nitro.svg);
 }
 
 .privateChannels-1nO12o .channel-2QD9_O .linkButtonIcon-Mlm5d6[name*="Library"] {
@@ -2642,11 +2642,33 @@ color: var(--dnd) !important;
 }
 
   /* 4.c. Guilds Add */
-  #app-mount .circleIconButton-jET_ig{
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
+
+  .wrapper-1Rf91z .scroller-2TZvBN div[class=""]:before {
+    position: absolute;
+    content: " ";
+    width: 30px;
+    height: 2px;
+    top: -10px;
+    left: 10px;
+    background: var(--white1);
+}
+
+.wrapper-1Rf91z .scroller-2TZvBN div[class=""] {
+	position: relative;
+	margin: 20px 0 0 0;
+}
+
+/*locally change ur avatar bcs why not
+[style*='/avatars/186817801741271040/'] {
+  background-image: url('https://discordemoji.com/assets/emoji/partyblob.png') !important;
+  background-size: cover;
+}
+*/
+
+
+
+
+
   
   .wrapper-1Rf91z .container-2td-dC.guildsAdd-21_IdK,
   .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig,
