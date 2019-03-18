@@ -1,3 +1,6 @@
+/*//META{"name":"TESTQQUIET","description":"TESTQQUIET","author":"Lolek","version":"1.2.5.4","website":"brak","source":"brak"}*//**/
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @font-face {
     font-family: 'BMTicons';
@@ -1367,6 +1370,10 @@ a {
   margin-left: 5px; }
 
   /* 2.b. Search Bars */
+
+.search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    padding: 0px 0px 20px;
+}
 .search .searchBarIcon-1J6sKG {
   width: 35px;
 }
@@ -2669,7 +2676,7 @@ color: var(--dnd) !important;
 
 
 
-  
+  /* tlo pod add server*/
   .wrapper-1Rf91z .container-2td-dC.guildsAdd-21_IdK,
   .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig,
   .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig span {
@@ -2690,9 +2697,6 @@ color: var(--dnd) !important;
   bottom: 0px;
 }
 
-.wrapper-1Rf91z .container-2td-dC.guildsAdd-21_IdK.guildsDiscover-oiBX_l {
-  bottom: 60px;
-}
 
 .wrapper-1Rf91z .container-2td-dC.guildsAdd-21_IdK::after,
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig svg,
@@ -3310,9 +3314,9 @@ color: var(--dnd) !important;
 }
   /* 7.b. Hoisted Roles */
 .membersGroup-v9BXpm {
-  color: var(--accentcolor) !important;
+  color: inherit;
   border-bottom: 1px solid;
-  border-image: linear-gradient(90deg, transparent, var(--accentcolor), transparent);
+  border-image: linear-gradient(90deg, transparent, inherit, transparent);
   border-image-slice: 1;
   padding: 19px 16px 6px 16px;
   margin: 4px 0px 10px 15px;
@@ -6451,7 +6455,7 @@ margin:15px;}
 .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz::before,
 .userPopout-3XzG_A .headerPlaying-j0WQBV .activityUserPopout-2yItg2 .headerText-1HLrL7::before {
   content: '';
-  background: url("https://twitchcord.github.io/twitchcord-theme/images/user-ico-micro.png") no-repeat 50% !important;
+  background: url("https://i.imgur.com/HSPGvxa.png") no-repeat 50% !important;
   width: 10px;
   height: 10px;
   position: relative;
@@ -6475,18 +6479,18 @@ margin:15px;}
   margin-right: 1px;
   display: inline-block;
 }
-
+/*w grze ikona*/
 .userPopout-3XzG_A .headerPlaying-j0WQBV .activityUserPopout-2yItg2 .headerText-1HLrL7::before {
-  background: url("https://twitchcord.github.io/twitchcord-theme/images/games-ico-micro.png") no-repeat 50% !important;
+  background: url("https://i.imgur.com/OeZiHep.png") no-repeat 50% !important;
 }
-
+/*notatka ikona*/
 .userPopout-3XzG_A .body-3iLsc4 .bodyTitle-Y0qMQz ~ .bodyTitle-Y0qMQz::before {
-  background: url("https://twitchcord.github.io/twitchcord-theme/images/note-ico-micro.png") no-repeat 50% !important;
+  background: url("https://i.imgur.com/ox4zvMj.png") no-repeat 50% !important;
 }
-
+/*
 .userPopout-3XzG_A .headerSpotify-zpWxgT  .activityUserPopout-2yItg2 .headerText-1HLrL7~ .bodyTitle-Y0qMQz::before {
   background: url("https://twitchcord.github.io/twitchcord-theme/images/note-ico-micro.png") no-repeat 50% !important;
-}
+}*/
 
 .userPopout-3XzG_A .activityUserPopout-2yItg2 .playTime-2uWd1Z {
   opacity: 0.6;
@@ -6695,6 +6699,26 @@ margin:15px;}
   border-color: var(--headercolor);
   border-radius: 0px;
 }
+
+/*activity freed options*/ 
+.theme-dark .emptyApplications-3GTmw-,
+.theme-dark .emptyUsers--hiToV {
+  background-color: var(--titlebar) ;
+  border-color: var(--headercolor);
+  border-radius: 0px;
+}
+
+
+/*zamazany mail*/
+.userSettingsAccount-2eMFVR div:nth-child(2)>div:nth-child(2)>.viewBody-2Qz-jg{
+  font:small-caption;
+  -webkit-text-security:disc
+}
+
+.userSettingsAccount-2eMFVR div:nth-child(2)>div:nth-child(2)>.viewBody-2Qz-jg:hover{
+  -webkit-text-security:none
+}
+
   /* 15.g. Server Settings */
 .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"] {
   left: 75px !important;
@@ -9007,7 +9031,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .message-2qRu38 {
-  background-color: var(--titlebar) !important;
+  background-color: var(--guildlistcolor) !important;
   border-radius: 0px;
 }
 
