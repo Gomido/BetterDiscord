@@ -2669,12 +2669,12 @@ color: var(--dnd) !important;
 	margin: 20px 0 0 0;
 }
 
-/*locally change ur avatar bcs why not
+/*locally change ur avatar bcs why not*/
 [style*='/avatars/186817801741271040/'] {
   background-image: url('https://discordemoji.com/assets/emoji/partyblob.png') !important;
   background-size: cover;
 }
-*/
+
 
 
 
