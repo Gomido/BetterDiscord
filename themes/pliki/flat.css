@@ -7,7 +7,7 @@
 :root {
   --home-color: #eee;
   --home-size: 36px;
-  --avatars: 0%; /* 0% - kwadratowe avatary*/
+  --avatars: 0%; /* 0% - kwadratowe avatary 50% okragle*/
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
   --chatanim: 0;
   --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
@@ -587,6 +587,12 @@ a {
   background: var(--chatbackground) !important;
 }
 
+.theme-dark .emptyState-2-sT0o {
+  background-color: var(--titlebar);
+  border-color: var(--titlebar);
+  border-radius: 0px;
+}
+
 .exclusive-3zP8if {
   background: linear-gradient(270deg,var(--accentcolor),var(--accentcolor));
   border-radius: 0px;
@@ -596,7 +602,8 @@ a {
   border-left: 2px solid var(--accentcolor);
   border-right: 2px solid var(--accentcolor);
   border-bottom: 2px solid var(--accentcolor);
-  margin-bottom: 2px;
+  margin-bottom: 71px;
+  margin-right:2px;
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB:before {
