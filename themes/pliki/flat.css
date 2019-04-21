@@ -612,14 +612,20 @@ height:30px;
 width: 30px;
 right:0px;
 }
-
-.image-33JSyf.large-3ChYtB.mask-3OgeRz.headerAvatarMask-2-HEb-,
-.image-33JSyf.large-3ChYtB.mask-3OgeRz.partyMember-923s4S,
-.image-33JSyf.large-3ChYtB.mask-3OgeRz.avatar-261BSX{
+.image-33JSyf.large-3ChYtB.mask-3OgeRz.headerAvatarMask-q3VmqZ,
+.image-33JSyf.large-3ChYtB.mask-3OgeRz.partyMember-2q4Jxq,
+.image-33JSyf.large-3ChYtB.mask-3OgeRz.avatar-_-TGPX.avatarMask-2Mo_pM,
+.image-33JSyf.large-3ChYtB.mask-3OgeRz.avatar-_-TGPX{
   height:25px;
   width: 25px;
 }
 
+.theme-dark .unwrapped-37iUtM .running-ol_ES1 {
+  border-color: var(--channellistcolor);
+}
+.running-ol_ES1 {
+  background-color: var(--accentcolor);
+}
 
 .activityFeed-1C0EmJ{
   margin: 0 0 72px 0;
@@ -631,13 +637,13 @@ right:0px;
   background-color: var(--chatbackground);
 }
 
-.headerIcon-1xLMqh,
-.activitySectionAssets-3jvni_ .largeImage-elr6ad {
+.headerIcon-2AzihC,
+.activitySectionAssets-3-aapk .largeImage-e_Lx8c {
   border-radius: 0px;
 }
 
 .theme-dark .multipleIconWrapper-2TXVB4,
-.theme-dark .section-3TvauS {
+.theme-dark .section-2VKIPC {
   background-color: var(--headercolor);
   border-radius: 0px;
 }
@@ -647,7 +653,7 @@ right:0px;
   border-radius: 0px;
 }
 
-.theme-dark .memberListItem-vHCzSI:hover,
+.theme-dark .memberListItem-2ZX2pl:hover,
 .theme-dark .enabled-5QKLzu:hover {
   background-color: var(--headercolor);
   border-radius: 0px;
@@ -3755,6 +3761,8 @@ a,
 #app-mount .chat-3bRxxu .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
   background: var(--titlebar);
   color: #FFF;
+  font-size: 10px;
+  padding: 6px 0;
   position:relative;
   box-shadow: 0 0 0 1px var(--headercolor);
   border-radius:0px;
@@ -6595,12 +6603,10 @@ color: #FFFFFF !important;
   padding: 0 15px;
   margin: 0;
   margin-top: -1px;
-  background: var(--headercolor);
+  background: transparent;
   font-size: 12px;
   font-weight: 600;
   color: var(--accentcolor2) !important;
-  border-top: 1px solid var(--headercolor);
-  border-bottom: 1px solid var(--headercolor);
 }
 
 
@@ -7103,29 +7109,23 @@ margin:15px;}
 } 
 
   /* 15.i. Tooltips */
-  .tooltip-1OS-Ti {
+  .tooltip-2QfLtc {
   border-radius: 0px !important;
 }
 
-.tooltip-1OS-Ti {
+.tooltipBlack-PPG47z{
   background: var(--accentcolor) !important;
 }
 
-.tooltip-1OS-Ti.right-KM_vfY:after {
-  border-right-color: var(--accentcolor) !important;
+.tooltipBottom-3ARrEK {
+  top: 6px
 }
 
-.tooltip-1OS-Ti.top-1pTh1F:after {
+.tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
   border-top-color: var(--accentcolor) !important;
 }
 
-.tooltip-1OS-Ti.left-1wV7VO:after {
-  border-left-color: var(--accentcolor) !important;
-}
 
-.tooltip-1OS-Ti.bottom-19kp6S:after {
-  border-bottom-color: var(--accentcolor) !important;
-}
 
 
 /*smarter embeds*/
@@ -7293,8 +7293,8 @@ margin:15px;}
   border-radius: 0px;
   padding: 0px 0px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.4) !important;
-  /*animation: opacity 100ms ease, context-open-new 300ms cubic-bezier(0, 0, 0, 1);
-  */transform-origin: top;
+  animation: opacity 100ms ease, context-open-new 300ms cubic-bezier(0, 0, 0, 1);
+  transform-origin: bottom;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 1px solid var(--headercolor) !important;
@@ -8109,7 +8109,8 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled,
 .disabledButtonColor-1aUKuC,
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:disabled,
-.lookOutlined-3sRXeN.colorGrey-2DXtkV
+.lookOutlined-3sRXeN.colorGrey-2DXtkV,
+.theme-dark .disabledButton-3apIHo
  {
   background-color: transparent;
   border: 1px solid var(--accentcolor);
@@ -8118,7 +8119,8 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .buttonColor-1agP3J:hover,
 .theme-dark .learnMoreButton-1OUyxs:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover,
-.lookOutlined-3sRXeN.colorGrey-2DXtkV:hover{
+.lookOutlined-3sRXeN.colorGrey-2DXtkV:hover,
+.theme-dark .disabledButton-3apIHo:hover{
   background-color: var(--accentcolor) !important;
   border-color: var(--accentcolor)
 }
