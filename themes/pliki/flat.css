@@ -1794,7 +1794,7 @@ border-radius: 0px;
 
 /*DirectDownload plugin*/
 body #files_directDownload{
-  left:72px;
+  left:72px !important;
   bottom:71px;
   width:240px;
   height:calc(100% - 56px - 70px);
@@ -6318,7 +6318,7 @@ border-radius: 0px;
 {
   position:absolute;
   width:316px !important;
-  max-height: 180px;
+  max-height: 175px;
   height:210% !important;
   top:-20px !important;
   left:-114px !important;
@@ -6330,7 +6330,7 @@ border-radius: 0px;
   /*border-top:none !important; usunac to na gorze ramki bedzie status*/
   border-top-width:2px !important;
   background-position:0 100%;
-  -webkit-mask: linear-gradient(to top, rgba(48, 48, 48, 0) 0%, var(--headercolor) 25%, var(--headercolor) 100%) !important;
+  -webkit-mask: linear-gradient(to top, rgba(48, 48, 48, 0) 0%, var(--headercolor) 5%, var(--headercolor) 100%) !important;
   background-size:cover;
   border-radius:0 !important;
 }
@@ -6366,12 +6366,12 @@ border-radius: 0px;
 
 /*daywdo*/
 .userPopout-3XzG_A .image-33JSyf[style*="298197139522191371"] + .status-oxiHuE {
-  background-image:url('https://i.pinimg.com/originals/02/80/b8/0280b8cb129a74a3834b11f27643b157.gif') !important;
+  background-image:url('https://i.imgur.com/8ild1rb.gif') !important;
 }
 .userPopout-3XzG_A .image-33JSyf[style*="298197139522191371"] {
   border:2px solid rgb(247, 30, 30);
   box-shadow:0 0 12px rgb(247, 30, 30);
-  opacity:.95;
+  opacity:.90;
 }
 
 
@@ -9810,6 +9810,7 @@ div.reply-item {
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before,
+.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="298197139522191371"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before
 {
       content: '';
@@ -9858,6 +9859,11 @@ div.reply-item {
     background-image: url(https://gomido.github.io/img/dolar.svg);
     
   }
+
+  /*david*/
+  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="298197139522191371"]::before {
+    background-image: url(https://gomido.github.io/img/svg/poo.svg);
+ }
   
 /*zagro*/
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::before {
