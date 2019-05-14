@@ -1,3 +1,4 @@
+/*//META{"name":"TESTQQUIET","description":"TESTQQUIET","author":"Lolek","version":"1.2.5.4","website":"brak","source":"brak"}*//**/
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @font-face {
     font-family: 'BMTicons';
@@ -1414,7 +1415,7 @@ border-radius: 0px;
 
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
-  background-color: transparent !important;
+  background-color: var(--headercolor) !important;
   border-bottom: 2px solid var(--accentcolor);
   border-radius: 0px !important;
   width: 100%;
@@ -1447,10 +1448,6 @@ border-radius: 0px;
   background-color: transparent;
 }
 
-.homeIcon-tEMBK1 {
-  -webkit-mask-position: center;
-  margin-left: -6px;
-}
 
 .theme-dark .children-19S4PO:after {
   background: linear-gradient(90deg,rgba(54,57,63,0) 0, transparent);
@@ -1462,6 +1459,79 @@ border-radius: 0px;
   border-radius: 0px;
 }
 /*otoczka wiadomosci, serwer*/ 
+
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .wrapper-sa6paO .item-2hkk8m[style*="opacity: 0.7"] {
+  background: transparent;
+  box-shadow:0 0 0 2px var(--accentcolor) ;
+  opacity:1!important;
+  transform:none!important;
+}
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .wrapper-sa6paO .item-2hkk8m[style*="opacity: 1"] {
+  background: transparent;
+  box-shadow:0 0 0 2px var(--accentcolor2) ;
+  opacity: 1!important;
+  transform: none!important;
+}
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh:hover .wrapper-sa6paO .item-2hkk8m {
+  background: transparent;
+  box-shadow:0 0 0 2px var(--titlebar) ;
+  opacity: 1!important;
+  transform: none!important;
+} 
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .wrapper-sa6paO {
+  overflow: visible;
+  height: 48px !important;
+  width:  48px !important;
+  top: inherit !important;
+}
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh:active .wrapper-sa6paO {
+transform: translateY(1px)
+}
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .wrapper-sa6paO .item-2hkk8m {
+  background-color: transparent;
+  border-radius: var(--avatars);
+  margin-left: 0!important;
+  width:  100%!important;
+  height: 100% !important;
+}
+
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .pill-3YxEhL, 
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .pill-2uzAFe,
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .pill-31IEus,
+#app-mount .wrapper-1Rf91z .listItem-2P_4kh .pill-1m5BUr {
+  left: inherit!important;
+  top:  inherit!important;
+  transform: none 
+}
+
+
+#app-mount [mask*="url"],
+#app-mount .mask-3OgeRz {
+-webkit-mask:none;
+mask:none
+}
+
+#app-mount .wrapper-25eVIn,
+#app-mount .wrapper-1Rf91z .svg-1X37T1,
+#app-mount .wrapper-232cHJ, 
+#app-mount .circleIconButton-jET_ig, 
+#app-mount .guildsError-b7zR5H, 
+#app-mount .wrapper-2F3Zv8 {
+  border-radius: var(--avatars)
+}
+
+/*koniec nowej otoczki*/
+
+
+
+
+
 .container-2td-dC a::after {
   content: "";
   position: absolute;
@@ -2110,8 +2180,9 @@ body #files_directDownload{
 
   /* 3.c. Cards and Items */
 
-.side-8zPYf6 .itemSelected-1qLhcL,
+  .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
+
 .questionMark-CWEQZn {
   background-color: var(--accentcolor) !important;
   border-radius:0px;
@@ -3193,14 +3264,15 @@ color: var(--dnd) !important;
 }
 
   /* 5.e. Unread Indicator */
-.unread-1Dp-OI {
-  display: none;
+
+.unread-3zKkbm {
+ display: none
 }
 
 
-.wrapperUnreadText-2zuiuD.wrapper-KpKNwI{
+.iconVisibility-1bOqu7.wrapper-1ucjTd.modeUnread-1zpFdA{
     background-color: var(--channellistcolor);
-	border-left: 1px solid var(--accentcolor2);
+	  border-left: 2px solid var(--accentcolor2);
 }
 
 .wrapperHoveredText-2geN_M .unread-1Dp-OI {
@@ -3211,7 +3283,6 @@ color: var(--dnd) !important;
   margin-top: 0px;
   top: 1px;
 }
-
 .wrapperHoveredText-2geN_M .unread-1Dp-OI~.contentHoveredText-2D9B-x {
   border-left: 2px solid var(--accentcolor2) !important;
 }
@@ -3532,6 +3603,16 @@ color: var(--dnd) !important;
 
 .theme-light .container-2Thooq  .button-2b6hmh[style*='url("/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg")'] {
   background-image: url(https://gomido.github.io/img/sound-off-dark.svg) !important;
+}
+
+/*gra nad statusem*/ 
+.theme-dark .panel-VoWSbJ,
+.theme-light .panel-VoWSbJ {
+  background-color: var(--headercolor);
+  border-bottom: 1px solid var(--headercolor);
+}
+.panel-VoWSbJ{
+  margin-bottom:-1px !important;
 }
 
   /* 6.d. Listening Along */
@@ -5448,6 +5529,7 @@ box-sizing: border-box;
 .modal-3HD5ck .message-2qRu38,
 .theme-dark .autocomplete-1vrmpx,
 .menu-Sp6bN1,.video-1FfuMD,
+.panel-VoWSbJ,
 #permissions-modal-wrapper .role-side {
   box-shadow: 0 2px 5px var(--shadow) !important;
 }
@@ -6296,6 +6378,8 @@ border-radius: 0px;
   color: #fff;
   border: 1px solid var(--accentcolor);
 }
+
+
 /*tlo w okienku*/
 
 .userPopout-3XzG_A *,
@@ -6320,13 +6404,14 @@ border-radius: 0px;
   border-left:none !important;
   border-right:none !important;
   /*border-top:none !important; usunac to na gorze ramki bedzie status*/
-  border-top-width:2px !important;
+  border-top-width:0px !important;
   background-position:0 100%;
   -webkit-mask: linear-gradient(to top, rgba(48, 48, 48, 0) 0%, var(--headercolor) 5%, var(--headercolor) 100%) !important;
   background-size:cover;
   border-radius:0 !important;
 }
-
+/*https://i.imgur.com/xmJMZwB.gif
+https://i.imgur.com/XRPmOL9.gif*/
 /*Lilek*/
 .userPopout-3XzG_A .image-33JSyf[style*="186609657928744962"] + .status-oxiHuE {
   background-image:url('https://i.imgur.com/XRPmOL9.gif') !important;
