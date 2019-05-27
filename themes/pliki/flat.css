@@ -7,7 +7,7 @@
 :root {
   --home-color: #eee;
   --home-size: 30px;
-  --avatars: 00%; /* 0% - kwadratowe avatary 50% okragle*/
+  --avatars: 50%; /* 0% - kwadratowe avatary 50% okragle*/
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
   --chatanim: 0;
   --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
