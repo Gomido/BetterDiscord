@@ -8307,7 +8307,13 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .cancelAllButton-16p7ma{
   margin-right:10px;
 }
-
+.theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover,
+.theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ
+ {
+  background-color: transparent;
+  border-radius: 0px;
+  color: #FFF;
+}
 
 .buttonColor-1agP3J,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
@@ -8317,8 +8323,7 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .disabledButtonColor-1aUKuC,
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:disabled,
 .lookOutlined-3sRXeN.colorGrey-2DXtkV,
-.theme-dark .disabledButton-3apIHo,
-.theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ
+.theme-dark .disabledButton-3apIHo
  {
   background-color: transparent;
   border: 1px solid var(--accentcolor);
@@ -8329,8 +8334,7 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .theme-dark .learnMoreButton-1OUyxs:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover,
 .lookOutlined-3sRXeN.colorGrey-2DXtkV:hover,
-.theme-dark .disabledButton-3apIHo:hover,
-.theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover{
+.theme-dark .disabledButton-3apIHo:hover{
   background-color: var(--accentcolor) !important;
   border-color: var(--accentcolor)
 }
