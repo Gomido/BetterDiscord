@@ -20,7 +20,7 @@
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu*/
   --badgecolor: #3F85FF; /*kolor znaczników nowych wiadomości, serwerów czy wzmianek*/
   --notification-width:3px;
-  --textcolor:#FFFFFF; /* kolor czcionek na niektorych elementach.*/
+  --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
   --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
   --rs-width: 2px; /* wielkosc ramki wokol avatara */
   --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
@@ -1049,6 +1049,9 @@ border-radius: 0px;
 
 .guildsError-b7zR5H{
   border-radius: var(--avatars);
+  margin-top:9px;
+  width: 44px;
+  height: 44px;
 }
 
 
@@ -1486,7 +1489,10 @@ border-radius: 0px;
 
 .wrapper-1Rf91z {
   background: var(--guildlistcolor) !important;
-  width: 70px; }
+  width: 70px;
+}
+.scroller-2TZvBN{
+  padding-bottom: 10px;}
 
 .homeIcon-tEMBK1 {
   height: 32px;
@@ -1503,7 +1509,7 @@ border-radius: 0px;
   }
 
   .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child {
-    margin-top: -70px;
+    margin-top: -64px;
     width: 70px;
     position: absolute;
     z-index: 2;
@@ -1559,6 +1565,7 @@ border-radius: 0px;
   background: var(--white1); }
 
 .listItem-2P_4kh {
+  height: 64px;
   width: 70px;
   margin: 0; }
 
@@ -1568,7 +1575,7 @@ border-radius: 0px;
   transform: none; }
 
 .listItem-2P_4kh .wrapper-25eVIn {
-  height: 70px;
+  height: 64px;
   width: 70px;
   display: flex;
   justify-content: center;
@@ -1617,10 +1624,10 @@ border-radius: 0px;
   display: block;
   box-sizing: border-box;
   position: absolute;
-  top: calc((100% - 58px) / 2);
-  left: calc((100% - 58px) / 2);
-  width: 58px;
-  height: 58px;
+  top: calc((100% - 52px) / 2);
+  left: calc((100% - 52px) / 2);
+  width: 52px;
+  height: 52px;
   border: 2px solid transparent;
   border-radius: var(--avatars);
   z-index: 2; }
@@ -1825,7 +1832,9 @@ border-radius: 0px;
 
 .numberBadge-2s8kKX.base-PmTxvP{
   background-color: var(--badgecolor) !important;
+  color: var(--textcolor);
 }
+
 
 .theme-dark .wrapper-1ucjTd:hover .content-3at_AU
 {
@@ -3755,12 +3764,67 @@ a,
 }
 
 .attachment-33OFj0 {
-  background-color: var(--headercolor) !important;
-  border-color: var(--headercolor) !important;
+	border-radius:0 !important;
+  padding:15px;
+  max-width:475px;
+  border:none !important;
+  background:var(--headercolor) !important;
+  position:relative;
 }
+.attachmentInner-3vEpKt::before {
+  content:'';
+  display:flex;
+  top:42px;
+  right:58px;
+  position:relative;
+  width:50px !important;
+  height:50px !important;
+
+}
+
+.attachmentInner-3vEpKt {
+    margin-left:10px;
+    margin-top:-50px;
+    overflow:visible;
+}
+
 .metadata-3WGS0M {
-  color: var(--white7);
-  margin-right: 8px;
+    color:#fff;
+    margin-top:5px;
+}
+.metadata-3WGS0M:before {
+    content:'Rozmiar: ';
+    color:rgba(255,255,255,0.5);
+    opacity:1;
+    padding-right: 5px;
+    text-shadow:none;
+}
+
+.filenameLinkWrapper-1-14c5 a {
+    color:var(--accentcolor) !important;
+    text-shadow:none !important;
+    font-size:15px;
+    font-weight:500;
+    text-decoration:none !important;
+}
+.attachment-33OFj0 .fileNameLink-9GuxCo::after {
+    content:'Pobierz';
+    font-size: 14px;
+    font-weight: 500;
+    transition: 150ms ease;
+    background:transparent;
+    border: 1px solid var(--accentcolor);
+    color: var(--accentcolor2);
+    position: absolute;
+    padding: 7px 10px;
+    bottom:10px;
+    right:10px;
+}
+.attachment-33OFj0 .fileNameLink-9GuxCo:hover::after {
+  background:var(--accentcolor);
+}
+.downloadButton-23tKQp {
+  display:none;
 }
 
 /* ==================== */
@@ -3834,6 +3898,10 @@ a,
 
 .progress-2XXRYo .progressBar-3u8FBM {
   background-color: var(--accentcolor);
+}
+
+.progressContainer-3ao-eu{
+  max-width: 300px !important;
 }
 
 .filenameLinkWrapper-1-14c5{
@@ -4003,6 +4071,10 @@ a,
 }
 
 
+.isMentionedCozy-3isp7y .markup-2BOw-j{
+  padding-left:4px;
+}
+
   .wrapper-232cHJ,
   .guilds-wrapper .guilds .guild .badge,
   a[href="/channels/@me"] .badge {
@@ -4014,18 +4086,23 @@ a,
   }
   
 
-
  
 .isMentionedCozy-3isp7y:after {
   border-left: 3px solid var(--accentcolor);
-  border-radius: 0;
   background: transparent;
-  left: -0px;
+  height: calc(100% - 7px);
+  top: 50%;
+  left: 3px;
+  border-radius: 0px;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  opacity: 0.9;
 }
+
 .theme-dark .isMentioned-N-h9aa  {
   background: var(--titlebar)!important;
   height: auto!important;
-  margin-top: 9px!important;
+  margin-top: 4px!important;
   margin-bottom: 5px;
   margin-left: 0px;
   padding: 3px 8px 5px 8px!important;
@@ -7334,7 +7411,7 @@ margin:15px;}
   /* 15.i. Tooltips */
   .tooltip-2QfLtc {
   border-radius: 0px !important;
-  color:var(--textcolor) !important
+  color:var(--textcolor) !important;
 }
 
 .tooltipBlack-PPG47z{
@@ -8057,6 +8134,11 @@ height:52px;
 }
 
   /* 17.c. Instant Invite Modal */
+
+  .marginTop4-2BNfKC.container-2XeR5Z {
+    background-color: var(--headercolor);
+    border-radius: 0px;
+}
 .inviteRow-2L02ae:hover {
   background-color: var(--titlebar) !important;
   border-radius: 0px;
