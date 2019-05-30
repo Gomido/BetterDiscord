@@ -20,8 +20,7 @@
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu*/
   --badgecolor: #3F85FF; /*kolor znaczników nowych wiadomości, serwerów czy wzmianek*/
   --notification-width:3px;
-  --borderStyle: 0px 2px;
-  --textcolor:#FFF; /* kolor czcionek na niektorych elementach.*/
+  --textcolor:#FFFFFF; /* kolor czcionek na niektorych elementach.*/
   --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
   --rs-width: 2px; /* wielkosc ramki wokol avatara */
   --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
@@ -368,8 +367,8 @@ a {
   width: 180px;
   top: 10px;
   right: 0vw;
-  color: white;
-  opacity: .7;
+  color: var(--textcolor);
+  opacity: .9;
   font-size: 14px;
   line-height: 25px;
   transition: all .2s ease-in-out;
@@ -1511,12 +1510,6 @@ border-radius: 0px;
     height: 46px;
   }
   
-  .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
-    background-color: var(--headercolor) !important;
-    border-bottom: 2px solid var(--accentcolor);
-    border-radius: 0px !important;
-    width: 100%;
-  }
   
   #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn .svg-1X37T1 {
     height: 100% !important;
@@ -1559,7 +1552,7 @@ border-radius: 0px;
 
 .listItem-2P_4kh.bd-guild-separator {
   margin: 4px 0;
-  display:none;
+  display:none !important;
   height: 2px; }
 
 .guildSeparator-3s64Iy {
@@ -1567,7 +1560,6 @@ border-radius: 0px;
 
 .listItem-2P_4kh {
   width: 70px;
-  height: 70px;
   margin: 0; }
 
 .blob-1PX1Gp:active,
@@ -1600,7 +1592,8 @@ border-radius: 0px;
 .listItem-2P_4kh .acronym-2mOFsV {
   background: var(--titlebar); }
 
-.listItem-2P_4kh .acronym-2mOFsV.selected-bZ3Lue {
+.listItem-2P_4kh .acronym-2mOFsV.selected-bZ3Lue,
+.theme-dark .acronym-2mOFsV:hover {
   background: var(--headercolor); }
 
 .wrapper-25eVIn > svg > mask > path {
@@ -1619,7 +1612,7 @@ border-radius: 0px;
   transform: none !important;
   opacity: 0.7 !important; }
 
-.listItem-2P_4kh .item-2hkk8m::before {
+.listItem-2P_4kh .item-2hkk8m::before{
   content: "";
   display: block;
   box-sizing: border-box;
@@ -1657,7 +1650,7 @@ border-radius: 0px;
   z-index: 1; }
 
 .circleIconButton-jET_ig {
-  color: var(--accentcolor);
+  color: var(--accentcolor2);
   background-color: transparent;
   transition: color 200ms ease; }
 
@@ -7341,6 +7334,7 @@ margin:15px;}
   /* 15.i. Tooltips */
   .tooltip-2QfLtc {
   border-radius: 0px !important;
+  color:var(--textcolor) !important
 }
 
 .tooltipBlack-PPG47z{
