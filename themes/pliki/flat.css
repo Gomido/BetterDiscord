@@ -1565,7 +1565,6 @@ border-radius: 0px;
   background: var(--white1); }
 
 .listItem-2P_4kh {
-  height: 64px;
   width: 70px;
   margin: 0; }
 
@@ -6474,6 +6473,7 @@ border-radius: 0px;
 .userPopout-3XzG_A .image-33JSyf[style*="186609657928744962"] + .status-oxiHuE,
 .userPopout-3XzG_A .image-33JSyf[style*="270532835431940096"] + .status-oxiHuE,
 .userPopout-3XzG_A .image-33JSyf[style*="298197139522191371"] + .status-oxiHuE,
+.userPopout-3XzG_A .image-33JSyf[style*="131422437907759105"] + .status-oxiHuE,
 .userPopout-3XzG_A .image-33JSyf[style*="186817801741271040"] + .status-oxiHuE
 {
   position:absolute;
@@ -6504,6 +6504,16 @@ https://i.imgur.com/XRPmOL9.gif*/
   border:2px solid rgb(253, 169, 76);
   box-shadow:0 0 12px rgb(253, 169, 76);
   opacity:.75;
+}
+/*adv*/
+.userPopout-3XzG_A .image-33JSyf[style*="131422437907759105"] + .status-oxiHuE {
+  background-image:url('https://i.imgur.com/c4IrNbx.gif') !important;
+}
+
+.userPopout-3XzG_A .image-33JSyf[style*="131422437907759105"] {
+  border:2px solid rgb(253, 76, 76);
+  box-shadow:0 0 12px rgb(253, 76, 76);
+  opacity:1;
 }
 
 /*Mleczko*/ 
@@ -9962,6 +9972,7 @@ div.reply-item {
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before,
+.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="131422437907759105"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="298197139522191371"]::before,
 .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before
 {
@@ -10000,6 +10011,19 @@ div.reply-item {
    background-image: url(https://gomido.github.io/img/elleCrown.svg);
    
   }
+
+  /* ADV */
+  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="131422437907759105"]::before {
+    background-image: url(https://i.imgur.com/SiKtbLr.png);
+    content: '';
+    color: transparent;
+    height: 18px;
+    width: 18px;
+    bottom: -10px;
+    right: -10px;
+    pointer-events: none;
+    z-index:2 !important
+   }
 
   /* krzys */
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before {
