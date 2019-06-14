@@ -33,7 +33,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-
+  --version: 2.8;
 
 
   --shadow: rgba(0,0,0,.8);
@@ -1148,144 +1148,6 @@ border-radius: 0px;
 
 
 
-/* Table of Contents
-    ======== STATIC ==========
- 1. Title Bar
-  1.a. Main Title Bar
-  1.b. Mac Main Title Bar
-  1.c. Windows Buttons
-  1.d. Mac Buttons
-  1.e. Erase SVGs
-
- 2. Chat Header
-  2.a. Coloring and Spacing
-  2.b. Search Bars
-  2.c. Change Icons
-
- 3. User Settings
-  3.a. General Sidebar
-  3.b. General Content Area
-  3.c. Cards and Items
-  3.d. Buttons, Switches, and Bars
-  3.e. Overlay Notifications
-  3.f. Nitro and Hypesquad Section
-
- 4. Guilds Wrapper
-  4.a. Mains Guilds Wrapper
-  4.b. Guilds
-  4.c. Guilds Add
-  4.d. Badges
-
- 5. Channels
-  5.a. Main Channels Area
-  5.b. Light Theme Recolor
-  5.c. Channel Font Colors
-  5.d. Channels
-  5.e. Unread Indicator
-  5.f. Categories
-  5.g. DM List
-  5.h. Unread Messages Popout
-
- 6. Account Area
-  6.a. Main Container
-  6.b. Buttons
-  6.c. Light Theme Recolor
-  6.d. Listening Along
-
- 7. Members List
-  7.a. Main Member List
-  7.b. Hoisted Roles
-
- 8. Chat
-  8.a. Main Chat Area
-  8.b. Messages
-  8.c. Blocked Messages
-  8.d. Chat Dividers
-  8.e. Mentions
-  8.f. Code Blocks
-  8.g. New Messages Bar and Loading Symbols
-  8.h. DM Chat
-  8.i. Bot Message
-  8.j. Embeds
-  8.k. Text Area
-  8.l. Typing Bar
-  8.m. Notification Bar
-  8.n. Search Results
-  8.o. Video Calling
-
- 9. Friends List
-  9.a. Main Friends List
-  9.b. Action Buttons
-
-10. Games Tab, Library, and Store
-  10.a. Tab
-  10.b. Library
-  10.c. Store
-
-11. Avatars
-  11.a. Remove Mask
-  11.b. Status
-
-12. Shadows
-
-13. Roundness
-
-14. Scrollbars
-
-================== SLIDE INS ====================
-15. Popouts
-  15.a. Pinned Messages and Recent Mentions
-  15.b. Emoji Picker and Reactions
-  15.c. Autocomplete
-  15.d. User Popout
-  15.e. Add Role User Popout
-  15.f. Search Popout
-  15.g. Server Settings
-  15.h. Group DM Invite Popout
-  15.i. Tooltips
-  15.j. @Everyone Popout
-  15.k. Attach Popout
-  15.l. RTC Connection Popout
-  15.m. More Users Popout
-  15.n. Overflow Roles Popout
-  15.o. Dropdown Menu Popout
-  15.p. DM Call Region Select Popout
-
-16. Menus
-  16.a. Context Menus
-  16.b. Status Picker
-  16.c. Message Menu
-
-17. Modals
-  17.a. Help Modal
-  17.b. User Profile Modal
-  17.c. Instant Invite Modal
-  17.d. Join or Create New Guild
-  17.e. Upload Modal
-  17.f. Game Preview Modal
-  17.g. Quick Switcher
-  17.h. Screenshare Modal
-  17.i. Phone Verification Modal
-  17.j. Smartphone Modal
-  17.k. Drag and Drop Modal
-  17.l. Generic Modal
-
-18. Login Page
-
-19. Keyframes
-
-20. Misc
-  20.a. Plugin Optimization
-    20.a.1. BetterFormatting
-
-21. Custom CSS
-
-22. @Media Edits
-*/
-
-
-
-
 /* ================================= STATIC =======================================*/
 
 /* 1. Title Bar */
@@ -1432,7 +1294,7 @@ border-radius: 0px;
   left: 2%;
 }
 
-/*home icon pasek*/
+/*home icon pasek
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
   background-color: var(--headercolor) !important;
   border-bottom: 2px solid var(--accentcolor);
@@ -1443,7 +1305,7 @@ border-radius: 0px;
   border-bottom: 2px solid var(--accentcolor);
   border-radius: 0px !important;
   background-color: var(--headercolor) !important;
-}
+}*/
 
 #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn .svg-1X37T1 {
   height: 100% !important;
@@ -1480,35 +1342,85 @@ border-radius: 0px;
   background-color: var(--accentcolor) !important;
 }
 
+/*usuniecie przesuniecia ikony po kliku*/
+.listItemWrapper-3X98Pc:active {
+  -webkit-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+}
+
+/* Fixes issue of home button not being shown on screen */
+.icon-27yU2q,
+.acronym-2mOFsV{
+  border-radius: var(--avatars);
+}
+
+.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child {
+margin-top: -58px;
+position: absolute;
+z-index: 2;
+height: 46px;
+}
+
+
+.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
+background-color: var(--headercolor) !important;
+border-bottom: 2px solid var(--accentcolor);
+border-radius: 0px !important;
+width: 100%;
+}
+
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .listItemWrapper-3X98Pc {
+height: 100%;
+width: 100%;
+}
+
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn .svg-1X37T1 {
+height: 100% !important;
+width: 100% !important;
+}
+/*
+#app-mount foreignObject {
+mask: none !important;
+-webkit-mask: none !important;
+overflow: hidden;
+}*/
+
+#app-mount .button-OhfaWu {
+background-color: transparent;
+}
+
+
+
+
+/* 4. Guilds Wrapper */
+/* 4.a. Main Guilds Wrapper */
+.platform-osx .guildsWrapper-5TJh6A,
+.platform-osx .wrapper-1Rf91z { margin-top: 0px !important; }
+
+.guildsWrapper-5TJh6A,
+.wrapper-1Rf91z {
+z-index: 6;
+}
+
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN {
+padding: 10px 0 20px 0 !important;
+}
+
+.guildsWrapper-5TJh6A .scrollerWrap-1IAIlv,
+.wrapper-1Rf91z .scrollerWrap-1IAIlv { 
+margin-top: 48px !important;
+}
 
 
 /*otoczka wiadomosci, lista serwerow*/ 
-
-
-.wrapper-1Rf91z .scroller-2FKFPG::-webkit-scrollbar {
-  width: 0 !important; }
-
-.wrapper-1Rf91z {
-  background: var(--guildlistcolor) !important;
-  width: 70px;
+/* Fixes issue of home button not being shown on screen */
+.scrollerWrap-2lJEkd {
+  contain: layout style;
 }
-.scroller-2TZvBN{
-  padding-bottom: 10px;}
 
-.homeIcon-tEMBK1 {
-  height: 32px;
-  width: 32px;
-  margin-top: 15px;
-  z-index: 1; }
 
-.wrapper-1Rf91z .button-OhfaWu,
-.wrapper-1Rf91z .button-OhfaWu.selected-wSa2KV {
-  background: transparent; }
 
-  .wrapper-1Rf91z .button-OhfaWu::after{
-
-  }
-
+/*
   .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child {
     margin-top: -64px;
     width: 70px;
@@ -1522,26 +1434,11 @@ border-radius: 0px;
     height: 100% !important;
     width: 100% !important;
   }
-  
+  */
   
   #app-mount .button-OhfaWu {
-    background-color: transparent;
+    background-color: var(--headercolor);
   }
-  
-  
-  #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN {
-    padding: 0px 0px 0px 0px !important;
-  }
-  
-  .guildsWrapper-5TJh6A .scrollerWrap-1IAIlv,
-  .wrapper-1Rf91z .scrollerWrap-1IAIlv { 
-    margin-top: 48px !important;
-  }
-  
-  .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .friendsOnline-2JkivW {
-    margin-top: 10px;
-  }
-  
   
 .listItem-2P_4kh .circleIconButton-jET_ig::after {
   content: "";
@@ -1551,6 +1448,7 @@ border-radius: 0px;
   width: 48px;
   height: 48px;
   z-index: 0;
+  border-radius: var(--avatars);
   transition: background 200ms ease; }
 
 .listItem-2P_4kh .circleIconButton-jET_ig.selected-ugP_am::after,
@@ -1565,6 +1463,20 @@ border-radius: 0px;
 .guildSeparator-3s64Iy {
   background: var(--white1); }
 
+
+  .theme-dark .acronym-2mOFsV,
+  .theme-light .acronym-2mOFsV {
+    color: #b9bbbe;
+    background-color: var(--titlebar);
+}
+
+.theme-dark .acronym-2mOFsV.selected-bZ3Lue, .theme-dark .acronym-2mOFsV:hover,
+.theme-light .acronym-2mOFsV.selected-bZ3Lue, .theme-light .acronym-2mOFsV:hover {
+  color: #fff;
+  background-color: var(--accentcolor);
+}
+
+/*
 .listItem-2P_4kh {
   width: 70px;
   margin: 0; }
@@ -1609,7 +1521,8 @@ border-radius: 0px;
 .wrapper-sa6paO {
   width: 100%;
   height: 100%; }
-
+  */
+/* fix znaczka wiadomosci
 .listItem-2P_4kh .item-2hkk8m {
   box-sizing: border-box;
   background: none;
@@ -1618,7 +1531,7 @@ border-radius: 0px;
   height: 100% !important;
   transform: none !important;
   opacity: 0.7 !important; }
-
+*/
 .listItem-2P_4kh .item-2hkk8m::before{
   content: "";
   display: block;
@@ -1664,13 +1577,13 @@ border-radius: 0px;
 .circleIconButton-jET_ig.selected-ugP_am {
   color: var(--accentcolor2);
   background-color: transparent; }
-
+/*
 .badgeWrapper-3e8pMZ {
   top: calc((100% - 54px) / 2);
   left: calc((100% - 54px) / 2);
   width: 54px;
   height: 54px; }
-
+*/
 .wrapper-1Rf91z .scroller-2FKFPG > div[style] {
   height: auto !important; }
 
@@ -1717,10 +1630,6 @@ border-radius: 0px;
 .container-2td-dC.unread-2OHH1w.selected-nT-gM3 a::after {
   box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 4px rgba(255, 255, 255, 0), 0 2px 4px rgba(0, 0, 0, 0.1) !important; }
 
-.wrapper-1Rf91z .mention-1f5kbO,
-.wrapper-1Rf91z .unread-2OHH1w {
-  font-size: 0;
-  background: none; }
 
 .wrapper-1Rf91z .icon-2aINcz {
   margin-left: 0;
@@ -2001,7 +1910,7 @@ border-radius: 0px;
 
 /*DirectDownload plugin*/
 body #files_directDownload{
-  left:72px !important;
+  left:70px !important;
   bottom:71px;
   width:240px;
   height:calc(100% - 56px - 70px);
@@ -2634,7 +2543,9 @@ body #files_directDownload{
 }*/
 
 /* replace mentions icon on top nav bar */
-
+.mention-1f5kbO {
+  background-color: var(--accentcolor);
+}
 .container-1r6BKw .icon-22AiRD[name="Nova_At"] {
   background: url('https://i.imgur.com/XKdD3v6.png') no-repeat center !important;
 
@@ -3196,8 +3107,8 @@ color: var(--dnd) !important;
   }
 
   .unreadMentionsIndicatorTop-gA6RCh {
-    top: 46px;
-    z-index: 100 !important;
+    top: 46px !important;
+    z-index: 99999 !important;
   }
   
 /* 5. Channels */
@@ -3238,7 +3149,8 @@ color: var(--dnd) !important;
 
   /* 5.c. Channel Font Colors */
 .theme-dark .wrapper-1ucjTd.modeMuted-3osy7j .name-3_Dsmg,
-.muted-1NRuDm {
+.muted-1NRuDm,
+.theme-dark .wrapper-1ucjTd.modeMuted-3osy7j .icon-1_QxNX {
   color: #909090;
   opacity: 0.4;
 }
@@ -3310,11 +3222,15 @@ color: var(--dnd) !important;
 
   /* 5.e. Unread Indicator */
 
-.unread-3zKkbm {
- display: none
-}
+  .theme-dark .unread-3zKkbm {
+    background-color: var(--accentcolor2);
+    height:100%;
+    border-radius: 0;
+    top:4px;
+    left:-2px;
+  }
 
-
+/*
 .iconVisibility-1bOqu7.wrapper-1ucjTd.modeUnread-1zpFdA{
     background-color: var(--channellistcolor);
     border-left: 2px solid var(--accentcolor2);
@@ -3325,7 +3241,7 @@ color: var(--dnd) !important;
 .wrapperHoveredText-2geN_M .unread-1Dp-OI~.contentHoveredText-2D9B-x {
   border-left: 2px solid var(--accentcolor2) !important;
 }
-
+*/
 
 
 /*wysuwane cos kanaly tekstowe*/ 
@@ -3383,6 +3299,7 @@ color: var(--dnd) !important;
     height: 50px;
     width: 50px;
 }
+
 /*fejkowy efekt pin, mention itp, kolko w tle*/
 .iconWrapper-2OrFZ1::after {
   content:'';
@@ -3564,7 +3481,8 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
   /* 6.a. Main Container */
   .theme-dark .container-2Thooq {
     position: relative;
-    height:70px;
+    height:71px;
+    top:1px;
   	background: var(--headercolor);
   	z-index: 100 !important;
 }
@@ -3578,7 +3496,7 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
 }
 
 .username-_4ZSMR{
-  margin-left:-15px !important;
+  margin-left:-10px !important;
 }
 
 .username-_4ZSMR:hover{
@@ -4149,7 +4067,6 @@ a,
   background: var(--headercolor);
 }
 .theme-dark .markup-2BOw-j pre{
-
   background: var(--headercolor);
   border-color: var(--headercolor);
   border-radius: 0px;
@@ -7265,6 +7182,13 @@ margin:15px;}
 }
 
 
+.itemIcon-3gdJnE {
+  border-radius: 0px;
+}
+.wrapper-2F3Zv8.large-3ChYtB.image-33JSyf.large-3ChYtB {
+  height:30px;
+  width:30px;
+}
 /*zamazany mail*/
 .userSettingsAccount-2eMFVR div:nth-child(2)>div:nth-child(2)>.viewBody-2Qz-jg{
   font:small-caption;
@@ -9131,9 +9055,9 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 
-li[data-name*="MidnFlatDiscordThemeight"] .bda-name {
+li[data-name*="FlatDiscordTheme"] .bda-name {
 	color: var(--accentcolor);
-	text-shadow: 0 0 12px;
+	text-shadow: 0 0 5px;
 }
 
 li[data-name*="FlatDiscordTheme"] {
@@ -9143,26 +9067,18 @@ li[data-name*="FlatDiscordTheme"] {
 li[data-name*="FlatDiscordTheme"] .scroller-wrap::before {
 	content: 'Kolor Akcentu';
 	background: var(--accentcolor);
-	padding: 15px 25px;
+	padding: 15px 20px;
 	margin-top: 31px;
 	position: absolute;
-	cursor: pointer;
-	transition: 150ms ease;
 }
 
 li[data-name*="FlatDiscordTheme"] .scroller-wrap::after {
 	content: 'Kolor powiadomień';
 	background: var(--badgecolor);
-	padding: 15px 40px;
-	margin-left: 150px;
+	padding: 15px 20px;
+	margin-left: 140px;
 	position: absolute;
-  cursor: pointer;
-	transition: 150ms ease;
 }
-
-
-
-
 
   /* 17.f. Game Preview Modal */
 .gamePreview-9weYR2 {
@@ -10900,7 +10816,7 @@ div.reply-item {
 /*Codeblocks*/
 
 .hljs {
-	max-height: 250px;
+  max-height: 200px;
 }
 
 .hljs::-webkit-scrollbar-track {
@@ -10912,7 +10828,8 @@ div.reply-item {
 }
 
 .hljs::-webkit-scrollbar {
-	width: 3px !important;
+  width: 3px !important;
+  border-radius: 0px;
 }
 
 .hljs {
