@@ -6,7 +6,7 @@
 
 :root {
 
-  --avatars: 50%; /* 0% - kwadratowe avatary, 50% okragle*/
+  --avatars: 0%; /* 0% - kwadratowe avatary, 50% okragle*/
   --accentcolor: #3F85FF; /*główny kolor skina/elementów po kliknięciu*/
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu (np pasek na liście osob)*/
   --badgecolor: #3F85FF; /*kolor kółeczek nowych wiadomości, serwerów czy wzmianek*/
@@ -35,7 +35,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 03/07/19";
+  --version: "Ładny Skin 04/07/19";
 
 
 
@@ -2044,7 +2044,7 @@ margin-top: 50px !important;
 body #files_directDownload{
   left:72px !important;
   bottom:71px;
-  width:240px;
+  width:270px;
   height:calc(100% - 56px - 70px);
   pointer-events: none;
   display: flex;
@@ -2056,9 +2056,9 @@ body #files_directDownload{
   }
   body #files_directDownload .file{
   pointer-events: initial;
-  width:240px;
-  min-width:240px;
-  max-width: 240px;
+  width:220px;
+  min-width:270px;
+  max-width: 270px;
   border:none;
   height:40px;
   animation:height 300ms cubic-bezier(.4,0,0,1);
@@ -2094,7 +2094,7 @@ body #files_directDownload{
   left:10px;
   padding:0;
   line-height: 30px;
-  max-width:200px;
+  max-width:220px;
   color:var(--white6);
   transition:all 100ms ease;
   z-index: 1;
@@ -2557,8 +2557,7 @@ body #files_directDownload{
   /*Twitter*/
   .connectedAccountIcon-3P3V6F[src="/assets/4662875160dc4c56954003ebda995414.png"] {
     content: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggc3R5bGU9ImZpbGw6I2ZmZiIgZD0iTTE2IDMuMDM4Yy0uNTkuMjYtMS4yMi40MzctMS44ODUuNTE3LjY3Ny0uNDA3IDEuMTk4LTEuMDUgMS40NDMtMS44MTYtLjYzNC4zNy0xLjMzNy42NC0yLjA4NS43OS0uNTk4LS42NC0xLjQ1LTEuMDQtMi4zOTYtMS4wNC0xLjgxMiAwLTMuMjgyIDEuNDctMy4yODIgMy4yOCAwIC4yNi4wMy41MS4wODUuNzUtMi43MjgtLjEzLTUuMTQ3LTEuNDQtNi43NjYtMy40MkMuODMgMi41OC42NyAzLjE0LjY3IDMuNzVjMCAxLjE0LjU4IDIuMTQzIDEuNDYgMi43MzItLjUzOC0uMDE3LTEuMDQ1LS4xNjUtMS40ODctLjQxdi4wNGMwIDEuNTkgMS4xMyAyLjkxOCAyLjYzMyAzLjIyLS4yNzYuMDc0LS41NjYuMTE0LS44NjUuMTE0LS4yMSAwLS40MS0uMDItLjYxLS4wNTguNDIgMS4zMDQgMS42MyAyLjI1MyAzLjA3IDIuMjgtMS4xMi44OC0yLjU0IDEuNDA0LTQuMDcgMS40MDQtLjI2IDAtLjUyLS4wMTUtLjc4LS4wNDUgMS40Ni45MyAzLjE4IDEuNDc0IDUuMDQgMS40NzQgNi4wNCAwIDkuMzQtNSA5LjM0LTkuMzMgMC0uMTQgMC0uMjgtLjAxLS40Mi42NC0uNDYgMS4yLTEuMDQgMS42NC0xLjd6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=) !important;
-    -ms-transform: scale(0.8);
-    transform: scale(0.8); }
+}
   
   /*Reddit*/
   .connectedAccountIcon-3P3V6F[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] {
@@ -2567,7 +2566,7 @@ body #files_directDownload{
   /* Spotify */
   .connectedAccountIcon-3P3V6F[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] {
     content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTY4cHgiIHdpZHRoPSIxNjhweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTY4IDE2OCI+IDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Im04My45OTYgMC4yNzdjLTQ2LjI0OSAwLTgzLjc0MyAzNy40OTMtODMuNzQzIDgzLjc0MiAwIDQ2LjI1MSAzNy40OTQgODMuNzQxIDgzLjc0MyA4My43NDEgNDYuMjU0IDAgODMuNzQ0LTM3LjQ5IDgzLjc0NC04My43NDEgMC00Ni4yNDYtMzcuNDktODMuNzM4LTgzLjc0NS04My43MzhsMC4wMDEtMC4wMDR6bTM4LjQwNCAxMjAuNzhjLTEuNSAyLjQ2LTQuNzIgMy4yNC03LjE4IDEuNzMtMTkuNjYyLTEyLjAxLTQ0LjQxNC0xNC43My03My41NjQtOC4wNy0yLjgwOSAwLjY0LTUuNjA5LTEuMTItNi4yNDktMy45My0wLjY0My0yLjgxIDEuMTEtNS42MSAzLjkyNi02LjI1IDMxLjktNy4yOTEgNTkuMjYzLTQuMTUgODEuMzM3IDkuMzQgMi40NiAxLjUxIDMuMjQgNC43MiAxLjczIDcuMTh6bTEwLjI1LTIyLjgwNWMtMS44OSAzLjA3NS01LjkxIDQuMDQ1LTguOTggMi4xNTUtMjIuNTEtMTMuODM5LTU2LjgyMy0xNy44NDYtODMuNDQ4LTkuNzY0LTMuNDUzIDEuMDQzLTcuMS0wLjkwMy04LjE0OC00LjM1LTEuMDQtMy40NTMgMC45MDctNy4wOTMgNC4zNTQtOC4xNDMgMzAuNDEzLTkuMjI4IDY4LjIyMi00Ljc1OCA5NC4wNzIgMTEuMTI3IDMuMDcgMS44OSA0LjA0IDUuOTEgMi4xNSA4Ljk3NnYtMC4wMDF6bTAuODgtMjMuNzQ0Yy0yNi45OS0xNi4wMzEtNzEuNTItMTcuNTA1LTk3LjI4OS05LjY4NC00LjEzOCAxLjI1NS04LjUxNC0xLjA4MS05Ljc2OC01LjIxOS0xLjI1NC00LjE0IDEuMDgtOC41MTMgNS4yMjEtOS43NzEgMjkuNTgxLTguOTggNzguNzU2LTcuMjQ1IDEwOS44MyAxMS4yMDIgMy43MyAyLjIwOSA0Ljk1IDcuMDE2IDIuNzQgMTAuNzMzLTIuMiAzLjcyMi03LjAyIDQuOTQ5LTEwLjczIDIuNzM5eiIvPjwvc3ZnPg==) !important;
-    transform: scale(0.8); }
+  }
   
   /* Facebook */
   .connectedAccountIcon-3P3V6F[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] {
@@ -3075,6 +3074,12 @@ color: var(--dnd) !important;
   /* 3.f. Nitro and Hypesquad Section */
 .grandfatheredMessage-2QgLnw {
   justify-content: center;
+}
+
+.bannerImage-1jOskm, .bannerImage-1jOskm:after {
+  position: absolute;
+  width: 270px;
+  top: 0;
 }
 
 .banner-3Kac2g{
@@ -4154,7 +4159,7 @@ a,
 
 .icon-1kp3fr {
   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTMgNSAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMyA1IDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6bm9uZTt9LnN0MXtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS0zLDVoMjR2MjRILTNWNXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTEsN0gzQzEuOSw3LDEsNy45LDEsOWwwLDE2YzAsMS4xLDAuOSwyLDIsMmgxMmMxLjEsMCwyLTAuOSwyLTJWMTNMMTEsN3ogTTEwLDE0VjguNWw1LjUsNS41SDEweiIvPjwvc3ZnPg==);
-  background: var(--guildlistcolor);
+  background: var(--titlebar);
   width: 40px;
   height: 40px;
   padding: 5px 5px 5px 5px;
@@ -5794,7 +5799,7 @@ svg.buttonIcon-3yYVOH[name="Nova_MicrophoneMute"] {
   transform: scale(1.2);
   display: block;
   position: absolute;
-  border-radius: 50%;
+  border-radius: var(--avatars);
   width: 100%;
   height: 100%;
   transition: 300ms ease;
@@ -6725,7 +6730,7 @@ border-radius: 0px;
 }
 
 .theme-dark .image-2LqJex /*znaczek nsfw*/{
-  background: url("https://vgy.me/HAhg3L.png") no-repeat center !important;
+  background: url("https://i.imgur.com/YVESOkk.png") no-repeat center !important;
   width: 437px;
   height: 365px;
   margin-left: -70px;
@@ -7176,7 +7181,9 @@ color: #FFFFFF !important;
 }
 
 
-
+.theme-dark .akaBadge-1M-1Gw {
+  background-color: var(--titlebar);
+}
 .userPopout-3XzG_A .headerName-fajvi9::before {
   content: "AKA:";
   color: #fff;
@@ -8001,8 +8008,8 @@ color: rgb(255, 255, 255)
     .container-2Thooq .avatar-3JE4B3 + .status-oxiHuE::before {
       content: "";
       display: block;
-      width: 240px;
-      height: 72px;
+      width: 270px;
+      height: 70px;
       background: var(--headercolor);
       position: fixed;
       left: 70px;
@@ -8019,8 +8026,8 @@ color: rgb(255, 255, 255)
     
     .alt-3btY0e.menu-Sp6bN1 {
       border-radius: 0 !important;
-      width: 240px !important;
-      bottom: 23px !important;
+      width: 270px !important;
+      bottom: 22px !important;
       top: initial !important;
       height: 70px !important;
       display: block;
@@ -8060,7 +8067,7 @@ color: rgb(255, 255, 255)
       color: transparent;
       pointer-events: auto;
       float: left;
-      width: 55px;
+      width: 65px;
       height: 70px;
       padding: 0 !important;
       left: 0;
@@ -8180,7 +8187,7 @@ color: rgb(255, 255, 255)
       background-color: var(--headercolor) !important;
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2) !important;
       padding: 6px 10px;
-      border-radius: 3px;
+      border-radius: 0px;
       font-size: 13px;
       z-index: 1000000000000000000;
       pointer-events: none;
@@ -11029,7 +11036,6 @@ background-color: var(--headercolor) !important;
 .root-SR8cQa .header-QKLPzZ .headerInfo-30uryT .nameTag-m8r81H .discriminator {
   line-height: 20px;
   top: -3px;
-  right: -2px;
   font-size: 11px;
   position: relative;
   margin-left: 3px;
