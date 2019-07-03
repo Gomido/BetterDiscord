@@ -22,7 +22,7 @@
   --chatanim: 0;
   --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
   --home-color: #fff; /* kolor ikony domku na liscie serwerow*/
-  --home-size: 30px; 
+  --home-size: 28px; 
   --rs-spacing: 1px; /* odstep miedzy ramka a avatarem */
   --rs-width: 2px; /* wielkosc ramki wokol avatara */
   --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
@@ -36,6 +36,9 @@
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
   --version: "Ładny Skin 03/07/19";
+
+
+
 
   --shadow: rgba(0,0,0,.8);
 
@@ -369,7 +372,7 @@ a {
   content: 'Szukaj konwersacji';
   position: absolute;
   height: 100%;
-  width: 180px;
+  width: 240px;
   top: 10px;
   right: 0vw;
   color: var(--textcolor);
@@ -389,7 +392,7 @@ a {
 }
 
 .privateChannels-1nO12o .searchBar-6Kv8R2:hover {
-  width: 200px;
+  width: 240px;
 }
 .privateChannels-1nO12o .searchBar-6Kv8R2:hover {
   background-color: var(--accentcolor);
@@ -1364,7 +1367,6 @@ border-radius: 0px;
 margin-top: -61px;
 position: absolute;
 z-index: 2;
-height: 46px;
 }
 
 
@@ -1414,7 +1416,7 @@ padding: 0px 0 20px 0 !important;
 
 .guildsWrapper-5TJh6A .scrollerWrap-1IAIlv,
 .wrapper-1Rf91z .scrollerWrap-1IAIlv { 
-margin-top: 49px !important;
+margin-top: 50px !important;
 }
 
 
@@ -1537,8 +1539,8 @@ margin-top: 49px !important;
   
 
     .listItem-2P_4kh .wrapper-25eVIn {
-      height: 60px;
-      width: 60px; 
+      height: 59px;
+      width: 59px; 
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -2001,6 +2003,7 @@ margin-top: 49px !important;
 
 
 .homeIcon-tEMBK1 {
+  margin-top: 4px;
   background-color: var(--home-color);
   -webkit-mask: url(https://gomido.github.io/img/home.svg);
   -webkit-mask-size: var(--home-size);
@@ -3422,6 +3425,7 @@ color: var(--dnd) !important;
 
 .channels-Ie2l6A, 
 .container-PNkimc {
+  width:270px;
   z-index: 4 !important;
 }
 
@@ -3633,7 +3637,93 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
   border-bottom: 0px solid transparent;
 }
 
-  /* 5.g. DM List */
+
+
+/*prywatne widomosci, lista znajomych*/
+.channel-2QD9_O a {
+	background: transparent !important;
+}
+
+.channel-2QD9_O.selected-1HYmZZ {
+	background-color: var(--headercolor) !important;
+	border-radius: 0px;
+	border-left: 2px solid var(--accentcolor);
+}
+
+.channel-2QD9_O {
+	border-radius: 0px;
+	border-left: 2px solid transparent;
+}
+
+.channel-2QD9_O:not(.selected-1HYmZZ):hover {
+	background-color: var(--titlebar) !important;
+	border-left: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+
+.privateChannels-1nO12o header {
+	margin-top: -5px;
+}
+
+#app-mount .channel-2QD9_O:not([style="height: 42px; opacity: 1;"]) {
+  display: inline-block;
+  left: 4px;
+	margin-top: 0px !important;
+	padding: initial !important;
+	width: calc(25% - 1px);
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.privateChannels-1nO12o .channel-2QD9_O:not([style="height: 42px; opacity: 1;"]) a {
+	height: 50%;
+	flex-direction: column;
+	background: transparent !important;
+}
+
+.privateChannels-1nO12o .channel-2QD9_O:not([style="height: 42px; opacity: 1;"]) a {
+	height: 50%;
+	flex-direction: column;
+	background: transparent !important;
+}
+
+.channel-2QD9_O:hover .linkButtonIcon-Mlm5d6,
+.channel-2QD9_O:not([style="height: 42px; opacity: 1;"]):hover .name-2WpE7M,
+.channel-2QD9_O.selected-1HYmZZ .linkButtonIcon-Mlm5d6,
+.channel-2QD9_O.selected-1HYmZZ:not([style="height: 42px; opacity: 1;"]) .name-2WpE7M {
+	color: #FFF !important;
+}
+
+.linkButtonIcon-Mlm5d6
+{
+  margin-left: 10px !important;
+}
+
+
+.channel-2QD9_O.selected-1HYmZZ{
+  background-color: var(--headercolor) !important;
+}
+.channel-2QD9_O:not([style="height: 42px; opacity: 1;"]) .numberBadge-2s8kKX {
+	position: absolute;
+  top: 30%;
+  right:20%;
+	z-index: 1 !important;
+}
+
+.channel-2QD9_O:not([style="height: 42px; opacity: 1;"]) a .name-2WpE7M {
+	font-size: 12px !important;
+	margin-left: -4px !important;
+}
+
+.privateChannels-1nO12o .channel-2QD9_O {
+	padding-right: 0px;
+}
+
+div[style*="width: 100%; height: 20px"] {
+	height: 10px !important;
+}
+  /* 5.g. DM List 
 .privateChannels-1nO12o .channel-2QD9_O a {
   margin: unset;
   border-radius: 0px;
@@ -3658,7 +3748,7 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
 .privateChannels-1nO12o .channel-2QD9_O.selected-1HYmZZ:hover a {
   border-left: 2px solid var(--accentcolor) !important;
 }
-
+*/
   /* 5.h. Unread Messages Popout */
 .container-35XQWE {
   z-index: 2;
@@ -7446,7 +7536,7 @@ margin:15px;}
 .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"] {
   left: 73px !important;
   top: 68px !important;
-  width: 235px !important;
+  width: 265px !important;
   height: auto;
   margin: 0px;
   -ms-transform: none !important;
