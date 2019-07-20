@@ -35,7 +35,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 17/07/19";
+  --version: "Ładny Skin 20/07/19";
 
 
 
@@ -3668,8 +3668,7 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
 }
 
 
-
-/*prywatne widomosci, lista znajomych*/
+/*prywatne widomosci, lista znajomych TYMCZASOWO WYLACZONE
 .channel-2QD9_O a {
 	background: transparent !important;
 }
@@ -3753,7 +3752,7 @@ background-image: linear-gradient(90deg, transparent,rgba(54,57,63,0));
 div[style*="width: 100%; height: 20px"] {
 	height: 10px !important;
 }
-  /* 5.g. DM List 
+  /* 5.g. DM List */
 .privateChannels-1nO12o .channel-2QD9_O a {
   margin: unset;
   border-radius: 0px;
@@ -3822,9 +3821,14 @@ div[style*="width: 100%; height: 20px"] {
   line-height: 18px;
 }
 
+/*TEMP FIX (for broken avatars) STABLE*/
+.avatar-17mtNa {
+    position: relative;
+}
+/*
 .username-_4ZSMR{
   margin-left:-10px !important;
-}
+}*/
 
 .username-_4ZSMR:hover{
   background: var(--titlebar);
@@ -10071,7 +10075,7 @@ background-color: var(--headercolor) !important;
 }
 /*changelog*/
 #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "Znane bugi:\a - rozmycie ikon na pasku ze zmiana statusu\a \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a \a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
+  content: "Znane bugi:\a - brak ikon zmiany statusu (zmiana działa, ale trzeba na czuja wybierać status)\a - popsuta lista znajomych \a - brak statusów wokół avatara \a  \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a \a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
 
 
   #bd-settingspane-container .bda-slist::before {
