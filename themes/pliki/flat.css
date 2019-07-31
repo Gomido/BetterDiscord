@@ -35,7 +35,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 20/07/19";
+  --version: "Ładny Skin 31/07/19";
 
 
 
@@ -628,8 +628,15 @@ a {
   .keybind-KpFkfr{
       display: none;
   }
-/*activity tab*/
 
+  .updateIconForeground-3tnNZn{
+    fill: var(--accentcolor); 
+  }
+
+/*activity tab*/
+.theme-dark .emptyCard-3CNsz2{
+  background-color: var(--headercolor);
+}
 .wrapper-2F3Zv8.large-3ChYtB
 {
 height:30px;
@@ -3980,11 +3987,11 @@ div[style*="width: 100%; height: 20px"] {
 }
 
 /* 7. Members List */
-.theme-dark .member-3W1lQa.popout-open .content-OzHfo4 {
+.theme-dark .member-3W1lQa.popout-open{
   background: var(--headercolor) !important;
 
 }
-.theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
+.theme-dark .member-3W1lQa.popout-open, .theme-dark .member-3W1lQa.popout-open:hover {
   background-color: var(--headercolor);
   color: #fff;
 }
@@ -4003,7 +4010,7 @@ div[style*="width: 100%; height: 20px"] {
 }
 
 
-.theme-dark .member-3W1lQa:hover .content-OzHfo4  {
+.theme-dark .member-3W1lQa:hover  {
   background: var(--guildlistcolor);
 }
   /* 7.b. add Roles */
@@ -5621,130 +5628,205 @@ box-sizing: border-box;
   mask-image: none;
 }
   
-  /* 11.b. Radial Status */
-  .wrapper-2F3Zv8 [class*="status"],
-  [class*="memberOffline-"] [class*="avatarOffline-"]::after {
-      width:100%!important;
-      background: transparent;
-      border-radius: inherit !important;
-      height: 100%!important;
-      transition: all 200ms ease !important;
-      top: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
-      right: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
-      bottom: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
-      left: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
-      padding: var(--rs-spacing) !important;
-      transition: all 200ms ease !important;
-      border: var(--rs-width) solid transparent !important;
-      margin: 0 !important;
-      pointer-events: none;
-  }
-  
-  [class*="user-info"] [class*="status"] {
-    border: none !important;
-  }
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="idle"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Idle"],
-  .root-2sNHUF [class*="idle"] {
-      border-color: var(--idle) !important;
-  }
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="dnd"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Dnd"],
-  .root-2sNHUF [class*="dnd"] {
-      border-color: var(--dnd) !important;
-  }
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="streaming"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Streaming"],
-  .root-2sNHUF [class*="streaming"]{
-      animation: streaming-flash 2s linear infinite !important;
-      border-color: var(--streaming) !important;
-}
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="online"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Online"],
-  .root-2sNHUF [class*="online"] {
-      border-color: var(--online) !important;
-  }
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="invisible"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Invisible"],
-  .root-2sNHUF [class*="invisible"] {
-      border-color: var(--invisible) !important;
-  }
-  
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="offline"],
-  [class*="theme-"] .wrapper-2F3Zv8 [class*="Offline"],
-  .root-2sNHUF [class*="offline"] {
-      border-color: var(--offline) !important;
-  }
-  
-  [class*="members-"] [class*="memberOffline-"] [class*="status"] {
-    display: flex !important;
-  }
-  
-  [class*="members-"] [class*="member-"] {
-    padding-bottom: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
-    padding-top: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
-  }
-  
-  [class*="memberOffline-"] [class*="avatarOffline-"]::after {
+  /* 11.b. Radial Status */[role="img"][aria-label]:before {
     content: "";
     position: absolute;
-  }
-  
-  .wrapper-2F3Zv8 [class*="status"][class*="typing"] {
-      width: 100% !important;
-      background-color: rgba(0, 0, 0, 0.4) !important;
-      right: 0 !important;
-  }
-  .wrapper-2F3Zv8 [class*="status"][class*="typing"] [class*="spinner"] [class*="inner"] {
-      left: 1px !important;
-      top: 1px !important;
-  }
-  
-  .wrapper-2F3Zv8 [class*="mask"],
-  [class*="avatarWrapper-"] [class*="mask"] {
-    -webkit-mask: none!important;
-    mask: none;
-  }
-  
-  [class*="theme-"] .userPopout-11hFKo .wrapper-2F3Zv8,
-  [class*="theme-"] .root-2sNHUF .wrapper-2F3Zv8 {
-      border: none;
-  }
-  
-  [class*="theme-"] .userPopout-11hFKo .avatar-1BXaQj.popout-UKvsJt [class*="status"],
-  [class*="theme-"] .root-2sNHUF .header-2Lg0Oe .wrapper-2F3Zv8 [class*="status"] {
-    border-width: var(--rs-popout-width) !important;
-      top: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
-      right: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
-      bottom: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
-      left: calc(-1*var(--rs-popout-spacing) + -1*var(--rs-popout-width)) !important;
-      padding: var(--rs-popout-spacing) !important;
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
-      box-sizing: content-box;
-  }
-  
-  [class*="theme-"] .root-2sNHUF .header-2Lg0Oe .wrapper-2F3Zv8 [class*="status"] {
-      border-width: var(--rs-profile-width) !important;
-      padding: var(--rs-profile-spacing) !important;
-      top: calc(-1*var(--rs-profile-spacing) + -1*var(--rs-profile-width)) !important;
-      right: calc(-1*var(--rs-profile-spacing) + -1*var(--rs-profile-width)) !important;
-      bottom: calc(-1*var(--rs-profile-spacing) + -1*var(--rs-profile-width)) !important;
-      left: calc(-1*var(--rs-profile-spacing) + -1*var(--rs-profile-width)) !important;
-  }
-  
-  [class*="theme-"] .root-2sNHUF .wrapper-2F3Zv8 > a {
-    width: inherit;
-      height: inherit;
-      border-radius: inherit;
-      position: absolute;
-      z-index: 1;
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px #666;
+    border-radius: var(--avatars);
+    z-index: 20;
+    border: none !important
+}
+.friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm {padding-left: 15px;}
+.avatarOffline-3GF27z {filter: grayscale(100%);}
+
+[role="img"][aria-label] foreignObject {mask: none;}
+[role="img"][aria-label] foreignObject img {border-radius: var(--avatars);}
+[role="img"][aria-label] svg rect {display: none;}
+
+[role="img"][aria-label*="Online"]:before,
+[role="img"][aria-label*="Conectado"]:before,
+[role="img"][aria-label*="En ligne"]:before,
+[role="img"][aria-label*="Na mreži"]:before,
+[role="img"][aria-label*="Prisijungęs"]:before,
+[role="img"][aria-label*="Elérhető"]:before,
+[role="img"][aria-label*="Pålogget"]:before,
+[role="img"][aria-label*="Dostępny"]:before,
+[role="img"][aria-label*="Disponível"]:before,
+[role="img"][aria-label*="Paikalla"]:before,
+[role="img"][aria-label*="Trực tuyến"]:before,
+[role="img"][aria-label*="Çevrimiçi"]:before,
+[role="img"][aria-label*="Συνδεδεμένος"]:before,
+[role="img"][aria-label*="На линия"]:before,
+[role="img"][aria-label*="В сети"]:before,
+[role="img"][aria-label*="В мережі"]:before,
+[role="img"][aria-label*="ออนไลน์"]:before,
+[role="img"][aria-label*="在线"]:before,
+[role="img"][aria-label*="オンライン"]:before,
+[role="img"][aria-label*="線上"]:before,
+[role="img"][aria-label*="온라인"]:before {
+  box-shadow: 0 0 0 2px var(--online);
+}
+[role="img"][aria-label*="Do Not Disturb"]:before,
+[role="img"][aria-label*="Vil ikke forstyrres"]:before,
+[role="img"][aria-label*="Bitte nicht stören"]:before,
+[role="img"][aria-label*="No molestar"]:before,
+[role="img"][aria-label*="Ne pas déranger"]:before,
+[role="img"][aria-label*="Ne uznemiravaj"]:before,
+[role="img"][aria-label*="Non disturbare"]:before,
+[role="img"][aria-label*="Netrukdyti"]:before,
+[role="img"][aria-label*="Niet storen"]:before,
+[role="img"][aria-label*="Ikke forstyrr"]:before,
+[role="img"][aria-label*="Nie przeszkadzać"]:before,
+[role="img"][aria-label*="Elfoglalt"]:before,
+[role="img"][aria-label*="Não perturbar"]:before,
+[role="img"][aria-label*="Nu deranja"]:before,
+[role="img"][aria-label*="Älä häiritse"]:before,
+[role="img"][aria-label*="Stör ej"]:before,
+[role="img"][aria-label*="Vui Lòng Không Làm Phiền"]:before,
+[role="img"][aria-label*="Rahatsız Etmeyin"]:before,
+[role="img"][aria-label*="Nerušit"]:before,
+[role="img"][aria-label*="Μην ενοχλείτε"]:before,
+[role="img"][aria-label*="Не ме безпокой"]:before,
+[role="img"][aria-label*="Не беспокоить"]:before,
+[role="img"][aria-label*="Не турбувати"]:before,
+[role="img"][aria-label*="ห้ามรบกวน"]:before,
+[role="img"][aria-label*="请勿打扰"]:before,
+[role="img"][aria-label*="取り込み中"]:before,
+[role="img"][aria-label*="請勿打擾"]:before,
+[role="img"][aria-label*="다른 용무 중"]:before {
+  box-shadow: 0 0 0 2px var(--dnd);
+}
+[role="img"][aria-label*="Idle"]:before,
+[role="img"][aria-label*="Inaktiv"]:before,
+[role="img"][aria-label*="Abwesend"]:before,
+[role="img"][aria-label*="Ausente"]:before,
+[role="img"][aria-label*="Inactif"]:before,
+[role="img"][aria-label*="U mirovanju"]:before,
+[role="img"][aria-label*="Inattivo"]:before,
+[role="img"][aria-label*="Pasitraukęs"]:before,
+[role="img"][aria-label*="Tétlen"]:before,
+[role="img"][aria-label*="Inactief"]:before,
+[role="img"][aria-label*="Zaraz wracam"]:before,
+[role="img"][aria-label*="Inactiv"]:before,
+[role="img"][aria-label*="Toimeton"]:before,
+[role="img"][aria-label*="Chờ"]:before,
+[role="img"][aria-label*="Boşta"]:before,
+[role="img"][aria-label*="Nečinný"]:before,
+[role="img"][aria-label*="Αδρανής"]:before,
+[role="img"][aria-label*="Не се използва"]:before,
+[role="img"][aria-label*="Не активен"]:before,
+[role="img"][aria-label*="Відійшов"]:before,
+[role="img"][aria-label*="ไม่อยู่"]:before,
+[role="img"][aria-label*="闲置"]:before,
+[role="img"][aria-label*="退席中"]:before,
+[role="img"][aria-label*="閒置"]:before,
+[role="img"][aria-label*="자리비움"]:before {
+  box-shadow: 0 0 0 2px var(--idle);
+}
+[role="img"][aria-label*="Streaming"]:before,
+[role="img"][aria-label*="Streamer"]:before,
+[role="img"][aria-label*="Transmitiendo"]:before,
+[role="img"][aria-label*="En direct"]:before,
+[role="img"][aria-label*="In diretta"]:before,
+[role="img"][aria-label*="Transliuojama"]:before,
+[role="img"][aria-label*="Közvetítés"]:before,
+[role="img"][aria-label*="Streamt"]:before,
+[role="img"][aria-label*="Strømmer"]:before,
+[role="img"][aria-label*="Streamowanie"]:before,
+[role="img"][aria-label*="Transmitindo"]:before,
+[role="img"][aria-label*="Transmite live"]:before,
+[role="img"][aria-label*="Striimaa"]:before,
+[role="img"][aria-label*="Streamar"]:before,
+[role="img"][aria-label*="Đang stream"]:before,
+[role="img"][aria-label*="Yayın Yapıyor"]:before,
+[role="img"][aria-label*="Streamuje"]:before,
+[role="img"][aria-label*="Ζωντανά"]:before,
+[role="img"][aria-label*="Стрийминг"]:before,
+[role="img"][aria-label*="Стримит"]:before,
+[role="img"][aria-label*="Трансляція"]:before,
+[role="img"][aria-label*="ถ่ายทอดสด"]:before,
+[role="img"][aria-label*="正在直播"]:before,
+[role="img"][aria-label*="配信"]:before,
+[role="img"][aria-label*="直播中"]:before,
+[role="img"][aria-label*="配信"]:before {
+  box-shadow: 0 0 0 2px var(--streaming);
+}
+[role="img"][aria-label*="Offline"]:before,
+[role="img"][aria-label*="Hors ligne"]:before,
+[role="img"][aria-label*="Nem elérhető"]:before,
+[role="img"][aria-label*="Neprisijungęs"]:before,
+[role="img"][aria-label*="Niedostępny"]:before,
+[role="img"][aria-label*="Izvan mreže"]:before,
+[role="img"][aria-label*="오프라인"]:before,
+[role="img"][aria-label*="離線"]:before,
+[role="img"][aria-label*="オフライン"]:before,
+[role="img"][aria-label*="离线"]:before,
+[role="img"][aria-label*="ออฟไลน์"]:before,
+[role="img"][aria-label*="Не в мережі"]:before,
+[role="img"][aria-label*="Не в сети"]:before,
+[role="img"][aria-label*="Извън линия"]:before,
+[role="img"][aria-label*="Αποσυνδεδεμένος"]:before,
+[role="img"][aria-label*="Çevrimdışı"]:before,
+[role="img"][aria-label*="Ngoại tuyến"]:before,
+[role="img"][aria-label*="Ei paikalla"]:before,
+[role="img"][aria-label*="Frakoblet"]:before,
+[role="img"][aria-label*="Desconectado"]:before,
+.avatarOffline-3GF27z {
+  box-shadow: 0 0 0 2px var(--invisible);
+}
+[role="img"][aria-label*="Invisible"]:before,
+[role="img"][aria-label*="Usynlig"]:before,
+[role="img"][aria-label*="Unsichtbar"]:before,
+[role="img"][aria-label*="Nevidljiv/a"]:before,
+[role="img"][aria-label*="Nematomas"]:before,
+[role="img"][aria-label*="Izvan mreže"]:before,
+[role="img"][aria-label*="Nevidljiv/a"]:before,
+[role="img"][aria-label*="Nematomas"]:before,
+[role="img"][aria-label*="Láthatatlan"]:before,
+[role="img"][aria-label*="Onzichtbaar"]:before,
+[role="img"][aria-label*="Usynlig"]:before,
+[role="img"][aria-label*="Niewidoczny"]:before,
+[role="img"][aria-label*="Invisível"]:before,
+[role="img"][aria-label*="Invizibil"]:before,
+[role="img"][aria-label*="Näkymätön"]:before,
+[role="img"][aria-label*="Osynlig"]:before,
+[role="img"][aria-label*="Vô hình"]:before,
+[role="img"][aria-label*="Görünmez"]:before,
+[role="img"][aria-label*="Neviditelný"]:before,
+[role="img"][aria-label*="Αόρατος"]:before,
+[role="img"][aria-label*="Невидим"]:before,
+[role="img"][aria-label*="Невидимый"]:before,
+[role="img"][aria-label*="Невидимий"]:before,
+[role="img"][aria-label*="ไม่ระบุ"]:before,
+[role="img"][aria-label*="隐身"]:before,
+[role="img"][aria-label*="オンライン状態を隠す"]:before,
+[role="img"][aria-label*="隱形"]:before,
+[role="img"][aria-label*="오프라인 표시"]:before {
+  box-shadow: 0 0 0 2px var(--invisible);
+}
+.cursorDefault-dsQJ1n,
+.dots-3Bkt3k {
+    overflow:visible;
+}
+
+.dots-3Bkt3k [cx="2.5"] {
+    cy:-8;
+    cx: -8.5;
+}
+
+.dots-3Bkt3k [cx="8.75"] {
+    cy:-8;
+    cx: -2.25;
+}
+
+.dots-3Bkt3k [cx="15"] {
+    cy:-8;
+    cx: 4;
+}
 
 /* poprawka mutowania, przekreslania ikon */
 /* MUTE AND DEAFEN */
@@ -6644,6 +6726,12 @@ z-index:50}
 
   /* 15.d. User Popout */
 /* 23. User Popup */
+
+.popoutLeft-3aViER{ /*przesuniecie popouta ludzi z serwera*/
+  margin-left: -30px !important
+}
+
+
 /*role hider*/
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3 {overflow-y:scroll;max-height:112px}
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar {width:2px;background:transparent}
@@ -7120,7 +7208,62 @@ Plugin: PermissionsViewer by Zerebos
 ---------------------------
 */  
 
-
+/*Server Folders DISCORD NiE PLUGIN(the literal new feature) Tempfix*/
+.expandedFolderBackground-2sPsd- {
+  height: calc(100% -5%);
+  top: 12px;
+  background: var(--accentcolor)!important;
+  opacity: 0.15;
+  transition: 250ms cubic-bezier(0,0,0,1);
+}
+.expandedFolderBackground-2sPsd-.selected-2vZ0oV{
+  opacity: .25!important;
+}
+.expandedFolderBackground-2sPsd-.collapsed-1GMuSb {
+  display: none!important;
+}
+.folder-21wGz3 {
+  background: var(--accentcolor)!important;
+}
+.wrapper-21YSNc .expandedGuilds-1JMD4M{
+  height: 100%!important;
+}
+.folder-21wGz3 {
+  position: relative;
+  height: 38px!important;
+  width: 38px!important;
+  left: 5px;
+  top: 5px;
+  border-radius: var(--avatars);
+}
+.closedFolderIconWrapper-15K9MK {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 8px;
+  top: 8px;
+  z-index: 1;
+}
+.closedFolderIconWrapper-15K9MK .iconSizeSmol-2Dw61G{
+  height: 12px;
+  width: 12px;
+}
+.wrapper-21YSNc .expandedGuilds-1JMD4M .listItem-2P_4kh div .wrapper-25eVIn svg{
+  height: 100%!important;
+  width: 100%!important;
+}
+.folderIconWrapper-226oVY{
+  position: relative;
+  left: -5px!important;
+  top: -5px!important;
+  background-color: transparent!important
+}
+.folderIconWrapper-226oVY .expandedFolderIconWrapper-1xLaU- svg{
+  height: 20px!important;
+  width: 20px!important;
+  color: white!important;
+}
+/*End Server Folders (the literal new feature) Tempfix*/
 
 .headerXbox-3G-4PF .assets-VMAukC {
   padding-left:0px !important;
@@ -7154,7 +7297,7 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 
-.wrapper-2F3Zv8.profile-ZOdGIb.avatar-3EQepX{
+.avatar-3EQepX.wrapper-3t9DeA{
   height: 120px;
   width: 120px;
   left: 20px;
@@ -7186,8 +7329,8 @@ Plugin: PermissionsViewer by Zerebos
   top: 0px !important;
   left: 40px !important;
 }
-/* mobile indicator*/ 
 
+/* mobile indicator*/ 
 
 /* Role colour Mobile indicator */
 .theme-dark .mobileIndicator-329Gd6 {
@@ -8073,7 +8216,7 @@ color: rgb(255, 255, 255)
 }
   /* 16.b. Status Picker */
 
-  .alt-3btY0e.menu-Sp6bN1 {
+  /* .alt-3btY0e.menu-Sp6bN1 {
     border-radius: 0 !important;
     width: 270px !important;
     margin-left: -10px;
@@ -8223,7 +8366,187 @@ color: rgb(255, 255, 255)
     width: 100% !important;
     margin-right: 0px !important;
     transition: all 200ms ease-in-out;
+  } */
+
+
+  /*-----------------*/
+    /* 16.b. Status Picker */
+
+  .alt-3btY0e.menu-Sp6bN1 {
+    border-radius: 0 !important;
+    width: 270px !important;
+    margin-left: -10px;
+    margin-bottom:6px;
+    box-shadow: none;
   }
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH div {
+  color: transparent;
+}
+
+.alt-3btY0e .item-1GzJrl .helper-2c73HK {
+  display: none;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl {
+  position: relative;
+  display: inline-block;
+  width: 67.5px;
+  height: 68px;
+  vertical-align: top;
+  background: transparent;
+  overflow: hidden;
+  transform: perspective(1px) scale(1);
+  animation: status 300ms ease backwards;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(3) {
+  animation-delay: 100ms !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(4) {
+  animation-delay: 200ms !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(5) {
+  animation-delay: 300ms !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover {
+  background: transparent !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:last-child {
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top: -30px;
+  height: 30px;
+  background-color: var(--headercolor);
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:last-child:hover {
+  background-color: var(--headercolor);
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:last-child .justifyStart-2NDFzi {
+  justify-content: center;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover .statusIconText-3b4TkH {
+  transform: scale(1.2);
+  transition: all 200ms ease-in-out;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto !important;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(1) .statusIconText-3b4TkH {
+  background-color: var(--online);
+  border-radius: 0;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(3) .statusIconText-3b4TkH {
+  background-color: var(--idle);
+  border-radius: 0;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(4) .statusIconText-3b4TkH {
+  background-color: var(--dnd);
+  border-radius: 0;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(5) .statusIconText-3b4TkH {
+  background-color: var(--invisible);
+  border-radius: 0;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover [class*="status"].online-2S838R:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover [class*="status"].idle-3DEnRT:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover [class*="status"].dnd-1_xrcq:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover [class*="status"].invisible-1kp8Z0:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl [class*="status"].online-2S838R:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl [class*="status"].idle-3DEnRT:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl [class*="status"].dnd-1_xrcq:after,
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl [class*="status"].invisible-1kp8Z0:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position:center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover .statusIconText-3b4TkH:after {
+  opacity: 1;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(1) .statusIconText-3b4TkH:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==);
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(3) .statusIconText-3b4TkH:after {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iLTkyOSw1NDQuNSAtOTMwLDU0NiAtOTM2LjIsNTQyLjIgLTkzNi4yLDUzNSAtOTM0LjQsNTM1IC05MzQuNCw1NDEuMiAiLz48L3N2Zz4=);
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(4) .statusIconText-3b4TkH:after {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxyZWN0IHg9Ii05NDAuNCIgeT0iNTQwLjEiIGNsYXNzPSJzdDAiIHdpZHRoPSIxMC45IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-child(5) .statusIconText-3b4TkH:after {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tOTM0LjEsNTQzLjZoLTEuOHYtMC45YzAtMC41LDAuMS0xLDAuMy0xLjRjMC4yLTAuNCwwLjYtMC45LDEuMi0xLjRjMC42LTAuNSwxLTEsMS4yLTEuM2MwLjItMC4zLDAuMy0wLjcsMC4zLTEuMWMwLTAuNi0wLjItMS4xLTAuNi0xLjRjLTAuNC0wLjMtMC45LTAuNS0xLjUtMC41Yy0xLjEsMC0xLjgsMC42LTIuMiwxLjhsLTEuNi0wLjdjMC4zLTAuOCwwLjgtMS41LDEuNS0yYzAuNy0wLjUsMS41LTAuOCwyLjQtMC44YzEuMSwwLDIsMC4zLDIuOCwxYzAuNywwLjcsMS4xLDEuNSwxLjEsMi42YzAsMC41LTAuMSwxLTAuNCwxLjVjLTAuMywwLjUtMC44LDEuMS0xLjUsMS43Yy0wLjcsMC43LTEuMSwxLjMtMS4xLDJWNTQzLjZ6IE0tOTMzLjgsNTQ2LjZjMCwwLjQtMC4xLDAuNi0wLjQsMC45Yy0wLjIsMC4yLTAuNSwwLjQtMC45LDAuNGMtMC4zLDAtMC42LTAuMS0wLjktMC40Yy0wLjItMC4yLTAuNC0wLjUtMC40LTAuOWMwLTAuNCwwLjEtMC43LDAuNC0wLjljMC4yLTAuMiwwLjUtMC40LDAuOS0wLjRjMC40LDAsMC43LDAuMSwwLjksMC40Qy05MzMuOSw1NDYtOTMzLjgsNTQ2LjMtOTMzLjgsNTQ2LjZ6Ii8+PC9nPjwvc3ZnPg==);
+}
+
+
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH .status-oxiHuE {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+  margin-right: 0px !important;
+  transition: all 200ms ease-in-out;
+}
 
     /*/STATUS PICKER*/
   /* 16.c. Message Menu */
@@ -8736,7 +9059,8 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .disabledButtonColor-1aUKuC,
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:disabled,
 .lookOutlined-3sRXeN.colorGrey-2DXtkV,
-.theme-dark .disabledButton-3apIHo
+.theme-dark .disabledButton-3apIHo,
+.bd-modal-wrapper .footer button
  {
   background-color: transparent;
   border: 1px solid var(--accentcolor);
@@ -8747,7 +9071,8 @@ body .animator-US5i9g .action-1lSjCi.join-33Tr-7:active .actionButton-2PeQbJ {
 .theme-dark .learnMoreButton-1OUyxs:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ:hover,
 .lookOutlined-3sRXeN.colorGrey-2DXtkV:hover,
-.theme-dark .disabledButton-3apIHo:hover{
+.theme-dark .disabledButton-3apIHo:hover,
+.bd-modal-wrapper .footer button:hover{
   background-color: var(--accentcolor) !important;
   border-color: var(--accentcolor)
 }
@@ -10075,7 +10400,7 @@ background-color: var(--headercolor) !important;
 }
 /*changelog*/
 #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "Znane bugi:\a - brak ikon zmiany statusu (zmiana działa, ale trzeba na czuja wybierać status)\a - popsuta lista znajomych \a - brak statusów wokół avatara \a  \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a \a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
+  content: "Znane bugi:\a \a - cofnalem liste znajomych bo starej sie nie da naprawic \a - koło jako status \a  \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a \a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
 
 
   #bd-settingspane-container .bda-slist::before {
@@ -10318,10 +10643,23 @@ background-color: var(--headercolor) !important;
   .container-1YxwTf .avatar-17mtNa {
   transition: background 200ms ease !important; }
 
+/*error okienko np jak popsuty plugin*/ 
 
-/*znaczki nick*/ 
+.bd-modal-wrapper .bd-modal-inner{
+  border-radius: 0px;
+}
 
-.large-3ChYtB:not(.wrapper-2F3Zv8)::before {
+.bd-modal-wrapper .header {
+  background-color: var(--titlebar);
+}
+
+.bd-modal-wrapper .bd-modal-body {
+  background-color: var(--guildlistcolor);
+}
+
+/*znaczki nick*
+
+.wrapper-3t9DeA[user_by_bdfdb]::before {
   color: rgba(255, 255, 255, 0.3);
   font-size: 13px;
   position: absolute;
@@ -10332,11 +10670,19 @@ background-color: var(--headercolor) !important;
   font-family: BMTicons;
   pointer-events: none;
   display: inline-block !important;
-  z-index: 2;
+  z-index: 1;
 }
 
+.guild-settings-audit-logs .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+.guild-settings-audit-logs .large-3ChYtB:not(.wrapper-2F3Zv8)::after,
+.standardSidebarView-3F1I7i .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+.standardSidebarView-3F1I7i .large-3ChYtB:not(.wrapper-2F3Zv8)::after,
+.inner-1JeGVc .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+.activityFeed-1C0EmJ .large-3ChYtB:not(.wrapper-2F3Zv8)::before{
+  display: none !important;
+}
 
-  /* badges */ /*francuz*/
+  /* badges */ /*francuz*
   .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="235728701348773888"]::before
   {
     content: '';
@@ -10351,31 +10697,25 @@ background-color: var(--headercolor) !important;
     pointer-events: none;
     z-index:2 !important}
   
-/*kongresja mleczko*/
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before,
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before,
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before,
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="131422437907759105"]::before,
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="298197139522191371"]::before,
-.large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before
-{
-      content: '';
-      color: transparent;
-      height: 15px;
-      width: 15px;
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: -10px;
-      right: -10px;
-      pointer-events: none;
-      z-index:2 !important}
+
     
+/*kongresja mleczko*
+
+.wrapper-3t9DeA[user_by_bdfdb="352439662834614272"]::before,
+.wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before,
+.wrapper-3t9DeA[user_by_bdfdb="187263626329980929"]::before,
+.wrapper-3t9DeA[user_by_bdfdb="131422437907759105"]::before,
+.wrapper-3t9DeA[user_by_bdfdb="298197139522191371"]::before,
+.wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before
+ {      background-repeat: no-repeat;
+  content: "}";
+}
 
 
-/*zagro*/
-    .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::before
-    {
+
+/*zagro*
+.wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before
+ {
       content: '';
       color: transparent;
       height: 15px;
@@ -10389,15 +10729,17 @@ background-color: var(--headercolor) !important;
       z-index:2 !important}
       
 
-/* Lolek */
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186609657928744962"]::before {
-   background-image: url(https://gomido.github.io/img/elleCrown.svg);
-   
+/* Lolek *
+.wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before
+{
+  background-image: url(https://gomido.github.io/img/elleCrown.svg);
   }
 
-  /* ADV */
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="131422437907759105"]::before {
-    background-image: url(https://i.imgur.com/SiKtbLr.png);
+  /* ADV *
+
+  .wrapper-3t9DeA[user_by_bdfdb="131422437907759105"]::before
+{
+background-image: url(https://i.imgur.com/SiKtbLr.png);
     content: '';
     color: transparent;
     height: 18px;
@@ -10408,41 +10750,43 @@ background-color: var(--headercolor) !important;
     z-index:2 !important
    }
 
-  /* krzys */
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="187263626329980929"]::before {
-    background-image: url(https://gomido.github.io/img/rocket.svg)
+  /* krzys *
+  .wrapper-3t9DeA[user_by_bdfdb="187263626329980929"]::before
+{
+background-image: url(https://gomido.github.io/img/rocket.svg)
    }
   
-/* francuz */
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="235728701348773888"]::before {
-    background-image: url(https://gomido.github.io/img/dolar.svg);
+/* francuz *
+.wrapper-3t9DeA[user_by_bdfdb="235728701348773888"]::before
+{
+background-image: url(https://gomido.github.io/img/dolar.svg);
     
   }
 
-  /*david*/
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="298197139522191371"]::before {
-    background-image: url(https://gomido.github.io/img/svg/poo.svg);
+  /*david*
+
+  .wrapper-3t9DeA[user_by_bdfdb="298197139522191371"]::before {
+  background-image: url(https://gomido.github.io/img/svg/poo.svg);
  }
   
-/*zagro*/
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="186817801741271040"]::before {
-   background-image: url(https://gomido.github.io/img/heart.svg);
+/*zagro*
+
+.wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before {
+ background-image: url(https://gomido.github.io/img/heart.svg);
 }
   
-/*kongresja*/
-  .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="352439662834614272"]::before {
+/*kongresja
+.wrapper-3t9DeA[user_by_bdfdb="352439662834614272"]::before {
     background-image: url(https://gomido.github.io/img/sunny.svg);
     
   }
 
-/*mleczko*/
-    .large-3ChYtB:not(.wrapper-2F3Zv8)[style*="270532835431940096"]::before {
+/*mleczko
+.wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before {
         background-image: url(https://gomido.github.io/img/diamond.svg);
         
       }
-
-
-      
+ */     
 .container-3cGP6G {
 	width: 128px;
 	padding: 8px 0;
