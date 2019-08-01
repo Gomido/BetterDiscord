@@ -5628,7 +5628,8 @@ box-sizing: border-box;
   mask-image: none;
 }
   
-  /* 11.b. Radial Status */[role="img"][aria-label]:before {
+  /* 11.b. Radial Status */
+  [role="img"][aria-label]:before {
     content: "";
     position: absolute;
     top: 0;
@@ -5637,7 +5638,7 @@ box-sizing: border-box;
     height: 100%;
     box-shadow: 0 0 0 2px #666;
     border-radius: var(--avatars);
-    z-index: 20;
+    z-index: 1;
     border: none !important
 }
 .friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm {padding-left: 15px;}
