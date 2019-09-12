@@ -35,7 +35,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 12/09/19";
+  --version: "Ładny Skin 11/09/19";
 
 
 
@@ -1083,6 +1083,7 @@ border-radius: 0px;
 }
 
 .guildsError-b7zR5H{
+  background-color: #be3838;
   border-radius: var(--avatars);
   margin-top:9px;
   width: 44px;
@@ -1344,6 +1345,11 @@ border-radius: 0px;
 #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn .svg-1X37T1 {
   height: 100% !important;
   width: 100% !important;
+}
+
+.selected-WP3kCM .header-2o-2hj,
+.clickable-2ap7je .header-2o-2hj:hover {
+  background-color: var(--headercolor);
 }
 
 .users-i_3-kL {
@@ -1859,7 +1865,7 @@ margin-top: 50px !important;
   top:2px;
   right:-2px;
 }
-*#app-mount::before {
+/*#app-mount::before {
 	content: 'Skin troche rozjebany, potem naprawie';
 	color: var(--accentcolor);
   font-weight: 500;
@@ -3942,6 +3948,10 @@ div[style*="width: 100%; height: 20px"] {
   font-size: 16px;
   height: 18px;
   line-height: 18px;
+}
+.nameTag-3uD-yy .usernameContainer-1fp4nu .title-eS5yk3 {
+  color: inherit;
+  font-weight: 500;
 }
 
 /*TEMP FIX (for broken avatars) STABLE*/
@@ -6401,17 +6411,26 @@ box-sizing: border-box;
   visibility: visible;
   transition: all 300ms ease, visibility 0ms; }
 
-  
+.button-3Jq0g9{
+    opacity:0.4;
+  }
 
-  .button-3Jq0g9:hover,
+.button-3Jq0g9:hover,
 .reactionBtn-2na4rd:hover {
-  opacity: 0.7 !important;
+  opacity: 0.8 !important;
   transition: all 0ms ease !important; }
 
-
-.messages-3amgkR .reactions-1xb2Ex .reactionBtn-2na4rd {
+.reactionBtn-2na4rd
+{
+  opacity: 0.4 ;
+  width: 10px;
+  height: 10px;
+  background: url(https://gomido.github.io/img/plus.svg) 50% no-repeat;
+}
+.messages-3amgkR .reactions-1xb2Ex .reactionBtn-2na4rd
+ {
   visibility: visible;
-  opacity: 0.5 !important;
+  opacity: 0.5 ;
   width: 10px;
   height: 10px;
   margin-top: 0px;
@@ -8020,55 +8039,6 @@ margin:15px;}
 }
 
   /* 15.g. Server Settings */
-  .item-1GzJrl:not(.invite-271nFU):hover .icon-2doZ3q{
-    filter:none !important;
-  }
-
-  .theme-dark .hotspot-WcPUtD, .theme-light .hotspot-WcPUtD {
-    background-color: var(--accentcolor);
-}
-
-.popoutBottom-2GAFPg[style*="overflow: hidden; visibility: visible;"] {
-  left: 73px !important;
-  top: 68px !important;
-  width: 265px !important;
-  height: auto;
-  margin: 0px;
-  -ms-transform: none !important;
-  transform: none !important;
-  position: absolute;
-  border-radius: 0px;
-  transform-origin: 50% -10%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-  border-left: 2px solid var(--accentcolor);
-  border-right: 2px solid var(--accentcolor);
-  border-bottom: 2px solid var(--accentcolor);
-  z-index: 99;
-}
-.theme-dark .menu-Sp6bN1 {
-  border-radius: 0px;
-  width: 100%;
-  background: var(--headercolor);
-}
-
-.menu-Sp6bN1 .separator-2zcjq8 {
-  display: none;
-}
-
-.item-1GzJrl:hover {
-  background-color: var(--guildlistcolor) !important;
-}
-
-.item-1GzJrl:not(.invite-271nFU):hover .icon-2doZ3q {
-  filter: grayscale(100%) brightness(250%);
-}
-
-.item-1GzJrl.invite-271nFU .icon-2doZ3q,
-.item-1GzJrl.leave-1DRJfn .icon-2doZ3q {
-  background-image: none !important;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: right;
-}
 
 .item-1GzJrl.invite-271nFU .icon-2doZ3q {
   -webkit-mask: url("https://discordapp.com/assets/d4ff0d2af68cd1119f0d16ef79d1369c.svg");
@@ -8136,29 +8106,84 @@ margin:15px;}
   font-weight: 600;
 }
 
+ /* 15.g. Server Settings */
+.layer-v9HyYc[style*="; top: "][id*="popout_"] {
+  left: 72px !important;
+  top: 68px !important;
+  width: 270px !important;
+  height: auto;
+  margin: 0px;
+  -ms-transform: none !important;
+  transform: none !important;
+  position: absolute;
+  border-radius: 0px;
+  transform-origin: 50% -10%;
+  z-index: 99;
+  overflow: visible !important;
+  box-shadow: none;
+}
+
+.layer-v9HyYc[style*="; top: "][id*="popout_"] .itemBase-1Qj4z6 {
+  margin: 0;
+  padding: 10px 25px;
+}
+
+.menu-Sp6bN1 {
+  padding: 0;
+  border-radius: 0px;
+  width: 100%;
+  background: var(--headercolor);
+  border-left: 2px solid var(--accentcolor);
+  border-right: 2px solid var(--accentcolor);
+  border-bottom: 2px solid var(--accentcolor);
+  animation: popoutanim 300ms cubic-bezier(.4, 0, 0, 1);
+  transform-origin: 50% -10%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
+
+.menu-Sp6bN1 .separator-2zcjq8 {
+  display: none;
+}
+
+.item-1GzJrl:hover {
+  background-color: var(--guildlistcolor) !important;
+}
+
+.item-1GzJrl:not(.invite-271nFU):hover .icon-2doZ3q {
+  filter: grayscale(100%) brightness(250%);
+}
+
+.item-1GzJrl.invite-271nFU .icon-2doZ3q,
+.item-1GzJrl.leave-1DRJfn .icon-2doZ3q {
+  background-image: none !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right;
+}
+
+
+.item-1GzJrl.invite-271nFU {
+  color: var(--accentcolor) !important;
+  font-weight: 600;
+}
+
+.item-1GzJrl.leave-1DRJfn {
+  color: var(--dnd) !important;
+}
+
+.item-1GzJrl:hover.invite-271nFU .icon-2doZ3q {
+  background-color: var(--accentcolor) !important;
+}
 
 .item-1GzJrl:hover.leave-1DRJfn .icon-2doZ3q {
   opacity: 1;
   filter: none !important;
 }
 
-
-
-.popoutList-T9CKZQ {
-  background-color: var(--titlebar) !important;
+.item-1GzJrl:hover.invite-271nFU {
+  color: var(--accentcolor) !important
 }
 
-.searchBar-1MOL6S {
-  background-color: var(--guildlistcolor) !important;
-}
-
-.selectableItem-1MP3MQ:hover {
-  background-color: var(--guildlistcolor) !important;
-}
-
-[style*="background: rgb(114, 137, 218)"] {
-  background: var(--accentcolor) !important;
-}
 
   /* 15.h. Group DM Invite Popout */
 .theme-dark .modal-yWgWj-,
@@ -12134,11 +12159,12 @@ background: var(--accentcolor);
   --codeblockcolor: #a462d0;
 }
 
-
+/*jak sie popsuje dodac to*/
 body::after {
   content:'Skin się lekko popsuł po ostatnim update, naprawiam powoli';
   top:4px;
   width:100%;
+  font-size: 12px;
   text-align:center;
   pointer-events:none;
   color:var(--accentcolor2);
@@ -12150,7 +12176,7 @@ body::after {
 }
 
 
-
+/*znaczki przy avatarze*/
 .wrapper-3t9DeA[user_by_bdfdb]::before {
   color: rgba(255, 255, 255, 0.3);
   font-size: 13px;
