@@ -7,9 +7,10 @@
 :root {
 
   --avatars: 50%; /* 0% - kwadratowe avatary, 50% okragle*/
-  --accentcolor: #3F85FF; /*główny kolor skina/elementów po kliknięciu*/
+  --accentcolor: #b91414; /*główny kolor skina/elementów po kliknięciu*/
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu (np pasek na liście osob)*/
-  --badgecolor: #3F85FF; /*kolor kółeczek nowych wiadomości, serwerów czy wzmianek*/
+  --notifycolor: #b91414; /*kolor otoczki nowych wiadomosci*/
+  --badgecolor: #b91414; /*kolor kółeczek z cyfra przy wzmiankach itp*/
   --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
 
   --titlebar: #212121; /*kolor paska z napisem discord*/
@@ -35,11 +36,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 30/09/19";
-
-
-
-
+  --version: "Ładny Skin 02/10/19";
   --shadow: rgba(0,0,0,.8);
 
     /*BIALE*/
@@ -100,14 +97,14 @@ a {
 	content: " ";
 	position: fixed;
 	width: calc(100% - 310px);
-	height: 71px;
+	height: 51px;
 	right: 0;
 	bottom: 0;
   background: var(--headercolor);
   
 }.applicationStore-1pNvnv {
 	position: relative;
-	padding: 0 0 71px 0;
+	padding: 0 0 51px 0;
 	background: var(--headercolor) !important;
 }
 
@@ -287,8 +284,8 @@ a {
 }
 
 .avatar-SmRMf2.wrapper-3t9DeA{
-  width: 45px !important;
-  height: 45px !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 
 
@@ -673,7 +670,7 @@ right:0px;
 }
 
 .activityFeed-1C0EmJ{
-  margin: 0 0 72px 0;
+  margin: 0 0 50px 0;
 }
 
 .icon-2hm0JA{
@@ -760,7 +757,11 @@ right:0px;
   background: linear-gradient(270.22deg,#2c2c2c .09%,#1f1f1f 99.55%);
 }
 /*nitro tab*/
-
+/*t;la w ntro i grach*/
+.scroller-9moviB,
+.scroller-1IIF0A{
+  background-color: var(--chatbackground);
+}
 
 .theme-dark .emptyPlayers-dx3qig, .theme-dark .players-1zg2l8 {
   background-color: var(--titlebar);
@@ -1083,11 +1084,24 @@ border-radius: 0px;
 }
 
 .guildsError-b7zR5H{
-  background-color: #be3838;
+  background-color: var(--titlebar);
   border-radius: var(--avatars);
+  border-color: var(--titlebar);
   margin-top:9px;
   width: 44px;
   height: 44px;
+}
+
+#app-mount .wrapper-1Rf91z .guildsError-b7zR5H,
+#app-mount .wrapper-1Rf91z .guildIconUnavailable-5PMHDN {
+	border: none;
+	background: var(--titlebar);
+	transition: 0.1s ease;
+}
+
+#app-mount .wrapper-1Rf91z .guildsError-b7zR5H:hover,
+#app-mount .wrapper-1Rf91z .guildIconUnavailable-5PMHDN:hover {
+  background: var(--accentcolor)
 }
 
 
@@ -1177,7 +1191,7 @@ border-radius: 0px;
 }
 /* Comment Code */
 .ace-monokai .ace_comment {
-  color: var(--accentcolor);
+  color: #5d5d5d;
 }
 
 
@@ -1655,7 +1669,7 @@ margin-top: 50px !important;
 
     .bd-guild.bd-unread img[class^="icon-"] { /*fix otoczka */
       padding: 3px;
-      border: 2px solid var(--accentcolor2);
+      border: 2px solid var(--notifycolor);
   }
 
   /*Wybrany fix*/
@@ -3993,7 +4007,7 @@ div[style*="width: 100%; height: 20px"] {
   /* 6.a. Main Container */
   .theme-dark .container-3baos1 {
     position: relative;
-    height:70px;
+    height:50px;
   	background: var(--headercolor);
   	z-index: 100 !important;
 }
@@ -4806,7 +4820,7 @@ max-height: 400px!important;
 overflow-y: scroll!important;
 margin-top: 0;
 margin-bottom: 0;
-padding: 26px 0px;
+padding: 16px 0px; /*wysokosc chatu*/
 /*font-size: 0.875rem;*/
 line-height: 1.125rem;
 overflow:hidden;
@@ -4893,7 +4907,7 @@ box-sizing: border-box;
 
 .membersWrap-2h-GB4 {
   position: relative;
-  margin: 0 0 72px 0;
+  margin: 0 0 50px 0;
 }
 
 .channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .textArea-2Spzkt,
@@ -8329,14 +8343,16 @@ margin:15px;}
 
   /* 15.i. Tooltips */
 
-  /*boost serwer na gorze*/
+  /* .tooltipRed-8-9NeP boost serwer na gorze*/
 
 
-  .theme-dark .tooltipBrand-g03Nz8, .theme-light .tooltipBrand-g03Nz8 {
-    background-color: var(--guildlistcolor);
+  .theme-dark .tooltipBrand-g03Nz8,
+  .theme-light .tooltipBrand-g03Nz8{
+  background-color: var(--guildlistcolor) !important;
 }
 
-.theme-dark .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK, .theme-light .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK {
+.theme-dark .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK,
+.theme-light .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK {
   border-top-color: var(--guildlistcolor);}
 
   .tooltip-2QfLtc {
@@ -8627,9 +8643,9 @@ color: rgb(255, 255, 255)
 .item-1GzJrl.itemBase-1Qj4z6.menuItem-2e3xQl {
   position: relative;
   justify-content: space-evenly;
-  top:-110px !important;
+  top:-10px !important;
   width: 270px;
-  left:-4px;
+  left:-4px !important;
   border-radius: 0px;
   background-color: var(--headercolor);
 }
@@ -8646,7 +8662,7 @@ color: rgb(255, 255, 255)
 
 #popout_1.layer-v9HyYc {
   /*status picker position*/
-  bottom:71px !important; 
+  bottom:51px !important; 
   left:72px !important;
 }
 .menu-Sp6bN1 .statusItem-2uzPIV {
@@ -12160,7 +12176,7 @@ background: var(--accentcolor);
 
 /*jak sie popsuje dodac to*/
 body::after {
-  content:'Skin się lekko popsuł po ostatnim update, naprawiam powoli';
+  content:'Kolor kółka nowych wiadomości --notifycolor: #KOLOR; Zjebane foldery';
   top:4px;
   width:100%;
   font-size: 12px;
@@ -12171,7 +12187,7 @@ body::after {
   z-index:3002;
 }
 .platform-osx body::after {
-  content: 'Skin się lekko popsuł po ostatnim update, naprawiam powoli';
+  content: 'Kolor kółka nowych wiadomości --notifycolor: #KOLOR;';
 }
 
 
