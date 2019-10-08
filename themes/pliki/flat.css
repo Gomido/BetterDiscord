@@ -36,7 +36,11 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 02/10/19";
+  --version: "Ładny Skin 08/10/19";
+
+
+
+
   --shadow: rgba(0,0,0,.8);
 
     /*BIALE*/
@@ -1823,35 +1827,35 @@ margin-top: 50px !important;
 .stop-animations .scroller-2TZvBNWrapper-5TJh6A .scroller-2TZvBN .friendsOnline-_wi_fM {
   transform: translate(-50%, 0) !important; }
 
-.members-1998pB .member-3W1lQa.popout-open .image-33JSyf,
-.members-1998pB .member-3W1lQa:hover .image-33JSyf {
+.members-1998pB .member-3-YXUe.popout-open .image-33JSyf,
+.members-1998pB .member-3-YXUe:hover .image-33JSyf {
   transform: scale(1.2); }
 
-.members-1998pB .member-3W1lQa.popout-open .wrapper-2F3Zv8,
-.members-1998pB .member-3W1lQa .wrapper-2F3Zv8,
-.members-1998pB .member-3W1lQa.popout-open .image-33JSyf,
-.members-1998pB .member-3W1lQa .image-33JSyf {
+.members-1998pB .member-3-YXUe.popout-open .wrapper-2F3Zv8,
+.members-1998pB .member-3-YXUe .wrapper-2F3Zv8,
+.members-1998pB .member-3-YXUe.popout-open .image-33JSyf,
+.members-1998pB .member-3-YXUe .image-33JSyf {
   transition: all 100ms ease; }
 
-.members-1998pB .member-3W1lQa.popout-open .status-oxiHuE,
-.members-1998pB .member-3W1lQa:hover .status-oxiHuE {
+.members-1998pB .member-3-YXUe.popout-open .status-oxiHuE,
+.members-1998pB .member-3-YXUe:hover .status-oxiHuE {
   transform: scale(1.00); }
 
-.members-1998pB .member-3W1lQa.popout-open .status-oxiHuE.streaming-2_dnHe,
-.members-1998pB .member-3W1lQa:hover .status-oxiHuE.streaming-2_dnHe {
+.members-1998pB .member-3-YXUe.popout-open .status-oxiHuE.streaming-2_dnHe,
+.members-1998pB .member-3-YXUe:hover .status-oxiHuE.streaming-2_dnHe {
   width: 12px;
   height: 12px;
   bottom: -5px;
   right: -3px;
   transform: none; }
 
-.members-1998pB .member-3W1lQa.popout-open .status-oxiHuE,
-.members-1998pB .member-3W1lQa .status-oxiHuE {
+.members-1998pB .member-3-YXUe.popout-open .status-oxiHuE,
+.members-1998pB .member-3-YXUe .status-oxiHuE {
   transition: all 100ms ease; }
 
 .privateChannels-1nO12o .channel .channel-name,
-.members-1998pB .member-3W1lQa .activity-1IYsbk,
-.members-1998pB .member-3W1lQa .nameTag-3p0yK- {
+.members-1998pB .member-3-YXUe .activity-1IYsbk,
+.members-1998pB .member-3-YXUe .nameTag-3p0yK- {
   transition: all 100ms cubic-bezier(0.43, 0, 0, 1); }
 
 
@@ -2155,7 +2159,7 @@ margin-top: 50px !important;
 /*DirectDownload plugin*/
 body #files_directDownload{
   left:72px !important;
-  bottom:71px;
+  bottom:51px;
   width:270px;
   height:calc(100% - 56px - 70px);
   pointer-events: none;
@@ -4183,30 +4187,30 @@ div[style*="width: 100%; height: 20px"] {
 }
 
 /* 7. Members List */
-.theme-dark .member-3W1lQa.popout-open{
+.theme-dark .member-3-YXUe.popout-open{
   background: var(--headercolor) !important;
 
 }
-.theme-dark .member-3W1lQa.popout-open, .theme-dark .member-3W1lQa.popout-open:hover {
+.theme-dark .member-3-YXUe.popout-open, .theme-dark .member-3-YXUe.popout-open:hover {
   background-color: var(--headercolor);
   color: #fff;
 }
-.member-3W1lQa.popout-open{
+.member-3-YXUe.popout-open{
   border-radius: 0px !important;
   border-left: 2px solid var(--accentcolor)!important;
 }
 
-.member-3W1lQa:hover {
+.member-3-YXUe:hover {
   border-color: var(--accentcolor2);
 }
 
-.member-3W1lQa {
+.member-3-YXUe {
   border-left: 2px solid transparent;
   border-radius: 0px;
 }
 
 
-.theme-dark .member-3W1lQa:hover  {
+.theme-dark .member-3-YXUe:hover  {
   background: var(--guildlistcolor);
 }
   /* 7.b. add Roles */
@@ -4475,11 +4479,15 @@ a,
   .theme-dark .wrapper-39oAo3{
     background-color: var(--headercolor);
     color: #f6f6f7;
-      margin: 0;
-      height: 39px;
-      border-radius: 0px;
-
+    margin: 0;
+    height:19px;
+    border-radius: 0px;
+    
 }
+
+.image-3XsqGc{
+  height: 40px;
+} /*obrazek lurker mode*/
 
 .messageGroupBlocked-3wrQQX:last-child {
   margin-bottom: 30px !important;
@@ -5090,7 +5098,7 @@ box-sizing: border-box;
 /* 9. Friends List */
   /* 9.a. Main Friends List */
   .container-3gCOGc .friendsTable-133bsv{
-    margin: 0 0 72px 0;
+    margin: 0 0 50px 0;
     }
 
 
@@ -10566,7 +10574,9 @@ div.reply-item {
 .wrapper-1Rf91z.foldercontent .scroller-2TZvBN>.container-2td-dC:first-child .wrapper-2lTRaf {
     border: none;
 }
-
+.wrapper-1Rf91z{
+  background-color: var(--guildlistcolor);
+}
 .wrapper-1Rf91z.foldercontent .scrollerWrap-1IAIlv {
     border-top: 2px solid var(--accentcolor);
     box-sizing: border-box;
@@ -10698,11 +10708,11 @@ background-color: var(--headercolor) !important;
     display: none; 
   }
   
-  .member-3W1lQa{
+  .member-3-YXUe{
     margin-left:20px;
   }
   
-  .members-1998pB:hover .member-3W1lQa{
+  .members-1998pB:hover .member-3-YXUe{
     margin-left: 15px;
   }
 
