@@ -37,3 +37,34 @@
   --streaming: #643da7; /* stream */
 
 }
+
+/*Dodatki - tło do skina, chowanie guzików gif, gift, gier*/
+
+
+/*chowajka guzików na chacie https://owo.oooooooooooooo.ooo/i/hxth.png*/
+.buttons-205you .buttonWrapper-1ZmCpA[tabindex="3"], /*gift*/
+.buttons-205you .buttonWrapper-1ZmCpA[tabindex="4"] {/*GIF**/
+  display: none !important;
+}
+
+
+/*chowajka gier, bilbioteni, nitro, aktywności - zostaje tylko lista znajomych https://owo.oooooooooooooo.ooo/i/n4c3.png*/
+.channel-2QD9_O[href="/library"],
+.channel-2QD9_O[href="/activity"],
+.channel-2QD9_O[href="/store"]{
+    display: none;
+}
+/* Tlo, podajcie swojego linka tylko*/
+html:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("TU LINK .png .jpg itp");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent !important;
+    opacity: 0.04;
+    z-index: 999999999999;
+    pointer-events: none;
+}
