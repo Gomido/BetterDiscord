@@ -1,8 +1,5 @@
 :root {
-
-
     /* podstawe, kolory, avatary to ruszać*/
-    
   --avatars: 50%; /* 0% - kwadratowe avatary, 50% okragle*/
   --accentcolor: #b91414; /*główny kolor skina/elementów po kliknięciu*/
   --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu (np pasek na liście osob)*/
@@ -11,7 +8,6 @@
   --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
 
     /* mniej wazne, mozna nie tykać*/
-
   --titlebar: #212121; /*kolor paska z napisem discord*/
   --chatbackground: #303030; /*kolor chatu pod wiadomosciami*/
   --channellistcolor: #252525; /*kolor listy kanalow, uzytkownikow*/
@@ -40,20 +36,19 @@
 
 /*Dodatki - tło do skina, chowanie guzików gif, gift, gier*/
 
-
 /*chowajka guzików na chacie https://owo.oooooooooooooo.ooo/i/hxth.png*/
 .buttons-205you .buttonWrapper-1ZmCpA[tabindex="3"], /*gift*/
 .buttons-205you .buttonWrapper-1ZmCpA[tabindex="4"] {/*GIF**/
   display: none !important;
 }
 
-
 /*chowajka gier, bilbioteni, nitro, aktywności - zostaje tylko lista znajomych https://owo.oooooooooooooo.ooo/i/n4c3.png*/
-.channel-2QD9_O[href="/library"],
-.channel-2QD9_O[href="/activity"],
-.channel-2QD9_O[href="/store"]{
+.channel-2QD9_O[href="/library"], /*biblioteka*/
+.channel-2QD9_O[href="/activity"], /*aktywnosc*/
+.channel-2QD9_O[href="/store"]{ /*nitro*/
     display: none;
 }
+
 /* Tlo, podajcie swojego linka tylko*/
 html:after {
     content: "";
