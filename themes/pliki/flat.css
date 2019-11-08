@@ -828,7 +828,7 @@ border-radius: 0px;
   border-left: 2px solid var(--accentcolor);
   border-right: 2px solid var(--accentcolor);
   border-bottom: 2px solid var(--accentcolor);
-  margin-bottom: 71px;
+  margin-bottom: 51px;
   margin-right:2px;
 }
 
@@ -4828,33 +4828,20 @@ a,
   padding: 0;
   height:100%;
 }
-.channel-textarea-inner.beard {
-  height:auto;
-}
-.channel-textarea{
-  position:relative;
-}
-.theme-dark .chat form {
-  border: none!important;
-  margin: 0;
-  box-shadow: rgba(0, 0, 0, .1) 0 0 20px
-}
-.channel-text-area-default{
-  margin:0;
-}
+
 .textArea-2Spzkt{
 max-height: 400px!important;
 overflow-y: scroll!important;
 margin-top: 0;
 margin-bottom: 0;
-padding: 16px 0px; /*wysokosc chatu*/
-/*font-size: 0.875rem;*/
-line-height: 1.125rem;
+padding: 15px 0px; /*wysokosc chatu*/
+/*font-size: 0.875rem;
+line-height: 1.125rem;*/
 overflow:hidden;
 letter-spacing: normal;
 min-height:19px;
 transition: all 200ms ease;
-padding-right: 80px;
+padding-right: 120px;
 background: var(--headercolor)!important;
 margin:0;
 font-weight: 500;
@@ -4904,7 +4891,7 @@ box-sizing: border-box;
   width:45px;
   padding:0;
   opacity:0.24;
-  background-image: url(https://i.imgur.com/Ebr2IjG.png)!important;
+  background-image: url(https://i.imgur.com/ALe8BS0.png)!important; /*https://i.imgur.com/Ebr2IjG.png stary*/
   background-size: 21px !important;
   background-position: 50%!important;
   background-repeat: no-repeat!important;
@@ -4946,10 +4933,6 @@ box-sizing: border-box;
   opacity: 1;
 }
 
-
-.textArea-2Spzkt {
-  padding-right: 180px;
-}
 
 .buttons-205you {
   padding-right: 0;
@@ -5119,6 +5102,79 @@ box-sizing: border-box;
 
 /* 9. Friends List */
   /* 9.a. Main Friends List */
+
+/*chowajka opcji*
+a[href="/library"],
+a[href="/store"],
+a[href="/activity"] {
+    display:none;
+}
+.button-38aScr[tabindex="2"]/* Gift *{
+  display: none;
+}
+.button-38aScr[tabindex="3"]/* Gif *{
+  display: none;
+}
+.button-38aScr[tabindex="4"]/* Emotki *{
+  display: none;
+}
+.button-38aScr[tabindex="5"]/* wysylanie *{
+  display: none;
+}
+
+/* Male guziki znajomych */
+.channel-2QD9_O[href="/activity"] {
+  margin-left: 5px !important;
+}
+
+*[href*="/activity"],
+*[href*="/library"],
+*[href*="/store"],
+*[href="/channels/@me"] {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 0px;
+  padding: 0px;
+  border-left: none !important;
+}
+
+*[href*="/activity"] .avatar-3uk_u9,
+*[href*="/library"] .avatar-3uk_u9,
+*[href*="/store"] .avatar-3uk_u9,
+*[href="/channels/@me"] .avatar-3uk_u9 {
+  margin: 0px;
+  padding-left: 5px;
+}
+
+*[href*="/activity"] .name-uJV0GL,
+*[href*="/library"] .name-uJV0GL,
+*[href*="/store"] .name-uJV0GL,
+*[href="/channels/@me"] .name-uJV0GL {
+  font-size: 0px;
+}
+
+*[href*="/activity"] .avatar-3uk_u9,
+*[href*="/library"] .avatar-3uk_u9,
+*[href*="/store"] .avatar-3uk_u9,
+*[href="/channels/@me"] .avatar-3uk_u9 {
+    padding-top:20px;
+    padding-left:8px;
+}
+
+/* Fix scrolowania w bok */
+.privateChannels-1nO12o .scroller-2FKFPG {
+    overflow-x: hidden !important;
+}
+
+
+
+
+
+.clickable-1JJAn8:active .layout-2DM8Md{
+  background-color: transparent;
+}
+
   .container-3gCOGc .friendsTable-133bsv{
     margin: 0 0 50px 0;
     }
@@ -7043,7 +7099,8 @@ background:var(--titlebar);
   width: 55px;
 }
 
-.buttons-205you>.button-38aScr>.contents-18-Yxp {
+
+.buttons-205you .sprite-2iCowe {
   display: none;
 }
 .emojiButton-3uL3Aw {
@@ -10028,10 +10085,24 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
       background-color: var(--accentcolor);
   }
 
-  .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN,
-.theme-dark .categoryFadeBlurple-1j72_A, 
-.theme-light .categoryFadeBlurple-1j72_A{
+
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN{
   background-color: var(--accentcolor);
+  
+}
+
+.theme-dark .categoryFadeBlurple-1j72_A,
+.theme-dark .categoryFade-2ybR1J
+{
+  background-color: rgba(0,0,0,.4);
+  border-radius: 0px;
+}
+
+.theme-dark .categoryFadeBlurple-1j72_A:hover,
+.theme-dark .categoryFade-2ybR1J:hover
+{
+  background-color: rgba(0,0,0,.7);
+  border-radius: 0px;
 }
 
 
@@ -10621,6 +10692,10 @@ div.reply-item {
 
   /* 20.a.5. Server Folders */
 
+  .svg-1X37T1{ /*usuniecie dziury w liczbie serwerow w folderze*/
+  -webkit-mask: none !important;
+}
+  
 .wrapper-1Rf91z.foldercontentclosed {
   width: 0;
 }
@@ -10696,7 +10771,7 @@ background-color: var(--headercolor) !important;
 }
 /*changelog*/
 #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "Znane bugi:\a \a - cofnalem liste znajomych bo starej sie nie da naprawic \a - kołowy znaczek wiadomości \a  \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
+  content: "Znane bugi:\a \a - Nie wiem jak usunac pasek przy gornych opcjach listy znajomych \a - znaczek wiadomosci w serwerach tez nie dziala \a  \a Link do poprawek. Na razie ich brak. (bit.ly/TempFixBD).\a Jeśli masz najnowszą wersję skina to kliknij Website pod jego nazwą - wyłącz na chwilę skina" !important; }
 
 
   #bd-settingspane-container .bda-slist::before {
