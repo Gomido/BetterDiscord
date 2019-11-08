@@ -4873,6 +4873,7 @@ color: #a0a0a0 !important;
 border-radius:0;
 box-sizing: border-box;
 }
+
 .theme-dark .attachButtonDivider-3Glu60{
   display: none;
 }
@@ -4883,14 +4884,17 @@ box-sizing: border-box;
 .textArea-2Spzkt{
   padding-left: 25px;
 }
+
 .channelTextArea-1LDbYG .inner-zqa7da>.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6~.textArea-2Spzkt{
   padding-left: 0;
   padding-left:60px;
 }
+
 .channelTextArea-rNsIhG {
   margin-bottom: 0px;
   padding-top: 0px;
 }
+
 .attachButton-1UjEWA{
   fill:transparent!important;
   position: absolute;
