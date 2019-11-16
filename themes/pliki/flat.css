@@ -36,7 +36,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 15/11/19";
+  --version: "Ładny Skin 16/11/19";
 
 
 
@@ -505,6 +505,14 @@ a {
 .privateChannels-1nO12o .channel-2QD9_O .wrapper-2F3Zv8:hover {
   z-index: 1; }
 */
+.headerText-1-AnT0,
+.privateChannelRecipientsInviteButtonIcon-cXLJ7f{
+  color: #FFF !important ;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+
 .privateChannels-1nO12o .scrollerWrap-2lJEkd {
   flex-direction: column; }
 
@@ -4788,6 +4796,9 @@ a,
 .grid-1nZz7S {
   padding: 5px 10px 5px 10px;
 }
+.embedTitle-3OXDkz {
+  font-size: 14px;
+}
 
 .embedFooterText-28V_Wb {
   color: #adadad;
@@ -5161,10 +5172,10 @@ a[href="/activity"] {
   margin-left: 5px !important;
 }
 
-*[href*="/activity"],
-*[href*="/library"],
-*[href*="/store"],
-*[href="/channels/@me"] {
+.channel-2QD9_O[href*="/activity"],
+.channel-2QD9_O[href*="/library"],
+.channel-2QD9_O[href*="/store"],
+.channel-2QD9_O[href="/channels/@me"] {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -5173,25 +5184,25 @@ a[href="/activity"] {
   border-left: none !important;
 }
 
-*[href*="/activity"] .avatar-3uk_u9,
-*[href*="/library"] .avatar-3uk_u9,
-*[href*="/store"] .avatar-3uk_u9,
-*[href="/channels/@me"] .avatar-3uk_u9 {
+.channel-2QD9_O[href*="/activity"] .avatar-3uk_u9,
+.channel-2QD9_O[href*="/library"] .avatar-3uk_u9,
+.channel-2QD9_O[href*="/store"] .avatar-3uk_u9,
+.channel-2QD9_O[href="/channels/@me"] .avatar-3uk_u9 {
   margin: 0px;
   padding-left: 5px;
 }
 
-*[href*="/activity"] .name-uJV0GL,
-*[href*="/library"] .name-uJV0GL,
-*[href*="/store"] .name-uJV0GL,
-*[href="/channels/@me"] .name-uJV0GL {
+.channel-2QD9_O[href*="/activity"] .name-uJV0GL,
+.channel-2QD9_O[href*="/library"] .name-uJV0GL,
+.channel-2QD9_O[href*="/store"] .name-uJV0GL,
+.channel-2QD9_O[href="/channels/@me"] .name-uJV0GL {
   font-size: 0px;
 }
 
-*[href*="/activity"] .avatar-3uk_u9,
-*[href*="/library"] .avatar-3uk_u9,
-*[href*="/store"] .avatar-3uk_u9,
-*[href="/channels/@me"] .avatar-3uk_u9 {
+.channel-2QD9_O[href*="/activity"] .avatar-3uk_u9,
+.channel-2QD9_O[href*="/library"] .avatar-3uk_u9,
+.channel-2QD9_O[href*="/store"] .avatar-3uk_u9,
+.channel-2QD9_O[href="/channels/@me"] .avatar-3uk_u9 {
     padding-top:20px;
     padding-left:8px;
 }
@@ -6696,8 +6707,8 @@ color: #FFF
 /*wieksze okno emotek */
 
 .infoBar-U6oBFk{
-  background-color: var(--channellistcolor);
-  border: 1px solid var(--accentcolor);
+  background-color: var(--titlebar);
+  border-top: 1px solid var(--accentcolor);
   border-bottom: none;
 }
 .lightTheme-3LGLQs.container-2XeR5Z{
@@ -6712,9 +6723,7 @@ color: #FFF
 
 .emojiPicker-3m1S-j .scroller-3vODG7 {
   /* height: 500px !important; */
-  background-color: var(--titlebar);
-  border-left: 1px solid var(--accentcolor);
-  border-right: 1px solid var(--accentcolor);
+  background-color: var(--guildlistcolor);
 }
 
 
@@ -6734,22 +6743,26 @@ color: #FFF
 
 .emojiPicker-3m1S-j .category-2U57w6{
   color:#FFF;
-  background-color: var(--titlebar);
+  background-color: transparent;
   width:99%;
 }
 
 .categories-1feg4n {
-  border-top:1px solid var(--accentcolor);
-  border-left: 1px solid var(--accentcolor);
-  border-right: 1px solid var(--accentcolor);
-  border-bottom: 1px solid var(--accentcolor);
+  border-top: 1px solid var(--accentcolor);
   margin:0px !important;
+  background-color: var(--headercolor) !important;
 
 }
 .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
-  background-color: var(--guildlistcolor);
+  background-color: var(--channellistcolor);
   border-radius: 0px;
 }
+
+.iconSizeSmaller-2whVAO {
+  width: 36px;
+  height: 36px;
+}
+
 
 .highlight {
   background: rgba(26, 205, 250, 0.3);
@@ -6761,8 +6774,7 @@ color: #FFF
 }
 
 .diversitySelector-tmmMv0 .popout-2nUePc{
-  background: var(--chatbackground);
-    border: 1px solid var(--chatbackground);
+  background: var(--headercolor);
     border-radius: 0px;
 }
 
@@ -6853,8 +6865,8 @@ color: #FFF
 
 .emoji-picker,
 .emojiPicker-3m1S-j {
-  background: var(--headercolor)!important;
-  border: 0;
+  background: var(--guildlistcolor)!important;
+  border: 1px solid var(--accentcolor);
   border-radius: calc(0px * var(--borders) + 20px * (1 - var(--borders)));
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2)
 }
@@ -6877,7 +6889,6 @@ color: #FFF
 
 
 .emojiPicker-3m1S-j .noSearchResultsContainer-3Dee0U {
-background:var(--titlebar);
   color: #FFF;
   border-left: 1px solid var(--accentcolor);
   border-right: 1px solid var(--accentcolor);
@@ -6885,10 +6896,8 @@ background:var(--titlebar);
 
 .emojiPicker-3m1S-j .header-1nkwgG {
   background-color: var(--headercolor);
-  border-bottom: 0px solid rgba(0, 0, 0, .1);
-  border-left: 1px solid var(--accentcolor);
-  border-right: 1px solid var(--accentcolor);
-  border-top: 1px solid var(--accentcolor);
+  box-shadow: none;
+  border-bottom: 1px solid var(--accentcolor);
 
 }
 
@@ -6908,10 +6917,7 @@ background:var(--titlebar);
 }
 
 .emojiPicker-3m1S-j .stickyHeader-1SS0JU {
-  background: var(--titlebar);
-  left: 8px;
-  position: absolute;
-  top: 0;
+  background: var(--guildlistcolor);
   width: 96% !important;
   z-index: 1
 }
@@ -8756,6 +8762,7 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 background: rgba(255, 255, 255, 0.1);
 color: rgb(255, 255, 255)
 }
+
 
 /*bot tag znaczek
 .botTag-2WPJ74, .botTagRegular-2HEhHi, .botTagInvert-gorWR_,
@@ -12453,6 +12460,7 @@ body::after {
   /* badges */
   .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before,
   .wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before,
+  .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before,
   .wrapper-3t9DeA[user_by_bdfdb="136863012756783104"]::before{
     content: '';
     color: transparent;
@@ -12488,6 +12496,12 @@ body::after {
       transform: scale(1)
     }
 
+    /* mleczko */
+  .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before {
+    background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojione/211/purple-heart_1f49c.png);
+    bottom: -5px;
+    right: -5px;
+  }
     
   
   /* on hover */
