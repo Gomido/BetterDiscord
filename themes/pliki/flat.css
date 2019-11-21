@@ -36,7 +36,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 20/11/19";
+  --version: "Ładny Skin 15/11/19";
 
 
 
@@ -1678,11 +1678,11 @@ margin-top: 50px !important;
   .wrapper-25eVIn > svg > mask > path {
     d: path("M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24Z") !important; }
   
-  .wrapper-sa6paO {
+  /* .wrapper-sa6paO {
     width: 100%;
     height: 100%; }
-  
-  .listItem-2P_4kh .item-2hkk8m {
+   */
+  /* .listItem-2P_4kh .item-2hkk8m {
     box-sizing: border-box;
     background: none;
     margin: 0;
@@ -1690,7 +1690,7 @@ margin-top: 50px !important;
     height: 100% !important;
     transform: none !important;
     opacity: 0.7 !important; }
-  
+   */
 
     .bd-guild.bd-unread img[class^="icon-"] { /*fix otoczka */
       padding: 3px;
@@ -1785,14 +1785,7 @@ margin-top: 50px !important;
 .wrapper-1Rf91z .scroller-2FKFPG > div[style] + .bd-guild-separator {
   display: flex; }
 
-.wrapper-1Rf91z .dragPlaceholder-D9-haY {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE1LjQxIDE2LjA5bC00LjU4LTQuNTkgNC41OC00LjU5TDE0IDUuNWwtNiA2IDYgNnoiLz4gICAgPHBhdGggZD0iTTAtLjVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: var(--titlebar);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) inset; }
-
-
+  
 /*efekt otrzymania wiadomosci serwer*/ 
 .container-2td-dC.unread-2OHH1w a::after {
   box-shadow: 0 0 0 2px var(--guildlistcolor) inset, 0 0 0 var(--notification-width) var(--badgecolor), 0 0 0 4px rgba(255, 255, 255, 0), 0 2px 6px rgba(0, 0, 0, 0.1) !important;
@@ -12423,9 +12416,9 @@ background: var(--accentcolor);
   --codeblockcolor: #a462d0;
 }
 
-/*jak sie popsuje dodac to
+/* jak sie popsuje dodac to */
 body::after {
-  content:'Kolor kółka nowych wiadomości --notifycolor: #KOLOR; Zjebane foldery';
+  content:'zepsul sie kolowy znaczek wiadomosci, tymczasowo domyslny dalem';
   top:4px;
   width:100%;
   font-size: 12px;
@@ -12436,9 +12429,9 @@ body::after {
   z-index:3002;
 }
 .platform-osx body::after {
-  content: 'Kolor kółka nowych wiadomości --notifycolor: #KOLOR;';
+  content: 'zepsul sie kolowy znaczek wiadomosci, tymczasowo domyslny dalem';
 }
-*/
+
 
 /*znaczki przy avatarze*/
 .wrapper-3t9DeA[user_by_bdfdb]::before {
