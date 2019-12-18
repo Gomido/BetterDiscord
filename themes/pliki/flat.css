@@ -1,16 +1,3 @@
-/**
- * @name         TestSkin
- * @description  Ładny skin w kolorze wybranym przez Ciebie.
- * @author       Lilek
- * @version      1.0
- */
-
-/*
----------------------------------------------------------------------------------------------------------------------------------------------
-TROUBLESHOOTING: IF YOU NEED ANY HELP GO TO https://discord.gg/TeRQEPb
----------------------------------------------------------------------------------------------------------------------------------------------
-*/ 
-
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @font-face {
     font-family: 'BMTicons';
