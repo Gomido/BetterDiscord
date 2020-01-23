@@ -46,7 +46,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 22/01/20";
+  --version: "Ładny Skin 23/01/20";
 
 
 
@@ -2105,8 +2105,12 @@ margin-top: 48px !important;
   top:20px !important;
 }
 
+.lowerBadge-29hYVK{
+  bottom:3px
+}
+
 .upperBadge-2XnnGB {
-  top:2px;
+  top:0px;
   right:-2px;
 }
 /*#app-mount::before {
@@ -2323,8 +2327,8 @@ margin-top: 48px !important;
 
 .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .numberBadge-2s8kKX {
   position: absolute;
-  bottom: 5px;
-  right: 15px;
+  bottom: 2px;
+  right: 12px;
 }
 
 #dv-mount {
@@ -7918,10 +7922,10 @@ color: #FFF
   color:#fff;
   font-weight:600;
 }
-
+/* 
 .userPopout-3XzG_A .customStatus-1bh2V9 {
-  /* text-align:left; 20.01*/
-}
+  text-align:left; 20.01
+} */
 
 #app-mount .headerPlaying-j0WQBV {
   background: linear-gradient(0deg, rgba(0,0,0,1) 10%, var(--accentcolor) 100%) !important;
