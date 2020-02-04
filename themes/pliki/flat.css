@@ -4370,9 +4370,9 @@ div[style*="width: 100%; height: 20px"] {
   margin-left:-10px !important;
 }*/
 
-.username-_4ZSMR:hover{
+.username-1A8OIy:hover{
   background: var(--titlebar);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /*
@@ -5046,6 +5046,7 @@ a,
 
 .jumpToPresentBar-9P20AM {
   width: 130px !important;
+  padding-bottom: 0;
   right: 10px !important;
   left: auto !important;
   animation: slide-up 0.7s cubic-bezier(0.4, 0, 0, 1), opacity 0.7s ease; }
@@ -5199,7 +5200,7 @@ color: #FFF !important;
 }
 
 [style*="background-color: rgb(114, 137, 218);"] {
-  background-color: var(--accentcolor) !important;
+  background-color: var(--headercolor) !important;
 }
 
 .wrapper-35wsBm {
@@ -8310,7 +8311,7 @@ border-radius: 0px;
 /*tlo w okienku*/
 
 /*Core*/
-/* .userPopout-3XzG_A .avatarWrapperNormal-3wFMbf::after {
+.userPopout-3XzG_A .avatarWrapperNormal-3wFMbf::after {
   content:'';
   position:fixed;
   top:1px;
@@ -8323,9 +8324,9 @@ border-radius: 0px;
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
-  background-image:var(--popoutbg); */
+  background-image:var(--popoutbg);
   /* -webkit-mask-image:linear-gradient(#000,transparent); */
-/* } */
+}
 
 
 .userPopout-3XzG_A .header-2BwW8b,
@@ -13316,11 +13317,14 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .container-1YxwTf .avatar-17mtNa .wrapper-3t9DeA,
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA,
 .searchResultsWrap-2DKFzt .avatar-17mtNa .wrapper-3t9DeA {
-  height: 45px!important;
-  width: 45px!important;
+  height: 40px!important;
+  width: 40px!important;
 }
 
-.container-3FojY8{
+.headerCozy-2H1QuU{
+  margin-left: -50px;
+}
+.markupRtl-3M0hmN{
   margin-left: 20px;
 }
 .clickableHeader-2Cygs8 .avatar-1BDn8e,
