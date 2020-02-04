@@ -2993,14 +2993,12 @@ body #files_directDownload{
 
 .container-1r6BKw .icon-22AiRD[name="Nova_Help"] {
   background: url('https://i.imgur.com/YjbvfP0.png') no-repeat center !important;
-;
 }
 
 /* replace update icon on top nav bar */
 
 .title-qAcLxz svg[name="Update"], .headerBar-UHpsPw svg[name="Update"], .titleCall-3X0yGQ svg[name="Update"] {
   background: url('https://i.imgur.com/cHFhjGv.png') no-repeat center !important;
-;
 }
 /*
 .title-qAcLxz svg[name="UpdateAvailable"], .headerBar-UHpsPw svg[name="UpdateAvailable"], .titleCall-3X0yGQ svg[name="UpdateAvailable"] {
@@ -3034,8 +3032,8 @@ body #files_directDownload{
 /* replace members list icon on top nav bar */
 
 .container-1r6BKw .icon-22AiRD[name="Nova_People"]{
-  background: url('https://i.imgur.com/jOkyhES.png') no-repeat center !important;
-
+  /* background: url('https://i.imgur.com/jOkyhES.png') no-repeat center !important; */
+  background: url(https://gomido.github.io/img/friends.svg);
 }
 
 /* replace pinned icon on top nav bar */
@@ -13313,23 +13311,24 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   right:10px;
 }
 /*wielkosc avatara*/
-.avatar-1BDn8e,
+.clickableHeader-2Cygs8 .avatar-1BDn8e,
 .container-1YxwTf .avatar-17mtNa .wrapper-3t9DeA,
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA,
 .searchResultsWrap-2DKFzt .avatar-17mtNa .wrapper-3t9DeA {
-  height: 40px!important;
-  width: 40px!important;
+  height: 45px!important;
+  width: 45px!important;
 }
 
 .headerCozy-2H1QuU{
   margin-left: -50px;
 }
+.container-1ov-mD,
 .markupRtl-3M0hmN{
   margin-left: 20px;
 }
 .clickableHeader-2Cygs8 .avatar-1BDn8e,
 .container-3FojY8 .headerCozyMeta-rdohGq {
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 
