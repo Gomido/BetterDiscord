@@ -2001,7 +2001,7 @@ margin-top: -11px !important;
 
 
 /* pencil, edited */
-.container-1YxwTf .content-3dzVd8 .edited-DL9ECl {
+.cozyMessage-3V1Y8y.groupStart-23k01U .edited-DL9ECl {
   font-size: 0;
   width: 13px !important;
   height: 13px !important;
@@ -3351,10 +3351,14 @@ div.platform-win #user-settings .item-PXvHYJ:nth-of-type(20)::before {
 
 .themeDefault-24hCdX.valueChecked-m-4IJZ,
 .barFill-23-gu-,
-[style*="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"],
 .bd-pfbtn,
 #pubslayer button {
   background-color: var(--accentcolor) !important;
+}
+
+.card-3Qj_Yx[style*="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"]
+{
+  background-color: var(--headercolor) !important; 
 }
 
 .bar-2Qqk5Z,
@@ -4741,9 +4745,6 @@ a,
   background: var(--titlebarcolor);
 }
 
-.progress-2XXRYo .progressBar-3u8FBM {
-  background-color: var(--accentcolor);
-}
 
 .progressContainer-3ao-eu{
   max-width: 300px !important;
@@ -5197,9 +5198,9 @@ color: #FFF !important;
   border-radius: 0px;
 }
 
-[style*="background-color: rgb(114, 137, 218);"] {
+/* [style*="background-color: rgb(114, 137, 218);"] {
   background-color: var(--headercolor) !important;
-}
+} */
 
 .wrapper-35wsBm {
   background-color: var(--titlebar) !important;
@@ -5258,7 +5259,9 @@ color: #a0a0a0 !important;
 }
 
 
-
+.channelTextAreaDisabled-8rmlrp .scrollableContainer-2NUZem{
+  opacity: 1;
+}
 .innerDisabled-1YTFPN::before {
   content:'block';
   color:#f04747;
@@ -5456,7 +5459,7 @@ top:0px;
 .chat-3bRxxu form .typing-2GQL18 {
   background-color: var(--headercolor) !important;
   bottom: 100%;
-  padding-left: 20px;
+  padding-left: 10px;
   /* z-index: 0; */
   animation: opacity 300ms ease;
   -ms-transform-origin: bottom left;
@@ -7216,31 +7219,33 @@ color: #FFF
   /* background: url(https://gomido.github.io/img/plus.svg) 50% no-repeat; */
 }
 
-.theme-dark .reactionInner-15NvIl {
+.reaction-1hd86g {
   background: var(--headercolor);
   border-radius:0px;
-  border: 1px solid var(--headercolor);
+  /* border: 1px solid var(--headercolor); */
 }
 
-.theme-dark .reactionInner-15NvIl:hover {
+.reactionInner-15NvIl:hover {
   background: var(--headercolor);
   border-radius:0px;
-  border: 1px solid var(--accentcolor);
+  /* border: 1px solid var(--accentcolor); */
 }
 
 .reaction-1hd86g.reactionMe-wv5HKu {
-  background-color: var(--accentcolor);
+  background-color: var(--accentcolor) !important;
   border-radius:0px;
 }
 
-.theme-dark .reactionInner-15NvIl.reactionMe-wv5HKu:hover {
-  background: var(--accentcolor);
+.reaction-1hd86g.reactionMe-wv5HKu:hover {
+  background-color: var(--accentcolor) !important;
   border-radius:0px;
-  border: 1px solid var(--accentcolor);
+  /* border: 1px solid var(--accentcolor); */
 }
     
 
-.reactionMe-wv5HKu .reactionCount-2mvXRV,
+.reactionMe-wv5HKu .reactionCount-2mvXRV{
+  color: #cacaca;
+}
 .reactionMe-wv5HKu:hover .reactionCount-2mvXRV{
   color: #FFF;
 }
@@ -8274,12 +8279,50 @@ border-radius: 0px;
 }
 
 /* wysuwajka reakcji */
-.wrapper-2aW0bm,
-.wrapper-2aW0bm:hover {
+.wrapper-2aW0bm {
 	box-shadow: none;
-  background:var(--titlebar) !important;
+  background:var(--titlebar);
   border-radius: 0;
   border: 1px solid var(--headercolor);
+  padding-bottom:2px;
+}
+
+.wrapper-2aW0bm:hover{
+  background: var(--titlebar) !important;
+}
+
+.container-3npvBV{
+  top: -30px !important;
+  right: -12px !important;
+}
+
+#app-mount .message-2qnXI6 [name=OverflowMenuHorizontal] {
+  background: url('data:image/svg+xml;utf8,<svg name="OverflowMenuHorizontal" class="icon-3Gkjwa" aria-hidden="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" > <path fill="rgba(255, 255, 255, 0.5)" fill-rule="evenodd" clip-rule="evenodd" d="M7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001ZM14 12.001C14 10.8964 13.1046 10.001 12 10.001C10.8954 10.001 10 10.8964 10 12.001C10 13.1055 10.8954 14.001 12 14.001C13.1046 14.001 14 13.1055 14 12.001ZM19 10.001C20.1046 10.001 21 10.8964 21 12.001C21 13.1055 20.1046 14.001 19 14.001C17.8954 14.001 17 13.1055 17 12.001C17 10.8964 17.8954 10.001 19 10.001Z" ></path> </svg>') no-repeat center;
+  opacity: 1 !important;
+}
+
+#app-mount .message-2qnXI6 [name=OverflowMenuHorizontal] > path {
+  display: none;
+}
+
+#app-mount .message-2qnXI6 [class*=buttonContainer-] [class*=wrapper-] {
+  width: 32px;
+  background: rgba(0, 0, 0, 0.3) url('data:image/svg+xml;utf8,<svg name="OverflowMenuHorizontal" class="icon-3Gkjwa" aria-hidden="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" > <path fill="rgba(255, 255, 255, 0.5)" fill-rule="evenodd" clip-rule="evenodd" d="M7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001ZM14 12.001C14 10.8964 13.1046 10.001 12 10.001C10.8954 10.001 10 10.8964 10 12.001C10 13.1055 10.8954 14.001 12 14.001C13.1046 14.001 14 13.1055 14 12.001ZM19 10.001C20.1046 10.001 21 10.8964 21 12.001C21 13.1055 20.1046 14.001 19 14.001C17.8954 14.001 17 13.1055 17 12.001C17 10.8964 17.8954 10.001 19 10.001Z" ></path> </svg>') no-repeat center;
+}
+
+#app-mount .message-2qnXI6 [class*=buttonContainer-] [class*=wrapper-] > div {
+  pointer-events: none;
+  opacity: 0;
+}
+
+#app-mount .message-2qnXI6 [class*=buttonContainer-] [class*=wrapper-]:hover {
+  background-image: unset;
+  width: auto;
+}
+
+#app-mount .message-2qnXI6 [class*=buttonContainer-] [class*=wrapper-]:hover > div {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 
@@ -11202,7 +11245,7 @@ border-radius: 0px;}
 
   
 .progress-2XXRYo .progressBar-3u8FBM {
-  background-color: var(--accentcolor); }
+  background-color: var(--accentcolor) !important; }
 
 
 /*   End Upload Modal   */
@@ -12637,7 +12680,10 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .item-2J1YMK:active {
 	box-shadow: none !important;
 }
-
+/* odsylanie do wiadomosci, niebieskie tlo */
+.backgroundFlash-24qWLN{
+  background-color: rgba(0, 0, 0, 0.24) !important;
+}
 
 
 /*PROFIL*/
@@ -13311,7 +13357,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   right:10px;
 }
 /*wielkosc avatara*/
-.clickableHeader-2Cygs8 .avatar-1BDn8e,
+/* .clickableHeader-2Cygs8 .avatar-1BDn8e, */
 .container-1YxwTf .avatar-17mtNa .wrapper-3t9DeA,
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA,
 .searchResultsWrap-2DKFzt .avatar-17mtNa .wrapper-3t9DeA {
@@ -13322,10 +13368,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .headerCozy-2H1QuU{
   margin-left: -50px;
 }
-.container-1ov-mD,
-.markupRtl-3M0hmN{
-  margin-left: 20px;
-}
+
 .clickableHeader-2Cygs8 .avatar-1BDn8e,
 .container-3FojY8 .headerCozyMeta-rdohGq {
   margin-left: 10px;
@@ -13340,6 +13383,10 @@ background: var(--accentcolor);
 .theme-dark .discriminator-3W31ZY{
   font-weight: 600;
 }
+
+.membersGroup-v9BXpm,
+.theme-dark .wrapper-3WhCwL,
+.name-uJV0GL,
 .username-1A8OIy{
   text-shadow: 2px 2px 2px #000000;
     
