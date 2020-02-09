@@ -32,15 +32,15 @@
   --notification-width:3px;
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
   --chatanim: 0;
+  --bubble-color: #161616b3;
+  --bubble-padding: 5px 8px;
+  --bubble-arrow-size: 5px;
   --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
   --home-color: #fff; /* kolor ikony domku na liscie serwerow*/
   --home-size: 28px; 
-  --rs-spacing: 2px; /* odstep miedzy ramka a avatarem */
-  --rs-width: 2px; /* wielkosc ramki wokol avatara */
-  --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
-  --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
-  --rs-profile-spacing: 0px; /* odstep w profilu */
-  --rs-profile-width: 4px; /* widocznosc ramki statusu w proflu */
+  --rs-small-spacing: 2px; /* spacing between avatar and status */
+  --rs-large-spacing: 3px; /* spacing between avatar and status for user popouts & modals/profiles */
+  --rs-width: 2px; /* Width/thickness of status border */
   --online: #17b641; /* kolor  statusu online */
   --idle: #faa61a; /* zajety */
   --dnd: #f71e1e; /* dnd */
@@ -4897,14 +4897,10 @@ a,
   opacity: 1;
 }
 
-.group-spacing-8 .beforeGroup-1rH1F0{
-  margin-top: 5px;
-  margin-bottom: 8px;
-}
-
 .isUnread-3Ef-o9{
   border-color: var(--accentcolor) !important;
-  margin-top: 10px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .unreadPill-2HyYtt{
@@ -6507,25 +6503,8 @@ color: #FFF
 }
   
   /* 11.b. Radial Status */
-  #app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"]:after {
-	content: "";
-	-webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4gICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMzQgMi4wMkwxNCAyYy0yLjIxIDAtNCAxLjc5LTQgNHYzNmMwIDIuMjEgMS43OSA0IDQgNGgyMGMyLjIxIDAgNC0xLjc5IDQtNFY2YzAtMi4yMS0xLjc5LTMuOTgtNC0zLjk4ek0zNCAzOEgxNFYxMGgyMHYyOHoiLz48L3N2Zz4=");
-	-webkit-mask-size: 20px;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: var(--online);
-	z-index: 1;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-/*By gibbu modified by tropical because it wont fucking import right*/
-#app-mount .wrapper-3t9DeA * {
+  
+  #app-mount .wrapper-3t9DeA * {
 	overflow: visible;
 	mask: none;
 }
@@ -6573,6 +6552,10 @@ color: #FFF
 	margin-right: 0 !important;
 }
 
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
+	clip-path: circle(calc(39px - var(--rs-large-spacing)));
+}
+
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
 	width: 80px;
 	height: 80px;
@@ -6586,6 +6569,10 @@ color: #FFF
 	transform: none;
 }
 
+#app-mount .wrapper-3t9DeA[style*="width: 32px;"] img {
+	clip-path: circle(calc(15px - var(--rs-small-spacing)));
+}
+
 #app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
 	width: 32px;
 	height: 32px;
@@ -6594,15 +6581,49 @@ color: #FFF
 	y: -17;
 }
 
+#app-mount .wrapper-3t9DeA img {
+	border-radius: 50%;
+}
+
+#app-mount .wrapper-3t9DeA[aria-label*="mobile"]:before {
+	content: "";
+	background: rgba(12, 12, 12, 0.3);
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	position: absolute;
+	right: -180px;
+}
+
+#app-mount .wrapper-3t9DeA[aria-label*="mobile"]:after {
+	content: "";
+	-webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4gICAgPHBhdGggZD0iTTE1LjUgMWgtOEM2LjEyIDEgNSAyLjEyIDUgMy41djE3QzUgMjEuODggNi4xMiAyMyA3LjUgMjNoOGMxLjM4IDAgMi41LTEuMTIgMi41LTIuNXYtMTdDMTggMi4xMiAxNi44OCAxIDE1LjUgMXptLTQgMjFjLS44MyAwLTEuNS0uNjctMS41LTEuNXMuNjctMS41IDEuNS0xLjUgMS41LjY3IDEuNSAxLjUtLjY3IDEuNS0xLjUgMS41em00LjUtNEg3VjRoOXYxNHoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==");
+	-webkit-mask-size: 16px;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	display: block;
+	position: absolute;
+	width: 12px;
+	height: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -171px;
+	background: var(--rs-online-color);
+	z-index: 1;
+}
+
 #app-mount .wrapper-3t9DeA rect {
 	x: 0;
 	y: 0;
 	width: 100%;
 	height: 100%;
-	rx:var(--avatars);
-	ry: var(--avatars);
+	rx: 200%;
+	ry: 200%;
 	fill: transparent;
-	stroke-width: 2px;
+	stroke-width: var(--rs-width);
 }
 
 #app-mount .wrapper-3t9DeA rect[fill="#43b581"],
@@ -6654,7 +6675,15 @@ color: #FFF
 }
 
 #app-mount .avatarHint-1qgaV3 .avatarHintInner-Dco91E {
-	border-radius: var(--avatars) !important;
+	border-radius: 50% !important;
+}
+
+#app-mount .message-1PNnaP .mask-1l8v16 img {
+	clip-path: circle(calc(19px - var(--rs-small-spacing)));
+}
+
+#app-mount .memberOffline-2lN7gt img {
+	clip-path: none !important;
 }
 
 #app-mount .header-QKLPzZ .wrapper-3t9DeA {
@@ -13330,8 +13359,28 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 /*tlo chatu*/ 
+.containerCozy-336-Cz.markup-2BOw-j:not(:empty) {
+  display: inline-block;
+  background-color: var(--bubble-color);
+  padding: var(--bubble-padding);
+  border-radius: 5px;
+  position: relative;
+}
 
-
+.groupStart-23k01U .containerCozy-336-Cz.markup-2BOw-j {
+  border-top-left-radius: 0;
+}
+.groupStart-23k01U .containerCozy-336-Cz.markup-2BOw-j::before {
+  content: '';
+  display: block;
+  border-style: solid;
+  border-width: 0 var(--bubble-arrow-size) var(--bubble-arrow-size) 0;
+  border-color: transparent var(--bubble-color) transparent transparent;
+  position: absolute;
+  left: calc(var(--bubble-arrow-size) * -1);
+  top: 0;
+}
+/* 
 #app-mount .chat-3bRxxu .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y.groupStart-23k01U {
   border-radius: 0px;
   margin-top: 10px;
@@ -13343,7 +13392,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   background: var(--black1);
   margin: 0 10px 0 20px;
   padding: 0 20px 0 9px;
-}
+} */
 
 /*wielkosc avatara*/
 /* .clickableHeader-2Cygs8 .avatar-1BDn8e, */
