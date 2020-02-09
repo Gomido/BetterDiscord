@@ -13359,32 +13359,12 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 /*tlo chatu*/ 
-.containerCozy-336-Cz.markup-2BOw-j:not(:empty) {
-  display: inline-block;
-  background-color: var(--bubble-color);
-  padding: var(--bubble-padding);
-  border-radius: 5px;
-  position: relative;
-}
 
-.groupStart-23k01U .containerCozy-336-Cz.markup-2BOw-j {
-  border-top-left-radius: 0;
-}
-.groupStart-23k01U .containerCozy-336-Cz.markup-2BOw-j::before {
-  content: '';
-  display: block;
-  border-style: solid;
-  border-width: 0 var(--bubble-arrow-size) var(--bubble-arrow-size) 0;
-  border-color: transparent var(--bubble-color) transparent transparent;
-  position: absolute;
-  left: calc(var(--bubble-arrow-size) * -1);
-  top: 0;
-}
-/* 
 #app-mount .chat-3bRxxu .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y.groupStart-23k01U {
   border-radius: 0px;
   margin-top: 10px;
-  ding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -13392,15 +13372,19 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   background: var(--black1);
   margin: 0 10px 0 20px;
   padding: 0 20px 0 9px;
-} */
+}
 
 /*wielkosc avatara*/
-/* .clickableHeader-2Cygs8 .avatar-1BDn8e, */
+.clickableHeader-2Cygs8 .avatar-1BDn8e,
 .container-1YxwTf .avatar-17mtNa .wrapper-3t9DeA,
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA,
 .searchResultsWrap-2DKFzt .avatar-17mtNa .wrapper-3t9DeA {
   height: 45px!important;
   width: 45px!important;
+}
+
+.clickableHeader-2Cygs8 .avatar-1BDn8e{
+  top:-2px;
 }
 
 .container-3FojY8 {
