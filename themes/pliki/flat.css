@@ -13363,15 +13363,15 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 #app-mount .chat-3bRxxu .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y.groupStart-23k01U {
   border-radius: 0px;
   margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  /* padding-bottom: 10px; */
 }
 
 
 #app-mount .chat-3bRxxu .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y {
   background: var(--black1);
   margin: 0 10px 0 20px;
-  padding: 0 20px 0 9px;
+  /* padding: 0 20px 0 9px; */
 }
 
 /*wielkosc avatara*/
@@ -13384,7 +13384,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 .clickableHeader-2Cygs8 .avatar-1BDn8e{
-  top:-2px;
+  top:-5px;
 }
 
 .container-3FojY8 {
