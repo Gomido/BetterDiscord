@@ -6504,6 +6504,24 @@ color: #FFF
   
   /* 11.b. Radial Status */
   
+  #app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"]:after {
+    content: "";
+    -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4gICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMzQgMi4wMkwxNCAyYy0yLjIxIDAtNCAxLjc5LTQgNHYzNmMwIDIuMjEgMS43OSA0IDQgNGgyMGMyLjIxIDAgNC0xLjc5IDQtNFY2YzAtMi4yMS0xLjc5LTMuOTgtNC0zLjk4ek0zNCAzOEgxNFYxMGgyMHYyOHoiLz48L3N2Zz4=");
+    -webkit-mask-size: 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--online);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
   #app-mount .wrapper-3t9DeA * {
 	overflow: visible;
 	mask: none;
@@ -8318,6 +8336,31 @@ border-radius: 0px;
 .theme-dark .guildPopout-3CgKqR {
   background-color: var(--titlebar);
   border-radius: 0px !important;
+}
+
+/* ukrywanie szkania, mention, pomocy, paska na gorze  */
+/*hover == false*/
+[class^="toolbar-"]{
+  max-width: 40px;
+  transition: max-width 1.5s;
+  -webkit-transition: max-width 1.5s;
+  -moz-transition: max-width 1.5s;
+  -o-transition: max-width 1.5s;
+  height: 100%;
+}
+[class^="toolbar-"]::before{
+  content: "︙";
+  font-size: 24px;
+  margin: 0 8px;
+}
+/*hover == true*/
+[class^="toolbar-"]:hover{
+  max-width: 100vw;
+}
+[class^="toolbar-"]:hover::before{
+  content: " ";
+  font-size: 24px;
+  margin: 0 8px;
 }
 
 /* wysuwajka reakcji */
