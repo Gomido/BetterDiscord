@@ -1,30 +1,25 @@
 :root {
     /* podstawe, kolory, avatary to ruszać*/
-  --avatars: 50px; /* 0px - kwadratowe avatary, 50px okragle*/
-  --accentcolor: #3a90ec; /*główny kolor skina/elementów po kliknięciu*/
-  --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu (np pasek na liście osob)*/
+  --avatars: 0px; /* 0px - kwadratowe avatary, 50px okragle*/
+  --accentcolor: #2da0ff;/*kolor akcentu/niektore elementy skina, zaznaczenie*/
+  --accentcolor2: #FFF; /*drugi kolor akcentu*/
+  --gradientcolor1: #f80000; /*kolor akcentu pierwszy*/
+  --gradientcolor2: #8e08fc; /*kolor akcentu drugi*/
   --notifycolor: #eeeeee; /*kolor otoczki nowych wiadomosci*/
-  --badgecolor: #3a90ec; /*kolor kółeczek z cyfra przy wzmiankach itp*/
+  --badgecolor: #00a2ff; /*kolor kółeczek z cyfra przy wzmiankach itp*/
+  --hovercolor: #FFF; /*kolor po najechaniu, krawedzie*/
   --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
 
     /* mniej wazne, mozna nie tykać*/
-  --titlebar: #212121; /*kolor paska z napisem discord*/
   --chatbackground: #303030; /*kolor chatu pod wiadomosciami*/
   --channellistcolor: #252525; /*kolor listy kanalow, uzytkownikow*/
   --guildlistcolor: #303030; /*kolor tla serwerów*/
   --headercolor: #161616; /*kolor paska na górze kanału/serwera*/
-  --notification-width:3px;
+  --notification-width: 3px;
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
-  --chatanim: 0;
-  --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
   --home-color: #fff; /* kolor ikony domku na liscie serwerow*/
   --home-size: 28px; 
-  --rs-spacing: 2px; /* odstep miedzy ramka a avatarem */
-  --rs-width: 2px; /* wielkosc ramki wokol avatara */
-  --rs-popout-spacing: 1px; /* odleglosc miedzy statusem a nickiem */
-  --rs-popout-width: 2px; /* odleglosc mniedzy popoutami */
-  --rs-profile-spacing: 0px; /* odstep w profilu */
-  --rs-profile-width: 4px; /* widocznosc ramki statusu w proflu */
+  --rs-width: 2px; /* Width/thickness of status border */
   --online: #17b641; /* kolor  statusu online */
   --idle: #faa61a; /* zajety */
   --dnd: #f71e1e; /* dnd */
