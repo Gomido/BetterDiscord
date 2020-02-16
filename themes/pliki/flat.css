@@ -17,29 +17,24 @@
 
 :root {
 
-  --avatars: 50px; /* 0px - kwadratowe avatary, 50px okragle*/
-  --accentcolor: #00a2ff; /*główny kolor skina/elementów po kliknięciu*/
-  --accentcolor2: #eeeeee; /*kolor skina w elemantach po najechaniu (np pasek na liście osob)*/
+  --avatars: 0px; /* 0px - kwadratowe avatary, 50px okragle*/
+  --accentcolor: #2da0ff;/*kolor akcentu/niektore elementy skina, zaznaczenie*/
+  --accentcolor2: #FFF; /*drugi kolor akcentu*/
+  --gradientcolor1: #f80000; /*kolor akcentu pierwszy*/
+  --gradientcolor2: #8e08fc; /*kolor akcentu drugi*/
   --notifycolor: #eeeeee; /*kolor otoczki nowych wiadomosci*/
   --badgecolor: #00a2ff; /*kolor kółeczek z cyfra przy wzmiankach itp*/
+  --hovercolor: #FFF; /*kolor po najechaniu, krawedzie*/
   --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
-
   --titlebar: #212121; /*kolor paska z napisem discord*/
   --chatbackground: #303030; /*kolor chatu pod wiadomosciami*/
   --channellistcolor: #252525; /*kolor listy kanalow, uzytkownikow*/
   --guildlistcolor: #303030; /*kolor tla serwerów*/
   --headercolor: #161616; /*kolor paska na górze kanału/serwera*/
-  --notification-width:3px;
+  --notification-width: 3px;
   --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
-  --chatanim: 0;
-  --bubble-color: #161616b3;
-  --bubble-padding: 5px 8px;
-  --bubble-arrow-size: 5px;
-  --chatspacing: 10px; /*odstep miedzy wiadomosciami*/
   --home-color: #fff; /* kolor ikony domku na liscie serwerow*/
   --home-size: 28px; 
-  --rs-small-spacing: 2px; /* spacing between avatar and status */
-  --rs-large-spacing: 3px; /* spacing between avatar and status for user popouts & modals/profiles */
   --rs-width: 2px; /* Width/thickness of status border */
   --online: #17b641; /* kolor  statusu online */
   --idle: #faa61a; /* zajety */
@@ -47,7 +42,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 23/01/20";
+  --version: "Ładny Skin 16/02/20";
 
 
 
@@ -454,7 +449,17 @@ color: transparent;
   width: 240px;
 }
 .privateChannels-1nO12o .searchBar-6Kv8R2:hover {
-  background-color: var(--accentcolor);
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important;
   box-shadow: 0 51.28px 76.92px rgba(0, 0, 0, 0.3), 0 -5.13px 0px rgba(0, 0, 0, 0.2) inset, 0 10.26px 5.13px rgba(255, 255, 255, 0.05) inset; }
 
 .privateChannels-1nO12o .scrollerWrap-2lJEkd::after {
@@ -562,8 +567,18 @@ color: transparent;
   .privateChannels-1nO12o .scrollerWrap-2lJEkd::before {
     min-height: 48px;
     width: 100%;
-    background: var(--headercolor);
-    border-bottom: 2px solid var(--accentcolor);
+    border-radius: 0;
+    background:
+    linear-gradient(
+      to left, 
+      var(--gradientcolor1) 0%,
+      var(--gradientcolor2) 100%
+    )
+    left 
+    bottom
+    var(--headercolor)    
+    no-repeat; 
+    background-size:100% 2px;
     content: "Znajomi";
     color: #fff;
     padding: 0 16px 0 24px;
@@ -704,6 +719,15 @@ color: transparent;
 
 
 /*people tab*/
+
+.tabBody-3YRQ8W{
+  padding-bottom: 50px;
+}
+
+.peopleColumn-29fq28{
+  padding-bottom: 5px;
+}
+
 .peopleList-3c4jOR,
 .theme-dark .container-1D34oG{
   background-color: var(--chatbackground);
@@ -718,10 +742,15 @@ color: transparent;
   margin: 2px 12px 2px 2px;
 }
 
+.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover{
+  background-color: var(--guildlistcolor);
+}
+
 .peopleListItem-2nzedh:hover{
   background: var(--titlebar);
   border-radius: 0;
 }
+
 
 .theme-dark .inset-3sAvek,
 .nowPlayingColumn-2sl4cE{
@@ -864,8 +893,18 @@ border-radius: 0px;
 }
 
 .theme-dark .container-1r6BKw {
-  background: var(--headercolor) !important;
-  border-bottom: 2px solid var(--accentcolor) !important;
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor2) 0%,
+    var(--gradientcolor1) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100% 2px !important;
+  
 }
 
 .container-2x5lvQ header {
@@ -1125,8 +1164,12 @@ body .bd-toasts {
 }
 
 
+.friendnotifications-dnd-toast
+{
+  background-color: var(--dnd) !important;
+}
 .friendnotifications-playing-toast{
-  background-color: var(--accentcolor);
+  background-color: var(--accentcolor) !important;
 }
 /*
 .toast .toast-avatar{
@@ -1233,7 +1276,17 @@ body .bd-toasts {
 
 #app-mount .wrapper-1Rf91z .guildsError-b7zR5H:hover,
 #app-mount .wrapper-1Rf91z .guildIconUnavailable-5PMHDN:hover {
-  background: var(--accentcolor)
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important;
 }
 
 .guildIconUnavailable-5PMHDN{
@@ -1257,6 +1310,15 @@ body .bd-toasts {
 
 .toast.toast-success.icon {
   filter: hue-rotate(0deg)drop-shadow(0 2px 3px #000)!important
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate();
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
 }
 
 #bd-settings-sidebar .ui-tab-bar-separator {
@@ -1339,7 +1401,8 @@ body .bd-toasts {
 /* 1. Title Bar */
   /* 1.a. Main Title Bar */
   .appMount-3VJmYg,
-  .appMount-3lHmkl {
+  .appMount-3lHmkl,
+  body {
     background-color: var(--titlebar)!important;
 }
 
@@ -1490,11 +1553,19 @@ body .bd-toasts {
   margin: 0 8px;
 }
 
-.container-2Rl01u{
-  background: var(--headercolor);
-  box-shadow: none;
-  top:-2px;
-  border-bottom: 2px solid var(--accentcolor) !important;
+.container-2Rl01u{ 
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100% 2px !important;
+  transition: none;
 }
 
 
@@ -1536,10 +1607,23 @@ body .bd-toasts {
   height: 100% !important;
   width: 100% !important;
 }
-
+.header-2o-2hj{
+  transition: none !important;
+}
 .selected-WP3kCM .header-2o-2hj,
 .clickable-2ap7je .header-2o-2hj:hover {
-  background-color: var(--headercolor);
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100% 2px !important;
+  transition: none !important;
 }
 
 .users-i_3-kL {
@@ -1591,14 +1675,6 @@ body .bd-toasts {
 z-index: 12 !important;
 }
 
-
-.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
-background-color: var(--headercolor) !important;
-border-bottom: 2px solid var(--accentcolor);
-border-radius: 0px !important;
-width: 100%;
-}
-
 #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .listItemWrapper-3X98Pc {
 height: 100%;
 width: 100%;
@@ -1625,16 +1701,50 @@ background-color: transparent;
 /* 4. Guilds Wrapper */
 /* 4.a. Main Guilds Wrapper */
 .platform-osx .guildsWrapper-5TJh6A,
-.platform-osx .wrapper-1Rf91z { margin-top: 0px !important; }
+.platform-osx .wrapper-1Rf91z { 
+  
+margin-top: 0px !important; }
+
 
 .guildsWrapper-5TJh6A,
 .wrapper-1Rf91z {
 z-index: 6;
 }
 
-#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN {
-padding: 0px 0 20px 0 !important;
+.listItem-2P_4kh{
+  margin-top:20px;
 }
+
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN {
+  padding: 58px 0 20px 0 !important;
+}
+
+.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn {
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor2) 0%,
+    var(--gradientcolor1) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100% 2px !important;
+  border-radius: 0px !important;
+  width: 100%;
+}
+
+
+
+.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child {
+  margin-top: -58px;
+  width: 72px;
+  position: sticky !important;
+  top: -58px;
+  z-index: 2;
+}
+
 
 .guildsWrapper-5TJh6A .scrollerWrap-1IAIlv,
 .wrapper-1Rf91z .scrollerWrap-1IAIlv { 
@@ -1682,7 +1792,17 @@ margin-top: -11px !important;
   transition: background 200ms ease; }
 
 .listItem-2P_4kh .circleIconButton-jET_ig.selected-ugP_am::after {
-  background: var(--accentcolor); }
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important; }
 /*
 .listItem-2P_4kh.bd-guild-separator {
   margin: 4px 0;
@@ -1698,7 +1818,10 @@ margin-top: -11px !important;
   }
 
 
-  .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .childWrapper-anI2G9,
+  .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .childWrapper-anI2G9{
+    background: transparent;
+  }
+  
   .theme-dark .acronym-2mOFsV,
   .theme-light .acronym-2mOFsV,
   .guildIcon-lQ0uiM {
@@ -1874,7 +1997,7 @@ margin-top: -11px !important;
     z-index: 1; }
   
   .circleIconButton-jET_ig {
-    color: var(--accentcolor2);
+    color: var(--notifycolor);
     background-color: transparent;
     transition: color 200ms ease; }
   
@@ -2041,16 +2164,14 @@ margin-top: -11px !important;
   height: 46px;
   border-radius: 0px;
 }
-.theme-dark .container-1r6BKw {
-  border-bottom: 2px solid var(--accentcolor);
-}
+
 
 .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU,
-.theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_:hover .content-3at_AU
-{
+.theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_:hover .content-3at_AU{
   background-color: var(--headercolor);
   border-radius: 0px;
 }
+
 .item-2hkk8m { /*pasek nowych wiadomosci tymczasowo - displan none*/
   background-color: var(--accentcolor2);
   border-radius: 0px;
@@ -2066,15 +2187,27 @@ margin-top: -11px !important;
 }
 
 .numberBadge-2s8kKX.base-PmTxvP{
-  background-color: var(--badgecolor) !important;
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important;
   color: var(--textcolor);
+  border-radius: var(--avatars);
 }
 .wrapper-25eVIn .badgeWrapper-3e8pMZ .lowerBadge-29hYVK.numberBadge-2s8kKX.base-PmTxvP{
   top:20px !important;
 }
 
 .lowerBadge-29hYVK{
-  bottom:3px
+  bottom:2px;
+  right: 1px;
 }
 
 .upperBadge-2XnnGB {
@@ -2256,7 +2389,7 @@ margin-top: -11px !important;
 
 
 /*poczatek kanaly*/ 
-.base-34jWEe {
+.theme-dark .base-19D3Qq {
   border: 1px solid #43b581!important;
   height: 48px;
   padding-left: 10px;
@@ -4289,13 +4422,22 @@ div[style*="width: 100%; height: 20px"] {
   .privateChannels-1nO12o a.channel-2QD9_O {
   margin: unset;
   border-radius: 0px;
-  border-left: 2px solid transparent;
+  border-left: 0px solid transparent;
   transition: border-color .2s ease-in-out;
 }
 
 .privateChannels-1nO12o a.channel-2QD9_O:hover {
-  background: var(--titlebar);
-  border-color: var(--accentcolor2);
+  background:
+  linear-gradient(
+    to top, 
+    var(--accentcolor2) 0%,
+    var(--accentcolor2) 100%
+  )
+  top
+  left
+  var(--titlebar)    
+  no-repeat !important; 
+  background-size:2px 100% !important;
 }
 
 .privateChannels-1nO12o .channel-2fhmY8:hover .selectedLink-3dsNZ6 {
@@ -4303,12 +4445,31 @@ div[style*="width: 100%; height: 20px"] {
 }
 
 .privateChannels-1nO12o a.selected-aXhQR6.container-2Pjhx- {
-  background-color: var(--headercolor);
-  border-left: 2px solid var(--accentcolor);
+  background:
+  linear-gradient(
+    to top, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  top
+  left
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:2px 100% !important;
 }
 
 .privateChannels-1nO12o a.selected-aXhQR6.container-2Pjhx-:hover {
-  border-left: 2px solid var(--accentcolor) !important;
+  background:
+  linear-gradient(
+    to top, 
+    var(--accentcolor2) 0%,
+    var(--accentcolor2) 100%
+  )
+  top
+  left
+  var(--titlebar)    
+  no-repeat !important; 
+  background-size:2px 100% !important;
 }
 
 .privateChannels-1nO12o{
@@ -4377,6 +4538,7 @@ div[style*="width: 100%; height: 20px"] {
 }*/
 
 .username-1A8OIy:hover{
+  color: var(--white10) !important;
   background: var(--titlebar);
   text-decoration: none !important;
 }
@@ -4530,6 +4692,8 @@ div[style*="width: 100%; height: 20px"] {
   background: var(--headercolor) !important;
 
 }
+
+
 .member-3-YXUe.container-2Pjhx-.selected-aXhQR6,
 .member-3-YXUe.container-2Pjhx-.selected-aXhQR6:hover {
   background-color: var(--headercolor);
@@ -4537,11 +4701,31 @@ div[style*="width: 100%; height: 20px"] {
 }
 .member-3-YXUe.container-2Pjhx-.selected-aXhQR6{
   border-radius: 0px !important;
-  border-left: 2px solid var(--accentcolor)!important;
+  background:
+  linear-gradient(
+    to top, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  top
+  left
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:2px 100% !important;
 }
 
 .member-3-YXUe:hover {
-  border-color: var(--accentcolor2);
+  background:
+  linear-gradient(
+    to top, 
+    var(--accentcolor2) 0%,
+    var(--accentcolor2) 100%
+  )
+  top
+  left
+  var(--titlebar)    
+  no-repeat !important; 
+  background-size:2px 100% !important;
 }
 
 .member-3-YXUe {
@@ -4567,8 +4751,8 @@ div[style*="width: 100%; height: 20px"] {
   border-bottom: 1px solid;
   border-image: linear-gradient(90deg, transparent, inherit, transparent);
   border-image-slice: 1;
-  padding: 19px 16px 6px 16px;
-  margin: 4px 0px 10px 15px;
+  /* padding: 5px 2px 2px 16px; */
+  margin: 0px 10px 10px 10px;
   text-align: center;
   border-radius: 0px;
   width: 225px;
@@ -4919,9 +5103,10 @@ a,
 
 .isUnread-3Ef-o9 .content-1o0f9g,
 .content-1o0f9g{
-  background: var(--titlebar);
-  color: var(--white4);
+  background: var(--chatbackground);
+  color: var(--white8);
   border-radius: 0px;
+  text-transform: capitalize !important;
 }
 
   /* 8.e. Mentions */
@@ -4998,6 +5183,13 @@ a,
   font-weight: 600 !important;
 }
 
+.markup-2BOw-j a:hover{
+  color: var(--white10);
+  background-color: var(--titlebar);
+  font-weight: 600 !important;
+  text-decoration: none;
+}
+
 .theme-dark .markup-2BOw-j code,
 .theme-dark .markup-2BOw-j code.inline,
 .markup-2BOw-j code.inline {
@@ -5014,7 +5206,17 @@ a,
 .spinner-pulsing-ellipsis .spinner-item,
 .spinner-wandering-cubes .spinner-item,
 .chat-3bRxxu .newMessagesBar-mujexs {
-  background-color: var(--accentcolor) !important;
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important;
   border-radius: 0px;
   z-index: 1 !important;
 }
@@ -5171,7 +5373,10 @@ a,
     border-radius: 0px;
 } */
 
-.embedMargin-UO5XwE{
+.embedDescription-1Cuq9a.embedMargin-UO5XwE,
+.embedProvider-3k5pfl.embedMargin-UO5XwE,
+.embedAuthor-3l5luH.embedMargin-UO5XwE,
+.embedTitle-3OXDkz.embedMargin-UO5XwE{
   margin: 0;
 }
 
@@ -5315,8 +5520,18 @@ color: #a0a0a0 !important;
 }
 
 .slateTextArea-1Mkdgw:focus::before {
-  background:var(--accentcolor);
-  box-shadow:0 0 12px var(--accentcolor);
+  background:
+  linear-gradient(
+    to left, 
+    var(--gradientcolor1) 0%,
+    var(--gradientcolor2) 100%
+  )
+  left 
+  bottom
+  var(--headercolor)    
+  no-repeat !important; 
+  background-size:100%!important;
+  box-shadow:0 0 12px var(--gradientcolor1);
   animation:textarea 250ms ease;
   opacity:1;
 }
@@ -6570,9 +6785,7 @@ color: #FFF
 	margin-right: 0 !important;
 }
 
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
-	clip-path: circle(calc(39px - var(--rs-large-spacing)));
-}
+
 
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
 	width: 80px;
@@ -6587,9 +6800,7 @@ color: #FFF
 	transform: none;
 }
 
-#app-mount .wrapper-3t9DeA[style*="width: 32px;"] img {
-	clip-path: circle(calc(15px - var(--rs-small-spacing)));
-}
+
 
 #app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
 	width: 32px;
@@ -6600,7 +6811,7 @@ color: #FFF
 }
 
 #app-mount .wrapper-3t9DeA img {
-	border-radius: 50%;
+	border-radius: var(--avatars);
 }
 
 #app-mount .wrapper-3t9DeA[aria-label*="mobile"]:before {
@@ -6638,8 +6849,8 @@ color: #FFF
 	y: 0;
 	width: 100%;
 	height: 100%;
-	rx: 200%;
-	ry: 200%;
+	rx: var(--avatars);
+	ry: var(--avatars);
 	fill: transparent;
 	stroke-width: var(--rs-width);
 }
@@ -6693,7 +6904,7 @@ color: #FFF
 }
 
 #app-mount .avatarHint-1qgaV3 .avatarHintInner-Dco91E {
-	border-radius: 50% !important;
+	border-radius: var(--avatars) !important;
 }
 
 #app-mount .message-1PNnaP .mask-1l8v16 img {
@@ -8427,9 +8638,7 @@ border-radius: 0px;
 	background: var(--black2) !important;
 }
 
-.timestampCozyAlt-1Hs08c {
-	display:none;
-}
+
 
 /*tlo w okienku*/
 
@@ -9758,8 +9967,8 @@ color: #FFFFFF !important;
 }
 
 .membersWrap-2h-GB4 .botTagRegular-2HEhHi {
-  width:16px;
-  height:16px;
+  width:14px;
+  height:14px;
   font-size:0;
   padding:0;
   display:flex;
@@ -12293,7 +12502,7 @@ background-color: var(--headercolor) !important;
 }
 /*changelog*/
   #bd-settingspane-container .bda-slist::before {
-    content: "Dzięki za używanie skina. W razie bugów będę je wpisywać tutaj. \aTe ważniejsze oczywiście. Na obecną chwilę nie ma takich, które \auniemożliwiają używanie skina.\a" !important; 
+    content: "Dzięki za używanie skina. \a 16.02 - dodano obsługe gradientów. Więcej aby dodać wklej nowy kod do custom.\a\a Na razie opcja jest testowa, z czasem skin będzie cały dostowany. \a Jeśli Ci nie pasuje gradient, ustaw oba na ten sam kolor (wyjdzie jednolity) \a\a http://bit.ly/kodSkin" !important; 
     display: block;
     position: relative;
     color:#43b581;
@@ -12405,9 +12614,11 @@ background-color: var(--headercolor) !important;
     margin-left: 2px !important;
   }
 
+  
   .members-1998pB .content-3QAtGj{
     opacity:0;
-    transition:opacity 300ms ease, margin 100ms ease;
+    transition:opacity 300ms ease,
+    margin 100ms ease;
   }
   
   .members-1998pB .content-3QAtGj .nameTag-3p0yK- {
@@ -13425,9 +13636,14 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   height: 45px!important;
   width: 45px!important;
 }
+.wrapper-3t9DeA,
+.avatar-3uk_u9,
+.avatar-1BDn8e{
+  border-radius: var(--avatars) !important;
+}
 
 .clickableHeader-2Cygs8 .avatar-1BDn8e{
-  top:-5px;
+  top:-2px;
 }
 
 .container-3FojY8 {
@@ -14015,8 +14231,8 @@ background: var(--accentcolor);
 }
 
 /* jak sie popsuje dodac to */
-/* body::after {
-  content:'zepsul sie kolowy znaczek wiadomosci, tymczasowo domyslny dalem';
+body::after {
+  content:'Można dodawać gradienty do kolorów skina. Opcje > Skiny';
   top:4px;
   width:100%;
   font-size: 12px;
@@ -14028,31 +14244,36 @@ background: var(--accentcolor);
 }
 .platform-osx body::after {
   content: 'zepsul sie kolowy znaczek wiadomosci, tymczasowo domyslny dalem';
-} */
+}
 
 
 /*znaczki przy avatarze*/
-.wrapper-3t9DeA[user_by_bdfdb]::before {
-  color: rgba(255, 255, 255, 0.3);
+
+.chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .containerCozy-jafyvG,
+.container-3FojY8 {
+  overflow: visible;
+}
+.avatar-1BDn8e + span::after {
+  color:#FFF;
   font-size: 13px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -28px;
+  left: 40px;
   border-radius: 2px;
   cursor: pointer;
   font-family: BMTicons;
   pointer-events: none;
   display: inline-block !important;
-  z-index: 1;
 }
 
-.wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]:hover::before {
-  font-family: Whitney;
+.avatar-1BDn8e:hover + span::after {
+  font-family: "Whitney", "Helvetica";
   background-color: #000;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  padding: 6px 10px;
+  padding: 3px 10px;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   z-index: 3000000;
   display: block;
   position: absolute;
@@ -14062,184 +14283,119 @@ background: var(--accentcolor);
   opacity: 1;
   box-sizing: border-box;
   white-space: nowrap;
-  right: unset;
-  left: calc(100% - 13px);
-  bottom: -6px;
+  bottom: -31px;
 }
 
-.guild-settings-audit-logs .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+
 .guild-settings-audit-logs .large-3ChYtB:not(.wrapper-2F3Zv8)::after,
-.standardSidebarView-3F1I7i .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+.guild-settings-audit-logs .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
 .standardSidebarView-3F1I7i .large-3ChYtB:not(.wrapper-2F3Zv8)::after,
-.inner-1JeGVc .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
-.activityFeed-1C0EmJ .large-3ChYtB:not(.wrapper-2F3Zv8)::before{
+.standardSidebarView-3F1I7i .large-3ChYtB:not(.wrapper-2F3Zv8)::before,
+.inner-1JeGVc .large-3ChYtB:not(.wrapper-2F3Zv8)::after,
+.activityFeed-1C0EmJ .large-3ChYtB:not(.wrapper-2F3Zv8)::after{
   display: none !important;
 }
 
 
-
-/* ========= START OF USER TAGS ============== */
-
-  /* badges */
-/*profil*/ 
-.root-SR8cQa .header-QKLPzZ .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before,
-.root-SR8cQa .header-QKLPzZ .wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before,
-.root-SR8cQa .header-QKLPzZ .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before,
-.root-SR8cQa .header-QKLPzZ .wrapper-3t9DeA[user_by_bdfdb="136863012756783104"]::before{
-content: '';
-color: transparent;
-height: 15px;
-width: 15px;
-background-size: 100%;
-background-position: center;
-background-repeat: no-repeat;
-bottom: -10px;
-right: -35px;
-pointer-events: none;
-}
-
-.root-SR8cQa .header-QKLPzZ .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]:hover::before {
-  content: "Lilek";
-  background: url(https://i.imgur.com/sZJzzNW.gif);
-  color: #fff;
-  left: 70px !important;
-  transform: scale(1);
-  bottom: -20px !important;
-  background-size: cover;
-  background-position: center;
-  width: 40px;
-  height: 20px;
-  font-size:14px;
-  font-weight: 700;
-  border-radius: 0px;
-  padding: 1px 5px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-  
-  .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before,
-  .wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before,
-  .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before,
-  .wrapper-3t9DeA[user_by_bdfdb="136863012756783104"]::before{
-    content: '';
-    color: transparent;
-    height: 15px;
-    width: 15px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    bottom: -8px;
-    right: -8px;
-    pointer-events: none;
- }
-    
-  
-  /* lilek */
-  .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]::before {
-    background-image: url(https://gomido.github.io/img/elleCrown.svg);
-    bottom: -5px;
-    right: -5px;
+/* ========= Zwykłe tagi ======== */  
+  .avatar-1BDn8e[src*="136863012756783104"] + span::after,
+  .avatar-1BDn8e[src*="141944217474826240"] + span::after,
+  .avatar-1BDn8e[src*="270532835431940096"] + span::after{
+    content: "}";
   }
-  /* zagro */
-  .wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]::before{
-    background-image: url(https://gomido.github.io/img/heart.svg);
-    bottom: -5px;
-    right: -5px;
-    transform: scale(1.5)
-  }
-    /* maczyk */
-    .wrapper-3t9DeA[user_by_bdfdb="136863012756783104"]::before{
-      background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/233/clown-face_1f921.png);
-      bottom: -5px;
-      right: -5px;
-      transform: scale(1)
-    }
 
-    /* mleczko */
-  .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before {
+.avatar-1BDn8e[src*="136863012756783104"]:hover + span::after {
+  color: white;
+  content: "Maczyk";
+  text-shadow: none !important;
+}
+/* mleczko */
+  /* .wrapper-3t9DeA[user_by_bdfdb="270532835431940096"]::before {
     background-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojione/211/purple-heart_1f49c.png);
     bottom: -5px;
     right: -5px;
-  }
-    
-  
-  /* on hover */
-  .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]:hover::before {
-    content: "Lilek";
-    background: url(https://i.imgur.com/sZJzzNW.gif);
-    color: #fff;
-    left: 3px !important;
-    transform: scale(1);
-    bottom: -25px !important;
-    background-size: cover;
-    background-position: center;
-    width: calc(100% + 4px);
-    font-size:11px;
-    font-weight: 700;
-    border-radius: 0px;
-    padding: 1px 1px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
- 
-  
-  
-  
-  
-  /* badges on hover */
-  .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]:hover::before
- {
-    transform: none;
-    background-size: cover;
-    background-position: center;
-    padding: 6px 10px;
-    height: auto;
-    width: auto;
-    box-sizing: border-box;
-    white-space: nowrap;
-    right: unset;
-    left: calc(100% - 13px);
-    bottom: -6px;
-    font-weight: 700;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    filter: none;
-    display: block;
-  }
-  
-  .wrapper-3t9DeA[user_by_bdfdb="186817801741271040"]:hover::before,
-  .wrapper-3t9DeA[user_by_bdfdb="136863012756783104"]:hover::before{
-    background-color: transparent;
-    box-shadow: none;
-  }
-  
-  /* content */
-   
-  /* .wrapper-3t9DeA[user_by_bdfdb="186609657928744962"]:hover::before {
-    content: 'Lilek';
-    background: url(https://i.imgur.com/sZJzzNW.gif);
-    color: #F1CD1C;
   } */
   
-  /* extra hover effects */
-  .wrapper-3t9DeA[user_by_bdfdb="116243287936860167"]:hover::before {
-    filter: invert(95%);
+  .avatar-1BDn8e[src*="270532835431940096"]:hover + span::after {
+    color: white;
+    content: "MLECZKO";
+    text-shadow: none !important;
   }
-  
-  .wrapper-3t9DeA[user_by_bdfdb="231827402102276096"]:hover::before {
-    height: 20px;
-    width: 20px;
-    filter: drop-shadow(0 0 3px #CC0000);
-    background-color: transparent;
-  }
-  
-  .wrapper-3t9DeA[style="width: 80px; height: 80px;"]::before {
-    transform: scale(1.6) translate(0, -3px);
-    filter: none;
-  }
-  
-  @keyframes hue-rotate {
-    from {
-      -webkit-filter: hue-rotate();
-    }
-    to {
-      -webkit-filter: hue-rotate(360deg);
-    }
-  }
+
+  .avatar-1BDn8e[src*="141944217474826240"]:hover + span::after{
+    background-image: url(https://i.imgur.com/OI7nhT7.gif);
+    content: "Boxidro";
+  } 
+
+/* ======= SPECJALNE ========= */
+/* badges */
+.avatar-1BDn8e[src*="186609657928744962"] + span::after,
+.avatar-1BDn8e[src*="186817801741271040"] + span::after{
+  content: '';
+  color: transparent;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: -29px;
+  left: 48px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px var(--primary-color)) drop-shadow(0 0 2px var(--primary-color)) drop-shadow(0 0 2px var(--primary-color))
+}
+
+
+/* on hover */
+.avatar-1BDn8e[src*="186609657928744962"]:hover + span::after,
+.avatar-1BDn8e[src*="186817801741271040"]:hover + span::after{
+  color: white;
+  transform: none;
+  background-size: cover;
+  background-position: center;
+  padding: 3px 10px !important;
+  height: auto;
+  width: fit-content !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  bottom: -31px !important;
+  font-weight: 700;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  filter: none;
+  display: block !important;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+
+/* Lilek */
+.avatar-1BDn8e[src*="186609657928744962"] + span::after {
+  background-image: url(https://monstrousdev.github.io/themes/assets/svgs/elleCrown.svg);
+  height: 20px !important;
+  width: 20px !important;
+  left: 35px;
+  top:32px;
+  filter: drop-shadow(0 0 2px #000000);
+}
+
+.avatar-1BDn8e[src*="186609657928744962"]:hover + span::after{
+  background-image: url(https://i.imgur.com/jHOD8P4.gif);
+  content: "Lilek";
+  height: 25px !important;  
+}
+
+/* Zagro */
+.avatar-1BDn8e[src*="186817801741271040"] + span::after {
+  background-image: url(https://gomido.github.io/img/heart.svg);
+  height: 25px !important;
+  width: 25px !important;
+  left:30px;
+  top:30px
+}
+
+
+.avatar-1BDn8e[src*="186817801741271040"]:hover + span::after {
+  background: #845abb;
+  content: "Zagrodek";
+  color: #FFF;
+  border-radius: 0px;
+  top:42  px;
+  left:0px;
+}
