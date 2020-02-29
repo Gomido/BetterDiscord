@@ -2103,7 +2103,7 @@ margin-top: -11px !important;
 
 
 /* pencil, edited */
-.edited-DL9ECl {
+.edited-3sfAzf{
   font-size: 0;
   width: 13px !important;
   height: 13px !important;
@@ -2114,10 +2114,8 @@ margin-top: -11px !important;
   line-height: 23px;
   margin-left: 5px; }
 
-  /* 2.b. Search Bars */
-
-
   
+  /* 2.b. Search Bars */
 .search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
     padding: 0px 0px 20px;
 }
@@ -2358,6 +2356,10 @@ margin-top: -11px !important;
 
 
 /*poczatek kanaly*/ 
+.emptyMessage-3-SPAD{
+  display: none;
+}
+
 .theme-dark .base-19D3Qq {
   border: 1px solid #43b581!important;
   height: 48px;
@@ -4894,6 +4896,7 @@ a,
   background:var(--headercolor) !important;
   position:relative;
 }
+
 .attachmentInner-3vEpKt::before {
   content:'';
   display:flex;
@@ -7559,7 +7562,7 @@ border-image-slice: 1;
   display: none;
 }
 
-/*reakcje emotki pod wiadomoscia*/
+/* reakcje emotki pod wiadomoscia
 .reaction-1hd86g {
   background: var(--headercolor);
   border-radius:0px;
@@ -7585,6 +7588,57 @@ border-image-slice: 1;
 
 .theme-brand .content-Qb0rXO{
   color:#FFF;
+} */
+
+
+
+/*New Reactions*/
+.reactionInner-15NvIl {
+  flex-direction:column !important;
+  padding:3px 8px;
+}
+
+
+.reactions-12N0jA {
+  max-width:calc(100% - 125px);
+  margin-top:5px;
+  z-index:2;
+}
+
+.reactionCount-2mvXRV {
+  margin:0;
+}
+
+.reaction-1hd86g .emoji {
+  width:1.25rem;
+  height:1.25rem;
+}
+
+.reaction-1hd86g {
+  background: var(--headercolor);
+  border-radius:0px;
+  border: 1px solid var(--headercolor);
+  position:relative;
+  border-radius:0px;
+  overflow:hidden;
+}
+
+.reaction-1hd86g:hover {
+  background: var(--headercolor);
+  border: 1px solid var(--accentcolor)
+}
+
+.reactionMe-wv5HKu {
+  background:transparent !important;
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu{
+  background: var(--accentcolor) !important;
+  border:1px solid var(--accentcolor)
+}
+
+.reactionMe-wv5HKu .reactionCount-2mvXRV {
+  color:#cacaca !important;
 }
 
 
@@ -13797,10 +13851,9 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 
-
-
 .cozy-3raOZG.wrapper-2a6GCs {
   padding-left: 10px;
+  padding-right: 0;
 }
 
 .cozy-3raOZG.wrapper-2a6GCs{
@@ -14623,4 +14676,49 @@ body::after {
   border-radius: 0px;
   top:42px;
   left:-16px;
+}
+
+
+
+/* =============== */
+
+.avatar-1BDn8e[src*="186609657928744962"] + h2 .timestamp-3ZCmNB::before {
+	content: 'Lilek';
+	text-transform: uppercase;
+	font-size: 10px !important;
+	font-weight: 500;
+	padding: 1px 4px;
+	line-height: normal;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid #4ec3e7;
+	background: rgba(78, 157, 231, 0.5);
+	text-shadow: none;
+	color: rgba(255, 255, 255, 0.95);
+	position: absolute;
+  right: 5px;
+  top: 2px;
+	cursor: default;
+}
+
+
+.avatar-1BDn8e[src*="186817801741271040"] + h2 .timestamp-3ZCmNB::before {
+	content: 'Dokuczacz';
+	text-transform: uppercase;
+	font-size: 10px !important;
+	font-weight: 500;
+	padding: 1px 4px;
+	line-height: normal;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid #954ee7;
+	background: rgba(106, 78, 231, 0.5);
+	text-shadow: none;
+	color: rgba(255, 255, 255, 0.95);
+	position: absolute;
+  right: 5px;
+  top: 2px;
+	cursor: default;
 }
