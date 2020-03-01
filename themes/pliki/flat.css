@@ -41,7 +41,7 @@
   --offline: #636b75; /* offline */
   --invisible: #747f8d; /* niewidoczny */
   --streaming: #643da7; /* stream */
-  --version: "Ładny Skin 28/02/20";
+  --version: "Ładny Skin 01/03/20";
 
 
 
@@ -7412,9 +7412,6 @@ color: #FFF
     margin-left: 40px;
   }
 
-  .a11y-font-scaled-down .avatar-1BDn8e{
-    left:-35px;
-  }
 
 .iconBadge-qZ4Ksk {
   -webkit-box-shadow: none;
@@ -9353,7 +9350,11 @@ color: #FFFFFF !important;
   box-sizing: border-box;
   opacity: 0.3;
 }
-.role-3paDXR .roleName-1JcOmP,
+.role-3paDXR .roleName-1JcOmP{
+  margin: 0 4px;
+  color: #fff;
+}
+
 .role-2irmRk .roleName-32vpEy{
   margin: 0 4px;
   color: #fff;
@@ -13842,7 +13843,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 .message-2qnXI6.groupStart-23k01U .avatar-1BDn8e.clickable-1bVtEA {
-  margin-left: -25px;
+  margin-left: -75px;
   margin-top: -5px;
 }
 
@@ -13887,6 +13888,14 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   border-radius: var(--avatars) !important;
 }
 
+
+.messagesPopoutWrap-1MQ1bW .contents-2mQqc9 .avatar-1BDn8e{
+  margin-left: -50px;
+}
+
+.searchResult-3pzFAB .contents-2mQqc9{
+padding-left: 50px;
+}
 
 .avatar-1BDn8e.clickable-1bVtEA:active,
 .avatar-1BDn8e.clickable-1bVtEA:hover{
@@ -14704,7 +14713,7 @@ body::after {
 
 
 .avatar-1BDn8e[src*="186817801741271040"] + h2 .timestamp-3ZCmNB::before {
-	content: 'Dokuczacz';
+	content: 'Zagrodek';
 	text-transform: uppercase;
 	font-size: 10px !important;
 	font-weight: 500;
