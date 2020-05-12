@@ -782,6 +782,18 @@ color: transparent;
   border-radius: 0;
 }
 
+.activitySectionAssets-32WyHu .largeImageMask-KlyeCi{
+  -webkit-mask:none;
+  mask:none;
+}
+
+.activitySectionAssets-32WyHu .smallImage-1p6VYD{
+  border: 2px solid var(--channellistcolor);
+  background-color: var(--channellistcolor);
+  bottom: -5px;
+  right:-6px;
+}
+
 .activitySectionAssets-32WyHu .largeImage-DLXk-f,
 .headerIcon-10Jegm, .multipleIconWrapper-DfGWrz{
   border-radius: 0;
@@ -1802,7 +1814,7 @@ z-index: 6;
   padding: 56px 0 20px 0;
 }
 
-.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn,
+/* .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child .wrapper-25eVIn, */
 .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.tutorialContainer-1v44GL {
   background-color: var(--headercolor);
   border-bottom: 2px solid transparent !important;
@@ -1815,7 +1827,7 @@ z-index: 6;
  display: none !important;
 }
 
-.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child,
+/* .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child, */
 .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.tutorialContainer-1v44GL {
   margin-top: -51px;
   width: 72px;
@@ -2634,6 +2646,7 @@ margin-top: -11px !important;
 
 
 /*poczatek kanaly*/ 
+.emptyChannelIcon-3IXV5M,
 .emptyMessage-3-SPAD{
   display: none;
 }
@@ -3222,6 +3235,20 @@ body #files_directDownload{
   /* Bug Hunter */
   .topSectionNormal-2-vo2m .profileBadgeBugHunter-IV0vLE {
     background-image: url(https://discordapp.com/assets/df26f079738a4dcd07cbce6eb3c957f1.svg); }
+  
+    /*booster 1*/ 
+  .topSectionNormal-2-vo2m .profileGuildSubscriberlvl1-pKd1EZ{
+    background-image: url(https://discordapp.com/assets/a86d7e56b8208da9f8623ac49fe822dc.svg);
+  }
+    /*booster 2*/ 
+ .topSectionNormal-2-vo2m .profileGuildSubscriberlvl2-1aIFve{
+    background-image: url(https://discordapp.com/assets/e85361cd599b6722548c5a5f003b4b78.svg);
+      }
+
+    /*booster 3*/ 
+  .topSectionNormal-2-vo2m .profileGuildSubscriberlvl3-33AROf{
+    background-image: url(https://discordapp.com/assets/7a0be61e754af3353d0871070f46a9d6.svg);
+    }
   
   /* Badges */
   .profileBadgeWrapper-rl_RO6 > div > .wrapper-1WA4pN:not(.profileBadge-2BqF-Z) {
@@ -5306,7 +5333,8 @@ border-radius: 0px;
 /* 8. Chat */
   /* 8.a Main Chat Area */
 /*brak kanalu*/
-.noChannel-Z1DQK7::before {
+
+.noChannel-Z1DQK7:before {
   height: 46px;
   background-color: var(--headercolor);
   border-bottom: 2px solid transparent !important;
@@ -6110,8 +6138,10 @@ a[href="/channels/@me"] .badge {
 .embed-IeVjo6 .embedAuthorNameLink-1gVryT{
 color: #FFF !important;
 }
+
 .embed-IeVjo6{
   border-radius: 0px;
+  max-width: 460px;
 }
 
 .embedFull-2tM8-- .embedMedia-1guQoW {
@@ -7660,14 +7690,14 @@ border-radius: 0;
 .theme-dark .iconBackgroundTierOne-2LhaMB,
 .theme-dark .iconBackgroundTierThree-3qw3JX,
 .theme-dark .iconBackgroundTierTwo-3bCmdc,
-.theme-dark .iconTierNone-3xOaeG,
 .theme-light .iconBackgroundTierOne-2LhaMB,
 .theme-light .iconBackgroundTierThree-3qw3JX,
-.theme-light .iconBackgroundTierTwo-3bCmdc,
-.theme-light .iconTierNone-3xOaeG{
+.theme-light .iconBackgroundTierTwo-3bCmdc{
   color: var(--accentcolor);
 }
 
+.theme-light .iconTierNone-3xOaeG,
+.theme-dark .iconTierNone-3xOaeG,
 .bannerVisible-14J9lQ .iconTierTwo-_1edeM,
 .iconTierTwo-_1edeM,
 .iconTierThree-3vLwdG {
@@ -8415,7 +8445,9 @@ color: #FFF
   .messageGroupWrapper-o-Zw7G .messageGroupCozy-2iY6cT{
     margin-left: 40px;
   }
-
+  .messagesPopoutWrap-1MQ1bW{
+    width: 500px;
+  }
 
 .iconBadge-qZ4Ksk {
   -webkit-box-shadow: none;
@@ -8573,8 +8605,11 @@ color:white
   background-color: var(--accentcolor);
 }
 
-/*nieprzeczytene wiadomosci*/
-
+/*nieprzeczytane wiadomosci*/
+.recentMentionsPopout-3rCiI6,
+.container-PbeQka{
+  width: 800px;
+}
 .tutorial-i_drPV{
   background-color: var(--titlebar);
   border-radius: 0;
@@ -8590,12 +8625,14 @@ color:white
   background-color: var(--chatbackground);
 }
 
-.dmIcon-2eU-bE{
+.container-PbeQka .dmIcon-2eU-bE,
+.container-PbeQka .guildIcon-3Co6k-{
   border-radius: var(--avatars);
+  margin-left: 16px;
 }
 
 .collapseButton-3V3Cqh{
-  margin-left: 7px;
+  margin-left: 15px;
 }
 
 .container-PbeQka .wrapper-2a6GCs{
@@ -8615,14 +8652,13 @@ color:white
   margin-left: -20px;
 }
 
-.container-PbeQka .container-1ov-mD,
-.messageContainer-gbhlwo .cozy-3raOZG.wrapper-2a6GCs .reactions-12N0jA{
+
+.recentMentionsPopout-3rCiI6 .container-1ov-mD,
+.container-PbeQka .container-1ov-mD{
   margin-left:50px;
 }
 
-.container-PbeQka .container-1ov-mD .wrapper-35wsBm{
-  margin-left: -50px !important;
-}
+
   /* 15.b. Emoji Picker and Reactions */
 
   .emoji.jumboable {
@@ -9374,6 +9410,8 @@ color:white
   text-shadow: 2px 2px 3px #000000;
 }
 
+.activityText-OW8WYb,
+.activityText-yGKsKm,
 .customStatusText-3YJeRZ{
   font-size:500;
   text-shadow: 2px 2px 3px #000000;
@@ -11138,14 +11176,6 @@ color: #FFFFFF !important;
   animation: opacity 200ms 100ms backwards;
 }
 
-.contextMenu-HLZMGh .item-1Yvehc:hover {
-  background: rgba(225, 225, 225, 0.03) !important;
-  color: #fff;
-  transition: all 0ms;
-}
-
-
-
 .theme-dark.contextMenu-HLZMGh .itemSubMenu-1vN_Yn,
 .theme-light.contextMenu-HLZMGh .itemSubMenu-1vN_Yn {
   position: relative;
@@ -11169,6 +11199,7 @@ color: #FFFFFF !important;
 
 }
 
+.clickable-11uBi-:hover,
 .contextMenu-HLZMGh .item-1Yvehc:hover,
 .item-2J1YMK:hover,
 .itemSlider-FZeYw0:hover,
@@ -11176,7 +11207,10 @@ color: #FFFFFF !important;
   border-left: 2px solid transparent !important;
   border-image: linear-gradient(to top, var(--gradientcolor2) 0%, var(--gradientcolor1) 100%);
   border-image-slice: 1 !important; 
-	box-shadow: inset 15px 0 12px -18px var(--accentcolor)
+  box-shadow: inset 15px 0 12px -18px var(--accentcolor);
+  background: rgba(225, 225, 225, 0.03) !important;
+  color: #fff;
+  transition: all 0ms;
 }
 
 
@@ -14840,12 +14874,10 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .cozy-3raOZG.wrapper-2a6GCs {
   padding-left: 10px;
   padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.cozy-3raOZG.wrapper-2a6GCs{
-  padding-top: 0;
-  /* padding-bottom: 0; */
-}
 
 /*hover wiadomosci*/
 .message-2qnXI6.selected-2P5D_Z,
