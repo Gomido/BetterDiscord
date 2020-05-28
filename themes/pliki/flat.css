@@ -35,7 +35,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 26/04/20";
+  --version: "Ładny Skin 28/05/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -1125,7 +1125,7 @@ a {
 .theme-light .chat-3bRxxu form .typing-2GQL18,
 .theme-light .nameHovered-21k1eo,
 .theme-light .nameSpeaking-3UhoEZ,
-.theme-light.contextMenu-HLZMGh .item-1Yvehc,
+.theme-light.contextMenu-HLZMGh .item-1tOPte,
 .theme-light .container-2td-dC .wrapper-2lTRaf a,
 .theme-light .noIcon-1a_FrS,
 .theme-light .downloadIcon-3TWA3B {
@@ -1146,7 +1146,7 @@ a {
 }
 
 .theme-light .button-2KyEfG,
-.theme-light.contextMenu-HLZMGh .item-1Yvehc.itemSubMenu-1vN_Yn::after {
+.theme-light.contextMenu-HLZMGh .item-1tOPte.itemSubMenu-1vN_Yn::after {
   filter: invert(90%);
 }
 
@@ -1519,7 +1519,7 @@ body {
 }
 
 
-/* 1.c. Windows Buttons *
+/* 1.c. Windows Buttons */
   .winButton-iRh8-Z {
     -webkit-app-region: no-drag;
     cursor: pointer;
@@ -1557,7 +1557,7 @@ body {
 }
 
 
-/* guziki jak w macu*/
+/* guziki jak w macu*
 .typeWindows-1za-n7 {
   background-color: transparent;
 }
@@ -1565,7 +1565,7 @@ body {
 .winButton-iRh8-Z {
   top: 1px;
   margin-right: 16px;
-  /* odstepy */
+  /* odstepy *
   opacity: 0.8;
   border-radius: 50%;
   width: 13px;
@@ -1821,7 +1821,7 @@ overflow: hidden;
 
 .guildsWrapper-5TJh6A,
 .wrapper-1Rf91z {
-  z-index: 6;
+  z-index: 5;
 }
 
 .wrapper-1Rf91z.content-Pph8t6.closed-j55_T- {
@@ -1840,6 +1840,7 @@ overflow: hidden;
 
 #app-mount .guilds-1SWlCJ {
   margin-top: 46px;
+  margin-bottom: 51px;
   overflow: visible
 }
 
@@ -1879,7 +1880,6 @@ overflow: hidden;
   top: -48px;
   display: flex;
   height: 48px;
-
 }
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL .listItem-2P_4kh:first-child .wrapper-1BJsBx {
@@ -3237,6 +3237,11 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   cursor: pointer;
 }
 
+
+.bd-switch-checked{
+  background-color: var(--accentcolor);
+}
+
 /*/switches*/
 /* 3.c. Cards and Items */
 
@@ -3272,7 +3277,7 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   background: var(--titlebar);
 }
 
-
+.theme-dark .bd-addon-list .bd-addon-card,
 .cardPrimaryOutline-29Ujqw {
   border-color: var(--headercolor);
   border-radius: 0;
@@ -4319,6 +4324,10 @@ svg[name*="Checkmark"] {
   align-items: center;
 }
 
+.colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS {
+  color: var(--accentcolor);
+  border-radius: var(--avatars);
+}
 
 /*szablony serwerów*/
 .dot-2s_oHI {
@@ -5375,22 +5384,13 @@ div[style*="width: 100%; height: 20px"] {
   z-index: 1000 !important;
 }
 
-.guilds-1SWlCJ {
-  margin-bottom: 51px !important;
-}
-
-
 .base-3dtUhz,
 .sidebar-2K8pFh {
   overflow: visible !important;
 }
 
 .container-3baos1 {
-  width: calc(60px + 265px);
   margin-left: -65px;
-  z-index: 1000 !important;
-  box-sizing: border-box;
-  padding: 0 10px;
 }
 
 .container-3baos1 .wrapper-3t9DeA::before {
@@ -5768,11 +5768,11 @@ a,
   color: var(--accentcolor);
 }
 
-.item-1Yvehc.brand-3igrJY {
+.item-1tOPte.brand-3igrJY {
   color: var(--accentcolor) !important;
 }
 
-.item-1Yvehc.brand-3igrJY:hover {
+.item-1tOPte.brand-3igrJY:hover {
   color: var(--accentcolor2) !important;
 }
 
@@ -7960,6 +7960,11 @@ background-color: var(--headercolor) !important;
   border-radius: var(--avatars);
 }
 
+/*gif picker podpowiedz */ 
+.introductionAction-M1r6AX{
+  color: #fff;
+}
+
 /* 10. Games Tab, Library, and Store */
 /* 10.a. Tab */
 
@@ -8865,18 +8870,20 @@ background-color: var(--headercolor) !important;
 .video-1FfuMD,
 .panel-VoWSbJ,
 .panels-j1Uci_,
-.members-1998pB,
+.membersWrap-2h-GB4,
 #dv-mount,
-#permissions-modal-wrapper .role-side,
-.sidebar-2K8pFh {
-  box-shadow: 0px 0px 5px 0px var(--shadow) !important;
+#permissions-modal-wrapper .role-side {
+  box-shadow: 0px 0px 2px 0px var(--shadow) !important;
 }
 
-.wrapper-1Rf91z,
+.header-2o-2hj,
+.wrapper-1Rf91z {
+  box-shadow: 0px 0px 2px 0px var(--shadow) !important;
+}
+
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL {
-  box-shadow: 0px -1px 5px 0px var(--shadow) !important;
+  box-shadow: 0px -2px 2px 0px var(--shadow) !important;
 }
-
 
 .modal-yWgWj- .message-2qRu38{
   box-shadow: none;
@@ -10655,7 +10662,7 @@ background-color: var(--headercolor) !important;
   display: none;
 }
 
-.item-1Yvehc .hint-22uc-R {
+.item-1tOPte .hint-22uc-R {
   transition: 250ms ease all;
 }
 
@@ -11528,8 +11535,8 @@ Plugin: PermissionsViewer by Zerebos
 .scroller-305q3I {
   background-color: var(--guildlistcolor)
 }
-
-.layer-v9HyYc[style*="; top: "][id*="popout_"] .menu-Sp6bN1 {
+/* wysuwana lista po kliku na nazwe serwera  */
+.layer-v9HyYc[style*="; top: 5"][id*="popout_"] .menu-3sdvDG  {
   left: unset !important;
   margin-top: -10px !important;
   width: 270px !important;
@@ -11864,17 +11871,14 @@ Plugin: PermissionsViewer by Zerebos
 /* temp  */
 .scroller-3BxosC,
 .styleFlexible-wGDiIL{
-  background-color: var(--titlebar);
+  background-color: var(--headercolor);
   border-radius: 0;
   padding: 0;
 }
-.scroller-3BxosC::-webkit-scrollbar{
-  display: none;
-}
 
-
-.labelContainer-1BLJti{
-  margin: 0 !important;
+.wrapper-3_530D,
+.item-1tOPte{
+  margin: 0;
   /* padding: 7px 15px; */
   border-radius: 0;
   border-left: 2px solid transparent !important;
@@ -11882,8 +11886,8 @@ Plugin: PermissionsViewer by Zerebos
   border-image-slice: 1 !important;
 }
 
-
-.labelContainer-1BLJti:hover {
+.colorDefault-2K3EoJ.focused-3afm-j,
+.item-1tOPte:hover {
   border-left: 2px solid transparent !important;
   border-image: linear-gradient(to top, var(--gradientcolor2) 0%, var(--gradientcolor1) 100%);
   border-image-slice: 1 !important;
@@ -11894,7 +11898,11 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O){
-  background-color: var(--headercolor);
+  border-left: 2px solid transparent !important;
+  border-image: linear-gradient(to top, var(--gradientcolor2) 0%, var(--gradientcolor1) 100%);
+  border-image-slice: 1 !important;
+  box-shadow: inset 15px 0 12px -18px var(--accentcolor);
+  background-color: rgba(225, 225, 225, 0.03) !important;
 }
 
 .accommodateScrollbar-21WtU7 .separator-2I32lJ{
@@ -11904,14 +11912,11 @@ Plugin: PermissionsViewer by Zerebos
 /* emoji ppm  */
 
 .button-F9qN4n{
-  background-color: var(--guildlistcolor);
+  background-color: var(--headercolor);
   border-radius: var(--avatars);
 }
 
-.button-F9qN4n:hover,
-.button-F9qN4n.focused-3ZzkKr{
-  background-color: var(--headercolor);
-}
+
 /* -------------- */
 .contextMenu-HLZMGh {
   background: var(--titlebar) !important;
@@ -11944,7 +11949,7 @@ Plugin: PermissionsViewer by Zerebos
   border-color: rgba(255, 255, 255, .03) !important
 }
 
-.contextMenu-HLZMGh .item-1Yvehc {
+.contextMenu-HLZMGh .item-1tOPte {
   background: transparent !important;
   border-radius: 0px;
   cursor: pointer;
@@ -11961,7 +11966,7 @@ Plugin: PermissionsViewer by Zerebos
   left: 3px !important;
 }
 
-.contextMenu-HLZMGh .item-1Yvehc,
+.contextMenu-HLZMGh .item-1tOPte,
 .item-2J1YMK,
 .itemSlider-FZeYw0,
 .itemSubMenu-1vN_Yn {
@@ -11975,7 +11980,7 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 .clickable-11uBi-:hover,
-.contextMenu-HLZMGh .item-1Yvehc:hover,
+.contextMenu-HLZMGh .item-1tOPte:hover,
 .item-2J1YMK:hover,
 .itemSlider-FZeYw0:hover,
 .itemSubMenu-1vN_Yn.selected-BYpGTS {
@@ -11989,18 +11994,27 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 
-.contextMenu-HLZMGh .item-1Yvehc.danger-2dXSTE:hover,
-.itemBase-tz5SeC.danger-2dXSTE {
+.colorBrand-ROmMP1{
+  color: var(--accentcolor);
+}
+
+.colorDanger-2qLCe1{
+  color: var(--dnd);
+}
+
+.contextMenu-HLZMGh .item-1tOPte.colorDanger-2qLCe1:hover,
+.itemBase-tz5SeC.colorDanger-2qLCe1 {
   color: var(--dnd) !important;
 }
 
-.itemBase-tz5SeC.danger-2dXSTE:hover {
+.item-1tOPte.colorDanger-2qLCe1:hover {
+  color: var(--dnd);
   border-color: var(--dnd) !important;
   box-shadow: inset 15px 0 12px -18px var(--dnd) !important;
   border-image: none !important;
 }
 
-.item-1Yvehc.danger-2dXSTE:active {
+.item-1tOPte.colorDanger-2qLCe1:active {
   /* background: transparent !important; */
   color: var(--dnd) !important;
   border-color: var(--dnd) !important;
@@ -12020,7 +12034,7 @@ Plugin: PermissionsViewer by Zerebos
   height: 3px
 }
 
-.item-1Yvehc.itemSubMenu-1vN_Yn::after {
+.item-1tOPte.itemSubMenu-1vN_Yn::after {
   content: url(https://gomido.github.io/img/arrow.svg);
   position: absolute;
   right: 5px;
@@ -12029,7 +12043,7 @@ Plugin: PermissionsViewer by Zerebos
   top: 5px;
 }
 
-.item-1Yvehc.itemSubMenu-1vN_Yn:hover::after {
+.item-1tOPte.itemSubMenu-1vN_Yn:hover::after {
   opacity: 1;
 }
 
@@ -12037,6 +12051,7 @@ Plugin: PermissionsViewer by Zerebos
   left: -5%;
   max-width: 170px;
 }
+
 
 /*chowajka pisownia, jezyki*/
 
@@ -12200,7 +12215,7 @@ Plugin: PermissionsViewer by Zerebos
 .layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-3sdvDG {
   position: fixed;
   left: -18px !important;
-  bottom: 62px !important;
+  bottom: 61px !important;
   transform: translateY(100%);
 }
 
@@ -12225,9 +12240,11 @@ Plugin: PermissionsViewer by Zerebos
 .layer-v9HyYc[style*="; bottom: 5"][id*="popout_"] .menu-3sdvDG .item-1tOPte {
   position: relative;
   display: inline-block;
+  border:none;
   height: 65px;
   width: 86px;
   background: transparent;
+  box-shadow: none;
   overflow: hidden;
   animation: status 300ms ease backwards;
   margin: 0;
@@ -13844,7 +13861,7 @@ html[lang="ko"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .mini-dmm9yo .grabber-3mFHz2 {
-  margin-top: 1px;
+  margin-top: 3px;
 }
 
 .audioControls-2HsaU6,
@@ -14426,10 +14443,15 @@ li[data-name*="Ładny Skin"] .scroller-wrap::after {
   stroke: var(--accentcolor) !important;
 }
 
+.bd-addon-list a,
 .bda-slist .bda-footer a {
   color: var(--accentcolor);
 }
 
+.bd-search-wrapper{
+  border-radius: 0;
+  background-color: var(--headercolor);
+}
 
 .themeDark-3Ap_7i {
   background-color: var(--chatbackground);
@@ -14596,7 +14618,7 @@ div.reply-item {
 }
 
 /*changelog*/
-#bd-settingspane-container .bda-slist::before {
+/* #bd-settingspane-container .bda-slist::before {
   content: "Dzięki za używanie skina. \a 16.02 - dodano obsługe gradientów. Więcej aby dodać wklej nowy kod do custom.\a\a Na razie opcja jest testowa, z czasem skin będzie cały dostowany. \a Jeśli Ci nie pasuje gradient, ustaw oba na ten sam kolor (wyjdzie jednolity) \a\a http://bit.ly/kodSkin" !important;
   display: block;
   position: relative;
@@ -14615,13 +14637,12 @@ div.reply-item {
   margin-top: 2px;
   color: var(--accentcolor2);
   text-transform: initial;
-}
+} */
 
-#bd-settings-sidebar>span>span::after,
-#bd-settings-sidebar>span>div:nth-child(3)::after {
+#app-mount .info-1VyQPT .colorMuted-HdFt4q:first-child:before {
   padding-left: 0px;
   display: block;
-  padding-top: 5px;
+  font-weight: 600;
   color: var(--accentcolor);
   content: var(--version);
 }
@@ -15778,9 +15799,12 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 /*tlo chatu nowe dymki*/
-
-.group-spacing-16 .groupStart-23k01U {
-  margin-top: 10px;
+.group-spacing-0 .groupStart-23k01U,
+.group-spacing-4 .groupStart-23k01U,
+.group-spacing-8 .groupStart-23k01U,
+.group-spacing-16 .groupStart-23k01U,
+.group-spacing-24 .groupStart-23k01U {
+  margin-top: 12px;
 }
 
 .messages-3amgkR.scroller-2FKFPG {
@@ -15832,13 +15856,13 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 .message-2qnXI6.mentioned-xhSam7 .avatar-1BDn8e {
-  left: 13px;
+  left: 15px;
 }
 
 .message-2qnXI6.mentioned-xhSam7 {
   border-left: 2px solid var(--accentcolor);
   background: rgba(34, 34, 34, 0.8) !important;
-  /* left:-2px; */
+  left:-2px;
 }
 
 
