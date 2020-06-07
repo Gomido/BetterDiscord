@@ -9,6 +9,7 @@
   --badgecolor: #00a2ff; /*kolor kółeczek z cyfra przy wzmiankach itp*/
   --hovercolor: #FFF; /*kolor po najechaniu, krawedzie*/
   --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
+  --spacing-width: 1px; /* 1px ramka, 0px - brak ramki*/
 
     /* mniej wazne, mozna nie tykać*/
   --chatbackground: #303030; /*kolor chatu pod wiadomosciami*/
@@ -45,7 +46,7 @@
 }
 
 /* Tlo, podajcie swojego linka tylko*/
-html:after {
+html::before {
     content: "";
     position: absolute;
     width: 100vw;
