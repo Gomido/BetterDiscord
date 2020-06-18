@@ -2575,7 +2575,7 @@ overflow: hidden;
   width: 20px;
 }
 
-/* info wysuwane z prawej, update, zjebie, dodac*/
+/* info wysuwane z prawej, update, zjebie, dodac*
 #app-mount::before {
 	content: 'Update 07/06 \a Info w THEMES';
 	color: var(--accentcolor);
@@ -10017,7 +10017,7 @@ background-color: var(--headercolor) !important;
 
 .userPopout-3XzG_A {
   border-radius: 0;
-  width: 280px !important;
+  width: 250px !important;
   background-color: var(--headercolor);
   border: 1px solid transparent !important;
   border-image: linear-gradient(to left, var(--gradientcolor1) 0%, var(--gradientcolor2) 100%) !important;
@@ -12090,6 +12090,7 @@ Plugin: PermissionsViewer by Zerebos
 .rem-2m9HGf.botTag-2WPJ74,
 .px-10SIf7.botTag-2WPJ74 {
   border-radius: 0;
+  margin-top:0;
 }
 
 .membersWrap-2h-GB4 .botTagRegular-2HEhHi {
