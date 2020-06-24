@@ -29,13 +29,15 @@
   --home-color: #fff;  /* kolor ikony domku na liscie serwerow*/
   --home-size: 24px;
   --rs-width: 2px;  /* Width/thickness of status border */
+  --rs-small-spacing: 2px;  /* spacing between avatar and status */
+  --rs-large-spacing: 3px;  /* spacing between avatar and status for user popouts & modals/profiles */
   --online: #17b641;  /* kolor  statusu online */
   --idle: #faa61a;  /* zajety */
   --dnd: #f71e1e;  /* dnd */
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 07/06/20";
+  --version: "Ładny Skin 25/06/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -1869,7 +1871,7 @@ overflow: hidden;
 }
 
 .scroller-2TZvBN {
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   contain: none;
   display: flex;
   flex-direction: column;
@@ -2197,7 +2199,7 @@ overflow: hidden;
   width: 50px !important;
   height: 50px !important;
   margin: 0 !important;
-  background: #2e2e34 !important;
+  background: transparent !important;
   border-radius: var(--avatars);
   border: none !important;
   transition: 250ms ease all !important;
@@ -3058,9 +3060,9 @@ body #files_directDownload .file svg:active {
   padding: 0;
 }
 
-.sidebarScrollable-1qPI87 {
+/* .sidebarScrollable-1qPI87 {
   width: 24%;
-}
+} */
 
 .sidebarScrollable-1qPI87+.content-1rPSz4 {
   margin-left: 240px;
@@ -4501,7 +4503,7 @@ svg[name*="Checkmark"] {
 .wumpusWrapper-yrvoR3 {
   position: fixed;
   top: 0;
-  left: 196px;
+  left: 166px;
   margin: 0;
   width: 85px;
   height: 85px
@@ -7989,7 +7991,7 @@ background-color: var(--headercolor) !important;
   border: 2px solid var(--headercolor);
 }
 
-/* nicki jak nie mamy neta*/
+/* nicki jak nie mamy neta loading avatar nick*/
 .category-2haXBH,
 .channelName-2wrHHc,
 .channelIcon-1TvDoP,
@@ -8000,6 +8002,12 @@ background-color: var(--headercolor) !important;
 .placeholderUsername-2B_OA9 {
   background-color: var(--chatbackground);
   border-radius: var(--avatars);
+}
+
+
+.placeholderAvatar-damqh6,
+.placeholderUsername-2B_OA9{
+  margin-left: 10px;
 }
 
 /*gif picker podpowiedz */ 
@@ -8460,50 +8468,30 @@ background-color: var(--headercolor) !important;
 
 /* 11.b. Radial Status */
 
-#app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"]:after {
-  content: "";
-  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4gICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMzQgMi4wMkwxNCAyYy0yLjIxIDAtNCAxLjc5LTQgNHYzNmMwIDIuMjEgMS43OSA0IDQgNGgyMGMyLjIxIDAgNC0xLjc5IDQtNFY2YzAtMi4yMS0xLjc5LTMuOTgtNC0zLjk4ek0zNCAzOEgxNFYxMGgyMHYyOHoiLz48L3N2Zz4=");
-  -webkit-mask-size: 20px;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--online);
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#app-mount .wrapper-3t9DeA svg:not(:root) {
+  overflow: visible;
 }
 
-
-#app-mount .wrapper-3t9DeA * {
-  overflow: visible;
+#app-mount .wrapper-3t9DeA foreignObject {
   mask: none;
 }
 
-#app-mount .wrapper-3t9DeA .dots-3Bkt3k {
-  position: relative;
-  z-index: 2;
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(1) {
+  cy: -8 !important;
+  cx: -8.5 !important;
 }
 
-#app-mount .wrapper-3t9DeA .dots-3Bkt3k [cx="2.5"] {
-  cy: -8;
-  cx: -8.5;
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(2) {
+  cy: -8 !important;
+  cx: -2.25 !important;
 }
 
-#app-mount .wrapper-3t9DeA .dots-3Bkt3k [cx="8.75"] {
-  cy: -8;
-  cx: -2.25;
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(3) {
+  cy: -8 !important;
+  cx: 4 !important;
 }
 
-#app-mount .wrapper-3t9DeA .dots-3Bkt3k [cx="15"] {
-  cy: -8;
-  cx: 4;
-}
-
-#app-mount .wrapper-3t9DeA .mask-1l8v16>rect[x="22"] {
+#app-mount .wrapper-3t9DeA .mask-1l8v16 > rect[x="22"] {
   x: 0;
   y: 0;
 }
@@ -8514,63 +8502,21 @@ background-color: var(--headercolor) !important;
 }
 
 #app-mount .wrapper-3t9DeA .pointerEvents-2zdfdO[x="14.5"] {
-  fill: rgba(0, 0, 0, 0.5);
+  fill: rgba(0, 0, 0, 0.5) !important;
   width: 30px;
   height: 30px;
   x: 1;
   y: 1;
 }
 
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] {
-  position: relative;
-  margin-right: 0 !important;
-}
-
-
-
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
-  width: 80px;
-  height: 80px;
-}
-
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"][style*="width: 80px;"]:after {
-  left: unset;
-  right: -2px;
-  top: unset;
-  bottom: -2px;
-  transform: none;
-}
-
-
-
-#app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
-  width: 32px;
-  height: 32px;
-  overflow: visible;
-  x: -14.5;
-  y: -17;
-}
-
 #app-mount .wrapper-3t9DeA img {
   border-radius: var(--avatars);
+  clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--avatars));
 }
 
-
-#app-mount .wrapper-3t9DeA[aria-label*="mobile"]:after {
-  content: "";
-  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4gICAgPHBhdGggZD0iTTE1LjUgMWgtOEM2LjEyIDEgNSAyLjEyIDUgMy41djE3QzUgMjEuODggNi4xMiAyMyA3LjUgMjNoOGMxLjM4IDAgMi41LTEuMTIgMi41LTIuNXYtMTdDMTggMi4xMiAxNi44OCAxIDE1LjUgMXptLTQgMjFjLS44MyAwLTEuNS0uNjctMS41LTEuNXMuNjctMS41IDEuNS0xLjUgMS41LjY3IDEuNSAxLjUtLjY3IDEuNS0xLjUgMS41em00LjUtNEg3VjRoOXYxNHoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==");
-  -webkit-mask-size: 16px;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  display: block;
-  position: absolute;
-  width: 12px;
-  height: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -171px;
-  background: var(--rs-online-color);
-  z-index: 1;
+#app-mount .wrapper-3t9DeA svg[width="25"][height="15"] > rect {
+  rx: calc(var(--avatars) * 2) !important;
+  ry: calc(var(--avatars) * 2) !important;
 }
 
 #app-mount .wrapper-3t9DeA rect {
@@ -8578,11 +8524,87 @@ background-color: var(--headercolor) !important;
   y: 0;
   width: 100%;
   height: 100%;
-  rx: var(--avatars);
-  ry: var(--avatars);
-  fill: transparent;
+  mask: none;
+  display: block !important;
+  rx: var(--avatars) !important;
+  ry: var(--avatars) !important;
+  fill: transparent !important;
   stroke-width: var(--rs-width);
 }
+
+#app-mount .wrapper-3t9DeA rect[x="16"] {
+  width: 24px;
+  height: 24px;
+}
+
+#app-mount .wrapper-3t9DeA rect[x="28"] {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+}
+
+#app-mount .wrapper-3t9DeA rect[x="16"] {
+  width: 24px;
+  height: 24px;
+}
+
+#app-mount .wrapper-3t9DeA rect[x="28"] {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] {
+  position: relative;
+  margin-right: 0 !important;
+  
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  stroke-width: calc(var(--rs-width)  + 1px )!important;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
+  clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--avatars));
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"][style*="width:80px;"]:after {
+  left: unset;
+  right: -2px;
+  top: unset;
+  bottom: -2px;
+  transform: none;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
+  width: 32px;
+  height: 32px;
+  x: -14.5;
+  y: -17;
+  position: relative;
+  z-index: 0;
+}
+
+#app-mount .avatarHint-1qgaV3 .avatarHintInner-Dco91E {
+  border-radius: var(--avatars) !important;
+  padding-top: 0;
+  width: calc(100% - var(--rs-width) * 4);
+  height: calc(100% - var(--rs-width) * 4);
+  margin-top: calc(var(--rs-width) + 2px);
+  margin-left: calc(var(--rs-width) + 2px);
+}
+
+#app-mount .message-1PNnaP .mask-1l8v16 img {
+  clip-path: circle(calc(19px - var(--rs-small-spacing)));
+}
+
+#app-mount .memberOffline-2lN7gt img {
+  clip-path: none !important;
+}
+
 
 #app-mount .wrapper-3t9DeA rect[fill="#43b581"],
 #app-mount .wrapper-3t9DeA rect[fill="rgba(67, 181, 129, 1)"],
@@ -8617,16 +8639,40 @@ background-color: var(--headercolor) !important;
   stroke: var(--invisible);
 }
 
-#app-mount .wrapper-3t9DeA rect[x="16"] {
-  width: 24px;
-  height: 24px;
+#app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"]:after {
+  content: "";
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4gICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMzQgMi4wMkwxNCAyYy0yLjIxIDAtNCAxLjc5LTQgNHYzNmMwIDIuMjEgMS43OSA0IDQgNGgyMGMyLjIxIDAgNC0xLjc5IDQtNFY2YzAtMi4yMS0xLjc5LTMuOTgtNC0zLjk4ek0zNCAzOEgxNFYxMGgyMHYyOHoiLz48L3N2Zz4=");
+  -webkit-mask-size: 20px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--online);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#app-mount .wrapper-3t9DeA rect[x="28"] {
-  width: 40px;
-  height: 40px;
-  overflow: visible;
+#app-mount .wrapper-3t9DeA[aria-label*="mobile"]:after {
+  content: "";
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4gICAgPHBhdGggZD0iTTE1LjUgMWgtOEM2LjEyIDEgNSAyLjEyIDUgMy41djE3QzUgMjEuODggNi4xMiAyMyA3LjUgMjNoOGMxLjM4IDAgMi41LTEuMTIgMi41LTIuNXYtMTdDMTggMi4xMiAxNi44OCAxIDE1LjUgMXptLTQgMjFjLS44MyAwLTEuNS0uNjctMS41LTEuNXMuNjctMS41IDEuNS0xLjUgMS41LjY3IDEuNSAxLjUtLjY3IDEuNS0xLjUgMS41em00LjUtNEg3VjRoOXYxNHoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==");
+  -webkit-mask-size: 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -171px;
+  background: var(--online);
+  z-index: 1;
 }
+
 
 /*Mask remove, foreigobiect*/
 .mask-2hO5M8 foreignObject,
@@ -10429,7 +10475,7 @@ background-color: var(--headercolor) !important;
 /*chowajka roli*/
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3 {
   overflow-y: scroll;
-  max-height: 62px
+  max-height: 110px
 }
 
 #app-mount .userPopout-3XzG_A .body-3iLsc4 .root-3-B5F3::-webkit-scrollbar {
@@ -10501,8 +10547,8 @@ background-color: var(--headercolor) !important;
   border-radius: 0px;
 }
 
-.theme-dark .reactors-Blmlhw {
-  background: var(--guildlistcolor);
+.theme-dark .scroller-1-nKid {
+  background: var(--channellistcolor);
 }
 
 .theme-dark .container-1If-HZ,
@@ -11310,22 +11356,22 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 .role-2irmRk .roleCircle-3xAZ1j {
-  padding: 0;
-  position: absolute;
-  z-index: 2;
-  height: 22px;
-  top: -1px;
-  left: 0;
-  border-radius: 2px 0 0 2px;
-  width: 100%;
-  opacity: 0;
+  /* padding: 0; */
+  /* position: absolute; */
+  /* z-index: 2; */
+  /* height: 22px; */
+  /* top: -1px; */
+  /* left: 0; */
+  border-radius: var(--avatars);
+  /* width: 100%; */
+  /* opacity: 0; */
   display: flex !important;
-  background: var(--accentcolor) !important;
+  /* background: var(--accentcolor) !important; */
   transition: opacity 0.2s;
 }
 
 .roleCircle-3xAZ1j {
-  display: none;
+  /* display: none; */
 }
 
 .addButton-pcyyf6 {
@@ -11336,7 +11382,7 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 .roleRemoveIcon-2-TeGW {
-  display: block;
+  /* display: block; */
 }
 
 .roleRemoveIcon-2-TeGW .fill {
@@ -11615,9 +11661,9 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 
-.scroller-3BxosC{
+/* .scroller-3BxosC{
   overflow: hidden !important;
-}
+} */
 
 .layer-v9HyYc[style*="; top: "][id*="popout_"] .itemBase-1Qj4z6 {
   margin: 0;
