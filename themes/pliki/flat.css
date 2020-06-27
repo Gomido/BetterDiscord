@@ -11,12 +11,12 @@
 :root {
 
   --avatars: 0px;  /* 0px - kwadratowe avatary, 50px okragle*/
-  --accentcolor: #4475ff;  /*kolor akcentu/niektore elementy skina, zaznaczenie*/
+  --accentcolor: #7289DA;  /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor2: #FFF;  /*drugi kolor akcentu*/
-  --gradientcolor1: #57b2fc;  /*kolor akcentu pierwszy*/
-  --gradientcolor2: #2368e7;  /*kolor akcentu drugi*/
+  --gradientcolor1: #7289DA;  /*kolor akcentu pierwszy*/
+  --gradientcolor2: #7289DA;  /*kolor akcentu drugi*/
   --notifycolor: #eeeeee;  /*kolor otoczki nowych wiadomosci*/
-  --badgecolor: #4475ff;  /*kolor kółeczek z cyfra przy wzmiankach itp*/
+  --badgecolor: #7289DA;  /*kolor kółeczek z cyfra przy wzmiankach itp*/
   --hovercolor: #FFF;  /*kolor po najechaniu, krawedzie*/
   --textcolor: #FFF;  /*kolor czcionek na niektorych elementach.*/
   --titlebar: #212121;  /*kolor paska z napisem discord*/
@@ -24,7 +24,7 @@
   --channellistcolor: #252525;  /*kolor listy kanalow, uzytkownikow*/
   --guildlistcolor: #303030;  /*kolor tla serwerów*/
   --headercolor: #161616;  /*kolor paska na górze kanału/serwera*/
-  --notification-width: 3px;
+  --notification-width: 2px;
   --spacing-width: 1px; /*odstep miedzy ramka a reszta discorda*/
   --home-color: #fff;  /* kolor ikony domku na liscie serwerow*/
   --home-size: 24px;
@@ -37,7 +37,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 25/06/20";
+  --version: "Ładny Skin 27/06/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -316,6 +316,10 @@ a {
 .members-1998pB {
   background-color: var(--channellistcolor) !important;
   padding: 0 0 55px;
+}
+
+.members-1998pB>div {
+  background-color: transparent;
 }
 
 /* 8. Chat */
@@ -2052,8 +2056,7 @@ overflow: hidden;
 .wrapper-1Rf91z.foldercontent+.listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*='height: 8px'],
 .wrapper-21YSNc .expandedFolderBackground-2sPsd-+.listItem-2P_4kh .pill-31IEus .item-2hkk8m[style*='height: 8px'] {
   /*fix otoczka */
-  padding: 3px;
-  border: 2px solid var(--notifycolor);
+  border: var(--notification-width) solid var(--notifycolor);
 }
 
 /*pw*/
@@ -2061,9 +2064,9 @@ overflow: hidden;
   width: 51px !important;
   height: 51px !important;
   margin: 0;
-  padding: 0;
-  top: 2px;
-  left: 9px;
+  padding: 1px;
+  top: 1px;
+  left: 8px;
   background: transparent;
   border-radius: var(--avatars);
 }
@@ -2082,7 +2085,7 @@ overflow: hidden;
 .bd-guild.bd-unread img[class^="icon-"] {
   /*fix otoczka */
   padding: 3px;
-  border: 2px solid var(--notifycolor);
+  border: var(--notification-width) solid var(--notifycolor);
 }
 
 
@@ -2849,6 +2852,13 @@ overflow: hidden;
   width: 217px;
   position: relative;
 }
+
+/* xeno lib */
+.xenoLib-notification-loadbar{
+  background-image: linear-gradient(130deg,var(--gradientcolor1),var(--gradientcolor2));
+    height: 2px;
+}
+
 
 /* channel history plugin  */
 .channelHistoryButtons .btn {
@@ -4205,9 +4215,12 @@ svg[name*="Checkmark"] {
 .root-1gCeng .cancelButton-2O3h8t,
 .uploadModal-2ifh8j .lookLink-9FtZy-.colorPrimary-3b3xI6 {
   margin-right: 5px;
+  margin-left: 5px;
   border: 1px solid transparent !important;
   border-image: linear-gradient(to left, var(--gradientcolor1) 0%, var(--gradientcolor2) 100%) !important;
   border-image-slice: 1 !important;
+  padding: 2px 16px;
+  height: 32px;
 }
 
 .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover,
@@ -6344,7 +6357,7 @@ a[href="/channels/@me"] .badge {
 }
 
 .wrapper-232cHJ.badge-2l0o8g{
-  right: 5px !important;
+  right: 1px !important;
   top: -1px
 }
 
@@ -6434,8 +6447,9 @@ a[href="/channels/@me"] .badge {
 }
 
 .theme-dark .markup-2BOw-j pre {
-  background: var(--headercolor);
+  background: var(--titlebar);
   border-color: var(--headercolor);
+  border: 1px solid var(--headercolor);
   border-radius: 0px;
 }
 
@@ -6678,6 +6692,15 @@ a[href="/channels/@me"] .badge {
   border-radius: 0px;
 }
 
+.status-2L8Zc7{
+  border-radius: var(--avatars);
+}
+
+.inviteDestinationJoined-3W7Gue:hover{
+  text-decoration: none;
+  background-color: var(--accentcolor);
+  color: #FFF;
+}
 
 /*quote block*/
 
@@ -8601,10 +8624,10 @@ background-color: var(--headercolor) !important;
   clip-path: circle(calc(19px - var(--rs-small-spacing)));
 }
 
-#app-mount .memberOffline-2lN7gt img {
+#app-mount .memberOffline-2lN7gt img, 
+#app-mount .offline-3nJYBR.tu-usunac img{
   clip-path: none !important;
 }
-
 
 #app-mount .wrapper-3t9DeA rect[fill="#43b581"],
 #app-mount .wrapper-3t9DeA rect[fill="rgba(67, 181, 129, 1)"],
@@ -16272,13 +16295,13 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   box-sizing: border-box;
   padding-left: 32px !important;
   padding-bottom: 2px;
-  padding-top: 30px !important;
+  /* padding-top: 30px !important; */
   border-radius: 0;
   border: none !important;
   background: transparent !important;
 }
 
-.hljs::before {
+/* .hljs::before {
   content: 'Nieznany język';
   width: 100%;
   height: 26px;
@@ -16304,15 +16327,17 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-}
+} */
 
 .markup-2BOw-j pre {
   position: relative;
   overflow: hidden;
-  margin-bottom: 5px;
+  max-width: 100%;
+  margin-top: 2px;
+  /* margin-bottom: 5px; */
   border-radius: 0;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
-  background-color: rgba(0, 0, 0, .25);
+  /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1); */
+  /* background-color: rgba(0, 0, 0, .25); */
   backdrop-filter: blur(10px);
 }
 
@@ -16323,15 +16348,46 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   position: absolute;
   left: 0;
   text-align: right;
-  padding-top: 30px;
+  padding-top: 7px;
   line-height: 1.125rem;
-  height: calc(100% - 30px);
+  /* height: calc(100% - 30px); */
   overflow: hidden;
   color: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
   background: rgba(255, 255, 255, 0.05);
+  border-right: 1px solid var(--headercolor);
 }
 
+.hljs {
+  position: relative;
+  overflow: hidden;
+}
+
+.hljs:not([class$="hljs"])::after {
+  content: attr(class);
+  text-indent: -51ch;
+  position: absolute;
+  top: 0; right: 0;
+  transform: translateX(100%);
+  overflow: hidden;
+  white-space: pre;
+  line-height: 2;
+  padding-right: 0.9ch;
+  padding-bottom: 0.5ex;
+  text-align: right;
+  background-color: var(--codeblockcolor);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  border-radius: 0px;
+}
+
+.hljs:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 
 .hljs[class~="js"i]::before,
 .hljs[class~="javascript"i]::before {
   content: "Javascript";
@@ -16447,7 +16503,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   content: "SCSS";
 }
 
-.hljs[class~="diff"i]::before {
+.hljs[class~="diff"i]:hover:before {
   content: "Difference";
 }
 
@@ -16455,7 +16511,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   content: "CS";
 }
 
-.hljs[class~="ini"i]::before {
+.hljs[class~="ini"i]:hover::before {
   content: "InItialization File";
 }
 
@@ -16477,7 +16533,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 
 .hljs[class~="perl"i]::before {
   content: "Perl";
-}
+} */
 
 .hljs[class~="js"i],
 .hljs[class~="javascript"i] {
