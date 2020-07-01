@@ -37,7 +37,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 27/06/20";
+  --version: "Ładny Skin 01/07/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -236,7 +236,7 @@ a {
   overflow: hidden;
 }
 
-
+/* ramka wokol okna */
 .bg-h5JY_x{
   border: 1px solid var(--accentcolor);
 }
@@ -1208,13 +1208,24 @@ a {
   border-radius: 0;
 }
 
-/*apparance*/
+/*boost znaczek kolo nazwy serwera*/
 .flowerStar-1GeTsn path {
-  fill: var(--accentcolor) !important;
+  fill: var(--chatbackground) !important;
 }
 
 .defaultValue-3gC7yw .markValue-2DwdXI {
   color: var(--accentcolor);
+}
+
+
+.bannerVisible-14J9lQ .iconBackgroundTierOne-2LhaMB,
+.bannerVisible-14J9lQ .iconBackgroundTierTwo-3bCmdc,
+.bannerVisible-14J9lQ .iconBackgroundTierThree-3qw3JX,
+.iconTierNone-3xOaeG,
+.iconTierOne-BHC2T8,
+.iconTierTwo-_1edeM,
+.iconTierThree-3vLwdG {
+  color: var(--accentcolor) !important;
 }
 
 /* -- BD EDITS -- */
@@ -1864,6 +1875,12 @@ overflow: hidden;
 }
 
 
+.tutorialContainer-1v44GL {
+  margin-top: -60px;
+  position: fixed;
+  z-index: 2;
+}
+
 .listItemWrapper-3X98Pc .wrapper-25eVIn {
   height: 59px !important;
 }
@@ -1916,7 +1933,7 @@ overflow: hidden;
   height: 40px;
 }
 
-.wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL .listItem-2P_4kh:first-child .pill-2uzAFe {
+.tutorialContainer-1v44GL .listItem-2P_4kh:first-child .pill-2uzAFe {
   display: none;
 }
 
@@ -2064,9 +2081,9 @@ overflow: hidden;
   width: 51px !important;
   height: 51px !important;
   margin: 0;
-  padding: 1px;
-  top: 1px;
-  left: 8px;
+  /* padding: 1px; */
+  top: 2px;
+  left: 9px;
   background: transparent;
   border-radius: var(--avatars);
 }
@@ -2559,10 +2576,10 @@ overflow: hidden;
   border-radius: var(--avatars);
 }
 
-.wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.tutorialContainer-1v44GL .lowerBadge-29hYVK {
+.tutorialContainer-1v44GL .lowerBadge-29hYVK {
   border: 3px solid var(--headercolor);
-  bottom: 12px;
-  right: 4px;
+  bottom: 6px;
+  right: 2px;
 }
 
 
@@ -3426,6 +3443,11 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   background-image: url(https://discordapp.com/assets/df26f079738a4dcd07cbce6eb3c957f1.svg);
 }
 
+/* bot developer  */
+.topSectionNormal-2-vo2m .profileBadgeVerifiedDeveloper-4WY75k{
+  background-image: url(/assets/785d81fdbedd133e213da693aba98774.svg);
+}
+
 /*booster 1*/
 .topSectionNormal-2-vo2m .profileGuildSubscriberlvl1-pKd1EZ {
   background-image: url(https://discordapp.com/assets/a86d7e56b8208da9f8623ac49fe822dc.svg);
@@ -3451,6 +3473,10 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   background-image: url(https://discordapp.com/assets/a99def5f819c077e5e5061cab741b7e6.svg);
 }
 
+/* booster 6 */
+.topSectionNormal-2-vo2m .profileGuildSubscriberlvl6-2tCBLE{
+  background-image: url(https://discordapp.com/assets/2cfb317f3db3963d8ded9a97ee967bac.svg);
+}
 /* Badges */
 .profileBadgeWrapper-rl_RO6>div>.wrapper-1WA4pN:not(.profileBadge-2BqF-Z) {
   filter: grayscale(100%) brightness(120%);
@@ -4791,6 +4817,10 @@ svg[name*="Checkmark"] {
   /* box-shadow:inset 0 0 0 100vmax rgba(255, 255, 255, .07); */
 }
 
+.dotOnline-8Ag7EB{
+  border-radius: var(--avatars);
+}
+
 /* 4.d. Badges */
 html .tabBadge-3smxHS {
   background-color: var(--badgecolor);
@@ -5681,7 +5711,9 @@ div[style*="width: 100%; height: 20px"] {
   background: var(--headercolor) !important;
 }
 
-/* Tło na cała szerokość */
+/* brak scroll bar, kanały, lista uzytkownikow, tlo na cała szerokość */
+.thin-1ybCId::-webkit-scrollbar, /*serwery spolecznosci*/ 
+.scroller-2wx7Hm::-webkit-scrollbar, /*lista serwerow*/ 
 #app-mount .members-1998pB::-webkit-scrollbar {
   display: none;
 }
@@ -6366,6 +6398,35 @@ a[href="/channels/@me"] .badge {
 }
 
 
+/*ramki po dolaczeniu na serwer /wyslij 1 msg, zapros znajomego*/ 
+.card-1yV8cG{
+  background-color: var(--titlebar);
+  border-radius: 0;
+}
+
+.card-1yV8cG:hover{
+  background-color: var(--headercolor);
+}
+
+.subtitle-1IUuFJ .anchor-3Z-8Bb{
+  color: var(--accentcolor);
+  font-weight: 500;
+}
+
+.subtitle-1IUuFJ .anchor-3Z-8Bb:hover{
+  background-color: var(--accentcolor);
+  color: #FFF;
+  text-decoration: none;
+}
+
+.completed-utEvtk .icon-3VBNxT{
+  opacity: 1;
+}
+
+.checkmark-35U2vf{
+  border-radius: var(--avatars);
+}
+
 /* .isMentionedCozy-3isp7y:after {
   border-left: 2px solid var(--accentcolor);
   background: transparent;
@@ -6707,7 +6768,10 @@ a[href="/channels/@me"] .badge {
 .blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6 {
   width: 2px;
   border-radius: 0px;
+}
 
+.message-2qnXI6.mentioned-xhSam7 .blockquoteContainer-U5TVEi{
+  margin-left:-2px;
 }
 
 .blockquoteContainer-U5TVEi blockquote {
@@ -7276,6 +7340,7 @@ background-color: var(--headercolor) !important;
 }
 
 /* znajomi cala szerokosc */
+
 #app-mount .sidebar-2K8pFh .scroller-2FKFPG::-webkit-scrollbar {
   display: none;
 }
@@ -8387,16 +8452,19 @@ background-color: var(--headercolor) !important;
   background: transparent !important;
 }
 
+/* questy serwerowe */
+.container-1i59-c{
+  background-color: var(--titlebar);
+}
+
+.progress-9E5msn{
+  background-color: var(--chatbackground) !important;
+  border-radius: var(--avatars);
+}
 
 /*ikony serwerow boost, partner*/
-.partnered-3nJayh,
-.verified-1eC5dy,
-.theme-dark .iconBackgroundTierOne-2LhaMB,
-.theme-dark .iconBackgroundTierThree-3qw3JX,
-.theme-dark .iconBackgroundTierTwo-3bCmdc,
-.theme-light .iconBackgroundTierOne-2LhaMB,
-.theme-light .iconBackgroundTierThree-3qw3JX,
-.theme-light .iconBackgroundTierTwo-3bCmdc {
+
+.icon-1ihkOt {
   color: var(--accentcolor);
 }
 
@@ -8679,22 +8747,6 @@ background-color: var(--headercolor) !important;
   transform: translate(-50%, -50%);
 }
 
-#app-mount .wrapper-3t9DeA[aria-label*="mobile"]:after {
-  content: "";
-  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4gICAgPHBhdGggZD0iTTE1LjUgMWgtOEM2LjEyIDEgNSAyLjEyIDUgMy41djE3QzUgMjEuODggNi4xMiAyMyA3LjUgMjNoOGMxLjM4IDAgMi41LTEuMTIgMi41LTIuNXYtMTdDMTggMi4xMiAxNi44OCAxIDE1LjUgMXptLTQgMjFjLS44MyAwLTEuNS0uNjctMS41LTEuNXMuNjctMS41IDEuNS0xLjUgMS41LjY3IDEuNSAxLjUtLjY3IDEuNS0xLjUgMS41em00LjUtNEg3VjRoOXYxNHoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==");
-  -webkit-mask-size: 16px;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  display: block;
-  position: absolute;
-  width: 12px;
-  height: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -171px;
-  background: var(--online);
-  z-index: 1;
-}
 
 
 /*Mask remove, foreigobiect*/
@@ -8830,18 +8882,30 @@ background-color: var(--headercolor) !important;
 }	 */
 
 /* animacja zebatki */
-/* @keyframes gearrotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+@-webkit-keyframes cv-spin {
+	from {
+		transform: rotateZ(0)
+	}
+	to {
+		transform: rotateZ(360deg)
+	}
 }
 
-.container-3baos1 .button-14-BFJ path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"] {
-  animation: gearrotate 1.5s infinite;
-} */
+@keyframes cv-spin {
+	from {
+		transform: rotateZ(0)
+	}
+	to {
+		transform: rotateZ(360deg)
+	}
+}
+
+.button-14-BFJ:nth-child(3):hover>.contents-18-Yxp {
+  animation: cv-spin 0.8s ease-in-out both
+  
+}
+
 
 /*animation strike*/
 @keyframes strike-in {
@@ -10726,7 +10790,7 @@ background-color: var(--headercolor) !important;
 .message-2qnXI6 .buttons-cl5qTG {
   max-width: 32px;
   opacity: 0;
-  /* top:-5px; */
+  top:-30px;
   visibility: visible;
   pointer-events: none;
   transition: opacity 250ms ease, max-width 250ms ease 250ms;
@@ -11117,6 +11181,7 @@ Plugin: PermissionsViewer by Zerebos
 
 .assetsLargeImage-eYwpTX {
   border: 4px solid transparent;
+  border-radius: 0px;
 }
 
 .assetsSmallImage-3_3Bzj {
@@ -16021,7 +16086,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .message-2qnXI6.mentioned-xhSam7 {
   border-left: 2px solid var(--accentcolor);
   background: rgba(34, 34, 34, 0.8) !important;
-  left:-2px;
+  /* left:-2px; */
 }
 
 
@@ -16295,6 +16360,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   box-sizing: border-box;
   padding-left: 32px !important;
   padding-bottom: 2px;
+  padding-top: 2px;
   /* padding-top: 30px !important; */
   border-radius: 0;
   border: none !important;
@@ -16348,7 +16414,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   position: absolute;
   left: 0;
   text-align: right;
-  padding-top: 7px;
+  padding-top: 4px;
   line-height: 1.125rem;
   /* height: calc(100% - 30px); */
   overflow: hidden;
@@ -16371,7 +16437,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   transform: translateX(100%);
   overflow: hidden;
   white-space: pre;
-  line-height: 2;
+  line-height: 1.5;
   padding-right: 0.9ch;
   padding-bottom: 0.5ex;
   text-align: right;
