@@ -37,7 +37,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 22/07/20";
+  --version: "Ładny Skin 29/07/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -3773,12 +3773,15 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   border-radius: 0px;
 }
 
+.side-8zPYf6 .item-PXvHYJ{
+  padding-left: 35px;
+}
+
 #user-settings .item-PXvHYJ::before  {
   content: "";
+  top: 2px;
+  margin-left: -30px;
   position: absolute;
-  top: -3px;
-  margin-right: 5px;
-  position: relative;
   -ms-transform: translate(0, 2px);
   transform: translate(0, 2px);
   opacity: 0.7;
@@ -3814,6 +3817,12 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
 #user-settings .item-PXvHYJ:hover::before {
   opacity: 1;
 }
+
+
+/* .sidebar-CFHs9e{
+  padding: 10px 6px 60px 0px;
+  width: 250px;
+} */
 
 /** User Settings **/
 /* Account */
@@ -3937,6 +3946,9 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   background: #FFF;
 }
 
+#user-settings .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:nth-of-type(10){
+  background: #FF73FA !important;
+}
 
 /* 
 #user-settings .themed-OHr7kt.item-PXvHYJ:nth-child(10) {
@@ -3967,7 +3979,9 @@ body .themeClear-1EjkE4.valueChecked-m-4IJZ.switch-3wwwcV::after,
   background: #FFF;
 }
 
-
+#user-settings .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:nth-of-type(11){
+  background: #FBB848 !important;
+}
 
 /** ----------------- **/
 /** App Settings **/
@@ -5758,6 +5772,8 @@ div[style*="width: 100%; height: 20px"] {
   border-radius: 0px;
 }
 
+
+.theme-dark .themedPopout-1TrfdI .barFill-23-gu-,
 .barFill-Dhkah7,
 .barInner-3NDaY_ {
   background: #1DB954 !important;
@@ -5770,10 +5786,24 @@ div[style*="width: 100%; height: 20px"] {
   border:none !important;
 }
 
+.coverWrapper-YAplwJ,
 .cover-SwJ-ck{
   border-radius: 0 !important;
-  width: 40px !important;
-  height: 40px !important;
+}
+
+/* glosnosc */
+.theme-dark .themedPopout-1TrfdI{
+  background-color: var(--titlebar);
+  border: 1px solid var(--titlebar);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.theme-dark .bar-2Qqk5Z{
+  background-color: var(--headercolor) !important;
+}
+.theme-dark .popout-xwjvsX.popoutTop-3WSJtH:after{
+  border-top-color: var(--titlebar);
 }
 
 /* 7. Members List */
@@ -7069,7 +7099,7 @@ line-height: 1.125rem;*/
   transform: none;
   transition: none;
   /* opacity: 0.24; */
-  width: 40px;
+  /* width: 40px; */
   transition: all 200ms ease;
 }
 
@@ -7080,7 +7110,7 @@ line-height: 1.125rem;*/
 
 .buttons-3JBrkn .icon-3D60ES {
   transition: none;
-  transform: scale(.85714) !important;
+  transform: scale(1) !important;
 }
 
 .inner-MADQqc:hover .buttons-3JBrkn>.button-38aScr {
@@ -7317,7 +7347,7 @@ a[href="/activity"] {
   display: none;
 }
 
-Male guziki znajomych
+/* Male guziki znajomych */
 #app-mount .channel-2QD9_O[href="/store"] .layout-2DM8Md .name-uJV0GL,
 #app-mount .channel-2QD9_O[href="/activity"] .layout-2DM8Md .name-uJV0GL,
 #app-mount .channel-2QD9_O[href="/library"] .layout-2DM8Md .name-uJV0GL,
@@ -10174,8 +10204,13 @@ background-color: var(--headercolor) !important;
 .send-button {
   top: 0 !important;
   bottom: 0 !important;
-  right: -1px;
+  margin-right: 10px;
 }
+
+.buttons-3JBrkn .icon-3D60ES{
+  transform: scale(1) !important;
+}
+
 
 .theme-dark .emojiButton-3uL3Aw:hover,
 .theme-dark .emojiButton-3uL3Aw:active,
@@ -11920,7 +11955,14 @@ Plugin: PermissionsViewer by Zerebos
   border-radius: 0;
 }
 
+.scroller-2hZ97C{
+  padding: 12px !important;
+  max-height: unset;
+}
 
+.inviteRow-2L02ae{
+  margin-right: 0;
+}
 
 .theme-dark .tag-2gHSR7 {
   background: var(--headercolor) !important;
@@ -12096,6 +12138,7 @@ Plugin: PermissionsViewer by Zerebos
 
 .optionActive-KkAdqq {
   background-color: var(--headercolor) !important;
+  color: #FFF;
 }
 
 .optionLabel-2CkCZx {
@@ -12144,7 +12187,7 @@ Plugin: PermissionsViewer by Zerebos
 .wrapper-3_530D,
 .item-1tOPte{
   margin: 0;
-  /* padding: 7px 15px; */
+  /* padding: 0; */
   border-radius: 0;
   border-left: 2px solid transparent !important;
   border-image: linear-gradient(to left, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .4) 100%);
@@ -12236,7 +12279,8 @@ Plugin: PermissionsViewer by Zerebos
 .itemSlider-FZeYw0,
 .itemSubMenu-1vN_Yn {
   margin: 0 !important;
-  padding: 7px 15px;
+  padding: 0;
+  /* padding: 7px 15px; */
   border-radius: 0;
   border-left: 2px solid transparent !important;
   border-image: linear-gradient(to left, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, .4) 100%);
@@ -16087,7 +16131,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .group-spacing-8 .groupStart-23k01U,
 .group-spacing-16 .groupStart-23k01U,
 .group-spacing-24 .groupStart-23k01U {
-  margin-top: 12px;
+  margin-top: 5px;
 }
 
 .messages-3amgkR.scroller-2FKFPG {
