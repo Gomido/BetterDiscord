@@ -37,7 +37,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 10/09/20";
+  --version: "Ładny Skin 13/09/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -4757,7 +4757,7 @@ svg[name*="Checkmark"] {
 }
 
 .bannerImage-1jOskm:before {
-  background: linear-gradient(0deg, var(--channellistcolor) 0%, transparent 30%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(0deg, var(--channellistcolor) 0%, transparent 10%, rgba(0, 0, 0, 0.5) 100%);
   height: 100%;
 }
 
@@ -5742,6 +5742,10 @@ div[style*="width: 100%; height: 20px"] {
 .base-3dtUhz,
 .sidebar-2K8pFh {
   overflow: visible !important;
+}
+
+.children-19S4PO{
+  width:100px
 }
 
 .container-3baos1 {
@@ -7198,6 +7202,11 @@ a[href="/channels/@me"] .badge {
   border-radius: 0px;
 }
 
+.message-2qnXI6.mentioned-xhSam7 .markup-2BOw-j pre{
+  max-width: 101%;
+  margin-left: -2px;
+}
+
 .message-2qnXI6.mentioned-xhSam7 .blockquoteContainer-U5TVEi{
   margin-left:-2px;
 }
@@ -8509,9 +8518,33 @@ background-color: var(--headercolor) !important;
   border-radius: var(--avatars);
   height: 10px;
   width: 10px;
-  right:-2px;
 }
 
+
+
+/* popout player  */
+.pictureInPictureWindow-1B5qSe {
+  border-radius: 0;
+}
+
+.pictureInPictureVideo-2iKsGg .videoControls-38i4kP {
+  padding: 0;
+}
+
+.pictureInPictureVideo-2iKsGg .bottomControls-2f_UqT{
+  padding: 8px;
+  width: unset;
+}
+
+.pictureInPictureVideo-2iKsGg .headerTitle-1Y0ywV:hover{
+border-bottom: none;
+}
+
+/* glosowka awatary  */
+.border-Jn5IOt,
+.voiceAvatar-14IynY{
+  border-radius: var(--avatars);
+}
 /* inv  */
 .tile-2naSqK{
   background-color: var(--titlebar);
@@ -9328,7 +9361,8 @@ foreignObject[mask*="mobile"]::after {
 }
 
 
-/*Mask remove, foreigobiect*/
+/*Mask remove, foreignobiect*/
+.guildSection-1EoFKd foreignObject,
 .guildIcon-cyDh6h foreignObject,
 .iconMask-30Tvqs foreignObject,
 .controlButton-2MhVEL foreignObject,
@@ -10150,6 +10184,31 @@ foreignObject[mask*="mobile"]::after {
 .container-3u944p .colorHeaderSecondary-3Sp3Ft{
   display: none;
 }
+
+/* klik na emotke  */
+
+.container-ZRw2kD{
+  border-radius: 0;
+  border: 1px solid var(--headercolor);
+  box-shadow: none;
+  background-color: var(--titlebar);
+}
+
+.guildSection-1EoFKd svg[width="32"][height="32"]  {
+  width: 45px !important;
+  height: 45px !important;
+  margin-top:5px;
+}
+
+.emojiSection-3Fb9ix{
+  background-color: var(--channellistcolor);
+}
+
+.guildSection-1EoFKd{
+  background-color: var(--titlebar);
+}
+
+
 
 /* emoji picker ikona na chacie */
 
@@ -12039,9 +12098,14 @@ Plugin: PermissionsViewer by Zerebos
   width: 14px;
 }
 
+.member-3-YXUe .role-2irmRk{
+  height: 12px;
+  top:0px;
+}
+
 .header-23xsNx .role-2irmRk {
   height: 12px;
-  top: -3px;
+  top: -2px;
 }
 
 .role-2irmRk .roleCircle-3xAZ1j {
@@ -12059,8 +12123,15 @@ Plugin: PermissionsViewer by Zerebos
   transition: opacity 0.2s;
 }
 
+.member-3-YXUe .role-2irmRk .roleCircle-3xAZ1j,
 .header-23xsNx .role-2irmRk .roleCircle-3xAZ1j {
   display: none !important;
+}
+
+.header-23xsNx .role-2irmRk .roleName-32vpEy,
+.member-3-YXUe .role-2irmRk .roleName-32vpEy {
+  margin: 0 4px 0px 4px;
+  color: #fff;
 }
 
 .addButton-pcyyf6 {
@@ -12070,9 +12141,9 @@ Plugin: PermissionsViewer by Zerebos
   height: 22px;
 }
 
-.roleRemoveIcon-2-TeGW {
-  /* display: block; */
-}
+/* .roleRemoveIcon-2-TeGW {
+  display: block;
+} */
 
 .roleRemoveIcon-2-TeGW .fill {
   fill: var(--textcolor);
