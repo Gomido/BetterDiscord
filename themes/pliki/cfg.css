@@ -1,34 +1,36 @@
 :root {
     /* podstawe, kolory, avatary to ruszać*/
-  --avatars: 0px; /* 0px - kwadratowe avatary, 50px okragle*/
-  --accentcolor: #2da0ff;/*kolor akcentu/niektore elementy skina, zaznaczenie*/
-  --accentcolor2: #FFF; /*drugi kolor akcentu*/
-  --gradientcolor1: #f80000; /*kolor akcentu pierwszy*/
-  --gradientcolor2: #8e08fc; /*kolor akcentu drugi*/
-  --notifycolor: #eeeeee; /*kolor otoczki nowych wiadomosci*/
-  --badgecolor: #00a2ff; /*kolor kółeczek z cyfra przy wzmiankach itp*/
-  --hovercolor: #FFF; /*kolor po najechaniu, krawedzie*/
-  --textcolor:#FFF; /*kolor czcionek na niektorych elementach.*/
-  --spacing-width: 1px; /* 1px ramka, 0px - brak ramki*/
+  --avatars: 0px;  /* 0px - kwadratowe avatary, 100px okragle*/
+  --accentcolor: #7289DA;  /*kolor akcentu/niektore elementy skina, zaznaczenie*/
+  --accentcolor2: #FFF;  /*drugi kolor akcentu*/
+  --gradientcolor1: #7289DA;  /*kolor akcentu pierwszy*/
+  --gradientcolor2: #7289DA;  /*kolor akcentu drugi*/
+  --mentionbackground: 0, 0, 0; /* W RGB, kolor tła oznaczenia*/
+  --notifycolor: #eeeeee;  /*kolor otoczki nowych wiadomosci, kółko wokół ikony*/
+  --badgecolor: #7289DA;  /*kolor kółeczek z cyfra przy wzmiankach itp*/
+  --hovercolor: #FFF;  /*kolor po najechaniu, krawedzie, pasek na liscie uzytkownikow itp*/
+  --textcolor: #FFF;  /*kolor czcionek na niektorych elementach.*/
 
-    /* mniej wazne, mozna nie tykać*/
-  --chatbackground: #303030; /*kolor chatu pod wiadomosciami*/
-  --channellistcolor: #252525; /*kolor listy kanalow, uzytkownikow*/
-  --guildlistcolor: #303030; /*kolor tla serwerów*/
-  --headercolor: #161616; /*kolor paska na górze kanału/serwera*/
-  --notification-width: 3px;
-  --borders: 1; /* 0- okrągłe rogi różnych elementów, 1 - kwadratowe*/
-  --home-color: #fff; /* kolor ikony domku na liscie serwerow*/
-  --home-size: 28px; 
-  --rs-width: 2px; /* Width/thickness of status border */
-  --online: #17b641; /* kolor  statusu online */
-  --idle: #faa61a; /* zajety */
-  --dnd: #f71e1e; /* dnd */
-  --offline: #636b75; /* offline */
-  --invisible: #747f8d; /* niewidoczny */
-  --streaming: #643da7; /* stream */
-
-}
+/*mniej wazne, nie ruszac najlepiej*/
+  --titlebar: #212121;  /*kolor paska z napisem discord*/
+  --chatbackground: #303030;  /*kolor chatu pod wiadomosciami*/
+  --channellistcolor: #252525;  /*kolor listy kanalow, uzytkownikow*/
+  --guildlistcolor: #303030;  /*kolor tla serwerów*/
+  --headercolor: #161616;  /*kolor paska na górze kanału/serwera*/
+  --notification-width: 2px;
+  --spacing-width: 1px; /*odstep miedzy ramka a reszta discorda*/
+  --home-color: #fff;  /* kolor ikony domku na liscie serwerow*/
+  --home-size: 24px;
+  --rs-width: 2px;  /* Width/thickness of status border */
+  --rs-small-spacing: 3px;  /* spacing between avatar and status */
+  --rs-large-spacing: 4px;  /* spacing between avatar and status for user popouts & modals/profiles */
+  --online: #28A745;  /* 17b641 kolor  statusu online */
+  --idle: #faa61a;  /* zajety */
+  --dnd: #DD2C2C;  /* dnd */
+  --offline: #636b75;  /* offline */
+  --invisible: #747f8d;  /* niewidoczny */
+  --streaming: #643da7;  /* stream */
+  --shadow: rgba(0, 0, 0, .8);
 
 /*Dodatki - tło do skina, chowanie guzików gif, gift, gier*/
 
@@ -38,7 +40,7 @@
   display: none !important;
 }
 
-/*chowajka gier, bilbioteni, nitro, aktywności - zostaje tylko lista znajomych https://owo.oooooooooooooo.ooo/i/n4c3.png*/
+/*chowajka gier, bilbioteki, nitro, aktywności - zostaje tylko lista znajomych https://owo.oooooooooooooo.ooo/i/n4c3.png*/
 .channel-2QD9_O[href="/library"], /*biblioteka*/
 .channel-2QD9_O[href="/activity"], /*aktywnosc*/
 .channel-2QD9_O[href="/store"]{ /*nitro*/
@@ -46,7 +48,7 @@
 }
 
 /* Tlo, podajcie swojego linka tylko*/
-html::before {
+html::after {
     content: "";
     position: absolute;
     width: 100vw;
