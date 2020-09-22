@@ -1,14 +1,3 @@
-/**
- * @name         TestSkin
- * @description  Ładny skin w kolorze wybranym przez Ciebie.
- * @author       Lilek
- * @version      1.0
- * @source https://github.com/tropix126/betterDiscordStuff/blob/master/midnight/css/baaase.css
- * @website http://bit.ly/kodSkin
- * @invite niema 
- * @authorId 186609657928744962
- */
-
 /*FONTS*/
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -49,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 20/09/20";
+  --version: "Ładny Skin 22/09/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -142,7 +131,7 @@ a {
 
 
 
-/* info wysuwane z prawej, update, zjebie, dodac*/
+/* info wysuwane z prawej, update, zjebie, dodac
 #app-mount::before {
   content: 'Dodano opcje kolorowania wzmianek - info w opcjach -> themes';
   background: rgb(215, 58, 73);
@@ -162,7 +151,9 @@ a {
 	transition: 250ms ease all !important;
   white-space: nowrap;
   animation: update 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+}*/
+
+
 /* #app-mount::after {
 	content: 'Więcej info w zakładce Themes.';
 	color: var(--accentcolor);
@@ -212,9 +203,6 @@ a {
     transform: translateY(-50px);
   }
 }
-
-
-
 
 /* BOTTOM BAR -> ADD BAR pasek na dole*/
 .container-3Mxszk:after,
@@ -6241,6 +6229,8 @@ div[style*="width: 100%; height: 20px"] {
 }
 
 
+
+
 /*spotify controls*/
 .container-6sXIoE{
   border:none !important;
@@ -6264,6 +6254,20 @@ div[style*="width: 100%; height: 20px"] {
 }
 .theme-dark .popout-xwjvsX.popoutTop-3WSJtH:after{
   border-top-color: var(--titlebar);
+}
+
+
+/* invite do gier/sluchania  */
+.theme-dark .partyMemberEmpty-2iyh5g{
+  background-color: var(--chatbackground);
+  border:1px solid var(--headercolor);
+}
+
+.theme-dark .moreUsers-1sZP3U{
+  background-color: var(--channellistcolor) ;
+  color: #FFF;
+  border-radius: var(--avatars);
+  border:1px solid var(--headercolor);
 }
 
 /* 7. Members List */
@@ -6979,7 +6983,7 @@ a[href="/channels/@me"] .badge {
 }
 
 
-/*ramki po dolaczeniu na serwer /wyslij 1 msg, zapros znajomego*/ 
+/*ramki po dolaczeniu na serwer /wyslij 1 msg, zapros znajomego*/
 .card-3RzMcx{
   background-color: var(--titlebar);
   border-radius: 0;
@@ -7362,14 +7366,68 @@ a[href="/channels/@me"] .badge {
 }
 
 .message-2qnXI6.mentioned-xhSam7 .blockquoteContainer-U5TVEi{
-  margin-left:-2px;
+  margin-left: 11px !important;
 }
 
 .blockquoteContainer-U5TVEi blockquote {
   padding: 0 2px 0 5px;
-  background-color: var(--titlebar)
+  /* background-color: transparent */
+} 
+
+
+#app-mount .blockquoteContainer-U5TVEi {
+  background: var(--chatbackground);
+  border: 1px solid var(--headercolor);
+  border-radius: 0;
+  padding: 4px;
+  position: relative;
+  box-sizing: border-box;
+  border-top-left-radius: 0;
+  margin: 2px 0;
+  margin-left: 13px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#app-mount .blockquoteContainer-U5TVEi blockquote {
+  padding: 0;
+  max-width: unset;
+}
+#app-mount .blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6 {
+  position: absolute;
+  top: -1px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+  background: transparent;
+  overflow: hidden;
+}
+#app-mount .blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: var(--chatbackground);
+  border: 1px solid var(--headercolor);
+  transform: skewX(45deg);
+}
+#app-mount .backgroundFlash-24qWLN {
+  transition: 1250ms ease;
+  background: rgba(var(--mentionbackground), 0.2) !important;
 }
 
+
+#app-mount .backgroundFlash-24qWLN[style*="rgba(114, 137, 218, 0)"] {
+  background: transparent !important;
+}
 /* 8.k. Text Area */
 
 .channel-textarea-inner {
@@ -9703,6 +9761,7 @@ foreignObject[mask*="mobile"]::after {
 .theme-dark .container-3baos1 .button-14-BFJ:hover,
 .button-14-BFJ.enabled-2cQ-u7.button-38aScr:hover {
   background: transparent;
+  filter: none;
 }
 
 .iconWrapper-2OrFZ1:before {
@@ -11213,6 +11272,12 @@ foreignObject[mask*="mobile"]::after {
 }
 
 /* guzik ogladaj  */
+
+/* fix przy streamowaniu, powialalo odstep  */
+.vertical-V37hAW .buttonsWrapper-2eYbM0 {
+  padding: 0 !important;
+}
+
 .headerPlaying-j0WQBV .buttonsWrapper-2eYbM0,
 .partyStatus-6AjDud {
   padding: 10px;
@@ -11407,6 +11472,48 @@ foreignObject[mask*="mobile"]::after {
 
 }
 
+
+/*stream na serwerze*/ 
+.icon-3Oovq9{
+  border-radius: 0;
+}
+
+.badge-1JXQev{
+  background-color: var(--chatbackground);
+  border-radius: var(--avatars);
+}
+
+.sourceThumbnail-27dolk{
+  border-radius: 0;
+}
+.tile-2w4k5N:hover .sourceThumbnail-27dolk,
+.sourceThumbnail-27dolk.selected-1nOkyc{
+  box-shadow: inset 0 0 0 2px var(--accentcolor);
+}
+
+.selectorButton-EEUWed{
+background: var(--channellistcolor)
+
+}
+
+.selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover,
+.selectorButtonSelected-t5V9On{
+  background-color: var(--accentcolor);
+}
+
+.card-2Mz_4z {
+background-color: var(--titlebar);
+border-radius: 0;
+}   
+
+
+/* better discord plugins update pasek  */
+.notice-3bPHh-{
+  background-color: var(--accentcolor);
+  color: #FFF;
+}
+
+
 /*okienko z update*/
 .theme-dark .modal-3v8ziU {
   background-color: var(--titlebar);
@@ -11515,17 +11622,20 @@ foreignObject[mask*="mobile"]::after {
 /* wysuwajka reakcji */
 .wrapper-2aW0bm {
   box-shadow: none;
+  height: 34px;
   background-color: var(--guildlistcolor);
   border-radius: 0;
   border: 1px solid var(--headercolor);
   /* padding-bottom: 3px; */
 }
 
-
+.full-motion .wrapper-2aW0bm:hover,
 .wrapper-2aW0bm:hover {
   /* background: var(--chatbackground) !important; */
-  box-shadow: none;
+  box-shadow: none !important;
 }
+
+
 
 
 .wrapper-2aW0bm :first-child {
@@ -11541,7 +11651,7 @@ foreignObject[mask*="mobile"]::after {
 .wrapper-2aW0bm .icon-3Gkjwa {
   width: 32px;
   height: 32px;
-  padding-bottom:2px;
+  /* padding-bottom:0px; */
 }
 
 /* 
@@ -11647,7 +11757,7 @@ foreignObject[mask*="mobile"]::after {
 }
 
 .button-1ZiXG9:hover {
-  background-color: var(--titlebar);
+  background-color: var(--channellistcolor);
 }
 
 .button-1ZiXG9:active {
@@ -12039,9 +12149,16 @@ Plugin: PermissionsViewer by Zerebos
 .theme-dark .root-1gCeng {
   background: var(--guildlistcolor);
   border-radius: 0;
+  box-shadow: none;
 }
 
+.close-hZ94c6{
+  color: var(--white7);
+}
 
+.close-hZ94c6:hover{
+  color: var(--white8);
+}
 
 .headerXbox-3G-4PF .assets-VMAukC {
   padding-left: 0px !important;
@@ -12165,9 +12282,9 @@ Plugin: PermissionsViewer by Zerebos
   opacity: 0.6;
 }
 
-.contentNoImagesUserPopout-PCCPyZ {
+/* .contentNoImagesUserPopout-PCCPyZ {
   padding-left: 10px !important;
-}
+} */
 
 
 /* 15.e. Add Role User Popout */
@@ -13294,6 +13411,13 @@ Plugin: PermissionsViewer by Zerebos
 .customStatusEmoji-hg2dL1,
 .activityEmoji-2GDGtF {
   margin-right: 4px !important;
+}
+
+.statusItem-33LqPf,
+.customStatusWithEmoji-8-XZ8I {
+  margin-left: 30px;
+  grid-template-areas: "icon status clear";
+  grid-template-columns: 24px 120px 24px;
 }
 
 .emojiButtonContainer-3d6DFV .emojiButton-3uL3Aw {
@@ -15494,10 +15618,13 @@ li[data-name*="Ładny Skin"] .scroller-wrap::after {
   stroke: var(--accentcolor) !important;
 }
 
+.bda-author,
 .bd-addon-list a,
 .bda-slist .bda-footer a {
   color: var(--accentcolor);
+  font-weight: 800;
 }
+
 
 .bd-search-wrapper{
   border-radius: 0;
@@ -15752,7 +15879,7 @@ div.reply-item {
 
 /*changelog*/
 #bd-settingspane-container .bda-slist::before {
-  content: "UPDATE: \a 10/09 - Nowe okno tworzenia serwerow, nowe znaczki mobilne, poprawki oknie z emotami \a\a http://bit.ly/kodSkin" !important;
+  content: "UPDATE: \a 20/09 - Kolorowanie tła wzmianek --mentionbackground \a Domyślnie ciemniejsze od chatu, jeśli chcesz kolor jak w domyślnym - zółte tło \a dopisz do customa --mentionbackground: xxx, xxx, xxx - za xxx daj kolor w RGB. \a\a http://bit.ly/kodSkin" !important;
   display: block;
   position: relative;
   color: #43b581;
@@ -16350,13 +16477,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   }
 }
 
-.root-SR8cQa .header-QKLPzZ .additionalActionsIcon-1FoUlE {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  padding: 5px;
-  z-index: 100;
-}
+
 
 .root-SR8cQa {
   background: var(--headercolor);
@@ -16366,6 +16487,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   border-image-slice: 1 !important;
   border-radius: 0;
   box-sizing: border-box;
+  /* overflow: visible; */
 }
 
 
@@ -16433,7 +16555,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 .buttonInvertedPurple-WtBglX,
 .actionButton-3W1xZa {
   bottom: 20px;
-  right: 10px;
+  right: 45px;
 }
 
 .actionButton-3W1xZa.disabledWrapper-33zVVX {
@@ -16901,11 +17023,11 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   width: 5px;
   height: 18px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 20px;
+  top: 75px;
+  right: 10px;
+  width: 30px;
   height: 30px;
-  background: url("https://i.imgur.com/HCl3Rrx.png") no-repeat 50%;
+  /* background: url("https://i.imgur.com/HCl3Rrx.png") no-repeat 50%; */
 }
 
 .root-SR8cQa .header-QKLPzZ .headerInfo-30uryT .nameTag-m8r81H .discriminator {
@@ -17866,7 +17988,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
     margin-right: 7px;
     height: 18px;
     width: 18px;
-    top:4px;
+    top:5px;
     line-height: 16px;
     cursor: default;
     pointer-events: none;
