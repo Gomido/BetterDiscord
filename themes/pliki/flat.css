@@ -38,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 22/09/20";
+  --version: "Ładny Skin 29/09/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -2064,6 +2064,7 @@ body {
 background-color: transparent;
 }
 
+.noIcon-1a_FrS,
 .acronym-2mOFsV{
   border-radius: var(--avatars);
   color: #FFF;
@@ -2467,6 +2468,8 @@ overflow: hidden;
   transition: 250ms ease all !important;
 }
 
+.dmIconContainer-2yFeX3 .guildIcon-Ripiyt,
+.guildIconContainer-1M95yt .guildIcon-Ripiyt,
 .container-2td-dC .guildIcon-CT-ZDq {
   border-radius: var(--avatars);
 }
@@ -10996,6 +10999,34 @@ foreignObject[mask*="mobile"]::after {
   background: var(--headercolor);
 }
 
+/* view as role  */
+.container-3LUQwT{
+  background-color: var(--channellistcolor);
+  border:1px solid var(--headercolor);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.role-3ulsK-{
+  border-radius: 0;
+}
+
+.role-3ulsK-:hover{
+  background-color: var(--titlebar);
+}
+
+.iconContainer-1zobSR{
+  border-radius: var(--avatars);
+}
+
+.notice-1tZwqv{
+  height: 48px;
+}
+
+.iconContainer-1zobSR.checked-1Fij_T{
+  background-color: var(--accentcolor);
+  border-color: #FFF;
+}
 
 /* 15.c. Autocomplete */
 .autocomplete-1vrmpx {
@@ -11019,7 +11050,7 @@ foreignObject[mask*="mobile"]::after {
   border: 1px solid transparent;
 }
 
-.selectorSelected-1_M1WV {
+.theme-dark .selected-1Tbx07 {
   border-radius: 0px;
   background-color: var(--channellistcolor) !important;
 }
@@ -11509,8 +11540,16 @@ border-radius: 0;
 
 /* better discord plugins update pasek  */
 .notice-3bPHh-{
-  background-color: var(--accentcolor);
+  /* background-color: var(--accentcolor); */
   color: #FFF;
+  border-radius: 0;
+}
+
+#pluginNotice[class=" "],
+#pluginNotice[class=""] {
+  background: var(--accentcolor);
+  margin-left: var(--spacing-width);
+  margin-right: var(--spacing-width);
 }
 
 
@@ -11700,7 +11739,7 @@ border-radius: 0;
 .message-2qnXI6 .buttons-cl5qTG {
   max-width: 32px;
   opacity: 0;
-  /* top:-30px; */
+  top:-32px;
   visibility: visible;
   pointer-events: none;
   /* transition: opacity 250ms ease, max-width 250ms ease 250ms; */
@@ -14454,8 +14493,8 @@ text-align: center;
 }
 
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K {
-  flex-direction: column-reverse;
-  height: fit-content;
+  flex-direction: column-reverse !important;
+  height: fit-content !important;
 }
 
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .description-2ug5H_ .filename-ovv3c5 {
@@ -14472,7 +14511,7 @@ text-align: center;
   box-shadow: 0 0 2px var(--shadow) !important;
   border-radius: 0 !important;
   height: 40px;
-  padding: 0 12px;
+  padding: 0 12px !important;
   display: flex;
   align-items: center;
 }
@@ -14497,8 +14536,8 @@ text-align: center;
 
 #app-mount .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr {
   margin: 34px 16px !important;
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  height: 100px !important;
   border-radius: 0;
   position: relative;
 }
@@ -15158,7 +15197,9 @@ li[data-name*="Ładny Skin"] .scroller-wrap::after {
   background-color: transparent;
 }
 
-
+.result-oB0z--{
+  border-radius: 0;
+}
 
 .resultFocused-3aIoYe {
   background-color: var(--titlebar) !important;
