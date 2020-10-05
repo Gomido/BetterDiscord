@@ -10,7 +10,7 @@
 
 :root {
 
-  --avatars: 00px;  /* 0px - kwadratowe avatary, 50px okragle*/
+  --avatars: 100px;  /* 0px - kwadratowe avatary, 50px okragle*/
   --accentcolor: #7289DA;  /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor2: #FFF;  /*drugi kolor akcentu*/
   --gradientcolor1: #7289DA;  /*kolor akcentu pierwszy*/
@@ -38,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 29/09/20";
+  --version: "Ładny Skin 05/10/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -1067,11 +1067,15 @@ text-decoration: none;
 }
 
 /*nitro tab*/
+.theme-dark .feature-2w65J5,
 .banner-WELp4M{
   background-color: var(--titlebar);
   border-radius: 0;
 }
 
+.premiumLogo-1D3iJc{
+  border-radius: 0;
+}
 
 /*tla w nitro i grach*/
 .scroller-9moviB,
@@ -1086,6 +1090,7 @@ text-decoration: none;
 .gridItemContent-2mkGdJ {
   border-radius: 0;
 }
+
 
 .theme-dark .emptyPlayers-dx3qig,
 .theme-dark .players-1zg2l8 {
@@ -1836,13 +1841,13 @@ body {
 }
 
 
-/* guziki jak w macu*
+/* guziki jak w macu**
 .typeWindows-1za-n7 {
   background-color: transparent;
 }
 
 .winButton-iRh8-Z {
-  top: 1px;
+  top: 4px;
   margin-right: 16px;
   /* odstepy *
   opacity: 0.8;
@@ -5825,7 +5830,7 @@ div[style*="width: 100%; height: 20px"] {
   background-color: transparent;
 }
 
-/* 5.h. Unread Messages Popout */
+/* 5.h. Unreads Messages Popout */
 .container-35XQWE {
   z-index: 2;
 }
@@ -7355,6 +7360,10 @@ a[href="/channels/@me"] .badge {
   background-color: var(--accentcolor);
   color: #FFF;
 }
+
+/* quote cytowanie nowe */
+
+
 
 /*quote block*/
 
@@ -9579,6 +9588,8 @@ foreignObject[mask*="mobile"]::after {
 
 
 /*Mask remove, foreignobiect*/
+.body-2Enz7L foreignObject,
+.iconMask-AFPO7u foreignObject,
 .header-17VJwP foreignObject,
 .guildSection-1EoFKd foreignObject,
 .guildIcon-cyDh6h foreignObject,
@@ -10248,7 +10259,7 @@ foreignObject[mask*="mobile"]::after {
 
 
 
-/* mention okienko wzmianek*/
+/*unreads popout mention okienko wzmianek*/
 .messageContainer-gbhlwo {
   border-radius: 0;
   background-color: var(--chatbackground);
@@ -10258,9 +10269,14 @@ foreignObject[mask*="mobile"]::after {
   margin: auto;
 }
 
+.channel-3pEHab{
+  padding-bottom: 5px;
+}
+
 .channelHeader-3Gd2xq {
   border-radius: 0;
   background-color: var(--titlebar);
+  top:-1px;
 }
 
 .iconActiveMedium-1UaEIR {
@@ -10406,7 +10422,7 @@ foreignObject[mask*="mobile"]::after {
 
 /* klik na emotke  */
 
-.container-ZRw2kD{
+.popoutContainer-1MXdqN{
   border-radius: 0;
   border: 1px solid var(--headercolor);
   box-shadow: none;
@@ -11146,7 +11162,7 @@ foreignObject[mask*="mobile"]::after {
   display: flex;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
   text-align: left;
   /* z-index:1; */
 }
@@ -11651,12 +11667,27 @@ border-radius: 0;
   border: 1px solid var(--accentcolor);
 }
 
-/*sledzenie serwera*/
+/*sledzenie serwera followe server*/
 .theme-dark .guildPopout-3CgKqR {
   background-color: var(--titlebar);
   border-radius: 0px !important;
 }
 
+.footer-3OAEzG{
+  background-color: var(--chatbackground);
+}
+
+.emojiCounter-1BHDd2{
+  background-color: var(--titlebar);
+}
+
+.avatar-397jYv{
+  border-radius: var(--avatars);
+}
+
+.channel-2PJTLY{
+  background-color: var(--chatbackground);
+}
 
 /* wysuwajka reakcji */
 .wrapper-2aW0bm {
@@ -11739,7 +11770,7 @@ border-radius: 0;
 .message-2qnXI6 .buttons-cl5qTG {
   max-width: 32px;
   opacity: 0;
-  top:-32px;
+  top:-30px;
   visibility: visible;
   pointer-events: none;
   /* transition: opacity 250ms ease, max-width 250ms ease 250ms; */
@@ -12296,6 +12327,35 @@ Plugin: PermissionsViewer by Zerebos
 
 .theme-dark .akaBadge-1M-1Gw {
   background-color: var(--chatbackground);
+}
+
+
+
+
+/* status za kolkiem  */
+[aria-label="Online"]::after {
+  content: 'ONLINE';
+  font-weight: bold;
+  padding-left: 5px;
+  color: #43B581
+}
+[aria-label="Do Not Disturb"]::after {
+  content: 'DO NOT DISTURB';
+  font-weight: bold;
+  padding-left: 5px;
+  color: #F04747
+}
+[aria-label="Idle"]::after {
+  content: 'IDLE';
+  font-weight: bold;
+  padding-left: 5px;
+  color: #FFB740
+}
+[aria-label="Offline"]::after {
+  content: 'OFFLINE/INVISIBLE';
+  font-weight: bold;
+  padding-left: 5px;
+  color: #747F8D
 }
 
 /* .userPopout-3XzG_A .headerName-fajvi9::before {
@@ -13095,7 +13155,7 @@ Plugin: PermissionsViewer by Zerebos
   background-color: var(--channellistcolor) !important;
   border-color: var(--channellistcolor) !important;
   margin-top: 5px;
-  max-height: 220px;
+  /* max-height: 220px; */
 }
 
 
@@ -13548,7 +13608,8 @@ text-align: center;
 .layer-v9HyYc[style*="; bottom: 5"][id*="popout_"] .menu-3sdvDG .item-1tOPte {
   position: relative;
   display: inline-block;
-  border:none;
+  border: none;
+  border-radius: 0;
   height: 65px;
   width: 84px;
   background: transparent;
@@ -14497,6 +14558,14 @@ text-align: center;
   height: fit-content !important;
 }
 
+.uploadModal-2ifh8j .description-2ug5H_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .description-2ug5H_ .filename-ovv3c5 {
   font-size: 16px;
   font-weight: 500;
@@ -14535,7 +14604,7 @@ text-align: center;
 }
 
 #app-mount .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr {
-  margin: 34px 16px !important;
+  margin-top: 70px !important;
   width: 100px !important;
   height: 100px !important;
   border-radius: 0;
@@ -14637,6 +14706,10 @@ transition:150ms ease;
 }
 
 /*ujendolicic ikony plikow*/
+.audioMetadata-3zOuGv:before {
+  filter: grayscale(100%);
+}
+
 
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.video-27RLEH {
   -webkit-mask: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTMgNSAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAtMyA1IDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6bm9uZTt9LnN0MXtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTS0zLDVoMjR2MjRILTNWNXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTEsN0gzQzEuOSw3LDEsNy45LDEsOWwwLDE2YzAsMS4xLDAuOSwyLDIsMmgxMmMxLjEsMCwyLTAuOSwyLTJWMTNMMTEsN3ogTTcuNSwyMi44di00LjZsMy42LDIuM0w3LjUsMjIuOHogTTEwLDE0VjguNWw1LjUsNS41SDEweiIvPjwvc3ZnPg==);
@@ -15709,7 +15782,7 @@ li[data-name*="Ładny Skin"] .scroller-wrap::after {
 
 .chatCounter-XOMPsh {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 1px;
   height: fit-content;
   /* background: #f04747; */
@@ -15717,7 +15790,7 @@ li[data-name*="Ładny Skin"] .scroller-wrap::after {
   /* border-top: 2px solid rgba(255, 255, 255, 0.3); */
   padding: 2px;
   background: var(--headercolor);
-  font-size: 12px !important;
+  font-size: 11px !important;
   color: #fff !important;
   /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); */
 }
@@ -16663,7 +16736,6 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   border-bottom: 2px solid #FFF;
   color: #FFFFFF;
 }
-
 
 
 /*tlo w profilu https://i.imgur.com/pqdICWJ.gif*/
