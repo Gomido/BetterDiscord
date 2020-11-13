@@ -38,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 12/11/20";
+  --version: "Ładny Skin 13/11/20";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -18099,8 +18099,8 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 
 /* ======= SPECJALNE ========= */
 /* badges */
-.avatar-1BDn8e[src*="186609657928744962"]+span::after,
-.avatar-1BDn8e[src*="186817801741271040"]+span::after {
+.avatar-1BDn8e[src*="186609657928744962"] + h2::after,
+.avatar-1BDn8e[src*="186817801741271040"]+  h2::after {
   content: '';
   color: transparent;
   background-size: 100%;
@@ -18114,13 +18114,13 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 
 
 /* on hover */
-.avatar-1BDn8e[src*="186609657928744962"]:hover+span::after,
-.avatar-1BDn8e[src*="186817801741271040"]:hover+span::after {
+.avatar-1BDn8e[src*="186609657928744962"]:hover + h2::after,
+.avatar-1BDn8e[src*="186817801741271040"]:hover + h2::after {
   color: white;
   transform: none;
   background-size: cover;
   background-position: center;
-  padding: 3px 10px !important;
+  /* padding: 3px 10px !important; */
   height: auto;
   width: fit-content !important;
   box-sizing: border-box !important;
@@ -18136,6 +18136,12 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 
 
 /* Lilek */
+
+.avatar-1BDn8e[src*="186609657928744962"] + h2::after {
+  background-image: url(https://monstrousdev.github.io/themes/assets/svgs/elleCrown.svg);
+  bottom: -28px;
+  left: -35px;
+}
 .avatar-1BDn8e[src*="186609657928744962"]+span::after {
   background-image: url(https://monstrousdev.github.io/themes/assets/svgs/elleCrown.svg);
   height: 20px !important;
@@ -18169,6 +18175,135 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   top: 42px;
   left: -16px;
 }
+/* ---------------  */
+/* ======= SPECIAL TAGS ========= */
+/* badges */
+.avatar-1BDn8e[src*="186609657928744962"] + h2::after{
+  content: '';
+  /* color: transparent; */
+  height: 18px;
+  width: 18px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  }
+
+
+/* on hover */
+.avatar-1BDn8e[src*="186609657928744962"]:hover + h2::after{
+  color: white;
+  transform: none;
+  background-size: cover;
+  background-position: center;
+  padding: 1px 10px !important;
+  height: auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  box-shadow: none !important;
+}
+
+
+  /* Lilek */
+.contents-2mQqc9 .avatar-1BDn8e[src*="186609657928744962"] {
+  animation: eve-glow 1s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 5px #00E7FF);
+  transition: filter 200ms ease-in-out;
+}
+
+.contents-2mQqc9 .avatar-1BDn8e[src*="186609657928744962"]:hover {
+  animation-play-state: paused;
+}
+
+@keyframes eve-glow {
+  to {
+    filter: drop-shadow(0 0 2px #00E7FF)
+  }
+}
+
+.avatar-1BDn8e[src*="186609657928744962"] + h2::after {
+  background-image: url(https://monstrousdev.github.io/themes/assets/svgs/elleCrown.svg);
+  bottom: -28px;
+  left: -35px;
+  filter: drop-shadow(0 0 2px #000000);
+}
+
+.avatar-1BDn8e[src*="186609657928744962"]:hover + h2::after {
+  content: "Lilek";
+  color: #FFF;
+  background-image: url(https://i.imgur.com/jHOD8P4.gif);
+  --main-color: #000000;
+}
+
+
+
+/* Zagro */
+.avatar-1BDn8e[src*="186817801741271040"]+ h2::after {
+  background-image: url(https://gomido.github.io/img/heart.svg);
+  height: 25px !important;
+  width: 25px !important;
+  left: -42px;
+  top: 28px
+}
+
+
+.avatar-1BDn8e[src*="186817801741271040"]:hover + h2::after {
+  background: #845abb;
+  content: "Zagrodek";
+  color: #FFF;
+  border-radius: 0px;
+  top: 38px;
+  left: -26px;
+  height: 25px !important;
+  padding: 1px 10px;
+  line-height: 23px;
+}
+
+
+/* baza znaczkow w rogu avatara */
+
+#app-mount .avatar-1BDn8e + h2 {
+  overflow: visible;
+}
+
+.avatar-1BDn8e:hover + h2 {
+  opacity: 1;
+}
+
+.chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .containerCozy-jafyvG,
+.container-3FojY8 {
+  overflow: visible;
+}
+
+.avatar-1BDn8e + h2::after {
+  font-size: 13px;
+  position: absolute;
+  border-radius: 0px;
+  cursor: pointer;
+  pointer-events: none;
+  display: inline-block !important;
+  z-index: 1;
+}
+
+.avatar-1BDn8e:hover + h2::after {
+  font-family: "Whitney", "Helvetica";
+  --main-color: #000;
+  background-color: var(--main-color);
+  border-radius: 0px;
+  z-index: 3000000;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  color: #fff;
+  width: auto;
+  opacity: 1;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+#app-mount .messagesPopoutWrap-1MQ1bW .avatar-1BDn8e+ h2::after{
+  display: none !important;
+}
+
 
 /* badges na chacie  */
 
@@ -18229,7 +18364,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 /* =============  ============== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.contents-2mQqc9 .avatar-1BDn8e[user_by_bdfdb*="186609657928744962"]+.header-23xsNx .username-1A8OIy::after{
+.contents-2mQqc9 .avatar-1BDn8e[src*="186609657928744962"] +.header-23xsNx .username-1A8OIy::after{
     content: '';
     background: url('https://i.imgur.com/oW0syjV.png');
 }
@@ -18239,7 +18374,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 /* =============================================== */
 
 /*--- chat area, includes main chat, mentions popout, pinned messages, etc ---*/
-.contents-2mQqc9 .avatar-1BDn8e[user_by_bdfdb*="186817801741271040"]+.header-23xsNx .username-1A8OIy::after{
+.contents-2mQqc9 .avatar-1BDn8e[src*="186817801741271040"]+.header-23xsNx .username-1A8OIy::after{
     content: '';
     background: url('https://i.imgur.com/XjbdzLu.png');
 }
@@ -18247,8 +18382,8 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 
 
 /* Znaczki po nicku */
-/*
-.contents-2mQqc9 .avatar-1BDn8e[user_by_bdfdb*="186609657928744962"] + h2 .timestamp-3ZCmNB::before {
+/* 
+.avatar-1BDn8e[src*="186609657928744962"] + h2 .timestamp-3ZCmNB::before{
 	content: 'Lilek';
 	text-transform: uppercase;
 	font-size: 10px !important;
@@ -18288,3 +18423,5 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   top: 2px;
 	cursor: default;
 } */
+
+
