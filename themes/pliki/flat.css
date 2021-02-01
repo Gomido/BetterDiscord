@@ -38,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 09/01/21";
+  --version: "Ładny Skin 01/02/21";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -2084,6 +2084,10 @@ background-color: transparent;
   border-radius: var(--avatars);
   color: #FFF;
   background-color: var(--channellistcolor) !important;
+}
+
+.noIcon-1a_FrS.iconSizeMedium-2OqPjI{
+  line-height: 50px;
 }
 
 .wrapper-1Rf91z:not(.foldercontent) .scrollerWrap-1IAIlv .scroller-2TZvBN>.listItem-2P_4kh:first-child {
@@ -4474,7 +4478,7 @@ background: var(--titlebar);
 }
 
 /* wysuwane paski, godzina statusu, wybor czego  */
-
+.css-dwar6a-menu,
 .popout-VcNcHB{
   border: none
 }
@@ -4485,10 +4489,12 @@ background: var(--titlebar);
 
 }
 
+.css-dwar6a-menu,
 .option-3KoAJB{
   background-color: var(--titlebar);
 }
 
+.css-rzbxvl-option,
 .option-3KoAJB.focused-1T6PE5,
 .option-3KoAJB:focus,
 .option-3KoAJB:hover{
@@ -4565,21 +4571,22 @@ svg[name*="Checkmark"] {
 
 .jumpButton-2dvRSC, /*guzik nieprzeczytane*/
 .jumpButton-3DTcS_ { /*skocz guzik przypiete*/
-  background-color: transparent;
-  border: 1px solid transparent !important;
+  background-color: var(--titlebar);
+  /* border: 1px solid transparent !important;
   border-image: linear-gradient(to left, var(--gradientcolor1) 0%, var(--gradientcolor2) 100%) !important;
-  border-image-slice: 1 !important;
+  border-image-slice: 1 !important; */
   color: #FFFFFF !important;
   border-radius: 0px;
 }
 
 .jumpButton-2dvRSC:hover,
 .jumpButton-3DTcS_:hover {
-  background: linear-gradient(to left, var(--gradientcolor1) 0%, var(--gradientcolor2) 100%) !important;
+  background-color: var(--headercolor);
 }
 
 .jumpButton-2dvRSC{
-  right:10px
+  right:0px;
+  top: 0px
 }
 
 
@@ -7493,6 +7500,8 @@ a[href="/channels/@me"] .badge {
   border-radius: 0px;
   border-left: 2px solid var(--accentcolor2);
 }
+
+
 
 .embedThumbnail-2Y84-K{
   left:-10px;
@@ -11370,6 +11379,14 @@ foreignObject[mask*="mobile"]::after {
   padding:0
 }
 
+/* fix czcionek */
+.autocompleteRowContent-1AMstF .size12-3cLvbJ,
+.autocompleteRowContent-1AMstF .size16-1P40sf{
+  font-size: 14px;
+}
+
+
+
 /* .autocompleteInner-zh20B_ {
   padding-bottom: 25px;
 } */
@@ -13470,7 +13487,7 @@ Plugin: PermissionsViewer by Zerebos
 .tooltip-2QfLtc .avatarContainerMasked-PIJ-3L .avatar-3bWpYy,
 .tooltip-2QfLtc .avatarContainerMasked-PIJ-3L .clickableAvatar-1wQpeh,
 .tooltip-2QfLtc .avatarContainerMasked-PIJ-3L .emptyUser-7txhlW{
-border: 3px solid var(--headercolor);
+border: 3px solid var(--black10);
 margin-top:-3px !important;
 
 }
@@ -13502,7 +13519,7 @@ margin-top:-3px !important;
 
 
 /*smarter embeds*/
-.container-1ov-mD{
+/* .container-1ov-mD{
   display: flex;
   flex-flow: row wrap;
 }
@@ -13519,7 +13536,7 @@ margin-top:-3px !important;
   width: 100%;
   flex: 100%;
   order: 9999999999;
-}
+} */
 
 
 /* 15.j. @Everyone Popout */
@@ -13955,8 +13972,11 @@ border:none !important;
 .customStatusEmoji-2ULxnj,
 .customStatusEmoji-hg2dL1,
 .activityEmoji-2GDGtF {
+  margin-top: 2px !important;
   margin-right: 4px !important;
 }
+
+
 
 /* .statusItem-33LqPf, */
 .customStatusWithEmoji-8-XZ8I {
@@ -16414,6 +16434,7 @@ div.reply-item {
   border-radius: var(--avatars);
 }
 
+.ephemeral-1PsL1r:before,
 .replying-1x3H0T:before{
   background-color: transparent;
 }
@@ -16435,6 +16456,14 @@ div.reply-item {
 
 .message-2qnXI6.replying-1x3H0T.selected-2P5D_Z{
   background: rgba(var(--mentionbackground), 0.2);
+}
+
+.cozy-3raOZG .repliedMessage-VokQwo .messageContent-2qWWxC {
+  padding-right: 0px;
+}
+
+.cozy-3raOZG .repliedMessage-VokQwo{
+  padding-right: 20px;
 }
 
 /* reply mentions/unread okienko  */
@@ -17842,6 +17871,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
   margin-left: -58px;
 }
 
+/* tutaj psuje reply  */
 .cozy-3raOZG .messageContent-2qWWxC {
   padding-left: 72px;
   padding-right: 10px;
