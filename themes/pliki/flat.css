@@ -38,7 +38,7 @@
   --offline: #636b75;  /* offline */
   --invisible: #747f8d;  /* niewidoczny */
   --streaming: #643da7;  /* stream */
-  --version: "Ładny Skin 01/02/21";
+  --version: "Ładny Skin 09/02/21";
   --shadow: rgba(0, 0, 0, .8);
 
   /*BIALE*/
@@ -4645,7 +4645,7 @@ svg[name*="Checkmark"] {
   border-radius: 0;
 }
 
-
+.theme-dark .lookLink-9FtZy-.colorTransparent-1ewNp9,
 .button-3HqqDX,
 .theme-dark .watchButton-2SbJEo,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
@@ -4668,6 +4668,7 @@ svg[name*="Checkmark"] {
   color: #FFF;
 }
 
+.theme-dark .lookLink-9FtZy-.colorTransparent-1ewNp9:hover,
 .button-3HqqDX:hover,
 .cancel-m57-lx:hover,
 .theme-dark .watchButton-2SbJEo:hover,
@@ -4742,6 +4743,9 @@ svg[name*="Checkmark"] {
   background: linear-gradient(to left, var(--gradientcolor1) 0%, var(--gradientcolor2) 100%) !important;
 }
 
+
+
+.theme-dark .lookLink-9FtZy-.colorTransparent-1ewNp9:hover .contents-18-Yxp,
 .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp,
 .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp,
 .root-1gCeng .cancelButton-2O3h8t:hover,
@@ -4855,7 +4859,7 @@ svg[name*="Checkmark"] {
   border-radius: 0;
 }
 
-.item-26Dhrx:hover {
+.item-26Dhrx:hover:not([aria-checked=true]) {
   background-color: var(--titlebar);
 }
 
@@ -4869,6 +4873,10 @@ svg[name*="Checkmark"] {
 
 .item-26Dhrx[aria-checked=true] .radioBar-bMNUI- path{
   fill: var(--accentcolor);
+}
+
+.radioBar-bMNUI-{
+  border-radius: 0;
 }
 
 
@@ -10786,13 +10794,13 @@ foreignObject[mask*="mobile"]::after {
   grid-gap: 0;
   padding-top: 0;
   border-radius: 0;
-  display: block;
+  /* display: block; */
   right: 5px;
 }
 
 #app-mount .nav-7UD0KD {
   padding: 0;
-  position: absolute;
+  /* position: absolute; */
   z-index: 101;
   top: 10px;
   left: 10px;
@@ -13143,12 +13151,85 @@ Plugin: PermissionsViewer by Zerebos
 }
 
 
+/* permission channel  */
+.settingCard-3w2mVL.active-1ytUzX{
+  background: var(--titlebar);
+  border-radius: 0;
+}
+
+.cardFolder-28dwxo{
+  background: var(--channellistcolor);
+  border-radius: 0;
+}
+
+
+/* add member permission  */
+.addMemberRow-3-w-9X.selectedRow-1QP7qb{
+  background-color: var(--channellistcolor);
+  border-radius: 0;
+}
+.medium-2-DE5M .input-1Rv96N,
+.medium-2-DE5M .tag-2gHSR7,
+.medium-2-DE5M .richTag-1rBBz8{
+  margin: 1px !important;
+  height: unset;
+}
+
+/* add members member list  */
+.addMembersButton-1eG9YC{
+  padding-left: 0;
+}
+
+.container-2Pjhx-{
+  border-left: 2px solid transparent;
+}
+
+.container-2Pjhx-:hover{
+  border-left: 2px solid transparent !important;
+    border-image: linear-gradient(to left, var(--accentcolor2) 0%, var(--accentcolor2) 100%) !important;
+    border-image-slice: 1 !important;
+}
+
+.addMembersIcon-1Bz_VS{
+  background-color: var(--headercolor);
+}
+
 /* .css-3vaxre-menu{
   background-color: var(--headercolor);
 } */
 
 .warning-3C2pOH{
   border-radius: 0;
+}
+
+/* member screening  */
+.editButtonDisabled-1F2FLU,
+.editButtonDisabled-1F2FLU:focus,
+.editButtonDisabled-1F2FLU:hover{
+  background-color: var(--channellistcolor) !important;
+  border-radius: var(--avatars);
+  color: #cacaca;
+}
+
+.editCircle-y9c7xP{
+  background-color: var(--headercolor);
+}
+
+.editButton-1MavoF{
+  background-color: var(--titlebar);
+}
+
+.exampleRule-32tIs5{
+  border-radius: 0;
+  background-color: var(--titlebar);
+}
+
+.clearButton-2akzBa{
+  top:18px;
+}
+
+.rulesInputNumber-1n2j7c{
+  top:12px;
 }
 
 /* insights  */
@@ -16484,6 +16565,17 @@ div.reply-item {
 margin-left:45px !important;
 }
 
+
+/* szukajka reply  */
+
+.searchResult-9tQ1uo .repliedMessage-VokQwo:before{
+  margin-right: 5px !important;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  left:-38px;
+}
+
+
 .container-enaOkj .repliedTextPlaceholder-dmN7D1,
 .messagesPopoutWrap-1MQ1bW .repliedTextPlaceholder-dmN7D1{
   margin-left: 50px;
@@ -17841,7 +17933,7 @@ background-image: url(https://gomido.github.io/img/dolar.svg);
 }
 
 .message-2qnXI6.mentioned-xhSam7 .avatar-1BDn8e {
-  left: 15px;
+  left: 13px !important;
 }
 
 
