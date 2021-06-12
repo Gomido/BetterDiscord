@@ -44,7 +44,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 12/06/2021";
+  --version: "FlatCord - 06/06/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -617,15 +617,16 @@ html:root {
 
 .tutorialContainer-2sGCg9>.listItem-GuPuDH {
   background-color: var(--headercolor);
+  height: 46px;
 }
 
 .tutorialContainer-2sGCg9 {
-  margin-top: -6px;
+  margin-top: -4px;
   width: 72px;
   position: fixed;
   z-index: 2;
-  height: 44px;
-  margin-bottom: 15px
+  height: 46px;
+  margin-bottom: 10px
 }
 
 .tutorialContainer-2sGCg9 .pill-3N7f9r {
@@ -698,7 +699,7 @@ html:root {
 }
 
 .tutorialContainer-2sGCg9 .lowerBadge-29hYVK {
-  bottom: 4px !important;
+  bottom: 6px !important;
   right: -2px !important;
   box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
   border-radius: var(--avatars);
@@ -1516,7 +1517,7 @@ html:root {
 
 .unreadMentionsIndicatorBottom-2mDYbI {
   padding: 0;
-  bottom: 34px;
+  bottom: -16px;
 }
 
 .barBase-1c2Rfb {
@@ -1896,23 +1897,16 @@ html:root {
 
 /* 9.e. Fake bar on top */
 .privateChannels-1nO12o::before {
-  min-height: 48px;
-  width: 100%;
   border-radius: 0;
   background: var(--headercolor);
-  border-image-slice: 1 !important;
   border-bottom: 2px solid var(--accentcolor);
   content: "Znajomi";
   color: #fff;
   padding: 0 16px 0 24px;
   font-size: 16px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   line-height: 46px;
   font-weight: 500;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4) !important;
-  box-sizing: border-box;
+  
 }
 
 /* 9.f Small buttons stage/friends etc. */
@@ -2149,8 +2143,27 @@ html:root {
 
 /* 12. Shadows */
 
+.guilds-1SWlCJ {
+  margin-bottom: 51px;
+}
+
+.guilds-1SWlCJ,
+.sidebar-2K8pFh {
+  box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.3);
+}
+
+.membersWrap-2h-GB4{
+  box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.3);
+}
 
 /* z-index fix  */
+.guilds-1SWlCJ{
+  z-index: 3;
+}
+
+.privateChannels-1nO12o::before{
+  z-index: 2;
+}
 
 .sidebar-2K8pFh {
   z-index: 2;
@@ -3236,6 +3249,31 @@ text-align: center;
 /* 20.b.1. Custom Popouts */
 
 /* 21. Custom CSS */
+.floating-window-titlebar{
+  background-color: var(--titlebar);
+}
+
+.floating-window #bd-editor-controls{
+  background-color: var(--headercolor);
+}
+
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .inputarea.ime-input{
+  background-color: var(--chatbackground) !important;
+}
+
+.monaco-editor .margin {
+  background-color: var(--titlebar) !important;
+}
+
+.floating-window.resizable{
+  background-color: var(--headercolor);
+}
+
+.floating-window-buttons .close-button:hover{
+  background: #A1021C;
+}
 
 /* 22. @Media Edits */
 
