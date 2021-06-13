@@ -2,7 +2,7 @@
 
 :root {
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
-  --avatars: 10px;
+  --avatars: 0px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor: #0099ff;
   /*drugi kolor akcentu*/
@@ -588,7 +588,6 @@ html:root {
 /* 4.a. Main Guilds Wrapper */
 .scroller-1Bvpku {
   background-color: var(--guildlistcolor);
-  padding-bottom: 55px;
 }
 
 .tutorialContainer-2sGCg9,
@@ -1108,6 +1107,7 @@ html:root {
 /* 8.c. Blocked Messages */
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
+
 .chat-3bRxxu .divider-JfaTT5 {
   margin: 5px 0px;
   height: 18px;
@@ -1781,6 +1781,11 @@ html:root {
   line-height: 17px;
 }
 
+.avatar-3W3CeO {
+  top: 1px;
+  left: 1px;
+}
+
 /* add friend tab*/
 .wrapper-1cBijl {
   border-radius: 0;
@@ -1906,7 +1911,7 @@ html:root {
   font-size: 16px;
   line-height: 46px;
   font-weight: 500;
-  
+
 }
 
 /* 9.f Small buttons stage/friends etc. */
@@ -2139,6 +2144,312 @@ html:root {
 }
 
 /* 11.b. Status radial*/
+#app-mount .wrapper-3t9DeA svg:not(:root) {
+  overflow: visible;
+}
+
+#app-mount .wrapper-3t9DeA foreignObject {
+  -webkit-mask: none;
+  mask: none;
+}
+
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(1) {
+  cy: -8 !important;
+  cx: -8.5 !important;
+}
+
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(2) {
+  cy: -8 !important;
+  cx: -2.25 !important;
+}
+
+#app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(3) {
+  cy: -8 !important;
+  cx: 4 !important;
+}
+
+#app-mount .wrapper-3t9DeA .mask-1l8v16>rect[x="22"] {
+  x: 0;
+  y: 0;
+}
+
+#app-mount .wrapper-3t9DeA .cursorDefault-dsQJ1n rect {
+  x: -49;
+  y: -53;
+}
+
+#app-mount .wrapper-3t9DeA .pointerEvents-2zdfdO[x="14.5"] {
+  fill: rgba(0, 0, 0, 0.5) !important;
+  width: 30px;
+  height: 30px;
+  x: 1;
+  y: 1;
+}
+
+#app-mount .wrapper-3t9DeA>svg>foreignObject img {
+  border-radius: var(--avatars);
+}
+
+#app-mount .wrapper-3t9DeA svg[width="25"][height="15"]>rect {
+  rx: calc(var(--avatars) * 2) !important;
+  ry: calc(var(--avatars) * 2) !important;
+}
+
+#app-mount .wrapper-3t9DeA rect {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask: none;
+  mask: none;
+  display: block !important;
+  rx: var(--avatars) !important;
+  ry: var(--avatars) !important;
+  fill: transparent !important;
+  stroke-width: var(--rs-width);
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#43b581"],
+#app-mount .wrapper-3t9DeA rect[fill="#3ba55c"],
+#app-mount .wrapper-3t9DeA rect[fill="rgba(67, 181, 129, 1)"],
+#app-mount .wrapper-3t9DeA rect[mask*=online],
+#app-mount .wrapper-3t9DeA rect[fill*="hsl(139"] {
+  stroke: var(--online);
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#faa61a"],
+#app-mount .wrapper-3t9DeA rect[fill="rgba(250, 166, 26, 1)"],
+#app-mount .wrapper-3t9DeA rect[mask*=idle],
+#app-mount .wrapper-3t9DeA rect[fill*="hsl(38"] {
+  stroke: var(--idle) !important;
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#f04747"],
+#app-mount .wrapper-3t9DeA rect[fill="rgba(240, 71, 71, 1)"],
+#app-mount .wrapper-3t9DeA rect[fill="#ed4245"],
+#app-mount .wrapper-3t9DeA rect[mask*=dnd],
+#app-mount .wrapper-3t9DeA rect[fill*="hsl(359"] {
+  stroke: var(--dnd) !important;
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#593695"],
+#app-mount .wrapper-3t9DeA rect[mask*=streaming] {
+  stroke: var(--streaming) !important;
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#747f8d"],
+#app-mount .wrapper-3t9DeA rect[mask*=offline],
+#app-mount .wrapper-3t9DeA rect[fill=NaN] {
+  stroke: var(--offline);
+}
+
+#app-mount .wrapper-3t9DeA rect[fill="#747f8d"],
+#app-mount .wrapper-3t9DeA rect[mask*=invisible],
+#app-mount .wrapper-3t9DeA rect[fill="rgba(116, 127, 141, 1)"],
+#app-mount .wrapper-3t9DeA rect[fill*="hsl(214"] {
+  stroke: var(--offline);
+}
+
+#app-mount .wrapper-3t9DeA rect[x="16"] {
+  width: 24px;
+  height: 24px;
+}
+
+#app-mount .wrapper-3t9DeA rect[x="28"] {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"].avatar-37jOim {
+  border-radius: var(--avatars);
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] svg.cursorDefault-dsQJ1n rect {
+  x: -48;
+  y: -52;
+  rx: calc(var(--avatars) * 3.3) !important;
+  ry: calc(var(--avatars) * 3.3) !important;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
+  -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--avatars));
+  clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--avatars));
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"]:after {
+  left: unset;
+  right: -2px;
+  top: unset;
+  bottom: -2px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"].avatar-AvHqJA {
+  border-radius: var(--avatars);
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"]>svg>rect {
+  width: calc(100% - 18px);
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] img {
+  -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--avatars));
+  clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--avatars));
+}
+
+#app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]):not([style*="width: 120px;"])>svg>foreignObject:not(:only-child) img {
+  -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--avatars));
+  clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--avatars));
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
+  width: 32px;
+  height: 32px;
+  x: -14.5;
+  y: -17;
+  position: relative;
+  z-index: 0;
+}
+
+#app-mount .wrapper-3t9DeA[data-bsi-status=dnd] rect[mask*=mobile] {
+  stroke: var(--dnd);
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 16px;"] img {
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+}
+
+#app-mount .wrapper-3t9DeA[style*="width: 16px;"] rect {
+  width: 16px !important;
+}
+
+#app-mount .avatarHint-2A3RNb foreignObject {
+  -webkit-mask: none;
+  mask: none;
+}
+
+.userPopout-xaxa6l .avatarHintInner-1TvA8u {
+  font-size: 0;
+  /* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIj4gIDxwYXRoIGQ9Ik0xMiA1LjljMS4xNiAwIDIuMS45NCAyLjEgMi4xcy0uOTQgMi4xLTIuMSAyLjFTOS45IDkuMTYgOS45IDhzLjk0LTIuMSAyLjEtMi4xbTAgOWMyLjk3IDAgNi4xIDEuNDYgNi4xIDIuMXYxLjFINS45VjE3YzAtLjY0IDMuMTMtMi4xIDYuMS0yLjFNMTIgNEM5Ljc5IDQgOCA1Ljc5IDggOHMxLjc5IDQgNCA0IDQtMS43OSA0LTQtMS43OS00LTQtNHptMCA5Yy0yLjY3IDAtOCAxLjM0LTggNHYzaDE2di0zYzAtMi42Ni01LjMzLTQtOC00eiIvPiAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==) center/50% no-repeat; */
+  background:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmaWxsPSIjZmZmZmZmIj4gIDxwYXRoIGQ9Ik0xMiAxMmMyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHoiLz4gIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") center/60% no-repeat !important;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+
+}
+
+#app-mount .avatarHint-2A3RNb .avatarHintInner-1TvA8u {
+  border-radius: var(--avatars) !important;
+  padding-top: 0;
+  width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+  height: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+#app-mount .message-1PNnaP .mask-1l8v16 img {
+  -webkit-clip-path: circle(calc(19px - var(--rs-small-spacing)));
+  clip-path: circle(calc(19px - var(--rs-small-spacing)));
+}
+
+#app-mount .memberOffline-2lN7gt img {
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+}
+
+#app-mount .offline-3nJYBR img {
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+}
+
+#app-mount .wrapper-3t9DeA:before {
+  content: none !important;
+}
+
+.userInfo-2zN2z8,
+.peopleListItem-2nzedh {
+  overflow: visible;
+}
+/*  kod na telefon w razie czego, dziala ale wywalilem bo plugin daje znaczek
+#app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after {
+  content: "";
+  display: var(--online, block);
+  mask: url("https://gomido.github.io/img/svg/phoneMobile.svg") center/70% no-repeat;
+  -webkit-mask: url("https://gomido.github.io/img/svg/phoneMobile.svg") center/70% no-repeat;position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--online);
+}
+
+foreignObject[mask*="mobile"] {
+  overflow: visible !important;
+}
+
+.privateChannels-1nO12o a.channel-2QD9_O foreignObject[mask*="mobile"]::before,
+.privateChannels-1nO12o a.channel-2QD9_O foreignObject[mask*="mobile"]::after {
+  left: 230px;
+  height: 25px;
+  width: 25px;
+}
+
+.userInfo-2zN2z8 foreignObject[mask*="mobile"]::before,
+.userInfo-2zN2z8 foreignObject[mask*="mobile"]::after{
+display: none;
+}
+
+foreignObject[mask*="mobile"]::before,
+foreignObject[mask*="mobile"]::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background: rgba(0,0,0,.4);
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  border-radius: var(--avatars);
+  opacity: .8;
+}
+
+.root-1gCeng foreignObject[mask*="mobile"]::before,
+.root-1gCeng foreignObject[mask*="mobile"]::after {
+  top: -24px;
+  left: unset;
+  right: -30px;
+  height: 25px;
+  width: 25px;
+  opacity: 1;
+  transform: none;
+}
+
+.userPopout-xaxa6l foreignObject[mask*="mobile"]::before,
+.userPopout-xaxa6l foreignObject[mask*="mobile"]::after {
+  top: 40px;
+  left: unset;
+  right: -200px;
+  height: 35px !important;
+  width: 35px !important;
+  opacity: 1;
+  transform: none;
+}
+
+
+.userPopout-xaxa6l foreignObject[mask*="mobile"]::before,
+.root-1gCeng foreignObject[mask*="mobile"]::before {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, .5);
+} */
 
 
 /* 12. Shadows */
@@ -2147,21 +2458,24 @@ html:root {
   margin-bottom: 51px;
 }
 
-.guilds-1SWlCJ,
-.sidebar-2K8pFh {
-  box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.3);
+.guilds-1SWlCJ {
+  box-shadow: 2px -1px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
-.membersWrap-2h-GB4{
-  box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.3);
+.sidebar-2K8pFh {
+  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.membersWrap-2h-GB4 {
+  box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* z-index fix  */
-.guilds-1SWlCJ{
+.guilds-1SWlCJ {
   z-index: 3;
 }
 
-.privateChannels-1nO12o::before{
+.privateChannels-1nO12o::before {
   z-index: 2;
 }
 
@@ -2176,6 +2490,9 @@ html:root {
 
 /* 13. Roundness */
 /* avatars  */
+.avatar-VxgULZ,
+.wrapper-3t9DeA,
+.avatarWrapper-3r9PdD,
 .folder-1hbNCn,
 .expandedFolderBackground-1cujaW,
 .wrapperSimple-19ogV2.wrapper-25eVIn,
@@ -2187,6 +2504,8 @@ html:root {
 /* 14.1 Other  */
 /* 14.2.  General Buttons  */
 
+.contextMenuNub-3yOOYo.colorable-1bkp8v.white-3GPOIp,
+.contextMenuNub-3yOOYo.colorable-1bkp8v.primaryDark-3mSFDl,
 .centerButton-3CaNcJ,
 .cancelButton-2O3h8t,
 .lookInverted-2D7oAl.colorBrand-3pXr91,
@@ -2231,6 +2550,8 @@ html:root {
   margin-left: 10px;
 }
 
+.colorable-1bkp8v.red-33-Lnk,
+.colorable-1bkp8v.white-3GPOIp,
 .colorable-1bkp8v.primaryDark-3mSFDl,
 .noThanksButton-3mqg48,
 .cancelButton-2O3h8t,
@@ -2249,6 +2570,16 @@ html:root {
   background-color: var(--button-color) !important;
 }
 
+
+
+.contextMenuNub-3yOOYo.colorable-1bkp8v.white-3GPOIp:active,
+.contextMenuNub-3yOOYo.colorable-1bkp8v.white-3GPOIp:hover,
+.contextMenuNub-3yOOYo.colorable-1bkp8v.primaryDark-3mSFDl:active,
+.contextMenuNub-3yOOYo.colorable-1bkp8v.primaryDark-3mSFDl:hover,
+.colorable-1bkp8v.white-3GPOIp:active,
+.colorable-1bkp8v.white-3GPOIp:hover,
+.colorable-1bkp8v.red-33-Lnk:active,
+.colorable-1bkp8v.red-33-Lnk:hover,
 .colorable-1bkp8v.primaryDark-3mSFDl:active,
 .colorable-1bkp8v.primaryDark-3mSFDl:hover,
 .noThanksButton-3mqg48:active,
@@ -2309,6 +2640,14 @@ html:root {
   background-color: var(--accentcolor);
   color: var(--accentcolor2);
 }
+
+
+/* mały guzik głosówka  */
+.contextMenuNub-3yOOYo.colorable-1bkp8v.white-3GPOIp,
+.contextMenuNub-3yOOYo.colorable-1bkp8v.primaryDark-3mSFDl {
+  box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
+}
+
 
 /* 14.3. Sliders */
 
@@ -2548,15 +2887,24 @@ html:root {
   color: transparent !important;
   background-image: linear-gradient(45deg, rgba(0, 204, 255, 1) 0%, rgba(0, 230, 138, 1) 70%) !important;
   -webkit-background-clip: text;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .message-2qnXI6 img[src*="270532835431940096"]~h2 .username-1A8OIy {
   color: transparent !important;
   background-image: linear-gradient(45deg, rgba(29, 215, 249, 1) 0%, rgba(255, 69, 1921) 80%) !important;
   -webkit-background-clip: text;
-  font-weight: bold;
+  font-weight: 600;
 }
+
+.message-2qnXI6 img[src*="186817801741271040"]~h2 .username-1A8OIy {
+  color: transparent !important;
+  background-image: linear-gradient(45deg, rgba(126, 0, 255, 1) 0%, rgb(187, 118, 255) 60%) !important;
+  -webkit-background-clip: text;
+  font-weight: 600;
+}
+
+
 
 /* zmiana linku na tekst  */
 /* [href^="https://ptb.discord.com/channels/"],
@@ -2613,6 +2961,89 @@ html:root {
 /* 15.b. Emoji Picker and Reactions */
 /* 15.c. Autocomplete */
 /* 15.d. User Popout */
+/* bannery  */
+.userPopout-xaxa6l[style*="--user-background"] .banner-2QYc2d,
+.root-3QyAh1[style*="--user-background"] .banner-2QYc2d {
+  height: 150px;
+  background: var(--headercolor) var(--user-background) var(--user-popout-position, center) center / cover !important;
+}
+
+.userPopout-xaxa6l[style*="--user-background"] .avatarPositionNormal-aZjAsn {
+  top: 96px;
+}
+
+/* -------  */
+.userPopout-xaxa6l {
+  border: 1px solid var(--accentcolor);
+  border-radius: 0;
+}
+
+.headerNormal-1mX3KY {
+  background-color: var(--channellistcolor);
+}
+
+.headerTop-2cWpdB {
+  background-color: var(--titlebar);
+  border-bottom: none;
+}
+
+.avatar-37jOim {
+  border-radius: var(--avatars) !important;
+  background-color: var(--titlebar);
+  border: 6px solid var(--titlebar);
+}
+
+.activity-3v9l4T {
+  padding: 12px;
+}
+
+
+.body-3HBlXn {
+  background-color: var(--guildlistcolor);
+}
+
+.footer-1N3bR3 {
+  background-color: var(--guildlistcolor);
+  padding: 0 12px 12px 12px;
+}
+
+.input-cIJ7To {
+  background-color: var(--input-color);
+  border: 1px solid var(--black3)
+}
+
+.input-cIJ7To:focus,
+.input-cIJ7To:active {
+  border: 1px solid var(--accentcolor)
+}
+
+.textarea-2r0oV8:focus {
+  background-color: var(--input-color);
+}
+
+/* spotify user popout  */
+.assetsLargeImage-eYwpTX {
+  border-radius: 0px;
+}
+
+.barInner-3NDaY_ {
+  background: #1DB954 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 4px #1DB954;
+}
+
+/* server nickname  */
+.setIdentityLink-3lcnXW {
+  color: var(--accentcolor);
+  font-weight: 500;
+}
+
+
+.setIdentityLink-3lcnXW:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 /* 15.e. Add Role User Popout */
 /* 15.f. Search Popout */
 /* 15.g. Server Settings */
@@ -2736,26 +3167,26 @@ html:root {
   width: 20px !important;
 }
 
-.customEmojiPlaceholder-37iZ_j{
+.customEmojiPlaceholder-37iZ_j {
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTEuOTkgMkM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnpNMTIgMjBjLTQuNDIgMC04LTMuNTgtOC04czMuNTgtOCA4LTggOCAzLjU4IDggOC0zLjU4IDgtOCA4em0zLjUtOWMuODMgMCAxLjUtLjY3IDEuNS0xLjVTMTYuMzMgOCAxNS41IDggMTQgOC42NyAxNCA5LjVzLjY3IDEuNSAxLjUgMS41em0tNyAwYy44MyAwIDEuNS0uNjcgMS41LTEuNVM5LjMzIDggOC41IDggNyA4LjY3IDcgOS41IDcuNjcgMTEgOC41IDExem0zLjUgNi41YzIuMzMgMCA0LjMxLTEuNDYgNS4xMS0zLjVINi44OWMuOCAyLjA0IDIuNzggMy41IDUuMTEgMy41eiIvPjwvc3ZnPg==);
   width: 20px;
   height: 20px;
 }
 
 
-  
+
 .clearStatusButton-1Mxs1q {
   width: fit-content;
   margin-left: auto;
 }
 
 
-.customEmoji-2_2FwB{
+.customEmoji-2_2FwB {
   margin-left: 20px !important
 }
 
-.customText-tY5LJn{
-  padding-left:10px
+.customText-tY5LJn {
+  padding-left: 10px
 }
 
 .customStatusContentIcon-2sionu {
@@ -2771,15 +3202,12 @@ html:root {
 }
 
 #status-picker {
-  animation: show-status 300ms linear;
-  border: none;
+  animation: show-status 300ms linear !important;
   width: calc(350px - var(--spacing-width));
   height: 68px;
   padding: 0;
-  position: fixed;
   left: calc(-9px + var(--spacing-width)) !important;
-  bottom: 63px !important;
-  transform: translateY(100%);
+  bottom: -5px !important;
   box-shadow: none;
 }
 
@@ -2805,7 +3233,7 @@ html:root {
   border: none;
   border-radius: 0;
   height: 65px;
-  width: 84px;
+  width: 87px;
   background: transparent;
   box-shadow: none;
   overflow: hidden;
@@ -2839,7 +3267,7 @@ html:root {
 
 #status-picker .item-1tOPte:nth-child(7) .status-1fhblQ,
 #status-picker .item-1tOPte:nth-child(7) .customText-tY5LJn {
-text-align: center;
+  text-align: center;
 }
 
 #status-picker .item-1tOPte:nth-child(7) {
@@ -2867,11 +3295,11 @@ text-align: center;
   background-color: var(--headercolor) !important;
   color: #FFF;
 }
- 
-#status-picker .item-1tOPte:nth-child(7) > div {
+
+#status-picker .item-1tOPte:nth-child(7)>div {
   position: relative;
   width: 100%;
-} 
+}
 
 #status-picker .item-1tOPte:nth-child(7) .customStatusWithEmoji-8-XZ8I,
 #status-picker .item-1tOPte:nth-child(7) .statusItem-33LqPf {
@@ -2888,7 +3316,7 @@ text-align: center;
 }
 
 #status-picker .item-1tOPte:hover .icon-1IxfJ2 {
-  transform: scale(1.1);
+  transform: scale(2.5);
   transition: all 200ms ease-in-out;
 }
 
@@ -2910,7 +3338,7 @@ text-align: center;
   mask: none;
 }
 
-.status-1AY8sU{
+.status-1AY8sU {
   background-color: transparent !important;
 }
 
@@ -2976,7 +3404,7 @@ text-align: center;
   left: 0;
   height: 100%;
   width: 100%;
-  background-position:center;
+  background-position: center;
   background-size: 40px;
   background-repeat: no-repeat;
   opacity: 0;
@@ -3013,30 +3441,6 @@ text-align: center;
   transition: all 200ms ease-in-out;
 }
 
-/* keyframes */
-@keyframes status {
-  from {
-    transform: translateY(0) translateX(0%) translateZ(0px);
-    opacity: 0;
-    height: 0px;
-  }
-}
-
-@keyframes show-status {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes show-custom {
-  to {
-    opacity: 1;
-    transform: translateY(0) translateX(0%) translateZ(0px);
-    pointer-events: all;
-  }
-}
-
-
 
 .colorblindMode.theme-dark .online-2S838R,
 .colorblindMode.theme-dark .idle-3DEnRT,
@@ -3053,6 +3457,68 @@ text-align: center;
   opacity: 1 !important;
 }
 
+@keyframes show-status {
+  from {
+    transform: translateY(100%) translateX(0%) translateZ(0px) !important;
+  }
+}
+
+
+@keyframes status {
+  from {
+    transform: perspective(1px) scale(0);
+    opacity: 0
+  }
+}
+
+@keyframes context-open-invertY {
+  0% {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+@keyframes context-open-new {
+  0% {
+    transform: scale(1, 0.8);
+  }
+}
+
+@keyframes context-open {
+  0% {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@keyframes popoutanim-inner {
+  0% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popoutanim {
+  0% {
+    transform: scale(0) perspective(1px);
+  }
+
+  100% {
+    transform: scale(1) perspective(1px);
+  }
+}
+
+@keyframes show-custom {
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0%) translateZ(0px);
+    pointer-events: all;
+  }
+}
 
 /* 16.c. Message Menu */
 /* 16.d. Color Picker */
@@ -3249,17 +3715,17 @@ text-align: center;
 /* 20.b.1. Custom Popouts */
 
 /* 21. Custom CSS */
-.floating-window-titlebar{
+.floating-window-titlebar {
   background-color: var(--titlebar);
 }
 
-.floating-window #bd-editor-controls{
+.floating-window #bd-editor-controls {
   background-color: var(--headercolor);
 }
 
 .monaco-editor,
 .monaco-editor-background,
-.monaco-editor .inputarea.ime-input{
+.monaco-editor .inputarea.ime-input {
   background-color: var(--chatbackground) !important;
 }
 
@@ -3267,11 +3733,11 @@ text-align: center;
   background-color: var(--titlebar) !important;
 }
 
-.floating-window.resizable{
+.floating-window.resizable {
   background-color: var(--headercolor);
 }
 
-.floating-window-buttons .close-button:hover{
+.floating-window-buttons .close-button:hover {
   background: #A1021C;
 }
 
@@ -3306,12 +3772,15 @@ text-align: center;
 /* instant invite */
 .scroller-2hZ97C.thin-1ybCId::-webkit-scrollbar,
 /* stage polaczony  */
-.scroller-1SuHJo.auto-3V-QBl::-webkit-scrollbar
-{
+.scroller-1SuHJo.auto-3V-QBl::-webkit-scrollbar {
   display: none;
 }
 
 /* 99.d Mask Remove  */
+.avatarHint-2A3RNb foreignObject,
+.wrapper-3t9DeA foreignObject,
+.avatar-37jOim foreignObject,
+.controlButton-2MhVEL foreignObject,
 .iconWrapper-2OrFZ1 foreignObject,
 .activitySectionAssets-32WyHu .largeImageMask-KlyeCi {
   mask: none;
