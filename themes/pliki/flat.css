@@ -4,25 +4,25 @@
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
-  --accentcolor: #0099ff;
+  --accentcolor: #7289DA;
   /*drugi kolor akcentu*/
   --accentcolor2: #FFFFFF;
   /* W RGB, kolor tła oznaczenia*/
-  --mentionbackground: 70, 160, 240;
+  --mentionbackground: 114, 137, 218;
   /*kolor paska górnego z napisem discord*/
-  --titlebar: #282828;
+  --titlebar: #272B31;
   /*kolor chatu pod wiadomosciami*/
-  --chatbackground: #353535;
+  --chatbackground: #282D36;
   /*kolor listy kanalow, uzytkownikow z prawej*/
-  --channellistcolor: #252525;
+  --channellistcolor: #222730;
   /*kolor paska z serwerami*/
-  --guildlistcolor: #202020;
+  --guildlistcolor: #252933;
   /*kolor paska zadań (nazwa serwera, przypięte, szukanie)*/
-  --headercolor: #151515;
+  --headercolor: #333943;
   /* kolor wyskakujacych okienek i pol tekstowych  */
-  --input-color: #323232;
+  --input-color: #292b30;
   /* kolor przycisków  */
-  --button-color: #454545;
+  --button-color: #32363d;
   /*grubośc ramki nowych wiadomości - kółka*/
   --notification-width: 2px;
   /*wielkość ramki wokół okna aplikacji - 0 wyłącza*/
@@ -35,7 +35,7 @@
   --rs-large-spacing: 10px;
   /* 17b641 kolor  statusu */
   /* ilosc zakladek znajomi  */
-  --dm-columns: 3;
+  --dm-columns: 4;
   --online: #28A745;
   --idle: #faa61a;
   --dnd: #DD2C2C;
@@ -44,7 +44,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 02/07/2021";
+  --version: "FlatCord - 17/07/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -85,6 +85,7 @@ html:root {
   outline: none;
 }
 
+.highlight,
 ::selection {
   color: #fff;
   background: var(--accentcolor);
@@ -502,7 +503,7 @@ html:root {
 }
 
 .searchResult-9tQ1uo {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   border-radius: 0;
 }
 
@@ -605,6 +606,13 @@ html:root {
 }
 
 /* 3.d. Buttons, Switches, and Bars */
+
+/* settings, mute, defran */
+.button-14-BFJ.enabled-2cQ-u7:hover{
+  border-radius: var(--avatars);
+  background-color: var(--white1);
+}
+
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles */
@@ -708,7 +716,7 @@ html:root {
 
 .acronym-2mOFsV,
 .wrapper-1BJsBx:hover .acronym-2mOFsV,
-.wrapper-1BJsBx.selected-bZ3Lue .acronym-2mOFsV{
+.wrapper-1BJsBx.selected-bZ3Lue .acronym-2mOFsV {
   background-color: var(--headercolor);
   border-radius: var(--avatars);
 }
@@ -727,10 +735,16 @@ html:root {
 
 /* 4.d. Badges */
 .wrapper-232cHJ,
+.textBadge-1iylP6,
 .numberBadge-2s8kKX {
   background-color: var(--accentcolor) !important;
   border-radius: var(--avatars);
 }
+
+.banner-2QYc2d .textBadge-1iylP6 {
+  background-color: transparent !important;
+}
+
 
 .tutorialContainer-2sGCg9 .lowerBadge-29hYVK {
   bottom: 6px !important;
@@ -758,13 +772,13 @@ html:root {
   border-radius: var(--avatars)
 }
 
-.voiceSectionIconWrapper-FO7UEY{
+.voiceSectionIconWrapper-FO7UEY {
   box-shadow: 0px 0px 0px 2px var(--input-color);
   border-radius: var(--avatars);
   background-color: var(--headercolor) !important;
 }
 
-.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover .voiceSectionIconWrapper-FO7UEY{
+.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover .voiceSectionIconWrapper-FO7UEY {
   box-shadow: 0px 0px 0px 2px var(--titlebar);
   border-radius: var(--avatars);
   background-color: var(--headercolor) !important;
@@ -833,7 +847,7 @@ html:root {
 .channelNotice-1-XFjC,
 /* live stage  */
 .channelNotice-2bJINM {
-  background-color: var(--input-color) !important;
+  background-color: var(--titlebar) !important;
   border-bottom: none;
 }
 
@@ -900,6 +914,7 @@ html:root {
 
 
 /* 5.d.2. Speakinhg gradient bar  */
+
 .avatarSpeaking-2IGMRN,
 .avatarDefault-35WC3R,
 .avatarContainer-72bSfM {
@@ -1052,8 +1067,7 @@ html:root {
 
 
 .container-enaOkj {
-  background-color: var(--input-color);
-  border-radius: 0;
+  background-color: var(--titlebar);
   border: 2px solid var(--accentcolor);
   border-top: none !important;
   margin-top: 3px;
@@ -1143,6 +1157,10 @@ html:root {
   background-color: var(--titlebar);
 }
 
+
+.hasMore-sul95G {
+  padding: 5px
+}
 
 /* 6. Account Area */
 /* 6.a. Main Container */
@@ -1262,6 +1280,20 @@ html:root {
   background-color: var(--chatbackground) !important;
 }
 
+/* nick hover  */
+.username-1A8OIy:hover {
+  /* background-color: var(--accentcolor); */
+  text-decoration: none !important;
+  color: #FFF !important;
+}
+
+.username-1A8OIy,
+.cozy-3raOZG .header-23xsNx,
+.cozy-3raOZG .timestamp-3ZCmNB{
+  height: 23px !important;
+  line-height: 23px !important;
+}
+
 /* reply */
 .replying-1x3H0T {
   background-color: rgba(var(--mentionbackground), 0.05);
@@ -1283,10 +1315,15 @@ html:root {
 }
 
 
+.executedCommand-2GE3w2 .applicationName-1-Uq7y,
+.executedCommand-2GE3w2 .commandName-1klrjB,
+.executedCommand-2GE3w2 .username-1A8OIy,
+.repliedMessage-VokQwo .username-1A8OIy,
+.threadMessageAccessory-1pYyA- .username-1A8OIy {
+  opacity: 1;
+}
+
 /* message failed to load  */
-
-
-
 .slateTextArea-1Mkdgw::after,
 .slateTextArea-1Mkdgw::before {
   content: '';
@@ -1439,7 +1476,7 @@ html:root {
 
 
 #app-mount .blockquoteContainer-U5TVEi {
-  background: var(--guildlistcolor);
+  background: var(--titlebar);
   border-left: 2px solid var(--invisible);
   border-radius: 0;
   padding: 4px;
@@ -1876,6 +1913,11 @@ html:root {
   display: none;
 }
 
+.embedFull-2tM8-- .imageWrapper-2p5ogY {
+  border: none;
+}
+
+
 /* live now, server invite  */
 .wrapper-35wsBm {
   background-color: var(--titlebar);
@@ -1933,7 +1975,7 @@ html:root {
 .wrapper-39oAo3 {
   background-color: var(--headercolor);
   border-radius: 0;
-  margin: 0;
+  margin: 0px 0px -1px 0px;
 }
 
 /* 8.m. Typing Bar */
@@ -1972,10 +2014,41 @@ html:root {
   text-overflow: ellipsis;
 }
 
+/* invite/slash command/info bar  */
+.base-gE7OpD {
+  background-color: var(--headercolor) !important;
+  bottom: 100%;
+  padding-right: 20px;
+  border-radius: 0px;
+  margin-left: 15px;
+}
+
+.applicationCommandEducationArrow-1DVDdr {
+  margin: 10px;
+  transform: rotate(180deg);
+  transform: scaleY(-1);
+}
+
+
+/* failed to load message, error bar  */
+.barBase-1c2Rfb.messagesErrorBar-nyJGU7{
+  border-radius: 0px;
+  margin-right: 50x;
+  width: 370px !important;
+  left: unset !important;
+}
+
+
+
 /* 8.n. Notification Bar */
+.notice-3bPHh-{
+  border-radius: 0;
+}
+
 /* 8.o. Search Results */
 /* 8.p. Video Calling */
 /* 8.q. Streaming */
+
 
 /* 9. Friends List */
 /* 9.a. Main Friends List */
@@ -1986,10 +2059,9 @@ html:root {
 .peopleListItem-2nzedh.active-rhSpJJ,
 .peopleListItem-2nzedh,
 .peopleListItem-2nzedh:hover {
-  margin: 0 10px 0 10px;
   margin-left: 0px;
   margin-right: 0px;
-  padding: 0;
+  padding: 10px;
   border-radius: 0;
   border-top: 1px solid var(--black2);
 }
@@ -1997,13 +2069,6 @@ html:root {
 .peopleListItem-2nzedh.active-rhSpJJ,
 .peopleListItem-2nzedh:hover {
   background-color: var(--titlebar);
-}
-
-.listItemContents-BUaJR_,
-.listItemContents-2w6nwE,
-.listItemContents-95HL3L {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .actionButton-uPB8Fs {
@@ -2086,7 +2151,7 @@ html:root {
 }
 
 .outer-1AjyKL {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   border: none;
   border-radius: 0;
 }
@@ -2098,7 +2163,7 @@ html:root {
 
 .emptyCard-1RJw8n,
 .section-2gLsgF {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   border-radius: 0;
 }
 
@@ -2246,6 +2311,15 @@ html:root {
   background-color: var(--chatbackground);
 }
 
+/* grafika  */
+.container-2rNpDV{
+  background-color: var(--accentcolor);
+  border-radius: 0;
+}
+
+.illustration-h6_gtD{
+  border-radius: 0;
+}
 
 .theme-dark .container-S9SaVf {
   background-color: var(--channellistcolor);
@@ -2522,10 +2596,10 @@ html:root {
 }
 
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
-width: calc(100% - var(--rs-large-spacing));
-height: calc(100% - var(--rs-large-spacing));
-margin-top: calc(var(--rs-large-spacing)/2);
-margin-left: calc(var(--rs-large-spacing)/2)
+  width: calc(100% - var(--rs-large-spacing));
+  height: calc(100% - var(--rs-large-spacing));
+  margin-top: calc(var(--rs-large-spacing)/2);
+  margin-left: calc(var(--rs-large-spacing)/2)
 }
 
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"]:after {
@@ -2550,14 +2624,13 @@ margin-left: calc(var(--rs-large-spacing)/2)
   height: calc(100% - var(--rs-large-spacing));
   margin-top: calc(var(--rs-large-spacing)/2);
   margin-left: calc(var(--rs-large-spacing)/2)
-  
 }
 
 #app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]):not([style*="width: 120px;"])>svg>foreignObject:not(:only-child) img {
   width: calc(100% - var(--rs-small-spacing));
-height: calc(100% - var(--rs-small-spacing));
-margin-top: calc(var(--rs-small-spacing)/2);
-margin-left: calc(var(--rs-small-spacing)/2)
+  height: calc(100% - var(--rs-small-spacing));
+  margin-top: calc(var(--rs-small-spacing)/2);
+  margin-left: calc(var(--rs-small-spacing)/2)
 }
 
 #app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
@@ -2611,11 +2684,11 @@ margin-left: calc(var(--rs-small-spacing)/2)
 #app-mount .wrapper-3t9DeA:before {
   content: none !important;
 }
-
+/* 
 .userInfo-2zN2z8,
 .peopleListItem-2nzedh {
   overflow: visible;
-}
+} */
 
 /*  kod na telefon w razie czego, dziala ale wywalilem bo plugin daje znaczek
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after {
@@ -2689,6 +2762,14 @@ foreignObject[mask*="mobile"]:after {
 
 
 /* 12. Shadows */
+.mention,
+.roleMention-2Bj0ju,
+.nickname-3M3Jfa,
+.name-uJV0GL,
+.username-1A8OIy {
+  /* text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000; */
+  text-shadow: 1px 1px 2px #000000;
+}
 
 .guilds-1SWlCJ {
   margin-bottom: 51px;
@@ -2725,6 +2806,16 @@ foreignObject[mask*="mobile"]:after {
 
 /* 13. Roundness */
 /* avatars  */
+.avatarSpeaking-2c8-9i{
+  margin-left: 2px;
+  margin-top: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: var(--avatars);
+}
+
+.iconInactive-98JN5i,
+.avatar-1BDn8e,
 .iconActiveMedium-1UaEIR,
 .guildIcon-1zxZMV,
 .avatar-VxgULZ,
@@ -3132,10 +3223,10 @@ foreignObject[mask*="mobile"]:after {
 } */
 
 .message-2qnXI6 img[src*="270532835431940096"]~h2 .username-1A8OIy {
-  color: transparent !important;
-  background-image: linear-gradient(45deg, rgba(29, 215, 249, 1) 0%, rgba(255, 69, 1921) 80%) !important;
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  
   -webkit-background-clip: text;
-  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
 }
 
 /* custom badge  */
@@ -3222,7 +3313,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 .avatar-2daVqv,
 .blob-2w7iIK,
 .avatar-2daVqv {
-  background-color: var(--channellistcolor);
+  background-color: var(--button-color);
   border-radius: var(--avatars);
   opacity: 0.3 !important;
 }
@@ -3239,7 +3330,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 /* 15. Popouts */
 /* 15.a. Pinned Messages */
 .messagesPopoutWrap-1MQ1bW {
-  background-color: var(--input-color);
+  background-color: var(--titlebar);
   border-radius: 0;
   border: 2px solid var(--accentcolor);
   border-top: none !important;
@@ -3283,9 +3374,72 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 
+/* emoji fix chat  */
+
+
+/* reaction  */
+.reaction-1hd86g{
+  border-radius: 0;
+  background-color: var(--titlebar);
+  border-color: var(--headercolor);
+}
+
+.reaction-1hd86g:hover {
+  background-color: var(--button-color);
+  border-color: var(--accentcolor);
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu{
+  border-radius: 0;
+  background-color: var(--headercolor);
+  border-color: var(--accentcolor);
+}
+
 
 
 /* 15.c. Autocomplete */
+.autocomplete-OOX59Q {
+  bottom: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+
+/* 8.r. Slash Commands  */
+.theme-dark .autocomplete-1vrmpx {
+  background-color: var(--titlebar);
+  border: 1px solid var(--headercolor);
+  border-bottom: none;
+}
+
+.outerWrapper-3-llkA {
+  bottom: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+.wrapper-2Gsate,
+.attachedBars-tZDmyV,
+.categoryHeader-O1zU94 {
+  background-color: var(--titlebar);
+  border-radius: 0;
+}
+
+.base-1pYU8j {
+  background-color: transparent;
+}
+
+.theme-dark .selected-1Tbx07 {
+  background-color: var(--button-color);
+  border-radius: 0;
+}
+
+.theme-dark .option-1B5ZV8 {
+  background-color: var(--accentcolor);
+  border-radius: 0;
+}
+
 /* 15.d. User Popout */
 /* bannery  */
 .userPopout-xaxa6l[style*="--user-background"] .banner-2QYc2d,
@@ -3300,12 +3454,11 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /* about me  */
 
-.aboutMeSection-1Fw5Ia{
-  padding: 5px 10px;
-  background-color: var(--titlebar);
+.aboutMeSection-1Fw5Ia {
+  padding: 5px 10px 10px 10px;
+  background-color: var(--guildlistcolor);
   margin: 0;
 }
-
 
 /* chowajka about me  */
 /* .aboutMeSection-1Fw5Ia:hover>.aboutMeBody-3GuvKk {
@@ -3335,8 +3488,12 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   border: 6px solid var(--channellistcolor);
 }
 
-.activity-3v9l4T {
-  padding: 12px;
+.customStatus-oN4ZZY{
+  margin: 0;
+}
+
+.activity-2INFPu {
+  padding-bottom: 5px;
 }
 
 .gameIcon-gg34Dz {
@@ -3353,16 +3510,16 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 .body-3HBlXn {
   padding: 0;
-  background-color: var(--titlebar);
+  background-color: var(--guildlistcolor);
 }
 
 .bodyInnerWrapper-26fQXj {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   padding: 5px 10px 6px 10px;
 }
 
 .footer-3UKYOU {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   padding: 0 6px 10px 6px;
 }
 
@@ -3371,8 +3528,8 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   border: 1px solid var(--black3)
 }
 
-.input-cIJ7To:focus,
-.input-cIJ7To:active {
+.userPopout-xaxa6l .input-cIJ7To:focus,
+.userPopout-xaxa6l .input-cIJ7To:active {
   border: 1px solid var(--accentcolor)
 }
 
@@ -3703,6 +3860,9 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 
+
+
+
 /*custom status menu*/
 
 .activityEmoji-1AR8K6,
@@ -3918,6 +4078,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   color: #cecece;
   top: 0;
 }
+
 #status-picker .submenuContainer-2gbm7M .label-22pbtT {
   margin-top: 0px;
 }
@@ -3933,6 +4094,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 #status-picker .submenuContainer-2gbm7M .submenuPaddingContainer-fiOCHc {
   margin-left: 32px;
 }
+
 /* ==================  */
 .statusItem-33LqPf foreignObject {
   mask: none;
@@ -4195,6 +4357,17 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 .checkmark-3rush5 {
   background-color: var(--online);
+}
+
+
+/* welcome screen  */
+.optionContainer-15srkc {
+  background-color: var(--titlebar);
+  border-radius: 0;
+}
+
+.optionContainer-15srkc:hover{
+  background-color: var(--guildlistcolor);
 }
 
 /* 17.e. Upload Modal */
@@ -4738,9 +4911,18 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 /* 20.a.1. BetterFormatting */
 /* 20.a.2. Permission Viewer */
 /* 20.a.3. Character Counter */
-.popoutNoteCounter-62U4Rh{
+.popoutNoteCounter-62U4Rh {
   bottom: 4px !important;
 }
+
+.chatCounter-XOMPsh {
+  bottom: 0;
+}
+
+.charCounter-7fw40k {
+  font-size: 12px;
+}
+
 /* 20.a.4. Reply System */
 /* 20.a.5. Server Folders */
 /* 20.a.6. Share Button */
@@ -4777,7 +4959,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .childWrapper-anI2G9.button-Jt-tIg {
-  background-color: #404040;
+  background-color: var(--button-color);
   height: 18px;
   border-radius: 0;
   line-height: 18px;
@@ -4796,6 +4978,21 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 .badgesChat-f_cbR8 {
   top: 4px
 }
+
+/* 20.a.19. Message logger v2  */
+.large-3lXhLH {
+  max-width: 600px;
+}
+
+.large-3lXhLH .input-cIJ7To {
+  background-color: var(--titlebar) !important;
+}
+
+.theme-dark .qkw0kat-b8cp7vu{
+  border-color: var(--accentcolor) !important;
+  background-color: var(--titlebar);
+}
+
 
 /* 20.b. Addon Optimization */
 /* 20.b.1. Custom Popouts */
