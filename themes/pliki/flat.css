@@ -44,7 +44,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 18/07/2021";
+  --version: "FlatCord - 21/07/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -375,6 +375,49 @@ html:root {
 }
 
 /* 1.d. Mac Buttons NIE MA */
+/*
+.typeWindows-1za-n7 {
+  background-color: transparent;
+}
+
+.winButton-iRh8-Z {
+  top: 4px;
+  margin-right: 16px;
+  /* odstepy *
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+}
+
+.winButton-iRh8-Z svg {
+  display: none;
+}
+
+.winButtonClose-1HsbF- {
+  background-color: #e43939;
+}
+
+.winButtonClose-1HsbF-:hover {
+  opacity: 1;
+  background-color: #A1021C;
+}
+
+.titleBar-AC4pGV .winButton-iRh8-Z[aria-label="Maximize"],
+.titleBar-AC4pGV .winButton-iRh8-Z[aria-label="Maksymalizuj"] {
+  background-color: #43b581;
+}
+
+.titleBar-AC4pGV .winButton-iRh8-Z[aria-label="Minimize"],
+.titleBar-AC4pGV .winButton-iRh8-Z[aria-label="Minimalizuj"] {
+  background-color: #faa61a;
+}
+
+.winButtonMinMax-PBQ2gm:hover {
+  opacity: 1;
+}*/
+
+
 
 /* 1.e. Erase & Change SVGs */
 .titleBar-AC4pGV rect {
@@ -1353,18 +1396,18 @@ html:root {
 
 /* buttony prawa strona  */
 .wrapper-2aW0bm {
-  background: var(--headercolor);
+  background: var(--titlebar);
   border-radius: 0;
   box-shadow: none !important;
-  border: 1px solid var(--titlebar)
+  border: 1px solid var(--headercolor)
 }
 
 .button-1ZiXG9:hover {
-  background: var(--button-color);
+  background: var(--channellistcolor);
 }
 
 .button-1ZiXG9.selected-LCBEAU {
-  background: var(--channellistcolor);
+  background: var(--headercolor);
 }
 
 
@@ -1372,8 +1415,29 @@ html:root {
   border-radius: 0;
 }
 
+
+
+
+/* pencil, edited */
+.edited-3sfAzf {
+  font-size: 0;
+  width: 13px !important;
+  height: 13px !important;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGMuMzktLjM5LjM5LTEuMDIgMC0xLjQxbC0yLjM0LTIuMzRjLS4zOS0uMzktMS4wMi0uMzktMS40MSAwbC0xLjgzIDEuODMgMy43NSAzLjc1IDEuODMtMS44M3oiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+  background-size: 100%;
+  opacity: .3;
+  line-height: 23px;
+  margin-left: 5px;
+}
+
 /* 8.b. Messages */
 /* 8.c. Blocked Messages */
+#app-mount .expanded-13sWhZ {
+  background: #ff525e10;
+  border-left: 2px solid var(--dnd);
+}
+
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
 
@@ -1753,7 +1817,7 @@ html:root {
 }
 
 .footer-2yA7Ep {
-  background-color: var(--titlebar);
+  background-color: var(--guildlistcolor);
   border-radius: 0;
   border: 1px solid var(--headercolor);
 }
@@ -2908,6 +2972,7 @@ foreignObject[mask*="mobile"]:after {
 .lookFilled-1Gx00P.colorBrand-3pXr91,
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
   background-color: var(--button-color) !important;
+  border: 1px solid var(--headercolor)
 }
 
 
@@ -3226,6 +3291,23 @@ foreignObject[mask*="mobile"]:after {
   display: none;
 }
 
+
+/* remove options from ppm  */
+.item-1tOPte[id="message-tts"],
+.item-1tOPte[id="message-reply"],
+.item-1tOPte[id="message-edit"],
+.item-1tOPte[id="message-pin"],
+.item-1tOPte[id="message-quote"],
+.item-1tOPte[id="message-mark-unread"],
+.item-1tOPte[id="message-add-reaction"],
+.item-1tOPte[id="user-context-note"],
+.item-1tOPte[id="textarea-context-languages"],
+.item-1tOPte[id="textarea-context-spellcheck"],
+.item-1tOPte[id="textarea-context-sticker-suggestions"] {  
+display: none !important;
+}
+
+
 /* color nicknames  */
 /* .message-2qnXI6 img[src*="186609657928744962"]~h2 .username-1A8OIy {
   color: transparent !important;
@@ -3242,7 +3324,6 @@ foreignObject[mask*="mobile"]:after {
 }
 
 /* custom badge  */
-
 .userPopout-xaxa6l[data-user-id="186609657928744962"] .container-q03LZO:before,
 .root-3QyAh1[data-user-id="186609657928744962"] .container-q03LZO:before {
   content: "";
@@ -3458,7 +3539,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   box-shadow: none;
 }
 
-.wrapper-2Gsate,
+/* .wrapper-2Gsate, */
 .attachedBars-tZDmyV,
 .categoryHeader-O1zU94 {
   background-color: var(--titlebar);
@@ -3491,25 +3572,6 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   top: 96px;
 }
 
-/* about me  */
-
-.aboutMeSection-1Fw5Ia {
-  padding: 5px 10px 10px 10px;
-  background-color: var(--guildlistcolor);
-  margin: 0;
-}
-
-/* chowajka about me  */
-/* .aboutMeSection-1Fw5Ia:hover>.aboutMeBody-3GuvKk {
-  max-height: 500px;
-  transition: max-height 0.5s ease-in;
-}
-
-.aboutMeBody-3GuvKk {
-  max-height: 0;
-  transition: max-height 0.5s ease-out;
-} */
-
 /* -------  */
 .userPopout-xaxa6l {
   border: 1px solid var(--accentcolor);
@@ -3517,14 +3579,14 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .headerTop-3vNv-a {
-  background-color: var(--channellistcolor);
+  background-color: var(--chatbackground);
   border-bottom: none;
 }
 
 .avatar-37jOim {
   border-radius: var(--avatars) !important;
-  background-color: var(--channellistcolor);
-  border: 6px solid var(--channellistcolor);
+  background-color: var(--chatbackground);
+  border: 6px solid var(--chatbackground);
 }
 
 .customStatus-oN4ZZY {
@@ -3548,17 +3610,58 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .body-3HBlXn {
+  background-color: var(--input-color);
   padding: 0;
-  background-color: var(--guildlistcolor);
 }
 
-.bodyInnerWrapper-26fQXj {
-  background-color: var(--titlebar);
+.activity-2INFPu {
+  background-color: var(--channellistcolor);
   padding: 5px 10px 6px 10px;
 }
 
+.theme-dark .newPopoutActivityStyles .spotifyIcon-2J9kSv {
+  padding: 10px 10px 0 10px;
+}
+
+/* about me  */
+.aboutMeSection-1Fw5Ia {
+  padding: 5px 10px 10px 10px;
+  background-color: var(--chatbackground);
+  margin: 0;
+}
+
+/* chowajka about me  */
+/* .aboutMeSection-1Fw5Ia:hover>.aboutMeBody-3GuvKk {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+.aboutMeBody-3GuvKk {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+} */
+
+.bodyInnerWrapper-26fQXj {
+  background-color: var(--guildlistcolor);
+}
+
+.bodyTitle-1ySSKn {
+  padding: 5px 10px 2px 10px;
+  margin-bottom: 0;
+}
+
+.rolesList-1geHY1 {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 5px;
+}
+
+.note-1oo11U {
+  padding: 0px 6px 5px 6px;
+  margin: 0;
+}
+
 .footer-3UKYOU {
-  background-color: var(--titlebar);
+  background-color: var(--guildlistcolor);
   padding: 0 6px 10px 6px;
 }
 
@@ -3959,6 +4062,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Online"] {
   --status: var(--online);
 }
+
 
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Zaraz wracam"],
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Idle"] {
@@ -4484,7 +4588,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 
 .wrapper-O5i5-0 .footer-2gL1pp {
-  background-color: var(--channellistcolor);
+  background-color: var(--guildlistcolor);
   border-radius: 0;
 }
 
@@ -4765,7 +4869,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .uploadModal-2ifh8j .footer-3mqk7D {
-  background: var(--headercolor) !important;
+  background: var(--guildlistcolor) !important;
   border-radius: 0 !important;
 }
 
@@ -4831,7 +4935,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 /* Audio/Video attachment  */
 .theme-dark .wrapperAudio-1jDe0Q {
-  background-color: var(--input-color) !important;
+  background-color: var(--titlebar) !important;
   border-radius: 0;
   border-color: var(--headercolor);
 }
@@ -4874,8 +4978,8 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   border-radius: 0;
   padding: 15px;
   width: 450px;
-  border: 1px solid var(--button-color);
-  background: var(--headercolor);
+  border: 1px solid var(--headercolor);
+  background: var(--titlebar);
   position: relative;
   overflow: hidden;
 }
@@ -5019,7 +5123,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .theme-dark .footer-2gL1pp {
-  background-color: var(--headercolor);
+  background-color: var(--guildlistcolor);
   box-shadow: none;
   border-radius: 0;
 }
@@ -5128,8 +5232,13 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 } */
 
 .badgesChat-f_cbR8 {
-  top: 4px
+  top: 4px;
 }
+
+.badges-XRnWAp {
+  filter: grayscale();
+}
+
 
 /* 20.a.19. Message logger v2  */
 .large-3lXhLH {
