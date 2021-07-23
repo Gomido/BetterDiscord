@@ -1,4 +1,8 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+@font-face {
+  font-family: Discord;
+  src: url("https://strencher.github.io/BetterDiscordStuff/Discord.otf") format("opentype");
+}
 
 :root {
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
@@ -10,13 +14,13 @@
   /* W RGB, kolor tła oznaczenia*/
   --mentionbackground: 0, 126, 255;
   /*kolor paska górnego z napisem discord*/
-  --titlebar: #282828;
+  --titlebar: #252525;
   /*kolor chatu pod wiadomosciami*/
-  --chatbackground: #353535;
+  --chatbackground: #303030;
   /*kolor listy kanalow, uzytkownikow z prawej*/
-  --channellistcolor: #252525;
+  --channellistcolor: #222222;
   /*kolor paska z serwerami*/
-  --guildlistcolor: #202020;
+  --guildlistcolor: #2C2C2C;
   /*kolor paska zadań (nazwa serwera, przypięte, szukanie)*/
   --headercolor: #151515;
   /* kolor wyskakujacych okienek i pol tekstowych  */
@@ -44,7 +48,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 21/07/2021";
+  --version: "FlatCord - 23/07/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -298,6 +302,7 @@ html:root {
 }
 
 .wordmark-2iDDfm:before {
+  font-family: 'Discord';
   content: 'Flat';
   text-transform: uppercase;
   font-size: 14px;
@@ -305,14 +310,16 @@ html:root {
   position: fixed;
   display: inline-block;
   top: 3px;
-  font-weight: 600;
-  color: #FFFFFF;
+  font-weight: 400;
+  color: var(--accentcolor);
   height: auto;
   left: 5px;
+  filter: drop-shadow(0 0 5px var(--accentcolor));
   background-color: transparent;
 }
 
 .wordmark-2iDDfm:after {
+  font-family: 'Discord';
   content: 'cord';
   text-transform: uppercase;
   font-size: 14px;
@@ -320,10 +327,10 @@ html:root {
   position: fixed;
   display: inline-block;
   top: 3px;
-  font-weight: 500;
-  color: var(--accentcolor);
+  font-weight: 400;
+  color: var(--accentcolor2);
   height: auto;
-  left: 38px;
+  left: 39px;
   background-color: transparent;
 }
 
@@ -1065,6 +1072,8 @@ html:root {
   height: 52px;
 }
 
+
+
 .searchResultsWrap-3-pOjs:after {
   content: " ";
   position: fixed;
@@ -1102,6 +1111,8 @@ html:root {
   margin-top: 0;
   width: 2px;
 }
+
+/* otoczka nieprzeczytanych wiadomosci  */
 
 /* 5.f. Categories */
 .containerDefault-3tr_sE,
@@ -1256,6 +1267,11 @@ html:root {
   border: 1px solid var(--headercolor);
 }
 
+
+.coverImage-3cjWkd {
+  background-image: none !important;
+}
+
 /* invite button/ game invite  */
 
 #channel-attach {
@@ -1316,6 +1332,17 @@ html:root {
   border-left: 2px solid var(--accentcolor2) !important;
 }
 
+.membersGroup-v9BXpm {
+  color: #6e6e6e;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, transparent, inherit, transparent);
+  border-image-slice: 1;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+  border-radius: 0px;
+  height: 25px;
+}
 
 
 /* 8. Chat */
@@ -1981,6 +2008,10 @@ html:root {
 
 .embedFull-2tM8-- .embedMedia-1guQoW {
   margin-top: 6px;
+}
+
+.embedFooter-3yVop- {
+  margin-top: 4px
 }
 
 .removeAttachmentButton-2qVPxg,
@@ -2851,7 +2882,7 @@ foreignObject[mask*="mobile"]:after {
   margin-bottom: 51px;
 }
 
-.guilds-1SWlCJ {
+/* .guilds-1SWlCJ {
   box-shadow: 2px -1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -2861,7 +2892,28 @@ foreignObject[mask*="mobile"]:after {
 
 .membersWrap-2h-GB4 {
   box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.3);
+} */
+
+
+/* ramki */
+.containerDefault-3tr_sE,
+.containerDragAfter-Zk9oyx,
+.containerDragBefore-1YqewQ,
+.containerUserOver-98-yc7 {
+  border-bottom: 1px solid #383839;
 }
+
+.scroller-1JbKMe,
+.scroller-RmtA4e,
+.scroller-1Bvpku{
+  border-right: 1px solid #383838;
+}
+
+.container-lRFx4q,
+.members-1998pB{
+  border-left: 1px solid #383838;
+}
+
 
 /* z-index fix  */
 .guilds-1SWlCJ {
@@ -3297,14 +3349,14 @@ foreignObject[mask*="mobile"]:after {
 .item-1tOPte[id="message-reply"],
 .item-1tOPte[id="message-edit"],
 .item-1tOPte[id="message-pin"],
-.item-1tOPte[id="message-quote"],
+/* .item-1tOPte[id="message-quote"], */
 .item-1tOPte[id="message-mark-unread"],
 .item-1tOPte[id="message-add-reaction"],
 .item-1tOPte[id="user-context-note"],
 .item-1tOPte[id="textarea-context-languages"],
 .item-1tOPte[id="textarea-context-spellcheck"],
-.item-1tOPte[id="textarea-context-sticker-suggestions"] {  
-display: none !important;
+.item-1tOPte[id="textarea-context-sticker-suggestions"] {
+  display: none !important;
 }
 
 
@@ -3579,14 +3631,14 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .headerTop-3vNv-a {
-  background-color: var(--chatbackground);
+  background-color: var(--input-color);
   border-bottom: none;
 }
 
 .avatar-37jOim {
   border-radius: var(--avatars) !important;
-  background-color: var(--chatbackground);
-  border: 6px solid var(--chatbackground);
+  background-color: var(--input-color);
+  border: 6px solid var(--input-color);
 }
 
 .customStatus-oN4ZZY {
@@ -3610,17 +3662,23 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .body-3HBlXn {
-  background-color: var(--input-color);
+  background-color: var(--chatbackground);
   padding: 0;
 }
 
 .activity-2INFPu {
-  background-color: var(--channellistcolor);
+  background-color: var(--guildlistcolor);
   padding: 5px 10px 6px 10px;
+}
+
+.theme-dark .newPopoutActivityStyles button[class*="openInYouTube"] {
+  top: 6px !important;
+  right: 35px !important;
 }
 
 .theme-dark .newPopoutActivityStyles .spotifyIcon-2J9kSv {
   padding: 10px 10px 0 10px;
+  height: 18px;
 }
 
 /* about me  */
@@ -3642,7 +3700,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 } */
 
 .bodyInnerWrapper-26fQXj {
-  background-color: var(--guildlistcolor);
+  background-color: var(--channellistcolor);
 }
 
 .bodyTitle-1ySSKn {
@@ -3661,7 +3719,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .footer-3UKYOU {
-  background-color: var(--guildlistcolor);
+  background-color: var(--channellistcolor);
   padding: 0 6px 10px 6px;
 }
 
@@ -4627,7 +4685,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /* 17.e. Upload Modal */
 .backdrop-1wrmKB {
-  opacity: 0.4 !important;
+  opacity: 0.2 !important;
 }
 
 
