@@ -1,4 +1,5 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css);
 
 @font-face {
   font-family: Discord;
@@ -49,7 +50,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 27/07/2021";
+  --version: "FlatCord - 29/07/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -920,21 +921,33 @@ html:root {
 }
 
 /* threads  */
-.container-3JKcAb .containerDefault--pIXnN{
+.container-3JKcAb .containerDefault--pIXnN {
   border-left: 2px solid transparent;
+  margin-left: -2px;
 }
 
-.container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU{
+.container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU {
   border-left: 2px solid var(--accentcolor);
   background-color: var(--headercolor);
+  margin-left: 0;
 }
 
-.container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU .wrapper-2jXpOf:hover{
-  border-left: 2px solid var(--accentcolor2);
+.container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU .wrapper-2jXpOf:hover {
+  margin-left: -2px;
+}
+
+.container-3JKcAb .containerDefault--pIXnN .wrapper-2jXpOf:hover,
+.container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU .wrapper-2jXpOf:hover {
+  border-left: 2px solid var(--accentcolor2) !important;
   background-color: var(--titlebar);
-  margin-left:-2px;
 }
 
+.container-3JKcAb .containerDefault--pIXnN .wrapper-2jXpOf:hover .unread-2lAfLh {
+  margin-left: -2px;
+  background-color: var(--accentcolor2);
+}
+
+.container-3JKcAb .containerDefault--pIXnN .wrapper-2jXpOf:hover .content-1x5b-n,
 .container-3JKcAb .containerDefault--pIXnN.selected-3LIHYU .modeSelected-346R90 .content-1x5b-n {
   border: none;
 }
@@ -1497,12 +1510,12 @@ html:root {
 }
 
 /* show all popout threads  */
-.modal-2DCYwU{
+.modal-2DCYwU {
   background-color: var(--channellistcolor) !important;
   border: 1px solid #383838
 }
 
-.container-7uh5fX{
+.container-7uh5fX {
   background-color: var(--channellistcolor);
   border-radius: 0;
 }
@@ -3190,6 +3203,7 @@ foreignObject[mask*="mobile"]:after {
   text-decoration: none;
 }
 
+.theme-dark .lookLink-9FtZy-.colorTransparent-1ewNp9:hover .contents-18-Yxp,
 .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp,
 .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp {
   background-image: none;
@@ -3693,7 +3707,8 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /*thread na kanale maly jak najedziemy */
 .popout-APcvZm {
-  background-color: var(--headercolor);
+  background-color: var(--channellistcolor);
+  border: 1px solid #383838;
   border-radius: 0;
   left: 0;
   padding: 0;
@@ -3706,16 +3721,19 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 .row-1ImlrZ:hover {
   background-color: var(--titlebar);
   border-radius: 0;
-  border-left: 2px solid var(--accentcolor);
+  border-left: 2px solid var(--accentcolor2);
 }
 
 .more-3VADkW {
   color: var(--accentcolor);
+  border-left: 2px solid transparent;
 }
 
 .more-3VADkW:hover {
   text-decoration: none;
   color: var(--accentcolor2);
+  border-left: 2px solid var(--accentcolor2);
+  background-color: var(--titlebar);
 }
 
 /* spotify  */
@@ -3723,7 +3741,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
   border-radius: 0;
   margin-left: 0;
   padding: 8px !important;
-  background-color: var(--headercolor);
+  background-color: var(--channellistcolor);
   border: 1px solid #383838;
   box-shadow: none;
 }
@@ -3735,8 +3753,13 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /* live  */
 .theme-dark .streamPreview-2-WUWT {
-  background-color: var(--headercolor);
+  background-color: var(--channellistcolor);
   border-radius: 0;
+  box-shadow: none;
+}
+
+.theme-dark .previewContainer-12UlHl{
+  background-color: var(--guildlistcolor);
 }
 
 .streamPreviewWrapper-2DSWOK {
@@ -4867,6 +4890,12 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 /* 17.d. Join or Create New Guild */
+
+.theme-dark .contentWrapper-3WC1ID{
+  background: var(--guildlistcolor);
+  border: 1px solid #383838
+}
+
 
 /* Join banner  */
 .inviteSplash-40aHus,
