@@ -51,7 +51,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 06/08/2021";
+  --version: "FlatCord - 07/08/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -3053,7 +3053,21 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 
 /* 11.b. Radial Status */
 
+/* wielkosc awatarów  */
+.membersWrap-2h-GB4 .wrapper-3t9DeA,
+.scroller-1JbKMe .wrapper-3t9DeA {
+  width: 36px !important;
+  height: 36px !important;
+}
 
+.avatar-1BDn8e {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+
+
+/* radial reszta  */
 .StatusEverywhere-avatar-radial[style="--status-color:#3BA55D;"] {
   --status-color: var(--online) !important;
 }
@@ -3080,6 +3094,12 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
   border: var(--rs-width) solid var(--status-color) !important;
 }
 
+/* temp wylaczenie statusu glosowy bo rozjezdza  */
+.autocompleteRowIcon-2VJmzt .wrapper-3t9DeA rect,
+.container-23E4rK .wrapper-3t9DeA rect,
+.listDefault-3ir5aS .content-1Wq3SX .wrapper-3t9DeA rect {
+  display: none !important;
+}
 
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA svg:not(:root) {
@@ -3170,6 +3190,7 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
   -webkit-mask: none;
   mask: none;
 }
+
 
 .userPopout-xaxa6l .avatarHintInner-1TvA8u {
   font-size: 0;
@@ -3425,6 +3446,7 @@ foreignObject[mask*="mobile"]:after {
   margin-left: 10px;
 }
 
+.lookLink-9FtZy-.colorBrand-3pXr91,
 .cta-3gK0Pu,
 .colorable-1bkp8v.green-plH-Mj,
 .lookOutlined-3sRXeN.colorBrand-3pXr91,
@@ -3453,6 +3475,8 @@ foreignObject[mask*="mobile"]:after {
 }
 
 
+.lookLink-9FtZy-.colorBrand-3pXr91:active,
+.lookLink-9FtZy-.colorBrand-3pXr91:hover,
 .cta-3gK0Pu:active,
 .cta-3gK0Pu:hover,
 .colorable-1bkp8v.green-plH-Mj:active,
@@ -5747,6 +5771,15 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 /* 17.f. Game Preview Modal */
 /* 17.g. Quick Switcher */
 /* 17.h. Screenshare Modal */
+
+
+
+/* share button  */
+.bumpBox-1r5p3c {
+  background-color: var(--titlebar);
+  border-radius: 0;
+}
+
 /* 17.i. Phone Verification Modal */
 /* 17.j. Smartphone Modal */
 /* 17.k. Drag and Drop Modal */
