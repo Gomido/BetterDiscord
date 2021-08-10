@@ -17,7 +17,7 @@
   /* W RGB, kolor tła oznaczenia*/
   --mentionbackground: 0, 126, 255;
   /*kolor paska górnego z napisem discord*/
-  --titlebar: #222222;
+  --titlebar: #242424;
   /*kolor chatu pod wiadomosciami*/
   --chatbackground: #303030;
   /*kolor listy kanalow, uzytkownikow z prawej*/
@@ -51,7 +51,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 07/08/2021";
+  --version: "FlatCord - 10/08/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -391,13 +391,13 @@ html:root {
 }
 
 /* 1.d. Mac Buttons NIE MA */
-/*
+/* 
 .typeWindows-1za-n7 {
   background-color: transparent;
 }
 
 .winButton-iRh8-Z {
-  top: 4px;
+  top: 2px;
   margin-right: 16px;
   /* odstepy *
   opacity: 0.8;
@@ -431,7 +431,7 @@ html:root {
 
 .winButtonMinMax-PBQ2gm:hover {
   opacity: 1;
-}*/
+} */
 
 
 
@@ -676,10 +676,8 @@ html:root {
   }
 }
 
-/* changelog  */
-
 /*changelog*/
-#bd-editor-panel::before {
+.contentColumnDefault-1VQkGM #bd-editor-panel::before {
   content: "CHANGELOG: \a FlatCord - 06/08/2021 \a Nowe statusy \a Statusy dostosowane są pod plugin StatusEverywhere. Nie znikają już przy\a zmianie statusu, \a Dodano znaczek pisania wszędzie (chat, pw, profile, lista z na serwerach)\a Zalecane wgranie pluginu, bez niego statusy są dziwne, wtopione w avatary \a\a http://bit.ly/kodSkin" !important;
   display: block;
   position: relative;
@@ -1001,6 +999,7 @@ html:root {
 }
 
 /* 4.d. Badges */
+.featuredTag-2NRwvK,
 .wrapper-232cHJ,
 .textBadge-1iylP6,
 .numberBadge-2s8kKX {
@@ -1273,6 +1272,7 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 .channelNotice-2bJINM {
   background-color: var(--titlebar) !important;
   border-bottom: none;
+  border-right: 1px solid #383838;
 }
 
 .channelNotice-2bJINM {
@@ -2002,6 +2002,23 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 
 .mentioned-xhSam7:before {
   background-color: var(--accentcolor);
+}
+
+
+
+/* odsylanie do wiadomosci, niebieskie tlo */
+.backgroundFlash-24qWLN {
+  z-index: 999999 !important;
+}
+
+#app-mount .backgroundFlash-24qWLN {
+  transition: 1250ms ease;
+  background: rgba(var(--mentionbackground), 0.2) !important;
+}
+
+
+#app-mount .backgroundFlash-24qWLN[style*="rgba(88, 101, 242, 0)"] {
+  background: transparent !important;
 }
 
 /* 8.g. Code Blocks */
@@ -2747,9 +2764,11 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 }
 
 .theme-dark .multipleIconWrapper-DfGWrz,
+.theme-dark .outer-1AjyKL.active-1xchHY,
+.theme-dark .outer-1AjyKL.active-1xchHY .section-2gLsgF,
 .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
 .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover .section-2gLsgF {
-  background-color: var(--titlebar);
+  background-color: var(--titlebar) !important;
 }
 
 .emptyCard-1RJw8n,
@@ -3025,7 +3044,7 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 
 .detailsBlock-FoDTGA,
 .premiumSubscriptionAccountCredit-25i0tQ {
-  background-color: var(--titlebar);
+  background-color: var(--guildlistcolor);
   border-radius: 0;
   border: 1px solid var(--headercolor);
 }
@@ -3146,8 +3165,8 @@ img[src="/assets/2af69d4f9d2ff38a7cf76fab0907ea7a.svg"] {
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA .pointerEvents-2zdfdO[x="14.5"] {
   fill: rgba(0, 0, 0, 0.5) !important;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   x: 1;
   y: 1;
 }
