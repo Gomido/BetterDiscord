@@ -925,7 +925,7 @@ html:root {
   height: 46px;
 }
 
-.tutorialContainer-2sGCg9 .listItem-GuPuDH .wrapper-25eVIn{
+.tutorialContainer-2sGCg9 .listItem-GuPuDH .wrapper-25eVIn {
   height: 46px;
 }
 
@@ -984,8 +984,8 @@ html:root {
 
 /* 4.b. Guilds */
 .listItem-GuPuDH .wrapper-25eVIn {
-  height: 54px;
-  width: 54px;
+  /* height: 54px;
+  width: 54px; */
   display: flex;
   justify-content: center;
   align-items: center
@@ -1001,9 +1001,9 @@ html:root {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) inset;
 }
 
-.placeholderMask-3v3K7P {
+/* .placeholderMask-3v3K7P {
   height: 54px;
-}
+} */
 
 .listItem-GuPuDH .svg-1X37T1 {
   position: relative;
@@ -1015,7 +1015,7 @@ html:root {
 .icon-27yU2q,
 .acronym-2mOFsV,
 .childWrapper-anI2G9:not(.acronym-2mOFsV)::after {
-  transform: scale(calc(44/54));
+  transform: scale(calc(40/48));
   border-radius: var(--avatars)
 }
 
@@ -1039,10 +1039,10 @@ html:root {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  top: calc((100% - 52px) / 2);
-  left: calc((100% - 52px) / 2);
-  width: 52px;
-  height: 52px;
+  top: calc((100% - 48px) / 2);
+  left: calc((100% - 48px) / 2);
+  width: 48px;
+  height: 48px;
   border: 2px solid transparent;
   border-radius: var(--avatars);
   z-index: 2;
@@ -1087,7 +1087,7 @@ html:root {
 }
 
 .collapsed-2ZrjoL+div .folderIconWrapper-1_bOZe {
-  transform: scale(calc(44/54));
+  transform: scale(calc(40/48));
   border-radius: var(--avatars)
 }
 
@@ -1101,27 +1101,22 @@ html:root {
 
 .expandedFolderBackground-1cujaW {
   background: var(--channellistcolor);
-  padding: 6px;
-  left: 6px;
-  border-radius: var(--avatars)!important
+  border: 1px solid #383838;
+  /* padding: 6px; */
+  /* left: 6px; */
+  border-radius: var(--avatars) !important
+}
+
+.expandedFolderBackground-1cujaW.collapsed-2ZrjoL {
+  border: none;
 }
 
 .wrapper-3Njo_c ul .item-2hkk8m::after {
-  width: 60px !important;
-  left: 6px
+  width: 48px !important;
+  left: 13px
 }
 
-/* pasek przeciagania kanalow, ten zielony pod nazwa  */
-.containerDragAfter-3Fp7LC:after,
-.containerDragBefore-3iTCc7:before,
-.containerDragAfter-Zk9oyx:before,
-.containerDragBefore-1YqewQ:before{
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: var(--accentcolor);
-  border-radius: 0px;
-}
+
 
 .circleIconButton-1QV--U {
   transform: scale(calc(48/54)) !important;
@@ -1193,20 +1188,19 @@ html:root {
   border-radius: var(--avatars);
 }
 
-.upperLeftBadge-e35IpL{
+.upperLeftBadge-e35IpL {
   box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
   border-radius: var(--avatars);
-  margin-left: 6px;
-  margin-top: 6px;
+  margin-left: 3px;
+  margin-top: 3px;
 }
-
 
 .lowerLeftBadge-zr4T_9,
 .wrapper-25eVIn .lowerBadge-29hYVK {
   box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
   border-radius: var(--avatars);
-  margin-right: 2px;
-  margin-bottom: 2px;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 .iconBadge-3qSJIw {
@@ -1603,8 +1597,8 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 .stageSection-3mAD8V:after {
   content: " ";
   position: fixed;
-  width: calc(100% - 349px);
-  height: 52px;
+  width: calc(100% - 348px);
+  height: calc(52px - var(--spacing-width));
   right: var(--spacing-width);
   bottom: var(--spacing-width);
   background: var(--headercolor);
@@ -1685,14 +1679,25 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   overflow: visible
 } */
 
-
-
 /* 5.f. Categories */
 .containerDefault-3tr_sE,
 .containerDragAfter-Zk9oyx,
 .containerDragBefore-1YqewQ,
 .containerUserOver-98-yc7 {
   padding-left: 8px;
+}
+
+
+/* pasek przeciagania kanalow, ten zielony pod nazwa  */
+.containerDragAfter-3Fp7LC:after,
+.containerDragBefore-3iTCc7:before,
+.containerDragAfter-Zk9oyx:before,
+.containerDragBefore-1YqewQ:before {
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accentcolor);
+  border-radius: 0px;
 }
 
 /* 5.g. DM List */
@@ -1804,7 +1809,7 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 /* 6.a. Main Container */
 .container-3baos1 {
   background-color: var(--headercolor);
-  height: 51px !important;
+  height: calc(52px - var(--spacing-width));
   position: fixed;
   bottom: var(--spacing-width);
   left: var(--spacing-width);
@@ -3577,7 +3582,7 @@ foreignObject[mask*="mobile"]:after {
 }
 
 .guilds-1SWlCJ {
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 
 /* .guilds-1SWlCJ {
@@ -6343,6 +6348,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   background-color: transparent;
 }
 
+.video-8eMOth,
 .embedVideo-3nf0O9 {
   background-color: var(--titlebar);
   border-radius: 0;
