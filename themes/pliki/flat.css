@@ -52,7 +52,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 28/08/2021";
+  --version: "FlatCord - 02/09/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -608,7 +608,7 @@ html:root {
   width: 35px;
   bottom: 0;
   right: 4px;
-  background: url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center/20px no-repeat;
+  background: url("https://gomido.github.io/img/svg/lupka.svg") center/20px no-repeat;
   pointer-events: none;
 }
 
@@ -917,7 +917,7 @@ html:root {
 }
 
 #app-mount .guilds-1SWlCJ .scroller-1Bvpku .tutorialContainer-2sGCg9+div {
-  margin-top: 58px;
+  margin-top: 46px;
 }
 
 .tutorialContainer-2sGCg9>.listItem-GuPuDH {
@@ -934,7 +934,6 @@ html:root {
   width: 72px;
   position: fixed;
   z-index: 2;
-  margin-bottom: 10px
 }
 
 .tutorialContainer-2sGCg9 .pill-3N7f9r {
@@ -983,15 +982,23 @@ html:root {
 }
 
 /* 4.b. Guilds */
+
+.listItem-GuPuDH {
+  width: 72px;
+  margin: 0
+}
+
 .listItem-GuPuDH .wrapper-25eVIn {
-  /* height: 54px;
-  width: 54px; */
+  height: 60px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center
 }
 
-
+.wrapper-3Njo_c ul {
+  height: auto !important;
+}
 
 .wrapper-3NnKdC .dragInner-Oq_toX {
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE1LjQxIDE2LjA5bC00LjU4LTQuNTkgNC41OC00LjU5TDE0IDUuNWwtNiA2IDYgNnoiLz4gICAgPHBhdGggZD0iTTAtLjVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
@@ -1015,7 +1022,7 @@ html:root {
 .icon-27yU2q,
 .acronym-2mOFsV,
 .childWrapper-anI2G9:not(.acronym-2mOFsV)::after {
-  transform: scale(calc(40/48));
+  transform: scale(calc(43/60));
   border-radius: var(--avatars)
 }
 
@@ -1039,10 +1046,10 @@ html:root {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  top: calc((100% - 48px) / 2);
-  left: calc((100% - 48px) / 2);
-  width: 48px;
-  height: 48px;
+  top: calc((100% - 54px) / 2);
+  left: calc((100% - 54px) / 2);
+  width: 54px;
+  height: 54px;
   border: 2px solid transparent;
   border-radius: var(--avatars);
   z-index: 2;
@@ -1087,7 +1094,7 @@ html:root {
 }
 
 .collapsed-2ZrjoL+div .folderIconWrapper-1_bOZe {
-  transform: scale(calc(40/48));
+  transform: scale(calc(44/60));
   border-radius: var(--avatars)
 }
 
@@ -1102,24 +1109,30 @@ html:root {
 .expandedFolderBackground-1cujaW {
   background: var(--channellistcolor);
   border: 1px solid #383838;
-  /* padding: 6px; */
-  /* left: 6px; */
-  border-radius: var(--avatars) !important
+  padding: 6px;
+  left: 5px;
+  height: calc(100% - 12px);
 }
 
 .expandedFolderBackground-1cujaW.collapsed-2ZrjoL {
   border: none;
 }
 
+
 .wrapper-3Njo_c ul .item-2hkk8m::after {
-  width: 48px !important;
-  left: 13px
+  width: 60px !important;
+  left: 6px
 }
 
 
+.wrapper-3Njo_c ul .listItem-GuPuDH:last-child .item-2hkk8m::after {
+  border-radius: 0 0 var(--avatars) var(--avatars);
+  height: 60px;
+}
+
 
 .circleIconButton-1QV--U {
-  transform: scale(calc(48/54)) !important;
+  transform: scale(calc(48/60)) !important;
 }
 
 
@@ -1182,10 +1195,15 @@ html:root {
 
 
 .tutorialContainer-2sGCg9 .lowerBadge-29hYVK {
-  bottom: 2px !important;
-  right: 2px !important;
+  bottom: 1px !important;
+  right: -6px !important;
   box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
   border-radius: var(--avatars);
+}
+
+.upperBadge-2XnnGB {
+  margin-right: 3px;
+  margin-top: 3px;
 }
 
 .upperLeftBadge-e35IpL {
@@ -1206,7 +1224,8 @@ html:root {
 .iconBadge-3qSJIw {
   background-color: var(--titlebar);
   box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
-  border-radius: var(--avatars)
+  border-radius: var(--avatars);
+  background-color: var(--online) !important;
 }
 
 .iconBadge-qZ4Ksk {
@@ -1558,6 +1577,10 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 .channelName-2YrOjO:after {
   line-height: 8px;
+}
+
+.icons-1dXQdz {
+  margin-right: 0;
 }
 
 /* 5.d.4. Show profile label */
@@ -3379,10 +3402,10 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA .pointerEvents-2zdfdO[x="14.5"] {
   fill: rgba(0, 0, 0, 0.5) !important;
-  width: 22px;
-  height: 22px;
-  x: 5;
-  y: 5;
+  width: 26px;
+  height: 26px;
+  x: 2;
+  y: 2;
 }
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA rect {
@@ -3400,17 +3423,12 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 }
 
 .wrapper-3t9DeA rect {
-  /* x: 0; */
-  /* y: 0; */
-  /* width: 100%; */
-  /* height: 100%; */
   rx: var(--avatars) !important;
   ry: var(--avatars) !important;
   -webkit-mask: none;
   mask: none;
   stroke: var(--headercolor);
   display: block !important;
-  /* fill: transparent !important; */
 }
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA[style*="width: 80px;"] img {
@@ -3422,7 +3440,11 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 }
 
 .StatusEverywhere-avatar-radial .wrapper-3t9DeA:not([style*="width: 80px;"]):not([style*="width: 120px;"])>svg>foreignObject:not(:only-child) img {
-  clip-path: inset(calc(var(--rs-small-spacing) - 4px) calc(var(--rs-small-spacing) - 4px) round var(--avatars));
+  /* clip-path: inset(calc(var(--rs-small-spacing) - 4px) calc(var(--rs-small-spacing) - 4px) round var(--avatars)); */
+  width: calc(100% - 2*(var(--rs-width)));
+  height: calc(100% - 2*(var(--rs-width)));
+  margin-top: var(--rs-width);
+  margin-left: var(--rs-width);
 }
 
 .StatusEverywhere-avatar-radial .avatarHint-2A3RNb foreignObject {
@@ -3571,6 +3593,38 @@ foreignObject[mask*="mobile"]:after {
   padding-top: 2px;
 }
 
+/*statusy male, bez ksiezyca itp, kolka*/
+.status-1XNdyw rect[fill*="hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)"],
+.status-1XNdyw rect[fill*="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"],
+.status-1XNdyw rect[fill*="hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"],
+.status-1XNdyw rect[fill*="hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)"] {
+  mask: none;
+  width: 10px;
+  height: 10px;
+  y: 3;
+  rx: 50;
+}
+
+.status-1XNdyw rect[fill*="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
+  fill: var(--dnd);
+}
+
+.status-1XNdyw rect[fill*="rgba(67, 181, 129, 1)"] {
+  fill: var(--online);
+}
+
+.status-1XNdyw rect[fill*="hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)"] {
+  fill: var(--offline);
+}
+
+.status-1XNdyw rect[fill*="hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"] {
+  fill: var(--idle);
+}
+
+.status-1XNdyw rect[fill*="hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)"] {
+  fill: var(--streaming);
+}
+
 /* 12. Shadows */
 .mention,
 .roleMention-2Bj0ju,
@@ -3604,7 +3658,7 @@ foreignObject[mask*="mobile"]:after {
 .containerDragAfter-Zk9oyx,
 .containerDragBefore-1YqewQ,
 .containerUserOver-98-yc7 {
-  border-bottom: 1px solid #383839;
+  border-bottom: 1px solid #383838;
 }
 
 .panels-j1Uci_,
@@ -4077,7 +4131,10 @@ foreignObject[mask*="mobile"]:after {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
 }
 
-
+.colorDefault-2K3EoJ .checkbox-3s5GYZ,
+.colorDefault-2K3EoJ .radioSelection-1HmrQS {
+  color: var(--accentcolor);
+}
 
 /* 14.4  Snippets */
 /*🠗  Hide help icon  */
@@ -4349,7 +4406,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .more-3VADkW {
-  color: var(--accentcolor);
+  padding-left: 10px;
   border-left: 2px solid transparent;
 }
 
@@ -4458,6 +4515,7 @@ img.emote {
   background-color: var(--channellistcolor);
   border: 1px solid var(--headercolor);
   border-bottom: none;
+  width: calc(100% - 2px);
 }
 
 .autocompleteRow-2OthDa {
@@ -4477,7 +4535,7 @@ img.emote {
 .attachedBars-tZDmyV,
 .categoryHeader-O1zU94 {
   background-color: var(--channellistcolor);
-  border: 1px solid var(--headercolor);
+  /* border: 1px solid var(--headercolor); */
   border-radius: 0;
 }
 
@@ -4626,6 +4684,7 @@ img.emote {
   border: 1px solid var(--accentcolor)
 }
 
+
 .textarea-2r0oV8:focus {
   background-color: var(--input-color);
 }
@@ -4652,6 +4711,63 @@ img.emote {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+
+
+
+/*wumpus nowy*/
+.wumpusWrapper-2H_Ezt {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 85px;
+  height: 85px
+}
+
+.wumpus-2_mWxc img {
+  display: none
+}
+
+.wumpus-2_mWxc {
+  animation: none;
+  transition: none;
+  transform: none;
+  width: 100%;
+  height: 100%;
+  left: 0
+}
+
+.wumpusTooltip-3V90tI::after {
+  display: none
+}
+
+#app-mount .wumpusTooltip-3V90tI::before {
+  content: 'JESTEM NOWY';
+  font-size: 11px;
+  color: #fff;
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 22px;
+  right: 16px
+}
+
+#app-mount .wumpusTooltip-3V90tI {
+  font-size: 0;
+  background: var(--accentcolor);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  clip-path: polygon(0 0, 35% 0, 100% 65%, 100% 100%);
+}
+
 
 /* 15.e. Add Role User Popout */
 /* 15.f. Search Popout */
@@ -5793,6 +5909,54 @@ img.emote {
 /* 17. Modals */
 /* 17.a. Help Modal */
 /* 17.b. User Profile Modal */
+.avatar-AvHqJA{
+  border: 8px solid var(--chatbackground);
+  background-color: var(--chatbackground);
+  box-shadow: none;
+}
+
+.topSection-y3p-_D{
+  background-color: var(--chatbackground);
+}
+
+.body-r6_QPy{
+  background-color: var(--channellistcolor);
+}
+
+/* user info  */
+.note-367eZJ textarea {
+  border-radius: 0;
+  border: 1px solid var(--headercolor)
+}
+
+.note-367eZJ textarea:focus {
+  border-color: var(--accentcolor);
+
+}
+
+
+.connectedAccount-2Jb-Z0{
+  border-radius: 0;
+  border: 1px solid #383838;
+}
+
+.connectedAccount-2Jb-Z0:hover{
+  /* border-color: var(--accentcolor); */
+  background-color: var(--titlebar);
+}
+
+
+/* mutual servers  */
+.body-r6_QPy .listRow-1iDGel {
+  margin: 0;
+  border-radius: 0;
+}
+
+.body-r6_QPy .listRow-1iDGel:hover {
+  background-color: var(--titlebar);
+}
+
+
 /* 17.c. Instant Invite Modal */
 .wrapper-O5i5-0 .root-1gCeng {
   background-color: var(--input-color);
@@ -6475,6 +6639,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 .label-2wRs_g {
   color: #acacac;
   font-size: 10px;
+  margin: 5px 0 5px 0px;
 }
 
 /* 20.a.16. Read All Button  */
