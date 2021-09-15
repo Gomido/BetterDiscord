@@ -52,7 +52,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 02/09/2021";
+  --version: "FlatCord - 15/09/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -747,6 +747,18 @@ html:root {
   border: 1px solid #383838;
 }
 
+
+/* unsaved changes */
+.container-2VW0UT {
+  border-radius: 0;
+}
+
+.theme-dark .elevationHigh-1PneE4{
+  box-shadow: none;
+  background-color: var(--titlebar) !important;
+}
+
+
 /* 3.a. General Sidebar */
 .sidebarRegionScroller-3MXcoP {
   background-color: var(--channellistcolor);
@@ -1000,6 +1012,12 @@ html:root {
   height: auto !important;
 }
 
+
+.placeholderMask-3v3K7P {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 .wrapper-3NnKdC .dragInner-Oq_toX {
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE1LjQxIDE2LjA5bC00LjU4LTQuNTkgNC41OC00LjU5TDE0IDUuNWwtNiA2IDYgNnoiLz4gICAgPHBhdGggZD0iTTAtLjVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
   background-position: 50%;
@@ -1111,7 +1129,7 @@ html:root {
   border: 1px solid #383838;
   padding: 6px;
   left: 5px;
-  height: calc(100% - 12px);
+  height: calc(100% - 13px);
 }
 
 .expandedFolderBackground-1cujaW.collapsed-2ZrjoL {
@@ -1195,30 +1213,30 @@ html:root {
 
 
 .tutorialContainer-2sGCg9 .lowerBadge-29hYVK {
-  bottom: 1px !important;
-  right: -6px !important;
+  margin-right: 6px;
+  margin-bottom: 1px;
   box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
   border-radius: var(--avatars);
 }
 
 .upperBadge-2XnnGB {
-  margin-right: 3px;
-  margin-top: 3px;
+  margin-right: 6px;
+  margin-top: 6px;
 }
 
 .upperLeftBadge-e35IpL {
   box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
   border-radius: var(--avatars);
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: 6px;
+  margin-top: 6px;
 }
 
 .lowerLeftBadge-zr4T_9,
 .wrapper-25eVIn .lowerBadge-29hYVK {
   box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
   border-radius: var(--avatars);
-  margin-right: 3px;
-  margin-bottom: 3px;
+  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .iconBadge-3qSJIw {
@@ -1726,16 +1744,6 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 /* 5.g. DM List */
 /* 5.h. Unread Messages Popout inbox recent mentions*/
 
-
-.container-enaOkj {
-  background-color: var(--guildlistcolor);
-  border: 2px solid var(--accentcolor);
-  border-top: none !important;
-  margin-top: 3px;
-  box-shadow: none;
-  border-radius: 0;
-}
-
 .header-ykumBX {
   background-color: var(--headercolor);
   box-shadow: none;
@@ -2103,12 +2111,9 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   background: var(--headercolor);
 }
 
-
 .spoilerText-3p6IlD {
   border-radius: 0;
 }
-
-
 
 
 /* pencil, edited */
@@ -2131,6 +2136,24 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   background: #ff525e10;
   border-left: 2px solid var(--dnd);
 }
+
+.cozy-3raOZG.wrapper-2a6GCs {
+  padding: 0;
+}
+
+/* chat bubbles  */
+.cozyMessage-3V1Y8y .contents-2mQqc9 > .markup-2BOw-j:not(:empty){
+  background-color: var(--titlebar);
+  display: inline-block;
+  max-width: 650px;
+  /* width: -webkit-fit-content; */
+  /* width: -moz-fit-content; */
+  width: fit-content;
+  margin: 0;
+  padding: 6px;
+  border-radius: 15px;
+}
+
 
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
@@ -2516,8 +2539,8 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 }
 
 /* expand codeblock  */
-.container-1pMiXm {
-  min-width: 600px;
+.cozy-3raOZG.wrapper-2a6GCs .messageAttachment-1aDidq {
+  width: 100%;
 }
 
 .textContainer-C0szpm {
@@ -4332,12 +4355,14 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 /* 15.a. Pinned Messages */
 .browser-2NpbWS,
 /* ^^ threads  */
-.messagesPopoutWrap-1MQ1bW {
+.messagesPopoutWrap-1MQ1bW,
+/* inbox  */
+.container-enaOkj {
   background-color: var(--guildlistcolor);
-  border-radius: 0;
   border: 2px solid var(--accentcolor);
   border-top: none !important;
   margin-top: 3px;
+  border-radius: 0;
   min-width: 550px;
   max-height: 800px !important;
   box-shadow: none;
@@ -4362,6 +4387,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 .footer-1kmXd4 {
   background-color: var(--titlebar);
 }
+
 
 /* Threads popout  */
 
@@ -4713,6 +4739,15 @@ img.emote {
 }
 
 
+/* playing game  */
+.activitySectionAssets-32WyHu .smallImage-1p6VYD,
+.assetsSmallImage-3_3Bzj {
+  background-color: var(--headercolor);
+  border-radius: var(--avatars);
+  box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
+  /* margin-bottom: 4px;
+  margin-right: 4px; */
+}
 
 
 /*wumpus nowy*/
@@ -5909,17 +5944,17 @@ img.emote {
 /* 17. Modals */
 /* 17.a. Help Modal */
 /* 17.b. User Profile Modal */
-.avatar-AvHqJA{
+.avatar-AvHqJA {
   border: 8px solid var(--chatbackground);
   background-color: var(--chatbackground);
   box-shadow: none;
 }
 
-.topSection-y3p-_D{
+.topSection-y3p-_D {
   background-color: var(--chatbackground);
 }
 
-.body-r6_QPy{
+.body-r6_QPy {
   background-color: var(--channellistcolor);
 }
 
@@ -5935,12 +5970,12 @@ img.emote {
 }
 
 
-.connectedAccount-2Jb-Z0{
+.connectedAccount-2Jb-Z0 {
   border-radius: 0;
   border: 1px solid #383838;
 }
 
-.connectedAccount-2Jb-Z0:hover{
+.connectedAccount-2Jb-Z0:hover {
   /* border-color: var(--accentcolor); */
   background-color: var(--titlebar);
 }
@@ -6745,6 +6780,9 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 /* 99.c. Scrollbars hidder  */
+/* about me editor  */
+.scrollbarDefault-3COgCQ::-webkit-scrollbar-thumb,
+.scrollbarDefault-3COgCQ::-webkit-scrollbar-track,
 /* lista kanalow  */
 .scroller-RmtA4e.thin-1ybCId::-webkit-scrollbar,
 /* member list  */
@@ -6771,6 +6809,11 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 /* 99.d Mask Remove  */
+.assetsLargeMaskActivityFeed-3eznI9,
+.assetsLargeMaskProfile-1Qkfen,
+.assetsLargeMaskStreamPreview-2V7xlA,
+.assetsLargeMaskUserPopout-12EBBc,
+.assetsLargeMaskVoiceChannel-2k1oGM,
 .voiceSectionGuildImage-3HwnfL,
 .flex-1xMQg5 foreignObject,
 .assets-VMAukC foreignObject,
