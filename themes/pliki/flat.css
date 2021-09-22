@@ -1,4 +1,4 @@
-
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css);
@@ -4451,7 +4451,67 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
     padding-left: 5px;
   } */
 
+/* kolorowe linki */
+/* YouTube */
+.messageContent-2qWWxC [href*="youtu.be"],
+.messageContent-2qWWxC [href*="youtube.com"] {
+    color:#c4302b !important;
+    font-weight: 600;
+}
+/* Twitch */
+.messageContent-2qWWxC [href*="twitch.tv"] {
+    color:#7351A9 !important;
+    font-weight: 600;
+}
+/* Discord */
+.messageContent-2qWWxC [href*="discord.com/channels/"],
+.messageContent-2qWWxC [href*="betterdiscord.app/"],
+.messageContent-2qWWxC [href*="discord.gg/"],
+.messageContent-2qWWxC [href*="discord.com/"],
+.messageContent-2qWWxC [href*="media.discordapp.net/"],
+.messageContent-2qWWxC [href*="cdn.discordapp.com/"] {
+    color:#7289da !important;
+    font-weight: 600;
+}
+/* Reddit */
+.messageContent-2qWWxC [href*="reddit.com"],
+.messageContent-2qWWxC [href*="redd.it"] {
+    color:#F74300 !important; 
+    font-weight: 600;
+}
+/* Instagram */
+.messageContent-2qWWxC [href*="instagram.com/"]{
+    background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+} 
 
+/* Facebook */
+.messageContent-2qWWxC [href*="facebook.com"]{
+    color:#2D88FF !important;
+    font-weight: 600;
+}
+/* Imgur */
+.messageContent-2qWWxC [href*="i.imgur.com"]{
+    color:#1BB76E !important;
+    font-weight: 600;
+}
+
+.messageContent-2qWWxC /* Steam */
+[href*="store.steampowered.com"],
+[href*="https://s.team"],
+[href*="steamcommunity.com/"] {
+    color:#1B2838 !important; 
+    font-weight: 600;
+}
+
+.messageContent-2qWWxC /* Spotify */
+[href*="spotify.com"],
+[href*="open.spotify.com"]{
+    color:#1DB954 !important; 
+    font-weight: 600;
+}
 
 /* 15. No connection loading screens  */
 .wrapper-3vR61M,
@@ -5001,6 +5061,12 @@ img.emote {
   border-radius: 0;
 }
 
+.avatarUploaderInner-3UNxY3{
+  border-radius: var(--avatars);
+  background-color: var(--titlebar);
+}
+
+
 /* roles */
 .container-_phMUq {
   background-color: var(--channellistcolor);
@@ -5043,7 +5109,6 @@ img.emote {
 }
 
 
-
 /* custom role icon */
 .previewContainer-sli91T {
   background-color: var(--titlebar);
@@ -5057,6 +5122,13 @@ img.emote {
 .content-1LAB8Z {
   border-radius: 0;
 }
+
+
+/* dark/light preview  */
+.previewContainer-1KQDJS .theme-dark .messageContainer-1DiFnQ{
+  background-color: var(--chatbackground);
+}
+
 
 /* stickers  */
 
@@ -5623,6 +5695,7 @@ img.emote {
 .item-1tOPte#message-actions-reply .iconContainer-2-XQPY,
 .item-1tOPte#message-actions-customquoter-quote .iconContainer-2-XQPY,
 .item-1tOPte#message-actions-thread .iconContainer-2-XQPY,
+.item-1tOPte#message-actions-reactions .iconContainer-2-XQPY,
 .item-1tOPte#message-actions-mark-unread .iconContainer-2-XQPY,
 .item-1tOPte#message-actions-copy-link .iconContainer-2-XQPY,
 .item-1tOPte#message-actions-tts .iconContainer-2-XQPY,
@@ -5738,6 +5811,8 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='call' d='M20.04,15.639l-2.827,-0.323c-0.68,-0.078 -1.348,0.156 -1.826,0.634l-2.049,2.049c-3.151,-1.603 -5.734,-4.175 -7.337,-7.337l2.06,-2.06c0.479,-0.479 0.712,-1.147 0.634,-1.826l-0.323,-2.805c-0.133,-1.125 -1.079,-1.971 -2.215,-1.971l-1.926,-0c-1.258,-0 -2.305,1.047 -2.227,2.305c0.59,9.508 8.194,17.101 17.691,17.691c1.258,0.078 2.305,-0.969 2.305,-2.227l0,-1.926c0.011,-1.124 -0.835,-2.071 -1.96,-2.204Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+
+.item-1tOPte#guild-context-serverfolders-mute-folder[aria-checked=true]::before,
 .item-1tOPte#guild-header-popout-hide-muted-channels[aria-checked=true]::before,
 .item-1tOPte#guild-context-hide-muted-channels[aria-checked=true]::before,
 .item-1tOPte#guild-context-unmute-guild::before,
@@ -5799,6 +5874,7 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='play_on_spotify' d='M12,2c-5.523,0 -10,4.477 -10,10c0,5.523 4.477,10 10,10c5.524,0 10,-4.477 10,-10c0,-5.522 -4.476,-10 -10,-10l0,0Zm4.586,14.423c-0.179,0.294 -0.563,0.387 -0.857,0.207c-2.348,-1.435 -5.304,-1.759 -8.785,-0.964c-0.335,0.076 -0.67,-0.134 -0.746,-0.469c-0.077,-0.336 0.132,-0.67 0.469,-0.747c3.809,-0.87 7.077,-0.495 9.713,1.116c0.293,0.18 0.387,0.563 0.206,0.857Zm1.224,-2.723c-0.225,0.367 -0.706,0.483 -1.072,0.257c-2.688,-1.652 -6.786,-2.131 -9.965,-1.166c-0.412,0.125 -0.848,-0.107 -0.973,-0.519c-0.124,-0.412 0.108,-0.847 0.52,-0.972c3.632,-1.102 8.147,-0.569 11.233,1.328c0.367,0.226 0.483,0.706 0.257,1.072l0,0Zm0.105,-2.835c-3.223,-1.915 -8.54,-2.091 -11.617,-1.157c-0.495,0.15 -1.017,-0.129 -1.167,-0.623c-0.15,-0.494 0.129,-1.017 0.624,-1.167c3.532,-1.072 9.404,-0.865 13.115,1.338c0.445,0.264 0.591,0.838 0.327,1.282c-0.263,0.444 -0.838,0.591 -1.281,0.327l-0.001,-0Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.item-1tOPte[id^=user-context-invite-to-listen]::before,
 .item-1tOPte[id^=user-context-spotify-sync-]::before,
 .item-1tOPte[id^=now-playing-menu-spotify-sync]::before {
   --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cg%3E%3Crect fill='none' height='24' width='24'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M3,12v7c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2v-4c0-1.1-0.9-2-2-2H5v-1c0-3.87,3.13-7,7-7s7,3.13,7,7v1h-2c-1.1,0-2,0.9-2,2v4 c0,1.1,0.9,2,2,2h2c1.1,0,2-0.9,2-2v-7c0-4.97-4.03-9-9-9S3,7.03,3,12z'/%3E%3C/g%3E%3C/svg%3E");
@@ -5823,6 +5899,8 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='group_settings' d='M21.279,16.573c-0,-0.167 -0.023,-0.319 -0.046,-0.479l0.639,-0.555c0.137,-0.122 0.167,-0.319 0.076,-0.479l-0.449,-0.775c-0.091,-0.16 -0.281,-0.229 -0.448,-0.168l-0.806,0.274c-0.244,-0.205 -0.517,-0.365 -0.822,-0.479l-0.167,-0.829c-0.038,-0.175 -0.19,-0.304 -0.372,-0.304l-0.898,-0c-0.182,-0 -0.334,0.129 -0.372,0.304l-0.168,0.829c-0.304,0.114 -0.578,0.274 -0.821,0.479l-0.806,-0.274c-0.175,-0.061 -0.357,0.015 -0.448,0.168l-0.449,0.775c-0.091,0.16 -0.061,0.357 0.076,0.479l0.639,0.555c-0.023,0.16 -0.046,0.312 -0.046,0.479c0,0.168 0.023,0.32 0.046,0.479l-0.639,0.555c-0.137,0.122 -0.167,0.32 -0.076,0.479l0.449,0.776c0.091,0.16 0.281,0.228 0.448,0.167l0.806,-0.273c0.243,0.205 0.517,0.365 0.821,0.479l0.168,0.828c0.038,0.175 0.19,0.305 0.372,0.305l0.898,-0c0.182,-0 0.334,-0.13 0.372,-0.305l0.167,-0.828c0.305,-0.114 0.578,-0.274 0.822,-0.479l0.806,0.273c0.174,0.061 0.357,-0.015 0.448,-0.167l0.449,-0.776c0.091,-0.159 0.061,-0.357 -0.076,-0.479l-0.639,-0.555c0.023,-0.159 0.046,-0.311 0.046,-0.479Zm-8.055,1.695c0.023,0.067 0.012,0.141 -0.029,0.198c-0.041,0.057 -0.107,0.091 -0.178,0.091c-1.36,0.001 -6.726,0.001 -6.726,0.001c-0.309,-0 -0.56,-0.251 -0.56,-0.56c0,-0.817 0,-2.239 0,-2.239c0,-2.481 4.972,-3.731 7.463,-3.731c0.423,-0 0.918,0.036 1.448,0.108c0.085,0.012 0.155,0.072 0.179,0.154c0.025,0.083 -0.001,0.171 -0.065,0.228c-1.106,1.001 -1.799,2.448 -1.799,4.055c-0,0.592 0.094,1.162 0.267,1.695Zm-8.382,-5.319c0.04,-0.014 0.085,0.001 0.109,0.036c0.023,0.036 0.019,0.083 -0.01,0.115c-0.66,0.721 -1.075,1.597 -1.075,2.659l-0,2.239c-0,0.309 -0.251,0.56 -0.56,0.56c-0.236,-0 -0.51,-0 -0.746,-0c-0.309,-0 -0.56,-0.251 -0.56,-0.56c0,-0.817 0,-2.239 0,-2.239c0,-1.25 1.266,-2.189 2.842,-2.81Zm13.585,5.145c-0.836,0 -1.52,-0.684 -1.52,-1.521c-0,-0.836 0.684,-1.52 1.52,-1.52c0.837,-0 1.521,0.684 1.521,1.52c0,0.837 -0.684,1.521 -1.521,1.521Zm-5.233,-6.999c-2.062,-0 -3.731,-1.67 -3.731,-3.731c-0,-2.062 1.669,-3.732 3.731,-3.732c2.062,0 3.731,1.67 3.731,3.732c0,2.061 -1.669,3.731 -3.731,3.731Zm-4.452,-7.377c0.038,-0.006 0.076,0.012 0.095,0.046c0.019,0.033 0.015,0.074 -0.009,0.104c-0.764,0.962 -1.231,2.175 -1.231,3.496c-0,1.32 0.467,2.533 1.232,3.494c0.025,0.03 0.029,0.073 0.01,0.107c-0.02,0.034 -0.059,0.052 -0.097,0.045c-1.709,-0.335 -3.011,-1.829 -3.011,-3.646c0,-1.818 1.302,-3.311 3.011,-3.646Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+
+.item-1tOPte#dev-context-devmode-copy-id::before,
 .item-1tOPte#message-actions-copy-id::before,
 .item-1tOPte#guild-context-devmode-copy-id::before,
 .item-1tOPte#channel-context-devmode-copy-id::before,
@@ -5851,6 +5929,7 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='copy_message_link' d='M10.473,13.527c0.444,0.423 0.444,1.116 -0,1.538c-0.423,0.423 -1.116,0.423 -1.538,0c-2.098,-2.101 -2.098,-5.556 -0,-7.657l3.834,-3.834c2.101,-2.099 5.556,-2.099 7.657,-0c2.099,2.101 2.099,5.556 0,7.657l-1.613,1.614c0.01,-0.888 -0.13,-1.776 -0.434,-2.621l0.509,-0.52c0.613,-0.607 0.959,-1.434 0.959,-2.296c-0,-0.863 -0.346,-1.69 -0.959,-2.296c-0.606,-0.613 -1.433,-0.959 -2.296,-0.959c-0.862,0 -1.689,0.346 -2.296,0.959l-3.823,3.823c-0.613,0.606 -0.959,1.434 -0.959,2.296c0,0.862 0.346,1.69 0.959,2.296Zm3.054,-4.592c0.423,-0.423 1.116,-0.423 1.538,-0c2.098,2.101 2.098,5.556 0,7.657l-3.834,3.834c-2.101,2.099 -5.556,2.099 -7.657,0c-2.099,-2.101 -2.099,-5.556 -0,-7.657l1.613,-1.614c-0.01,0.888 0.13,1.776 0.434,2.632l-0.509,0.509c-0.613,0.607 -0.959,1.434 -0.959,2.296c0,0.863 0.346,1.69 0.959,2.296c0.606,0.613 1.433,0.959 2.296,0.959c0.862,-0 1.689,-0.346 2.296,-0.959l3.823,-3.823c0.613,-0.606 0.959,-1.434 0.959,-2.296c-0,-0.862 -0.346,-1.69 -0.959,-2.296c-0.212,-0.199 -0.333,-0.478 -0.333,-0.769c-0,-0.291 0.121,-0.57 0.333,-0.769Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.item-1tOPte#message-actions-reactions::before, 
 .item-1tOPte#message-reactions::before {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3CclipPath id='_clip1'%3E%3Crect id='Filled1' serif:id='Filled' x='0' y='0' width='24' height='24'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cg id='Context'%3E%3Cpath id='reaction' d='M11.319,3.821c-0.076,-0.002 -0.152,-0.003 -0.228,-0.003c-5.021,0 -9.091,4.07 -9.091,9.091c-0,5.02 4.07,9.091 9.091,9.091c5.021,0 9.091,-4.071 9.091,-9.091c-0,-0.076 -0.001,-0.152 -0.003,-0.228c-0.58,0.149 -1.189,0.228 -1.815,0.228c-4.017,0 -7.273,-3.256 -7.273,-7.273c-0,-0.626 0.079,-1.235 0.228,-1.815Zm-0.228,15.452c2.854,-0 5.454,-2.167 5.454,-4.546l0,-0.909l-10.909,0l0,0.909c0,2.379 2.6,4.546 5.455,4.546Zm-1.818,-10c-0,-1.004 -0.815,-1.818 -1.818,-1.818c-1.004,-0 -1.819,0.814 -1.819,1.818c0,1.004 0.815,1.818 1.819,1.818c1.003,-0 1.818,-0.814 1.818,-1.818Zm10,-4.546l-0,-2.727l-1.818,0l-0,2.727l-2.728,0l0,1.818l2.728,0l-0,2.728l1.818,-0l-0,-2.728l2.727,0l-0,-1.818l-2.727,0Z'/%3E%3C/g%3E%3Crect x='-8.266' y='-0.211' width='24' height='24' style='fill:none;fill-rule:nonzero;'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -5875,18 +5954,23 @@ img.emote {
 }
 
 /* image context  */
+.item-1tOPte#image-context-imageutilities-copy-file::before,
 .item-1tOPte#guild-context-imageutilities-main-subitem::before,
 .item-1tOPte#user-context-imageutilities-main-subitem::before,
 .item-1tOPte#message-imageutilities-copy-file::before,
-.item-1tOPte#image-context-copy-image::before {
+.item-1tOPte#image-context-copy-image::before,
+.item-1tOPte#message-copy-image::before {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='Copy_image' d='M22,19.778l0,-15.556c0,-1.222 -1,-2.222 -2.222,-2.222l-15.556,0c-1.222,0 -2.222,1 -2.222,2.222l0,15.556c0,1.222 1,2.222 2.222,2.222l15.556,0c1.222,0 2.222,-1 2.222,-2.222Zm-13.444,-5.578l2.333,2.811l3.444,-4.433c0.223,-0.289 0.667,-0.289 0.889,0.011l3.9,5.2c0.278,0.367 0.011,0.889 -0.444,0.889l-13.322,-0c-0.467,-0 -0.723,-0.534 -0.434,-0.9l2.767,-3.556c0.211,-0.289 0.633,-0.3 0.867,-0.022Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.item-1tOPte#message-save-image::before,
+.item-1tOPte#image-context-imageutilities-download-file-as::before,
 .item-1tOPte#message-imageutilities-download-file-as::before,
 .item-1tOPte#image-context-save-image::before {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='save_image' d='M18.211,2.656c-0.422,-0.423 -0.989,-0.656 -1.578,-0.656l-12.411,0c-1.233,0 -2.222,1 -2.222,2.222l-0,15.556c-0,1.222 1,2.222 2.222,2.222l15.556,0c1.222,0 2.222,-1 2.222,-2.222l-0,-12.411c-0,-0.589 -0.233,-1.156 -0.656,-1.567l-3.133,-3.144Zm-6.211,17.122c-1.844,-0 -3.333,-1.489 -3.333,-3.334c-0,-1.844 1.489,-3.333 3.333,-3.333c1.844,0 3.333,1.489 3.333,3.333c0,1.845 -1.489,3.334 -3.333,3.334Zm1.111,-11.111l-6.667,-0c-1.222,-0 -2.222,-1 -2.222,-2.223c0,-1.222 1,-2.222 2.222,-2.222l6.667,0c1.222,0 2.222,1 2.222,2.222c0,1.223 -1,2.223 -2.222,2.223Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.item-1tOPte#image-context-imageutilities-copy-link::before,
 .item-1tOPte#channel-context-copy-channel-topic::before,
 .item-1tOPte#message-copy-native-link::before,
 .item-1tOPte#message-imageutilities-copy-link::before,
@@ -5895,6 +5979,8 @@ img.emote {
 }
 
 
+.item-1tOPte#image-context-imageutilities-copy-media-link::before,
+.item-1tOPte#image-context-imageutilities-open-link::before,
 .item-1tOPte#image-context-open-native-link::before,
 .item-1tOPte#message-open-native-link::before,
 .item-1tOPte#message-imageutilities-copy-media-link::before,
@@ -5903,10 +5989,12 @@ img.emote {
 }
 
 
+.item-1tOPte#image-context-imageutilities-view-file::before,
 .item-1tOPte#message-imageutilities-view-file::before {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTY4Ny4yODRweCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTY4Ny4zNDIgMTY4Ny4yODQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNjg3LjM0MiAxNjg3LjI4NCIgd2lkdGg9IjE2ODcuMzQycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJzZWFyY2giPjxwYXRoIGQ9Ik0xNjQyLjExMiwxMzQ4LjY5NGwtMjkxLjU2Ny0yOTEuNTYzYy0yOS4xNjgtMjkuMTY3LTY3Ljk0OS00NS4yMy0xMDkuMTk5LTQ1LjIzYy0zNi44NjgsMC03MS43MzksMTIuODYyLTk5LjU1OCwzNi40MSAgIGwtOTQuOTM5LTk0LjkzOGM4Mi44OTMtMTAzLjY0MiwxMjcuOTM1LTIzMS4zNDcsMTI3LjkzNS0zNjUuOTk4YzAuMDAxLTE1Ni44OTYtNjEuMS0zMDQuMzk0LTE3Mi4wNDQtNDE1LjMzMyAgIEM4OTEuNzkzLDYxLjEsNzQ0LjI4NiwwLDU4Ny4zODgsMEM0MzAuNDkyLDAsMjgyLjk4OCw2MS4wOTcsMTcyLjA0NSwxNzIuMDM2QzYxLjEsMjgyLjk3NSwwLDQzMC40NzksMCw1ODcuMzcxICAgYzAuMDAyLDE1Ni44OTMsNjEuMTAxLDMwNC4zOTYsMTcyLjA0NSw0MTUuMzM2czI1OC40NTIsMTcyLjAzOSw0MTUuMzQ3LDE3Mi4wMzljMTM0LjY1OSwwLDI2Mi4zNzQtNDUuMDQsMzY2LjAxNy0xMjcuOTM1ICAgbDk0LjkzOCw5NC45MzhjLTIzLjU0NiwyNy44MTktMzYuNDA2LDYyLjY4Ny0zNi40MDksOTkuNTQ4YzAsNDEuMjU2LDE2LjA2Myw4MC4wMzQsNDUuMjMyLDEwOS4ybDI5MS41NzIsMjkxLjU2MSAgIGMyOS4xNjgsMjkuMTY0LDY3Ljk0Nyw0NS4yMjcsMTA5LjE5Nyw0NS4yMjdjNDEuMjQ2LDAsODAuMDI3LTE2LjA2LDEwOS4yMDEtNDUuMjI3bDc0Ljk2OS03NC45NzUgICBjMjkuMTctMjkuMTY0LDQ1LjIzMi02Ny45NDIsNDUuMjMyLTEwOS4xOTVDMTY4Ny4zNDIsMTQxNi42MzYsMTY3MS4yNzksMTM3Ny44NTgsMTY0Mi4xMTIsMTM0OC42OTR6IE0yNjUuNDgxLDkwOS4yNyAgIGMtODUuOTgzLTg1Ljk4NS0xMzMuMzQtMjAwLjMwMy0xMzMuMzQtMzIxLjg5OGMwLTEyMS41OTUsNDcuMzU0LTIzNS45MTIsMTMzLjMzOC0zMjEuODk1ICAgYzg1Ljk4NC04NS45ODIsMjAwLjMwOS0xMzMuMzM1LDMyMS45MDgtMTMzLjMzNWMxMjEuNjAzLDAsMjM1LjkyOSw0Ny4zNTMsMzIxLjkxNCwxMzMuMzQyICAgYzg1Ljk4NSw4NS45NzksMTMzLjM0LDIwMC4yOTYsMTMzLjM0LDMyMS44OTJjMCwxMjEuNTk1LTQ3LjM1NCwyMzUuOTEyLTEzMy4zNDIsMzIxLjg5NSAgIGMtODUuOTgzLDg1Ljk4Mi0yMDAuMzA0LDEzMy4zMzUtMzIxLjkwNywxMzMuMzM1QzQ2NS43OTIsMTA0Mi42MDQsMzUxLjQ2OSw5OTUuMjUyLDI2NS40ODEsOTA5LjI3eiBNMTU0OC42NzQsMTQ3My42NDUgICBsLTc0Ljk2OCw3NC45NjhjLTUuNjgxLDUuNjgyLTEyLjMxNyw2LjUzLTE1Ljc2Nyw2LjUzYy0zLjQ0OCwwLTEwLjA4MS0wLjg0OS0xNS43NTktNi41MjZsLTI5MS41NzctMjkxLjU2MyAgIGMtNS42NzctNS42NzUtNi41MjUtMTIuMzA1LTYuNTI1LTE1Ljc1czAuODQ5LTEwLjA3OCw2LjUyOS0xNS43NTdsNzQuOTgtNzQuOThjNS42NzYtNS42NzgsMTIuMzA5LTYuNTIzLDE1Ljc1OC02LjUyMyAgIGMzLjQ0OCwwLDEwLjA4MSwwLjg0NiwxNS43NjEsNi41MjZsMjkxLjU2NywyOTEuNTYzYzUuNjc5LDUuNjc4LDYuNTI3LDEyLjMwOCw2LjUyNywxNS43NTYgICBDMTU1NS4yMDEsMTQ2MS4zMzcsMTU1NC4zNTQsMTQ2Ny45NjQsMTU0OC42NzQsMTQ3My42NDV6Ii8+PC9nPjxnIGlkPSJMYXllcl8xIi8+PC9zdmc+");
 }
 
+.item-1tOPte#image-context-imageutilities-submenu-search::before,
 .item-1tOPte#message-imageutilities-submenu-search::before {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1Ni42OTM0cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1Ni42OTM0IDU2LjY5MzQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1Ni42OTM0IDU2LjY5MzQiIHdpZHRoPSI1Ni42OTM0cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yOC40NTk3LDQuMDE1NGMtMTMuNjAwNiwwLTI0LjYyNSwxMS4wMjczLTI0LjYyNSwyNC42MjVjMCwxMy41OTk2LDExLjAyNDQsMjQuNjIzLDI0LjYyNSwyNC42MjMgIGMxMy41OTk2LDAsMjQuNjI1LTExLjAyMzQsMjQuNjI1LTI0LjYyM0M1My4wODQ3LDE1LjA0MjYsNDIuMDU5Myw0LjAxNTQsMjguNDU5Nyw0LjAxNTR6IE00Mi42MDc3LDMzLjg3OTMgIGMtMC42OTcxLDIuNDAxNi0yLjAxMzcsNC42MzY0LTMuODU5NSw2LjMzMjZjLTEuNzQ2MiwxLjYxMjItMy45MzMzLDIuNzE2OC02LjI0NDksMy4yNDg4ICBjLTIuNTU3NywwLjU4MjEtNS4yNjI2LDAuNTk3Ni03LjgwMzYtMC4wODRjLTIuMDEzNy0wLjUzNTYtMy45MTMxLTEuNDk1NC01LjU0MjUtMi43OTQ4ICBjLTEuNzI3Mi0xLjM3MjctMy4xNTExLTMuMTIzNy00LjE0NDItNS4wOTMzYy0xLjUyODItMy4wMTc2LTEuOTk4Mi02LjU1MDEtMS4zMjM5LTkuODYzMiAgYzAuMjY4MS0xLjMyOTgsMC43MTQ0LTIuNjIyNiwxLjMyNTYtMy44MzM5YzEuNzU1OC0zLjUxNTEsNC45MjI0LTYuMjk2Miw4LjY0MTItNy41Njk0YzMuMy0xLjE0MjEsNi45OTY4LTEuMTE2NSwxMC4yNzQ4LDAuMDkgIGMxLjgyMDcsMC42Njg1LDMuNDg3MSwxLjcyNiw0LjkwODYsMy4wNDE0Yy0wLjQ3NTUsMC41MTY1LTAuOTkxNCwwLjk5NzQtMS40ODIzLDEuNTAwMmMtMC45MzYsMC45MzQyLTEuODY5LDEuODcxOS0yLjgwNjgsMi44MDQzICBjLTAuOTI3Ni0wLjg4NTktMi4wNjAyLTEuNTU5MS0zLjI4ODctMS45MzIxYy0xLjQ0NTQtMC40MzczLTMuMDAyMS0wLjQ5NzUtNC40Nzg1LTAuMTgyMyAgYy0xLjcyNDIsMC4zNjk0LTMuMzI0NSwxLjI3MDItNC41NTU0LDIuNTMwM2MtMC45OTc5LDEuMDEwNC0xLjc1NzYsMi4yNTItMi4yMTM5LDMuNTk2MWMtMC42NTc3LDEuOTA3MS0wLjY1Myw0LjAzMTEtMC4wMDMsNS45Mzk5ICBjMC42MzU3LDEuODc2NywxLjg3MzcsMy41NDQzLDMuNDk2LDQuNjg0YzEuMDE0NiwwLjcxNTUsMi4xNzc2LDEuMjIzMSwzLjM5NiwxLjQ2NjJjMS4xOTgxLDAuMjQyNSwyLjQzOTEsMC4yMTYzLDMuNjQwMiwwLjAxMTQgIGMxLjE5MzQtMC4yMDkxLDIuMzUxLTAuNjQ4OCwzLjM1ODQtMS4zMjYyYzEuNjAyNy0xLjA3MDYsMi43MzI4LTIuODA5NywzLjA1NC00LjcxMTRjLTIuNzcwNC0wLjAwMTItNS41NDE0LTAuMDAwNi04LjMxMjQsMCAgYy0wLjAwMzUtMS45ODM5LTAuMDAwNS0zLjk2ODUtMC4wMDEyLTUuOTUzYzQuNzg0Ny0wLjAwMDYsOS41Njk0LTAuMDAxOCwxNC4zNTQxLDAuMDAwNSAgQzQzLjQ3MjgsMjguNDYzMSw0My4zNjc5LDMxLjI1OTYsNDIuNjA3NywzMy44NzkzeiIvPjwvc3ZnPg==");
 }
@@ -6032,7 +6120,6 @@ img.emote {
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Online"] {
   --status: var(--online);
 }
-
 
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Zaraz wracam"],
 #app-mount .container-3baos1 .wrapper-3t9DeA[aria-label*=", Idle"] {
@@ -7197,6 +7284,12 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 .theme-dark .tile-2OwFgW:hover {
   background-color: var(--channellistcolor);
 }
+
+.perks-26lTSw{
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
 
 /* 17.n. Server Templates */
 
