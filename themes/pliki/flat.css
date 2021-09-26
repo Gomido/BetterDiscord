@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
@@ -2839,6 +2840,78 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 /* 8.i. DM Chat */
 /* 8.j. Bot Message */
+/* bot tag  */
+/*przesuwa na poczatek, przed nazwe*/
+/*tag na liscie z prawej*/
+.membersWrap-2h-GB4 .botText-1526X_ {
+  display: none;
+}
+
+.rem-2m9HGf.botTag-2WPJ74 {
+  height: 16px !important;
+  top: 3px;
+}
+
+.rem-2m9HGf.botTag-2WPJ74,
+.px-10SIf7.botTag-2WPJ74 {
+  border-radius: 0;
+  margin-top:0;
+}
+
+.membersWrap-2h-GB4 .botTagRegular-2HEhHi {
+  order: -1;
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.membersWrap-2h-GB4 .px-10SIf7 .botTagVerified-1klIIt {
+  display: none;
+
+}
+
+.membersWrap-2h-GB4 .botTagRegular-2HEhHi {
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.membersWrap-2h-GB4 .botTagRegular-2HEhHi:after {
+  content: 'build';
+  text-transform: none;
+  font-family: 'Material Icons';
+  font-size: 14px;
+}
+
+.botTagRegular-2HEhHi {
+  border-radius: 0;
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 10px;
+
+  /* border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255)*/
+}
+
+
+.botTagInvert-18-95s {
+  border-radius: 0;
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 11px;
+}
+
+.standardSidebarView-3F1I7i .botTag-2WPJ74 {
+  height: 17px !important;
+}
+
+
 /* 8.k. Embeds */
 .embedFull-2tM8-- {
   background-color: var(--input-color);
