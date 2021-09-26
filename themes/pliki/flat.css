@@ -53,7 +53,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 19/09/2021";
+  --version: "FlatCord - 26/09/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -4558,7 +4558,7 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /* Steam */
 [href*="store.steampowered.com"],
-[href*="https://s.team"],
+[href*="s.team"],
 [href*="steamcommunity.com/"] {
   color: #1B2838 !important;
   font-weight: 600;
@@ -5771,7 +5771,7 @@ img.emote {
   opacity: 0.5;
   background-image: url(https://i.imgur.com/Ebr2IjG.png) !important;
   /*https://i.imgur.com/ALe8BS0.png stary*/
-  background-size: 21px !important;
+  background-size: 18px !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   margin: 0;
@@ -5779,7 +5779,7 @@ img.emote {
 }
 
 .inner-MADQqc:hover .attachButton-2WznTc {
-  opacity: .9;
+  opacity: .7;
   transition: all 200ms ease;
 }
 
@@ -5788,7 +5788,7 @@ img.emote {
 }
 
 .inner-MADQqc .attachButton-2WznTc:hover {
-  opacity: .9 !important;
+  opacity: .7 !important;
   transition: all 100ms ease;
 }
 
@@ -5829,7 +5829,7 @@ img.emote {
   height: 16px;
   margin: 3px !important;
   padding: 2px !important;
-  display: block !important;
+  /* display: block !important; */
   position: relative;
   line-height: 16px;
   font-size: 10px !important;
