@@ -680,10 +680,10 @@ html:root {
 }
 
 /*  2.a.4. Update info, red bar top */
-/* #app-mount::before {
-  content: 'Dodano nowe statusy - juz nie znikają przy zmianie. Więcej info w opcjach - custom css.';
+#app-mount::before {
+  content: 'Nowe ładne dymki chatu, jak masz swoje usuń z customa bo się popsują';
   background: rgb(215, 58, 73);
-  height: 45px;
+  height: 46px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -717,7 +717,7 @@ html:root {
   100% {
     transform: translateY(-50px);
   }
-} */
+}
 
 /*changelog*/
 .contentColumnDefault-1VQkGM #bd-editor-panel::before {
