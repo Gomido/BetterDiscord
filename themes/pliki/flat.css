@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 17/10/2021";
+  --version: "FlatCord - 20/10/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -810,7 +810,8 @@ html:root {
 /* my account  */
 .avatar-1uQSZT {
   background-color: var(--channellistcolor);
-  border: 7px solid var(--channellistcolor)
+  border: 7px solid var(--channellistcolor);
+  box-shadow: none;
 }
 
 .accountProfileCard-1XCH88 {
@@ -2169,6 +2170,7 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 /* 8. Chat */
 /* 8.a. Main Chat Area */
 
+
 .scroller-2LSbBU {
   padding-bottom: 10px;
 }
@@ -2320,7 +2322,21 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   transition: 250ms ease opacity;
 }
 
+/* dymki chatu*/
+.cozyMessage-3V1Y8y .contents-2mQqc9 > .markup-2BOw-j:not(:empty){
+  background-color: var(--titlebar);
+  display: inline-flex;
+  max-width: 850px;
+  width: fit-content;
+  margin: 1px 0 1px 0;
+  padding: 6px;
+  border-radius: 5px;
+}
 
+.cozy-3raOZG.wrapper-2a6GCs {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 /* buttony prawa strona  */
 .wrapper-2aW0bm {
   background: var(--channellistcolor);
@@ -4652,6 +4668,7 @@ foreignObject[mask*="mobile"]:after {
 /* .item-1tOPte[id="message-quote"], */
 .item-1tOPte[id="message-mark-unread"],
 .item-1tOPte[id="message-add-reaction"],
+.item-1tOPte[id="message-actions-apps"],
 .item-1tOPte[id="message-apps"],
 .item-1tOPte[id="user-context-note"],
 .item-1tOPte[id="user-context-focus-video"],
@@ -7574,8 +7591,8 @@ img.emote {
 }
 
 /* Facebook */
-.connectedAccountIcon-3_EQqg[src="/assets/3d189c41ce8155dfebf86ba2d1acfbbc.png"]~div::before {
-  --border-color: #2D3283;
+.connectedAccountIcon-3_EQqg[src="/assets/32045743cb7670855ae726743c949e0c.svg"]~div::before {
+  --border-color: #1877F2;
 }
 
 /* LOL */
@@ -8157,10 +8174,15 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 
 /* linki  */
+.channelName-_v0rI4:hover,
+.guildName-GKOCI8:hover,
 .markup-2BOw-j a:hover {
   color: #FFFFFF !important;
   text-decoration: none;
 }
+
+
+
 /* video background  */
 .theme-dark .wrapper-2TxpI8 {
   background-color: transparent;
