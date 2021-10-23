@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
@@ -680,7 +681,7 @@ html:root {
 }
 
 /*  2.a.4. Update info, red bar top */
-#app-mount::before {
+/* #app-mount::before {
   content: 'Nowe ładne dymki chatu, jak masz swoje usuń z customa bo się popsują';
   background: rgb(215, 58, 73);
   height: 46px;
@@ -699,7 +700,7 @@ html:root {
   transition: 250ms ease all !important;
   white-space: nowrap;
   animation: update 16s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+} */
 
 @keyframes update {
   0% {
@@ -2324,12 +2325,13 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 /* dymki chatu*/
 .cozyMessage-3V1Y8y .contents-2mQqc9 > .markup-2BOw-j:not(:empty){
-  background-color: var(--titlebar);
-  display: inline-flex;
+  background-color: #383838;
+  display: inline-block;
   max-width: 850px;
   width: fit-content;
-  margin: 1px 0 1px 0;
-  padding: 6px;
+  margin: 0;
+  border: 1px solid var(--titlebar);
+  padding: 4px;
   border-radius: 5px;
 }
 
