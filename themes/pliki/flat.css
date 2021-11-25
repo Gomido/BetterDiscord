@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 14/11/2021";
+  --version: "FlatCord - 25/11/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -2061,6 +2061,7 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 }
 
 /* button inbox  */
+.roleRow-30TwGe:hover:not(.roleRowDisableHover-1HiqqT) .circleButton-3RB01i,
 .secondary-dIudih,
 .tertiary-aMXF0g {
   background-color: var(--button-color);
@@ -2113,11 +2114,11 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 /* 6.a. Main Container */
 .container-3baos1 {
   background-color: var(--headercolor);
-  height: calc(52px - var(--spacing-width));
+  height: 52px;
   position: fixed;
   bottom: var(--spacing-width);
   left: var(--spacing-width);
-  width: calc(332px - var(--spacing-width));
+  width: 332px;
   margin-bottom: 0;
 }
 
@@ -3124,7 +3125,7 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 .rem-2m9HGf.botTag-2WPJ74 {
   height: 16px !important;
-  top: 3px;
+  top: 1px;
 }
 
 .rem-2m9HGf.botTag-2WPJ74,
@@ -3138,6 +3139,8 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   margin-left: 0;
   margin-right: 4px;
 }
+
+
 
 .membersWrap-2h-GB4 .px-10SIf7 .botTagVerified-1klIIt {
   display: none;
@@ -3802,6 +3805,14 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   background-color: var(--titlebar);
 }
 
+
+.eventStatusBrand-1RBas5 path {
+  fill:  var(--accentcolor);
+}
+
+.clickable-1P8zp1:hover{
+  background-color: var(--headercolor);
+}
 /* 10.b. Games Tab/ Game Library  */
 
 .scroller-2XE8rp,
@@ -4430,6 +4441,13 @@ foreignObject[mask*="mobile"]:after {
   margin-left: 0px;
 }
 
+
+/* add to server bot  */
+.applicationInstallButton-1M2YjM {
+  margin: 6px 10px 0 10px !important;
+  width: 280px;
+}
+
 /* nitro gift  */
 
 .button-1PXUl0 {
@@ -4799,7 +4817,7 @@ foreignObject[mask*="mobile"]:after {
 }
 
 .checkbox-1ix_J3.checked-3_4uQ9 {
-  background-color: var(--accentcolor);
+  background-color: var(--accentcolor) !important;
   border-color: var(--accentcolor3) !important;
 }
 
@@ -5929,13 +5947,12 @@ img.emote {
 /* 15.g. Server Settings */
 
 /* overview  */
-.avatarUploader-2yeaMv .avatarUploaderInnerSquare-2UOXj4,
-.avatarUploaderDisabled-310UAf .avatarUploaderInnerSquare-2UOXj4 {
-  border-radius: 0;
+.avatarUploaderInnerSquare-1VbIoA {
+  border-radius: 0 !important;
 }
 
 .avatarUploaderInner-3UNxY3 {
-  border-radius: 0;
+  border-radius: var(--avatars);
   background-color: var(--titlebar);
 }
 
@@ -6053,18 +6070,18 @@ img.emote {
   background-color: var(--chatbackground);
 }
 
-.theme-dark .auditLog-3jNbM6 {
+.theme-dark .auditLog-2ph_aK {
   border-color: var(--headercolor);
   border-radius: 0;
 }
 
-.theme-dark .headerExpanded-CUEwZ5,
-.theme-dark .headerClickable-2IVFo9,
-.theme-dark .headerDefault-1wrJcN {
+.theme-dark .headerExpanded-2egR38,
+.theme-dark .headerClickable-g5d9lT,
+.theme-dark .headerDefault-2D4Kcg {
   background-color: var(--channellistcolor);
 }
 
-.theme-dark .changeDetails-bk98pu {
+.theme-dark .changeDetails-2dV5gP {
   background-color: var(--guildlistcolor);
 }
 
@@ -6074,24 +6091,28 @@ img.emote {
   background-color: var(--accentcolor);
 }
 
-.descriptionBox-1EKQKL {
+.descriptionBox-2ypBKO {
   background-color: var(--titlebar);
   border-radius: 0;
 }
 
 
 /* community  */
-.featureCard-1RR4Tl {
+
+.upsellContainer-1G_YVf,
+.featureCard-1TcVMH {
   background-color: var(--titlebar);
   border-radius: 0;
 }
 
-.featureIcon-3p1TC_ {
+.upsellFooter-LSx-FB,
+.featureIcon-g7w7y2 {
   background-color: var(--headercolor);
 }
 
-
-.developerPortalCtaWrapper-2XNafh,
+.enableContainer-3morcZ,
+.enableContainer-2DIT9Q,
+.developerPortalCtaWrapper-Pxhnc3,
 .upsellContainer-L9xv7w {
   background-color: var(--titlebar);
   border-radius: 0
@@ -6104,27 +6125,22 @@ img.emote {
   border-radius: 0;
 }
 
-.header-2Y0-A-,
-.checklistHeader-1KWcEY,
+.header-18YAsG,
+.checklistHeader-TtQAoo,
 .upsellFooter-ZYsio_ {
   background-color: var(--headercolor);
   border-radius: 0;
 }
 
-.container-2w0lh0,
-.checklistContainer-mFJZEJ {
+.container-1ArfEZ,
+.checklistContainer-euvGxh,
+.previewContainer-1EyRlj {
   background-color: var(--channellistcolor);
   border-radius: 0;
 }
 
 
 /* membership  */
-
-.enableContainer-2DIT9Q {
-  background-color: var(--titlebar);
-  border-radius: 0;
-}
-
 .editCircle-y9c7xP {
   background-color: var(--headercolor);
 }
@@ -6152,17 +6168,7 @@ img.emote {
 }
 
 /* welcome screen settings  */
-.enableContainer-6E-puu {
-  background-color: var(--headercolor);
-  border-radius: 0;
-}
-
-.previewContainer-1SS3uO {
-  background-color: var(--channellistcolor);
-  border-radius: 0;
-}
-
-.welcomeChannel-1rFrIO {
+.welcomeChannel-HpqRfR {
   background-color: var(--titlebar);
   border-radius: 0;
   border: 1px solid var(--headercolor)
@@ -6227,12 +6233,15 @@ img.emote {
 }
 
 /* members  */
+.roleRow-30TwGe:hover:not(.roleRowDisableHover-1HiqqT),
 .card-FDVird.active-nvdKfC:before,
 .card-FDVird:focus-within:before,
 .card-FDVird:hover:before {
   background-color: var(--channellistcolor);
   border-radius: 0;
 }
+
+
 
 /* Invites  */
 .theme-dark .default-3oAQTF {
@@ -6956,6 +6965,12 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='delete' d='M5,6.999l0,12c0,1.102 0.897,2 2,2l10,-0c1.103,-0 2,-0.898 2,-2l0,-12l-14,0Zm6,10.001l-2,0l0,-6l2,0l0,6Zm4,0l-2,0l0,-6l2,0l0,6Zm0,-13.001l0,-1.999l-6,-0l0,1.999l-6,-0l0,2l18,-0l0,-2l-6,-0Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+
+.item-1tOPte#message-resend::before {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxIDM0IiBoZWlnaHQ9IjM0cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0MSAzNCIgd2lkdGg9IjQxcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0zMy45NDksMTZDMzMuNDI5LDcuMDgsMjYuMDUxLDAsMTcsMEM3LjYxMSwwLDAsNy42MTEsMCwxN3M3LjYxMSwxNywxNywxN3YtNmMtNi4wNzUsMC0xMS00LjkyNS0xMS0xMSAgUzEwLjkyNSw2LDE3LDZjNS43MzcsMCwxMC40NDMsNC4zOTQsMTAuOTQ5LDEwaC02Ljg0OUwzMSwyNS44OTlMNDAuODk5LDE2SDMzLjk0OXoiIGZpbGw9IiMyMzFGMjAiLz48L3N2Zz4=");
+}
+
+
 /* image context  */
 .item-1tOPte#banner-context-view-banner::before,
 .item-1tOPte#image-context-imageutilities-copy-file::before,
@@ -7399,10 +7414,10 @@ img.emote {
 
 #status-picker {
   animation: show-status 300ms linear !important;
-  width: calc(347px - var(--spacing-width));
+  width: 346px;
   height: 68px;
   padding: 0;
-  left: calc(-9px + var(--spacing-width)) !important;
+  left: -8px !important;
   bottom: -4px !important;
   box-shadow: none;
 }
@@ -7469,7 +7484,7 @@ img.emote {
 }
 
 #status-picker .item-1tOPte:nth-child(7) {
-  width: calc(346px - var(--spacing-width));
+  width: 345px;
   transition: color 200ms ease-in, background-color 200ms ease-in;
   z-index: -1;
   position: absolute;
@@ -7537,7 +7552,7 @@ img.emote {
   transform: translateX(0%) translateY(100%) translateZ(0);
   animation: show-custom 700ms ease forwards 900ms;
   animation-delay: 450ms !important;
-  width: calc(252px - var(--spacing-width));
+  width: 251px;
   z-index: -1;
   position: absolute;
   height: 35px;
@@ -8617,7 +8632,9 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   right: 6px;
   top: -4px;
 }
-
+.tooltipContent-bqVLWK .flowerStar-1GeTsn path{
+  fill: var(--accentcolor);
+} 
 .flowerStar-1GeTsn path {
   fill: var(--input-color);
 }
