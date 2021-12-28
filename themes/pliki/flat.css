@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 22/12/2021";
+  --version: "FlatCord - 28/12/2021";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1718,13 +1718,13 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 /* info na serwerze konczacy boosta/zapro itp  */
 .channelNotice-1-XFjC,
 /* live stage  */
-.channelNotice-2bJINM {
-  background-color: var(--titlebar) !important;
+.channelNotice-3I83Cr {
+  background-color: var(--guildlistcolor) !important;
   border-bottom: none;
   border-right: 1px solid #383838;
 }
 
-.channelNotice-2bJINM {
+.channelNotice-3I83Cr {
   margin: 0;
   padding: 12px;
 }
@@ -2318,7 +2318,8 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 
 /* thread  */
 .container-3hZ-gs {
-  background-color: #383838;
+  background-color: var(--input-color);
+  border: 1px solid var(--headercolor);
   border-radius: 0;
 }
 
@@ -3835,6 +3836,11 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   background-color: var(--titlebar);
 }
 
+.liveIndicator-1MhhnA {
+  background-color: var(--online);
+}
+
+.colorStatusGreen-2saF4_,
 .eventStatusGreen-3jNYOT {
   color: var(--online);
 }
@@ -5517,7 +5523,7 @@ img.emote {
 .wrapper-2iFQJ9,
 .emojiPicker-3PwZFl {
   border-radius: 0;
-  border: 1px solid var(--accentcolor);
+  border: 1px solid #383838;
   background-color: var(--headercolor);
 }
 
@@ -5527,7 +5533,7 @@ img.emote {
   height: 26px;
   padding: 10px 15px 10px 115px;
   background-color: var(--headercolor);
-  border-bottom: 1px solid var(--accentcolor);
+  border-bottom: 1px solid #383838;
 }
 
 .container-2XeR5Z,
@@ -5546,16 +5552,14 @@ img.emote {
 
 .categoryList-xW5xXr {
   background-color: var(--headercolor);
-  border-right: 1px solid var(--accentcolor);
+  border-right: 1px solid #383838;
   top: 47px;
   z-index: 2;
 }
 
-
-
 .categoryList-2Kzf65 {
   background-color: var(--headercolor);
-  border: 1px solid var(--accentcolor);
+  border: 1px solid #383838;
   border-top: 0;
   top: 48px !important;
   border-radius: 0;
@@ -5621,13 +5625,17 @@ img.emote {
 
 .inspector-S2gM3e {
   background-color: var(--headercolor);
-  border: 1px solid var(--accentcolor);
+  border: 1px solid #383838;
   border-right: 0;
   margin-bottom: 1px;
 }
 
 .wrapper-OxgYJ1 .inspector-S2gM3e {
-  margin-bottom: -1px;
+    margin-bottom: -1px;
+}
+
+.guildCategorySeparator-_An-MP{
+  border-bottom: 1px solid #383838;
 }
 
 /* stickers  */
@@ -8764,7 +8772,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 .flowerStar-1GeTsn path {
-  fill: var(--input-color);
+  fill: var(--button-color);
 }
 
 
@@ -8911,8 +8919,8 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 .StatusEverywhere-avatar-userPopout {
   border-radius: var(--avatars) !important;
-  background-color: var(--input-color) !important;
-  border: 6px solid var(--input-color) !important;
+  background-color: var(--guildlistcolor) !important;
+  border: 6px solid var(--guildlistcolor) !important;
 }
 
 .StatusEverywhere-avatar-userPopout[data-mobile=false]~svg foreignObject {
@@ -8978,9 +8986,9 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 }
 
 /* 99.b. Pseudo gradient disable  */
-.theme-dark .form-2fGMdU:before {
-  /* .theme-dark .option-96V44q:after { */
-  display: none;
+.theme-dark .form-2fGMdU:before,
+.theme-dark .option-96V44q:after {
+  background: linear-gradient(90deg, rgba(122, 127, 136, 0), var(--input-color) 80%);
 }
 
 /* 99.c. Scrollbars hidder  */
