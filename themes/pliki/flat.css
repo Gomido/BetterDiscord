@@ -21,7 +21,7 @@
   /* W RGB, kolor tła oznaczenia*/
   --mentionbackground: 0, 126, 255;
   /*kolor paska górnego z napisem discord*/
-  --titlebar: #181818;
+  --titlebar: #141414;
   /*kolor chatu pod wiadomosciami*/
   --chatbackground: #202020;
   /*kolor listy kanalow, uzytkownikow z prawej*/
@@ -31,9 +31,9 @@
   /*kolor paska zadań (nazwa serwera, przypięte, szukanie)*/
   --headercolor: #101010;
   /* kolor wyskakujacych okienek i pol tekstowych  */
-  --input-color: #262626;
+  --input-color: #181818;
   /* kolor przycisków  */
-  --button-color: #323232;
+  --button-color: #343434;
   /*grubośc ramki nowych wiadomości - kółka*/
   --notification-width: 2px;
   /*wielkość ramki wokół okna aplikacji - 0 wyłącza*/
@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 28/12/2021";
+  --version: "FlatCord - 07/01/2022";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -3815,8 +3815,8 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
 }
 
 .bottomControls-lIJyYL {
-  padding: 10px;
-  width: 98%;
+  padding: 5px;
+  width: 99%;
   z-index: 2;
 }
 
@@ -4527,6 +4527,12 @@ foreignObject[mask*="mobile"]:after {
   padding: 10px 15px 10px 15px;
 }
 
+
+.colorHeaderPrimary-26Jzh- .lookLink-9FtZy-.colorLink-35jkBc{
+margin-left: 10px;
+padding: 7px 10px 7px 10px;
+}
+
 /* nitro gift  */
 .button-1PXUl0 {
   margin-left: 10px;
@@ -4664,6 +4670,11 @@ foreignObject[mask*="mobile"]:after {
 .button-38aScr,
 .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
   border-radius: 0;
+}
+
+.bottomControls-lIJyYL .button-38aScr,
+.contextMenuNub-3yOOYo {
+  border-radius: var(--avatars) !important;
 }
 
 /* Jump button search result  */
@@ -5105,10 +5116,19 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 
 /* Instagram */
 .messageContent-2qWWxC [href*="instagram.com/"] {
-  background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+  background: -webkit-linear-gradient(40deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
+  text-shadow: none;
+}
+
+.messageContent-2qWWxC [href*="instagram.com/"]:hover {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-shadow: none;
 }
 
 /* Facebook */
@@ -5608,6 +5628,11 @@ img.emote {
   padding-left: 10px;
 }
 
+
+.categorySection-2sgp74 {
+  margin-bottom: 0;
+}
+
 .wrapper-1-Fsb8 {
   background-color: var(--titlebar);
   padding: 0;
@@ -5631,10 +5656,10 @@ img.emote {
 }
 
 .wrapper-OxgYJ1 .inspector-S2gM3e {
-    margin-bottom: -1px;
+  margin-bottom: -1px;
 }
 
-.guildCategorySeparator-_An-MP{
+.guildCategorySeparator-_An-MP {
   border-bottom: 1px solid #383838;
 }
 
@@ -6226,6 +6251,7 @@ img.emote {
   border-radius: 0
 }
 
+.container-jSV3OF,
 .info-1Vr1AV,
 .warning-3C2pOH,
 .error-20ZZpF,
@@ -7260,6 +7286,7 @@ img.emote {
   --icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='server_profile' d='M19.778,13.111l-15.556,0c-1.222,0 -2.222,1 -2.222,2.222l0,4.445c0,1.222 1,2.222 2.222,2.222l15.556,0c1.222,0 2.222,-1 2.222,-2.222l0,-4.445c0,-1.222 -1,-2.222 -2.222,-2.222Zm-13.334,6.667c-1.222,-0 -2.222,-1 -2.222,-2.222c0,-1.223 1,-2.223 2.222,-2.223c1.223,0 2.223,1 2.223,2.223c-0,1.222 -1,2.222 -2.223,2.222Zm13.334,-17.778l-15.556,0c-1.222,0 -2.222,1 -2.222,2.222l0,4.445c0,1.222 1,2.222 2.222,2.222l15.556,-0c1.222,-0 2.222,-1 2.222,-2.222l0,-4.445c0,-1.222 -1,-2.222 -2.222,-2.222Zm-13.334,6.667c-1.222,-0 -2.222,-1 -2.222,-2.223c0,-1.222 1,-2.222 2.222,-2.222c1.223,0 2.223,1 2.223,2.222c-0,1.223 -1,2.223 -2.223,2.223Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.item-1tOPte#guild-context-create-event::before,
 .item-1tOPte#guild-header-popout-create-event::before {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyMHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxOCAyMCIgd2lkdGg9IjE4cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgZmlsbD0iIzAwMDAwMCIgaWQ9IkNvcmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NS4wMDAwMDAsIC0yMTIuMDAwMDAwKSI+PGcgaWQ9ImV2ZW50IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NS4wMDAwMDAsIDIxMi4wMDAwMDApIj48cGF0aCBkPSJNMTQsMTEgTDksMTEgTDksMTYgTDE0LDE2IEwxNCwxMSBMMTQsMTEgWiBNMTMsMCBMMTMsMiBMNSwyIEw1LDAgTDMsMCBMMywyIEwyLDIgQzAuOSwyIDAsMi45IDAsNCBMMCwxOCBDMCwxOS4xIDAuOSwyMCAyLDIwIEwxNiwyMCBDMTcuMSwyMCAxOCwxOS4xIDE4LDE4IEwxOCw0IEMxOCwyLjkgMTcuMSwyIDE2LDIgTDE1LDIgTDE1LDAgTDEzLDAgTDEzLDAgWiBNMTYsMTggTDIsMTggTDIsNyBMMTYsNyBMMTYsMTggTDE2LDE4IFoiIGlkPSJTaGFwZSIvPjwvZz48L2c+PC9nPjwvc3ZnPg==");
 }
@@ -7472,6 +7499,7 @@ img.emote {
 
 
 /* mute defean panel na dole obok nicku  */
+.container-3baos1 .redIcon-2uP7Ej,
 .strikethrough-otdQWt,
 .strikethrough-3Wiitd,
 .strikethrough-1n4ekb {
@@ -7681,15 +7709,17 @@ img.emote {
   transition: all 200ms ease-in-out;
 }
 
-/* status presets pluin */
+/* status presets plugin */
 #status-picker .submenuContainer-2gbm7M {
-  transform: translateX(0%) translateY(100%) translateZ(0);
-  animation: show-custom 700ms ease forwards 900ms;
-  animation-delay: 450ms !important;
+  /* transform: translateX(0%) translateY(100%) translateZ(0); */
+  /* animation: show-custom 700ms ease forwards 900ms; */
+  transition: color 200ms ease-in, background-color 200ms ease-in;
+  transform: translateX(0%) translateY(200%) translateZ(0);
+  animation: show-custom 600ms ease forwards 800ms;
+  animation-delay: 250ms !important;
   width: 251px;
-  z-index: -1;
+  z-index: -2;
   position: absolute;
-  height: 35px;
   margin-top: -70px;
   padding-left: 50px;
   padding-right: 45px;
@@ -7698,20 +7728,39 @@ img.emote {
   top: 0;
 }
 
-#status-picker .submenuContainer-2gbm7M .label-22pbtT {
-  margin-top: 0px;
+.switchAccountsItem-2cPPTX {
+  margin-left: 40px;
+}
+
+.switchAccountsIcon-355frb {
+  margin-left: -25px;
+}
+
+#status-picker .switchAccountsItem-2cPPTX .status-1fhblQ {
+  opacity: 1 !important;
+  color: inherit !important;
 }
 
 #status-picker .submenuContainer-2gbm7M .item-1tOPte {
   width: 100% !important;
-  padding-left: 25px !important;
+  /* padding-left: 25px !important; */
   height: 35px !important;
   display: inline-flex;
   animation: none;
 }
 
+#status-picker .submenuContainer-2gbm7M:hover {
+  background-color: var(--titlebar) !important;
+  color: #FFF;
+}
+
 #status-picker .submenuContainer-2gbm7M .submenuPaddingContainer-fiOCHc {
   margin-left: 32px;
+}
+
+
+.activeIcon-2Xlk3z path {
+  fill: var(--accentcolor)
 }
 
 /* ==================  */
@@ -7777,6 +7826,7 @@ img.emote {
   visibility: hidden;
   transition: all 200ms ease-in-out;
 }
+
 
 #status-picker .item-1tOPte:not(:nth-child(7)) .status-1fhblQ {
   content: "";
@@ -7907,6 +7957,16 @@ img.emote {
   background: var(--headercolor);
 }
 
+
+/* switch account  */
+.list-1hif6B {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+}
+
+.list-1hif6B:hover {
+  background-color: var(--titlebar);
+}
 
 
 
@@ -8720,6 +8780,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
   border: 1px solid #383838
 }
 
+.theme-dark.navRow-3bgpKd,
 .theme-dark .footer-2gL1pp {
   background-color: var(--chatbackground);
   box-shadow: none;
@@ -8795,7 +8856,7 @@ html[lang="pl"] .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
 
 /* 18. Login Page */
 .theme-dark.authBox-hW6HRx {
-  background-color: var(--chatbackground);
+  background-color: var(--guildlistcolor);
   border-radius: 0;
 }
 
