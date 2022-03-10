@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 27/02/2022";
+  --version: "FlatCord - 10/03/2022";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -4244,6 +4244,10 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   margin: 0 !important;
 }
 
+.avatar-2e8lTP:before {
+  display: none;
+}
+
 /* 
 .messagesWrapper-RpOMA3 .contents-2MsGLg .avatar-2e8lTP {
   margin-top: -1px
@@ -4993,6 +4997,20 @@ foreignObject[mask*="mobile"]:after {
   border-color: var(--headercolor) !important;
 }
 
+/* back server invite   */
+.footer-31IekZ .sizeMin-DfpWCE,
+.backButton-2Ps-B8 {
+  border: 1px solid var(--headercolor);
+  width: 64px;
+  color: #FFFFFF;
+  background-color: var(--button-color);
+}
+
+.footer-31IekZ .sizeMin-DfpWCE:hover,
+.backButton-2Ps-B8:hover {
+  background-color: var(--accentcolor);
+}
+
 
 /* maly guzik baner na gorze (update, regulamin)  */
 
@@ -5518,7 +5536,6 @@ div[class*="message"] img[src*="186609657928744962"]~h2[class^="header"] span[cl
 }
 
 .attachment-16cAbS,
-.avatar-l9Txm5,
 .blob-1uHjdp,
 .avatar-l9Txm5 {
   background-color: var(--button-color);
@@ -6269,6 +6286,7 @@ img.emote {
   border: 1px solid var(--black3)
 }
 
+
 .userPopout-2j1gM4 .input-2g-os5:focus,
 .userPopout-2j1gM4 .input-2g-os5:active {
   border: 1px solid var(--accentcolor)
@@ -6923,6 +6941,35 @@ img.emote {
 
 .tooltipPointer-r3VntW {
   margin-top: -6px;
+}
+
+
+/* server invite /server create  */
+.base-21yXnu,
+.content-2hZxGK .colorStandard-21JIj7 {
+  color: var(--accentcolor3);
+}
+
+.sampleLink-5BWNy9,
+.colorHeaderSecondary-g5teka,
+.closeIcon-11LhXr {
+  color: var(--white5);
+}
+
+.rowContainer-3t7486,
+.container-x8Y1ix {
+  border-radius: 0;
+  background-color: var(--chatbackground);
+  border: none;
+}
+
+.rowContainer-3t7486:hover,
+.container-x8Y1ix:hover {
+  background-color: var(--headercolor);
+}
+
+.input-2g-os5 {
+  color: var(--white5) !important
 }
 
 /* 15.j. @Everyone Popout */
@@ -9955,6 +10002,7 @@ html[lang="pl"] .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
   border-radius: 0;
 }
 
+.input-2g-os5:hover,
 .input-2g-os5.focused-1AtTHC,
 .input-2g-os5:focus {
   border-color: var(--accentcolor);
