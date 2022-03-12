@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "FlatCord - 10/03/2022";
+  --version: "FlatCord - 12/03/2022";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -3401,6 +3401,10 @@ img[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
   border: 1px solid var(--headercolor)
 }
 
+.inviteSplash-2nkLRX {
+  border-radius: 0;
+}
+
 
 /* ikonki online/offline inv  */
 .pillIcon-1OYf40,
@@ -4829,7 +4833,7 @@ foreignObject[mask*="mobile"]:after {
 
 
 .disableButton-3BR0Vj,
-.userSettingsSecurity-3C5Hg5 .lookLink-15mFoz.colorPrimary-2AuQVo {
+.userSettingsSecurity-2kODPN .lookLink-15mFoz.colorPrimary-2AuQVo {
   margin-left: 10px;
 }
 
@@ -6556,12 +6560,24 @@ img.emote {
   border-radius: 0;
 }
 
+.selectedBackground-1t6xXq {
+  background-color: var(--accentcolor);
+}
+
 .memberRow-1FhJgR:hover,
 .side-2ur1Qk .item-3XjbnG:hover {
   background-color: var(--titlebar) !important;
   border-radius: 0;
 }
 
+
+.side-2ur1Qk .item-3XjbnG[aria-controls="Logout-tab"i] {
+  color: var(--dnd) !important
+}
+
+.sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG[aria-controls="Logout-tab"i]::before {
+  background-color: var(--dnd);
+}
 
 /* custom role icon */
 .previewContainer-1GxmBJ {
@@ -9875,6 +9891,10 @@ html[lang="pl"] .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
 
 .container-2sjPya {
   padding: 0;
+}
+
+.imageDetails-1t6Zms {
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .imageDetails-1t6Zms .anchor-1MIwyf {
