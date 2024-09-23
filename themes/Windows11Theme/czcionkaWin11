@@ -1,0 +1,8 @@
+/* Windows 11 font */
+@import url(https://github.com/Gomido/BetterDiscord/blob/master/themes/Windows11Theme/SegoeUIVariableStaticDisplay.ttf);
+/* Font */
+:root {
+    --font-primary: Segoe UI, sans-serif;
+    --font-display: Segoe UI, sans-serif;
+    --font-headline: Segoe UI, sans-serif;
+}
