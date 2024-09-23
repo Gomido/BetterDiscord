@@ -1,5 +1,5 @@
 /* Windows 11 font */
-@import url(https://github.com/Gomido/BetterDiscord/blob/master/themes/Windows11Theme/SegoeUIVariableStaticDisplay.ttf);
+@import url(https://github.com/Gomido/BetterDiscord/raw/refs/heads/master/themes/Windows11Theme/SegoeUIVariableStaticDisplay.ttf);
 /* Font */
 :root {
     --font-primary: Segoe UI, sans-serif;
