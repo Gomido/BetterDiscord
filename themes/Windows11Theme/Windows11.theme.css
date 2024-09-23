@@ -1,0 +1,39 @@
+/**
+ * @name Discord 11 Fork
+ * @description Based on Windows 11's UI
+ * @author Lilki
+ * @authorId 186609657928744962
+ * @version 1.0
+ * @website https://github.com/Gomido
+ * @source https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/base.css
+*/
+
+/*--------------------------------------------------------------
+                           Kod skina
+---------------------------------------------------------------*/
+@import url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/base.css);
+
+/*--------------------------------------------------------------
+                           Ikonki windows 11
+---------------------------------------------------------------*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
+
+/*--------------------------------------------------------------
+                           Czcionka Win 11
+---------------------------------------------------------------*/
+@import url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/czcionkaWin11.css);
+
+/*--------------------------------------------------------------
+                           Ustawienia
+---------------------------------------------------------------*/
+:root {
+    --wallpaper-is: none; /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
+    --blur-size: 24px; /* Rozmycie tapety [24px domyslne] */
+    --opacity-thing: 0.6; /* Przezroczystosc 0 do 1 [0.6 domyslne] */
+    --server-size: 48px; /* rozmiar ikon serwerów [48px domyslne] */
+      
+    /* HSL(Hue, Saturation, Lightness). Kolor skina (Kolor niebieski na większości przycisków) */
+    --H: 199; /* Wartość numeryczna [199 domyślne] */
+    --S: 100%; /* Wartość w % % [100% domyślne] */
+    --L: 69%; /* Wartość w  % [69% is default] */
+}
