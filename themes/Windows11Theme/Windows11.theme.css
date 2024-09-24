@@ -5,13 +5,13 @@
  * @authorId 186609657928744962
  * @version 1.0
  * @website https://github.com/Gomido
- * @source https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/base.css
+ * @source https://rawgit.com/Gomido/BetterDiscord/master/themes/Windows11Theme/base.css
 */
 
 /*--------------------------------------------------------------
                            Kod skina
 ---------------------------------------------------------------*/
-@import url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/base.css);
+@import url(https://rawgit.com/Gomido/BetterDiscord/master/themes/Windows11Theme/base.css);
 
 /*--------------------------------------------------------------
                            Ikonki windows 11
@@ -35,18 +35,18 @@
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
-    --wallpaper-is: none; /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
-    --blur-size: 24px; /* Rozmycie tapety [24px domyslne] */
-    --opacity-thing: 0.6; /* Przezroczystosc 0 do 1 [0.6 domyslne] */
-    --server-size: 58px; /* Rozmiar paska serwerów [48px domyslne] */
-    --fluent-guilds-icon-size: 36px; /* Rozmiar ikon serwerów */
-    --avatar-size: 45px; /* Rozmiar awatarów na chacie */
-      
+    --wallpaper-is: none;               /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
+    --blur-size: 24px;                  /* Rozmycie tapety [24px domyslne] */
+    --opacity-thing: 0.6;               /* Przezroczystosc 0 do 1 [0.6 domyslne] */
+    --server-size: 48px;                /* Rozmiar paska serwerów [48px domyslne] */
+    --fluent-guilds-icon-size: 36px;    /* Rozmiar ikon serwerów */
+    --avatar-size: 45px;                /* Rozmiar awatarów na chacie */
+
     /* Kolory skina akcenty, przyciski, znaczki powiadomień- MOŻNA ZMIENIĆ */
     /* HSL(Hue, Saturation, Lightness). */
-    --H: 235; /* Wartość liczbowa [235 domyślne] */
-    --S: 100%; /* Podać % [100% domyślne] */
-    --L: 70%; /* Podać  % [70% domyślne] */
+    --H: 235;    /* Wartość liczbowa [235 domyślne] */
+    --S: 100%;   /* Podać % [100% domyślne] */
+    --L: 70%;   /* Podać  % [70% domyślne] */
     --mention-color: #6281DB1a;
     /* mention color zostawić 1A na końcu - odpowiada to za przezroczystość. Pozostałe 6 znaków mozna zmienic  */
 }
