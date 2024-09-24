@@ -14,26 +14,21 @@
 @import url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/base.css);
 
 /*--------------------------------------------------------------
-                           Ikonki windows 11
----------------------------------------------------------------*/
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
-
-/*--------------------------------------------------------------
-                           Czcionka Win 11
----------------------------------------------------------------*/
-@import url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/czcionkaWin11.css);
-
-/*--------------------------------------------------------------
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
     --wallpaper-is: none; /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
     --blur-size: 24px; /* Rozmycie tapety [24px domyslne] */
     --opacity-thing: 0.6; /* Przezroczystosc 0 do 1 [0.6 domyslne] */
-    --server-size: 48px; /* rozmiar ikon serwerów [48px domyslne] */
+    --server-size: 58px; /* Rozmiar paska serwerów [48px domyslne] */
+    --fluent-guilds-icon-size: 36px; /* Rozmiar ikon serwerów */
+    --avatar-size: 45px; /* Rozmiar awatarów na chacie */
       
-    /* HSL(Hue, Saturation, Lightness). Kolor skina (Kolor niebieski na większości przycisków) */
-    --H: 199; /* Wartość numeryczna [199 domyślne] */
-    --S: 100%; /* Wartość w % % [100% domyślne] */
-    --L: 69%; /* Wartość w  % [69% is default] */
+    /* Kolory skina akcenty, przyciski, znaczki powiadomień- MOŻNA ZMIENIĆ */
+    /* HSL(Hue, Saturation, Lightness). */
+    --H: 235; /* Wartość liczbowa [235 domyślne] */
+    --S: 100%; /* Podać % [100% domyślne] */
+    --L: 70%; /* Podać  % [70% domyślne] */
+    --mention-color: #6281DB1a;
+    /* mention color zostawić 1A na końcu - odpowiada to za przezroczystość. Pozostałe 6 znaków mozna zmienic  */
 }
