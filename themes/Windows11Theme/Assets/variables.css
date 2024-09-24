@@ -1,0 +1,283 @@
+:root {
+    /* Czcionka nowa z W11  */
+    --font-primary: Segoe UI, sans-serif;
+    --font-display: Segoe UI, sans-serif;
+    --font-headline: Segoe UI, sans-serif;
+
+    /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
+    --windark1: #202020;
+    --windark2: #1c1c1c;
+    --windark3: #282828;
+    --windark4: #2c2c2c;
+
+    --icons-color: var(--interactive-normal);
+
+    --windark-mica: #202020;
+    --windark-acrylic: #222222;
+
+    --windarkborder1: 1px solid rgba(117, 117, 117, 0.4);
+    --windarkborder2: 1px solid rgba(255, 255, 255, 0.0837);
+    --windarkborder3: 1px solid rgba(0, 0, 0, 0.1);
+    --windarkborder4: 1px solid rgba(0, 0, 0, 0.2);
+
+    --windark-check1: rgba(255, 255, 255, 0.5442);
+
+    --windark-toggle-off: rgba(255, 255, 255, 0.786);
+
+    --windark-button-bg: #2a2a2a;
+    --windark-button-border: #2c2c2c;
+    --windark-button-top: #313131;
+    --windark-button-bottom: #2b2b2b;
+    --windark-button-hover: #2f2f2f;
+    --windark-button-hover-border: #2a2a2a;
+    --windark-button-hover-top: #313131;
+    --windark-button-hover-bottom: #2b2b2b;
+
+    --windark-box1: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+
+    --winlight1: #f3f3f3;
+    --winlight2: #eeeeee;
+    --winlight3: #f9f9f9;
+    --winlight4: #ffffff;
+
+    --winlight-mica: #f3f3f3;
+    --winlight-acrylic: #f2f2f2;
+
+    --winlightborder1: 1px solid rgba(117, 117, 117, 0.4);
+    --winlightborder2: 1px solid rgba(0, 0, 0, 0.0578);
+    --winlightborder3: 1px solid rgba(0, 0, 0, 0.0803);
+
+    --winlight-check1: rgba(0, 0, 0, 0.4458);
+
+    --winlight-toggle-off: rgba(0, 0, 0, 0.6063);
+
+    --winlight-button-bg: #fdfdfd;
+    --winlight-button-border: #ececec;
+    --winlight-button-top: #ececec;
+    --winlight-button-bottom: #dbdbdb;
+    --winlight-button-hover: #f9f9f9;
+    --winlight-button-hover-border: #e7e7e7;
+    --winlight-button-hover-top: #ececec;
+    --winlight-button-hover-bottom: #d2d2d2;
+
+    --winlight-box1: rgba(252, 252, 252, 0.85);
+
+    --blue-button-bg: hsl(var(--H), calc(1*var(--S)), calc(1*var(--L)));
+    --blue-button-border: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
+    --blue-button-top: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
+    --blue-button-bottom: hsl(var(--H), calc(0.7*var(--S)), calc(0.90*var(--L)));
+    --blue-button-hover: hsl(var(--H), calc(0.76*var(--S)), calc(0.91*var(--L)));
+    --blue-button-hover-border: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
+    --blue-button-hover-top: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
+    --blue-button-hover-bottom: hsl(var(--H), calc(0.58*var(--S)), calc(0.83*var(--L)));
+
+    --wintransition: all 200ms;
+
+    --winrad1: 3px;
+    --winrad2: 4px;
+    --winrad3: 7px;
+    --winrad4: 8px;
+
+    --winblur1: 30px;
+    --winblur2: 60px;
+
+    --noise256: url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/Assets/noise256.png);
+    --noise-dark: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+    --noise-light: rgba(252, 252, 252, 0.85);
+    --noiseblend-dark: normal, color, luminosity;
+    --noiseblend-light: normal, luminosity;
+
+
+
+    /* Blue  */
+    --blue-100: hsl(var(--H) var(--S) calc(2*var(--L)) / 1);
+    --blue-130: hsl(var(--H) var(--S) calc(1.92*var(--L)) / 1);
+    --blue-160: hsl(var(--H) var(--S) calc(1.85*var(--L)) / 1);
+    --blue-200: hsl(var(--H) var(--S) calc(1.78*var(--L)) / 1);
+    --blue-230: hsl(var(--H) var(--S) calc(1.71*var(--L)) / 1);
+    --blue-260: hsl(var(--H) var(--S) calc(1.63*var(--L)) / 1);
+    --blue-300: hsl(var(--H) var(--S) calc(1.56*var(--L)) / 1);
+    --blue-330: hsl(var(--H) var(--S) calc(1.49*var(--L)) / 1);
+    --blue-345: hsl(var(--H) var(--S) calc(1.42*var(--L)) / 1);
+    --blue-360: hsl(var(--H) var(--S) calc(1.35*var(--L)) / 1);
+    --blue-400: hsl(var(--H) var(--S) calc(1.28*var(--L)) / 1);
+    --blue-430: hsl(var(--H) var(--S) calc(1.21*var(--L)) / 1);
+    --blue-460: hsl(var(--H) var(--S) calc(1.14*var(--L)) / 1);
+    --blue-500: hsl(var(--H) var(--S) calc(1*var(--L)) / 1);
+    --blue-530: hsl(var(--H) calc(0.75*var(--S)) calc(0.99*var(--L)) / 1);
+    --blue-560: hsl(var(--H) calc(0.60*var(--S)) calc(0.91*var(--L)) / 1);
+    --blue-600: hsl(var(--H) calc(0.54*var(--S)) calc(0.83*var(--L)) / 1);
+    --blue-630: hsl(var(--H) calc(0.54*var(--S)) calc(0.74*var(--L)) / 1);
+    --blue-660: hsl(var(--H) calc(0.54*var(--S)) calc(0.66*var(--L)) / 1);
+    --blue-700: hsl(var(--H) calc(0.54*var(--S)) calc(0.58*var(--L)) / 1);
+    --blue-730: hsl(var(--H) calc(0.54*var(--S)) calc(0.49*var(--L)) / 1);
+    --blue-760: hsl(var(--H) calc(0.54*var(--S)) calc(0.41*var(--L)) / 1);
+    --blue-800: hsl(var(--H) calc(0.54*var(--S)) calc(0.33*var(--L)) / 1);
+    --blue-830: hsl(var(--H) calc(0.54*var(--S)) calc(0.24*var(--L)) / 1);
+    --blue-860: hsl(var(--H) calc(0.54*var(--S)) calc(0.16*var(--L)) / 1);
+    --blue-900: hsl(var(--H) calc(0.54*var(--S)) calc(0*var(--L)) / 1);
+    --blue-100-hsl: var(--H) var(--S) calc(2*var(--L));
+    --blue-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
+    --blue-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
+    --blue-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
+    --blue-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
+    --blue-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
+    --blue-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
+    --blue-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
+    --blue-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
+    --blue-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
+    --blue-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
+    --blue-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
+    --blue-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
+    --blue-500-hsl: var(--H) var(--S) calc(1*var(--L));
+    --blue-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
+    --blue-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
+    --blue-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
+    --blue-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
+    --blue-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
+    --blue-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
+    --blue-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
+    --blue-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
+    --blue-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
+    --blue-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
+    --blue-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
+    --blue-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
+
+    --brand-100: hsl(var(--H) var(--S) calc(2*var(--L)) / 1);
+    --brand-130: hsl(var(--H) var(--S) calc(1.92*var(--L)) / 1);
+    --brand-160: hsl(var(--H) var(--S) calc(1.85*var(--L)) / 1);
+    --brand-200: hsl(var(--H) var(--S) calc(1.78*var(--L)) / 1);
+    --brand-230: hsl(var(--H) var(--S) calc(1.71*var(--L)) / 1);
+    --brand-260: hsl(var(--H) var(--S) calc(1.63*var(--L)) / 1);
+    --brand-300: hsl(var(--H) var(--S) calc(1.56*var(--L)) / 1);
+    --brand-330: hsl(var(--H) var(--S) calc(1.49*var(--L)) / 1);
+    --brand-345: hsl(var(--H) var(--S) calc(1.42*var(--L)) / 1);
+    --brand-360: hsl(var(--H) var(--S) calc(1.35*var(--L)) / 1);
+    --brand-400: hsl(var(--H) var(--S) calc(1.28*var(--L)) / 1);
+    --brand-430: hsl(var(--H) var(--S) calc(1.21*var(--L)) / 1);
+    --brand-460: hsl(var(--H) var(--S) calc(1.14*var(--L)) / 1);
+    --brand-500: hsl(var(--H) var(--S) calc(1*var(--L)) / 1);
+    --brand-530: hsl(var(--H) calc(0.75*var(--S)) calc(0.99*var(--L)) / 1);
+    --brand-560: hsl(var(--H) calc(0.60*var(--S)) calc(0.91*var(--L)) / 1);
+    --brand-600: hsl(var(--H) calc(0.54*var(--S)) calc(0.83*var(--L)) / 1);
+    --brand-630: hsl(var(--H) calc(0.54*var(--S)) calc(0.74*var(--L)) / 1);
+    --brand-660: hsl(var(--H) calc(0.54*var(--S)) calc(0.66*var(--L)) / 1);
+    --brand-700: hsl(var(--H) calc(0.54*var(--S)) calc(0.58*var(--L)) / 1);
+    --brand-730: hsl(var(--H) calc(0.54*var(--S)) calc(0.49*var(--L)) / 1);
+    --brand-760: hsl(var(--H) calc(0.54*var(--S)) calc(0.41*var(--L)) / 1);
+    --brand-800: hsl(var(--H) calc(0.54*var(--S)) calc(0.33*var(--L)) / 1);
+    --brand-830: hsl(var(--H) calc(0.54*var(--S)) calc(0.24*var(--L)) / 1);
+    --brand-860: hsl(var(--H) calc(0.54*var(--S)) calc(0.16*var(--L)) / 1);
+    --brand-900: hsl(var(--H) calc(0.54*var(--S)) calc(0*var(--L)) / 1);
+    --brand-100-hsl: var(--H) var(--S) calc(2*var(--L));
+    --brand-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
+    --brand-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
+    --brand-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
+    --brand-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
+    --brand-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
+    --brand-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
+    --brand-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
+    --brand-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
+    --brand-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
+    --brand-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
+    --brand-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
+    --brand-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
+    --brand-500-hsl: var(--H) var(--S) calc(1*var(--L));
+    --brand-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
+    --brand-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
+    --brand-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
+    --brand-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
+    --brand-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
+    --brand-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
+    --brand-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
+    --brand-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
+    --brand-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
+    --brand-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
+    --brand-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
+    --brand-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
+}
+
+/* Discord Color */
+.theme-dark,
+.theme-light {
+    --text-link: var(--blue-500);
+    --text-link-low-saturation: var(--blue-530);
+}
+
+.theme-dark {
+    --info-positive-background: #393D1B;
+    --info-positive-foreground: #6CCB5F;
+    --info-warning-background: #433519;
+    --info-warning-foreground: #FCE100;
+    --info-danger-background: #442726;
+    --info-danger-foreground: #FF99A4;
+    --status-positive-background: #393D1B;
+    --status-positive-text: #fff;
+    --status-warning-background: #433519;
+    --status-danger-background: #442726;
+    --status-danger-text: #fff;
+
+    --background-primary: var(--windark4);
+    --background-secondary: var(--windark3);
+    --background-secondary-alt: var(--windark1);
+    --background-tertiary: var(--windark2);
+
+    --modal-background: var(--windark4);
+    --modal-footer-background: var(--windark1);
+
+    --background-modifier-hover: rgba(255, 255, 255, 0.0605);
+    --background-modifier-active: rgba(255, 255, 255, 0.0419);
+    --background-modifier-selected: rgba(255, 255, 255, 0.0419);
+    --background-modifier-accent: rgba(255, 255, 255, 0.0605);
+
+    --elevation-stroke: 1px solid rgba(0, 0, 0, 0.1);
+    --elevation-low: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    --elevation-medium: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    --elevation-high: 0px 4px 8px rgba(0, 0, 0, 0.26);
+
+    --scrollbar-thin-thumb: #9f9f9f;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #9f9f9f;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: #9f9f9f;
+    --scrollbar-auto-scrollbar-color-track: transparent;
+}
+
+.theme-light {
+    --info-positive-background: #DFF6DD;
+    --info-positive-foreground: #0F7B0F;
+    --info-warning-background: #FFF4CE;
+    --info-warning-foreground: #9D5D00;
+    --info-danger-background: #FDE7E9;
+    --info-danger-foreground: #C42B1C;
+    --status-positive-background: #DFF6DD;
+    --status-positive-text: #000;
+    --status-warning-background: #FFF4CE;
+    --status-danger-background: #FDE7E9;
+    --status-danger-text: #000;
+
+    --background-primary: var(--winlight4);
+    --background-secondary: var(--winlight3);
+    --background-secondary-alt: var(--winlight1);
+    --background-tertiary: var(--winlight2);
+
+    --modal-background: var(--winlight4);
+    --modal-footer-background: var(--winlight1);
+
+    --background-modifier-hover: rgba(0, 0, 0, 0.0373);
+    --background-modifier-active: rgba(0, 0, 0, 0.0241);
+    --background-modifier-selected: rgba(0, 0, 0, 0.0241);
+    --background-modifier-accent: rgba(0, 0, 0, 0.0373);
+
+    --elevation-stroke: 1px solid rgba(0, 0, 0, 0.1);
+    --elevation-low: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    --elevation-medium: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    --elevation-high: 0px 4px 8px rgba(0, 0, 0, 0.26);
+
+    --scrollbar-thin-thumb: #8a8a8a;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #8a8a8a;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: #8a8a8a;
+    --scrollbar-auto-scrollbar-color-track: transparent;
+}
