@@ -1,25 +1,332 @@
+/*--------------------------------------------------------------
+                           Ikonki windows 11
+---------------------------------------------------------------*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
 
-/* Discord Default Values */
-@import url('https://zuzumi-f.github.io/Discord-11/release/valuesofdiscord.css');
+/*--------------------------------------------------------------
+                           Czcionka Win 11
+---------------------------------------------------------------*/
+/* Windows 11 font */
+@import url(https://github.com/Gomido/BetterDiscord/raw/refs/heads/master/themes/Windows11Theme/Assets/SegoeUIVariableStaticDisplay.ttf);
 
-/* Color fix */
-#app-mount .container_a6d69a /* Forums */,
-#app-mount .forumOrHome_ff5f90 /* Forums Header */ {
-    background: var(--bg-overlay-chat,var(--background-primary));
+/*--------------------------------------------------------------
+                           Ustawienia
+---------------------------------------------------------------*/
+:root {
+    --wallpaper-is: none; /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
+    --blur-size: 24px; /* Rozmycie tapety [24px domyslne] */
+    --opacity-thing: 0.6; /* Przezroczystosc 0 do 1 [0.6 domyslne] */
+    --server-size: 58px; /* Rozmiar paska serwerów [48px domyslne] */
+    --fluent-guilds-icon-size: 36px; /* Rozmiar ikon serwerów */
+    --avatar-size: 45px; /* Rozmiar awatarów na chacie */
+      
+    /* Kolory skina akcenty, przyciski, znaczki powiadomień- MOŻNA ZMIENIĆ */
+    /* HSL(Hue, Saturation, Lightness). */
+    --H: 235; /* Wartość liczbowa [235 domyślne] */
+    --S: 100%; /* Podać % [100% domyślne] */
+    --L: 70%; /* Podać  % [70% domyślne] */
+    --mention-color: #6281DB1a;
+    /* mention color zostawić 1A na końcu - odpowiada to za przezroczystość. Pozostałe 6 znaków mozna zmienic  */
+  
+    /* Czcionka nowa z W11  */
+    --font-primary: Segoe UI, sans-serif;
+    --font-display: Segoe UI, sans-serif;
+    --font-headline: Segoe UI, sans-serif;
+
+    /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
+    --windark1: #202020;
+    --windark2: #1c1c1c;
+    --windark3: #282828;
+    --windark4: #2c2c2c;
+
+    --windark-mica: #202020;
+    --windark-acrylic: #222222;
+
+    --windarkborder1: 1px solid rgba(117, 117, 117, 0.4);
+    --windarkborder2: 1px solid rgba(255, 255, 255, 0.0837);
+    --windarkborder3: 1px solid rgba(0, 0, 0, 0.1);
+    --windarkborder4: 1px solid rgba(0, 0, 0, 0.2);
+
+    --windark-check1: rgba(255, 255, 255, 0.5442);
+
+    --windark-toggle-off: rgba(255, 255, 255, 0.786);
+
+    --windark-button-bg: #2a2a2a;
+    --windark-button-border: #2c2c2c;
+    --windark-button-top: #313131;
+    --windark-button-bottom: #2b2b2b;
+    --windark-button-hover: #2f2f2f;
+    --windark-button-hover-border: #2a2a2a;
+    --windark-button-hover-top: #313131;
+    --windark-button-hover-bottom: #2b2b2b;
+
+    --windark-box1: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+
+    --winlight1: #f3f3f3;
+    --winlight2: #eeeeee;
+    --winlight3: #f9f9f9;
+    --winlight4: #ffffff;
+
+    --winlight-mica: #f3f3f3;
+    --winlight-acrylic: #f2f2f2;
+
+    --winlightborder1: 1px solid rgba(117, 117, 117, 0.4);
+    --winlightborder2: 1px solid rgba(0, 0, 0, 0.0578);
+    --winlightborder3: 1px solid rgba(0, 0, 0, 0.0803);
+
+    --winlight-check1: rgba(0, 0, 0, 0.4458);
+
+    --winlight-toggle-off: rgba(0, 0, 0, 0.6063);
+
+    --winlight-button-bg: #fdfdfd;
+    --winlight-button-border: #ececec;
+    --winlight-button-top: #ececec;
+    --winlight-button-bottom: #dbdbdb;
+    --winlight-button-hover: #f9f9f9;
+    --winlight-button-hover-border: #e7e7e7;
+    --winlight-button-hover-top: #ececec;
+    --winlight-button-hover-bottom: #d2d2d2;
+
+    --winlight-box1: rgba(252, 252, 252, 0.85);
+
+    --blue-button-bg: hsl(var(--H), calc(1*var(--S)), calc(1*var(--L)));
+    --blue-button-border: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
+    --blue-button-top: hsl(var(--H), calc(1*var(--S)), calc(1.03*var(--L)));
+    --blue-button-bottom: hsl(var(--H), calc(0.7*var(--S)), calc(0.90*var(--L)));
+    --blue-button-hover: hsl(var(--H), calc(0.76*var(--S)), calc(0.91*var(--L)));
+    --blue-button-hover-border: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
+    --blue-button-hover-top: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
+    --blue-button-hover-bottom: hsl(var(--H), calc(0.58*var(--S)), calc(0.83*var(--L)));
+
+    --wintransition: all 200ms;
+
+    --winrad1: 3px;
+    --winrad2: 4px;
+    --winrad3: 7px;
+    --winrad4: 8px;
+
+    --winblur1: 30px;
+    --winblur2: 60px;
+
+    --noise256: url(https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/Assets/noise256.png);
+    --noise-dark: linear-gradient(0deg, rgba(44, 44, 44, 0.15), rgba(44, 44, 44, 0.15)), rgba(44, 44, 44, 0.96);
+    --noise-light: rgba(252, 252, 252, 0.85);
+    --noiseblend-dark: normal, color, luminosity;
+    --noiseblend-light: normal, luminosity;
+
+
+
+    /* Blue  */
+    --blue-100: hsl(var(--H) var(--S) calc(2*var(--L)) / 1);
+    --blue-130: hsl(var(--H) var(--S) calc(1.92*var(--L)) / 1);
+    --blue-160: hsl(var(--H) var(--S) calc(1.85*var(--L)) / 1);
+    --blue-200: hsl(var(--H) var(--S) calc(1.78*var(--L)) / 1);
+    --blue-230: hsl(var(--H) var(--S) calc(1.71*var(--L)) / 1);
+    --blue-260: hsl(var(--H) var(--S) calc(1.63*var(--L)) / 1);
+    --blue-300: hsl(var(--H) var(--S) calc(1.56*var(--L)) / 1);
+    --blue-330: hsl(var(--H) var(--S) calc(1.49*var(--L)) / 1);
+    --blue-345: hsl(var(--H) var(--S) calc(1.42*var(--L)) / 1);
+    --blue-360: hsl(var(--H) var(--S) calc(1.35*var(--L)) / 1);
+    --blue-400: hsl(var(--H) var(--S) calc(1.28*var(--L)) / 1);
+    --blue-430: hsl(var(--H) var(--S) calc(1.21*var(--L)) / 1);
+    --blue-460: hsl(var(--H) var(--S) calc(1.14*var(--L)) / 1);
+    --blue-500: hsl(var(--H) var(--S) calc(1*var(--L)) / 1);
+    --blue-530: hsl(var(--H) calc(0.75*var(--S)) calc(0.99*var(--L)) / 1);
+    --blue-560: hsl(var(--H) calc(0.60*var(--S)) calc(0.91*var(--L)) / 1);
+    --blue-600: hsl(var(--H) calc(0.54*var(--S)) calc(0.83*var(--L)) / 1);
+    --blue-630: hsl(var(--H) calc(0.54*var(--S)) calc(0.74*var(--L)) / 1);
+    --blue-660: hsl(var(--H) calc(0.54*var(--S)) calc(0.66*var(--L)) / 1);
+    --blue-700: hsl(var(--H) calc(0.54*var(--S)) calc(0.58*var(--L)) / 1);
+    --blue-730: hsl(var(--H) calc(0.54*var(--S)) calc(0.49*var(--L)) / 1);
+    --blue-760: hsl(var(--H) calc(0.54*var(--S)) calc(0.41*var(--L)) / 1);
+    --blue-800: hsl(var(--H) calc(0.54*var(--S)) calc(0.33*var(--L)) / 1);
+    --blue-830: hsl(var(--H) calc(0.54*var(--S)) calc(0.24*var(--L)) / 1);
+    --blue-860: hsl(var(--H) calc(0.54*var(--S)) calc(0.16*var(--L)) / 1);
+    --blue-900: hsl(var(--H) calc(0.54*var(--S)) calc(0*var(--L)) / 1);
+    --blue-100-hsl: var(--H) var(--S) calc(2*var(--L));
+    --blue-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
+    --blue-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
+    --blue-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
+    --blue-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
+    --blue-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
+    --blue-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
+    --blue-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
+    --blue-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
+    --blue-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
+    --blue-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
+    --blue-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
+    --blue-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
+    --blue-500-hsl: var(--H) var(--S) calc(1*var(--L));
+    --blue-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
+    --blue-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
+    --blue-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
+    --blue-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
+    --blue-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
+    --blue-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
+    --blue-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
+    --blue-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
+    --blue-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
+    --blue-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
+    --blue-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
+    --blue-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
+
+    --brand-100: hsl(var(--H) var(--S) calc(2*var(--L)) / 1);
+    --brand-130: hsl(var(--H) var(--S) calc(1.92*var(--L)) / 1);
+    --brand-160: hsl(var(--H) var(--S) calc(1.85*var(--L)) / 1);
+    --brand-200: hsl(var(--H) var(--S) calc(1.78*var(--L)) / 1);
+    --brand-230: hsl(var(--H) var(--S) calc(1.71*var(--L)) / 1);
+    --brand-260: hsl(var(--H) var(--S) calc(1.63*var(--L)) / 1);
+    --brand-300: hsl(var(--H) var(--S) calc(1.56*var(--L)) / 1);
+    --brand-330: hsl(var(--H) var(--S) calc(1.49*var(--L)) / 1);
+    --brand-345: hsl(var(--H) var(--S) calc(1.42*var(--L)) / 1);
+    --brand-360: hsl(var(--H) var(--S) calc(1.35*var(--L)) / 1);
+    --brand-400: hsl(var(--H) var(--S) calc(1.28*var(--L)) / 1);
+    --brand-430: hsl(var(--H) var(--S) calc(1.21*var(--L)) / 1);
+    --brand-460: hsl(var(--H) var(--S) calc(1.14*var(--L)) / 1);
+    --brand-500: hsl(var(--H) var(--S) calc(1*var(--L)) / 1);
+    --brand-530: hsl(var(--H) calc(0.75*var(--S)) calc(0.99*var(--L)) / 1);
+    --brand-560: hsl(var(--H) calc(0.60*var(--S)) calc(0.91*var(--L)) / 1);
+    --brand-600: hsl(var(--H) calc(0.54*var(--S)) calc(0.83*var(--L)) / 1);
+    --brand-630: hsl(var(--H) calc(0.54*var(--S)) calc(0.74*var(--L)) / 1);
+    --brand-660: hsl(var(--H) calc(0.54*var(--S)) calc(0.66*var(--L)) / 1);
+    --brand-700: hsl(var(--H) calc(0.54*var(--S)) calc(0.58*var(--L)) / 1);
+    --brand-730: hsl(var(--H) calc(0.54*var(--S)) calc(0.49*var(--L)) / 1);
+    --brand-760: hsl(var(--H) calc(0.54*var(--S)) calc(0.41*var(--L)) / 1);
+    --brand-800: hsl(var(--H) calc(0.54*var(--S)) calc(0.33*var(--L)) / 1);
+    --brand-830: hsl(var(--H) calc(0.54*var(--S)) calc(0.24*var(--L)) / 1);
+    --brand-860: hsl(var(--H) calc(0.54*var(--S)) calc(0.16*var(--L)) / 1);
+    --brand-900: hsl(var(--H) calc(0.54*var(--S)) calc(0*var(--L)) / 1);
+    --brand-100-hsl: var(--H) var(--S) calc(2*var(--L));
+    --brand-130-hsl: var(--H) var(--S) calc(1.92*var(--L));
+    --brand-160-hsl: var(--H) var(--S) calc(1.85*var(--L));
+    --brand-200-hsl: var(--H) var(--S) calc(1.78*var(--L));
+    --brand-230-hsl: var(--H) var(--S) calc(1.71*var(--L));
+    --brand-260-hsl: var(--H) var(--S) calc(1.63*var(--L));
+    --brand-300-hsl: var(--H) var(--S) calc(1.56*var(--L));
+    --brand-330-hsl: var(--H) var(--S) calc(1.49*var(--L));
+    --brand-345-hsl: var(--H) var(--S) calc(1.42*var(--L));
+    --brand-360-hsl: var(--H) var(--S) calc(1.35*var(--L));
+    --brand-400-hsl: var(--H) var(--S) calc(1.28*var(--L));
+    --brand-430-hsl: var(--H) var(--S) calc(1.21*var(--L));
+    --brand-460-hsl: var(--H) var(--S) calc(1.14*var(--L));
+    --brand-500-hsl: var(--H) var(--S) calc(1*var(--L));
+    --brand-530-hsl: var(--H) calc(0.75*var(--S)) calc(0.99*var(--L));
+    --brand-560-hsl: var(--H) calc(0.60*var(--S)) calc(0.91*var(--L));
+    --brand-600-hsl: var(--H) calc(0.54*var(--S)) calc(0.83*var(--L));
+    --brand-630-hsl: var(--H) calc(0.54*var(--S)) calc(0.74*var(--L));
+    --brand-660-hsl: var(--H) calc(0.54*var(--S)) calc(0.66*var(--L));
+    --brand-700-hsl: var(--H) calc(0.54*var(--S)) calc(0.58*var(--L));
+    --brand-730-hsl: var(--H) calc(0.54*var(--S)) calc(0.49*var(--L));
+    --brand-760-hsl: var(--H) calc(0.54*var(--S)) calc(0.41*var(--L));
+    --brand-800-hsl: var(--H) calc(0.54*var(--S)) calc(0.33*var(--L));
+    --brand-830-hsl: var(--H) calc(0.54*var(--S)) calc(0.24*var(--L));
+    --brand-860-hsl: var(--H) calc(0.54*var(--S)) calc(0.16*var(--L));
+    --brand-900-hsl: var(--H) calc(0.54*var(--S)) calc(0*var(--L));
 }
 
-/* Fix Settings Icons */
-/* [d='M21.707 20.293L16.314 14.9C17.403 13.504 18 11.799 18 10C18 7.863 17.167 5.854 15.656 4.344C14.146 2.832 12.137 2 10 2C7.863 2 5.854 2.832 4.344 4.344C2.833 5.854 2 7.863 2 10C2 12.137 2.833 14.146 4.344 15.656C5.854 17.168 7.863 18 10 18C11.799 18 13.504 17.404 14.9 16.314L20.293 21.706L21.707 20.293ZM10 16C8.397 16 6.891 15.376 5.758 14.243C4.624 13.11 4 11.603 4 10C4 8.398 4.624 6.891 5.758 5.758C6.891 4.624 8.397 4 10 4C11.603 4 13.109 4.624 14.242 5.758C15.376 6.891 16 8.398 16 10C16 11.603 15.376 13.11 14.242 14.243C13.109 15.376 11.603 16 10 16Z'] {
-    d: path('M547 1249 c-176 -25 -331 -182 -356 -361 -20 -141 28 -278 130 -372 151 -140 358 -159 531 -49 l40 25 157 -156 c87 -86 162 -156 168 -156 12 0 43 33 43 45 0 5 -70 79 -156 166 l-156 157 25 40 c82 128 93 287 30 420 -80 171 -264 268 -456 241z m218 -110 c63 -30 134 -100 165 -164 21 -43 25 -64 25 -150 0 -118 -21 -171 -95 -245 -74 -74 -127 -95 -245 -95 -118 0 -171 21 -245 95 -64 63 -92 128 -98 222 -10 163 76 297 228 352 67 24 199 17 265 -15z') !important;
-    transform-origin: center;
-    transform: scale(0.01398) rotate(90deg) translateX(-710px) translateY(-680px);
+/* Discord Color */
+.theme-dark,
+.theme-light {
+    --text-link: var(--blue-500);
+    --text-link-low-saturation: var(--blue-530);
 }
 
-.closeButton__90904 svg {
-    display: none;
-} */
+.theme-dark {
+    --info-positive-background: #393D1B;
+    --info-positive-foreground: #6CCB5F;
+    --info-warning-background: #433519;
+    --info-warning-foreground: #FCE100;
+    --info-danger-background: #442726;
+    --info-danger-foreground: #FF99A4;
+    --status-positive-background: #393D1B;
+    --status-positive-text: #fff;
+    --status-warning-background: #433519;
+    --status-danger-background: #442726;
+    --status-danger-text: #fff;
 
-/* Top drag */
+    --background-primary: var(--windark4);
+    --background-secondary: var(--windark3);
+    --background-secondary-alt: var(--windark1);
+    --background-tertiary: var(--windark2);
+
+    --modal-background: var(--windark4);
+    --modal-footer-background: var(--windark1);
+
+    --background-modifier-hover: rgba(255, 255, 255, 0.0605);
+    --background-modifier-active: rgba(255, 255, 255, 0.0419);
+    --background-modifier-selected: rgba(255, 255, 255, 0.0419);
+    --background-modifier-accent: rgba(255, 255, 255, 0.0605);
+
+    --elevation-stroke: 1px solid rgba(0, 0, 0, 0.1);
+    --elevation-low: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    --elevation-medium: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    --elevation-high: 0px 4px 8px rgba(0, 0, 0, 0.26);
+
+    --scrollbar-thin-thumb: #9f9f9f;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #9f9f9f;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: #9f9f9f;
+    --scrollbar-auto-scrollbar-color-track: transparent;
+}
+
+.theme-light {
+    --info-positive-background: #DFF6DD;
+    --info-positive-foreground: #0F7B0F;
+    --info-warning-background: #FFF4CE;
+    --info-warning-foreground: #9D5D00;
+    --info-danger-background: #FDE7E9;
+    --info-danger-foreground: #C42B1C;
+    --status-positive-background: #DFF6DD;
+    --status-positive-text: #000;
+    --status-warning-background: #FFF4CE;
+    --status-danger-background: #FDE7E9;
+    --status-danger-text: #000;
+
+    --background-primary: var(--winlight4);
+    --background-secondary: var(--winlight3);
+    --background-secondary-alt: var(--winlight1);
+    --background-tertiary: var(--winlight2);
+
+    --modal-background: var(--winlight4);
+    --modal-footer-background: var(--winlight1);
+
+    --background-modifier-hover: rgba(0, 0, 0, 0.0373);
+    --background-modifier-active: rgba(0, 0, 0, 0.0241);
+    --background-modifier-selected: rgba(0, 0, 0, 0.0241);
+    --background-modifier-accent: rgba(0, 0, 0, 0.0373);
+
+    --elevation-stroke: 1px solid rgba(0, 0, 0, 0.1);
+    --elevation-low: 0px 2px 4px rgba(0, 0, 0, 0.13);
+    --elevation-medium: 0px 8px 16px rgba(0, 0, 0, 0.14);
+    --elevation-high: 0px 4px 8px rgba(0, 0, 0, 0.26);
+
+    --scrollbar-thin-thumb: #8a8a8a;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #8a8a8a;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: #8a8a8a;
+    --scrollbar-auto-scrollbar-color-track: transparent;
+}
+
+/* Kod skina  */
+
+/* Spis treści  
+1. Pasek na górze, przyciski zamykania 
+2. Pasek serwerów
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+
+*/
+
+/* 1. Pasek na górze, przyciski zamykania */
 .wordmarkWindows_a934d8 {
     padding: 0;
     width: 0;
@@ -56,7 +363,7 @@
     z-index: 2;
 }
 
-/* WinButton */
+/* WinButtons */
 .platform-win .layer_d4b6c5 {
     padding-top: 34px;
     top: -34px;
@@ -74,7 +381,7 @@
 }
 
 #app-mount .winButtonClose_a934d8:hover {
-    background-color: #C42B1C;
+    background-color: #9e0d0d;
 }
 
 .theme-dark .winButtonMinMax_a934d8:hover {
@@ -134,14 +441,25 @@
     height: var(--server-size);
 }
 
+/* Folder ikona */
+[d='M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z'],
+[d='M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z'] {
+	d: path('M8.207 4c.46 0 .908.141 1.284.402l.156.12L12.022 6.5h7.728a2.25 2.25 0 0 1 2.229 1.938l.016.158.005.154v9a2.25 2.25 0 0 1-2.096 2.245L19.75 20H4.25a2.25 2.25 0 0 1-2.245-2.096L2 17.75V6.25a2.25 2.25 0 0 1 2.096-2.245L4.25 4h3.957Zm1.44 5.979a2.25 2.25 0 0 1-1.244.512l-.196.009-4.707-.001v7.251c0 .38.282.694.648.743l.102.007h15.5a.75.75 0 0 0 .743-.648l.007-.102v-9a.75.75 0 0 0-.648-.743L19.75 8h-7.729L9.647 9.979ZM8.207 5.5H4.25a.75.75 0 0 0-.743.648L3.5 6.25v2.749L8.207 9a.75.75 0 0 0 .395-.113l.085-.06 1.891-1.578-1.89-1.575a.75.75 0 0 0-.377-.167L8.207 5.5Z');
+}
+
+.theme-dark .guilds_a4d4d9 .expandedFolderIconWrapper_bc7085::before{
+  content: " "
+}
+
+
 #app-mount .unreadMentionsIndicatorBottom_fea3ef,
 #app-mount .unreadMentionsIndicatorTop_fea3ef {
     width: auto;
 }
 
 .listItem_c96c45 .icon_f90abb {
-    width: 32px;
-    height: 32px;
+    width: var(--fluent-guilds-icon-size);
+    height: var(--fluent-guilds-icon-size);
     border-radius: 50%;
 }
 
@@ -206,18 +524,30 @@
     background-color: hsla(0, 0%, 100%, 0.5) !important;
 }
 
-.wrapper_fd07a3 {
-    height: var(--server-size);
-    z-index: 1;
+
+.wrapper_c4cd66.pill_a5ad63,
+.wrapper_c4cd66.pill_f36a5a {
+  left:0px;
+  top: 0px;
+  z-index: 999;
 }
 
-.item_fd07a3 {
+.pill_f9623d,
+/* .pill_dcc7a4, */
+.pill_db6521 {
+    display:none;
+}
+
+.item_c4cd66 {
     width: 3px;
     border-radius: 1.5px;
     margin-left: 1px;
     transform: none !important;
     transition: var(--wintransition);
 }
+
+
+
 
 .guilds_a4d4d9 .item_fd07a3[style*="height: 0"],
 .guilds_a4d4d9 .item_fd07a3[style*="height: 1"],
@@ -268,30 +598,34 @@
     height: 18px !important;
 }
 
+.wrapper_a2f8f7,
+.numberBadge_df8943,
 #app-mount .lowerBadge_c5f96a div,
 #app-mount .upperBadge_c5f96a div {
     background-color: var(--brand-500) !important;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 .theme-dark .lowerBadge_c5f96a div,
 .theme-dark .upperBadge_c5f96a div {
-    color: #000 !important;
+    color: #FFF !important;
 }
 
 .theme-light .lowerBadge_c5f96a div,
 .theme-light .upperBadge_c5f96a div {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 /* Always bottom server list buttons by Gibbu [edit] */
 .wrapper_fea3ef {
     height: calc(100% - ((var(--server-size)*2) + 8px));
 }
+
 .scroller_fea3ef {
     contain: unset;
     padding-bottom: 40px;
 }
+
 .scroller_fea3ef::before {
     content: "";
     position: fixed;
@@ -303,11 +637,13 @@
     z-index: 1;
     pointer-events: none;
 }
+
 .tutorialContainer_c96c45 {
     position: fixed;
     bottom: 2px;
     z-index: 1;
 }
+
 .tutorialContainer_c96c45 + .listItem_c96c45 {
     position: fixed;
     bottom: calc(var(--server-size) + 8px);
@@ -389,7 +725,7 @@
 .tabBar_c2739c .addFriend_c2739c {
     height: 32px;
     width: 120px;
-    top: 6px;
+    top: 0px;
     transition: var(--wintransition);
 }
 
@@ -398,15 +734,18 @@
     border: 1px solid var(--blue-button-border) !important;
     border-top-color: var(--blue-button-top) !important;
     border-bottom-color: var(--blue-button-bottom) !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     border-radius: var(--winrad2) !important;
+    color:var(--interative-active) !important;
 }
+
 #app-mount .addFriend_c2739c.themed_a0:hover:not([aria-selected=true]) {
     background-color: var(--blue-button-hover) !important;
     border-color: var(--blue-button-hover-border) !important;
     border-top-color: var(--blue-button-hover-top) !important;
     border-bottom-color: var(--blue-button-hover-bottom) !important;
 }
+
 #app-mount .addFriend_c2739c.themed_a0[aria-selected=true] {
     background-color: transparent !important;
     color: var(--brand-500) !important;
@@ -427,6 +766,11 @@
 }
 
 /* Friends-Grid by CorellanStoma [edited] */
+/* znajomi  */
+.nowPlayingColumn_c2739c {
+    display: none;
+  }
+
 .peopleColumn_c2739c .title_a1cafe {
     position: relative;
     top: -66px;
@@ -441,12 +785,12 @@
     position: relative;
     z-index: 9;
     margin: 0px;
-    width: calc(100% - 16px);
+    width: 100%;
     top: 24px;
 }
 .peopleColumn_c2739c .peopleList_e0840f>div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr!important;
     grid-column-gap: 12px;
     row-gap: 12px;
 }
@@ -454,10 +798,7 @@
     display: none;
 }
 .peopleColumn_c2739c {
-    padding-top: 19px;
-    padding-left: 20px;
-    padding-right: 0px;
-    padding-bottom: 20px;
+    padding: 20px
 }
 .peopleColumn_c2739c .scrollerBase_eed6a8 {
     overflow: visible !important;
@@ -648,60 +989,141 @@
 }
 
 /* Search or Start a conversation */
-.privateChannels_f0963d .content_eed6a8 {
-    margin-bottom: 32px;
-}
 
-.searchBar_f0963d {
-    height: auto;
-    position: absolute;
-    bottom: 4px;
-    background: transparent;
-    padding: 0px;
-    margin-left: 5px;
-    border-radius: var(--winrad2);
-}
-.searchBar_f0963d .searchBarComponent_f0963d {
-    height: 32px;
-    width: 250px;
-    text-align: center;
-    transition: var(--wintransition);
-}
-
-.theme-dark .searchBar_f0963d .searchBarComponent_f0963d {
-    background-color: var(--windark-button-bg) !important;
-    border: 1px solid var(--windark-button-border) !important;
-    border-top-color: var(--windark-button-top) !important;
-    border-bottom-color: var(--windark-button-bottom) !important;
-    color: #fff !important;
-    border-radius: var(--winrad2) !important;
-}
+/*Mała szukajka, lista znajomych. search bar*/
+.theme-dark .searchBar_f0963d .searchBarComponent_f0963d,
 .theme-dark .searchBar_f0963d .searchBarComponent_f0963d:hover {
-    background-color: var(--windark-button-hover) !important;
-    border-color: var(--windark-button-hover-border) !important;
-    border-top-color: var(--windark-button-hover-top) !important;
-    border-bottom-color: var(--windark-button-hover-bottom) !important;
+  background: transparent !important;
+  border:none !important;
+  color: transparent !important;
 }
 
-.theme-light .searchBar_f0963d .searchBarComponent_f0963d {
-    background-color: var(--winlight-button-bg) !important;
-    border: 1px solid var(--winlight-button-border) !important;
-    border-top-color: var(--winlight-button-top) !important;
-    border-bottom-color: var(--winlight-button-bottom) !important;
-    color: #000 !important;
-    border-radius: var(--winrad2) !important;
-}
-.theme-light .searchBar_f0963d .searchBarComponent_f0963d:hover {
-    background-color: var(--winlight-button-hover) !important;
-    border-color: var(--winlight-button-hover-border) !important;
-    border-top-color: var(--winlight-button-hover-top) !important;
-    border-bottom-color: var(--winlight-button-hover-bottom) !important;
+
+
+.privateChannels_f0963d .searchBar_f0963d {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 45px;
+  padding: 0;
+  width: 45px;
+  border-radius: 10px;
+  background: var(--bg-overlay-1, var(--background-secondary-alt));
+  border: var(--windarkborder2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
-/* No Nitro Page */
-.channel_c91bad .link_c91bad[href="/store"] {
+.privateChannels_f0963d .searchBar_f0963d .searchBarComponent_f0963d {
+  height: 100%;
+  width: 100%;
+}
+
+.privateChannels_f0963d .searchBar_f0963d .searchBarComponent_f0963d::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  bottom: 0;
+  right: 5px;
+  background: url(https://discordapp.com/assets/4d254296157bb8927b7d53ed59beb0d8.svg) center/20px no-repeat;
+  pointer-events: none;
+}
+
+.privateChannels_f0963d .searchBar_f0963d .searchBarComponent_f0963d::before {
+  content: 'Wyszukaj chat lub grupę';
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  width:250px;
+  top: 10px;
+  right: 0vw;
+  color: white;
+  opacity: .9;
+  font-size: 14px;
+  line-height: 25px;
+  transition: all .2s ease-in-out;
+  pointer-events: none;
+}
+
+.privateChannels_f0963d .searchBar_f0963d input::placeholder {
+  color: transparent;
+}
+
+.privateChannels_f0963d .searchBar_f0963d:hover {
+  width: 250px;
+}
+
+.privateChannels_f0963d .scrollerWrap-2lJEkd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px !important;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* No Nitro, Store, Page */
+/* Ukrycie zakładek nitro, sklep, wysyłania giftów, applaunchera, edycji obrazów */
+.button_dd4f85[aria-label="Send a gift"],
+.button_dd4f85[aria-label="Wyślij prezent"],
+.interactive_c91bad [href="/shop"],
+.interactive_c91bad [href="/store"],
+.channelAppLauncher_df39bd,
+.hoverButtonGroup_d0395d {
+  display: none;
+}
+
+/*Ukrycie discovery*/
+/* .tutorialContainer_c96c45 + div {
+  display: none;
+} */
+
+
+/* usuwajka z menu prawego myszy */
+.item_d90b3d[id="message-tts"], 
+.item_d90b3d[id="message-add-reaction-0"],
+.item_d90b3d[id="message-add-reaction-1"],
+/*.item_d90b3d[id="message-reply"],  */
+/*.item_d90b3d[id="message-edit"], */
+.item_d90b3d[id="message-pin"],
+.item_d90b3d[id="message-thread"],
+.item_d90b3d[id="message-actions-tts"],
+.item_d90b3d[id="message-quote"],
+.item_d90b3d[id="message-copy-link"],
+.item_d90b3d[id="message-mark-unread"],
+.item_d90b3d[id="message-add-reaction"],
+.item_d90b3d[id="message-actions-apps"],
+.item_d90b3d[id="message-apps"],
+.item_d90b3d[id="user-context-note"],
+.item_d90b3d[id="user-context-focus-video"],
+.item_d90b3d[id="textarea-context-languages"],
+.item_d90b3d[id="textarea-context-suggestions"],
+ /*.item_d90b3d[id="textarea-context-spellcheck"], */
+.item_d90b3d[id="textarea-context-sticker-suggestions"],
+.item_d90b3d[id="user-context-apps"],
+.item_d90b3d[id="user-context-call"], 
+/*.item_d90b3d[id="channel-context-channel-copy-link"], */
+.item_d90b3d[id="thread-context-channel-copy-link"],
+.item_d90b3d[id="message-report"], 
+.wrapper-2vIMkT .button-3bklZh[aria-label="Create Thread"] {
+  display: none;
+}
+
+/* Nitro Lock Emoji List   */
+.categorySectionNitroLocked_a3bc57{
+    background-color: transparent;
+  }
+  
+  .categoryItemLockIconContainer_bfabc4,
+  .nitroTopDividerContainer_e8f337,
+  .upsellContainerFloating_ad7baa,
+  .emojiLockIconContainer_bcf389{
     display: none;
-}
+  }
 
 .privateChannelsHeaderContainer_c47fa9 {
     padding-top: 14px;
@@ -749,10 +1171,11 @@
     margin: 0px 4px 4px;
     padding: 3px 6px;
     border-radius: var(--winrad3);
-    height: 90px;
+    height: 60px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
+
 .container_b2ca13 > div:has(button) {
     width: 100%;
 }
@@ -767,7 +1190,7 @@
 
 .panels_a4d4d9 .avatarWrapper_b2ca13 {
     max-width: calc(100% - 4px);
-    min-width: calc(100% - 4px);
+    min-width: 130px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 4px;
@@ -1059,6 +1482,35 @@
     background-color: var(--brand-500);
 }
 
+/* Small profile change status etc  */
+
+/* Status bubble  */
+.theme-dark .accountProfilePopoutWrapper_b2ca13 .userPopoutOuter_c69a7b.userProfileOuter_c69a7b {
+    border: var(--windarkborder2);
+    background: var(--background-tertiary);
+  }
+  
+  .accountProfilePopoutWrapper_b2ca13 .userPopoutOuter_c69a7b.userProfileOuter_c69a7b {
+    width: 250px;
+    left: -8px;
+    bottom: 5px;
+  }
+  
+  .biteSizeInnerThemed_c69a7b {
+    padding-bottom: 4px;
+    background: var(--background-tertiary);
+  }
+  
+  .accountProfilePopoutWrapper_b2ca13 .body_ad5fac::before{
+    background: none;
+  }
+
+  .statusBubbleOuter_d0a252:after,
+  .statusBubbleOuter_d0a252:before,
+  .statusBubble_d0a252 {
+      background: var(--background-secondary);
+  }
+
 /* Bots Info */
 #app-mount .botTag_a02df3 {
     background-color: var(--brand-500);
@@ -1119,6 +1571,21 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     height: 137px !important;
     background-color: transparent !important;
     box-shadow: none !important;
+}
+
+/* image border fix  */
+/* Usunięcie zaokrągleń wysyłanych grafik, filmów  */
+.embedImage_b0068a img,
+.embedImage_b0068a video,
+.embedThumbnail_b0068a img,
+.embedThumbnail_b0068a video,
+.embedVideo_b0068a img, 
+.embedVideo_b0068a video,
+.wrapper_f72aac,
+.video_f72aac,
+.oneByOneGridSingle_cda674,
+.imageWrapper_d4597d {
+  border-radius: 0;
 }
 
 /* Channels */
@@ -1254,6 +1721,79 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 /* Chat */
+/* characeter Counter  */
+.chatCounter_XOMPsh{
+right: 0px;
+}
+
+
+/* dymki chatu  */
+.embedMedia_b0068a,
+.visualMediaItemContainer_cda674{
+  padding: 8px !important;
+  background: var(--background-secondary);
+  border: var(--windarkborder2);
+  border-radius: 5px;
+}
+
+.embedMedia_b0068a{
+  border: var(--windarkborder2);
+}
+
+.imageContent_cf58b5 .embedMedia_b0068a{
+  border:none;
+  left:-8px;
+  top:-8px;
+}
+
+#app-mount .message_d5deea .visualMediaItemContainer_cda674,
+#app-mount .message_d5deea .imageContainer_cf58b5{
+  width: unset;
+  height: unset;}
+
+.container_b558d0{
+  grid-gap: 10px;
+}
+
+#app-mount .cozy_f9f2ca .contents_f9f2ca > .messageContent_f9f2ca:not(:empty) {
+  margin-left: 0;
+  padding: 8px 12px 8px 12px !important;
+  background: var(--background-secondary);
+  border: var(--windarkborder2);
+  border-radius: 5px;
+  display: inline-block;
+  max-width: calc(100% - 45px);
+}
+
+.imageDetailsAdded_sda9Fa .imageWrapper_d4597d{
+  height: calc(100% - 1rem - 20px) !important;
+}
+
+#app-mount .message_d5deea:hover .imageWrapper_d4597d {
+	background: var(--background-secondary-alt) !important;
+}
+
+.visualMediaItemContainer_df7417,
+.oneByOneGridSingle_df7417,
+.imageDetailsAdded_sda9Fa .imageWrapper_d4597d{
+  border-radius: 2px !important;
+}
+
+
+
+/* wiekszy awatar  */
+.messagesWrapper_e2e187 .avatarDecoration_f9f2ca{
+    width: calc(var(--avatar-size) + 10px) !important;
+    height: calc(var(--avatar-size) + 10px) !important;
+  }
+  
+  .messagesWrapper_e2e187 .avatar_f9f2ca {
+    height: var(--avatar-size) !important;
+    width: var(--avatar-size)!important;
+  }
+
+
+
 #app-mount .attachedBars_d0696b {
     border-radius: var(--winrad3);
     padding: 0;
@@ -1280,6 +1820,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 .theme-dark .threadSuggestionBar_b11c5e {
     background: var(--noise-dark);
 }
+
 .theme-dark .threadSuggestionBar_b11c5e {
     border-top: var(--windarkborder2);
 }
@@ -1288,6 +1829,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 .theme-light .threadSuggestionBar_b11c5e {
     background: var(--noise-light);
 }
+
 .theme-light .threadSuggestionBar_b11c5e {
     border-top: var(--winlightborder3);
 }
@@ -1300,6 +1842,87 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     transform: scale(1) !important;
     filter: grayscale(0) !important;
 }
+
+.theme-dark .themed_fc4f04 {
+    background: var(--background-secondary)
+  }  
+
+/* Threads  */
+/* pasek po threads na nazwie kanalu  */
+.theme-dark .children_fc4f04:after{
+    background: #323232;
+    width: 1px;
+  }
+  
+  #app-mount .bannerImage_fd6364 .bannerImg_fd6364 {
+    margin-left: 0;
+    object-fit: fill;
+    width: 260px;
+    border:0;
+  }
+
+/* Forums  */
+.mainCard_a6d69a {
+    background-color: var(--background-secondary);
+    border: var(--windarkborder2)
+  }
+
+.container_a6d69a{
+    background-color: transparent;
+}
+
+#app-mount .container_a6d69a {
+    background: var(--bg-overlay-chat,var(--background-primary));
+}
+
+#app-mount .forumOrHome_ff5f90{
+    background-color: var(--background-secondary);
+}
+
+/* questy  */
+.postEnrollmentBackground_c3427e {
+    background: var(--background-secondary-alt) !important;
+    margin-right:0px;
+    border:none;
+  }
+  
+  .theme-dark .wrapper_c721cc{
+    margin-right:6px;
+    margin-left:4px;
+    border-radius: 8px !important;
+  }
+  
+  .searchBar_f0963d{
+    bottom:12px;
+  }
+  
+  .contentCollapsed_c3427e,
+  .contentWrapperAccepted_c721cc{
+    border-radius: 8px;
+  }
+  
+  .contentWrapper_c721cc{
+    background-color: var(--background-secondary-alt) !important;
+    border: var(--windarkborder2);
+    background-image: none !important;
+    margin-bottom: 4px;
+  }
+  
+  .container_ad4620 {
+    grid-template-columns: repeat(2, minmax(200px, 600px));
+  }
+
+/* clans  */
+.footer_aa1bff {
+    position:fixed;
+    bottom:60px;
+    z-index:2
+  }
+  
+  .chipletContainerInner_d5cb59{
+    background-color: #252525;
+    border: var(--windarkborder2);
+  }
 
 /* Popout mention */
 #app-mount .autocomplete_f23da8 {
@@ -1373,35 +1996,21 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 /* New Messages */
-#app-mount .divider_d5deea .unreadPill_fc5f50 {
-    padding: 0 8px;
-    background-color: transparent;
-    font-size: 14px;
-    position: absolute;
-    top: -20px;
-}
-#app-mount .divider_d5deea .unreadPillCap_fc5f50 {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    top: 2px;
-}
-.unreadPillCapStroke_fc5f50 {
-    display: none;
-}
-
-#app-mount .isUnread_fc5f50 {
-    border-color: var(--brand-500);
-}
-#app-mount .divider_d5deea .unreadPill_fc5f50 {
+.isUnread_c2654d.divider_c2654d{
+    border-top-color: var(--brand-500);
+  }
+  
+  .unreadPillCapStroke_c2654d {
     color: var(--brand-500);
-}
-#app-mount .isUnread_fc5f50 .content_fc5f50 {
+    fill:var(--brand-500);
+  }
+  
+  .unreadPill_c2654d {
+    background-color: var(--brand-500);}
+  
+  .isUnread_c2654d .content_c2654d{
     color: var(--brand-500);
-}
-#app-mount .divider_d5deea .unreadPillCap_fc5f50 {
-    background: var(--brand-500);
-}
+  }
 
 #app-mount .jumpToPresentBar_cf58b5 {
     padding-bottom: 0;
@@ -1444,6 +2053,18 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     color: #000;
 }
 
+/* slowmode*/
+.base_d7ebeb .cooldownWrapper_d7ebeb {
+    margin-right: 10px;
+  }
+  
+  .base_d7ebeb{
+    top:-20px;
+    margin-right: 0 !important;
+    background-color: var(--text-bg);
+  }
+
+
 #app-mount .newMessagesBar_cf58b5 {
     border-radius: var(--winrad1);
     top: 4px;
@@ -1452,10 +2073,10 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 .theme-dark .newMessagesBar_cf58b5 .barButtonBase_cf58b5 {
-    color: #000;
+    color: #FFF;
 }
 .theme-light .newMessagesBar_cf58b5 .barButtonBase_cf58b5 {
-    color: #fff;
+    color: #000;
 }
 
 #app-mount .newMessagesBar_cf58b5 {
@@ -1519,6 +2140,23 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     border: var(--text-border-focus);
     border-bottom: 2px solid var(--brand-500);
 }
+
+/* chat scroolbar fix */
+.scrollableContainer_d0696b{
+    padding-right: 10px;
+    overflow-y: hidden;
+  }
+  
+  .autocomplete_bcc24e{
+    background: var(--text-bg-focus);
+    border-radius:4px;
+    margin-bottom:-8px;
+  }
+  
+  .peopleList_e0840f .content_eed6a8 div[aria-hidden="true"]{
+    display: none;
+  }
+
 
 /* The searchbar */
 #app-mount .search_ff5f90 {
@@ -1698,6 +2336,20 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 #app-mount .stickerInspected_a708c4 .inspectedIndicator_a708c4 {
     background-color: var(--background-modifier-selected);
 }
+
+.header_b56bbc{
+    background-color: var(--background-secondary-alt);
+  }
+
+  .drawerSizingWrapper_af5dbb{
+    height: 520px;
+    bottom:0px;
+  }
+
+  .emoji.jumboable {
+    height: 64px;
+    width: 64px;
+  }
 
 #app-mount .contentWrapper_eab878,
 #app-mount .contentWrapper_af5dbb {
@@ -1966,6 +2618,25 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     border-radius: unset;
 }
 
+/* wzmianki  */
+.message_d5deea.mentioned_d5deea::before{
+    background-color: var(--brand-500);
+    height: calc(100% - 4px);
+    left: 2px;
+    top: 2px;
+    border-radius: 2px;
+  }
+  
+  .message_d5deea.mentioned_d5deea{
+    background-color: var(--mention-color) !important
+  }
+  
+  #app-mount .mentioned_d5deea:hover .contents_ec86aa,
+  #app-mount .mentioned_d5deea .contents_ec86aa{
+    background-color: var(--background-secondary);
+  }
+
+
 /* header icon */
 .recentMentionsPopout_ddb5b4 .iconSizeMedium_f11207 {
     width: 24px;
@@ -2094,6 +2765,11 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 .theme-light .browser_f542fc .header_e664f3,
 .theme-light .recentMentionsPopout_ddb5b4 .header_f0cd33 {
     border-bottom: var(--winlightborder2);
+}
+
+.mention_edf32f,
+.theme-dark .toolbar_fc4f04 .iconBadge_fc4f04{
+  background-color: var(--brand-500);
 }
 
 .container_ddb5b4 {
@@ -2492,11 +3168,11 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 .theme-dark .lookFilled_dd4f85.colorBrand_dd4f85 {
-    color: #000 !important;
+    color: #FFF !important;
 }
 
 .theme-light .lookFilled_dd4f85.colorBrand_dd4f85 {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 #app-mount .button_f23d00 {
@@ -2741,6 +3417,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 /* Toggle BD */
 #app-mount .bd-switch-body {
     height: 20px;
+    background-color: var(--brand-500);
 }
 #app-mount .bd-switch-body .bd-switch-slider {
     top: -3px;
@@ -3078,10 +3755,10 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 /* Just a BG for theme card [by Gibbu] */
-[id="Discord 11-card"] {
+[id="Discord 11 Fork-card"] {
     position: relative;
 }
-[id="Discord 11-card"]::before {
+[id="Discord 11 Fork-card"]::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -3089,9 +3766,9 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     opacity: 0.1;
     pointer-events: none;
 }
-.theme-dark [id="Discord 11-card"]::before {
-    background: url(https://github.com/zuzumi-f/Discord-11/blob/main/release/wallpapers/WindowsDark.jpg?raw=true) center/cover;
+.theme-dark [id="Discord 11 Fork-card"]::before {
+    background: url(https://wykop.pl/cdn/c3201142/comment_16001782537z5P3Mz8zs7ce6pgfY0X9u,w400.jpg) center/cover;
 }
-.theme-light [id="Discord 11-card"]::before {
-    background: url(https://github.com/zuzumi-f/Discord-11/blob/main/release/wallpapers/WindowsLight.jpg?raw=true) center/cover;
+.theme-light [id="Discord 11 Fork-card"]::before {
+    background: url(https://wykop.pl/cdn/c3201142/comment_16001782537z5P3Mz8zs7ce6pgfY0X9u,w400.jpg) center/cover;
 }
