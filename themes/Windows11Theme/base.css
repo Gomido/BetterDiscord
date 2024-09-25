@@ -298,9 +298,42 @@
     --scrollbar-auto-track: transparent;
     --scrollbar-auto-scrollbar-color-thumb: #8a8a8a;
     --scrollbar-auto-scrollbar-color-track: transparent;
+
+    --version: "Windows 11 theme v0.0.4 - 25/09/2024";
 }
 
 /* Kod skina  */
+/* changelog, wersja  */
+
+.info_c5a741::before {
+  content: var(--version);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: lightblue;
+}
+
+/*changelog*/
+.contentColumnDefault_c25c6d #bd-editor-panel::before {
+  content: "CHANGELOG: \a\a (Windows 11 Theme - 25/09/2024)\a - poprawione znaczki powiadomień \a - dodane wersjonowanie skina \a - zmienione ramki opcji chatu" !important;
+  display: block;
+  position: relative;
+  border: 1px solid #43b581 !important;
+  background: rgba(67, 181, 129, .25);
+  background-image: url(https://i.imgur.com/SUMDUBL.png);
+  background-size: 80px;
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  padding: 20px 120px;
+  white-space: pre;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: var(--text-normal);
+  text-transform: initial;
+}
+
 /* 1. Pasek na górze, przyciski zamykania */
 .wordmarkWindows_a934d8 {
     padding: 0;
