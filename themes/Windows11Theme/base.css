@@ -22,6 +22,8 @@
     --font-display: Segoe UI, sans-serif;
     --font-headline: Segoe UI, sans-serif;
 
+    --version: "Windows 11 theme v0.0.4 - 25/09/2024";
+	
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
     --windark1: #202020;
     --windark2: #1c1c1c;
@@ -299,7 +301,6 @@
     --scrollbar-auto-scrollbar-color-thumb: #8a8a8a;
     --scrollbar-auto-scrollbar-color-track: transparent;
 
-    --version: "Windows 11 theme v0.0.4 - 25/09/2024";
 }
 
 /* Kod skina  */
