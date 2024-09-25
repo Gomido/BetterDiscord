@@ -89,7 +89,7 @@
     --blue-button-hover-top: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
     --blue-button-hover-bottom: hsl(var(--H), calc(0.58*var(--S)), calc(0.83*var(--L)));
 
-    --wintransition: all 200ms;
+/*     --wintransition: all 50ms; */
 
     --winrad1: 3px;
     --winrad2: 4px;
@@ -578,7 +578,7 @@
 #app-mount .guilds_a4d4d9 .item_c4cd66[style*="height: 39"],
 #app-mount .guilds_a4d4d9 .item_c4cd66[style*="height: 40"] {
     background-color: var(--brand-500) !important;
-    height: 18px !important;
+    height: 20px !important;
 }
 
 .wrapper_a2f8f7,
@@ -586,7 +586,7 @@
 #app-mount .lowerBadge_c5f96a div,
 #app-mount .upperBadge_c5f96a div {
     background-color: var(--brand-500) !important;
-    /* font-weight: normal; */
+    font-weight: normal;
 }
 
 .theme-dark .lowerBadge_c5f96a div,
@@ -1875,6 +1875,11 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 
+
+/* pasek opcjj chat, reply, forward, pin ppm */
+.wrapper_f7e168 {
+    border: var(--windarkborder2)
+}
 
 /* wiekszy awatar  */
 .messagesWrapper_e2e187 .avatarDecoration_f9f2ca {
@@ -3636,7 +3641,8 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     x: 2.4 !important;
 }
 
-#app-mount .bd-switch input:checked+.bd-switch-body {
+#app-mount .bd-switch input:checked+.bd-switch-body,
+.bd-switch-body {
     background-color: var(--brand-500) !important;
     border: 1px solid transparent;
 }
