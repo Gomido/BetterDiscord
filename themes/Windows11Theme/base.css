@@ -22,8 +22,10 @@
     --font-display: Segoe UI, sans-serif;
     --font-headline: Segoe UI, sans-serif;
 
-    --version: "Windows 11 theme v0.0.4 - 25/09/2024";
-	
+
+    --version: "Windows 11 theme v0.0.5 - 27/09/2024";
+
+
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
     --windark1: #202020;
     --windark2: #1c1c1c;
@@ -91,7 +93,7 @@
     --blue-button-hover-top: hsl(var(--H), calc(0.76*var(--S)), calc(0.96*var(--L)));
     --blue-button-hover-bottom: hsl(var(--H), calc(0.58*var(--S)), calc(0.83*var(--L)));
 
-/*     --wintransition: all 50ms; */
+    --wintransition: all 200ms;
 
     --winrad1: 3px;
     --winrad2: 4px;
@@ -300,10 +302,10 @@
     --scrollbar-auto-track: transparent;
     --scrollbar-auto-scrollbar-color-thumb: #8a8a8a;
     --scrollbar-auto-scrollbar-color-track: transparent;
-
 }
 
 /* Kod skina  */
+
 /* changelog, wersja  */
 
 .info_c5a741::before {
@@ -334,7 +336,6 @@
   color: var(--text-normal);
   text-transform: initial;
 }
-
 /* 1. Pasek na górze, przyciski zamykania */
 .wordmarkWindows_a934d8 {
     padding: 0;
@@ -561,7 +562,7 @@
     border-radius: 2px;
     margin-left: 1px;
     transform: none !important;
-    transition: var(--wintransition);
+    /* transition: var(--wintransition); */
 }
 
 /* .guilds_a4d4d9 .item_c4cd66[style*="height: 0"],
@@ -573,7 +574,6 @@
 .guilds_a4d4d9 .item_c4cd66[style*="height: 6"],
 .guilds_a4d4d9 .item_c4cd66[style*="height: 7"], */
 .guilds_a4d4d9 .item_c4cd66[style*="height: 8"]
-
 /* .guilds_a4d4d9 .item_c4cd66[style*="height: 9"],
 .guilds_a4d4d9 .item_c4cd66[style*="height: 10"],
 .guilds_a4d4d9 .item_c4cd66[style*="height: 11"],
@@ -585,8 +585,7 @@
 .guilds_a4d4d9 .item_c4cd66[style*="height: 17"],
 .guilds_a4d4d9 .item_c4cd66[style*="height: 18"],
 .guilds_a4d4d9 .item_c4cd66[style*="height: 19"], 
-.guilds_a4d4d9 .item_c4cd66[style*="height: 20"] */
-    {
+.guilds_a4d4d9 .item_c4cd66[style*="height: 20"]  */{
     background-color: var(--interactive-active);
     height: 4px !important;
 }
@@ -612,7 +611,7 @@
 #app-mount .guilds_a4d4d9 .item_c4cd66[style*="height: 39"],
 #app-mount .guilds_a4d4d9 .item_c4cd66[style*="height: 40"] {
     background-color: var(--brand-500) !important;
-    height: 20px !important;
+    height: 18px !important;
 }
 
 .wrapper_a2f8f7,
@@ -623,6 +622,21 @@
     font-weight: normal;
 }
 
+.popoverReactionHoverBar_e986d9 {
+    background-color: var(--background-secondary-alt);
+    box-shadow:none;
+    border-radius: 5px;
+}
+  
+.button_f7e168.selected_f7e168 {
+    border-radius: 5px;
+}
+
+  
+.lowerBadge_c5f96a .numberBadge_df8943 {
+  box-shadow: 0px 0px 0px 3px var(--background-tertiary);
+}
+
 .theme-dark .lowerBadge_c5f96a div,
 .theme-dark .upperBadge_c5f96a div {
     color: #FFF !important;
@@ -631,6 +645,18 @@
 .theme-light .lowerBadge_c5f96a div,
 .theme-light .upperBadge_c5f96a div {
     color: #000 !important;
+}
+
+
+
+/* codeblock  */
+.markup_f8f345 code {
+    background: var(--background-tertiary);
+    border: var(--windarkborder1)
+}
+
+.markup_f8f345 pre {
+    max-width:100%;
 }
 
 /* Always bottom server list buttons by Gibbu [edit] */
@@ -1163,15 +1189,18 @@
   display: none;
 } */
 
-/* usuwajka z menu prawego myszy */
+/* usuwajka z menu prawego myszy ppm */
 .item_d90b3d[id="message-tts"],
 .item_d90b3d[id="message-add-reaction-0"],
 .item_d90b3d[id="message-add-reaction-1"],
+.item_d90b3d[id="message-actions-add-reaction"],
 /*.item_d90b3d[id="message-reply"],  */
 /*.item_d90b3d[id="message-edit"], */
 .item_d90b3d[id="message-pin"],
 .item_d90b3d[id="message-thread"],
 .item_d90b3d[id="message-actions-tts"],
+.item_d90b3d[id="message-actions-thread"],
+.item_d90b3d[id="message-actions-forward"],
 .item_d90b3d[id="message-quote"],
 .item_d90b3d[id="message-copy-link"],
 .item_d90b3d[id="message-mark-unread"],
@@ -1790,6 +1819,11 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     color: var(--brand-500);
 }
 
+/* message logger, delete messages  */
+html #app-mount .wnqvatb-r23z36x {
+    border-left: 2px solid red;
+}
+
 /* Channel Ping */
 .sidebar_a4d4d9 .numberBadge__40d6f {
     background: var(--brand-500) !important;
@@ -1909,11 +1943,6 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 }
 
 
-
-/* pasek opcjj chat, reply, forward, pin ppm */
-.wrapper_f7e168 {
-    border: var(--windarkborder2)
-}
 
 /* wiekszy awatar  */
 .messagesWrapper_e2e187 .avatarDecoration_f9f2ca {
@@ -3675,8 +3704,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
     x: 2.4 !important;
 }
 
-#app-mount .bd-switch input:checked+.bd-switch-body,
-.bd-switch-body {
+#app-mount .bd-switch input:checked+.bd-switch-body {
     background-color: var(--brand-500) !important;
     border: 1px solid transparent;
 }
@@ -5281,6 +5309,7 @@ path[d="M11 5V3C16.515 3 21 7.486 21 13H19C19 8.589 15.411 5 11 5ZM17 13H15C15 1
 .buttons_d0696b .button_dd4f85:hover svg {
     background-color: var(--interactive-active) !important;
 } */
+
 
 /* yellow 80px */
 .emojiSpriteImage_bcf389[style*='background-image: url("/assets/ed4ec792263b61d01fd3.png")'] {
