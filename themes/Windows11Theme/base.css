@@ -23,7 +23,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.0.6 - 05/10/2024";
+    --version: "v0.0.7 - 06/10/2024";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -665,7 +665,7 @@
 .container_f66b8e{
     width: fit-content;
     background: var(--background-secondary);
-    padding: 5px 15px 5px 5px;
+    padding: 5px 15px 5px 3px;
     border-radius: 5px;
     border: var(--windarkborder2);
 }
@@ -1248,12 +1248,14 @@
 .item_d90b3d[id="friend-row-start-voice-call"],
 .wrapper-2vIMkT .button-3bklZh[aria-label="Create Thread"],
 .hoverBarButton_e986d9[aria-label="Forward"],
+.hoverBarButton_e986d9[aria-label="Przekaż dalej"],
 .hoverBarButton_e986d9[aria-label*="Click to"],
-.hoverBarButton_e986d9[aria-label*="Kliknij aby"],
+.hoverBarButton_e986d9[aria-label*="Kliknij, aby"],
 .popoverReactionHoverBar_e986d9 .separator_e986d9,
 .hoverBarButton_e986d9[aria-label="Copy Message ID"],
-.hoverBarButton_e986d9[aria-label="Copy Link"],
-.hoverBarButton_e986d9[aria-label="Copy Message ID"] {
+.hoverBarButton_e986d9[aria-label="Kopiuj ID wiadomości"],
+.hoverBarButton_e986d9[aria-label="Kopiuj link"],
+.hoverBarButton_e986d9[aria-label="Forward"] {
     display: none;
 }
 
@@ -1953,10 +1955,6 @@ html #app-mount .wnqvatb-r23z36x {
     border-radius: 5px;
 }
 
-.embedMedia_b0068a {
-    border: var(--windarkborder2);
-}
-
 .imageContent_cf58b5 .embedMedia_b0068a {
     border: none;
     left: -8px;
@@ -1976,7 +1974,6 @@ html #app-mount .wnqvatb-r23z36x {
 .container_b558d0 {
     grid-gap: 10px;
 }
-
 
 #app-mount .cozy_f9f2ca .contents_f9f2ca>.messageContent_f9f2ca:not(:empty) {
     margin-left: 0;
@@ -2003,7 +2000,7 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 .mentioned_d5deea.cozy_f9f2ca .contents_f9f2ca>.messageContent_f9f2ca:not(:empty) {
-    background: var(--mention-color)!important;
+    background: var(--mention-color) !important;
 }
 
 /* wiekszy awatar  */
@@ -2887,33 +2884,63 @@ html #app-mount .wnqvatb-r23z36x {
     border-radius: unset;
 }
 
-/* wzmianki  */
+/* wzmianki, reply  */
+.container_f66b8e .messageContent_f9f2ca::before, 
+.message_d5deea.replying_d5deea:before,
 .message_d5deea.mentioned_d5deea::before {
     /* background: var(--brand-500);
     height: calc(100% - 4px);
     left: 2px;
     top: 2px;
     border-radius: 2px; */
-    display: none;
+    display: none !important;
 }
 
-.message_d5deea.mentioned_d5deea .messageContent_f9f2ca::before{
+.message_d5deea.replying_d5deea .visualMediaItemContainer_cda674::before,
+.message_d5deea.replying_d5deea .inlineMediaEmbed_b0068a::before,
+.message_d5deea.replying_d5deea .messageContent_f9f2ca::before,
+.message_d5deea.mentioned_d5deea .messageContent_f9f2ca::before {
     content: " ";
     position: absolute;
     display:block;
     background: var(--brand-500);
     height: calc(100% - 10px);
-    left: 5px;
+    left: 3px;
     top: 5px;
     width: 2px !important;
     border-radius: 2px;
 }
 
+.message_d5deea.replying_d5deea .quote_f66b8e,
+.message_d5deea.replying_d5deea .visualMediaItemContainer_cda674::before,
+.message_d5deea.replying_d5deea .inlineMediaEmbed_b0068a::before,
+.message_d5deea.replying_d5deea .messageContent_f9f2ca::before {
+    background-color: hsl(235, 100%, 65%);
+}
+
+
+.replying_d5deea.cozy_f9f2ca .visualMediaItemContainer_cda674,
+.replying_d5deea.cozy_f9f2ca .embedMedia_b0068a,
+.replying_d5deea.cozy_f9f2ca .contents_f9f2ca>.messageContent_f9f2ca:not(:empty),
+.message_d5deea.replying_d5deea .container_f66b8e{
+    background-color: hsl(235, 100%, 65%, 0.1) !important;
+}
+
+.message_d5deea.replying_d5deea .visualMediaItemContainer_cda674::before,
+.message_d5deea.replying_d5deea .inlineMediaEmbed_b0068a::before{
+    left:4px;
+}
+
+
+/* pasek hsl(var(--brand-500-hsl) / 1)
+tło color-mix(in oklab, hsl(var(--brand-360-hsl) / 0.08) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%)) */
+.message_d5deea.replying_d5deea,
 .message_d5deea.mentioned_d5deea {
     background:transparent;
     /* background-color: var(--mention-color); */
 }
 
+.message_d5deea.replying_d5deea:hover,
 .message_d5deea.mentioned_d5deea:hover {
     background: var(--background-secondary) !important;
 }
