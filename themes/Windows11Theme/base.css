@@ -1,26 +1,4 @@
 /*--------------------------------------------------------------
-                           Kod skina
----------------------------------------------------------------*/
-/* @import url(https://rawgit.com/Gomido/BetterDiscord/master/themes/Windows11Theme/base.css); */
-
-/*--------------------------------------------------------------
-                           Ikonki windows 11
----------------------------------------------------------------*/
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/people.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/nature.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/food.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/activity.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/travel.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/objects.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/symbols.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/flags.css);
-/*--------------------------------------------------------------
-                           Czcionka Win 11
----------------------------------------------------------------*/
-/* Windows 11 font */
-@import url(https://github.com/Gomido/BetterDiscord/raw/refs/heads/master/themes/Windows11Theme/Assets/SegoeUIVariableStaticDisplay.ttf);
-
-/*--------------------------------------------------------------
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
@@ -45,7 +23,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.0 - 25/10/2024";
+    --version: "v0.1.1 - 28/10/2024";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -657,7 +635,7 @@
 }
 
 .popoverReactionHoverBar_e986d9 {
-    background-color: var(--background-tertiary);
+    background-color: var(--text-bg);
     box-shadow:none;
     border: var(--windarkborder1);
     border-radius: 2px ;
@@ -2062,7 +2040,10 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 #app-mount .replyBar_b11c5e {
-    border-radius: var(--winrad3);
+    border: var(--windarkborder2);
+    border-bottom: 0;
+    border-radius: 0px;
+    background-color: var(--text-bg);
 }
 
 .theme-dark .attachedBars_d0696b {
@@ -2218,7 +2199,7 @@ html #app-mount .wnqvatb-r23z36x {
 /* Reactions */
 .reaction_ec6b19 {
     border: var(--windarkborder1);
-    border-radius: 100px;
+    border-radius: var(--winrad2);
 }
 
 /* Embeds */
@@ -2337,13 +2318,15 @@ html #app-mount .wnqvatb-r23z36x {
     color: #000;
 }
 
-/* slowmode*/
+/* slowmode, typing*/
 .base_d7ebeb .cooldownWrapper_d7ebeb {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .base_d7ebeb {
-    top: -20px;
+    top: -26px;
+    border: var(--windarkborder2);
+    border-bottom: 0;
     margin-right: 0 !important;
     background-color: var(--text-bg);
 }
@@ -2402,10 +2385,9 @@ html #app-mount .wnqvatb-r23z36x {
 #app-mount .searchBar_e0840f .inner__999f6,
 #app-mount .inputDefault_f8bc55.input_f8bc55:not(.addFriendInputWrapper_de812f .inputDefault_f8bc55.input_f8bc55, .mainCard_a6d69a .input_f8bc55, .search-25t1e9 .input_f8bc55) {
     background-color: var(--text-bg);
-    border: var(--text-border);
+    border: var(--windarkborder2);
     border-bottom: var(--text-border-static);
-
-    border-radius: var(--winrad2);
+    border-radius: 0;
     -webkit-transition: var(--wintransition);
     transition: var(--wintransition);
 }
@@ -2413,16 +2395,17 @@ html #app-mount .wnqvatb-r23z36x {
 #app-mount .scrollableContainer_bdf0de:hover:not(:focus-within),
 #app-mount .searchBar_e0840f .inner__999f6:hover:not(:focus-within),
 #app-mount .inputDefault_f8bc55.input_f8bc55:hover:not(:focus-within, .addFriendInputWrapper_de812f .inputDefault_f8bc55.input_f8bc55, .mainCard_a6d69a .input_f8bc55, .search-25t1e9 .input_f8bc55)    {
-    background-color: var(--text-bg-hover);
-    border: var(--text-border-hover);
+    background-color: var(--text-bg);
+    border: var(--windarkborder2);
     border-bottom: var(--text-border-static);
+    border-bottom: 2px solid var(--brand-300);
 }
 
 #app-mount .scrollableContainer_bdf0de:focus-within,
 #app-mount .searchBar_e0840f .inner__999f6:focus-within,
 #app-mount .inputDefault_f8bc55.input_f8bc55:focus-within:not(.addFriendInputWrapper_de812f .inputDefault_f8bc55.input_f8bc55, .mainCard_a6d69a .input_f8bc55, .search-25t1e9 .input_f8bc55)    {
-    background-color: var(--text-bg-focus);
-    border: var(--text-border-focus);
+    background-color: var(--text-bg);
+    border: var(--windarkborder2);
     border-bottom: 2px solid var(--brand-500);
 }
 
@@ -3831,8 +3814,9 @@ tło color-mix(in oklab, hsl(var(--brand-360-hsl) / 0.08) 100%, hsl(var(--theme-
 }
 
 /* Toggle BD */
+.bd-switch input:checked+.bd-switch-body,
 #app-mount .bd-switch-body {
-    height: 20px;
+    /* height: 20px; */
     background-color: var(--brand-500);
 }
 
@@ -4486,6 +4470,7 @@ display:flex !important;}
     fill: transparent;
 }
 
+.iconContainer_d90b3d,
 .pencilIcon_e66732 path {
     display: none;
 }
