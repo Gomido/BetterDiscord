@@ -1,4 +1,24 @@
 /*--------------------------------------------------------------
+                           Ikonki windows 11
+---------------------------------------------------------------*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/people.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/nature.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/food.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/activity.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/travel.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/objects.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/symbols.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/flags.css);
+
+/* Ikonki w ustawieniach  */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+/*--------------------------------------------------------------
+                           Czcionka Win 11
+---------------------------------------------------------------*/
+/* Windows 11 font */
+@import url(https://github.com/Gomido/BetterDiscord/raw/refs/heads/master/themes/Windows11Theme/Assets/SegoeUIVariableStaticDisplay.ttf);
+
+/*--------------------------------------------------------------
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
@@ -23,7 +43,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.2 - 02/11/2024";
+    --version: "v0.1.0 - 25/10/2024";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -336,6 +356,15 @@
   color: var(--text-normal);
   text-transform: initial;
 } */
+
+
+/* zazaczony tekst  */
+.highlight,
+::selection {
+  color: #fff;
+  background: var(--brand-500);
+}
+
 /* 1. Pasek na górze, przyciski zamykania */
 .wordmarkWindows_a934d8 {
     padding: 0;
@@ -1255,7 +1284,17 @@
 .hoverBarButton_e986d9[aria-label="Copy Message ID"],
 .hoverBarButton_e986d9[aria-label="Kopiuj ID wiadomości"],
 .hoverBarButton_e986d9[aria-label="Kopiuj link"],
-.hoverBarButton_e986d9[aria-label="Forward"] {
+.hoverBarButton_e986d9[aria-label="Forward"],
+/* ikonki ppm   */
+.item_d90b3d[id="message-edit"] .iconContainer_d90b3d,
+.item_d90b3d[id="message-reply"] .iconContainer_d90b3d,
+.item_d90b3d[id="message-forward"] .iconContainer_d90b3d,
+.item_d90b3d[id="message-copy-text"] .iconContainer_d90b3d,
+.item_d90b3d[id="message-delete"] .iconContainer_d90b3d,
+.item_d90b3d[id*="message-devmode-copy-id"] .iconContainer_d90b3d,
+.item_d90b3d[id*="user-context-devmode-copy-id"] .iconContainer_d90b3d,
+.item_d90b3d[id*="channel-context-devmode-copy-id"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-context-devmode-copy-id"] .iconContainer_d90b3d {
     display: none;
 }
 
@@ -2263,6 +2302,7 @@ html #app-mount .wnqvatb-r23z36x {
     fill: var(--brand-500);
 }
 
+.mention_edf32f:active,
 .mention_edf32f,
 .unreadPill_c2654d {
     background-color: var(--brand-500);
@@ -4207,6 +4247,12 @@ tło color-mix(in oklab, hsl(var(--brand-360-hsl) / 0.08) 100%, hsl(var(--theme-
     fill: transparent;
 }
 
+
+/* ikony ustawienia  */
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0::after{
+    display: none;
+}
+
 /* 
 .link_d8bfb3 svg {
     background: var(--icons-color);
@@ -4470,7 +4516,6 @@ display:flex !important;}
     fill: transparent;
 }
 
-.iconContainer_d90b3d,
 .pencilIcon_e66732 path {
     display: none;
 }
