@@ -1,24 +1,4 @@
 /*--------------------------------------------------------------
-                           Ikonki windows 11
----------------------------------------------------------------*/
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/people.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/nature.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/food.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/activity.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/travel.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/objects.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/symbols.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Microsoft/flags.css);
-
-/* Ikonki w ustawieniach  */
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
-/*--------------------------------------------------------------
-                           Czcionka Win 11
----------------------------------------------------------------*/
-/* Windows 11 font */
-@import url(https://github.com/Gomido/BetterDiscord/raw/refs/heads/master/themes/Windows11Theme/Assets/SegoeUIVariableStaticDisplay.ttf);
-
-/*--------------------------------------------------------------
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
@@ -31,19 +11,18 @@
 
     /* Kolory skina akcenty, przyciski, znaczki powiadomień- MOŻNA ZMIENIĆ */
     /* HSL(Hue, Saturation, Lightness). */
-    --H: 210;    /* Wartość liczbowa [210 domyślne] */
-    --S: 100%;   /* Podać % [100% domyślne] */
-    --L: 50%;   /* Podać  % [50% domyślne] */
-    --mention-color: #6281DB1a;
-    /* mention color zostawić 1A na końcu - odpowiada to za przezroczystość. Pozostałe 6 znaków mozna zmienic  */
-
+    --H: 210;    /* Wartość liczbowa [227 domyślne] */
+    --S: 100%;   /* Podać % [58% domyślne] */
+    --L: 50%;   /* Podać  % [65% domyślne] */
+    --mention-color: hsl(227, 58%, 65%, 0.1); /* Też zmienić, kolor tła wzmianek Domyślne [227,58%,65%,01] */
+    
     /* Czcionka nowa z W11  */
     --font-primary: Segoe UI, sans-serif;
     --font-display: Segoe UI, sans-serif;
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.0 - 25/10/2024";
+    --version: "v0.1.3 (041024)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -256,6 +235,7 @@
     --status-positive-background: #393D1B;
     --status-positive-text: #fff;
     --status-warning-background: #433519;
+    --status-danger:#e23131;
     --status-danger-background: #442726;
     --status-danger-text: #fff;
 
@@ -269,7 +249,7 @@
 
     --background-modifier-hover: rgba(255, 255, 255, 0.0605);
     --background-modifier-active: rgba(255, 255, 255, 0.0419);
-    --background-modifier-selected: rgba(255, 255, 255, 0.0419);
+    --background-modifier-selected: #ffffff0b;
     --background-modifier-accent: rgba(255, 255, 255, 0.0605);
 
     --elevation-stroke: 1px solid rgba(0, 0, 0, 0.1);
@@ -655,12 +635,17 @@
     height: 18px !important;
 }
 
+
 .wrapper_a2f8f7,
 .numberBadge_df8943,
 #app-mount .lowerBadge_c5f96a div,
 #app-mount .upperBadge_c5f96a div {
     background-color: var(--brand-500) !important;
     font-weight: normal;
+}
+
+.textBadge_df8943{
+    background-color: var(--brand-500) !important;
 }
 
 .popoverReactionHoverBar_e986d9 {
@@ -1961,6 +1946,8 @@ html #app-mount .wnqvatb-r23z36x {
     color: #000 !important;
 }
 
+.wrapper_bf1b19{color: var(--brand-160);}
+
 /* Members */
 .members_cbd271 {
     width: 260px;
@@ -2452,8 +2439,9 @@ html #app-mount .wnqvatb-r23z36x {
 /* chat scroolbar fix */
 .scrollableContainer_bdf0de {
     padding-right: 10px;
-    overflow-y: hidden;
+    min-height: 45px;
 }
+
 
 .autocomplete_bcc24e {
     background: var(--text-bg-focus);
@@ -3856,8 +3844,12 @@ tło color-mix(in oklab, hsl(var(--brand-360-hsl) / 0.08) 100%, hsl(var(--theme-
 /* Toggle BD */
 .bd-switch input:checked+.bd-switch-body,
 #app-mount .bd-switch-body {
-    /* height: 20px; */
+    height: 20px;
     background-color: var(--brand-500);
+}
+
+.bd-switch input:checked+.bd-switch-body .bd-switch-slider{
+    top:-2px
 }
 
 #app-mount .bd-switch-body .bd-switch-slider {
