@@ -1,5 +1,5 @@
 /**
- * @name Discord 11 Fork
+ * @name Discord 11 Fork ONLINE
  * @description Based on Windows 11's UI (forked from zuzumi)
  * @author Lilki
  * @authorId 186609657928744962
@@ -17,7 +17,7 @@
                            Ustawienia
 ---------------------------------------------------------------*/
 :root {
-    --wallpaper-is: none;               /* aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
+    --wallpaper-is: none;               /* Aby dodać tło wpisz "url("http://link.com/img.jpg") [none to brak tapety]*/
     --blur-size: 24px;                  /* Rozmycie tapety [24px domyslne] */
     --opacity-thing: 0.6;               /* Przezroczystosc 0 do 1 [0.6 domyslne] */
     --server-size: 48px;                /* Rozmiar paska serwerów [48px domyslne] */
@@ -25,10 +25,9 @@
     --avatar-size: 45px;                /* Rozmiar awatarów na chacie */
 
     /* Kolory skina akcenty, przyciski, znaczki powiadomień- MOŻNA ZMIENIĆ */
-    /* HSL(Hue, Saturation, Lightness). */
-    --H: 235;    /* Wartość liczbowa [235 domyślne] */
-    --S: 100%;   /* Podać % [100% domyślne] */
-    --L: 70%;   /* Podać  % [70% domyślne] */
-    --mention-color: #6281DB1a;
-    /* mention color zostawić 1A na końcu - odpowiada to za przezroczystość. Pozostałe 6 znaków mozna zmienic  */
+    /* HSL(Hue, Saturation, Lightness). Domyślnie kolor discordowy fioletowy */
+    --H: 227;  /* Wartość liczbowa [227 domyślne] */
+    --S: 58%;  /* Podać % [58% domyślne] */
+    --L: 65%;  /* Podać  % [65% domyślne] */
+    --mention-color: hsl(227, 58%, 65%, 0.1); /* Też zmienić, kolor tła wzmianek Domyślne [227,58%,65%,01] */
 }
