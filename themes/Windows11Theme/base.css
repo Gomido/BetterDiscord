@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.4 (161124)";
+    --version: "v0.1.5 (171124)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -1258,7 +1258,7 @@
 .button_dd4f85[aria-label="Wyślij prezent"],
 .interactive_c91bad [href="/shop"],
 .interactive_c91bad [href="/store"],
-.channelAppLauncher_df39bd,
+/* .channelAppLauncher_df39bd, */
 .hoverButtonGroup_d0395d {
     display: none;
 }
@@ -1286,6 +1286,7 @@
 .item_d90b3d[id="message-add-reaction"],
 .item_d90b3d[id="message-actions-apps"],
 .item_d90b3d[id="message-apps"],
+.item_d90b3d[id="message-view-interaction-info"],
 .item_d90b3d[id="user-context-note"],
 .item_d90b3d[id="user-context-focus-video"],
 .item_d90b3d[id="textarea-context-languages"],
@@ -1319,6 +1320,19 @@
 .item_d90b3d[id*="user-context-devmode-copy-id"] .iconContainer_d90b3d,
 .item_d90b3d[id*="channel-context-devmode-copy-id"] .iconContainer_d90b3d,
 .item_d90b3d[id*="guild-context-devmode-copy-id"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-premium-subscribe"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-invite-people"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-settings"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-insights"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-create-channel"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-create-category"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-create-event"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-application-directory"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-notifications"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-privacy"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-server-lockdown"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-report-raid"] .iconContainer_d90b3d,
+.item_d90b3d[id*="guild-header-popout-change-nickname"] .iconContainer_d90b3d,
 .item_d90b3d[id*="message-actions-edit"] .iconContainer_d90b3d,
 .item_d90b3d[id*="message-actions-reply"] .iconContainer_d90b3d,
 .item_d90b3d[id*="message-actions-forward"] .iconContainer_d90b3d,
@@ -3049,6 +3063,38 @@ html #app-mount .wnqvatb-r23z36x {
     background-color: var(--brand-500);
 }
 
+
+/* app launcher  */
+.button_df39bd{
+    background-color: var(--text-bg);
+    border: var(--windarkborder2);
+    width: 48px;
+    height: 48px;
+}
+
+.contentWrapper_f7506e{
+    box-shadow: none;
+    border: var(--windarkborder1);
+}
+
+.searchBarContainer_c7c1c7{
+    background-color: var(--background-tertiary);
+}
+
+.scrollableContent_c7c1c7{
+    background-color: var(--background-primary);
+}
+
+.container_e5da8b{
+    background-color: var(--background-secondary-alt);
+}
+
+.contentContainer_a3d172{
+    background-color: var(--text-bg);
+    border: var(--windarkborder1);
+}
+
+
 /* wzmianki, reply  */
 .container_f66b8e .messageContent_f9f2ca::before, 
 .message_d5deea.replying_d5deea:before,
@@ -4231,6 +4277,14 @@ tło color-mix(in oklab, hsl(var(--brand-360-hsl) / 0.08) 100%, hsl(var(--theme-
     top: 5px !important;
     left: 5px !important;
 }
+
+
+/* Failed to load errorbar */
+.messagesErrorBar_cf58b5{
+    padding-bottom: 0;
+}
+
+
 
 /* Tooltips */
 .theme-dark .tooltipPrimary_b6c360,
