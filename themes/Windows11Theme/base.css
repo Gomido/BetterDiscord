@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.5 (171124)";
+    --version: "v0.1.6 (231124)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -1522,6 +1522,15 @@
     display: none;
 }
 
+.biteSize_c69a7b {
+    /* width: 250px !important;
+    left: -6px !important;
+    bottom: 5px; */
+    box-shadow: none;
+    background-color: var(--background-secondary-alt) !important;
+}
+
+
 .accountProfilePopoutWrapper_b2ca13 .body_ad5fac {
     padding: 8px;
     gap: 8px;
@@ -1551,15 +1560,14 @@
     border-bottom: 1px solid var(--profile-body-divider-color);
 }
 
-.accountProfilePopoutWrapper_b2ca13 {
-    left: 0px;
-    bottom: 0px;
-}
-
-.accountProfilePopoutWrapper_b2ca13 .userPopoutOuter_c69a7b.userProfileOuter_c69a7b {
-    width: 220px;
+.accountProfilePopoutWrapper_b2ca13 .outer_c69a7b  {
+    width: 250px;
     background: none;
-}
+    border: var(--windarkborder2);
+    left: 21px !important;
+    bottom: 5px;
+ }
+
 
 .accountProfilePopoutWrapper_b2ca13 .userPopoutInner_c69a7b {
     max-height: 100%;
@@ -1620,10 +1628,10 @@
     border-radius: var(--winrad3);
 }
 
-.animatorRight_f88ae3 {
+/* .animatorRight_f88ae3 {
     border-radius: 8px;
     border: var(--windarkborder1);
-}
+} */
 
 .theme-dark .menu_d90b3d:not(.accountProfilePopoutWrapper_b2ca13 .menu_ad5fac) {
     background: var(--noise-dark);
@@ -2445,11 +2453,12 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 .base_d7ebeb {
-    top: -26px;
+    top: -25px;
     border: var(--windarkborder2);
     border-bottom: 0;
     margin-right: 0 !important;
     background-color: var(--text-bg);
+    width: calc(100% - 90px)
 }
 
 #app-mount .newMessagesBar_cf58b5 {
@@ -2534,8 +2543,13 @@ html #app-mount .wnqvatb-r23z36x {
 .scrollableContainer_bdf0de {
     padding-right: 10px;
     min-height: 45px;
+    /* overflow-y: hidden !important; */
 }
 
+/* attach fix  */
+.scrollableContainer_bdf0de .channelAttachmentArea_e8c527 {
+    height: 230px;
+}
 
 .autocomplete_bcc24e {
     background: var(--text-bg-focus);
@@ -2564,7 +2578,6 @@ html #app-mount .wnqvatb-r23z36x {
     background-color: var(--text-bg);
     border: var(--text-border);
     border-bottom: var(--text-border-static);
-
     border-radius: var(--winrad2);
     -webkit-transition: var(--wintransition);
     transition: var(--wintransition);
