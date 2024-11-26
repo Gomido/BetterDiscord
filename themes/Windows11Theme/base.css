@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.6 (231124)";
+    --version: "v0.1.7 (261124)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -1258,7 +1258,7 @@
 .button_dd4f85[aria-label="Wyślij prezent"],
 .interactive_c91bad [href="/shop"],
 .interactive_c91bad [href="/store"],
-/* .channelAppLauncher_df39bd, */
+.channelAppLauncher_df39bd,
 .hoverButtonGroup_d0395d {
     display: none;
 }
@@ -1370,13 +1370,13 @@
 
 /* Discover */
 
-.footer_f8ec41{
+.footer_d71945{
     position: fixed;
     bottom: 2px;
     z-index: 5;
 }
 
-.gradient_f8ec41{
+.gradient_d71945{
     display: none;
 }
 
@@ -1799,7 +1799,7 @@
 }
 
 .overlay_b9fccc{
-    background-color: var(--background-secondary-alt);
+    background-color: var(--text-bg);
 }
 
 .descriptionClamp_abaf7d{
@@ -2346,18 +2346,20 @@ html #app-mount .wnqvatb-r23z36x {
 
 .embedFull_b0068a {
     border-left:0px;
+
 }
 
 .embedFull_b0068a::before {
     content: " ";
     position: absolute;
     display: block;
-    border: 1px solid;
-    border-color: inherit;
+    border: 2px solid;
+    border-color: transparent;
+    border-left-color: inherit;
     height: calc(100% - 14px);
     left: 4px;
     top: 6px;
-    width: 0px !important;
+    width: 0px;
 }
 
 /* Everyone warning */
@@ -2458,7 +2460,7 @@ html #app-mount .wnqvatb-r23z36x {
     border-bottom: 0;
     margin-right: 0 !important;
     background-color: var(--text-bg);
-    width: calc(100% - 90px)
+    /* width: calc(100% - 40px) */
 }
 
 #app-mount .newMessagesBar_cf58b5 {
@@ -2541,20 +2543,29 @@ html #app-mount .wnqvatb-r23z36x {
 
 /* chat scroolbar fix */
 .scrollableContainer_bdf0de {
-    padding-right: 10px;
     min-height: 45px;
-    /* overflow-y: hidden !important; */
 }
 
 /* attach fix  */
-.scrollableContainer_bdf0de .channelAttachmentArea_e8c527 {
-    height: 230px;
+.channelAttachmentArea_e8c527 {
+    padding: 10px;
+    margin: 0;
+}
+
+.inner_bdf0de {
+    padding-right: 15px;
+}
+
+.scrollableContainer_bdf0de::-webkit-scrollbar {
+    display: none;
 }
 
 .autocomplete_bcc24e {
-    background: var(--text-bg-focus);
-    border-radius: 4px;
-    margin-bottom: -8px;
+    background: var(--text-bg);
+    border: var(--windarkborder2);
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: none;
+    margin-bottom: -9px;
 }
 
 .peopleList_e0840f .content_eed6a8 div[aria-hidden="true"] {
