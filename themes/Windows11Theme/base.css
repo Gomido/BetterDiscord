@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.7 (261124)";
+    --version: "v0.1.8 (021224)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -760,7 +760,7 @@
 
 .tutorialContainer_c96c45 {
     position: fixed;
-    bottom: 68px;
+    bottom: 56px;
     z-index: 5;
     padding-top:6px;
 }
@@ -1258,7 +1258,7 @@
 .button_dd4f85[aria-label="Wyślij prezent"],
 .interactive_c91bad [href="/shop"],
 .interactive_c91bad [href="/store"],
-.channelAppLauncher_df39bd,
+/* .channelAppLauncher_df39bd, */
 .hoverButtonGroup_d0395d {
     display: none;
 }
@@ -1671,12 +1671,15 @@
     background-color: var(--background-secondary) !important;
     margin: 0;
     border-radius: 12px;
+    border: var(--windarkborder1);
     box-shadow: none;
 }
 
 .menu_d90b3d{
     border: var(--windarkborder1);
 }
+
+
 
 /* Code by rmkx [edited] */
 .menu_d90b3d:not(.accountProfilePopoutWrapper_b2ca13 .menu_d4e7c2)::before,
@@ -1918,6 +1921,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 .imageWrapper_d4597d {
     border-radius: 0;
 }
+
 
 /* Channels */
 .sidebar_a4d4d9 {
@@ -2206,7 +2210,7 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 .theme-dark .themed_fc4f04 {
-    background: var(--background-secondary)
+    background: var(--background-secondary) !important
 }
 
 /* Threads  */
@@ -2241,41 +2245,50 @@ html #app-mount .wnqvatb-r23z36x {
     background-color: var(--background-secondary);
 }
 
+
+/* channels and roles */
+.pageBody_c2efea,
+.container_f1fd9c {
+    background-color: var(--background-primary)!important;
+}
+
+.container_f1fd9c .prompt_c6b11b {
+    background-color: var(--background-secondary);
+}
+
+.container_f1fd9c .profileCard_c6b11b{
+    background-color: var(--background-secondary-alt);
+}
+
+.pageBody_c2efea .channelRow_f04d06{
+    background-color: var(--background-secondary);
+}
+
 /* quests  */
-.postEnrollmentBackground_c3427e {
+.postEnrollmentBackground_e23249 {
     background: var(--background-secondary-alt) !important;
-    margin-right: 0px;
     border: none;
-}
-
-.theme-dark .wrapper_c721cc {
-    margin-right: 6px;
-    margin-left: 4px;
-    border-radius: 8px !important;
-}
-
-.searchBar_f0963d {
-    bottom: 12px;
-}
-
-.contentCollapsed_c3427e,
-.contentWrapperAccepted_c721cc {
+    height: 70px;
     border-radius: 8px;
 }
 
-.contentWrapper_c721cc {
-    background-color: var(--background-secondary-alt) !important;
-    border: var(--windarkborder2);
-    background-image: none !important;
-    margin-bottom: 4px;
+.contentWrapper_c721cc{
+    background-color: transparent !important;
+    background-image: none !important; 
+    border-radius: 8px !important;
 }
 
-.container_ad4620 {
-    grid-template-columns: repeat(2, minmax(200px, 600px));
+
+
+.wrapper_c721cc {
+    background: var(--background-secondary-alt) !important;
+    margin: 0px 4px 2px 4px;
+    border:var(--windarkborder2);
+    border-radius: 8px;
 }
 
-.questsCard_c366aa{
-    border: var(--windarkborder2);
+.wrapperVisible_c721cc .contentWrapperExpanded_c721cc:after{
+    box-shadow: none;
 }
 
 /* clans  */
@@ -2460,8 +2473,10 @@ html #app-mount .wnqvatb-r23z36x {
     border-bottom: 0;
     margin-right: 0 !important;
     background-color: var(--text-bg);
-    /* width: calc(100% - 40px) */
+    width: calc(100% - 90px)
 }
+
+.formWithLoadedChatInput_a7d72e
 
 #app-mount .newMessagesBar_cf58b5 {
     border-radius: var(--winrad1);
@@ -3106,6 +3121,7 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 .scrollableContent_c7c1c7{
+    padding-top: 15px;
     background-color: var(--background-primary);
 }
 
@@ -3117,6 +3133,9 @@ html #app-mount .wnqvatb-r23z36x {
     background-color: var(--text-bg);
     border: var(--windarkborder1);
 }
+
+
+
 
 
 /* wzmianki, reply  */
