@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.8 (021224)";
+    --version: "v0.1.9 (131224)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -760,7 +760,7 @@
 
 .tutorialContainer_c96c45 {
     position: fixed;
-    bottom: 56px;
+    bottom: 62px;
     z-index: 5;
     padding-top:6px;
 }
@@ -1924,8 +1924,8 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 
 
 /* Channels */
-.sidebar_a4d4d9 {
-    width: 260px;
+html:not(.visual-refresh_a4d4d9) .sidebar_a4d4d9 {
+    width: 260px !important;
 }
 
 .channel_c91bad {
