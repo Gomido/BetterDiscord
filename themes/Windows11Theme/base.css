@@ -42,7 +42,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.1.9 (131224)";
+    --version: "v0.2.1 (231224)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -679,7 +679,11 @@
     border: var(--windarkborder1);
     border-radius: 2px ;
 }
-  
+
+.popoverReactionHoverBar_e986d9:hover{
+    border: var(--windarkborder1);
+}
+
 .hoverBarButton_e986d9 {
     border-radius: 2px;
 }
@@ -1258,7 +1262,7 @@
 .button_dd4f85[aria-label="Wyślij prezent"],
 .interactive_c91bad [href="/shop"],
 .interactive_c91bad [href="/store"],
-/* .channelAppLauncher_df39bd, */
+.channelAppLauncher_df39bd,
 .hoverButtonGroup_d0395d {
     display: none;
 }
@@ -1924,7 +1928,7 @@ div[class="container_fd6364 clickable_fd6364 hasBanner_fd6364 bannerVisible_fd63
 
 
 /* Channels */
-html:not(.visual-refresh_a4d4d9) .sidebar_a4d4d9 {
+html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
     width: 260px !important;
 }
 
@@ -2153,6 +2157,7 @@ html #app-mount .wnqvatb-r23z36x {
     height: var(--avatar-size) !important;
     width: var(--avatar-size) !important;
     left: 10px !important;
+    margin-top: 3px;
 }
 
 #app-mount .attachedBars_d0696b {
@@ -2419,8 +2424,9 @@ html #app-mount .wnqvatb-r23z36x {
 
 #app-mount .jumpToPresentBar_cf58b5 {
     padding-bottom: 0;
-    border-radius: var(--winrad1);
-    bottom: 4px;
+    border:var(--windarkborder2);
+    border-radius: 0;
+    bottom: -1px;
     opacity: 1;
     width: fit-content;
     transition: var(--wintransition);
@@ -2473,11 +2479,10 @@ html #app-mount .wnqvatb-r23z36x {
     border-bottom: 0;
     margin-right: 0 !important;
     background-color: var(--text-bg);
-    width: calc(100% - 90px)
+    /* width: calc(100% - 90px) */
 }
 
-.formWithLoadedChatInput_a7d72e
-
+.formWithLoadedChatInput_a7d72e,
 #app-mount .newMessagesBar_cf58b5 {
     border-radius: var(--winrad1);
     top: 4px;
@@ -2793,6 +2798,7 @@ html #app-mount .wnqvatb-r23z36x {
 .drawerSizingWrapper_af5dbb {
     height: 520px;
     bottom: 0px;
+    border: var(--windarkborder2)
 }
 
 .emoji.jumboable {
@@ -2804,6 +2810,7 @@ html #app-mount .wnqvatb-r23z36x {
 #app-mount .contentWrapper_af5dbb {
     background-color: var(--background-secondary-alt);
     box-shadow: var(--elevation-medium);
+    border-radius: 0;
 }
 
 #app-mount .emojiPicker_c6ee36 .wrapper_e06857,
