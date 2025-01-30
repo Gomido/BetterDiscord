@@ -565,6 +565,7 @@
     width: -webkit-fill-available;
 }
 
+.circleIconButton__5bc7e.selected__5bc7e,
 .theme-dark .wrapper__6e9f8:hover .childWrapper__6e9f8,
 .theme-dark .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8,
 .theme-dark .listItem__650eb [data-dnd-name]:hover,
@@ -573,8 +574,8 @@
 .theme-dark .listItemWrapper_dfb2f8.selected_dfb2f8 {
     background-color: hsla(0, 0%, 26%, 0.6) !important;
     border: 1px solid hsla(0, 0%, 27%, 0.6) !important;
-    border-top-color: hsla(0, 0%, 29%, 0.6) !important;
-    border-bottom-color: hsla(0, 0%, 27%, 0.6) !important;
+    /* border-top-color: hsla(0, 0%, 29%, 0.6) !important;
+    border-bottom-color: hsla(0, 0%, 27%, 0.6) !important; */
 }
 
 .theme-dark .wrapper__6e9f8.selected__6e9f8:hover .childWrapper__6e9f8,
@@ -807,7 +808,7 @@
 .circleIconButton__5bc7e {
     color: var(--interactive-normal);
     background-color: transparent !important;
-    transition: var(--wintransition);
+    /* transition: var(--wintransition); */
 }
 
 #app-mount .circleIconButton__5bc7e.selected__5bc7e {
@@ -1239,7 +1240,7 @@
     position: absolute;
     height: 100%;
     text-align: center;
-    width: 250px;
+    width: 260px;
     top: 10px;
     right: 0vw;
     color: white;
@@ -1363,7 +1364,6 @@
 .item_c1e9c4[id*="message-report"] .iconContainer_c1e9c4,
 .item_c1e9c4[id*="message-actions-devmode-copy-id"] .iconContainer_c1e9c4,
 .item_c1e9c4[id*="user-profile-overflow-menu-devmode-copy-id"] .iconContainer_c1e9c4,
-
 .item_c1e9c4[id*="audio-device-context-voice-settings"] .iconContainer_c1e9c4 {
     display: none;
 }
@@ -1387,8 +1387,12 @@
     padding-top: 14px;
 }
 
-
 /* slash commands  */
+.wrapper__4e6ce {
+    background-color: var(--background-secondary) !important;
+    border-radius: 0;
+}
+
 .stackedBars__74017 {
     border: var(--windarkborder2);
     border-bottom: none;
@@ -1400,6 +1404,7 @@
     position: fixed;
     bottom: 2px;
     z-index: 5;
+    background-color: transparent;
 }
 
 .gradient_f8ec41 {
@@ -1453,9 +1458,9 @@
     margin: 0px 4px 4px;
     padding: 3px 6px;
     border-radius: var(--winrad3);
-    height: 60px;
+    height: 90px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .container__37e49>div:has(button) {
@@ -1473,7 +1478,7 @@
 
 .panels_c48ade .avatarWrapper__37e49 {
     max-width: calc(100% - 4px);
-    min-width: 140px;
+    min-width: calc(100% - 4px);
     margin-right: 0;
     margin-left: 0;
     padding-left: 4px;
@@ -1538,7 +1543,7 @@
 }
 
 /* Normal Status Picker */
-.accountProfilePopoutWrapper__37e49 .userPopoutInner_c69a7b:before,
+/* .accountProfilePopoutWrapper__37e49 .userPopoutInner_c69a7b:before,
 .accountProfilePopoutWrapper__37e49 .wrapper_da5890.biteSize_da5890,
 .accountProfilePopoutWrapper__37e49 .header__5be3e,
 .accountProfilePopoutWrapper__37e49 .body_af7fb7 div:has(.descriptionClamp_f5f93a),
@@ -1546,6 +1551,10 @@
 .accountProfilePopoutWrapper__37e49 .tags__63ed3,
 .accountProfilePopoutWrapper__37e49 .profileEffects__01370 {
     display: none;
+} */
+
+.accountProfilePopoutWrapper__37e49 {
+    bottom: -8px;
 }
 
 .biteSize_c0bea0 {
@@ -1556,7 +1565,6 @@
     background-color: var(--background-secondary-alt) !important;
 }
 
-
 .accountProfilePopoutWrapper__37e49 .body_af7fb7 {
     padding: 8px;
     gap: 8px;
@@ -1564,6 +1572,10 @@
 
 .accountProfilePopoutWrapper__37e49 .username_af7fb7 {
     padding: 0px 8px;
+}
+
+.accountProfilePopoutWrapper__37e49 .descriptionClamp_f5f93a {
+    padding: 0 8px;
 }
 
 .accountProfilePopoutWrapper__37e49 .menus_af7fb7 {
@@ -1593,7 +1605,6 @@
     left: 21px !important;
     bottom: 5px;
 }
-
 
 .accountProfilePopoutWrapper__37e49 .userPopoutInner_c69a7b {
     max-height: 100%;
@@ -2325,12 +2336,6 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 /* clans  */
-.footer__214dc {
-    position: fixed;
-    bottom: 60px;
-    z-index: 2
-}
-
 .chipletContainerInner__4a25c {
     background-color: #252525;
     border: var(--windarkborder2);
@@ -2338,7 +2343,7 @@ html #app-mount .wnqvatb-r23z36x {
 
 /* Popout mention */
 #app-mount .autocomplete__13533 {
-    border-radius: var(--winrad3);
+    border-radius: var(--winrad1);
     backdrop-filter: blur(var(--winblur1));
 }
 
@@ -2352,7 +2357,7 @@ html #app-mount .wnqvatb-r23z36x {
 
 .theme-dark .autocomplete__13533 {
     background: var(--windark-box1);
-    border: var(--windarkborder4);
+    border: var(--windarkborder2);
 }
 
 .theme-light .autocomplete__13533 {
