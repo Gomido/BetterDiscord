@@ -1293,7 +1293,7 @@
 .item_c1e9c4[id="message-actions-add-reaction"],
 /*.item_c1e9c4[id="message-reply"],  */
 /*.item_c1e9c4[id="message-edit"], */
-.item_c1e9c4[id="message-pin"],
+/* .item_c1e9c4[id="message-pin"], */
 .item_c1e9c4[id="message-thread"],
 .item_c1e9c4[id="message-actions-tts"],
 .item_c1e9c4[id="message-actions-thread"],
@@ -1334,6 +1334,7 @@
 .item_c1e9c4[id="message-forward"] .iconContainer_c1e9c4,
 .item_c1e9c4[id="message-copy-text"] .iconContainer_c1e9c4,
 .item_c1e9c4[id="message-delete"] .iconContainer_c1e9c4,
+.item_c1e9c4[id="message-pin"] .iconContainer_c1e9c4,
 .item_c1e9c4[id*="message-devmode-copy-id"] .iconContainer_c1e9c4,
 .item_c1e9c4[id*="user-context-devmode-copy-id"] .iconContainer_c1e9c4,
 .item_c1e9c4[id*="channel-context-devmode-copy-id"] .iconContainer_c1e9c4,
@@ -1873,12 +1874,12 @@
 /* Bots Info */
 #app-mount .botTag__82f07 {
     background-color: var(--brand-500);
-    color: var(--status-warning-text);
+    color: var(--winlight2);
     border-radius: 100px;
 }
 
 #app-mount .botTag__82f07 svg path {
-    fill: var(--status-warning-text);
+    fill: var(--winlight2);
 }
 
 /* Server Banner */
