@@ -1461,7 +1461,12 @@
     border-radius: var(--winrad3);
     height: 90px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
+}
+
+/* temp  */
+.micButtonParent__37e49 .button__201d5{
+    width: 77px !important;
 }
 
 .container__37e49>div:has(button) {
@@ -2614,6 +2619,10 @@ html #app-mount .wnqvatb-r23z36x {
 
 .inner__74017 {
     padding-right: 15px;
+}
+
+.spoilerContainer__54ab5P{
+    background-color: transparent;
 }
 
 .scrollableContainer__74017::-webkit-scrollbar {
