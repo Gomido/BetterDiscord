@@ -52,7 +52,7 @@
     --font-headline: Segoe UI, sans-serif;
 
 
-    --version: "v0.2.4 (300125)";
+    --version: "v0.2.5 (220225)";
 
 
     /* Kolory skina stałe (tła, paski)  - NIE RUSZAĆ*/
@@ -866,7 +866,7 @@
 .tabBar__133bf .addFriend__133bf {
     height: 32px;
     width: 120px;
-    top: 0px;
+    top: 5px;
     transition: var(--wintransition);
 }
 
@@ -1452,17 +1452,27 @@
 
 /* User Bar */
 .panels_c48ade {
-    background-color: var(--background-secondary);
+    background-color: transparent;
 }
 
 .container__37e49 {
     margin: 0px 4px 4px;
     padding: 3px 6px;
     border-radius: var(--winrad3);
+    background-color: var(--background-secondary-alt);
     height: 90px;
     display: flex;
     flex-wrap: wrap !important;
 }
+
+.theme-dark .content__37e49 {
+    display: block;
+    height: 80px;
+    padding: 0;
+    background-color: transparent;
+    margin-top:5px;
+}
+
 
 /* temp  */
 .micButtonParent__37e49 .button__201d5{
@@ -1488,6 +1498,7 @@
     margin-right: 0;
     margin-left: 0;
     padding-left: 4px;
+    margin-bottom: 6px;
 }
 
 .panels_c48ade .hoverRoll__0263c:hover {
@@ -2209,10 +2220,10 @@ html #app-mount .wnqvatb-r23z36x {
 }
 
 #app-mount .stackedBars__74017 {
-    border-radius: var(--winrad3);
+    border-radius: 2px 0 2px 0;
     padding: 0;
     background: none;
-    margin-bottom: 4px;
+    margin-bottom: -1px;
 }
 
 #app-mount .clipContainer__841c8 {
@@ -2222,8 +2233,7 @@ html #app-mount .wnqvatb-r23z36x {
 
 #app-mount .replyBar__841c8 {
     /* border: var(--windarkborder2); */
-    border-bottom: 0;
-    border-radius: 0px;
+    /* border-bottom: 0; */
     background-color: var(--text-bg);
 }
 
