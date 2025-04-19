@@ -1,1 +1,113 @@
+/**
+ * @name FlatCord 2025
+ * @description Update starego skina
+ * @author Lilki
+ * @authorId 186609657928744962
+ * @version 1.0
+ * @website https://github.com/Gomido
+ * @source https://rawgit.com/Gomido/BetterDiscord/master/themes/FlatCord/base.css
+*/
 
+/*--------------------------------------------------------------
+                           Kod skina
+---------------------------------------------------------------*/
+@import url(https://rawgit.com/Gomido/BetterDiscord/master/themes/FlatCord/base.css);
+
+/*--------------------------------------------------------------
+                           Ustawienia
+---------------------------------------------------------------*/
+
+:root {
+  /* kształt awatarów - 0px kwadratowe, 20px okragle*/
+  --avatars: 0px;
+  /*kolor akcentu/niektore elementy skina, zaznaczenie*/
+  --accentcolor: #eca60f;
+  /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
+  --accentcolor2: #eb7f04;
+  /*drugi kolor akcentu*/
+  --accentcolor3: #FFFFFF;
+  /* W RGB, kolor tła oznaczenia*/
+  --mentionbackground: 0, 126, 255;
+  /*kolor paska górnego z napisem discord*/
+  --titlebar: #141414;
+  /*kolor chatu pod wiadomosciami*/
+  --chatbackground: #202020;
+  /*kolor listy kanalow, uzytkownikow z prawej*/
+  --channellistcolor: #242424;
+  /*kolor paska z serwerami*/
+  --guildlistcolor: #282828;
+  /*kolor paska zadań (nazwa serwera, przypięte, szukanie)*/
+  --headercolor: #080808;
+  /* kolor wyskakujacych okienek i pol tekstowych  */
+  --input-color: #181818;
+  /* kolor przycisków  */
+  --button-color: #343434;
+  /* kolor ramek  */
+  --border-color: #393a3f;
+  /*grubośc ramki nowych wiadomości - kółka*/
+  --notification-width: 2px;
+  /*wielkość ramki wokół okna aplikacji - 0 wyłącza*/
+  --spacing-width: 2px;
+  /* wielkość ramki statusu, grubość */
+  --rs-width: 2px;
+  /* odstęp między awatarem a ramką statusu (chat, lista osób) */
+  --rs-spacing: 2px;
+  /* 17b641 kolor  statusu */
+  --text-link: var(--accentcolor);
+  /* ilosc zakladek znajomi */
+  --dm-columns: 3;
+  --online: #28A745;
+  --idle: #faa61a;
+  --dnd: #DD2C2C;
+  --offline: #636b75;
+  --invisible: #747f8d;
+  --streaming: #643da7;
+  /*wielkość cieni pod oknami*/
+  --shadow: rgba(0, 0, 0, .3);
+  --version: "v0.0.1 (050425)";
+
+  /*BIALE*/
+  --white0: rgba(255, 255, 255, 0);
+  --white1: rgba(255, 255, 255, .1);
+  --white2: rgba(255, 255, 255, .2);
+  --white3: rgba(255, 255, 255, .3);
+  --white4: rgba(255, 255, 255, .4);
+  --white5: rgba(255, 255, 255, .5);
+  --white6: rgba(255, 255, 255, .6);
+  --white7: rgba(255, 255, 255, .7);
+  --white8: rgba(255, 255, 255, .8);
+  --white9: rgba(255, 255, 255, .9);
+  --white10: rgba(255, 255, 255, 1);
+
+  /*BLACK*/
+  --black0: rgba(0, 0, 0, 0);
+  --black1: rgba(0, 0, 0, .1);
+  --black2: rgba(0, 0, 0, .2);
+  --black3: rgba(0, 0, 0, .3);
+  --black4: rgba(0, 0, 0, .4);
+  --black5: rgba(0, 0, 0, .5);
+  --black6: rgba(0, 0, 0, .6);
+  --black7: rgba(0, 0, 0, .7);
+  --black8: rgba(0, 0, 0, .8);
+  --black9: rgba(0, 0, 0, .9);
+  --black10: rgba(0, 0, 0, 1);
+
+  /* dymki chatu */
+  --chat-bubble: 1;
+
+  --chat-bubble-background-color: #282828 !important;
+  --chat-bubble-border-color: #383838 !important;
+  --chat-bubble-code-background-color: var(--titlebar) !important;
+
+  --chat-bubble-max-width: 90%;
+  --chat-bubble-border-radius: 8px;
+
+  --chat-bubble-box-shadow-h-offset: 0;
+  --chat-bubble-box-shadow-v-offset: 4px;
+  --chat-bubble-box-shadow-blur: 4px;
+
+  --chat-bubble-box-shadow-color-h: 0;
+  --chat-bubble-box-shadow-color-s: 0%;
+  --chat-bubble-box-shadow-color-l: 0%;
+  --chat-bubble-box-shadow-color-a: 0.16;
+}
