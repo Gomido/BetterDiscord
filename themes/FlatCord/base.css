@@ -14,9 +14,9 @@
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 50px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
-  --accentcolor: #eca60f;
+  --accentcolor: #0f55ec;
   /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
-  --accentcolor2: #eb7f04;
+  --accentcolor2: #04d0eb;
   /*drugi kolor akcentu*/
   --accentcolor3: #FFFFFF;
   /* W RGB, kolor tła oznaczenia*/
@@ -267,6 +267,7 @@
 .searchBar__35e86 .lookFilled__201d5.colorPrimary__201d5 {
   background: transparent;
   color: transparent;
+  border: none;
 }
 
 .privateChannels__35e86 .searchBar__35e86 .button__201d5 .contents__201d5:before {
@@ -431,10 +432,10 @@
 }
 
 /* 4.a.1 Sticky Home Icon */
-/* .childWrapper_a6ce15,
+.childWrapper_a6ce15,
 .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 {
   background-color: transparent;
-} */
+}
 
 /* #app-mount .guilds_c48ade .scroller_ef3116 {
   contain: initial;
@@ -487,11 +488,11 @@
   height: 100% !important;
   width: 100% !important;
 } */
-/* 
+
 .tutorialContainer__1f388 .childWrapperNoHoverBg__6e9f8,
 .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 {
   background-color: transparent !important;
-} */
+}
 /* 
 .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg {
   -webkit-mask-position: center;
@@ -792,10 +793,18 @@
 
 /* Text Area */
 .scrollableContainer__74017,
-.attachWrapper__0923f,
 .textAreaSlate__74017,
 .slateTextArea_ec4baf {
   min-height: 56px !important;
+}
+
+.buttons__74017,
+.attachButton__0923f{
+  height: 56px !important;
+}
+
+.visual-refresh .slateTextArea_ec4baf{
+  padding: 18px 0 0 0;
 }
 
 .channelTextArea_f75fb0 {
@@ -816,6 +825,10 @@
 .scrollableContainer__74017 {
   border-radius: 8px;
   border: 1px solid var(--border-color);
+}
+
+.scroller__36d07{
+  padding-bottom: 15px;
 }
 
 /* delete message  */
@@ -841,38 +854,44 @@
 
 /* 8.m. Typing Bar */
 .chat_f75fb0 form .typing_b88801 {
-  background-color: var(--headercolor) !important;
-  bottom: 100%;
+  background-color: var(--titlebar) !important;
+  top: -26px;
   padding-left: 10px;
-  animation: opacity 300ms ease;
-  -ms-transform-origin: bottom left;
-  transform-origin: bottom left;
-  -ms-transform: scale(1);
-  transform: scale(1);
-  width: auto;
+  /* animation: opacity 300ms ease; */
+  /* -ms-transform-origin: bottom left; */
+  /* transform-origin: bottom left; */
+  /* -ms-transform: scale(1); */
+  /* transform: scale(1); */
+  /* width: auto; */
   padding-right: 20px;
-  padding-top: 0px;
-  border-radius: 0px;
-  margin-left: 15px;
-  box-shadow: 0 -3px 20px rgba(0, 0, 0, .1);
-  opacity: 1;
-  transition: all 200ms ease;
-  text-overflow: ellipsis;
+  /* padding-top: 0px; */
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  /* margin-left: 15px; */
+  /* box-shadow: 0 -3px 20px rgba(0, 0, 0, .1); */
+  /* opacity: 1; */
+  /* transition: all 200ms ease; */
+  /* text-overflow: ellipsis; */
 }
-
+/* 
 .activityInviteEducationArrow_b88801 {
   transform: scaleY(-1);
-}
+} */
 
-.base_b88801 {
+.visual-refresh .base_b88801 {
   height: 25px;
-  left: auto;
+  left: -6px;
   right: auto;
 }
 
-.typing_b88801 .text_b88801 {
+.base_b88801 .text_b88801 {
   line-height: 26px;
   text-overflow: ellipsis;
+  font-size: 14px
+}
+
+.cooldownText_b21699{
+  margin-left: 10px;
 }
 
 /* invite/slash command/info bar */
