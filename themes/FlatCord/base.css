@@ -1085,6 +1085,20 @@
 }
 
 /* 8.b. Messages */
+/* Edited pencil  */
+.c24icog-isz4wvi .timestampInline_c19a55,
+.edited_c19a55 {
+  font-size: 0;
+  width: 13px !important;
+  height: 13px !important;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGMuMzktLjM5LjM5LTEuMDIgMC0xLjQxbC0yLjM0LTIuMzRjLS4zOS0uMzktMS4wMi0uMzktMS40MSAwbC0xLjgzIDEuODMgMy43NSAzLjc1IDEuODMtMS44M3oiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+  background-size: 100%;
+  opacity: .5;
+  line-height: 23px;
+  margin-left: 5px;
+}
+
 /* 8.c. Blocked Messages */
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
@@ -1119,18 +1133,38 @@
 
 /* 8.g. Code Blocks */
 /* 8.h. New Messages Bar and Loading Symbols */
-.visual-refresh .barBase__0f481 {
+.newMessagesBar__0f481 {
   border-radius: 8px !important;
   top: 2px;
   background-color: var(--accentcolor);
 }
 
+/* Jump to present  */
+.visual-refresh .bottomBar__0f481 {
+  background-color: var(--accentcolor);
+}
+
+.visual-refresh .bottomBar__0f481 :where(.visual-refresh) .lookFilled__201d5.colorBrand__201d5 {
+  background-color: var(--accentcolor);
+  border: none;
+}
+
+.visual-refresh .bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5:hover {
+  background-color: transparent;
+  border: none;
+}
+
 /* 8.i. DM Chat */
 /* 8.j. Bot Message */
 /* 8.k. Embeds */
+.visual-refresh .embedFull__623de{
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
 /* 8.l. Text Area */
 .scrollableContainer__74017,
-.textAreaSlate__74017,
+.slateTextArea_ec4baf,
 .slateTextArea_ec4baf {
   min-height: 56px !important;
 }
@@ -1166,6 +1200,32 @@
 
 .scroller__36d07 {
   padding-bottom: 15px;
+}
+
+/* color bar in textarea */
+.editor__1b31f.slateTextArea_ec4baf::after,
+.editor__1b31f.slateTextArea_ec4baf::before {
+  content: '';
+  bottom: 10px !important;
+  height: 2px;
+  width: 20px;
+  width: calc(100% + 10px);
+  position: absolute;
+  top:unset !important
+}
+
+.slateTextArea_ec4baf::after {
+  transition: 150ms ease;
+  background: rgba(255, 255, 255, .1);
+}
+
+.slateTextArea_ec4baf:focus::before {
+  border-image-slice: 1;
+  border-bottom: 2px solid transparent;
+  border-image-source: linear-gradient(90deg, var(--accentcolor) 0%, var(--accentcolor2) 50%);
+  /* box-shadow: 0 0 2px var(--accentcolor); */
+  animation: textarea 250ms ease;
+  opacity: 1;
 }
 
 /* attachments bar*/
