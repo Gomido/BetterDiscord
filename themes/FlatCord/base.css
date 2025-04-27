@@ -106,6 +106,194 @@
   --chat-bubble-box-shadow-color-a: 0.16;
 }
 
+/* Rozpiska elementów
+  =================== 
+ 1. Title Bar
+  1.a. Main Title Bar
+  1.b. Wordmark  
+  1.c. Windows Buttons 
+  1.d. Mac Buttons NIE MA
+  1.e. Erase & Change SVGs NIE MA
+
+ 2. Chat Header
+ 2.a Main Headers
+ 2.b Fake Header, Friendlist
+ 2.c. Searchbars
+    2.c.1. Search options
+    2.c.2. Search Result
+    2.c.3. Floating friend search bar
+    2.c.4. Update info, red bar top
+
+ 3. User & Server Settings
+  3.a. General Sidebar
+  3.b. General Content Area
+  3.c. Cards and Items
+  3.d. Buttons, Switches, and Bars
+  3.e. Overlay Notifications
+  3.f. Nitro and Hypesquad Section
+  3.g. Server Roles
+
+ 4. Guilds Wrapper
+  4.a. Mains Guilds Wrapper
+    4.a.1. Sticky Home Icon
+    4.a.2. Drag Inner
+    4.a.3. Folders
+    4.a.4. Guild pills
+    4.a.5 Server Acronym Icon
+  4.b. Guilds
+  4.c. Guilds Add
+  4.d. Badges
+
+ 5. Channels
+  5.a. Main Channels Area
+  5.b. Hide show all voice button
+  5.c. Remove header radius
+  5.d. Channels 
+    5.d.1. Voice channels 
+    5.d.2. Speakinhg gradient bar 
+    5.d.3. Connected label
+    5.d.4. Show profile label
+    5.d.5. Fake black bottom bar
+  5.e. Unread Indicator
+  5.f. Categories
+  5.g. DM List
+  5.h. Unread Messages Popout inbox
+
+ 6. Account Area
+  6.a. Main Container
+  6.b. Buttons
+  6.c. Light Theme Recolor NIE MA
+  6.d. Listening Along
+
+ 7. Members List
+  7.a. Main Member List
+
+ 8. Chat
+  8.a. Main Chat Area
+  8.b. Messages
+  8.c. Blocked Messages
+  8.d. Spoiler Messages
+  8.e. Chat Dividers
+  8.f. Mentions
+  8.g. Code Blocks
+  8.h. New Messages Bar and Loading Symbols
+  8.i. DM Chat
+  8.j. Bot Message
+  8.k. Embeds
+  8.l. Text Area
+  8.m. Typing Bar
+  8.n. Notification Bar
+  8.o. Search Results
+  8.p. Video Calling
+  8.q. Streaming
+
+ 9. Friends List
+  9.a. Main Friends List
+  9.b. Action Buttons
+  9.c. Active Now 
+  9.d. Left friend bar
+  9.e. Fake bar on top
+  9.f Small buttons stage/friends etc.
+
+10. Extra Tabs
+  10.a. Stage
+  10.b. Games Tab/ Game Library
+  10.c. Nitro Tab
+
+11. Avatars
+  11.a. Remove Mask
+  11.b. Status
+
+12. Shadows
+
+13. Roundness
+14. Borders
+15. Scrollbars
+  15.1. Ohter
+  15.1.a. General Buttons
+  15.1.b. Sliders
+  15.1.c  Snippets
+  15.1.d. No Connection loading screens
+
+16. Popouts
+  16.a. Pinned Messages
+  16.b. Emoji Picker and Reactions
+  16.c. Autocomplete
+  16.d. User Popout
+  16.e. Add Role User Popout
+  16.f. Search Popout
+  16.g. Server Settings
+  16.h. Group DM Invite Popout
+  16.i. Tooltips
+  16.j. @Everyone Popout
+  16.k. Attach Popout
+  16.l. RTC Connection Popout
+  16.m. More Users Popout
+  16.n. Overflow Roles Popout
+  16.o. Dropdown Menu Popout
+  16.p. DM Call Region Select Popout
+
+17. Menus
+  17.a. Context Menus
+  17.b. Status Picker
+  17.c. Message Menu
+  17.d. Color Picker
+
+18. Modals
+  18.a. Help Modal
+  18.b. User Profile Modal
+  18.c. Instant Invite Modal
+  18.d. Join or Create New Guild
+  18.e. Upload Modal
+  18.f. Game Preview Modal
+  18.g. Quick Switcher
+  18.h. Screenshare Modal
+  18.i. Phone Verification Modal
+  18.j. Smartphone Modal
+  18.k. Drag and Drop Modal
+  18.l. Generic Modal
+  18.m. Gift Nitro Modal & Nitro Boost
+  18.n. Server Templates
+  18.p. Changelog & Version Panel
+
+19. Login Page
+
+20. Keyframes
+
+21. Misc
+  21.a. Plugin Optimization
+    21.a.1. BetterFormatting
+    21.a.2. Permission Viewer
+    21.a.3. Character Counter
+    21.a.4. Reply System
+    21.a.5. Server Folders
+    21.a.6. Share Button
+    21.a.7. Theme and Plugin Repo
+    21.a.8. Personal Pins
+    21.a.9. Detailed Tooltip
+    21.a.10 Ghost Ping
+    21.a.11 Display Servers to Channels
+    21.a.12 Permissions Viewer
+    21.a.13. Staff Tag  
+    21.a.14. Pin DMs  
+    21.a.15. Server Counter 
+    21.a.16. Read All Button 
+    21.a.17. Badges Everywhere
+    21.a.18. Message Logger V2
+    21.a.19. Status Everywhere
+    21.a.20. Guild and Friend Removal Alerts
+    21.a.21. Hide chat buttons 🠗
+  
+  21.b. Addon Optimization
+    21.b.1. Custom Popouts
+    21.b.2. Radial Status
+    21.b.3. Chat Bubbles
+
+22. Custom CSS
+
+23. @Media Edits */
+
+/* ============= KOD SKINA ============== */
 /* 1. Title Bar */
 /* 1.a. Main Title Bar */
 .bar_c38106 {
@@ -113,7 +301,7 @@
   /* border: var(--spacing-width) solid var(--accentcolor); */
 }
 
-/* 1.b. Wordmark  */
+/* 1.b. Wordmark   */
 .title_c38106:before {
   font-family: 'Discord';
   content: 'Flat';
@@ -147,7 +335,7 @@
   background-color: transparent;
 }
 
-/* 1.c. Windows Buttons */
+/* 1.c. Windows Buttons  */
 .winButton_c38106 {
   -webkit-app-region: no-drag;
   cursor: pointer;
@@ -171,8 +359,11 @@
   display: none;
 }
 
+/* 1.d. Mac Buttons NIE MA */
+/* 1.e. Erase & Change SVGs NIE MA */
+
 /* 2. Chat Header */
-/* 2a. Main Headers */
+/* 2.a Main Headers */
 .theme-dark .themed__9293f {
   background-color: var(--headercolor);
   border-image-slice: 1;
@@ -207,6 +398,15 @@
   width: 2px;
 }
 
+/* Boost, pulbic badge  */
+.flowerStar__3e3b0 path {
+  fill: var(--accentcolor);
+}
+
+.childContainer__3e3b0 path {
+  fill: var(--accentcolor3);
+}
+
 /* 2.b Fake Header, Friendlist */
 .privateChannels__35e86:before {
   border-radius: 0;
@@ -220,45 +420,37 @@
   border-bottom: 2px solid var(--accentcolor);
 }
 
-/* Boost, pulbic badge  */
-.flowerStar__3e3b0 path {
-  fill: var(--accentcolor);
-}
-
-.childContainer__3e3b0 path {
-  fill: var(--accentcolor3);
-}
-
-/* 2.b. Search Bars */
-/* 2.a.1. Search options */
+/* 2.c. Searchbars */
+/* 2.c.1. Search options */
 .visual-refresh .searchBar__97492 {
   background-color: var(--input-color);
   border-radius: 0;
 }
 
-/* 2.a.2. Search Result */
-.theme-dark .container__55c99 {
-  background-color: var(--input-color);
+/* Selected Filters */
+.visual-refresh .searchAnswer_bd8186,
+.visual-refresh .searchFilter_bd8186 {
   border-radius: 0;
+  box-shadow: none !important;
+  background-color: var(--accentcolor);
+}
+
+/* 2.c.2. Search Result */
+.visual-refresh .searchResultsWrap_a9e706 {
+  background-color: var(--input-color);
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
   border-right: 2px solid var(--accentcolor2);
-  margin-top: -1px;
+  top: -2px;
+  left: -1px;
 }
 
-.option__56fec {
+.visual-refresh .searchResult__02a39 {
   border-radius: 0;
-  margin: 0;
+  background-color: var(--channellistcolor);
 }
 
-/* Selected Filters */
-.visual-refresh .option__56fec {
-  border-radius: 0;
-  box-shadow: none !important;
-}
-
-
-/* 2.a.3. Floating friend search bar */
+/* 2.c.3. Floating friend search bar */
 .privateChannels__35e86 .searchBar__35e86 {
   position: absolute;
   bottom: 80px;
@@ -315,38 +507,7 @@
   background: var(--headercolor);
 }
 
-/* 2.a.4. Quicik switcher (click searchbar) */
-.quickswitcher_ac6cb0 {
-  background-color: var(--guildlistcolor) !important;
-  border-radius: 0;
-  border: 1px solid #383838
-}
-
-.input_ac6cb0 {
-  border-radius: 0 !important;
-  background-color: var(--input-color);
-  box-shadow: none;
-}
-
-.scroller_ac6cb0 {
-  background-color: transparent !important;
-  width: 528px;
-}
-
-.result__71961 {
-  border-radius: 0;
-}
-
-.result__71961[aria-selected=true] {
-  background-color: var(--titlebar);
-}
-
-.autocompleteQuerySymbol_ac6cb0 {
-  background-color: var(--headercolor);
-  border-radius: 0;
-}
-
-/* 2.a.5. Update info, red bar top */
+/* 2.c.4. Update info, red bar top*/
 /* #app-mount::before {
   content: 'Test test test 2342342 cipka ruchanie';
   background: rgb(215, 58, 73);
@@ -390,50 +551,17 @@
   fill: var(--accentcolor);
 } */
 
+/* 3. User & Server Settings */
+/* 3.a. General Sidebar */
+/* 3.b. General Content Area */
+/* 3.c. Cards and Items */
+/* 3.d. Buttons, Switches, and Bars */
+/* 3.e. Overlay Notifications */
+/* 3.f. Nitro and Hypesquad Section */
+/* 3.g. Server Roles */
 
-/*changelog options*/
-.contentColumn__23e6b::before {
-  content: "FlatCord v0.0.1 - 12/04/2025 - Changelog\a\a • Skin znowu działa, wersja robocza\a\a Custom CSS - http://bit.ly/kodSkin" !important;
-  display: block;
-  position: sticky;
-  border: 1px solid #43b581 !important;
-  background: rgba(67, 181, 129, .25);
-  background-image: url(https://i.imgur.com/SUMDUBL.png);
-  background-size: 80px;
-  background-position: 20px 50%;
-  background-repeat: no-repeat;
-  padding: 20px 120px;
-  white-space: pre;
-  margin-bottom: 20px;
-  border-radius: 0px;
-  font-weight: 500;
-  margin-top: 5px;
-  color: var(--accentcolor3);
-  text-transform: initial;
-}
-
-.info__2debe::before {
-  content: var(--version);
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  color: var(--accentcolor3);
-}
-
-/* Buttons, Switches, and Bars */
-
-/* Settings, mute, defean */
-.visual-refresh button.button__67645 {
-  border-radius: 50%;
-}
-
-.button__67645.enabled__67645:hover {
-  border-radius: 50%;
-  background-color: var(--white1);
-}
-
-/* Guild wrapper  */
-/*   4.a. Mains Guilds Wrapper */
+/* 4. Guilds Wrapper */
+/* 4.a. Mains Guilds Wrapper */
 .guilds_c48ade {
   background-color: var(--guildlistcolor) !important;
   margin-bottom: 0 !important;
@@ -441,23 +569,23 @@
   /* border-right: 1px solid var(--app-border-frame); */
 }
 
-/* 4.a.1 Sticky Home Icon */
+/* 4.a.1. Sticky Home Icon */
 .childWrapper_a6ce15,
 .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 {
   background-color: transparent;
 }
 
 /* #app-mount .guilds_c48ade .scroller_ef3116 {
-  contain: initial;
-} */
+    contain: initial;
+  } */
 
 #app-mount .guilds_c48ade .scroller_ef3116 .tutorialContainer__1f388+div {
   margin-top: 55px;
 }
 
 /* #app-mount .guilds_c48ade .scroller_ef3116 .tutorialContainer__1f388+div[style="opacity: 1; height: 56px; transform: scale(1);"] {
-  height: 60px !important;
-} */
+    height: 60px !important;
+  } */
 
 .tutorialContainer__1f388>.listItem__650eb {
   background-color: var(--headercolor);
@@ -465,12 +593,12 @@
 }
 
 /* .tutorialContainer__1f388 .listItem__650eb .wrapper-28eC3z {
-  height: 46px;
-} */
+    height: 46px;
+  } */
 
 /* .platform-win .scroller_ef3116 {
-  padding-top: 0;
-} */
+    padding-top: 0;
+  } */
 
 .tutorialContainer__1f388 {
   border-top: 1px solid var(--border-color);
@@ -480,8 +608,8 @@
 }
 
 /* .tutorialContainer__1f388 .pill__1f388 {
-  display: none;
-} */
+    display: none;
+  } */
 
 .tutorialContainer__1f388>.listItem__650eb {
   border-image-slice: 1;
@@ -490,14 +618,14 @@
 }
 
 /* #app-mount .guilds_c48ade .scrollerWrap-1IAIlv .scroller_ef3116>.listItem__650eb:first-child .listItemWrapper-3X98Pc {
-  height: 100%;
-  width: 100%;
-} */
+    height: 100%;
+    width: 100%;
+  } */
 
 /* #app-mount .guilds_c48ade .scrollerWrap-1IAIlv .scroller_ef3116>.listItem__650eb:first-child .wrapper-28eC3z .svg-2zuE5p {
-  height: 100% !important;
-  width: 100% !important;
-} */
+    height: 100% !important;
+    width: 100% !important;
+  } */
 
 .tutorialContainer__1f388 .childWrapperNoHoverBg__6e9f8,
 .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 {
@@ -505,26 +633,26 @@
 }
 
 /* 
-.tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg {
-  -webkit-mask-position: center;
-} */
+  .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg {
+    -webkit-mask-position: center;
+  } */
 
 /* #app-mount .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg path {
-  display: none;
-} */
+    display: none;
+  } */
 
 /* .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg {
-  background-color: var(--accentcolor3);
-  -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>') center/60% no-repeat;
-  -webkit-mask-size: 38px;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-} */
+    background-color: var(--accentcolor3);
+    -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>') center/60% no-repeat;
+    -webkit-mask-size: 38px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  } */
 
 /* .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg defs,
-.tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg g {
-  display: none;
-} */
+  .tutorialContainer__1f388>.listItem__650eb .wrapper-28eC3z svg g {
+    display: none;
+  } */
 
 /* 4.a.2. Drag Inner */
 .dragInner__87847 {
@@ -534,6 +662,7 @@
   background-color: var(--headercolor) !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) inset;
 }
+
 
 /* 4.a.3 Folders */
 #app-mount ul[id^=folder-items][role=group] {
@@ -674,7 +803,6 @@
   height: 18px !important;
 }
 
-
 /* badge unread/ping Home Icon*/
 .numberBadge__2b1f5 {
   background-color: var(--accentcolor) !important;
@@ -701,60 +829,60 @@
   border-radius: var(--avatars);
 }
 
-/* 5.g. DM List */
-.privateChannels__35e86 {
-  width: 260px !important;
-  /* background-color: var(--channellistcolor) !important; */
-}
+/* 4.b. Guilds */
+/* 4.c. Guilds Add */
+/* 4.d. Badges */
 
-.visual-refresh .scroller__99e7c {
+/* 5. Channels */
+/* 5.a. Main Channels Area */
+.visual-refresh .container__2637a {
   background-color: var(--channellistcolor);
+  padding-bottom: 0;
 }
 
-.privateChannels__35e86 .scrollerBase__99f8c {
+.visual-refresh .wrapper_ef3116 {
   border-right: 1px solid var(--border-color);
-  margin-bottom: 0 !important;
-  padding-bottom: 65px;
 }
 
-.visual-refresh .sidebar_c48ade:after {
+.visual-refresh .sidebarList_c48ade {
+  border-left: none;
+}
+
+/* Disable resize */
+.visual-refresh .sidebarResizeHandle_c48ade {
   display: none;
 }
 
-.channel__972a0 {
-  margin: 0;
-  max-width: 100% !important;
+.visual-refresh .bannerImage_f37cb1,
+.visual-refresh .bannerImg_f37cb1,
+.visual-refresh .sidebarList_c48ade {
+  width: 260px;
 }
 
-.channel__972a0 .unreadPill__972a0 {
-  background-color: var(--accentcolor3);
-  border-radius: 2px;
-  height: 4px;
-  width: 4px;
-  left: 0px;
-  top: 24px;
-  z-index: 2 !important;
-}
-
-.channel__972a0:hover .unreadPill__972a0 {
+/* DM pinned ping circle */
+.visual-refresh .iconBadgeBottom__9293f {
   background-color: var(--accentcolor);
-  height: 20px;
-  transition: 150ms ease all;
-  top: 16px
 }
 
-.interactiveSelected__972a0:before {
-  content: '';
-  position: absolute;
-  background-color: var(--accentcolor);
-  height: 32px;
-  width: 4px;
-  top: 5px;
-  border-radius: 2px;
-  left: 0px;
+/* 5.b. Hide show all voice button  */
+.refreshVoiceChannelsButton__29444 {
+  display: none;
 }
 
-/* kategorie */
+/* 5.c. Remove header radius */
+.visual-refresh .sidebarList_c48ade,
+.visual-refresh .chat_f75fb0 {
+  border-top-left-radius: 0;
+}
+
+/* 5.d. Channels  */
+/* 5.d.1. Voice channels  */
+/* 5.d.2. Speakinhg gradient bar  */
+/* 5.d.3. Connected label */
+/* 5.d.4. Show profile label */
+/* 5.d.5. Fake black bottom bar */
+/* 5.e. Unread Indicator */
+/* 5.f. Categories */
 .privateChannelsHeaderContainer__99e7c {
   padding: 5px 8px 5px 8px !important;
   height: 25px !important;
@@ -764,27 +892,27 @@
   padding: 0;
 }
 
-/* Small buttons stage/friends etc. */
 /* hide nitro tab  */
 .interactive__972a0 [href="/store"],
 .interactive__972a0 [href="/shop"] {
   display: none;
 }
 
+.friendsButtonContainer__35e86 .interactive__972a0 {
+  height: 42px !important;
+}
 
+.visual-refresh .sectionDivider__35e86 {
+  margin: 8px;
+}
 
-/* Nie działa  */
+/* Small buttons stage/friends etc. NIE DZIALA*/
 /* 
 .link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .content__20a53 .name__20a53,
 .link__972a0[href="/store"] .content__20a53 .name__20a53,
 .link__972a0[href="/library"] .content__20a53 .name__20a53,
 .link__972a0[href="/shop"] .content__20a53 .name__20a53 {
   font-size: 14px;
-}
-
-.friendsButtonContainer__35e86 {
-  display: inline-block;
-  width: 80px;
 }
 
 .content__99f8c .channel__972a0 .container_e45859 .link__972a0,
@@ -830,7 +958,60 @@
   height: 16px;
 } */
 
+/* 5.g. DM List */
+.privateChannels__35e86 {
+  width: 260px !important;
+}
 
+.visual-refresh .scroller__99e7c {
+  background-color: var(--channellistcolor);
+}
+
+.privateChannels__35e86 .scrollerBase__99f8c {
+  margin-bottom: 0 !important;
+  padding-bottom: 65px;
+}
+
+.visual-refresh .sidebar_c48ade:after {
+  display: none;
+}
+
+.channel__972a0 {
+  margin: 0;
+  max-width: 100% !important;
+}
+
+.channel__972a0 .layout__20a53 {
+  padding-left: 4px;
+}
+
+.channel__972a0 .unreadPill__972a0 {
+  background-color: var(--accentcolor3);
+  border-radius: 2px;
+  height: 4px;
+  width: 4px;
+  left: 3px;
+  top: 24px;
+  z-index: 2 !important;
+}
+
+.channel__972a0:hover .unreadPill__972a0 {
+  background-color: var(--accentcolor);
+  height: 20px;
+  transition: 150ms ease all;
+  top: 16px
+}
+
+.interactiveSelected__972a0:before {
+  content: '';
+  position: absolute;
+  background-color: var(--accentcolor);
+  border-radius: 2px;
+  height: 32px;
+  width: 4px;
+  top: 5px;
+  left: 3px;
+}
 
 :where(.visual-refresh) .interactive__972a0:active,
 :where(.visual-refresh) .interactiveSelected__972a0 {
@@ -845,21 +1026,99 @@
   border-radius: 0;
 }
 
-/* bottom panels (profile, game, voice */
+/* 5.h. Unread Messages Popout inbox */
+
+/* 6. Account Area */
+/* 6.a. Main Container */
 .visual-refresh .panels_c48ade {
   background: var(--titlebar);
   border: 1px solid var(--border-color);
 }
 
-/* chat */
-.visual-refresh .chatContent_f75fb0 {
-  background-color: var(--chatbackground);
+/* 6.b. Buttons */
+.visual-refresh button.button__67645 {
+  border-radius: 50%;
 }
 
-/* loading  */
+.button__67645.enabled__67645:hover {
+  border-radius: 50%;
+  background-color: var(--white1);
+}
+
+/* 6.c. Light Theme Recolor NIE MA */
+/* 6.d. Listening Along */
+
+/* 7. Members List */
+/* 7.a. Main Member List */
+.membersWrap_c8ffbb {
+  border-left: 1px solid var(--border-color);
+}
+
+.member__5d473 {
+  margin: 0;
+}
+
+.members_c8ffbb {
+  background: var(--channellistcolor) !important;
+  border-radius: 0 !important;
+}
+
+.member_c8ffbb {
+  background-color: transparent;
+  border-left: 2px solid transparent;
+}
+
+.clickable__91a9d:hover .childContainer__91a9d,
+.selected__91a9d .childContainer__91a9d {
+  background-color: transparent;
+}
+
+
+.visual-refresh .container_c8ffbb {
+  border: none;
+}
+
+.visual-refresh .container__91a9d {
+  border-radius: 0;
+}
+
+.clickable__91a9d.container__91a9d:hover {
+  border-left: 2px solid var(--accentcolor3);
+  background-color: var(--titlebar);
+}
+
+.selected__91a9d.container__91a9d {
+  border-left: 2px solid var(--accentcolor);
+  background-color: var(--headercolor);
+}
+
+/* 8. Chat */
+/* 8.a. Main Chat Area */
+/* chat loading modal */
 .visual-refresh .wrapper_fc8177,
 .wrapper_d852db {
   background-color: transparent !important;
+}
+
+/* failed to load message, error bar */
+.barBase__0f481.messagesErrorBar__0f481 {
+  border-radius: 0px;
+  height: 24px;
+  width: 370px !important;
+  left: unset !important;
+}
+
+.messagesErrorBar__0f481 .inner-26JK4f {
+  height: unset !important;
+}
+
+/* follow channel  */
+.visual-refresh .wrapper__44df5 {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+  height: 56px;
+  padding: 0;
+  margin: 0 0px 8px 0px;
 }
 
 /* CHAT zaznaczenie tekstu */
@@ -869,7 +1128,51 @@
   background: var(--accentcolor);
 }
 
-/* Text Area */
+/* 8.b. Messages */
+/* 8.c. Blocked Messages */
+/* 8.d. Spoiler Messages */
+/* 8.e. Chat Dividers */
+.group-spacing-0 .divider__5126c.hasContent__5126c {
+  margin: 10px;
+}
+
+.divider__908e2 {
+  border-color: var(--accentcolor);
+}
+
+.visual-refresh .content__908e2,
+.unreadPill__908e2 {
+  background-color: var(--accentcolor);
+  color: var(--white8);
+  text-transform: uppercase;
+}
+
+.unreadPillCapStroke__908e2 {
+  fill: var(--accentcolor);
+  color: var(--accentcolor);
+}
+
+/* 8.f. Mentions */
+.mentioned__5126c:before {
+  background: var(--accentcolor);
+}
+
+.mentioned__5126c {
+  background-color: rgba(var(--mentionbackground), 0.1);
+}
+
+/* 8.g. Code Blocks */
+/* 8.h. New Messages Bar and Loading Symbols */
+.visual-refresh .barBase__0f481 {
+  border-radius: 8px !important;
+  top: 2px;
+  background-color: var(--accentcolor);
+}
+
+/* 8.i. DM Chat */
+/* 8.j. Bot Message */
+/* 8.k. Embeds */
+/* 8.l. Text Area */
 .scrollableContainer__74017,
 .textAreaSlate__74017,
 .slateTextArea_ec4baf {
@@ -909,7 +1212,7 @@
   padding-bottom: 15px;
 }
 
-/* attachments  */
+/* attachments bar*/
 .channelAttachmentArea_b77158 {
   background-color: var(--titlebar) !important;
 }
@@ -923,72 +1226,6 @@
   border: 1px solid var(--border-color);
   box-shadow: none !important;
   top: -1px;
-}
-
-/* Unread divider  */
-.divider__908e2 {
-  border-color: var(--accentcolor);
-}
-
-.unreadPill__908e2 {
-  background-color: var(--accentcolor);
-}
-
-.unreadPillCapStroke__908e2 {
-  fill: var(--accentcolor);
-  color: var(--accentcolor);
-}
-
-/* mention  */
-.mentioned__5126c:before {
-  background: var(--accentcolor);
-}
-
-.mentioned__5126c {
-  background-color: rgba(var(--mentionbackground), 0.1);
-}
-
-/* DM pinned ping circle */
-.visual-refresh .iconBadgeBottom__9293f {
-  background-color: var(--accentcolor);
-}
-
-/* Autocomplete  */
-.visual-refresh .autocompleteAttached__6b0e0 {
-  bottom: 58px;
-  left: 0;
-  right: 0;
-  border-radius: 8px;
-  background-color: var(--titlebar);
-}
-
-/* 🠗 Hide chat buttons 🠗*/
-.button__201d5[aria-label="Send a gift"],
-.button__201d5[aria-label="Open GIF picker"],
-.button__201d5[aria-label="Open sticker picker"],
-.channelAppLauncher_e6e74f {
-  display: none !important;
-}
-
-/* delete message  */
-.theme-dark .message__89466 {
-  background: var(--chatbackground);
-  box-shadow: none;
-  border: 1px solid var(--headercolor);
-  border-radius: 0;
-}
-
-/* follow channel  */
-.wrapper__44df5 {
-  background-color: var(--headercolor);
-  border-radius: 0;
-  margin: 0px 0px -1px 0px;
-}
-
-/* send longer message popout */
-.root__6c5a1 {
-  border-radius: 0;
-  background-color: var(--titlebar);
 }
 
 /* 8.m. Typing Bar */
@@ -1034,128 +1271,199 @@
   margin-left: 10px;
 }
 
-/* invite/slash command/info bar */
-.base_b88801 {
-  background-color: var(--headercolor) !important;
-  bottom: 100%;
-  padding-right: 20px;
-  border-radius: 0px;
-  margin-left: 15px;
-}
+/* 8.n. Notification Bar */
+/* 8.o. Search Results */
+/* 8.p. Video Calling */
+/* 8.q. Streaming */
 
-.applicationCommandEducationArrow-2xKDmq {
-  margin: 10px;
-  transform: rotate(180deg);
-  transform: scaleY(-1);
-}
-
-/* failed to load message, error bar */
-.barBase__0f481.messagesErrorBar__0f481 {
-  border-radius: 0px;
-  height: 24px;
-  width: 370px !important;
-  left: unset !important;
-}
-
-.messagesErrorBar__0f481 .inner-26JK4f {
-  height: unset !important;
-}
-
-/*  5. Channels*/
-/* 5.a. Main Channels Area */
-.visual-refresh .container__2637a {
-  background-color: var(--channellistcolor);
-  padding-bottom: 0;
-}
-
-.visual-refresh .sidebarList_c48ade .scrollerBase__99f8c {
-  border-right: 1px solid var(--border-color);
-}
-
-.visual-refresh .wrapper_ef3116 {
-  border-right: 1px solid var(--border-color);
-}
-
-.visual-refresh .sidebarList_c48ade {
-  border-left: none;
-}
-
-/* Disable resize */
-.visual-refresh .sidebarResizeHandle_c48ade {
-  display: none;
-}
-
-.visual-refresh .bannerImage_f37cb1,
-.visual-refresh .bannerImg_f37cb1,
-.visual-refresh .sidebarList_c48ade {
-  width: 260px;
-}
-
-/* 5.b Hide show all voice button  */
-.refreshVoiceChannelsButton__29444 {
-  display: none;
-}
-
-/* 5.c. Remove header radius */
-.visual-refresh .sidebarList_c48ade,
-.visual-refresh .chat_f75fb0 {
-  border-top-left-radius: 0;
-}
-
-/* memberlist  */
-.membersWrap_c8ffbb {
-  border-left: 1px solid var(--border-color);
-}
-
-.member__5d473 {
-  margin: 0;
-}
-
-.members_c8ffbb {
-  background: var(--channellistcolor) !important;
-  border-radius: 0 !important;
-}
-
-.member_c8ffbb {
-  background-color: transparent;
-  border-left: 2px solid transparent;
-}
-
-.clickable__91a9d:hover .childContainer__91a9d,
-.selected__91a9d .childContainer__91a9d {
-  background-color: transparent;
-}
-
-
-.visual-refresh .container_c8ffbb {
-  border: none;
-}
-
-.visual-refresh .container__91a9d {
-  border-radius: 0;
-}
-
-.clickable__91a9d.container__91a9d:hover {
-  border-left: 2px solid var(--accentcolor3);
-  background-color: var(--titlebar);
-}
-
-.selected__91a9d.container__91a9d {
-  border-left: 2px solid var(--accentcolor);
-  background-color: var(--headercolor);
-}
-
-/* Friendlist  */
+/* 9. Friends List */
+/* 9.a. Main Friends List */
 .visual-refresh .tabBody__133bf {
   background-color: var(--chatbackground);
 }
 
+/* 9.b. Action Buttons */
+/* 9.c. Active Now  */
 .nowPlayingColumn__133bf {
   display: none;
 }
 
-/* Addons  */
-/* RadialStatus */
+/* 9.d. Left friend bar */
+/* 9.e. Fake bar on top */
+/* 9.f Small buttons stage/friends etc. */
+
+/* 10. Extra Tabs */
+/* 10.a. Stage */
+/* 10.b. Games Tab/ Game Library */
+/* 10.c. Nitro Tab */
+
+/* 11. Avatars */
+/* 11.a. Remove Mask */
+/* 11.b. Status */
+
+/* 12. Shadows */
+
+/* 13. Roundness */
+/* 14. Borders */
+.visual-refresh .tabBody__133bf,
+.visual-refresh .chatContent_f75fb0 {
+  background-color: var(--chatbackground);
+  border-left: 1px solid var(--border-color);
+}
+
+/* 15. Scrollbars */
+/* 15.1. Ohter */
+/* 15.1.a. General Buttons */
+/* 15.1.b. Sliders */
+/* 15.1.c  Snippets */
+/* 15.1.d. No Connection loading screens */
+
+/* 16. Popouts */
+/* 16.a. Pinned Messages */
+/* 16.b. Emoji Picker and Reactions */
+/* 16.c. Autocomplete */
+.visual-refresh .autocompleteAttached__6b0e0 {
+  bottom: 58px;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  background-color: var(--titlebar);
+}
+
+/* 16.d. User Popout */
+/* 16.e. Add Role User Popout */
+/* 16.f. Search Popout */
+/* 16.g. Server Settings */
+/* 16.h. Group DM Invite Popout */
+/* 16.i. Tooltips */
+/* 16.j. @Everyone Popout */
+/* 16.k. Attach Popout */
+
+
+/* 16.l. RTC Connection Popout */
+/* 16.m. More Users Popout */
+/* 16.n. Overflow Roles Popout */
+/* 16.o. Dropdown Menu Popout */
+/* 16.p. DM Call Region Select Popout */
+
+/* 17. Menus */
+/* 17.a. Context Menus */
+/* 17.b. Status Picker */
+/* 17.c. Message Menu */
+/* 17.d. Color Picker */
+
+/* 18. Modals */
+/* 18.a. Help Modal */
+/* 18.b. User Profile Modal */
+/* 18.c. Instant Invite Modal */
+/* 18.d. Join or Create New Guild */
+/* 18.e. Upload Modal */
+/* 18.f. Game Preview Modal */
+/* 18.g. Quick Switcher */
+.quickswitcher_ac6cb0 {
+  background-color: var(--guildlistcolor) !important;
+  border-radius: 0;
+  border: 1px solid #383838
+}
+
+.input_ac6cb0 {
+  border-radius: 0 !important;
+  background-color: var(--input-color);
+  box-shadow: none;
+}
+
+.scroller_ac6cb0 {
+  background-color: transparent !important;
+  width: 528px;
+}
+
+.result__71961 {
+  border-radius: 0;
+}
+
+.result__71961[aria-selected=true] {
+  background-color: var(--titlebar);
+}
+
+.autocompleteQuerySymbol_ac6cb0 {
+  background-color: var(--headercolor);
+  border-radius: 0;
+}
+
+/* 18.h. Screenshare Modal */
+/* 18.i. Phone Verification Modal */
+/* 18.j. Smartphone Modal */
+/* 18.k. Drag and Drop Modal */
+/* 18.l. Generic Modal */
+/* 18.m. Gift Nitro Modal & Nitro Boost */
+/* 18.n. Server Templates */
+/* 18.p. Changelog & Version Panel */
+.contentColumn__23e6b::before {
+  content: "FlatCord v0.0.1 - 12/04/2025 - Changelog\a\a • Skin znowu działa, wersja robocza\a\a Custom CSS - http://bit.ly/kodSkin" !important;
+  display: block;
+  position: sticky;
+  border: 1px solid #43b581 !important;
+  background: rgba(67, 181, 129, .25);
+  background-image: url(https://i.imgur.com/SUMDUBL.png);
+  background-size: 80px;
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  padding: 20px 120px;
+  white-space: pre;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: var(--accentcolor3);
+  text-transform: initial;
+}
+
+.info__2debe::before {
+  content: var(--version);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--accentcolor3);
+  text-transform: lowercase;
+}
+
+/* 19. Login Page */
+
+/* 20. Keyframes */
+
+/* 21. Misc */
+/* 21.a. Plugin Optimization */
+/* 21.a.1. BetterFormatting */
+/* 21.a.2. Permission Viewer */
+/* 21.a.3. Character Counter */
+/* 21.a.4. Reply System */
+/* 21.a.5. Server Folders */
+/* 21.a.6. Share Button */
+/* 21.a.7. Theme and Plugin Repo */
+/* 21.a.8. Personal Pins */
+/* 21.a.9. Detailed Tooltip */
+/* 21.a.10 Ghost Ping */
+/* 21.a.11 Display Servers to Channels */
+/* 21.a.12 Permissions Viewer */
+/* 21.a.13. Staff Tag   */
+/* 21.a.14. Pin DMs   */
+/* 21.a.15. Server Counter  */
+/* 21.a.16. Read All Button  */
+/* 21.a.17. Badges Everywhere */
+/* 21.a.18. Message Logger V2 */
+/* 21.a.19. Status Everywhere */
+/* 21.a.20. Guild and Friend Removal Alerts */
+/* 21.a.21. Hide chat buttons 🠗*/
+.button__201d5[aria-label="Send a gift"],
+.button__201d5[aria-label="Open GIF picker"],
+.button__201d5[aria-label="Open sticker picker"],
+.channelAppLauncher_e6e74f {
+  display: none !important;
+}
+
+/* 21.b. Addon Optimization */
+/* 21.b.1. Custom Popouts */
+/* 21.b.2. Radial Status */
 #app-mount .wrapper__44b0c {
   border-radius: var(--avatars);
 }
@@ -1447,7 +1755,7 @@
   margin-left: 1px;
 }
 
-/* chat bubbles  */
+/* 21.b.3. Chat Bubbles */
 #app-mount .messageListItem__5126c[data-is-self="true"] .contents_c19a55,
 #app-mount .messageListItem__5126c[data-is-self="true"] .container_b7e1cb {
   margin-right: 35px !important;
@@ -1468,3 +1776,7 @@
   margin-right: 40px;
   max-width: 50%
 }
+
+/* 22. Custom CSS */
+
+/* 23. @Media Edits */
