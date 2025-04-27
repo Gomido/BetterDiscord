@@ -1,10 +1,8 @@
 @import url('https://blade04208.github.io/ddex4/src/bubbles.css');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-/* @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css'); */
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
-/* @import url("https://lavender-discord.github.io/Lavender/modules/addons/emoji-replace.css"); */
 
 @font-face {
   font-family: Discord;
@@ -46,7 +44,7 @@
   --rs-width: 2px;
   /* odstęp między awatarem a ramką statusu (chat, lista osób) */
   --rs-spacing: 2px;
-  /* 17b641 kolor  statusu */
+  /* 17b641 kolor statusu */
   --text-link: var(--accentcolor);
   /* ilosc zakladek znajomi */
   --dm-columns: 3;
@@ -396,6 +394,11 @@
 .theme-dark .children__9293f:after {
   background: var(--white1);
   width: 2px;
+}
+
+.animatedContainer_f37cb1 {
+  left: 1px;
+  background-color: transparent;
 }
 
 /* Boost, pulbic badge  */
@@ -832,6 +835,17 @@
 /* 4.b. Guilds */
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
+.mention__3b95d {
+  background-color: var(--accentcolor);
+}
+
+.unreadMentionsIndicatorTop_ef3116 {
+  top: 45px
+}
+
+.visual-refresh .unreadMentionsFixedFooter_ef3116 {
+  bottom: 60px;
+}
 
 /* 5. Channels */
 /* 5.a. Main Channels Area */
@@ -892,12 +906,6 @@
   padding: 0;
 }
 
-/* hide nitro tab  */
-.interactive__972a0 [href="/store"],
-.interactive__972a0 [href="/shop"] {
-  display: none;
-}
-
 .friendsButtonContainer__35e86 .interactive__972a0 {
   height: 42px !important;
 }
@@ -905,58 +913,6 @@
 .visual-refresh .sectionDivider__35e86 {
   margin: 8px;
 }
-
-/* Small buttons stage/friends etc. NIE DZIALA*/
-/* 
-.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .content__20a53 .name__20a53,
-.link__972a0[href="/store"] .content__20a53 .name__20a53,
-.link__972a0[href="/library"] .content__20a53 .name__20a53,
-.link__972a0[href="/shop"] .content__20a53 .name__20a53 {
-  font-size: 14px;
-}
-
-.content__99f8c .channel__972a0 .container_e45859 .link__972a0,
-.channel__972a0 .link__972a0[href="/library"],
-.channel__972a0 .link__972a0[href="/shop"] {
-  display: inline-block !important;
-  transition: 150ms ease all;
-  margin-left: 2px !important;
-  margin-top: 0px !important;
-  padding: initial !important;
-  width: calc(100% / var(--dm-columns) - 3px) !important;
-}
-
-.link__972a0[href="/shop"] .content__20a53,
-.link__972a0[href="/store"] .content__20a53,
-.link__972a0[href="/library"] .content__20a53,
-.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .content__20a53 {
-  flex-direction:column;
-  height: 40px;
-}
-
-.link__972a0[href="/shop"] .avatar__20a53,
-.link__972a0[href="/store"] .avatar__20a53,
-.link__972a0[href="/library"] .avatar__20a53,
-.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .avatar__20a53 {
-  margin: 2px;
-}
-
-.channel__972a0.interactiveSelected__972a0.link__972a0 .numberBadge__2b1f5 {
-  box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
-}
-
-.channel__972a0:hover .numberBadge__40d6f {
-  box-shadow: 0px 0px 0px 3px var(--titlebar) !important;
-}
-
-.channel__972a0 .numberBadge__40d6f {
-  margin-top: -40px;
-  margin-left: 15px;
-  z-index: 1;
-  border-radius: var(--avatars);
-  box-shadow: 0px 0px 0px 3px var(--channellistcolor);
-  height: 16px;
-} */
 
 /* 5.g. DM List */
 .privateChannels__35e86 {
@@ -1257,7 +1213,7 @@
 
 .visual-refresh .base_b88801 {
   height: 25px;
-  left: -6px;
+  left: 8px;
   right: auto;
 }
 
@@ -1290,7 +1246,116 @@
 
 /* 9.d. Left friend bar */
 /* 9.e. Fake bar on top */
-/* 9.f Small buttons stage/friends etc. */
+/* 9.f. Small buttons stage/friends etc. */
+/* hide nitro tab  */
+.interactive__972a0 [href="/store"],
+.interactive__972a0 [href="/shop"] {
+  display: none;
+}
+
+/* 
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) {
+  position: relative;
+  float: left;
+  margin: 0px 13px;
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+  transform: scale(0.9);
+  border-left: none !important;
+  transition: none;
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .layout__20a53 {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]):hover {
+  border-left: none !important;
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]).selected_bf202d {
+  background-color: var(--main-color);
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .content-1U25dZ {
+  display: none;
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .layout__20a53 .avatar__20a53 {
+  margin: 0;
+}
+
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .children-283-lq {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+html .tabBadge-h4HGed {
+  position: absolute;
+  transform: translate(50%, -50%);
+} */
+
+
+/* Small buttons stage/friends etc. NIE DZIALA*/
+/* 
+.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .content__20a53 .name__20a53,
+.link__972a0[href="/store"] .content__20a53 .name__20a53,
+.link__972a0[href="/library"] .content__20a53 .name__20a53,
+.link__972a0[href="/shop"] .content__20a53 .name__20a53 {
+  font-size: 14px;
+}
+
+.content__99f8c .channel__972a0 .container_e45859 .link__972a0,
+.channel__972a0 .link__972a0[href="/library"],
+.channel__972a0 .link__972a0[href="/shop"] {
+  display: inline-block !important;
+  transition: 150ms ease all;
+  margin-left: 2px !important;
+  margin-top: 0px !important;
+  padding: initial !important;
+  width: calc(100% / var(--dm-columns) - 3px) !important;
+}
+
+.link__972a0[href="/shop"] .content__20a53,
+.link__972a0[href="/store"] .content__20a53,
+.link__972a0[href="/library"] .content__20a53,
+.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .content__20a53 {
+  flex-direction:column;
+  height: 40px;
+}
+
+.link__972a0[href="/shop"] .avatar__20a53,
+.link__972a0[href="/store"] .avatar__20a53,
+.link__972a0[href="/library"] .avatar__20a53,
+.link__972a0[href="/channels/@me"]:not([href="/channels/@me/"]) .avatar__20a53 {
+  margin: 2px;
+}
+
+.channel__972a0.interactiveSelected__972a0.link__972a0 .numberBadge__2b1f5 {
+  box-shadow: 0px 0px 0px 3px var(--headercolor) !important;
+}
+
+.channel__972a0:hover .numberBadge__40d6f {
+  box-shadow: 0px 0px 0px 3px var(--titlebar) !important;
+}
+
+.channel__972a0 .numberBadge__40d6f {
+  margin-top: -40px;
+  margin-left: 15px;
+  z-index: 1;
+  border-radius: var(--avatars);
+  box-shadow: 0px 0px 0px 3px var(--channellistcolor);
+  height: 16px;
+} */
+
 
 /* 10. Extra Tabs */
 /* 10.a. Stage */
