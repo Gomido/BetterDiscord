@@ -1065,10 +1065,7 @@
 }
 
 .channel__972a0:hover .unreadPill__972a0 {
-  background-color: var(--accentcolor);
-  height: 20px;
-  transition: 150ms ease all;
-  top: 16px
+  display: none;
 }
 
 .interactiveSelected__972a0:before {
@@ -1079,6 +1076,17 @@
   height: 32px;
   width: 4px;
   top: 5px;
+  left: 3px;
+}
+
+.interactive__972a0:hover:before {
+  content: '';
+  position: absolute;
+  background-color: var(--accentcolor3);
+  border-radius: 2px;
+  height: 20px;
+  width: 4px;
+  top: 11px;
   left: 3px;
 }
 
@@ -2047,6 +2055,7 @@ html .tabBadge-h4HGed {
 
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu  */
+.stickerAsset__31fc2,
 .embedMedia__623de,
 .visualMediaItemContainer_f4758a {
   padding: 8px;
@@ -2055,6 +2064,11 @@ html .tabBadge-h4HGed {
   border-radius: 5px;
   height: unset;
 }
+
+.stickerAsset__31fc2 {
+  padding: 0;
+}
+
 
 .imageContent__0f481 .embedMedia__623de {
   border: none;
@@ -2131,6 +2145,7 @@ html .tabBadge-h4HGed {
   background-color: transparent;
 }
 
+.wrapper_c19a55:hover .stickerAsset__31fc2,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
 .wrapper_c19a55:hover .embedMedia__623de,
 .wrapper_c19a55:hover .messageContent_c19a55 {
