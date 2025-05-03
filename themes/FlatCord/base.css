@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.3 (010525)";
+  --version: "v0.0.4 (030525)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -545,6 +545,15 @@
   background: var(--headercolor);
 }
 
+
+/* friendlist top searchbar */
+
+:where(.visual-refresh) .container_a45028 {
+  background-color: var(--input-color);
+  border-radius: 0;
+  border-color: var(--border-color);
+}
+
 /* 2.c.4. Update info, red bar top*/
 /* #app-mount::before {
   content: 'Test test test 2342342 cipka ruchanie';
@@ -927,7 +936,7 @@
   border-radius: 2px;
   height: 20px;
   width: 4px;
-  top: 5px;
+  top: calc(50% - 10px);
   left: 2px;
 }
 
@@ -942,10 +951,9 @@
   border-radius: 2px;
   height: 20px;
   width: 4px;
-  top: 5px;
+  top: calc(50% - 10px);
   left: 2px;
 }
-
 
 .unread__2ea32 {
   height: 4px;
@@ -1247,13 +1255,13 @@
 }
 
 /* 8.f. Mentions */
-.mentioned__5126c:before {
+/* .mentioned__5126c:before {
   background: var(--accentcolor);
 }
 
 .mentioned__5126c {
   background-color: rgba(var(--mentionbackground), 0.1);
-}
+} */
 
 /* 8.g. Code Blocks */
 /* 8.h. New Messages Bar and Loading Symbols */
@@ -1711,6 +1719,15 @@ html .tabBadge-h4HGed {
 /* 21.a.3. Character Counter */
 /* 21.a.4. Reply System */
 /* 21.a.5. Server Folders */
+.guilds_c48ade .folderHeader__48112,
+.guilds_c48ade .folderHeader__48112:hover {
+  background-color: transparent;
+}
+
+.folderIcon__48112:hover svg {
+  color: var(--accentcolor3) !important;
+}
+
 /* 21.a.6. Share Button */
 /* 21.a.7. Theme and Plugin Repo */
 /* 21.a.8. Personal Pins */
@@ -1829,7 +1846,7 @@ html .tabBadge-h4HGed {
 }
 
 #app-mount .wrapper__44b0c rect[fill="#f23f43"],
-#app-mount .wrapper__44b0c rect[fill="#d83a41"] {
+#app-mount .wrapper__44b0c rect[fill="#d83a42"] {
   stroke: var(--dnd);
 }
 
@@ -2080,7 +2097,44 @@ html .tabBadge-h4HGed {
 }
 
 .mentioned__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
-  background: var(--mention-color) !important;
+  background: rgba(var(--mentionbackground), 0.1) !important;
+  border-left: 3px solid rgba(var(--mentionbackground), 1) !important;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+
+.replying__5126c.cozy_c19a55 .visualMediaItemContainer_f4758a,
+.replying__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
+  background: var(--background-message-highlight) !important;
+  border-left: 3px solid #3B45B7 !important;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+/* hover disable  */
+.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,
+.theme-dark.visual-refresh .message__5126c.selected__5126c,
+.message__5126c.replying__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.replying__5126c:hover,
+.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,
+.visual-refresh .message__5126c.replying__5126c.selected__5126c {
+  background: transparent;
+}
+
+/* reply/mention,hover bubble */
+.replying__5126c:before,
+.mentioned__5126c:before {
+  display: none;
+}
+
+.mentioned__5126c,
+.replying__5126c {
+  background-color: transparent;
+}
+
+.wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
+.wrapper_c19a55:hover .embedMedia__623de,
+.wrapper_c19a55:hover .messageContent_c19a55 {
+  background-color: var(--input-color) !important;
 }
 
 /* disable dymki full screen preview  */
