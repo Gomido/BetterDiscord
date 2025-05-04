@@ -1762,6 +1762,10 @@ html .tabBadge-h4HGed {
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
 /* 21.b.2. Radial Status */
+/* .wrapper__44b0c .avatarDecoration__44b0c {
+  display: none;
+} */
+
 #app-mount .wrapper__44b0c {
   border-radius: var(--avatars);
 }
@@ -1813,7 +1817,7 @@ html .tabBadge-h4HGed {
   y: calc(var(--rs-width, 30px) / 2 / -1);
 }
 
-#app-mount .wrapper__44b0c img,
+/* #app-mount .wrapper__44b0c img, */
 #app-mount .wrapper__44b0c.avatar__91a9d {
   border-radius: var(--avatars);
 }
@@ -1843,17 +1847,14 @@ html .tabBadge-h4HGed {
   stroke-width: var(--rs-width);
 }
 
-#app-mount .wrapper__44b0c rect[fill="#23a55a"],
-#app-mount .wrapper__44b0c rect[fill="#40a258"] {
+#app-mount .wrapper__44b0c rect[fill="#43a25a"] {
   stroke: var(--online);
 }
 
-#app-mount .wrapper__44b0c rect[fill="#f0b232"],
-#app-mount .wrapper__44b0c rect[fill="#cc954c"] {
+#app-mount .wrapper__44b0c rect[fill="#ca9654"] {
   stroke: var(--idle);
 }
 
-#app-mount .wrapper__44b0c rect[fill="#f23f43"],
 #app-mount .wrapper__44b0c rect[fill="#d83a42"] {
   stroke: var(--dnd);
 }
@@ -1917,7 +1918,8 @@ html .tabBadge-h4HGed {
   stroke-width: var(--rs-width);
 }
 
-#app-mount .wrapper__44b0c[style*="80px"] img {
+#app-mount .wrapper__44b0c[style*="32px"] .mask__44b0c foreignObject,
+#app-mount .wrapper__44b0c[style*="80px"] .mask__44b0c foreignObject {
   clip-path: inset(calc(var(--rs-spacing) + 1px) calc(var(--rs-spacing) + 1px) round var(--avatars));
 }
 
@@ -1963,6 +1965,7 @@ html .tabBadge-h4HGed {
   width: 10px;
   height: 14px;
   top: 30%;
+  left: 40%;
 }
 
 #app-mount .wrapper__44b0c foreignObject[mask*=mobile][width="80"]:after {
@@ -2069,7 +2072,6 @@ html .tabBadge-h4HGed {
   padding: 0;
 }
 
-
 .imageContent__0f481 .embedMedia__623de {
   border: none;
   left: -8px;
@@ -2153,7 +2155,7 @@ html .tabBadge-h4HGed {
 }
 
 /* disable dymki full screen preview  */
-.modal_b0827a :not(.sibling_6vI7Pu)>.imageWrapper_af017a .embedMedia__623de {
+.mediaArea_e03578 .embedMedia__623de {
   border: none;
   padding: 0 !important;
   background: none;
@@ -2172,6 +2174,12 @@ html .tabBadge-h4HGed {
   left: 10px !important;
   margin-top: 3px !important;
   border: 2px solid var(--border-color);
+}
+
+/* disable avatar/status reaction  */
+.statusPopover__2d0ab,
+.avatarPopover__2d0ab {
+  display: none;
 }
 
 /* 22. Custom CSS */
