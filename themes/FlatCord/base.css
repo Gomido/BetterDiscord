@@ -56,7 +56,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.4 (030525)";
+  --version: "v0.0.5 (060525)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1110,7 +1110,6 @@
 .visual-refresh .panels_c48ade {
   background: var(--titlebar);
   border: 1px solid var(--border-color);
-  height: 60px;
 }
 
 /* games  */
@@ -2071,7 +2070,7 @@ html .tabBadge-h4HGed {
 
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu  */
-.stickerAsset__31fc2,
+.container_b7e1cb .stickerAsset__31fc2,
 .embedMedia__623de,
 .visualMediaItemContainer_f4758a {
   padding: 8px;
@@ -2081,7 +2080,7 @@ html .tabBadge-h4HGed {
   height: unset;
 }
 
-.stickerAsset__31fc2 {
+.container_b7e1cb .stickerAsset__31fc2 {
   padding: 0;
 }
 
@@ -2156,14 +2155,15 @@ html .tabBadge-h4HGed {
 }
 
 .mentioned__5126c,
-.replying__5126c {
+.replying__5126c,
+.repliedMessage_c19a55 .messageContent_c19a55 {
   background-color: transparent;
 }
 
 .wrapper_c19a55:hover .stickerAsset__31fc2,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
 .wrapper_c19a55:hover .embedMedia__623de,
-.wrapper_c19a55:hover .messageContent_c19a55 {
+.wrapper_c19a55:hover .contents_c19a55 .messageContent_c19a55 {
   background-color: var(--input-color) !important;
 }
 
