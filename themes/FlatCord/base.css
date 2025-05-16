@@ -1630,8 +1630,88 @@ html .tabBadge-h4HGed {
 /* 16. Popouts */
 /* 16.a. Pinned Messages */
 /* 16.b. Emoji Picker and Reactions */
+.visual-refresh .contentWrapper__08434 {
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  background-color: var(--channellistcolor);
+  min-height: 525px;
+}
+
+.container_fed6d3,
+.visual-refresh .emojiPicker_c0e32c,
+.visual-refresh .header_c0e32c,
+.visual-refresh .wrapper__14245,
+.visual-refresh .header__8ef02,
+.visual-refresh .header_fed6d3 {
+  background-color: var(--channellistcolor);
+}
+
+.categoryFadeBlurple_d02962 {
+  background-color: var(--accentcolor);
+  opacity: 0.5;
+}
+
+.gif__2dc39,
+.result__2dc39,
+.categoryFade_d02962,
+.categoryFadeBlurple_d02962 {
+  border-radius: 0;
+}
+
+.categoryFade_d02962:hover,
+.categoryFadeBlurple_d02962:hover,
+[data-focused=true] .categoryFade_d02962,
+[data-focused=true] .categoryFadeBlurple_d02962 {
+  border-radius: 0;
+  border: 1px solid var(--border-color)
+}
+
+.visual-refresh .wrapper__4e6ce,
+.visual-refresh .inspector_aeaaeb {
+  background-color: var(--input-color);
+  border-radius: 0;
+}
+
+.result__2dc39:hover:after,
+.result__2dc39[data-focused=true]:after {
+  background: none;
+}
+
+.result__2dc39:hover,
+.result__2dc39[data-focused=true] {
+  box-shadow: none;
+}
+
+.inspectedIndicator_c6367b {
+  mask: none;
+}
+
+.stickerInspected_c6367b .inspectedIndicator_c6367b,
+.firstPartyCategorySelected__3ad28,
+.firstPartyCategorySelected__3ad28:hover,
+.stickerCategoryGenericSelected__3ad28,
+.stickerCategoryGenericSelected__3ad28:hover,
+.emojiItem_fc7141.emojiItemSelected_fc7141,
+.emojiItem_fc7141.expandCollapseButtonSelected_fc7141,
+.categoryItemDefaultCategorySelected_b9ee0c,
+.categoryItemDefaultCategorySelected_b9ee0c:hover {
+  background-color: var(--headercolor);
+  border-radius: 0;
+}
+
 .emojiLockIconContainer_d982c2 {
   display: none;
+}
+
+/* reaction picker  */
+.fade_faf9c0.didRender_faf9c0 .wrapper_c0e32c {
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  background-color: var(--channellistcolor);
+}
+
+.fade_faf9c0.didRender_faf9c0 .wrapper_c0e32c .header_c0e32c {
+  background-color: transparent;
 }
 
 /* 16.c. Autocomplete */
