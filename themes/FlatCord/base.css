@@ -10,15 +10,15 @@
 
 :root {
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
-  --avatars: 50px;
+  --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
-  --accentcolor: #0f55ec;
+  --accentcolor: #5983FC;
   /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
-  --accentcolor2: #04d0eb;
+  --accentcolor2: #00b4a3;
   /*drugi kolor akcentu*/
   --accentcolor3: #FFFFFF;
   /* W RGB, kolor tła oznaczenia*/
-  --mentionbackground: 0, 126, 255;
+  --mentionbackground: 236, 145, 15;
   /*kolor paska górnego z napisem discord*/
   --titlebar: #141414;
   /*kolor chatu pod wiadomosciami*/
@@ -48,6 +48,7 @@
   --text-link: var(--accentcolor);
   /* ilosc zakladek znajomi */
   --dm-columns: 3;
+  --guildbar-folder-size: 40px;
   --online: #28A745;
   --idle: #faa61a;
   --dnd: #DD2C2C;
@@ -56,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.6 (160525)";
+  --version: "v0.0.7 (180525)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -712,20 +713,36 @@
 
 
 /* 4.a.3 Folders */
-.folderButton__48112 {
-  border-radius: 0;
+.folderButton__48112,
+.folderPreviewWrapper__48112 {
+  border-radius: var(--avatars);
 }
 
-#app-mount ul[id^=folder-items][role=group] {
-  height: auto !important;
+
+.folderIconWrapper__48112,
+.folderGuildsList__48112 .svg_cc5dd2 {
+  width: var(--guildbar-folder-size) !important;
+  height: var(--guildbar-folder-size) !important;
+  left: calc(100% - var(--guildbar-folder-size));
+  top: 2px;
+}
+
+.folderButton__48112 .lowerBadge_cc5dd2 {
+  bottom: 9px;
+  right: 9px;
+}
+
+.folderButton__48112 .upperBadge_cc5dd2 {
+  top: 1px;
+  right: 9px;
 }
 
 .isExpanded__48112 .folderGroupBackground__48112 {
-  /* width: var(--server-size); */
-  /* height: calc(100% - 6px); */
+  /* width: var(--server-size);
+  height: calc(100% - 6px);
   left: 0;
   bottom: 0;
-  margin: 0 12px;
+  margin: 0 12px; */
   opacity: 75%;
 }
 
@@ -759,7 +776,6 @@
 .isExpanded__48112 .folderGroupBackground__48112 {
   background-color: var(--chatbackground);
   border: 1px solid var(--border-color);
-  margin-bottom: -2px;
 }
 
 .tutorialContainer__1f388 .wrapper__6e9f8.selected__6e9f8,
@@ -917,7 +933,7 @@
 }
 
 .invitesRefresh_f37cb1 .guildDropdown_f37cb1 {
-  width: 200px;
+  width: 100%;
 }
 
 /* channel hover  */
@@ -1309,10 +1325,7 @@
   border: none !important;
 }
 
-:where(.visual-refresh) .lookFilled__201d5.colorBrand__201d5:hover {
-  background-color: transparent;
-  border: none;
-}
+
 
 /* 8.i. DM Chat */
 /* 8.j. Bot Message */
@@ -1635,6 +1648,7 @@ html .tabBadge-h4HGed {
   border: 1px solid var(--border-color);
   background-color: var(--channellistcolor);
   min-height: 525px;
+  bottom: 25px;
 }
 
 .container_fed6d3,
@@ -1644,6 +1658,7 @@ html .tabBadge-h4HGed {
 .visual-refresh .header__8ef02,
 .visual-refresh .header_fed6d3 {
   background-color: var(--channellistcolor);
+  border-radius: 0;
 }
 
 .categoryFadeBlurple_d02962 {
