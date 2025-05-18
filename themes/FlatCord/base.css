@@ -14,7 +14,7 @@
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor: #5983FC;
   /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
-  --accentcolor2: #00b4a3;
+  --accentcolor2: #0090b4;
   /*drugi kolor akcentu*/
   --accentcolor3: #FFFFFF;
   /* W RGB, kolor tła oznaczenia*/
@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.7 (180525)";
+  --version: "v0.0.7 (170525)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1806,7 +1806,7 @@ html .tabBadge-h4HGed {
 /* 18.m. Gift Nitro Modal & Nitro Boost */
 /* 18.n. Server Templates */
 /* 18.p. Changelog & Version Panel */
-.contentColumn__23e6b::before {
+/* .contentColumn__23e6b::before {
   content: "FlatCord v0.0.1 - 12/04/2025 - Changelog\a\a • Skin znowu działa, wersja robocza\a\a Custom CSS - http://bit.ly/kodSkin" !important;
   display: block;
   position: sticky;
@@ -1824,7 +1824,7 @@ html .tabBadge-h4HGed {
   margin-top: 5px;
   color: var(--accentcolor3);
   text-transform: initial;
-}
+} */
 
 .info__2debe::before {
   content: var(--version);
