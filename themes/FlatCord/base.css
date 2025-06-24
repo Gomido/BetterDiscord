@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.8 (130625)";
+  --version: "v0.0.8 (240625)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -394,7 +394,7 @@
   border-bottom: 2px solid var(--accentcolor) !important;
 }
 
-:where(.visual-refresh) .bannerVisible_f37cb1 .header_f37cb1{
+:where(.visual-refresh) .bannerVisible_f37cb1 .header_f37cb1 {
   border-radius: 0;
   border-top: 1px solid var(--border-color);
   height: 49px;
@@ -486,7 +486,7 @@
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
   border-right: 2px solid var(--accentcolor2);
-  margin-top: -2px;
+  margin-top: -5px !important;
   height: calc(100% - 5px);
   left: -2px;
   margin-bottom: 10px;
@@ -634,6 +634,10 @@
 /* #app-mount .guilds_c48ade .scroller_ef3116 {
     contain: initial;
   } */
+
+.scroller_ef3116 {
+  padding-top: 0 !important;
+}
 
 #app-mount .guilds_c48ade .scroller_ef3116 .tutorialContainer__1f388+div {
   margin-top: 55px;
@@ -1139,6 +1143,11 @@
 .visual-refresh .panels_c48ade {
   background: var(--titlebar);
   border: 1px solid var(--border-color);
+  bottom: 8px;
+}
+
+.container__37e49 {
+  height: 58px !important;
 }
 
 /* games  */
@@ -1378,10 +1387,6 @@
 .scrollableContainer__74017 {
   border-radius: 8px;
   background-color: var(--titlebar) !important;
-}
-
-.form_f75fb0 {
-  padding: 0;
 }
 
 .scrollableContainer__74017 {
@@ -1636,8 +1641,12 @@ html .tabBadge-h4HGed {
 .visual-refresh .media__41ea0,
 .oneByOneGridSingle_f4758a,
 .mosaicItemMediaMosaic__6c706,
-.imageWrapper_af017a,
-.embedImage__623de img, .embedImage__623de video, .embedThumbnail__623de img, .embedThumbnail__623de video, .embedVideo__623de img, .embedVideo__623de video{
+.embedImage__623de img,
+.embedImage__623de video,
+.embedThumbnail__623de img,
+.embedThumbnail__623de video,
+.embedVideo__623de img,
+.embedVideo__623de video {
   border-radius: 0 !important;
 }
 
@@ -1650,6 +1659,31 @@ html .tabBadge-h4HGed {
 
 /* 16. Popouts */
 /* 16.a. Pinned Messages */
+.messagesPopoutWrap__45690 {
+  background-color: var(--titlebar);
+  border: 2px solid var(--accentcolor);
+  border-radius: 0;
+  margin-top: -1px;
+}
+
+.header__45690 {
+  background-color: var(--headercolor);
+}
+
+.messageGroupWrapper__45690 {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+}
+
+.messageGroupWrapper__45690 .imageWrapper_af017a {
+  width: unset !important;
+}
+
+.messageGroupWrapper__45690 .visualMediaItemContainer_f4758a {
+  max-width: 300px !important;
+  height: unset;
+}
+
 /* 16.b. Emoji Picker and Reactions */
 .visual-refresh .contentWrapper__08434 {
   border-radius: 0;
@@ -1763,6 +1797,13 @@ html .tabBadge-h4HGed {
 
 /* 17. Menus */
 /* 17.a. Context Menus */
+.menu_c1e9c4 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+  border-color: var(--border-color);
+}
+
+
 /* 17.b. Status Picker */
 /* 17.c. Message Menu */
 /* 17.d. Color Picker */
@@ -1792,13 +1833,13 @@ html .tabBadge-h4HGed {
 }
 
 /* upload progress small window  */
-.visual-refresh .file__0ccae{
+.visual-refresh .file__0ccae {
   background-color: var(--input-color);
   border-radius: 2px;
-  border:1px solid var(--border-color) 
+  border: 1px solid var(--border-color)
 }
 
-.progressBar__89dcd{
+.progressBar__89dcd {
   background-color: var(--accentcolor) !important;
 }
 
@@ -1926,7 +1967,8 @@ html .tabBadge-h4HGed {
 .button__201d5[aria-label="Send a gift"],
 .button__201d5[aria-label="Open GIF picker"],
 .button__201d5[aria-label="Open sticker picker"],
-.channelAppLauncher_e6e74f {
+.channelAppLauncher_e6e74f,
+.altText__0f481 {
   display: none !important;
 }
 
@@ -2233,7 +2275,7 @@ html .tabBadge-h4HGed {
 /* dymki chatu  */
 .container_b7e1cb .stickerAsset__31fc2,
 .visualMediaItemContainer_f4758a,
-.embedMedia__623de {
+.embedMedia__623de .imageWrapper_af017a {
   padding: 8px;
   background: var(--channellistcolor);
   border: 1px solid var(--border-color) !important;
@@ -2316,7 +2358,7 @@ html .tabBadge-h4HGed {
 .wrapper_c19a55:hover .embedFull__623de,
 .wrapper_c19a55:hover .stickerAsset__31fc2,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
-.wrapper_c19a55:hover .embedMedia__623de,
+.wrapper_c19a55:hover .embedMedia__623de .imageWrapper_af017a,
 .wrapper_c19a55:hover .contents_c19a55 .messageContent_c19a55 {
   background-color: var(--input-color) !important;
 }
