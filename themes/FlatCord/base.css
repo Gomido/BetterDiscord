@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.8 (240625)";
+  --version: "v0.0.9 (280625)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1660,10 +1660,18 @@ html .tabBadge-h4HGed {
 /* 16. Popouts */
 /* 16.a. Pinned Messages */
 .messagesPopoutWrap__45690 {
-  background-color: var(--titlebar);
-  border: 2px solid var(--accentcolor);
+  background-color: var(--input-color);
+  border-left: 2px solid var(--accentcolor2);
+  border-bottom: 2px solid var(--accentcolor2);
+  border-right: 2px solid var(--accentcolor2);
   border-radius: 0;
-  margin-top: -1px;
+  top: -1px;
+}
+
+.container_fc561d,
+.container__2692d,
+.messagesPopoutWrap__45690 {
+  box-shadow: none;
 }
 
 .header__45690 {
@@ -1671,7 +1679,7 @@ html .tabBadge-h4HGed {
 }
 
 .messageGroupWrapper__45690 {
-  background-color: var(--chatbackground);
+  background-color: var(--guildlistcolor);
   border-radius: 0;
 }
 
@@ -1682,6 +1690,76 @@ html .tabBadge-h4HGed {
 .messageGroupWrapper__45690 .visualMediaItemContainer_f4758a {
   max-width: 300px !important;
   height: unset;
+}
+
+/* mentions  */
+.recentMentionsPopout__95796 {
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0px;
+  top: -8px;
+}
+
+/* unreads */
+.tutorial__2692d {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+}
+
+.channelHeader__35a7e {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+  padding: 0 15px 0 35px;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+}
+
+.collapseButton__427f0 {
+  left: 5px;
+}
+
+.messages__1ccd1 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
+/* for you  */
+.container__0f711 {
+  background-color: var(--input-color);
+}
+
+.container__0f711 .unread__6fddf {
+  background-color: var(--accentcolor3);
+  left: 4px;
+  width: 4px;
+  border-radius: 2px;
+  top: 25%;
+}
+
+/* friends  */
+.container_e73f2a {
+  background-color: var(--input-color);
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: -8px;
+}
+
+.header_e73f2a {
+  background-color: var(--headercolor);
+}
+
+.searchContainer_e73f2a {
+  background-color: var(--headercolor);
+}
+
+.container__91a9d {
+  border-left: 2px solid transparent;
+}
+
+.wrapper_f7ecac {
+  background-color: var(--titlebar);
+  border-radius: 0;
 }
 
 /* 16.b. Emoji Picker and Reactions */
@@ -1801,6 +1879,31 @@ html .tabBadge-h4HGed {
   background-color: var(--guildlistcolor);
   border-radius: 0;
   border-color: var(--border-color);
+}
+
+/* remove options from ppm */
+.item_c1e9c4[id="message-tts"],
+/* .item_c1e9c4[id="message-reply"], */
+/* .item_c1e9c4[id="message-edit"], */
+.item_c1e9c4[id="message-pin"],
+.item_c1e9c4[id="message-thread"],
+.item_c1e9c4[id="message-actions-tts"],
+/* .item_c1e9c4[id="message-quote"], */
+.item_c1e9c4[id="message-mark-unread"],
+.item_c1e9c4[id="message-add-reaction"],
+/* .item_c1e9c4[id="message-actions-apps"], */
+.item_c1e9c4[id="message-apps"],
+.item_c1e9c4[id="user-context-note"],
+.item_c1e9c4[id="user-context-focus-video"],
+.item_c1e9c4[id="textarea-context-languages"],
+.item_c1e9c4[id="textarea-context-suggestions"],
+/* .item_c1e9c4[id="textarea-context-spellcheck"], */
+.item_c1e9c4[id="textarea-context-sticker-suggestions"],
+/* .item_c1e9c4[id="user-context-apps"], */
+.item_c1e9c4[id="channel-context-channel-copy-link"],
+.item_c1e9c4[id="thread-context-channel-copy-link"],
+.wrapper-2vIMkT .button-3bklZh[aria-label="Create Thread"] {
+  display: none;
 }
 
 
