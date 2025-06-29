@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.0.9 (280625)";
+  --version: "v0.1.0 (290625)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1341,14 +1341,14 @@
 /* Jump to present  */
 .visual-refresh .bottomBar__0f481 {
   background-color: var(--accentcolor);
+  padding: 5px;
+  min-height: 35px;
 }
 
 .bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5 {
   background-color: var(--accentcolor) !important;
   border: none !important;
 }
-
-
 
 /* 8.i. DM Chat */
 /* 8.j. Bot Message */
@@ -1849,6 +1849,19 @@ html .tabBadge-h4HGed {
   background-color: transparent;
 }
 
+/* reaction pod wiadomoscia  */
+.reaction__23977,
+.reactionBtn__23977.forceShow__23977 {
+  background-color: var(--guildlistcolor);
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.burstGlow__23977 {
+  display: none;
+}
+
 /* 16.c. Autocomplete */
 .visual-refresh .autocompleteAttached__6b0e0 {
   bottom: 58px;
@@ -1864,6 +1877,18 @@ html .tabBadge-h4HGed {
 /* 16.g. Server Settings */
 /* 16.h. Group DM Invite Popout */
 /* 16.i. Tooltips */
+.tooltipPrimary__382e7 {
+  background-color: var(--input-color);
+  --background-surface-high: var(--input-color) !important;
+}
+
+/* emoji name  */
+.reactionTooltip_b49891 {
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+}
+
 /* 16.j. @Everyone Popout */
 /* 16.k. Attach Popout */
 
@@ -1881,28 +1906,27 @@ html .tabBadge-h4HGed {
   border-color: var(--border-color);
 }
 
+/* emoji  */
+.button_f563df:hover {
+  background-color: var(--titlebar);
+}
+
 /* remove options from ppm */
-.item_c1e9c4[id="message-tts"],
-/* .item_c1e9c4[id="message-reply"], */
-/* .item_c1e9c4[id="message-edit"], */
-.item_c1e9c4[id="message-pin"],
-.item_c1e9c4[id="message-thread"],
-.item_c1e9c4[id="message-actions-tts"],
-/* .item_c1e9c4[id="message-quote"], */
-.item_c1e9c4[id="message-mark-unread"],
-.item_c1e9c4[id="message-add-reaction"],
-/* .item_c1e9c4[id="message-actions-apps"], */
 .item_c1e9c4[id="message-apps"],
-.item_c1e9c4[id="user-context-note"],
-.item_c1e9c4[id="user-context-focus-video"],
-.item_c1e9c4[id="textarea-context-languages"],
-.item_c1e9c4[id="textarea-context-suggestions"],
-/* .item_c1e9c4[id="textarea-context-spellcheck"], */
-.item_c1e9c4[id="textarea-context-sticker-suggestions"],
-/* .item_c1e9c4[id="user-context-apps"], */
+.item_c1e9c4[id="message-mark-unread"],
+.item_c1e9c4[id="message-tts"],
+.item_c1e9c4[id="message-actions-apps"],
+.item_c1e9c4[id="message-actions-mark-unread"],
+.item_c1e9c4[id="message-actions-tts"],
+.item_c1e9c4[id="user-context-mention"],
+.item_c1e9c4[id="user-context-call"],
+.item_c1e9c4[id="user-context-close-dm"],
+.item_c1e9c4[id="user-context-apps"],
+.item_c1e9c4[id="user-context-invite-to-server"],
+.item_c1e9c4[id="channel-context-invite-people"],
 .item_c1e9c4[id="channel-context-channel-copy-link"],
-.item_c1e9c4[id="thread-context-channel-copy-link"],
-.wrapper-2vIMkT .button-3bklZh[aria-label="Create Thread"] {
+.item_c1e9c4[id="guild-header-popout-application-directory"],
+.item_c1e9c4[id="user-profile-overflow-menu-invite-to-server"] {
   display: none;
 }
 
@@ -1933,6 +1957,11 @@ html .tabBadge-h4HGed {
   border: 1px solid var(--border-color);
   box-shadow: none !important;
   top: -1px;
+}
+
+.button_f7ecac[aria-label*="Click to react"],
+.wrapper_f7ecac .separator_f84418 {
+  display: none;
 }
 
 /* upload progress small window  */
