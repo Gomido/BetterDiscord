@@ -1,3 +1,21 @@
+/**
+ * @name         FlatCord 2025 Local
+ * @description  Update starego skina.
+ * @author       Lilek
+ * @version      1.0
+ * @source https://raw.githubusercontent.com/Gomido/BetterDiscord/master/themes/pliki/flat.css
+ * @website http://bit.ly/kodSkin
+ * @invite niema 
+ * @authorId 186609657928744962
+ */
+
+/*FONTS*/
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@font-face {
+  font-family: 'BMTicons';
+  src: url(data:application/font-ttf;charset=utf-8;base64,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) format("truetype");
+}  */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
@@ -12,7 +30,7 @@
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
-  --accentcolor: #008EE0;
+  --accentcolor: #3C70E6;
   /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
   --accentcolor2: #00BBE0;
   /*drugi kolor akcentu*/
@@ -369,6 +387,7 @@
   border-image-slice: 1;
   border-bottom: 2px solid transparent;
   border-image-source: linear-gradient(90deg, var(--accentcolor) 0%, var(--accentcolor2) 50%);
+  border-top: 0;
 }
 
 .header_f37cb1 {
@@ -381,7 +400,6 @@
   background-color: transparent;
   border-bottom: 2px solid transparent !important;
 }
-
 
 :where(.visual-refresh) .bannerVisible_f37cb1 .headerEllipseForeground_f37cb1 {
   display: none;
@@ -408,6 +426,22 @@
 .animatedContainer_f37cb1 {
   left: 1px;
   background-color: transparent;
+}
+
+/* server guide  */
+.chat_f75fb0{
+  border-top: 1px solid var(--border-color);
+}
+
+/* add to channel list  */
+.chatHeaderBar_dc83f5 {
+  background-color: var(--titlebar);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: none;
+}
+
+.chatHeaderBar_dc83f5:after {
+  display: none;
 }
 
 /* Boost, pulbic badge  */
@@ -612,6 +646,18 @@
 /* 3.b. General Content Area */
 /* 3.c. Cards and Items */
 /* 3.d. Buttons, Switches, and Bars */
+.lookFilled__201d5.colorGreen__201d5,
+.lookFilled__201d5.colorBrand__201d5 {
+  background-color: var(--accentcolor);
+  border-radius: 5px;
+}
+
+.lookFilled__201d5.colorGreen__201d5:hover,
+.lookFilled__201d5.colorBrand__201d5:hover {
+  filter: saturate(0.6);
+  background-color: var(--accentcolor);
+}
+
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles */
@@ -1500,6 +1546,14 @@
   background-color: var(--chatbackground);
 }
 
+.peopleListItem_cc6179{
+  transition: none;
+}
+
+.actionButton_f8fa06 {
+  background-color: var(--titlebar);
+}
+
 /* 9.b. Action Buttons */
 /* 9.c. Active Now  */
 .nowPlayingColumn__133bf {
@@ -1924,21 +1978,95 @@ html .tabBadge-h4HGed {
 .item_c1e9c4[id="user-context-apps"],
 .item_c1e9c4[id="user-context-invite-to-server"],
 .item_c1e9c4[id="channel-context-invite-people"],
-.item_c1e9c4[id="channel-context-channel-copy-link"],
 .item_c1e9c4[id="guild-header-popout-application-directory"],
 .item_c1e9c4[id="user-profile-overflow-menu-invite-to-server"] {
   display: none;
 }
 
+/* more threads  */
+.clickTrapContainer_da8173 .popout__76f04 {
+  background-color: var(--guildlistcolor);
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid var(--border-color)
+}
+
+/* started thread  */
+.container__9271d {
+  background-color: var(--channellistcolor);
+}
+
+.container__9271d::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 35px;
+  bottom: 55px;
+  margin-left: -60px;
+  background: url("https://cdn3.emoji.gg/emojis/4971-threads.png") center/25px no-repeat;
+  pointer-events: none;
+  opacity: .7;
+}
+
+.cozy_c19a55.hasThread_c19a55:after {
+  top: 40px !important;
+}
 
 /* 17.b. Status Picker */
 /* 17.c. Message Menu */
 /* 17.d. Color Picker */
 
 /* 18. Modals */
-/* 18.a. Help Modal */
+/* 18.a. Help/Discover Modal */
+.header__551b0 {
+  border-bottom: 2px solid var(--accentcolor);
+  background-color: var(--headercolor);
+}
+
+.headerBar__8a7fc {
+  border-image-slice: 1;
+  border-bottom: 2px solid transparent;
+  border-image-source: linear-gradient(90deg, var(--accentcolor) 0%, var(--accentcolor2) 50%);
+  border-top: 0;
+  background-color: var(--headercolor);
+}
+
+.backdrop__8a7fc{
+  background: transparent;
+}
+
+.nav__551b0 {
+  background-color: var(--channellistcolor);
+  border-right: 1px solid var(--border-color);
+}
+
+.scroller__23746 {
+  background-color: var(--chatbackground);
+}
+
+.theme-dark .card__84e3e {
+  background-color: var(--guildlistcolor);
+}
+
+.theme-dark .card__84e3e:hover {
+  background-color: var(--input-color);
+}
+
+
+
+/* quests  */
+.rewardDescriptionContainer__956c6,
+.container__960ef {
+  background-color: var(--guildlistcolor);
+}
+
 /* 18.b. User Profile Modal */
 /* 18.c. Instant Invite Modal */
+.wrapper_d5f3cd {
+  background-color: var(--guildlistcolor);
+  border-radius: 2px;
+}
+
 /* 18.d. Join or Create New Guild */
 /* 18.e. Upload Modal */
 
@@ -2012,6 +2140,13 @@ html .tabBadge-h4HGed {
 /* 18.j. Smartphone Modal */
 /* 18.k. Drag and Drop Modal */
 /* 18.l. Generic Modal */
+/* Automod  */
+.embedCard_b99f57{
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+}
+
+
 /* 18.m. Gift Nitro Modal & Nitro Boost */
 /* 18.n. Server Templates */
 /* 18.p. Changelog & Version Panel */
@@ -2297,9 +2432,9 @@ html .tabBadge-h4HGed {
   clip-path: none;
 }
 
-#app-mount .wrapper__44b0c foreignObject[mask*=mobile] {
+/* #app-mount .wrapper__44b0c foreignObject[mask*=mobile] {
   property: inherit;
-}
+} */
 
 #app-mount .wrapper__44b0c foreignObject[mask*=mobile][width="24"]:after {
   width: 10px;
