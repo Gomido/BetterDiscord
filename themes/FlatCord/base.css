@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.1.0 (290625)";
+  --version: "v0.1.1 (290625)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -411,7 +411,7 @@
 }
 
 /* server guide  */
-.chat_f75fb0{
+.chat_f75fb0 {
   border-top: 1px solid var(--border-color);
 }
 
@@ -1528,7 +1528,7 @@
   background-color: var(--chatbackground);
 }
 
-.peopleListItem_cc6179{
+.peopleListItem_cc6179 {
   transition: none;
 }
 
@@ -2013,7 +2013,7 @@ html .tabBadge-h4HGed {
   background-color: var(--headercolor);
 }
 
-.backdrop__8a7fc{
+.backdrop__8a7fc {
   background: transparent;
 }
 
@@ -2123,11 +2123,26 @@ html .tabBadge-h4HGed {
 /* 18.k. Drag and Drop Modal */
 /* 18.l. Generic Modal */
 /* Automod  */
-.embedCard_b99f57{
+.embedCard_b99f57 {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
 }
 
+/* leaving disord popout  */
+.root__49fc1.root__49fc1 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
+.footer__49fc1 {
+  background-color: var(--channellistcolor);
+}
+
+.linkCalloutContainer_ad9c52 {
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  background-color: #323232;
+}
 
 /* 18.m. Gift Nitro Modal & Nitro Boost */
 /* 18.n. Server Templates */
@@ -2175,6 +2190,10 @@ html .tabBadge-h4HGed {
 
 .cozy_c19a55 .header_c19a55 .chipletContainerInline__10651 {
   margin-top: -4px;
+}
+
+.botTagNotStaffWarning__82f07 {
+  border-radius: 0 !important;
 }
 
 /* 19. Login Page */
