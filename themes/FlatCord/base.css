@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.1.1 (290625)";
+  --version: "v0.1.1 (100725)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -541,7 +541,7 @@
   height: 100%;
   width: 35px;
   bottom: 0;
-  margin-left: -20px;
+  margin-left: -15px;
   background: url("https://raw.githubusercontent.com/Gomido/BetterDiscord/refs/heads/master/themes/Windows11Theme/Assets/lupka.svg") center/25px no-repeat;
   pointer-events: none;
   opacity: .7;
@@ -624,6 +624,15 @@
 } */
 
 /* 3. User & Server Settings */
+/* avatar change  */
+.placeholderFill__7ffbc {
+  fill: #4e4e4e;
+}
+
+.option_edf440 {
+  background-color: var(--titlebar);
+}
+
 /* 3.a. General Sidebar */
 /* 3.b. General Content Area */
 /* 3.c. Cards and Items */
@@ -1166,6 +1175,76 @@
 
 /* 5.h. Unread Messages Popout inbox */
 
+/* mentions  */
+.recentMentionsPopout__95796.messagesPopoutWrap__45690,
+.recentMentionsPopout__95796 {
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0px;
+  top: -8px;
+}
+
+.container__95796 {
+  margin: 16px 0px 0 16px;
+}
+
+.messageContainer__95796 {
+  background-color: var(--guildlistcolor);
+  margin: 0 0 0 0px;
+  border-radius: 0;
+}
+
+.messagesPopoutWrap__45690 .channelHeader__35a7e {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+  padding: 0 15px 0 15px;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+}
+
+/* unreads */
+.tutorial__2692d {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+}
+
+.channelHeader__35a7e {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+  padding: 0 15px 0 35px;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+}
+
+.collapseButton__427f0 {
+  left: 5px;
+}
+
+.messages__1ccd1 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
+.jumpButton_ed0c8c {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+  top: 0px
+}
+
+/* for you  */
+.container__0f711 {
+  background-color: var(--input-color);
+}
+
+.container__0f711 .unread__6fddf {
+  background-color: var(--accentcolor3);
+  left: 4px;
+  width: 4px;
+  border-radius: 2px;
+  top: 25%;
+}
+
 /* 6. Account Area */
 /* 6.a. Main Container */
 .visual-refresh .panels_c48ade {
@@ -1369,13 +1448,18 @@
 /* Jump to present  */
 .visual-refresh .bottomBar__0f481 {
   background-color: var(--accentcolor);
-  padding: 5px;
+  padding: 0px;
   min-height: 35px;
+  border-radius: 5px;
 }
 
 .bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5 {
   background-color: var(--accentcolor) !important;
   border: none !important;
+}
+
+.bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5:hover {
+  filter: none;
 }
 
 /* 8.i. DM Chat */
@@ -1728,52 +1812,7 @@ html .tabBadge-h4HGed {
   height: unset;
 }
 
-/* mentions  */
-.recentMentionsPopout__95796 {
-  background-color: var(--input-color);
-  border: 1px solid var(--border-color);
-  border-radius: 0px;
-  top: -8px;
-}
-
-/* unreads */
-.tutorial__2692d {
-  background-color: var(--guildlistcolor);
-  border-radius: 0;
-  border: 1px solid var(--border-color);
-}
-
-.channelHeader__35a7e {
-  background-color: var(--chatbackground);
-  border-radius: 0;
-  padding: 0 15px 0 35px;
-  border: 1px solid var(--border-color);
-  border-bottom: none;
-}
-
-.collapseButton__427f0 {
-  left: 5px;
-}
-
-.messages__1ccd1 {
-  background-color: var(--guildlistcolor);
-  border-radius: 0;
-}
-
-/* for you  */
-.container__0f711 {
-  background-color: var(--input-color);
-}
-
-.container__0f711 .unread__6fddf {
-  background-color: var(--accentcolor3);
-  left: 4px;
-  width: 4px;
-  border-radius: 2px;
-  top: 25%;
-}
-
-/* friends  */
+/* friends  request*/
 .container_e73f2a {
   background-color: var(--input-color);
   border-radius: 0;
@@ -1932,6 +1971,16 @@ html .tabBadge-h4HGed {
 /* 16.m. More Users Popout */
 /* 16.n. Overflow Roles Popout */
 /* 16.o. Dropdown Menu Popout */
+.uploadDropModal_dbca3c .bgScale_dbca3c {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+}
+
+.uploadDropModal_dbca3c .inner_dbca3c {
+  border: none;
+}
+
 /* 16.p. DM Call Region Select Popout */
 
 /* 17. Menus */
@@ -2559,6 +2608,7 @@ html .tabBadge-h4HGed {
   max-width: fit-content;
 }
 
+#app-mount .message__1ccd1 .visualMediaItemContainer_f4758a,
 #app-mount .message__5126c .visualMediaItemContainer_f4758a,
 #app-mount .message__5126c .imageContainer__0f481 {
   width: unset !important;
