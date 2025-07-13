@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.1.1 (100725)";
+  --version: "v0.1.2 (130725)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1184,6 +1184,10 @@
   top: -8px;
 }
 
+.icon_d404a3 {
+  background-color: var(--guildlistcolor);
+}
+
 .container__95796 {
   margin: 16px 0px 0 16px;
 }
@@ -1221,9 +1225,16 @@
   left: 5px;
 }
 
-.messages__1ccd1 {
+.messages__1ccd1,
+.container_faa96b {
   background-color: var(--guildlistcolor);
   border-radius: 0;
+  border: 1px solid var(--border-color);
+}
+
+.container_faa96b:hover {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color)
 }
 
 .jumpButton_ed0c8c {
@@ -1285,6 +1296,14 @@
   border-radius: 50%;
   background-color: var(--white1);
 }
+
+.primary__6af3a,
+.primary__6af3a:hover,
+.barButtonAlt__0f481 {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 
 /* 6.c. Light Theme Recolor NIE MA */
 /* 6.d. Listening Along */
@@ -1616,7 +1635,8 @@
   transition: none;
 }
 
-.actionButton_f8fa06 {
+.actionButton_f8fa06,
+.actionButton_f8fa06.highlight_f8fa06 {
   background-color: var(--titlebar);
 }
 
@@ -1944,6 +1964,8 @@ html .tabBadge-h4HGed {
   right: 0;
   border-radius: 8px;
   background-color: var(--titlebar);
+  box-shadow: none;
+  border: 1px solid var(--border-color)
 }
 
 /* 16.d. User Popout */
@@ -2027,20 +2049,9 @@ html .tabBadge-h4HGed {
   background-color: var(--channellistcolor);
 }
 
-.container__9271d::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 35px;
-  bottom: 55px;
-  margin-left: -60px;
-  background: url("https://cdn3.emoji.gg/emojis/4971-threads.png") center/25px no-repeat;
-  pointer-events: none;
-  opacity: .7;
-}
 
 .cozy_c19a55.hasThread_c19a55:after {
-  top: 40px !important;
+  display: none;
 }
 
 /* 17.b. Status Picker */
@@ -2093,9 +2104,16 @@ html .tabBadge-h4HGed {
 
 /* 18.b. User Profile Modal */
 /* 18.c. Instant Invite Modal */
-.wrapper_d5f3cd {
+.wrapper_d5f3cd,
+.guildInviteContainer__083ae,
+.footerContent__083ae {
   background-color: var(--guildlistcolor);
   border-radius: 2px;
+}
+
+.guildIconExpired_d5f3cd {
+  background-color: var(--titlebar);
+  border-radius: 5px;
 }
 
 /* 18.d. Join or Create New Guild */
