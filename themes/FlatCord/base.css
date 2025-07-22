@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css');
+/* @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css'); */
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
 
@@ -57,7 +57,7 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.1.2 (130725)";
+  --version: "v0.1.3 (220725)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -1360,6 +1360,8 @@
 
 /* 8. Chat */
 /* 8.a. Main Chat Area */
+
+
 /* chat loading modal */
 .visual-refresh .wrapper_fc8177,
 .wrapper_d852db {
@@ -1371,7 +1373,8 @@
   border-radius: 0px;
   height: 24px;
   width: 370px !important;
-  left: unset !important;
+  /* left: unset !important; */
+  border-color: transparent
 }
 
 .messagesErrorBar__0f481 .inner-26JK4f {
@@ -1505,6 +1508,16 @@
   height: 100% !important;
 }
 
+.align-chat-input .emojiButton__74017,
+.align-chat-input .attachButtonInner__0923f {
+  border-radius: 50%;
+}
+
+.align-chat-input .emojiButton__74017:hover,
+.align-chat-input .attachButtonInner__0923f:hover {
+  background-color: var(--button-secondary-background-hover);
+}
+
 .visual-refresh .slateTextArea_ec4baf {
   padding: 18px 0 18px 0;
 }
@@ -1525,9 +1538,9 @@
   border: 1px solid var(--border-color);
 }
 
-.scroller__36d07 {
+/* .scroller__36d07 {
   padding-bottom: 15px;
-}
+} */
 
 /* color bar in textarea */
 .editor__1b31f.slateTextArea_ec4baf::after,
@@ -1558,25 +1571,20 @@
 
 
 /* 8.m. Typing Bar */
-.chat_f75fb0 form .typing_b88801 {
+.base_b88801 .typingDots_b88801 {
   background-color: var(--titlebar) !important;
-  top: -26px;
-  padding-left: 10px;
-  /* animation: opacity 300ms ease; */
-  /* -ms-transform-origin: bottom left; */
-  /* transform-origin: bottom left; */
-  /* -ms-transform: scale(1); */
-  /* transform: scale(1); */
-  /* width: auto; */
-  padding-right: 20px;
-  /* padding-top: 0px; */
-  border-radius: 6px;
   border: 1px solid var(--border-color);
-  /* margin-left: 15px; */
-  /* box-shadow: 0 -3px 20px rgba(0, 0, 0, .1); */
-  /* opacity: 1; */
-  /* transition: all 200ms ease; */
-  /* text-overflow: ellipsis; */
+  border-radius: 6px;
+  padding-right: 15px;
+  margin-left: -8px !important;
+}
+
+.typing_b88801 {
+  margin: 0;
+}
+
+.base_b88801 .ellipsis_b88801 {
+  margin-left: 10px;
 }
 
 /* 
@@ -1584,21 +1592,26 @@
   transform: scaleY(-1);
 } */
 
-.visual-refresh .base_b88801 {
+.base_b88801 {
   height: 25px;
-  left: 8px;
-  right: auto;
+  margin-top: -2px
 }
 
 .base_b88801 .text_b88801 {
   line-height: 26px;
+  margin-left: 5px !important;
   text-overflow: ellipsis;
   font-size: 14px
 }
 
-.cooldownText_b21699 {
-  margin-left: 10px;
+.cooldownWrapper_b21699 {
+  background-color: var(--titlebar);
+  margin-right: 8px;
+  border-radius: 6px;
+  height: 20px;
+  border: 1px solid var(--border-color);
 }
+
 
 /* reply bar */
 .visual-refresh .stackedBars__74017 {
