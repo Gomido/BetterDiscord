@@ -1694,10 +1694,10 @@
 }
 
 .friendsButtonContainer__35e86 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
-.friendsButtonContainer__35e86 .interactive__972a0{
+.friendsButtonContainer__35e86 .interactive__972a0 {
   height: 40px !important;
 }
 
@@ -1710,7 +1710,7 @@
 }
 
 .sectionDivider__35e86 {
-  margin-top: 50px !important;
+  margin-top: 45px !important;
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) .interactive__972a0:before {
@@ -2650,6 +2650,10 @@
   border-radius: 50%;
 }
 
+.avatar_f75fb0 {
+  margin-left: 2px;
+}
+
 #app-mount .wrapper__44b0c svg:not(:root) {
   overflow: visible;
   contain: none;
@@ -2755,9 +2759,9 @@
   stroke: var(--invisible);
 }
 
-#app-mount .wrapper__44b0c rect[x="16"] {
-  width: 24px;
-  height: 24px;
+#app-mount .wrapper__44b0c rect[x="14"] {
+  width: 20px;
+  height: 20px;
 }
 
 #app-mount .wrapper__44b0c rect[x="28"] {
