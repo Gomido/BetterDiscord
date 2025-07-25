@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-/* @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css'); */
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
 
@@ -46,9 +45,21 @@
   --rs-spacing: 2px;
   /* 17b641 kolor statusu */
   --text-link: var(--accentcolor);
+  --guildbar-folder-size: 40px;
   /* ilosc zakladek znajomi */
   --dm-columns: 3;
-  --guildbar-folder-size: 40px;
+  /* Settings modal  */
+
+  --settingswidth: 960;
+  --settingsheight: 80;
+  --settingsbackground: transparent;
+
+
+  --settingswidth_v: min(calc(1px * var(--settingswidth_s, var(--settingswidth))), 99vw);
+  --settingsheight_v: min(calc(1vh * var(--settingsheight_s, var(--settingsheight))), 99vh);
+  --settingsbackground_v: var(--settingsbackground_s, var(--settingsbackground));
+
+  /* Kolory statusu  */
   --online: #28A745;
   --idle: #faa61a;
   --dnd: #DD2C2C;
@@ -283,11 +294,13 @@
     21.a.19. Status Everywhere
     21.a.20. Guild and Friend Removal Alerts
     21.a.21. Hide chat buttons 🠗
+    21.a.22. Settings Modal by mwittrien
   
   21.b. Addon Optimization
     21.b.1. Custom Popouts
     21.b.2. Radial Status
     21.b.3. Chat Bubbles
+    
 
 22. Custom CSS
 
@@ -1658,26 +1671,73 @@
 /* 9.d. Left friend bar */
 /* 9.e. Fake bar on top */
 /* 9.f. Small buttons stage/friends etc. */
+
 /* hide nitro tab  */
-.interactive__972a0 [href="/store"],
-.interactive__972a0 [href="/shop"] {
+/* .interactive__972a0 [href="/store"], */
+/* .interactive__972a0 [href="/shop"], */
+/* nitro ustawienia profilu  */
+.floatingNitroUpsell__39749,
+.theme-dark .children__9293f:after {
   display: none;
 }
 
-/* 
 
-.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) {
-  position: relative;
-  float: left;
-  margin: 0px 13px;
-  width: 50px;
-  height: 50px;
-  overflow: visible;
-  transform: scale(0.9);
-  border-left: none !important;
-  transition: none;
+.channel__972a0:not(.dm__972a0) .link__972a0 {
+  padding-left: 15px;
 }
 
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) {
+  position: relative;
+  float: left;
+  /* margin: 0px 5px; */
+  width: 80px;
+}
+
+.friendsButtonContainer__35e86 {
+  margin-left: 5px;
+}
+
+.friendsButtonContainer__35e86 .interactive__972a0{
+  height: 40px !important;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .avatar__20a53 {
+  margin-left: 15px;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .content__20a53 {
+  display: none;
+}
+
+.sectionDivider__35e86 {
+  margin-top: 50px !important;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .interactive__972a0:before {
+  display: none;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .interactive__972a0 {
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .interactive__972a0:hover {
+  border-bottom: 2px solid var(--accentcolor3) !important;
+  border-radius: 0;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .interactiveSelected__972a0 {
+  border-bottom: 2px solid var(--accentcolor) !important;
+  border-radius: 0;
+}
+
+.privateChannels__35e86 .channel__972a0:not(.dm__972a0) .numberBadge__2b1f5 {
+  position: absolute;
+  transform: translate(100%, -50%);
+}
+
+/*
 .privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .layout__20a53 {
   padding: 0px;
   width: 100%;
@@ -1709,10 +1769,7 @@
   right: 0;
 }
 
-html .tabBadge-h4HGed {
-  position: absolute;
-  transform: translate(50%, -50%);
-} */
+*/
 
 
 /* Small buttons stage/friends etc. NIE DZIALA*/
@@ -2317,6 +2374,270 @@ html .tabBadge-h4HGed {
 .altText__0f481 {
   display: none !important;
 }
+
+/* 21.a.22. Settings Modal by mwittrien*/
+/* colors  */
+.sidebarRegionScroller__23e6b {
+  background-color: var(--channellistcolor);
+}
+
+.contentRegionScroller__23e6b {
+  background: var(--chatbackground);
+}
+
+.accountProfileCard__1fed1 {
+  background-color: var(--guildlistcolor);
+}
+
+.credentialList__6c75d,
+.background__1fed1,
+.fieldList__1fed1 {
+  background-color: var(--input-color);
+  border-radius: 0;
+}
+
+/* settings modal  */
+#app-mount .baseLayer__960e4 {
+  opacity: 1 !important;
+  transform: unset !important;
+  will-change: unset !important;
+}
+
+#app-mount .stop-animations * {
+  transition-property: inherit !important;
+  animation: inherit !important;
+}
+
+#app-mount .layer__960e4.stop-animations:first-child::after {
+  content: "" !important;
+  position: fixed !important;
+  background: rgb(0, 0, 0) !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0.85 !important;
+  z-index: 999 !important;
+  pointer-events: none !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background: var(--settingsbackground_v) !important;
+  border-radius: 0px !important;
+  box-shadow: var(--elevation-high) !important;
+  width: var(--settingswidth_v) !important;
+  height: var(--settingsheight_v) !important;
+  margin: auto !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  contain: unset !important;
+  z-index: 1000 !important;
+  --settingsiconsadditionalsize: var(--use-settingsicons, 0) * (var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
+}
+
+#app-mount .layer__960e4~.layer__960e4>div,
+#app-mount .layer__960e4~.layer__960e4 .standardSidebarView__23e6b {
+  position: static !important;
+  border-radius: unset !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: unset !important;
+  padding: unset !important;
+  overflow: hidden !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .sidebarRegion__23e6b,
+#app-mount .layer__960e4~.layer__960e4 .sidebarRegionScroller__23e6b {
+  flex: 0 0 auto !important;
+  margin-top: 0 !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .sidebar__23e6b {
+  width: 218px !important;
+  padding: 20px 6px 20px 20px !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .contentColumnDefault__23e6b,
+#app-mount .layer__960e4~.layer__960e4 .contentColumnWide__23e6b {
+  padding: 20px 40px !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .wrapper_e5cdf3 {
+  width: calc(var(--settingswidth_v) - 420px - var(--settingsiconsadditionalsize)) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .contentRegionScroller__23e6b {
+  margin-top: 0 !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .sidebar_e29cd7 {
+  height: var(--settingsheight_v) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .standardSidebarView__23e6b .editor {
+  height: calc(var(--settingsheight_v) - 120px) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  max-width: unset !important;
+  height: 100% !important;
+  max-height: unset !important;
+  z-index: -1 !important;
+  padding-top: 0 !important;
+  opacity: 0 !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .tools__23e6b {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .closeButton_c2b141 {
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: unset !important;
+  height: 100% !important;
+  max-height: unset !important;
+  cursor: default !important;
+  flex: unset !important;
+  transition: unset !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .closeButton_c2b141:hover {
+  transition: unset !important;
+  background: unset !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .closeButton_c2b141>svg {
+  display: none !important;
+}
+
+#app-mount>.appAsidePanelWrapper_a3002d>.notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .container_c2b141 {
+  height: 100% !important;
+}
+
+#app-mount>.appAsidePanelWrapper_a3002d>.notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .keybind_c2b141 {
+  display: none !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .settingsToolbar_8227b0 {
+  display: none !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .accountProfileCard__1fed1 {
+  max-width: calc(var(--settingswidth_v) - 332px - var(--settingsiconsadditionalsize)) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 {
+  gap: 30px !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .sectionsContainer__722a8,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .sectionsContainer_def11f,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .editor__9d295,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 {
+  min-width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
+  max-width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .sectionsContainer__722a8,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .sectionsContainer_def11f,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .editor__9d295,
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 {
+  min-width: calc((var(--settingswidth_v) - 364px - var(--settingsiconsadditionalsize)) / 2) !important;
+  max-width: calc((var(--settingswidth_v) - 364px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutOuter_c69a7b {
+  width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 .userPopoutOuter_c69a7b {
+  width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutOuter_c69a7b,
+#app-mount .layer__960e4~.layer__960e4 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 .userPopoutOuter_c69a7b {
+  min-width: unset !important;
+  max-width: 340px !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutInner_c69a7b {
+  overflow: hidden !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .guildsSection__337a8 {
+  max-width: calc(var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) !important;
+}
+
+#app-mount .layer__960e4~.layer__960e4 .container__9293f.headerBar__80679 {
+  position: static !important;
+}
+
+#app-mount .root__5c9fc {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background: var(--settingsbackground_v) !important;
+  border-radius: 5px !important;
+  box-shadow: var(--elevation-high) !important;
+  width: var(--settingswidth_v) !important;
+  height: var(--settingsheight_v) !important;
+  margin: auto !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  contain: unset !important;
+  z-index: 1000 !important;
+}
+
+#app-mount .root__5c9fc.enterDone__5c9fc {
+  transform: unset !important;
+}
+
+#app-mount .root__5c9fc .closeIconWrapper__6fd0e,
+#app-mount .root__5c9fc .closeIconWrapper__6fd0e .container_c2b141,
+#app-mount .root__5c9fc .closeIconWrapper__6fd0e .closeButton_c2b141,
+/* #app-mount .shop__6db1d .alignedRightContent__80679, */
+#app-mount .shop__6db1d .container_c2b141,
+#app-mount .shop__6db1d .closeButton_c2b141 {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: -1 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: unset !important;
+  height: 100% !important;
+  max-height: unset !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  cursor: default !important;
+  animation: unset !important;
+  transition: unset !important;
+}
+
+#app-mount .root__5c9fc .closeIconWrapper__6fd0e {
+  top: 22px !important;
+}
+
 
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
