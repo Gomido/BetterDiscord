@@ -8,6 +8,8 @@
 }
 
 :root {
+  --version: "v0.1.5 (290725)";
+
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
@@ -67,7 +69,6 @@
   --streaming: #643da7;
   /*wielkość cieni pod oknami*/
   --shadow: rgba(0, 0, 0, .3);
-  --version: "v0.1.4 (250725)";
 
   /*BIALE*/
   --white0: rgba(255, 255, 255, 0);
@@ -804,7 +805,8 @@
 .pendingFolderButtonIcon__93fc9,
 .wrapper_cc5dd2 foreignObject,
 .folderGroupBackground__48112,
-.folderIcon__48112 {
+.folderIcon__48112,
+.folderButtonInner__48112 {
   mask: none !important;
   border-radius: var(--avatars) !important;
 }
@@ -1687,7 +1689,7 @@
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) {
   position: relative;
   float: left;
-  width: 86.5px;
+  width: calc(100% / var(--dm-columns)) !important;
   margin-top: -8px
 }
 
@@ -1704,7 +1706,7 @@
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) .avatar__20a53 {
-  margin-left: 18px;
+  margin-left:  calc(100% / var(--dm-columns)) !important;;
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) .content__20a53 {
