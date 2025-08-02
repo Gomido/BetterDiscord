@@ -8,8 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.5 (290725)";
-
+  --version: "v0.1.6 (290725)";
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
@@ -1622,7 +1621,6 @@
   border: 1px solid var(--border-color);
 }
 
-
 /* reply bar */
 .visual-refresh .stackedBars__74017 {
   background-color: transparent;
@@ -1706,7 +1704,8 @@
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) .avatar__20a53 {
-  margin-left:  calc(100% / var(--dm-columns)) !important;;
+  margin-left: calc(100% / var(--dm-columns)) !important;
+  ;
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) .content__20a53 {
@@ -2370,9 +2369,9 @@
 /* 21.a.19. Status Everywhere */
 /* 21.a.20. Guild and Friend Removal Alerts */
 /* 21.a.21. Hide chat buttons 🠗*/
-.button__201d5[aria-label="Send a gift"],
-.button__201d5[aria-label="Open GIF picker"],
-.button__201d5[aria-label="Open sticker picker"],
+.button__74017[aria-label="Send a gift"],
+.button__74017[aria-label="Open GIF picker"],
+.button__74017[aria-label="Open sticker picker"],
 .channelAppLauncher_e6e74f,
 .altText__0f481 {
   display: none !important;
@@ -3076,3 +3075,29 @@
 /* 22. Custom CSS */
 
 /* 23. @Media Edits */
+
+
+/* 24. Custom Nicknames/Badges */
+@keyframes gradient-animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.contents_c19a55 .username_c19a55[data-text="Lilek"] {
+  background: linear-gradient(90deg,
+      #ff0080,
+      #ff8c00,
+      #40e0d0,
+      #8a2be2,
+      #ff0090);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% 200%;
+}
+
+.wrapper_c19a55:hover .username_c19a55[data-text="Lilek"] {
+  animation: gradient-animation 1s linear infinite;
+}
