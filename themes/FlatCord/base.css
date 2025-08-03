@@ -8,7 +8,8 @@
 }
 
 :root {
-  --version: "v0.1.6 (290725)";
+  --version: "v0.1.5 (290725)";
+
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
@@ -3086,11 +3087,9 @@
 
 .contents_c19a55 .username_c19a55[data-text="Lilek"] {
   background: linear-gradient(90deg,
-      #ff0080,
-      #ff8c00,
-      #40e0d0,
-      #8a2be2,
-      #ff0090);
+      #ffa600,
+      #406ff0,
+      #ffa600);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
