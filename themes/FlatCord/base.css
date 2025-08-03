@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.5 (290725)";
+  --version: "v0.1.6 (030825)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -1368,7 +1368,9 @@
 
 /* 8. Chat */
 /* 8.a. Main Chat Area */
-
+.messagesWrapper__36d07 {
+  mask: none !important;
+}
 
 /* chat loading modal */
 .visual-refresh .wrapper_fc8177,
@@ -2225,10 +2227,14 @@
 
 /* 18.f. Game Preview Modal */
 /* 18.g. Quick Switcher */
-.quickswitcher_ac6cb0 {
+.container__53cea {
   background-color: var(--guildlistcolor) !important;
   border-radius: 0;
   border: 1px solid #383838
+}
+
+.auto__99f8c::-webkit-scrollbar {
+  width: 0;
 }
 
 .input_ac6cb0 {
@@ -2239,7 +2245,7 @@
 
 .scroller_ac6cb0 {
   background-color: transparent !important;
-  width: 528px;
+  padding-right: 17px !important;
 }
 
 .result__71961 {
@@ -3077,7 +3083,6 @@
 
 /* 23. @Media Edits */
 
-
 /* 24. Custom Nicknames/Badges */
 @keyframes gradient-animation {
   to {
@@ -3093,7 +3098,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   background-size: 200% 200%;
 }
 
