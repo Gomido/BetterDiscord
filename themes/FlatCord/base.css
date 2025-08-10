@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.6 (030825)";
+  --version: "v0.1.7 (100825)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -961,7 +961,8 @@
 /* 4.b. Guilds */
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
-.mention__3b95d {
+.mention__3b95d,
+.mention__3b95d:active {
   background-color: var(--accentcolor);
 }
 
@@ -1466,7 +1467,6 @@
   background-color: transparent;
 }
 
-
 .markup__75297 pre {
   background-color: var(--input-color);
   max-width: 100%;
@@ -1494,6 +1494,19 @@
 
 .bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5:hover {
   filter: none;
+}
+
+
+/* quote  */
+.blockquoteContainer__75297 {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+}
+
+.blockquoteContainer__75297 .blockquoteDivider__75297 {
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 /* 8.i. DM Chat */
@@ -1583,21 +1596,6 @@
 }
 
 /* 8.m. Typing Bar */
-.base_b88801 .typingDots_b88801 {
-  background-color: var(--titlebar) !important;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding-right: 15px;
-  margin-left: -8px !important;
-}
-
-.typing_b88801 {
-  margin: 0;
-}
-
-.base_b88801 .ellipsis_b88801 {
-  margin-left: 10px;
-}
 
 /* 
 .activityInviteEducationArrow_b88801 {
@@ -1617,11 +1615,13 @@
 }
 
 .cooldownWrapper_b21699 {
-  background-color: var(--titlebar);
+  /* background-color: var(--titlebar); */
   margin-right: 8px;
+  margin-left: 8px;
+  padding-left: 8px !important;
   border-radius: 6px;
   height: 20px;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
 }
 
 /* reply bar */
@@ -1692,10 +1692,6 @@
   float: left;
   width: calc(100% / var(--dm-columns)) !important;
   margin-top: -8px
-}
-
-.thin__99f8c::-webkit-scrollbar {
-  width: 0px;
 }
 
 .friendsButtonContainer__35e86 {
@@ -1862,6 +1858,10 @@
 }
 
 /* 15. Scrollbars */
+.thin__99f8c::-webkit-scrollba r {
+  width: 20px !important;
+}
+
 /* 15.1. Ohter */
 /* 15.1.a. General Buttons */
 /* 15.1.b. Sliders */
@@ -2040,6 +2040,27 @@
 }
 
 /* 16.d. User Popout */
+:root .user-profile-popout {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+}
+
+.card__39ec2,
+.clickableContainer__39ec2:hover>.card__39ec2 {
+  background-color: var(--channellistcolor);
+}
+
+.container_e928f4,
+.container_e928f4:before {
+  background: var(--chatbackground);
+  border: none;
+}
+
+.pill_dfa8b6 {
+  background: var(--button-secondary-background);
+}
+
 /* 16.e. Add Role User Popout */
 /* 16.f. Search Popout */
 /* 16.g. Server Settings */
@@ -2059,7 +2080,6 @@
 
 /* 16.j. @Everyone Popout */
 /* 16.k. Attach Popout */
-
 /* 16.l. RTC Connection Popout */
 /* 16.m. More Users Popout */
 /* 16.n. Overflow Roles Popout */
@@ -2646,7 +2666,6 @@
 #app-mount .root__5c9fc .closeIconWrapper__6fd0e {
   top: 22px !important;
 }
-
 
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
