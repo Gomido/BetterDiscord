@@ -14,7 +14,7 @@
   --avatars: 10px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor: #3C70E6;
-  /*kolor akcentudrugi - jedynie do gradientów na górnym pasku/chacie*/
+  /*kolor akcentu drugi - jedynie do gradientów na górnym pasku/chacie*/
   --accentcolor2: #00BBE0;
   /*drugi kolor akcentu*/
   --accentcolor3: #FFFFFF;
@@ -1327,6 +1327,7 @@
 .member__5d473 {
   margin: 0;
   height: 42px;
+  max-width: 100%;
 }
 
 .childContainer__91a9d.nameplated__91a9d {
@@ -1603,8 +1604,7 @@
 } */
 
 .base_b88801 {
-  height: 25px;
-  margin-top: -2px
+  top: -20px;
 }
 
 .base_b88801 .text_b88801 {
@@ -1858,8 +1858,8 @@
 }
 
 /* 15. Scrollbars */
-.thin__99f8c::-webkit-scrollba r {
-  width: 20px !important;
+.thin__99f8c::-webkit-scrollbar {
+  width: 0px !important;
 }
 
 /* 15.1. Ohter */
