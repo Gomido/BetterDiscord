@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css'); */
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
 
@@ -8,7 +9,7 @@
 }
 
 :root {
-  --version: "v0.1.7 (100825)";
+  --version: "v0.1.8 (230825)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -649,18 +650,6 @@
 /* 3.b. General Content Area */
 /* 3.c. Cards and Items */
 /* 3.d. Buttons, Switches, and Bars */
-.lookFilled__201d5.colorGreen__201d5,
-.lookFilled__201d5.colorBrand__201d5 {
-  background-color: var(--accentcolor);
-  border-radius: 5px;
-}
-
-.lookFilled__201d5.colorGreen__201d5:hover,
-.lookFilled__201d5.colorBrand__201d5:hover {
-  filter: saturate(0.6);
-  background-color: var(--accentcolor);
-}
-
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles */
@@ -1182,6 +1171,18 @@
   border-radius: 0;
 }
 
+
+/* add dm  */
+.privateChannelsHeaderContainer__99e7c .primary__6af3a {
+  background-color: transparent;
+  border: none;
+}
+
+.privateChannelsHeaderContainer__99e7c .lineClamp1__4bd52 {
+  display: none;
+}
+
+
 /* 5.h. Unread Messages Popout inbox */
 
 /* mentions  */
@@ -1296,26 +1297,47 @@
   box-shadow: none !important;
 }
 
+.headerBarContent__1a9ce {
+  padding-right: 0;
+}
+
 /* 6.b. Buttons */
-.visual-refresh button.button__67645 {
+
+button.button__67645 {
   border-radius: 50%;
 }
 
-.button__67645.enabled__67645:hover {
+button.button__67645:hover {
   border-radius: 50%;
   background-color: var(--white1);
 }
 
 .primary__6af3a,
+.lookFilled__201d5.colorBrand__201d5,
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf {
+  background-color: var(--accentcolor);
+  border-radius: 5px;
+}
+
 .primary__6af3a:hover,
-.barButtonAlt__0f481 {
-  background-color: transparent;
-  border-color: transparent;
+.lookFilled__201d5.colorBrand__201d5:hover,
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
+  background-color: var(--accentcolor3);
+  color: #000;
+}
+
+
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf[aria-selected=true] {
+  background-color: var(--accentcolor);
+  color: #FFF;
 }
 
 
 /* 6.c. Light Theme Recolor NIE MA */
 /* 6.d. Listening Along */
+.listeningAlong_e0cf27 {
+  background-color: var(--titlebar);
+}
 
 /* 7. Members List */
 /* 7.a. Main Member List */
@@ -1656,7 +1678,7 @@
 }
 
 .peopleListItem_cc6179 {
-  transition: none;
+  transition: none !important;
 }
 
 .actionButton_f8fa06,
@@ -2061,6 +2083,11 @@
   background: var(--button-secondary-background);
 }
 
+.upsellContent__5997d,
+.menuOverlay_ce8328 {
+  background-color: var(--channellistcolor);
+}
+
 /* 16.e. Add Role User Popout */
 /* 16.f. Search Popout */
 /* 16.g. Server Settings */
@@ -2190,6 +2217,16 @@
 /* quests  */
 .rewardDescriptionContainer__956c6,
 .container__960ef {
+  background-color: var(--guildlistcolor);
+}
+
+
+/* quest share on chat */
+.questsCard__72a00 {
+  border: 1px solid var(--border-color)
+}
+
+.root__2055a {
   background-color: var(--guildlistcolor);
 }
 
@@ -2909,12 +2946,12 @@
 }
 
 #app-mount .avatarWrapper__37e49 .mask__44b0c>g {
-  transform: none !important;
+  transform: translateX(38%) translateY(45%) !important;
 }
 
 #app-mount .avatarWrapper__37e49 .mask__44b0c>g rect {
-  width: var(--rs-user-area-size, 40px);
-  height: var(--rs-user-area-size, 40px);
+  width: var(--rs-user-area-size, 30px);
+  height: var(--rs-user-area-size, 30px);
   rx: calc(50% * 2) !important;
   ry: calc(50% * 2) !important;
 }
