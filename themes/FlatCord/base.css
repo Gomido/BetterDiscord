@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-/* @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css'); */
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
 
@@ -9,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.8 (230825)";
+  --version: "v0.1.9 (300825)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -424,6 +423,10 @@
   background-color: transparent;
 }
 
+.chatGradient__36d07 {
+  display: none;
+}
+
 /* server guide  */
 .chat_f75fb0 {
   border-top: 1px solid var(--border-color);
@@ -525,6 +528,11 @@
 .visual-refresh .searchResult__02a39 {
   border-radius: 0;
   background-color: var(--channellistcolor);
+}
+
+.searchResult__02a39 .visualMediaItemContainer_f4758a {
+  width: unset;
+  height: unset;
 }
 
 /* 2.c.3. Floating friend search bar */
@@ -1171,17 +1179,16 @@
   border-radius: 0;
 }
 
-
 /* add dm  */
 .privateChannelsHeaderContainer__99e7c .primary__6af3a {
   background-color: transparent;
   border: none;
 }
 
+.formWithLoadedChatInput_f75fb0:before,
 .privateChannelsHeaderContainer__99e7c .lineClamp1__4bd52 {
   display: none;
 }
-
 
 /* 5.h. Unread Messages Popout inbox */
 
@@ -3140,23 +3147,23 @@ button.button__67645:hover {
 /* 23. @Media Edits */
 
 /* 24. Custom Nicknames/Badges */
-@keyframes gradient-animation {
+/* @keyframes gradient-animation {
   to {
     background-position: 200% center;
   }
-}
+} */
 
 .contents_c19a55 .username_c19a55[data-text="Lilek"] {
   background: linear-gradient(90deg,
-      #ffa600,
       #406ff0,
-      #ffa600);
+      #406ff0,
+      #406ff0);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
 }
 
-.wrapper_c19a55:hover .username_c19a55[data-text="Lilek"] {
+/* .wrapper_c19a55:hover .username_c19a55[data-text="Lilek"] {
   animation: gradient-animation 1s linear infinite;
-}
+} */
