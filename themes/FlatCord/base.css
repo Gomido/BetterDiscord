@@ -1184,10 +1184,17 @@
   background-color: transparent;
   border: none;
 }
+
 .chatTypingGradientNotAtBottom__36d07,
 .chatTypingGradientAtBottom__36d07,
 .privateChannelsHeaderContainer__99e7c .lineClamp1__4bd52 {
   display: none;
+}
+
+.privateChannelsHeaderContainer__99e7c .sm__6af3a.hasText__6af3a {
+  padding: 0;
+  min-width: unset;
+  left: 5px
 }
 
 /* 5.h. Unread Messages Popout inbox */
