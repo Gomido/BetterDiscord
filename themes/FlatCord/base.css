@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.9 (300825)";
+  --version: "v0.1.10 (040925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -209,6 +209,7 @@
   10.a. Stage
   10.b. Games Tab/ Game Library
   10.c. Nitro Tab
+  10.d. Shop Tab
 
 11. Avatars
   11.a. Remove Mask
@@ -971,6 +972,21 @@
   bottom: 60px;
 }
 
+.newBadge__4ed1a {
+  background-color: var(--accentcolor) !important;
+  border: 2px solid var(--channellistcolor);
+  font-size: 0;
+  min-width: 5px !important;
+  min-height: 5px !important;
+  height: 12px;
+  width: 12px;
+  padding: 0;
+  right: 18px !important;
+  bottom: 8px;
+  position: relative;
+}
+
+
 /* 5. Channels */
 /* 5.a. Main Channels Area */
 .visual-refresh .container__2637a {
@@ -1713,14 +1729,11 @@ button.button__67645:hover {
 /* hide nitro tab  */
 /* .interactive__972a0 [href="/store"], */
 /* .interactive__972a0 [href="/shop"], */
-/* nitro ustawienia profilu  */
-.floatingNitroUpsell__39749,
-.theme-dark .children__9293f:after {
-  display: none;
-}
+
 
 .channel__972a0:not(.dm__972a0) .link__972a0 {
   padding-left: 15px;
+  gap: 0;
 }
 
 .privateChannels__35e86 .channel__972a0:not(.dm__972a0) {
@@ -1866,6 +1879,37 @@ button.button__67645:hover {
 /* 10.a. Stage */
 /* 10.b. Games Tab/ Game Library */
 /* 10.c. Nitro Tab */
+
+/* 10.d. Shop Tab  */
+.theme-dark .children__9293f:after {
+  display: none;
+}
+
+.balanceWidgetMenu__80679 {
+  margin-right: 0px;
+}
+
+.shopScroll__1feb0,
+.shop__08415 {
+  background-color: var(--chatbackground);
+  border-left: 1px solid var(--border-color);
+}
+
+.filterBar__1feb0 {
+  background-color: var(--channellistcolor);
+}
+
+.filterBar__11877 {
+  background-color: transparent;
+}
+
+.shopCardDark_c3d04b {
+  background-color: var(--guildlistcolor);
+}
+
+.darkCardBackground_c3d04b {
+  background-color: var(--channellistcolor);
+}
 
 /* 11. Avatars */
 /* 11.a. Remove Mask */
