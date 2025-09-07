@@ -351,6 +351,18 @@
   background-color: transparent;
 }
 
+.title_bb0d86:before {
+  content: var(--version);
+  font-size: 9px;
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  color: var(--accentcolor3);
+  height: auto;
+  left: 85px;
+  background-color: transparent;
+}
+
 /* 1.c. Windows Buttons  */
 .winButton_c38106 {
   -webkit-app-region: no-drag;
