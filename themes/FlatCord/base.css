@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.10 (040925)";
+  --version: "v0.1.11 (070925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -196,6 +196,7 @@
   8.o. Search Results
   8.p. Video Calling
   8.q. Streaming
+  8.r. Forums
 
  9. Friends List
   9.a. Main Friends List
@@ -243,6 +244,7 @@
   16.n. Overflow Roles Popout
   16.o. Dropdown Menu Popout
   16.p. DM Call Region Select Popout
+  16.r. Image Preview
 
 17. Menus
   17.a. Context Menus
@@ -379,11 +381,12 @@
 /* 2. Chat Header */
 /* 2.a Main Headers */
 .theme-dark .themed__9293f {
-  background-color: var(--headercolor);
+  background-color: var(--headercolor) !important;
   border-image-slice: 1;
   border-bottom: 2px solid transparent;
   border-image-source: linear-gradient(90deg, var(--accentcolor) 0%, var(--accentcolor2) 50%);
   border-top: 0;
+  height: 48px;
 }
 
 .header_f37cb1 {
@@ -451,6 +454,13 @@
 
 .childContainer__3e3b0 path {
   fill: var(--accentcolor3);
+}
+
+/* boost bar  */
+.progressContainer__0d0f9 {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+  height: 18px;
 }
 
 /* 2.b Fake Header, Friendlist */
@@ -1273,7 +1283,7 @@
 }
 
 .container_faa96b:hover {
-  background-color: var(--guildlistcolor);
+  background-color: var(--channellistcolor) !important;
   border: 1px solid var(--border-color)
 }
 
@@ -1521,8 +1531,11 @@ button.button__67645:hover {
 }
 
 .markup__75297 pre {
-  background-color: var(--input-color);
   max-width: 100%;
+}
+
+.markup__75297 .codeContainer__75297 {
+  background-color: var(--input-color);
 }
 
 /* 8.h. New Messages Bar and Loading Symbols */
@@ -1572,7 +1585,6 @@ button.button__67645:hover {
 
 /* 8.l. Text Area */
 .scrollableContainer__74017,
-.slateTextArea_ec4baf,
 .slateTextArea_ec4baf {
   min-height: 56px !important;
 }
@@ -1700,6 +1712,109 @@ button.button__67645:hover {
 /* 8.o. Search Results */
 /* 8.p. Video Calling */
 /* 8.q. Streaming */
+/* 8.r. Forums */
+.container_f369db {
+  background-color: var(--chatbackground);
+  border-left: 1px solid var(--border-color);
+}
+
+.container_ca49a1,
+.container__93db4 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+}
+
+.previewForm_d9be46,
+.formContainer_d9be46 .form_d9be46 {
+  background-color: var(--titlebar);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.container_d9be46.collapsed_d9be46 .form_d9be46 {
+  background-color: transparent;
+}
+
+.prefixElement_d9be46 {
+  margin-top: 15px
+}
+
+.contentContainer_d9be46 {
+  margin-top: 5px;
+}
+
+.inlineContainer__74017 .themedBackground__74017,
+.formContainer_d9be46 .channelTextArea__74017,
+.formContainer_d9be46 .slateTextArea_ec4baf {
+  min-height: 40px !important;
+}
+
+.divider_ee23ac {
+  height: 1px;
+}
+
+.scrollerInner__36d07 .container__34c2c {
+  background-color: var(--titlebar);
+  z-index: 0;
+}
+
+.iconWrapper__7e6bb {
+  background-color: var(--input-color);
+}
+
+.uploadInput__94439 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+  margin-left: 5px;
+}
+
+.theme-dark .pill_a2c9e8.selected_a2c9e8 {
+  border-color: var(--accentcolor);
+}
+
+.header__34c2c,
+.chatHeaderBar_a5700d {
+  background-color: var(--titlebar);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Channels & roles */
+.chat_f75fb0 .container__0b563,
+.pageBody__41ed7 {
+  background-color: var(--chatbackground) !important;
+  border-left: 1px solid var(--border-color);
+}
+
+.prompt__5d7c9 {
+  background-color: var(--guildlistcolor);
+}
+
+.profileCard__5d7c9 {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+}
+
+/* choose ytour channels  */
+.container_bc0d35,
+.channelRow_e4503a:not(.disabled_e4503a) {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+}
+
+.channelRow_e4503a:hover:not(.disabled_e4503a) {
+  background-color: var(--channellistcolor);
+}
+
+/* members  */
+.powerupsContainer__89463,
+.mainTableContainer__09a38 {
+  background-color: var(--guildlistcolor);
+}
+
+.button__71c22 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+}
 
 /* 9. Friends List */
 /* 9.a. Main Friends List */
@@ -1715,6 +1830,7 @@ button.button__67645:hover {
 .actionButton_f8fa06.highlight_f8fa06 {
   background-color: var(--titlebar);
 }
+
 
 /* 9.b. Action Buttons */
 /* 9.c. Active Now  */
@@ -1938,6 +2054,7 @@ button.button__67645:hover {
 }
 
 /* 15. Scrollbars */
+.scroller__36d07::-webkit-scrollbar,
 .thin__99f8c::-webkit-scrollbar {
   width: 0px !important;
 }
@@ -2025,6 +2142,27 @@ button.button__67645:hover {
 .visual-refresh .header_fed6d3 {
   background-color: var(--channellistcolor);
   border-radius: 0;
+  box-shadow: none;
+}
+
+.drawerSizingWrapper__08434 .header_c0e32c {
+  border-bottom: 1px solid var(--border-color) !important
+}
+
+.drawerSizingWrapper__08434 .header_c0e32c,
+.drawerSizingWrapper__08434 .wrapper_c0e32c {
+  border: none
+}
+
+.wrapper_c0e32c {
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+}
+
+.header_c0e32c {
+  border: 1px solid var(--border-color);
+  /* border-bottom: none; */
+  border-top: none;
 }
 
 .categoryFadeBlurple_d02962 {
@@ -2181,12 +2319,32 @@ button.button__67645:hover {
 
 /* 16.p. DM Call Region Select Popout */
 
+/* 16.r. Image Preview */
+.actionButtons_cc1819,
+.buttonInner_aec7ab {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+}
+
 /* 17. Menus */
 /* 17.a. Context Menus */
 .menu_c1e9c4 {
   background-color: var(--guildlistcolor);
   border-radius: 0;
   border-color: var(--border-color);
+}
+
+.actionButton_cc1819:hover {
+  background-color: var(--control-background-icon-only-hover);
+  border: 1px solid var(--control-border-icon-only-hover);
+  color: var(--control-icon-icon-only-hover);
+}
+
+.button_aec7ab,
+.actionButton_cc1819,
+.actionButtons_cc1819 .button__6af3a,
+.icon-only__6af3a {
+  border-radius: 0;
 }
 
 /* emoji  */
@@ -2225,9 +2383,44 @@ button.button__67645:hover {
   background-color: var(--channellistcolor);
 }
 
-
 .cozy_c19a55.hasThread_c19a55:after {
   display: none;
+}
+
+
+/* Threads popout  */
+.browser_d98031 {
+  background-color: var(--input-color);
+  border-left: 2px solid var(--accentcolor2);
+  border-bottom: 2px solid var(--accentcolor2);
+  border-right: 2px solid var(--accentcolor2);
+  border-radius: 0;
+  margin-top: -1px !important;
+  box-shadow: none;
+}
+
+.header_d9c882 {
+  background-color: var(--headercolor) !important;
+  border-radius: 0;
+}
+
+.container__6764b {
+  background-color: var(--guildlistcolor);
+}
+
+.container__6764b:hover {
+  background-color: var(--chatbackground);
+}
+
+.container_d9c882,
+.wrapper__3412a {
+  background-color: var(--input-color);
+  border-radius: 0;
+}
+
+/* more active threads, see all */
+.container__53cea {
+  padding: 0;
 }
 
 /* 17.b. Status Picker */
@@ -2322,6 +2515,11 @@ button.button__67645:hover {
   border: 1px solid var(--border-color);
   box-shadow: none !important;
   top: -1px;
+}
+
+.button_f7ecac.selected_f7ecac {
+  border-radius: 0;
+  /* background-color: var(--guildlistcolor); */
 }
 
 .button_f7ecac[aria-label*="Click to react"],
