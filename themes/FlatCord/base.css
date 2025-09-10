@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.11 (070925)";
+  --version: "v0.1.12 (100925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -1100,8 +1100,9 @@
   width: 260px;
 }
 
-/* DM pinned ping circle */
-.visual-refresh .iconBadgeBottom__9293f {
+/* DM pinned, inbox, ping circle */
+.visual-refresh .iconBadgeBottom__9293f,
+.badge_c99c29 {
   background-color: var(--accentcolor);
 }
 
@@ -1288,15 +1289,18 @@
 }
 
 .messages__1ccd1,
-.container_faa96b {
+.container_faa96b,
+.container__9a337 {
   background-color: var(--guildlistcolor);
   border-radius: 0;
   border: 1px solid var(--border-color);
 }
 
+.container__9a337:hover,
 .container_faa96b:hover {
   background-color: var(--channellistcolor) !important;
-  border: 1px solid var(--border-color)
+  /* border: 1px solid var(--border-color) */
+  box-shadow: none;
 }
 
 .jumpButton_ed0c8c {
@@ -1766,7 +1770,7 @@ button.button__67645:hover {
 }
 
 .scrollerInner__36d07 .container__34c2c {
-  background-color: var(--titlebar);
+  background-color: var(--chatbackground);
   z-index: 0;
 }
 
@@ -1788,6 +1792,27 @@ button.button__67645:hover {
 .chatHeaderBar_a5700d {
   background-color: var(--titlebar);
   border-bottom: 1px solid var(--border-color);
+}
+
+/* grid view  */
+.grid_f369db .columnsSpan_f369db .mainCard_f369db {
+  background-color: var(--input-color);
+}
+
+.contentPreview__9a337 {
+  background-color: var(--input-color);
+  border-radius: 0;
+}
+
+.textContentFooter__9a337 {
+  mask-image: none;
+  background-color: transparent;
+}
+
+.bodyMedia__9a337,
+.bodyMediaFrame__9a337,
+.imageWrapper_af017a {
+  border-radius: 0;
 }
 
 /* Channels & roles */
@@ -2007,6 +2032,19 @@ button.button__67645:hover {
 /* 10.a. Stage */
 /* 10.b. Games Tab/ Game Library */
 /* 10.c. Nitro Tab */
+.premiumTrialBadge__4c1e4 {
+  background: var(--accentcolor);
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  position: absolute;
+  transform: translate(35px, -8px);
+  border: 1px solid var(--channellistcolor);
+}
+
+.eyebrow_cf4812 {
+  display: none;
+}
 
 /* 10.d. Shop Tab  */
 .theme-dark .children__9293f:after {
