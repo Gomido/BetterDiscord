@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.12 (100925)";
+  --version: "v0.1.12 (130925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -1219,21 +1219,28 @@
 }
 
 /* add dm  */
-.privateChannelsHeaderContainer__99e7c .primary__6af3a {
+.privateChannelsHeaderContainer__99e7c .primary_a22cb0 {
   background-color: transparent;
   border: none;
+}
+
+.privateChannelsHeaderContainer__99e7c .primary_a22cb0:hover {
+  background-color: var(--accentcolor3);
+  color: #000;
+}
+
+.sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {
+  padding: 0 !important;
+}
+
+.sm_a22cb0.hasText_a22cb0 {
+  min-width: 20px;
 }
 
 .chatTypingGradientNotAtBottom__36d07,
 .chatTypingGradientAtBottom__36d07,
 .privateChannelsHeaderContainer__99e7c .lineClamp1__4bd52 {
   display: none;
-}
-
-.privateChannelsHeaderContainer__99e7c .sm__6af3a.hasText__6af3a {
-  padding: 0;
-  min-width: unset;
-  left: 5px
 }
 
 /* 5.h. Unread Messages Popout inbox */
@@ -1598,6 +1605,8 @@ button.button__67645:hover {
   background-color: var(--guildlistcolor);
   border-radius: 0;
 }
+
+/* Embeds v2 */
 
 /* 8.l. Text Area */
 .scrollableContainer__74017,
