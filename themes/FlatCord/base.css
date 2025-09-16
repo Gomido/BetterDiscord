@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.12 (130925)";
+  --version: "v0.1.13 (130925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -799,7 +799,7 @@
 }
 
 
-.folderIconWrapper__48112,
+.folderPreviewWrapper__48112,
 .folderGuildsList__48112 .svg_cc5dd2 {
   width: var(--guildbar-folder-size) !important;
   height: var(--guildbar-folder-size) !important;
@@ -825,13 +825,13 @@
 .pendingFolderButtonIcon__93fc9,
 .wrapper_cc5dd2 foreignObject,
 .folderGroupBackground__48112,
-.folderIcon__48112,
+.folderHeader__48112,
 .folderButtonInner__48112 {
   mask: none !important;
   border-radius: var(--avatars) !important;
 }
 
-.folderIcon__48112,
+.folderHeader__48112,
 .childWrapperNoHoverBg__6e9f8,
 .pendingFolderButtonIcon__93fc9,
 .circleIconButton__5bc7e {
@@ -844,7 +844,7 @@
   background-color: var(--accentcolor) !important;
 }
 
-.folderIcon__48112:hover {
+.folderHeader__48112:hover {
   color: white;
   background-color: var(--accentcolor) !important;
 }
@@ -856,23 +856,23 @@
 
 .tutorialContainer__1f388 .wrapper__6e9f8.selected__6e9f8,
 .tutorialContainer__1f388 .wrapper__6e9f8.selected__6e9f8 .childWrapperNoHoverBg__6e9f8,
-.wrapper__48112.isExpanded__48112 .expandedFolderIconWrapper__48112 {
+.folderGroup__48112.isExpanded__48112 .expandedFolderIconWrapper__48112 {
   background-color: transparent !important;
 }
 
 .circleIconButton__5bc7e.selected__5bc7e,
-.folder__48112.hover__48112 .expandedFolderIconWrapper__48112,
+.hiddenVisually__27f77.hover__48112 .expandedFolderIconWrapper__48112,
 .wrapper__6e9f8.selected__6e9f8 {
   background-color: var(--titlebar) !important;
 }
 
-.folder__48112,
-.folder__48112.hover__48112 {
+.hiddenVisually__27f77,
+.hiddenVisually__27f77.hover__48112 {
   background: none !important;
 }
 
 /* Small folder icon size fix  */
-.guildIcon__48112 {
+.folderPreviewGuildIcon__48112 {
   border-radius: 5px !important;
 }
 
@@ -1229,11 +1229,11 @@
   color: #000;
 }
 
-.sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {
+.privateChannelsHeaderContainer__99e7c.buttonChildrenWrapper_a22cb0 {
   padding: 0 !important;
 }
 
-.sm_a22cb0.hasText_a22cb0 {
+.privateChannelsHeaderContainer__99e7c .sm_a22cb0.hasText_a22cb0 {
   min-width: 20px;
 }
 
@@ -1375,14 +1375,14 @@ button.button__67645:hover {
   background-color: var(--white1);
 }
 
-.primary__6af3a,
+.primary_a22cb0,
 .lookFilled__201d5.colorBrand__201d5,
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf {
   background-color: var(--accentcolor);
   border-radius: 5px;
 }
 
-.primary__6af3a:hover,
+.primary_a22cb0:hover,
 .lookFilled__201d5.colorBrand__201d5:hover,
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
   background-color: var(--accentcolor3);
@@ -1560,6 +1560,23 @@ button.button__67645:hover {
 .markup__75297 .codeContainer__75297 {
   background-color: var(--input-color);
 }
+
+/* notatnik  */
+.newMosaicStyle__4d95d .textContainer__4d95d {
+  background-color: var(--guildlistcolor);
+  border-radius:  5px 5px 0 0;
+  padding-bottom: 5px;
+}
+
+.newMosaicStyle__4d95d .codeView__4d95d{
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+}
+
+.footer__4d95d{
+  background-color: var(--channellistcolor);
+}
+
 
 /* 8.h. New Messages Bar and Loading Symbols */
 .newMessagesBar__0f481 {
@@ -1969,7 +1986,7 @@ button.button__67645:hover {
   background-color: var(--main-color);
 }
 
-.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .content-1U25dZ {
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .content__91a9d {
   display: none;
 }
 
@@ -1977,7 +1994,7 @@ button.button__67645:hover {
   margin: 0;
 }
 
-.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .children-283-lq {
+.privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .children__91a9d {
   position: absolute;
   top: 0;
   right: 0;
@@ -2728,7 +2745,7 @@ button.button__67645:hover {
   background-color: transparent;
 }
 
-.folderIcon__48112:hover svg {
+.folderHeader__48112:hover svg {
   color: var(--accentcolor3) !important;
 }
 
