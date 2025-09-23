@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.13 (130925)";
+  --version: "v0.1.13 (230925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -36,7 +36,7 @@
   --button-color: #343434;
   /* kolor ramek  */
   --border-color: #393a3f;
-  --avatar-size: 40px;
+  --avatar-size: 50px;
   /*grubośc ramki nowych wiadomości - kółka*/
   --notification-width: 2px;
   /*wielkość ramki wokół okna aplikacji - 0 wyłącza*/
@@ -168,6 +168,7 @@
   5.f. Categories
   5.g. DM List
   5.h. Unread Messages Popout inbox
+  5.i. Server Guide
 
  6. Account Area
   6.a. Main Container
@@ -443,10 +444,13 @@
   display: none;
 }
 
-/* server guide  */
+/* friends list, discover, server guide  */
+.container__133bf,
+.container_a592e1,
 .chat_f75fb0 {
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color) !important;
 }
+
 
 /* add to channel list  */
 .chatHeaderBar_dc83f5 {
@@ -502,6 +506,16 @@
   border-right: 2px solid var(--accentcolor2);
   border-radius: 0;
   margin-top: -1px !important;
+  border-top: 0
+}
+
+.resultsGroup__56fec {
+  padding-top: 0;
+}
+
+.resultsGroup__56fec .header__56fec {
+  padding-top: 10px;
+  background-color: var(--headercolor);
 }
 
 .focused__55c99 {
@@ -511,6 +525,7 @@
 .option__56fec {
   border-radius: 0 !important;
   border-left: 2px solid transparent;
+  margin: 0;
 }
 
 .option__56fec[aria-selected=true] {
@@ -1013,7 +1028,7 @@
 /* 5.a. Main Channels Area */
 .visual-refresh .container__2637a {
   background-color: var(--channellistcolor);
-  padding-bottom: 0;
+  padding-bottom: 30px;
 }
 
 .visual-refresh .wrapper_ef3116 {
@@ -1246,12 +1261,18 @@
 /* 5.h. Unread Messages Popout inbox */
 
 /* mentions  */
-.recentMentionsPopout__95796.messagesPopoutWrap__45690,
-.recentMentionsPopout__95796 {
+.container_fc561d {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
   border-radius: 0px;
-  top: -8px;
+}
+
+.recentMentionsPopout__95796 .messagesPopoutWrap__45690 {
+  border: none;
+}
+
+.recentMentionsPopout__95796 {
+  top: -4px;
 }
 
 .icon_d404a3 {
@@ -1327,6 +1348,51 @@
   width: 4px;
   border-radius: 2px;
   top: 25%;
+}
+
+
+/* 5.i. Server Guide  */
+.homeContainer__7449f {
+  background-color: var(--chatbackground);
+  border-left: 1px solid var(--border-color);
+}
+
+.welcomeMessageContainer__6f212 {
+  border-radius: 2px;
+}
+
+.welcomeMessageContent__6f212,
+.card__73069 {
+  background-color: var(--channellistcolor) !important;
+  border-radius: 2px;
+}
+
+.container_dca174 {
+  background-color: var(--guildlistcolor);
+  border-radius: 5px;
+}
+
+.channelIconContainer_c66e86,
+.rulesIconContainer_c66e86,
+.tagIconContainer_c66e86 {
+  background-color: var(--input-color);
+}
+
+.checkCircleCompleted_c66e86 path {
+  fill: var(--accentcolor);
+}
+
+/* first steps */
+.banner__183e8 {
+  background-color: var(--titlebar);
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+  padding: 8px;
+}
+
+.iconCircle__183e8 {
+  background-color: var(--accentcolor);
 }
 
 /* 6. Account Area */
@@ -1564,16 +1630,16 @@ button.button__67645:hover {
 /* notatnik  */
 .newMosaicStyle__4d95d .textContainer__4d95d {
   background-color: var(--guildlistcolor);
-  border-radius:  5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   padding-bottom: 5px;
 }
 
-.newMosaicStyle__4d95d .codeView__4d95d{
+.newMosaicStyle__4d95d .codeView__4d95d {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
 }
 
-.footer__4d95d{
+.footer__4d95d {
   background-color: var(--channellistcolor);
 }
 
@@ -2203,22 +2269,31 @@ button.button__67645:hover {
 
 /* 16.b. Emoji Picker and Reactions */
 .visual-refresh .contentWrapper__08434 {
-  border-radius: 0;
+  border-radius: 5px;
   border: 1px solid var(--border-color);
   background-color: var(--channellistcolor);
-  min-height: 525px;
-  bottom: 25px;
+  min-height: 540px;
+  bottom: 45px;
+  right: -24px !important
 }
 
 .container_fed6d3,
 .visual-refresh .emojiPicker_c0e32c,
-.visual-refresh .header_c0e32c,
-.visual-refresh .wrapper__14245,
-.visual-refresh .header__8ef02,
-.visual-refresh .header_fed6d3 {
+.visual-refresh .wrapper__14245 {
   background-color: var(--channellistcolor);
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
+}
+
+.visual-refresh .header__8ef02,
+.visual-refresh .header_fed6d3,
+.visual-refresh .header_c0e32c {
+  border-radius: 0px;
+  background-color: var(--channellistcolor);
+}
+
+.visual-refresh .header_c0e32c .button__201d5 {
+  display: none;
 }
 
 .drawerSizingWrapper__08434 .header_c0e32c {
@@ -2264,7 +2339,7 @@ button.button__67645:hover {
 .visual-refresh .wrapper__4e6ce,
 .visual-refresh .inspector_aeaaeb {
   background-color: var(--input-color);
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .result__2dc39:hover:after,
@@ -2338,6 +2413,12 @@ button.button__67645:hover {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color);
   box-shadow: none;
+  border-radius: 0;
+}
+
+.banner__68edb,
+.inner_c0bea0 {
+  border-radius: 0;
 }
 
 .card__39ec2,
@@ -2560,7 +2641,7 @@ button.button__67645:hover {
 /* 18.b. User Profile Modal */
 /* Chat sidebar  */
 
-/* 18.c. Instant Invite Modal */
+/* 18.c. Instant Invite Modal/Events container */
 .wrapper_d5f3cd,
 .guildInviteContainer__083ae,
 .footerContent__083ae {
@@ -2568,9 +2649,14 @@ button.button__67645:hover {
   border-radius: 2px;
 }
 
+.clickable_da5e8d:hover,
 .guildIconExpired_d5f3cd {
   background-color: var(--titlebar);
   border-radius: 5px;
+}
+
+.eventStatusContainer__29021 path {
+  fill: #b6b6b6 !important;
 }
 
 /* 18.d. Join or Create New Guild */
@@ -2611,7 +2697,7 @@ button.button__67645:hover {
 }
 
 .progressBar__89dcd {
-  background-color: var(--accentcolor) !important;
+  background: linear-gradient(to right, var(--accentcolor), var(--accentcolor2)) !important;
 }
 
 /* 18.f. Game Preview Modal */
