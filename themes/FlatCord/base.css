@@ -573,6 +573,17 @@
   height: unset;
 }
 
+/* empty dm list  */
+.empty__99e7c {
+  width: 240px;
+  fill: var(--border-color);
+  margin-left: -25px !important;
+}
+
+.empty__99e7c rect {
+  width: 170px;
+}
+
 /* 2.c.3. Floating friend search bar */
 .privateChannels__35e86 .searchBar__35e86 {
   position: absolute;
@@ -699,6 +710,11 @@
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles */
+/* profile roles  */
+.pill_dfa8b6 {
+  background: var(--channellistcolor) !important;
+  border-radius: 0px;
+}
 
 /* 4. Guilds Wrapper */
 /* 4.a. Mains Guilds Wrapper */
@@ -2034,6 +2050,8 @@ button.button__67645:hover {
   transform: translate(150%, -50%);
 }
 
+
+
 /*
 .privateChannels__35e86 .channel__972a0:not([href*="/channels/@me/"]):not([categoryid]) .layout__20a53 {
   padding: 0px;
@@ -2124,6 +2142,7 @@ button.button__67645:hover {
 /* 10.a. Stage */
 /* 10.b. Games Tab/ Game Library */
 /* 10.c. Nitro Tab */
+.premiumTrialBadge__23e21,
 .premiumTrialBadge__4c1e4 {
   background: var(--accentcolor);
   width: 8px;
@@ -2134,7 +2153,8 @@ button.button__67645:hover {
   border: 1px solid var(--channellistcolor);
 }
 
-.eyebrow_cf4812 {
+.eyebrow_cf4812,
+.premiumTrialBadge__23e21 .clockIcon__23e21 {
   display: none;
 }
 
@@ -2373,6 +2393,14 @@ button.button__67645:hover {
   display: none;
 }
 
+/* Emoji name popout  */
+.popoutContainer__0f481 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
 /* reaction picker  */
 .fade_faf9c0.didRender_faf9c0 .wrapper_c0e32c {
   border-radius: 0;
@@ -2439,6 +2467,24 @@ button.button__67645:hover {
 .upsellContent__5997d,
 .menuOverlay_ce8328 {
   background-color: var(--channellistcolor);
+}
+
+/* bubble status */
+.inner_ab8609,
+.outer_ab8609:after,
+.outer_ab8609:before {
+  background-color: var(--guildlistcolor);
+}
+
+
+/* add friend, ... , buttons  */
+.bannerColor_fb7f94 {
+  background-color: var(--guildlistcolor);
+}
+
+.bannerColor_fb7f94:active,
+.bannerColor_fb7f94:hover {
+  background-color: var(--chatbackground);
 }
 
 /* 16.e. Add Role User Popout */
@@ -2618,6 +2664,29 @@ button.button__67645:hover {
 
 .theme-dark .card__84e3e:hover {
   background-color: var(--input-color);
+}
+
+/* nav panel discover  */
+.nav__551b0 {
+  padding: 0;
+  gap: 0
+}
+
+.navItem__551b0 {
+  border-radius: 0;
+  border-left: 2px solid transparent;
+}
+
+.navItem__551b0:focus-within,
+.navItem__551b0:hover {
+  background-color: var(--titlebar);
+  border-left: 2px solid var(--accentcolor3);
+}
+
+.navItem__551b0.selected__551b0,
+.navItem__551b0:active {
+  background-color: var(--headercolor);
+  border-left: 2px solid var(--accentcolor);
 }
 
 
