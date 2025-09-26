@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.13 (230925)";
+  --version: "v0.1.14 (260925)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -1697,6 +1697,32 @@ button.button__67645:hover {
   margin-bottom: 2px;
 }
 
+/* forward  */
+.quote__122e4{
+  background-color: var(--accentcolor3);
+  border-radius: 0;
+}
+
+.container__122e4 {
+  background-color: var(--channellistcolor);
+  width: unset;
+  /* padding: 5px; */
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-radius: 0px;
+}
+
+.headerContainer__122e4{
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.wrapper_c19a55:hover .container__122e4{
+  background-color: var(--input-color);
+}
+.container__122e4 .visualMediaItemContainer_f4758a{
+  border: none !important;
+}
 /* 8.i. DM Chat */
 /* 8.j. Bot Message */
 /* 8.k. Embeds */
