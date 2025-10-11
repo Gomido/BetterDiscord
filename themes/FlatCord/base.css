@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.16 (280925)";
+  --version: "v0.1.7 (111025)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -1172,6 +1172,23 @@
 
 /* 5.d. Channels  */
 /* 5.d.1. Voice channels  */
+.users__260e1 {
+  background-color: var(--input-color);
+}
+
+.wrapper__260e1,
+.total__260e1 {
+  background-color: var(--headercolor);
+}
+
+.total__260e1:after {
+  border-right-color: var(--headercolor)
+}
+
+.overlap__07f91 .avatar__07f91 {
+  border: 2px solid var(--guildlistcolor)
+}
+
 /* 5.d.2. Speakinhg gradient bar  */
 /* 5.d.3. Connected label */
 /* 5.d.4. Show profile label */
@@ -1948,6 +1965,7 @@ button.button__67645:hover {
   z-index: 0;
 }
 
+.emptyChannelIcon__00de6,
 .iconWrapper__7e6bb {
   background-color: var(--input-color);
 }
@@ -2290,6 +2308,7 @@ button.button__67645:hover {
 }
 
 /* 15. Scrollbars */
+.thin_d125d2::-webkit-scrollbar,
 .scroller__99e7c::-webkit-scrollbar,
 .thin__99f8c::-webkit-scrollbar {
   width: 0px !important;
@@ -2585,14 +2604,21 @@ button.button__67645:hover {
   border: 1px solid var(--border-color);
 }
 
-/* 16.e. Add Role User Popout */
+/* 16.e. Role User Popout */
+.rolePopout__75297 {
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  background-color: var(--guildlistcolor);
+}
+
 /* 16.f. Search Popout */
 /* 16.g. Server Settings */
 /* 16.h. Group DM Invite Popout */
 /* 16.i. Tooltips */
-.tooltipPrimary__382e7 {
-  background-color: var(--input-color);
-  --background-surface-high: var(--input-color) !important;
+.tooltipPrimary__382e7,
+.tooltip__4e35b {
+  background-color: var(--guildlistcolor);
+  --background-surface-high: var(--guildlistcolor) !important;
 }
 
 /* emoji name  */
@@ -2822,6 +2848,10 @@ button.button__67645:hover {
   fill: #b6b6b6 !important;
 }
 
+.gradient__083ae {
+  background: linear-gradient(180deg, transparent 0, var(--guildlistcolor) 100%);
+}
+
 /* 18.d. Join or Create New Guild */
 /* 18.e. Upload Modal */
 
@@ -2911,6 +2941,7 @@ button.button__67645:hover {
 }
 
 /* leaving disord popout  */
+.container__8a031,
 .root__49fc1.root__49fc1 {
   background-color: var(--guildlistcolor);
   border-radius: 0;
