@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.7 (111025)";
+  --version: "v0.1.8 (161025)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -46,7 +46,7 @@
   /* odstęp między awatarem a ramką statusu (chat, lista osób) */
   --rs-spacing: 2px;
   /* 17b641 kolor statusu */
-  --text-link: var(--accentcolor);
+  --text-link: var(--accentcolor2);
   --guildbar-folder-size: 40px;
   /* ilosc zakladek znajomi */
   --dm-columns: 3;
@@ -1189,6 +1189,14 @@
   border: 2px solid var(--guildlistcolor)
 }
 
+.icon__2ea32{
+  color: var(--channel-icon) !important;
+}
+
+/* live  */
+.baseShapeRound__2b1f5{
+  background-color: var(--accentcolor) !important;
+}
 /* 5.d.2. Speakinhg gradient bar  */
 /* 5.d.3. Connected label */
 /* 5.d.4. Show profile label */
@@ -1493,14 +1501,12 @@
 }
 
 /* 6.b. Buttons */
-
-button.button__67645 {
-  border-radius: 50%;
+.micButtonParent__37e49 .buttonChevron__37e49{
+  display: none;
 }
 
-button.button__67645:hover {
-  border-radius: 50%;
-  background-color: var(--white1);
+button.button__67645 {
+  border-radius: 50% !important;
 }
 
 .primary_a22cb0,
@@ -1640,8 +1646,12 @@ button.button__67645:hover {
 /* 8.c. Blocked Messages */
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
-.group-spacing-0 .divider__5126c.hasContent__5126c {
+.divider__5126c.hasContent__5126c {
   margin: 10px;
+}
+
+.divider__5126c.beforeGroup__5126c{
+ padding-top: 15px;
 }
 
 .divider__908e2 {
@@ -1782,6 +1792,14 @@ button.button__67645:hover {
 .visual-refresh .embedFull__623de {
   background-color: var(--guildlistcolor);
   border-radius: 0;
+}
+
+.mediaBarGrabber_b26b79,
+.mediaBarInteraction_b26b79:hover .mediaBarGrabber_b26b79,
+.mediaBarProgress_b26b79,
+.mediaBarProgress_b26b79:after,
+.mediaBarProgress_b26b79:before {
+  background-color: var(--accentcolor);
 }
 
 /* Embeds v2 */
@@ -1935,7 +1953,7 @@ button.button__67645:hover {
 .formContainer_d9be46 .form_d9be46 {
   background-color: var(--titlebar);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .container_d9be46.collapsed_d9be46 .form_d9be46 {
@@ -1943,11 +1961,20 @@ button.button__67645:hover {
 }
 
 .prefixElement_d9be46 {
-  margin-top: 15px
+  margin-top: 5px
+}
+
+.gradient_ca49a1 {
+  background: linear-gradient(to top, var(--guildlistcolor), transparent);
 }
 
 .contentContainer_d9be46 {
   margin-top: 5px;
+}
+
+.descriptionContainer_ca49a1,
+.linkContainer_ca49a1 {
+  background-color: var(--guildlistcolor);
 }
 
 .inlineContainer__74017 .themedBackground__74017,
@@ -2240,7 +2267,6 @@ button.button__67645:hover {
   border: 1px solid var(--channellistcolor);
 }
 
-.eyebrow_cf4812,
 .premiumTrialBadge__23e21 .clockIcon__23e21 {
   display: none;
 }
@@ -2577,6 +2603,20 @@ button.button__67645:hover {
   background-color: var(--guildlistcolor);
 }
 
+.firstCardContainer__84832 .card__84832 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color)
+}
+
+/* quest info popout  */
+.container__4413f {
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-right: none;
+  border-radius: 0 !important;
+}
+
 /* main profile  */
 .user-profile-modal-v2 {
   max-height: 700px;
@@ -2599,9 +2639,28 @@ button.button__67645:hover {
 }
 
 /* recent activity  */
-.user-profile-modal-v2 .card__39ec2 {
-  border-radius: 0;
+.profile__9c3be {
+  --background-surface-high: var(--guildlistcolor);
+  border-radius: 5px;
   border: 1px solid var(--border-color);
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.user-profile-modal-v2 :where(.banner__68edb) {
+  border-radius: 0
+}
+
+.custom-user-profile-theme.user-profile-modal-v2 .inner_c0bea0 .card__39ec2 {
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background: var(--user-profile-overlay-background) !important;
+}
+
+.user-profile-modal-v2 .card__39ec2 {
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--guildlistcolor);
 }
 
 /* 16.e. Role User Popout */
@@ -2667,11 +2726,17 @@ button.button__67645:hover {
   color: var(--control-icon-icon-only-hover);
 }
 
+.menu_c1e9c4 .item_c1e9c4,
 .button_aec7ab,
 .actionButton_cc1819,
 .actionButtons_cc1819 .button_a22cb0,
 .icon-only_a22cb0 {
   border-radius: 0;
+}
+
+.scroller_c1e9c4,
+.submenuPaddingContainer_c1e9c4 {
+  padding: 8px !important;
 }
 
 /* emoji  */
@@ -2901,7 +2966,7 @@ button.button__67645:hover {
   border: 1px solid #383838
 }
 
-.auto__99f8c::-webkit-scrollbar {
+.auto_d125d2::-webkit-scrollbar{
   width: 0;
 }
 
@@ -2945,6 +3010,7 @@ button.button__67645:hover {
 .root__49fc1.root__49fc1 {
   background-color: var(--guildlistcolor);
   border-radius: 0;
+  /* padding: 0; */
 }
 
 .footer__49fc1,
@@ -3647,6 +3713,10 @@ button.button__67645:hover {
   height: unset;
 }
 
+.groupStart__5126c{
+  margin-top: 0;
+}
+
 .container_b7e1cb {
   grid-gap: 10px;
 }
@@ -3676,6 +3746,11 @@ button.button__67645:hover {
   background: var(--background-message-highlight) !important;
   border-left: 3px solid #3B45B7 !important;
   border-radius: 0 5px 5px 0 !important;
+}
+
+/* blocked messages background  */
+.expanded__7a70a{
+  background-color: var(--input-color);
 }
 
 /* disable edit app image  */
