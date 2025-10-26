@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.1.8 (181025)";
+  --version: "v0.1.9 (261025)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -444,14 +444,6 @@
   display: none;
 }
 
-/* friends list, discover, server guide  */
-.container__133bf,
-.container_a592e1,
-.chat_f75fb0 {
-  border-top: 1px solid var(--border-color) !important;
-}
-
-
 /* add to channel list  */
 .chatHeaderBar_dc83f5 {
   background-color: var(--titlebar);
@@ -712,7 +704,7 @@
 /* 3.g. Server Roles */
 /* profile roles  */
 .pill_dfa8b6 {
-  background: var(--channellistcolor) !important;
+  /* background: var(--channellistcolor) !important; */
   border-radius: 0px;
 }
 
@@ -1207,6 +1199,44 @@
 /* live  */
 .channelInfo_c69b6d .baseShapeRound__2b1f5 {
   background-color: var(--accentcolor) !important;
+}
+
+.list_c3cd7d {
+  padding-left: 0px;
+}
+
+.content__07f91 {
+  border-radius: 0;
+}
+
+.listDefault__07f91 .clickable__07f91.selected__07f91 .content__07f91 {
+  background-color: var(--headercolor);
+}
+
+.listDefault__07f91 .clickable__07f91 .content__07f91:hover {
+  background-color: var(--titlebar);
+}
+
+.listDefault__07f91 .clickable__07f91 .content__07f91:hover::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accentcolor3);
+  border-radius: 2px;
+  height: 20px;
+  width: 4px;
+  top: calc(50% - 10px);
+  left: 2px;
+}
+
+.listDefault__07f91 .clickable__07f91.selected__07f91 .content__07f91::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accentcolor);
+  border-radius: 2px;
+  height: 20px;
+  width: 4px;
+  top: calc(50% - 10px);
+  left: 2px;
 }
 
 /* 5.d.2. Speakinhg gradient bar  */
@@ -1828,11 +1858,14 @@ button.button__67645 {
 
 .visual-refresh .buttons__74017 {
   top: 25%;
+  gap: 2px;
+  padding-left: 10px;
 }
 
 .buttons__74017,
-.attachButton__0923f {
+.attachButton__74017 {
   height: 100% !important;
+  margin-right: 0;
 }
 
 .button__24af7:not(.noHover__24af7),
@@ -2093,10 +2126,6 @@ button.button__67645 {
 
 /* 9. Friends List */
 /* 9.a. Main Friends List */
-.visual-refresh .tabBody__133bf {
-  background-color: var(--chatbackground);
-}
-
 .peopleListItem_cc6179 {
   transition: none !important;
 }
@@ -2334,8 +2363,10 @@ button.button__67645 {
 
 /* 13. Roundness */
 /* 14. Borders */
-.visual-refresh .tabBody__133bf,
-.visual-refresh .chatContent_f75fb0 {
+.tabBody__133bf,
+.sectionsContainer_f48ee4,
+.scroller__23746,
+.chatContent_f75fb0 {
   background-color: var(--chatbackground);
   border-left: 1px solid var(--border-color);
 }
@@ -2458,8 +2489,8 @@ button.button__67645 {
   border-radius: 5px;
   border: 1px solid var(--border-color);
   background-color: var(--channellistcolor);
-  min-height: 580px;
-  bottom: 85px;
+  min-height: 570px;
+  bottom: 75px;
 }
 
 .drawerSizingWrapper__08434 {
@@ -2495,7 +2526,7 @@ button.button__67645 {
 }
 
 .wrapper__4e6ce {
-  background-color: var(--titlebar);
+  background-color: var(--input-color);
 }
 
 .stickerCategoryGeneric__3ad28 {
@@ -2722,6 +2753,21 @@ button.button__67645 {
   border: none;
 }
 
+
+
+
+/* list dropdown  */
+.popout__9047f {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.radioIndicatorChecked__88a69 .refreshIconFill__88a69 {
+  fill: var(--accentcolor);
+}
+
+
 /* 16.p. DM Call Region Select Popout */
 
 /* 16.r. Image Preview */
@@ -2854,11 +2900,7 @@ button.button__67645 {
 
 .nav__551b0 {
   background-color: var(--channellistcolor);
-  border-right: 1px solid var(--border-color);
-}
-
-.scroller__23746 {
-  background-color: var(--chatbackground);
+  /* border-right: 1px solid var(--border-color); */
 }
 
 .theme-dark .card__84e3e {
@@ -3044,6 +3086,10 @@ button.button__67645 {
 }
 
 /* 18.m. Gift Nitro Modal & Nitro Boost */
+.floatingNitroUpsell__39749 {
+  display: none;
+}
+
 /* 18.n. Server Templates */
 /* 18.p. Changelog & Version Panel */
 /* .contentColumn__23e6b::before {
@@ -3076,8 +3122,9 @@ button.button__67645 {
 }
 
 /* 18.r. Tags  */
-.botTagRegular__82f07,
-.chipletContainerInner__10651 {
+span.clanTag__5d473,
+.clanTagChiplet_c19a55,
+.botTagRegular__82f07 {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
   border-radius: 0 !important;
@@ -3091,6 +3138,7 @@ button.button__67645 {
   margin-top: -4px;
 }
 
+.guildTagContainer__63ed3,
 .botTagNotStaffWarning__82f07 {
   border-radius: 0 !important;
 }
