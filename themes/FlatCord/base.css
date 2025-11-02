@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.0 (311125)";
+  --version: "v0.2.0 (011125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -52,8 +52,8 @@
   --dm-columns: 4;
   /* Settings modal  */
 
-  --settingswidth: 960;
-  --settingsheight: 80;
+  --settingswidth: 1000;
+  --settingsheight: 90;
   --settingsbackground: transparent;
 
   --settingswidth_v: min(calc(1px * var(--settingswidth_s, var(--settingswidth))), 99vw);
@@ -304,6 +304,7 @@
     21.b.1. Custom Popouts
     21.b.2. Radial Status
     21.b.3. Chat Bubbles
+    
 
 22. Custom CSS
 
@@ -1016,20 +1017,40 @@
   bottom: 60px;
 }
 
+.premiumOfferBadgeCopy__4c1e4 {
+  display: none;
+}
+
+.premiumOfferUnackedBadge__4c1e4,
 .newBadge__4ed1a {
-  background-color: var(--accentcolor) !important;
+  background: var(--accentcolor) !important;
   border: 2px solid var(--channellistcolor);
   font-size: 0;
   min-width: 5px !important;
   min-height: 5px !important;
-  height: 12px;
-  width: 12px;
   padding: 0;
-  right: 18px !important;
-  bottom: 8px;
-  position: relative;
 }
 
+/* shop nowe  */
+.link__972a0[href="/shop"] .newBadge__4ed1a {
+  right: 0px !important;
+  bottom: 8px;
+  position: relative;
+  height: 12px;
+  width: 12px;
+}
+
+.link__972a0[href="/store"] .premiumOfferUnackedBadge__4c1e4 {
+  right: 0px !important;
+  bottom: 8px;
+  position: relative;
+  height: 8px !important;
+  width: 12px;
+}
+
+.scroller__99e7c .newBadge__4ed1a .eyebrow__2b1f5 .marketingButtonBackground__4ed1a {
+  display: none;
+}
 
 /* 5. Channels */
 /* 5.a. Main Channels Area */
@@ -1155,6 +1176,10 @@
   border-radius: var(--avatars);
 } */
 
+.gifFavoriteButton__43deb {
+  background-color: var(--guildlistcolor);
+  border-radius: 2px;
+}
 
 /* 5.b. Hide show all voice button  */
 .refreshVoiceChannelsButton__29444 {
@@ -1307,9 +1332,6 @@
 .channel__972a0:hover .unreadPill__972a0 {
   display: none;
 }
-
-.container_e45859{}
-
 
 .interactiveSelected__972a0:before {
   content: '';
@@ -1821,7 +1843,7 @@ button.button__67645 {
   border-radius: 0px;
 }
 
-.content__122e4{
+.content__122e4 {
   padding: 5px;
 }
 
@@ -2072,7 +2094,7 @@ button.button__67645 {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  margin-bottom:-2px;
+  margin-bottom: -2px;
 }
 
 /* grid view  */
@@ -2318,8 +2340,7 @@ button.button__67645 {
 /* 10.a. Stage */
 /* 10.b. Games Tab/ Game Library */
 /* 10.c. Nitro Tab */
-.premiumTrialBadge_e4ef22,
-.premiumTrialBadge__4c1e4 {
+.scroller__99e7c .premiumTrialBadge_e4ef22 {
   background: var(--accentcolor);
   width: 8px;
   height: 8px;
@@ -2329,7 +2350,7 @@ button.button__67645 {
   border: 1px solid var(--channellistcolor);
 }
 
-.premiumTrialBadge_e4ef22 .clockIcon__23e21 {
+.scroller__99e7c .premiumTrialBadge_e4ef22 .clockIcon__23e21 {
   display: none;
 }
 
@@ -2486,6 +2507,7 @@ button.button__67645 {
   padding: 0;
 }
 
+
 .message_fd14e0 {
   background-color: var(--channellistcolor);
   box-shadow: none;
@@ -2539,7 +2561,7 @@ button.button__67645 {
   border: none
 }
 
-.wrapper__4106a {
+.wrapper__4e6ce {
   background-color: var(--input-color);
 }
 
@@ -2736,6 +2758,17 @@ button.button__67645 {
 
 /* 16.f. Search Popout */
 /* 16.g. Server Settings */
+.titleContainer_e29cd7,
+.header_c6bf1b {
+  background-color: var(--chatb);
+
+}
+
+
+.contentWidth_c6bf1b {
+  width: 100%;
+}
+
 /* 16.h. Group DM Invite Popout */
 /* 16.i. Tooltips */
 .tooltipPrimary_c36707,
@@ -3081,11 +3114,15 @@ button.button__67645 {
 }
 
 /* leaving disord popout  */
-.container__8a031,
 .root__49fc1.root__49fc1 {
   background-color: var(--guildlistcolor);
   border-radius: 0;
   /* padding: 0; */
+}
+
+.headerGradient__8a031:before {
+  top: 0;
+  border-radius: 0;
 }
 
 .footer__49fc1,
