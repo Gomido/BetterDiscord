@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.1 (041125)";
+  --version: "v0.2.1 (081125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -593,13 +593,13 @@
   transition: all .2s ease-in-out;
 }
 
-.searchBar_e6b769 .lookFilled__201d5.colorPrimary__201d5 {
+.searchBar_e6b769 .secondary_a22cb0 {
   background: transparent;
   color: transparent;
   border: none;
 }
 
-.privateChannels_e6b769 .searchBar_e6b769 .button__201d5 .contents__201d5:before {
+.privateChannels_e6b769 .searchBar_e6b769 .button_a22cb0 .buttonChildrenWrapper_a22cb0:before {
   content: '';
   position: absolute;
   height: 32px;
@@ -1025,7 +1025,7 @@
   display: none;
 }
 
-.container_e45859 {
+.container__23ba6 {
   border-radius: 0;
 }
 
@@ -1194,9 +1194,9 @@
 }
 
 /* add to favorites  */
-/* .badge_c3d04b {
+.ring_c9fddf {
   border-radius: var(--avatars);
-} */
+}
 
 .gifFavoriteButton__43deb {
   background-color: var(--guildlistcolor);
@@ -1212,6 +1212,15 @@
 .visual-refresh .sidebarList__5e434,
 .visual-refresh .chat_f75fb0 {
   border-top-left-radius: 0;
+}
+
+.container__133bf,
+.homeWrapper__0920e,
+.shop__6db1d,
+.containerSidenav_dc2e0e,
+.container__955a3,
+.chat_f75fb0[data-has-border=true]{
+  border: none;
 }
 
 /* 5.d. Channels  */
@@ -1296,7 +1305,7 @@
   height: 25px !important;
 }
 
-.container__23ba6 {
+.container_a244c3 {
   padding: 0;
 }
 
@@ -1688,7 +1697,7 @@ button.button__67645 {
 
 /* chat loading modal */
 .visual-refresh .wrapper_fc8177,
-.wrapper_d852db {
+.wrapper__6c798 {
   background-color: transparent !important;
 }
 
@@ -2163,7 +2172,7 @@ button.button__67645 {
   border: 1px solid var(--border-color);
 }
 
-/* choose ytour channels  */
+/* choose your channels  */
 .container_bc0d35,
 .channelRow_e4503a:not(.disabled_e4503a) {
   background-color: var(--guildlistcolor);
@@ -2175,14 +2184,41 @@ button.button__67645 {
 }
 
 /* members  */
+.mainTableContainer__09a38{
+  border-radius: 0;
+}
+
+.page_c791b2 .scrollerBase_d125d2 {
+  background-color: var(--chatbackground);
+  border-left: 1px solid var(--border-color);
+}
+
 .powerupsContainer__89463,
-.mainTableContainer__09a38 {
-  background-color: var(--guildlistcolor);
+.page_c791b2 .mainTableContainer__09a38 .scrollerBase_d125d2 {
+  background: var(--guildlistcolor) !important;
+  border:none
 }
 
 .button__71c22 {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color);
+}
+
+/* server boosts  */
+.page__5e434{
+  border-top: 1px solid var(--border-color);
+}
+
+.powerupsContainer__89463{
+  border-left: 1px solid var(--border-color);
+}
+
+.container__5573a {
+  background-color: var(--guildlistcolor);
+}
+
+.sidebarContainer__89463{
+  background-color: var(--channellistcolor);
 }
 
 /* 9. Friends List */
@@ -2315,7 +2351,7 @@ button.button__67645 {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
+.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -2576,7 +2612,7 @@ button.button__67645 {
   border: none
 }
 
-.wrapper__4e6ce {
+.wrapper__4106a {
   background-color: var(--input-color);
 }
 
@@ -2615,7 +2651,7 @@ button.button__67645 {
   border: 1px solid var(--border-color)
 }
 
-.visual-refresh .wrapper__6c798 {
+.visual-refresh .wrapper_cdf8a9 {
   background-color: transparent;
 }
 
@@ -2711,10 +2747,13 @@ button.button__67645 {
   background-color: var(--guildlistcolor);
 }
 
+.showMoreButton__84832,
 .firstCardContainer__84832 .card__84832 {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color)
 }
+
+
 
 /* quest info popout  */
 .container__4413f {
@@ -2782,7 +2821,7 @@ button.button__67645 {
 /* 16.g. Server Settings */
 .titleContainer_e29cd7,
 .header_c6bf1b {
-  background-color: var(--chatb);
+  background-color: var(--chatbackground);
 
 }
 
@@ -3152,8 +3191,9 @@ button.button__67645 {
 }
 
 .headerGradient__8a031:before {
-  top: 0;
+  /* top: 0; */
   border-radius: 0;
+  left:0
 }
 
 .footer__49fc1,
@@ -3650,6 +3690,11 @@ span.clanTag__5d473,
 #app-mount .wrapper__44b0c rect[fill="#82858f"],
 #app-mount .wrapper__44b0c rect[fill="#82838b"] {
   stroke: var(--invisible);
+}
+
+#app-mount .wrapper__44b0c rect[x="14"] {
+  width: 20px;
+  height: 20px;
 }
 
 #app-mount .wrapper__44b0c rect[x="16"] {
