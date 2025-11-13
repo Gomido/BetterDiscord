@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.1 (081125)";
+  --version: "v0.2.1 (131125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -634,7 +634,6 @@
   background: var(--headercolor);
 }
 
-
 /* friendlist top searchbar */
 :where(.visual-refresh) .container_a45028 {
   background-color: var(--input-color);
@@ -1057,8 +1056,8 @@
   width: 12px;
 }
 
-.scroller__99e7c .newBadge__4ed1a .eyebrow__2b1f5 .marketingButtonBackground__4ed1a {
-  display: none;
+.scroller__99e7c .marketingButtonBackground__4ed1a {
+  display: none !important;
 }
 
 /* quest nowe  */
@@ -1697,7 +1696,7 @@ button.button__67645 {
 
 /* chat loading modal */
 .visual-refresh .wrapper_fc8177,
-.wrapper__6c798 {
+.wrapper_d852db {
   background-color: transparent !important;
 }
 
@@ -2733,6 +2732,11 @@ button.button__67645 {
   background-color: var(--channellistcolor);
   box-shadow: none;
   border: 1px solid var(--border-color)
+}
+
+.wrapper_b1e4f3 {
+  background-color: var(--input-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .bar__84522 {
