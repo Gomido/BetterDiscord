@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.1 (131125)";
+  --version: "v0.2.2 (151125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -521,7 +521,7 @@
 }
 
 .option__56fec[aria-selected=true] {
-  background-color: var(--headercolor);
+  background-color: var(--channellistcolor);
   border-left: 2px solid var(--accentcolor);
   box-shadow: none;
 }
@@ -1038,6 +1038,11 @@
   min-height: 5px !important;
   padding: 0;
 }
+
+.newChannel__599fa{
+  color: #FFF !important;
+}
+
 
 /* shop nowe  */
 .link__972a0[href="/shop"] .newBadge__4ed1a {
@@ -2642,6 +2647,17 @@ button.button__67645 {
   border-radius: 0;
 }
 
+.categoryList__3ad28 .scroller_affa7e,
+.categoryList_c0e32c .scroller_affa7e {
+  background-color: var(--input-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.standardStickerShortcut__3ad28,
+.unicodeShortcut_b9ee0c{
+  background-color: var(--input-color);
+}
+
 .categoryFade_d02962:hover,
 .categoryFadeBlurple_d02962:hover,
 [data-focused=true] .categoryFade_d02962,
@@ -2687,6 +2703,12 @@ button.button__67645 {
 }
 
 .emojiLockIconContainer_d982c2 {
+  display: none;
+}
+
+
+/* add emoji button  */
+.emojiPicker_c0e32c .secondary_a22cb0 {
   display: none;
 }
 
@@ -2751,13 +2773,16 @@ button.button__67645 {
   background-color: var(--guildlistcolor);
 }
 
+.innerContainer_c2a763,
 .showMoreButton__84832,
 .firstCardContainer__84832 .card__84832 {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color)
 }
 
-
+.body__5be3e {
+  padding: 8px 16px 8px 16px !important;
+}
 
 /* quest info popout  */
 .container__4413f {
@@ -3141,7 +3166,7 @@ button.button__67645 {
   background-color: var(--guildlistcolor) !important;
   border-radius: 0;
   border: 1px solid #383838;
-  padding: 10px 0 0 0;
+  padding: 10px 0 10px 0;
 }
 
 .auto_d125d2::-webkit-scrollbar {
@@ -3305,6 +3330,7 @@ span.clanTag__5d473,
 /* 21.a.19. Status Everywhere */
 /* 21.a.20. Guild and Friend Removal Alerts */
 /* 21.a.21. Hide chat buttons 🠗*/
+.button__74017[aria-label="Add Media"],
 .button__74017[aria-label="Send a gift"],
 .button__74017[aria-label="Open GIF picker"],
 .button__74017[aria-label="Open sticker picker"],
