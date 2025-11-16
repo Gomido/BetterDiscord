@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.2 (151125)";
+  --version: "v0.2.2 (161125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -566,6 +566,10 @@
   height: unset;
 }
 
+.searchResult__02a39 .oneByOneGrid_f4758a {
+  max-width: 280px;
+}
+
 /* empty dm list  */
 .empty__99e7c {
   width: 240px;
@@ -1039,7 +1043,7 @@
   padding: 0;
 }
 
-.newChannel__599fa{
+.newChannel__599fa {
   color: #FFF !important;
 }
 
@@ -1223,7 +1227,7 @@
 .shop__6db1d,
 .containerSidenav_dc2e0e,
 .container__955a3,
-.chat_f75fb0[data-has-border=true]{
+.chat_f75fb0[data-has-border=true] {
   border: none;
 }
 
@@ -2188,7 +2192,7 @@ button.button__67645 {
 }
 
 /* members  */
-.mainTableContainer__09a38{
+.mainTableContainer__09a38 {
   border-radius: 0;
 }
 
@@ -2200,7 +2204,7 @@ button.button__67645 {
 .powerupsContainer__89463,
 .page_c791b2 .mainTableContainer__09a38 .scrollerBase_d125d2 {
   background: var(--guildlistcolor) !important;
-  border:none
+  border: none
 }
 
 .button__71c22 {
@@ -2209,11 +2213,11 @@ button.button__67645 {
 }
 
 /* server boosts  */
-.page__5e434{
+.page__5e434 {
   border-top: 1px solid var(--border-color);
 }
 
-.powerupsContainer__89463{
+.powerupsContainer__89463 {
   border-left: 1px solid var(--border-color);
 }
 
@@ -2221,7 +2225,7 @@ button.button__67645 {
   background-color: var(--guildlistcolor);
 }
 
-.sidebarContainer__89463{
+.sidebarContainer__89463 {
   background-color: var(--channellistcolor);
 }
 
@@ -2654,7 +2658,7 @@ button.button__67645 {
 }
 
 .standardStickerShortcut__3ad28,
-.unicodeShortcut_b9ee0c{
+.unicodeShortcut_b9ee0c {
   background-color: var(--input-color);
 }
 
@@ -2802,6 +2806,7 @@ button.button__67645 {
 .user-profile-modal-v2 .inner_c0bea0 {
   background-color: var(--channellistcolor);
   border-radius: 0;
+  padding: 36px
 }
 
 .user-profile-modal-v2 .profileBody__9c3be {
@@ -2837,6 +2842,20 @@ button.button__67645 {
   border-radius: 5px;
   border: 1px solid var(--border-color);
   background-color: var(--guildlistcolor);
+}
+
+
+/* board sections  */
+.container__62dd3 {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.theme-dark.custom-theme-background .container__62dd3 {
+  background: var(--user-profile-overlay-background);
+  border: 1px solid var(--border-faint);
+  border-radius: 8px;
 }
 
 /* 16.e. Role User Popout */
@@ -3222,7 +3241,7 @@ button.button__67645 {
 .headerGradient__8a031:before {
   /* top: 0; */
   border-radius: 0;
-  left:0
+  left: 0
 }
 
 .footer__49fc1,
