@@ -8,7 +8,7 @@
 }
 
 :root {
-  --version: "v0.2.2 (161125)";
+  --version: "v0.2.3 (221125)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -491,14 +491,15 @@
   border-radius: 0;
 }
 
-.visual-refresh .container__55c99 {
+.container_f1c5c9 {
   background-color: var(--input-color);
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
   border-right: 2px solid var(--accentcolor2);
   border-radius: 0;
   margin-top: -1px !important;
-  border-top: 0
+  border-top: 0;
+  padding: 8px 0px 8px 0px !important;
 }
 
 .resultsGroup__56fec {
@@ -510,23 +511,21 @@
   background-color: var(--headercolor);
 }
 
-.focused__55c99 {
-  background-color: var(--headercolor);
-}
 
-.option__56fec {
+.itemContainer__1bb32 {
   border-radius: 0 !important;
   border-left: 2px solid transparent;
   margin: 0;
 }
 
-.option__56fec[aria-selected=true] {
-  background-color: var(--channellistcolor);
+.itemContainer__1bb32:active,
+.itemContainer__1bb32[aria-selected=true] {
+  background-color: var(--headercolor);
   border-left: 2px solid var(--accentcolor);
   box-shadow: none;
 }
 
-.option__56fec:hover {
+.itemContainer__1bb32:hover {
   background-color: var(--channellistcolor);
   border-left: 2px solid var(--accentcolor3);
 }
@@ -1926,6 +1925,10 @@ button.button__67645 {
   min-height: 56px !important;
 }
 
+.form_f75fb0 {
+  background-color: var(--chatbackground);
+}
+
 .visual-refresh .buttons__74017 {
   top: 25%;
   gap: 2px;
@@ -2784,6 +2787,11 @@ button.button__67645 {
   border: 1px solid var(--border-color)
 }
 
+.custom-theme-background .innerContainer_c2a763 {
+  border: 1px solid var(--border-faint);
+  background: var(--user-profile-overlay-background) !important;
+}
+
 .body__5be3e {
   padding: 8px 16px 8px 16px !important;
 }
@@ -2843,7 +2851,6 @@ button.button__67645 {
   border: 1px solid var(--border-color);
   background-color: var(--guildlistcolor);
 }
-
 
 /* board sections  */
 .container__62dd3 {
@@ -3094,8 +3101,6 @@ button.button__67645 {
   border-left: 2px solid var(--accentcolor);
 }
 
-
-
 /* quests  */
 .rewardDescriptionContainer__956c6,
 .container__960ef {
@@ -3180,12 +3185,32 @@ button.button__67645 {
 }
 
 /* 18.f. Game Preview Modal */
-/* 18.g. Quick Switcher */
+/* 18.g. Quick Switcher/forward menu*/
 .container__8a031 {
   background-color: var(--guildlistcolor) !important;
   border-radius: 0;
   border: 1px solid #383838;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
+}
+
+.container__8a031 .section__8a031 .actionBarTrailing__8a031 {
+  margin-top: 10px
+}
+
+.container__8a031 .scrollableContainer__74017 {
+  border: none;
+}
+
+.actionBar__8a031.section__8a031 {
+  padding: 15px;
+}
+
+.bodyInner__8a031 {
+  padding: 18px !important;
+}
+
+.footer__8a031 {
+  padding: 15px;
 }
 
 .auto_d125d2::-webkit-scrollbar {
