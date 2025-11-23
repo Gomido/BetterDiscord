@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Facebook.css');
 
 @font-face {
@@ -689,13 +688,88 @@
 } */
 
 /* 3. User & Server Settings */
-/* avatar change  */
-.placeholderFill__7ffbc {
-  fill: #4e4e4e;
+.content_e9e3ed,
+.contentHeader_e9e3ed {
+  background-color: var(--channellistcolor);
 }
 
-.option_edf440 {
+.fixedContent__409aa:after {
+  background: linear-gradient(to bottom, var(--guildlistcolor), transparent);
+}
+
+/*content & social -> blocked accounts */
+.header__5cea9 {
+  background-color: var(--headercolor);
+}
+
+.container__6b700 .card__5cea9 {
+  background-color: var(--input-color);
+}
+
+/* settings -> setver boosts  */
+.guildContainer__5dba5 {
+  background-color: var(--chatbackground);
+  border: 1px solid var(--border-color)
+}
+
+/* boosting faq  */
+/* billing  */
+/* keybindings - default binds  */
+.wrapper__5b98e,
+.paymentPane__01014,
+.defaultKeybindGroup__740f2 {
+  background-color: var(--guildlistcolor);
+}
+
+/* activity settings > my server header  */
+.headerContainer__7db08 {
+  background-color: var(--channellistcolor);
+}
+
+/* registred games  */
+.notDetected_cc46f0,
+.game_cc46f0 {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.stack_dbd263 {
+  row-gap: 12px !important
+}
+
+/* game overlay  */
+.groupContent__9d98d,
+.collapseable__9d98d {
+  background-color: var(--guildlistcolor) !important;
+}
+
+.groupCollapsedContainer__9d98d {
+  background-color: var(--guildlistcolor);
+}
+
+/* betterdiscord -> plugins  */
+.bd-search-wrapper {
+  background-color: var(--input-color);
+  border: 1px solid var(--border-color);
+}
+
+.bd-store-card {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+}
+
+.bd-store-card-icon {
   background-color: var(--titlebar);
+}
+
+.bd-addon-list .bd-addon-header {
+  background-color: var(--titlebar);
+}
+
+.bd-addon-list .bd-addon-card {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color)
 }
 
 /* 3.a. General Sidebar */
@@ -2781,7 +2855,7 @@ button.button__67645 {
 }
 
 .innerContainer_c2a763,
-.showMoreButton__84832,
+.loadMoreButton__5cea9,
 .firstCardContainer__84832 .card__84832 {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color)
@@ -3190,7 +3264,7 @@ button.button__67645 {
   background-color: var(--guildlistcolor) !important;
   border-radius: 0;
   border: 1px solid #383838;
-  padding: 10px 0 0 0;
+  /* padding: 10px 0 0 0; */
 }
 
 .container__8a031 .section__8a031 .actionBarTrailing__8a031 {
@@ -3307,13 +3381,12 @@ button.button__67645 {
   text-transform: initial;
 } */
 
-.info__2debe::before {
-  content: var(--version);
-  font-size: 12px;
+.compact__2debe::before {
+  content: "FlatCord - "var(--version);
+  font-size: 10px;
   line-height: 16px;
   font-weight: 500;
   color: var(--accentcolor3);
-  text-transform: lowercase;
 }
 
 /* 18.r. Tags  */
