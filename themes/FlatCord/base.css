@@ -900,10 +900,6 @@
   border-radius: var(--avatars) !important;
 }
 
-.folderGuildsList__48112{
-  gap:2px !important
-}
-
 .folderPreviewWrapper__48112,
 .folderGuildsList__48112 .svg_cc5dd2 {
   width: var(--guildbar-folder-size) !important;
