@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.2.4 (291125)";
+  --version: "v0.2.5 (051225)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -51,7 +51,7 @@
   --dm-columns: 4;
   /* Settings modal  */
 
-  --settingswidth: 1000;
+  --settingswidth: 900;
   --settingsheight: 90;
   --settingsbackground: transparent;
 
@@ -383,6 +383,7 @@
   gap: 2px
 }
 
+.button__85643[aria-label="Pomoc"],
 .button__85643[aria-label="Help"] {
   display: none;
 }
@@ -1662,6 +1663,11 @@
   height: 58px !important;
 }
 
+.subtext__339d0 {
+  color: var(--white6);
+  font-weight: 200;
+}
+
 /* games  */
 .theme-dark .panel__5dec7 {
   background-color: var(--titlebar);
@@ -1694,6 +1700,7 @@ button.button__67645 {
   border-radius: 50% !important;
 }
 
+.active_a22cb0,
 .primary_a22cb0,
 .lookFilled__201d5.colorBrand__201d5,
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf {
@@ -1701,6 +1708,7 @@ button.button__67645 {
   border-radius: 5px;
 }
 
+.active_a22cb0:hover,
 .primary_a22cb0:hover,
 .lookFilled__201d5.colorBrand__201d5:hover,
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
@@ -1713,7 +1721,6 @@ button.button__67645 {
   background-color: var(--accentcolor);
   color: #FFF;
 }
-
 
 /* 6.c. Light Theme Recolor NIE MA */
 /* 6.d. Listening Along */
@@ -1926,6 +1933,9 @@ button.button__67645 {
   filter: none;
 }
 
+
+
+
 /* quote  */
 .blockquoteContainer__75297 {
   background-color: var(--input-color);
@@ -2134,17 +2144,17 @@ button.button__67645 {
 /* 8.n. Notification Bar */
 .bd-notification {
   background-color: var(--input-color);
-  border:1px solid var(--border-color);
-  top:10px;
+  border: 1px solid var(--border-color);
+  top: 10px;
   right: -25px;
   border-radius: 0;
 }
 
-.bd-notification-footer{
+.bd-notification-footer {
   background-color: transparent;
 }
 
-.bd-notification-progress{
+.bd-notification-progress {
   border-radius: 0;
 }
 
@@ -2635,6 +2645,18 @@ button.button__67645 {
   height: unset;
 }
 
+.messagesPopout_e8b59c .actionButtons_e8b59c .button_a22cb0 {
+  color: var(--white9);
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+}
+
+.messagesPopout_e8b59c .actionButtons_e8b59c .button_a22cb0:hover {
+  background-color: var(--accentcolor);
+}
+
+
+
 /* friends  request*/
 .container_e73f2a {
   background-color: var(--input-color);
@@ -2913,6 +2935,10 @@ button.button__67645 {
   border-top: none;
 }
 
+.custom-user-profile-theme .profile__9c3be::before {
+  border-radius: 0px !important;
+}
+
 .upsellContent__5997d,
 .menuOverlay_ce8328 {
   background-color: var(--channellistcolor);
@@ -2951,7 +2977,7 @@ button.button__67645 {
   border-radius: 8px;
 }
 
-.theme-dark.custom-theme-background .container__62dd3 {
+.custom-theme-background .container__62dd3 {
   background: var(--user-profile-overlay-background);
   border: 1px solid var(--border-faint);
   border-radius: 8px;
@@ -3201,11 +3227,13 @@ button.button__67645 {
 
 
 /* quest share on chat */
-.questsCard__72a00 {
-  border: 1px solid var(--border-color)
+.questsCard__12e16 {
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+  border-radius: 5px;
 }
 
-.root__2055a {
+.root_fbc6f7 {
   background-color: var(--guildlistcolor);
 }
 
@@ -3282,7 +3310,11 @@ button.button__67645 {
   background-color: var(--guildlistcolor) !important;
   border-radius: 0;
   border: 1px solid #383838;
-  /* padding: 10px 0 0 0; */
+  padding: 0;
+}
+
+.protip_ac6cb0 {
+  padding-bottom: 10px;
 }
 
 .container__8a031 .section__8a031 .actionBarTrailing__8a031 {
@@ -3303,6 +3335,10 @@ button.button__67645 {
 
 .footer__8a031 {
   padding: 15px;
+}
+
+.bodySpacerBottom__8a031 {
+  padding: 0px;
 }
 
 .auto_d125d2::-webkit-scrollbar {
@@ -3356,7 +3392,7 @@ button.button__67645 {
 }
 
 .headerGradient__8a031:before {
-  /* top: 0; */
+  top: 0;
   border-radius: 0;
   left: 0
 }
@@ -3375,6 +3411,21 @@ button.button__67645 {
 /* 18.m. Gift Nitro Modal & Nitro Boost */
 .floatingNitroUpsell__39749 {
   display: none;
+}
+
+
+/* 18. Purchase modal*/
+.headerImage__9abb9 {
+  border-radius: 0;
+}
+
+.headerContainer__9abb9 {
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+}
+
+.premiumBrandRefreshBackground_e5f3a9 {
+  background-color: var(--guildlistcolor) !important;
 }
 
 /* 18.n. Server Templates */
@@ -3466,9 +3517,13 @@ span.clanTag__5d473,
 /* 21.a.20. Guild and Friend Removal Alerts */
 /* 21.a.21. Hide chat buttons 🠗*/
 .button__74017[aria-label="Add Media"],
+.button__74017[aria-label="Dodaj multimedia"],
 .button__74017[aria-label="Send a gift"],
+.button__74017[aria-label="Wyślij prezent"],
 .button__74017[aria-label="Open GIF picker"],
+.button__74017[aria-label="Otwórz wybieranie GIF-ów"],
 .button__74017[aria-label="Open sticker picker"],
+.button__74017[aria-label="Otwórz wybór naklejek"],
 .channelAppLauncher_e6e74f,
 .altText__0f481 {
   display: none !important;
@@ -3502,11 +3557,6 @@ span.clanTag__5d473,
   will-change: unset !important;
 }
 
-#app-mount .stop-animations * {
-  transition-property: inherit !important;
-  animation: inherit !important;
-}
-
 #app-mount .layer__960e4.stop-animations:first-child::after {
   content: "" !important;
   position: fixed !important;
@@ -3538,7 +3588,6 @@ span.clanTag__5d473,
   overflow: hidden !important;
   contain: unset !important;
   z-index: 1000 !important;
-  --settingsiconsadditionalsize: var(--use-settingsicons, 0) * (var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
 }
 
 #app-mount .layer__960e4~.layer__960e4>div,
@@ -3563,25 +3612,8 @@ span.clanTag__5d473,
   padding: 20px 6px 20px 20px !important;
 }
 
-#app-mount .layer__960e4~.layer__960e4 .contentColumnDefault__23e6b,
-#app-mount .layer__960e4~.layer__960e4 .contentColumnWide__23e6b {
-  padding: 20px 40px !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .wrapper_e5cdf3 {
-  width: calc(var(--settingswidth_v) - 420px - var(--settingsiconsadditionalsize)) !important;
-}
-
 #app-mount .layer__960e4~.layer__960e4 .contentRegionScroller__23e6b {
   margin-top: 0 !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .sidebar_e29cd7 {
-  height: var(--settingsheight_v) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .standardSidebarView__23e6b .editor {
-  height: calc(var(--settingsheight_v) - 120px) !important;
 }
 
 #app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b {
@@ -3613,11 +3645,8 @@ span.clanTag__5d473,
   transition: unset !important;
 }
 
-#app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .closeButton_c2b141:hover {
-  transition: unset !important;
-  background: unset !important;
-}
-
+#app-mount>.appAsidePanelWrapper_a3002d>.notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .keybind_c2b141,
+#app-mount .layer__960e4~.layer__960e4 .settingsToolbar_8227b0,
 #app-mount .layer__960e4~.layer__960e4 .toolsContainer__23e6b .closeButton_c2b141>svg {
   display: none !important;
 }
@@ -3626,115 +3655,8 @@ span.clanTag__5d473,
   height: 100% !important;
 }
 
-#app-mount>.appAsidePanelWrapper_a3002d>.notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .keybind_c2b141 {
-  display: none !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .settingsToolbar_8227b0 {
-  display: none !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .accountProfileCard__1fed1 {
-  max-width: calc(var(--settingswidth_v) - 332px - var(--settingsiconsadditionalsize)) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 {
-  gap: 30px !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .sectionsContainer__722a8,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .sectionsContainer_def11f,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .editor__9d295,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 {
-  min-width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
-  max-width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .sectionsContainer__722a8,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .sectionsContainer_def11f,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .editor__9d295,
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 {
-  min-width: calc((var(--settingswidth_v) - 364px - var(--settingsiconsadditionalsize)) / 2) !important;
-  max-width: calc((var(--settingswidth_v) - 364px - var(--settingsiconsadditionalsize)) / 2) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutOuter_c69a7b {
-  width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 .userPopoutOuter_c69a7b {
-  width: calc((var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) / 2) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutOuter_c69a7b,
-#app-mount .layer__960e4~.layer__960e4 .baseLayout__44061.tryItOutLayout__9d295 .preview__44061 .userPopoutOuter_c69a7b {
-  min-width: unset !important;
-  max-width: 340px !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .profileCustomizationSection__44061 .baseLayout__44061 .preview__44061 .userPopoutInner_c69a7b {
-  overflow: hidden !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .guildsSection__337a8 {
-  max-width: calc(var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) !important;
-}
-
-#app-mount .layer__960e4~.layer__960e4 .container__9293f.headerBar__80679 {
-  position: static !important;
-}
-
-#app-mount .root__5c9fc {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  background: var(--settingsbackground_v) !important;
-  border-radius: 5px !important;
-  box-shadow: var(--elevation-high) !important;
-  width: var(--settingswidth_v) !important;
-  height: var(--settingsheight_v) !important;
-  margin: auto !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  contain: unset !important;
-  z-index: 1000 !important;
-}
-
-#app-mount .root__5c9fc.enterDone__5c9fc {
-  transform: unset !important;
-}
-
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e,
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e .container_c2b141,
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e .closeButton_c2b141,
-/* #app-mount .shop__6db1d .alignedRightContent__80679, */
-#app-mount .shop__6db1d .container_c2b141,
-#app-mount .shop__6db1d .closeButton_c2b141 {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  z-index: -1 !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  width: 100% !important;
-  max-width: unset !important;
-  height: 100% !important;
-  max-height: unset !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  opacity: 0 !important;
-  cursor: default !important;
-  animation: unset !important;
-  transition: unset !important;
-}
-
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e {
-  top: 22px !important;
+.headerTrailing__8a031 {
+  padding-top: 10px !important;
 }
 
 /* 21.b. Addon Optimization */
@@ -4184,6 +4106,31 @@ span.clanTag__5d473,
 }
 
 /* 22. Custom CSS */
+/* floating window */
+#floating-editor-window {
+  border: 1px solid var(--border-color);
+}
+
+.floating-window-titlebar {
+  background-color: var(--titlebar);
+}
+
+.floating-window #bd-editor-controls {
+  background-color: var(--input-color);
+}
+
+.monaco-editor .sticky-widget,
+.monaco-editor .minimap-shadow-visible {
+  box-shadow: none;
+}
+
+.monaco-editor .sticky-widget {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.monaco-editor .minimap {
+  border-left: 1px solid var(--border-color);
+}
 
 /* 23. @Media Edits */
 
