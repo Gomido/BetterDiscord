@@ -2908,7 +2908,7 @@ button.button__67645 {
 
 /* chat mini profile  */
 .user-profile-popout .footer__5be3e {
-display: none;
+  display: none;
 }
 
 /* quest info popout  */
@@ -3046,7 +3046,6 @@ display: none;
 }
 
 /* 16.p. DM Call Region Select Popout */
-
 /* 16.r. Image Preview */
 .actionButtons_cc1819,
 .buttonInner_aec7ab {
@@ -3064,6 +3063,7 @@ display: none;
   background-color: var(--guildlistcolor);
   border-radius: 0;
   border-color: var(--border-color);
+  box-shadow: none;
 }
 
 .actionButton_cc1819:hover {
@@ -4141,7 +4141,7 @@ span.clanTag__5d473,
 .contents_c19a55 .username_c19a55[data-text="Lilek"] {
   background: linear-gradient(90deg,
       #406ff0,
-      #406ff0,
+      #40aff0,
       #406ff0);
   -webkit-background-clip: text;
   background-clip: text;
@@ -4152,3 +4152,13 @@ span.clanTag__5d473,
 /* .wrapper_c19a55:hover .username_c19a55[data-text="Lilek"] {
   animation: gradient-animation 1s linear infinite;
 } */
+
+.contents_c19a55 .username_c19a55[data-text="kacper"] {
+  background: linear-gradient(90deg,
+      #f04040,
+      #f08640);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+}
