@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.2.5 (051225)";
+  --version: "v0.2.6 (061225)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -304,7 +304,6 @@
     21.b.2. Radial Status
     21.b.3. Chat Bubbles
     
-
 22. Custom CSS
 
 23. @Media Edits */
@@ -510,7 +509,6 @@
   padding-top: 10px;
   background-color: var(--headercolor);
 }
-
 
 .itemContainer__1bb32 {
   border-radius: 0 !important;
@@ -771,6 +769,21 @@
 .bd-addon-list .bd-addon-card {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color)
+}
+
+/* betterdiscord update popout */
+.bd-modal-root {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
+.bd-modal-footer {
+  background-color: var(--chatbackground);
+  border-radius: 0;
+}
+
+.bd-changelog-modal .bd-modal-content iframe {
+  border-radius: 0;
 }
 
 /* 3.a. General Sidebar */
@@ -1117,7 +1130,6 @@
   color: #FFF !important;
 }
 
-
 /* shop nowe  */
 .link__972a0[href="/shop"] .newBadge__4ed1a {
   right: 0px !important;
@@ -1256,7 +1268,6 @@
 .badge_c99c29 {
   background-color: var(--accentcolor);
 }
-
 
 /* Main channel menu  */
 #favorites-header-popout,
@@ -1600,7 +1611,6 @@
   top: 25%;
 }
 
-
 /* 5.i. Server Guide  */
 .homeContainer__7449f {
   background-color: var(--chatbackground);
@@ -1716,7 +1726,6 @@ button.button__67645 {
   color: #000;
 }
 
-
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf[aria-selected=true] {
   background-color: var(--accentcolor);
   color: #FFF;
@@ -1754,7 +1763,6 @@ button.button__67645 {
   background-color: transparent;
   border-left: 2px solid transparent;
 }
-
 
 .clickable__91a9d:hover .childContainer__91a9d,
 .selected__91a9d .childContainer__91a9d {
@@ -1908,7 +1916,6 @@ button.button__67645 {
   background-color: var(--channellistcolor);
 }
 
-
 /* 8.h. New Messages Bar and Loading Symbols */
 .newMessagesBar__0f481 {
   border-radius: 8px !important;
@@ -1932,9 +1939,6 @@ button.button__67645 {
 .bottomBar__0f481 .lookFilled__201d5.colorBrand__201d5:hover {
   filter: none;
 }
-
-
-
 
 /* quote  */
 .blockquoteContainer__75297 {
@@ -2052,10 +2056,6 @@ button.button__67645 {
 .scrollableContainer__74017 {
   border-radius: 8px;
   background-color: var(--titlebar) !important;
-}
-
-.scrollableContainer__74017 {
-  border-radius: 8px;
   border: 1px solid var(--border-color);
 }
 
@@ -2359,7 +2359,6 @@ button.button__67645 {
 /* .interactive__972a0 [href="/store"], */
 /* .interactive__972a0 [href="/shop"], */
 
-
 .channel__972a0:not(.dm__972a0) .link__972a0 {
   padding-left: 15px;
   gap: 0;
@@ -2655,8 +2654,6 @@ button.button__67645 {
   background-color: var(--accentcolor);
 }
 
-
-
 /* friends  request*/
 .container_e73f2a {
   background-color: var(--input-color);
@@ -2827,7 +2824,6 @@ button.button__67645 {
   display: none;
 }
 
-
 /* add emoji button  */
 .emojiPicker_c0e32c .secondary_a22cb0 {
   display: none;
@@ -2908,6 +2904,11 @@ button.button__67645 {
 
 .body__5be3e {
   padding: 8px 16px 8px 16px !important;
+}
+
+/* chat mini profile  */
+.user-profile-popout .footer__5be3e {
+display: none;
 }
 
 /* quest info popout  */
@@ -2998,7 +2999,6 @@ button.button__67645 {
 
 }
 
-
 .contentWidth_c6bf1b {
   width: 100%;
 }
@@ -3034,9 +3034,6 @@ button.button__67645 {
   border: none;
 }
 
-
-
-
 /* list dropdown  */
 .popout__9047f {
   background-color: var(--channellistcolor);
@@ -3048,7 +3045,6 @@ button.button__67645 {
   fill: var(--accentcolor);
 }
 
-
 /* 16.p. DM Call Region Select Popout */
 
 /* 16.r. Image Preview */
@@ -3056,6 +3052,10 @@ button.button__67645 {
 .buttonInner_aec7ab {
   background-color: var(--chatbackground);
   border-radius: 0;
+}
+
+.carouselModal_d3a6f0 {
+  margin: 46px 24px;
 }
 
 /* 17. Menus */
@@ -3078,7 +3078,6 @@ button.button__67645 {
 .actionButtons_cc1819 .button_a22cb0 {
   border-radius: 0;
 }
-
 
 .icon-only_a22cb0 {
   border-radius: 20%;
@@ -3224,7 +3223,6 @@ button.button__67645 {
 .container__960ef {
   background-color: var(--guildlistcolor);
 }
-
 
 /* quest share on chat */
 .questsCard__12e16 {
@@ -3413,7 +3411,6 @@ button.button__67645 {
   display: none;
 }
 
-
 /* 18. Purchase modal*/
 .headerImage__9abb9 {
   border-radius: 0;
@@ -3450,12 +3447,12 @@ button.button__67645 {
   text-transform: initial;
 } */
 
-.compact__2debe::before {
-  content: "FlatCord - "var(--version);
+.bd-version-info::before {
+  content: "FlatCord " var(--version);
   font-size: 10px;
   line-height: 16px;
   font-weight: 500;
-  color: var(--accentcolor3);
+  color: var(--accentcolor2);
 }
 
 /* 18.r. Tags  */
