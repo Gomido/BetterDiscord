@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.2.6 (061225)";
+  --version: "v0.2.7 (161225)";
 
   /* kształt awatarów - 0px kwadratowe, 50px okragle*/
   --avatars: 10px;
@@ -475,7 +475,7 @@
   border-radius: 0;
   background: var(--headercolor);
   content: "Znajomi";
-  color: #fff;
+  color: #FFFFFF;
   padding: 0 16px 0 24px;
   font-size: 16px;
   line-height: 46px;
@@ -490,7 +490,7 @@
   border-radius: 0;
 }
 
-.container_f1c5c9 {
+.container__55c99 {
   background-color: var(--input-color);
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
@@ -498,7 +498,7 @@
   border-radius: 0;
   margin-top: -1px !important;
   border-top: 0;
-  padding: 8px 0px 8px 0px !important;
+  padding: 0px
 }
 
 .resultsGroup__56fec {
@@ -510,30 +510,22 @@
   background-color: var(--headercolor);
 }
 
-.itemContainer__1bb32 {
+.option__56fec {
   border-radius: 0 !important;
   border-left: 2px solid transparent;
   margin: 0;
 }
 
-.itemContainer__1bb32:active,
-.itemContainer__1bb32[aria-selected=true] {
+.option__56fec:active,
+.option__56fec[aria-selected=true] {
   background-color: var(--headercolor);
   border-left: 2px solid var(--accentcolor);
   box-shadow: none;
 }
 
-.itemContainer__1bb32:hover {
+.option__56fec:hover {
   background-color: var(--channellistcolor);
   border-left: 2px solid var(--accentcolor3);
-}
-
-/* Selected Filters */
-.visual-refresh .searchAnswer_bd8186,
-.visual-refresh .searchFilter_bd8186 {
-  border-radius: 0;
-  box-shadow: none !important;
-  background-color: var(--accentcolor);
 }
 
 /* 2.c.2. Search Result */
@@ -619,7 +611,7 @@
   width: 100%;
   top: 10px;
   left: 80px;
-  color: #FFF;
+  color: #FFFFFF;
   opacity: .7;
   font-size: 14px;
   line-height: 25px;
@@ -653,7 +645,7 @@
   justify-content: center;
   padding: 0px 2px;
   font-size: 14px;
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 500;
   z-index: 9999999999;
   position: absolute;
@@ -786,6 +778,19 @@
   border-radius: 0;
 }
 
+.bd-button-filled.bd-button-color-primary {
+  background-color: var(--accentcolor);
+}
+
+.bd-button-filled.bd-button-color-primary:hover {
+  background-color: var(--accentcolor3);
+  color: var(--black9);
+}
+
+.bd-notification-close:hover {
+  color: #FFFFFF;
+}
+
 /* 3.a. General Sidebar */
 /* 3.b. General Content Area */
 /* 3.c. Cards and Items */
@@ -797,6 +802,13 @@
 .pill_dfa8b6 {
   /* background: var(--channellistcolor) !important; */
   border-radius: 0px;
+}
+
+/* add role  */
+.container__3dde2 {
+  background-color: var(--channellistcolor);
+  border-radius: 5px;
+  border: 1px solid var(--border-color)
 }
 
 /* 4. Guilds Wrapper */
@@ -1127,7 +1139,7 @@
 }
 
 .newChannel__599fa {
-  color: #FFF !important;
+  color: #FFFFFF !important;
 }
 
 /* shop nowe  */
@@ -1482,7 +1494,7 @@
 }
 
 :where(.visual-refresh) .interactive__972a0:hover {
-  color: #FFF;
+  color: #FFFFFF;
   background-color: var(--titlebar) !important;
   border: none !important;
   border-radius: 0;
@@ -1728,7 +1740,7 @@ button.button__67645 {
 
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf[aria-selected=true] {
   background-color: var(--accentcolor);
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 /* 6.c. Light Theme Recolor NIE MA */
@@ -1824,7 +1836,7 @@ button.button__67645 {
 /* CHAT zaznaczenie tekstu */
 .highlight,
 ::selection {
-  color: #fff;
+  color: #FFFFFF;
   background: var(--accentcolor);
 }
 
@@ -2510,6 +2522,12 @@ button.button__67645 {
 /* 10.a. Stage */
 /* 10.b. Games Tab/ Game Library */
 /* 10.c. Nitro Tab */
+
+.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 {
+  transform: translate(15px, -8px) !important;
+}
+
+.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4,
 .scroller__99e7c .premiumTrialBadge_e4ef22 {
   background: var(--accentcolor);
   width: 8px;
@@ -2520,6 +2538,8 @@ button.button__67645 {
   border: 1px solid var(--channellistcolor);
 }
 
+.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 .eyebrow_cf4812,
+.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 .premiumTrialBadgeIcon__4c1e4,
 .scroller__99e7c .premiumTrialBadge_e4ef22 .clockIcon__23e21 {
   display: none;
 }
@@ -2907,9 +2927,6 @@ button.button__67645 {
 }
 
 /* chat mini profile  */
-.user-profile-popout .footer__5be3e {
-  display: none;
-}
 
 /* quest info popout  */
 .container__4413f {
