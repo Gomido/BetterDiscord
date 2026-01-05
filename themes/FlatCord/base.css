@@ -3779,7 +3779,7 @@ span._5d473ecff348c314-clanTag,
   y: 2px;
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper img,
+/* #app-mount ._44b0c28be7879b7b-wrapper img, */
 #app-mount ._44b0c28be7879b7b-wrapper._91a9d7f7e5248a56-avatar {
   border-radius: var(--avatars);
 }
@@ -3893,7 +3893,7 @@ span._5d473ecff348c314-clanTag,
   stroke-width: 3px;
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] img {
+#app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] ._44b0c28be7879b7b-mask img {
   clip-path: inset(5px 5px round var(--avatars));
 }
 
@@ -3909,7 +3909,7 @@ span._5d473ecff348c314-clanTag,
   pointer-events: none;
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] img {
+#app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] ._44b0c28be7879b7b-mask img {
   clip-path: inset(5px 5px round var(--avatars));
 }
 
