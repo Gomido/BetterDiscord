@@ -7,10 +7,10 @@
 }
 
 :root {
-  --version: "v0.2.7 (161225)";
+  --version: "v0.2.7 (050126)";
 
-  /* kształt awatarów - 0px kwadratowe, 50px okragle*/
-  --avatars: 10px;
+  /* kształt awatarów - 0px kwadratowe, 100px okragle*/
+  --avatars: 0px;
   /*kolor akcentu/niektore elementy skina, zaznaczenie*/
   --accentcolor: #3C70E6;
   /*kolor akcentu drugi - jedynie do gradientów na górnym pasku/chacie*/
@@ -778,13 +778,19 @@
   border-radius: 0;
 }
 
-.bd-button-filled.bd-button-color-red,
+.bd-button-filled.bd-button-color-red {
+  background-color: #c92c2c;
+}
+
 .bd-button-link.bd-button-color-primary,
 .bd-button-filled.bd-button-color-primary {
   background-color: var(--accentcolor);
 }
 
-.bd-button-filled.bd-button-color-red:hover,
+.bd-button-filled.bd-button-color-red:hover {
+  background-color: #b31c1c;
+}
+
 .bd-button-link.bd-button-color-primary:hover,
 .bd-button-filled.bd-button-color-primary:hover {
   background-color: var(--accentcolor3);
@@ -797,9 +803,9 @@
 
 /* restart popout  */
 
-.bd-button-filled.bd-button-color-red {
+/* .bd-button-filled.bd-button-color-red {
   margin-left: 5px;
-}
+} */
 
 /* 3.a. General Sidebar */
 /* 3.b. General Content Area */
@@ -808,12 +814,6 @@
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles */
-/* profile roles  */
-.dfa8b6b94cddb191-pill {
-  /* background: var(--channellistcolor) !important; */
-  border-radius: 0px;
-}
-
 /* add role  */
 ._3dde27fb71170aa9-container {
   background-color: var(--channellistcolor);
@@ -827,7 +827,11 @@
   background-color: var(--guildlistcolor) !important;
   margin-bottom: 0 !important;
   padding-bottom: 65px;
-  /* border-right: 1px solid var(--app-border-frame); */
+  /* border-right: 1px solid var(--border-color); */
+}
+
+._252b6afd49fda06f-guildSeparator {
+  background-color: var(--border-color);
 }
 
 /* 4.a.1. Sticky Home Icon */
@@ -1056,7 +1060,7 @@
 ._5e434347c823b592-guilds ._581051df43c5ebb6-item[style*="height: 19"], 
 ._5e434347c823b592-guilds ._581051df43c5ebb6-item[style*="height: 20"]  */
   {
-  background-color: var(--interactive-active);
+  background-color: var(--accentcolor3);
   height: 4px !important;
 }
 
@@ -1216,11 +1220,12 @@
   background-color: transparent !important;
 }
 
-._2ea32c412048f708-wrapper:hover {
+.c69b6db0641110f6-voiceChannelHighlightContainer:hover,
+.c69b6db0641110f6-containerDefault:hover {
   background-color: var(--titlebar);
 }
 
-._2ea32c412048f708-wrapper:hover::after {
+.c69b6db0641110f6-containerDefault:hover::after {
   content: '';
   position: absolute;
   background-color: var(--accentcolor3);
@@ -1228,10 +1233,10 @@
   height: 20px;
   width: 4px;
   top: calc(50% - 10px);
-  left: 2px;
+  left: 3px;
 }
 
-._2ea32c412048f708-wrapper._2ea32c412048f708-modeSelected {
+.c69b6db0641110f6-containerDefault.c69b6db0641110f6-selected {
   background-color: var(--headercolor);
 }
 
@@ -1427,8 +1432,7 @@
 .e6b7699ce8339e1c-sectionDivider {
   margin: 8px;
   width: 244px;
-  background-color: var(--app-border-frame);
-  ;
+  background-color: var(--border-color) !important;
   margin-top: 46px !important;
 }
 
@@ -2079,7 +2083,7 @@ button._67645e1530f1195d-button {
   border: 0;
 }
 
-._740174f3d6a2c8fe-scrollableContainer {
+.f75fb00fb7356cbe-channelTextArea ._740174f3d6a2c8fe-scrollableContainer {
   border-radius: 8px;
   background-color: var(--titlebar) !important;
   border: 1px solid var(--border-color);
@@ -2858,6 +2862,10 @@ button._67645e1530f1195d-button {
   display: none;
 }
 
+.mana-text-inputs ._72c3859781ebce8f-wrapper:not([data-read-only=true]):has(input:focus, textarea:focus) {
+  outline: 2px solid var(--accentcolor);
+}
+
 /* add emoji button  */
 .c0e32c5cffed3d9f-emojiPicker .a22cb0c66246f5d3-secondary {
   display: none;
@@ -2920,27 +2928,49 @@ button._67645e1530f1195d-button {
 
 /* 16.d. User Popout */
 /* mini profile  */
-.user-profile-popout .c0bea05627c5dc35-inner {
+.user-profile-popout {
   background-color: var(--guildlistcolor);
 }
 
-.c2a7636633222ffa-innerContainer,
-._5cea9da4c2ca012f-loadMoreButton,
-._9d59731d47494e97-firstCardContainer ._39ec2e3dfb4fd2f2-card {
+/* radius user profile  */
+.user-profile-popout,
+._5be3ef42f92174b2-header,
+:where(.c0bea05627c5dc35-overlay),
+.fccfdf3cfff21921-expandButton {
+  border-radius: 0;
+}
+
+._9d59731d47494e97-cardsList {
+  border: 1px solid var(--user-profile-border);
+}
+
+.custom-user-profile-theme :where(.c0bea05627c5dc35-overlay),
+.custom-user-profile-theme :where(.c0bea05627c5dc35-overlay):hover,
+.custom-user-profile-theme ._740174f3d6a2c8fe-themedBackground {
+  background-color: unset;
+}
+
+:where(.c0bea05627c5dc35-overlay) {
   background-color: var(--channellistcolor);
-  border: 1px solid var(--border-color)
 }
 
-.custom-theme-background .c2a7636633222ffa-innerContainer {
-  border: 1px solid var(--border-faint);
-  background: var(--user-profile-overlay-background) !important;
+:where(.c0bea05627c5dc35-overlay):hover {
+  background-color: var(--chatbackground);
 }
 
-._5be3ef42f92174b2-body {
-  padding: 8px 16px 8px 16px !important;
+._740174f3d6a2c8fe-themedBackground {
+  background-color: var(--input-color);
 }
 
-/* chat mini profile  */
+._740174f3d6a2c8fe-inlineContainer {
+  border: 1px solid var(--border-color);
+}
+
+/* roles  */
+.dfa8b6b94cddb191-pill {
+  /* background: var(--channellistcolor) !important; */
+  border-radius: 0px;
+}
 
 /* quest info popout  */
 ._0bd12176bed6b72a-container {
@@ -3689,22 +3719,18 @@ span._5d473ecff348c314-clanTag,
 
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
-/* 21.b.2. Radial Status */
-/* ._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-avatarDecoration {
-  display: none;
-} */
-
+/* 21.b.2. Radial Status by Gibbu (with small mods) */
 #app-mount ._44b0c28be7879b7b-wrapper {
-  border-radius: 50%;
-}
-
-.f75fb00fb7356cbe-avatar {
-  margin-left: 2px;
+  border-radius: var(--avatars);
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper svg:not(:root) {
   overflow: visible;
   contain: none;
+}
+
+#app-mount ._44b0c28be7879b7b-wrapper svg:not(:root) g[transform] {
+  transform: scale(1) !important;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject {
@@ -3746,28 +3772,27 @@ span._5d473ecff348c314-clanTag,
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-pointerEvents[x="14.5"] {
-  fill: rgba(0, 0, 0, 0.5) !important;
-  width: var(--rs-width, 30px);
-  height: var(--rs-width, 30px);
-  x: calc(var(--rs-width, 30px) / 2 / -1 + 2px);
-  y: calc(var(--rs-width, 30px) / 2 / -1);
+  fill: rgba(0, 0, 0, 0.6) !important;
+  width: 30px;
+  height: 30px;
+  x: 2px;
+  y: 2px;
 }
 
-/* #app-mount ._44b0c28be7879b7b-wrapper img, */
-#app-mount ._44b0c28be7879b7b-wrapper._91a9d7f7e5248a56-avatar,
-#app-mount ._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-mask img {
-  border-radius: 50%;
+#app-mount ._44b0c28be7879b7b-wrapper img,
+#app-mount ._44b0c28be7879b7b-wrapper._91a9d7f7e5248a56-avatar {
+  border-radius: var(--avatars);
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper svg[width="25"][height="15"]>rect {
-  rx: calc(50% * 2) !important;
-  ry: calc(50% * 2) !important;
+  rx: calc(var(--avatars) * 2) !important;
+  ry: calc(var(--avatars) * 2) !important;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] svg._44b0c28be7879b7b-cursorDefault rect,
 #app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] svg._44b0c28be7879b7b-cursorDefault rect {
-  ry: calc(50% * 3.3);
-  rx: calc(50% * 3.3);
+  ry: calc(var(--avatars) * 3.3);
+  rx: calc(var(--avatars) * 3.3);
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper rect {
@@ -3778,20 +3803,26 @@ span._5d473ecff348c314-clanTag,
   -webkit-mask: none;
   mask: none;
   display: block;
-  rx: 50%;
-  ry: 50%;
+  rx: var(--avatars);
+  ry: var(--avatars);
   fill: transparent !important;
-  stroke-width: var(--rs-width);
+  stroke-width: 2px;
 }
 
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#23a55a"],
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#40a258"],
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#43a25a"] {
   stroke: var(--online);
 }
 
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f0b232"],
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#cc954c"],
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#ca9654"] {
   stroke: var(--idle);
 }
 
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f23f43"],
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a41"],
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a42"] {
   stroke: var(--dnd);
 }
@@ -3808,12 +3839,16 @@ span._5d473ecff348c314-clanTag,
 
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82858f"],
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82838b"] {
-  stroke: var(--invisible);
+  stroke: var(--offline);
+}
+
+._9293f6b2fc12398a-upperContainer ._44b0c28be7879b7b-wrapper {
+  margin-left: 2px;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper rect[x="14"] {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper rect[x="16"] {
@@ -3827,24 +3862,9 @@ span._5d473ecff348c314-clanTag,
   overflow: visible;
 }
 
-._972a0d22c8afa7f0-interactive ._44b0c28be7879b7b-wrapper[style*="32px"] rect {
-  width: 32px;
-  height: 32px;
-  x: 0 !important;
-  y: 0 !important;
-  position: relative;
-  z-index: 0;
-}
-
-._44b0c28be7879b7b-wrapper g {
-  transform: none;
-}
-
 #app-mount ._44b0c28be7879b7b-wrapper[style*="32px"] rect {
   width: 32px;
   height: 32px;
-  /* x: -14.5;
-  y: -17; */
   position: relative;
   z-index: 0;
 }
@@ -3854,8 +3874,8 @@ span._5d473ecff348c314-clanTag,
   height: 40px;
   x: -19;
   y: -20;
-  ry: calc(50% * 3.3);
-  rx: calc(50% * 3.3);
+  ry: calc(var(--avatars) * 3.3);
+  rx: calc(var(--avatars) * 3.3);
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper[style*="40px"] foreignObject[mask*=mobile] img {
@@ -3870,12 +3890,11 @@ span._5d473ecff348c314-clanTag,
 #app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] rect {
   width: 80px;
   height: 80px;
-  stroke-width: var(--rs-width);
+  stroke-width: 3px;
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper[style*="32px"] ._44b0c28be7879b7b-mask foreignObject,
-#app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] ._44b0c28be7879b7b-mask foreignObject {
-  clip-path: inset(calc(var(--rs-spacing) + 1px) calc(var(--rs-spacing) + 1px) round 50%);
+#app-mount ._44b0c28be7879b7b-wrapper[style*="80px"] img {
+  clip-path: inset(5px 5px round var(--avatars));
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] svg._44b0c28be7879b7b-cursorDefault rect {
@@ -3886,16 +3905,16 @@ span._5d473ecff348c314-clanTag,
 #app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] rect {
   width: 120px;
   height: 120px;
-  stroke-width: var(--rs-width);
+  stroke-width: 4px;
   pointer-events: none;
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] ._44b0c28be7879b7b-mask img {
-  clip-path: inset(calc(var(--rs-spacing) + 1px) calc(var(--rs-spacing) + 1px) round 50%);
+#app-mount ._44b0c28be7879b7b-wrapper[style*="120px"] img {
+  clip-path: inset(5px 5px round var(--avatars));
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper:not([style*="80px;"], [style*="120px;"], [style*="16px"])>svg>foreignObject:not(:only-child) img {
-  clip-path: inset(calc(var(--rs-spacing) + 1px) calc(var(--rs-spacing) + 1px) round 50%);
+  clip-path: inset(2px 2px round var(--avatars));
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper[style="width: 16px; height: 16px;"] rect {
@@ -3913,8 +3932,7 @@ span._5d473ecff348c314-clanTag,
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile][width="24"]:after {
   width: 10px;
   height: 12px;
-  top: 25%;
-  left: 30%;
+  top: 30%;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile][width="32"]:after {
@@ -3925,8 +3943,10 @@ span._5d473ecff348c314-clanTag,
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile][width="80"]:after {
-  width: 14px;
-  height: 18px;
+  width: 24px;
+  height: 28px;
+  top: 35%;
+  left: 35%;
 }
 
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile][width="120"]:after {
@@ -3936,7 +3956,7 @@ span._5d473ecff348c314-clanTag,
 
 #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile]:after {
   content: "";
-  display: var(--rs-phone-visible, block);
+  display: block;
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center no-repeat;
   mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center no-repeat;
   position: absolute;
@@ -3950,27 +3970,14 @@ span._5d473ecff348c314-clanTag,
   stroke: var(--online, var(--online));
 }
 
-#app-mount ._37e49614b9f110a9-avatarWrapper ._44b0c28be7879b7b-mask>g {
-  transform: translateX(38%) translateY(45%) !important;
-}
-
-#app-mount ._37e49614b9f110a9-avatarWrapper ._44b0c28be7879b7b-mask>g rect {
-  width: var(--rs-user-area-size, 30px);
-  height: var(--rs-user-area-size, 30px);
-  rx: calc(50% * 2) !important;
-  ry: calc(50% * 2) !important;
-  x: -14.5;
-  y: -17;
-}
-
 #app-mount .avatarSpeaking__44b0c {
   position: absolute;
   top: 2px;
   left: 2px;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 2px var(#43b581, #43b581), inset 0 0 0 3px var(--background-secondary);
+  border-radius: var(--avatars);
+  box-shadow: inset 0 0 0 2px #57d39b, inset 0 0 0 3px var(--background-secondary);
 }
 
 #app-mount ._5126c0cd07f243a0-message ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile] {
@@ -3987,9 +3994,9 @@ span._5d473ecff348c314-clanTag,
 }
 
 #app-mount .avatarHintInner_f89da9 {
-  border-radius: 50% !important;
+  border-radius: var(--avatars) !important;
   padding-top: 0;
-  width: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
+  width: calc(100% - 3px - 3px + 2px);
   height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
   top: 50%;
   left: 50%;
