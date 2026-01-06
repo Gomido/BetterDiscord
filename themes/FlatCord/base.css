@@ -49,15 +49,6 @@
   --guildbar-folder-size: 40px;
   /* ilosc zakladek znajomi */
   --dm-columns: 4;
-  /* Settings modal  */
-
-  --settingswidth: 900;
-  --settingsheight: 90;
-  --settingsbackground: transparent;
-
-  --settingswidth_v: min(calc(1px * var(--settingswidth_s, var(--settingswidth))), 99vw);
-  --settingsheight_v: min(calc(1vh * var(--settingsheight_s, var(--settingsheight))), 99vh);
-  --settingsbackground_v: var(--settingsbackground_s, var(--settingsbackground));
 
   /* Kolory statusu  */
   --online: #28A745;
@@ -3142,6 +3133,30 @@ h3.c8ffbb79449f399c-membersGroup:has(svg) {
   margin: 46px 24px;
 }
 
+.cc1819cb49c2d109-actionButton:hover,
+.a22cb0c66246f5d3-icon-only:hover {
+  border: 1px solid var(--border-color);
+  transition: none;
+}
+
+.cc1819cb49c2d109-actionButton:hover,
+.a22cb0c66246f5d3-icon-only:hover {
+  background-color: var(--guildlistcolor);
+  border-radius: 5px;
+}
+
+/* close button  */
+.aec7abc73c126bc0-buttonInner:hover {
+  background-color: transparent;
+}
+
+.aec7abc73c126bc0-buttonInner:hover svg {
+  background-color: var(--guildlistcolor);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
 /* 17. Menus */
 /* 17.a. Context Menus */
 .c1e9c47c23f12ca3-menu {
@@ -3159,13 +3174,8 @@ h3.c8ffbb79449f399c-membersGroup:has(svg) {
 
 .c1e9c47c23f12ca3-menu .c1e9c47c23f12ca3-item,
 .aec7abc73c126bc0-button,
-.actionButton_cc1819,
-.cc1819cb49c2d109-actionButtons .a22cb0c66246f5d3-button {
+.actionButton_cc1819 {
   border-radius: 0;
-}
-
-.a22cb0c66246f5d3-icon-only {
-  border-radius: 20%;
 }
 
 .c1e9c47c23f12ca3-scroller,
@@ -3612,7 +3622,7 @@ span._5d473ecff348c314-clanTag,
 }
 
 /* 21.a.22. Settings Modal by mwittrien*/
-/* colors  */
+/* colors settings */
 ._23e6b439306f125a-sidebarRegionScroller {
   background-color: var(--channellistcolor);
 }
@@ -3630,10 +3640,16 @@ span._5d473ecff348c314-clanTag,
 ._1fed1dd06c7aabf7-background,
 ._1fed1dd06c7aabf7-fieldList {
   background-color: var(--input-color);
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 /* settings modal  */
+.e4491282b6a5364a-outerContainer {
+  /* 1220 x 820  */
+  width: 1300px;
+  height: 800px;
+}
+
 ._960e4207cea8323e-baseLayer {
   opacity: 1 !important;
   transform: unset !important;
@@ -3661,16 +3677,16 @@ span._5d473ecff348c314-clanTag,
   right: 0 !important;
   bottom: 0 !important;
   left: 0 !important;
-  background: var(--settingsbackground_v) !important;
+  background: transparent;
   border-radius: 0px !important;
-  box-shadow: var(--elevation-high) !important;
-  width: var(--settingswidth_v) !important;
-  height: var(--settingsheight_v) !important;
+  width: 1218px !important;
+  height: 718px !important;
   margin: auto !important;
   padding: 0 !important;
   overflow: hidden !important;
   contain: unset !important;
   z-index: 1000 !important;
+  border: 1px solid var(--border-color);
 }
 
 ._960e4207cea8323e-layer~._960e4207cea8323e-layer>div,
@@ -3818,6 +3834,8 @@ span._5d473ecff348c314-clanTag,
   display: none;
 }
 
+._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-avatar,
+._0a06ed6ea040aa1b-userInfo ._44b0c28be7879b7b-avatar,
 .f34534e8a5d3ca64-iconActiveMedium,
 .e8b59c4b335dd2fc-messageGroupWrapper .c19a557985eb7793-avatar,
 .c19a557985eb7793-cozy.c19a557985eb7793-wrapper .c19a557985eb7793-avatar,
@@ -3892,10 +3910,7 @@ span._5d473ecff348c314-clanTag,
   stroke: var(--streaming);
 }
 
-._44b0c28be7879b7b-wrapper rect[fill="#80848e"] {
-  stroke: var(--offline);
-}
-
+._44b0c28be7879b7b-wrapper rect[fill="#80848e"],
 ._44b0c28be7879b7b-wrapper rect[fill="#82858f"],
 ._44b0c28be7879b7b-wrapper rect[fill="#82838b"] {
   stroke: var(--offline);
@@ -3906,8 +3921,8 @@ span._5d473ecff348c314-clanTag,
 }
 
 ._44b0c28be7879b7b-wrapper rect[x="14"] {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 ._44b0c28be7879b7b-wrapper rect[x="16"] {
@@ -4059,8 +4074,8 @@ span._5d473ecff348c314-clanTag,
 .avatarHintInner_f89da9 {
   border-radius: var(--avatars) !important;
   padding-top: 0;
-  width: calc(100% - 3px - 3px + 2px);
-  height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -4220,6 +4235,10 @@ span._5d473ecff348c314-clanTag,
 
 /* 22. Custom CSS */
 /* floating window */
+._6131ab3dbe0affed-panel {
+  margin-block: 10px;
+}
+
 #floating-editor-window {
   border: 1px solid var(--border-color);
 }
