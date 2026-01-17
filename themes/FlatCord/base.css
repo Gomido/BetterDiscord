@@ -2030,6 +2030,7 @@ button._67645e1530f1195d-button {
   background-color: var(--input-color);
 }
 
+.f4758a8d6346d18b-visualMediaItemContainer.f4758a8d6346d18b-isInAppComponentsV2,
 ._122e465d2e663859-container .f4758a8d6346d18b-visualMediaItemContainer {
   border: none !important;
 }
@@ -2972,6 +2973,10 @@ h3.c8ffbb79449f399c-membersGroup:has(svg) {
   background-color: var(--guildlistcolor);
 }
 
+._5be3ef42f92174b2-body {
+  padding: 4px 16px 8px !important;
+}
+
 /* radius user profile  */
 /* .user-profile-popout, */
 ._5be3ef42f92174b2-header,
@@ -3646,7 +3651,9 @@ span._5d473ecff348c314-clanTag,
 ._740174f3d6a2c8fe-button[aria-label="Add Media"],
 ._740174f3d6a2c8fe-button[aria-label="Dodaj multimedia"],
 ._740174f3d6a2c8fe-button[aria-label="Give a Gift"],
+._740174f3d6a2c8fe-button[aria-label="Send a gift"],
 ._740174f3d6a2c8fe-button[aria-label="Podaruj prezent"],
+._740174f3d6a2c8fe-button[aria-label="Wyślij prezent"],
 ._740174f3d6a2c8fe-button[aria-label="Open GIF picker"],
 ._740174f3d6a2c8fe-button[aria-label="Otwórz wybieranie GIF-ów"],
 ._740174f3d6a2c8fe-button[aria-label="Open sticker picker"],
@@ -3856,8 +3863,8 @@ span._5d473ecff348c314-clanTag,
   fill: rgba(0, 0, 0, 0.6) !important;
   width: 30px;
   height: 30px;
-  x: 2px;
-  y: 2px;
+  x: 0px;
+  y: 0px;
 }
 
 ._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-avatar,
@@ -4021,6 +4028,10 @@ span._5d473ecff348c314-clanTag,
   clip-path: inset(2px 2px round var(--avatars));
 }
 
+._44b0c28be7879b7b-avatarDecorationContainer img {
+  clip-path: none !important;
+}
+
 #app-mount ._44b0c28be7879b7b-wrapper[style="width: 16px; height: 16px;"] rect {
   display: none;
 }
@@ -4127,12 +4138,17 @@ span._5d473ecff348c314-clanTag,
 /* dymki chatu  */
 .b7e1cb0370c2dd0e-container ._31fc2df9348cd84a-stickerAsset,
 .f4758a8d6346d18b-visualMediaItemContainer,
+._5e20857677befdf4-isComponentsV2 .f4758a8d6346d18b-oneByOneGridSingle,
 ._623de82e76ad7f82-embedMedia .af017ab847f75d02-imageWrapper {
   padding: 8px;
   background: var(--channellistcolor);
   border: 1px solid var(--border-color) !important;
-  border-radius: 5px;
+  border-radius: 5px !important;
   /* height: unset; */
+}
+
+.f4758a8d6346d18b-oneByOneGridSingle {
+  max-width: 500px;
 }
 
 .b7e1cb0370c2dd0e-container ._31fc2df9348cd84a-stickerAsset {
