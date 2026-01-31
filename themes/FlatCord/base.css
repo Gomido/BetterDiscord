@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.1 (250126)";
+  --version: "v0.3.2 (310126)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -362,12 +362,12 @@
   z-index: 99;
   position: fixed;
   display: inline-block;
-  top: 11px;
+  top: 10px;
   font-weight: 400;
   color: var(--accentcolor);
   height: auto;
-  left: 10px;
-  /* filter: drop-shadow(0 0 2px var(--accentcolor)); */
+  left: 70px;
+  /* filter: drop-shadow(0 0 1px var(--accentcolor)); */
   background-color: transparent;
 }
 
@@ -379,11 +379,11 @@
   z-index: 99;
   position: fixed;
   display: inline-block;
-  top: 11px;
+  top: 10px;
   font-weight: 400;
   color: var(--accentcolor3);
   height: auto;
-  left: 44px;
+  left: 105px;
   background-color: transparent;
 }
 
@@ -395,7 +395,7 @@
   top: 15px;
   color: var(--accentcolor3);
   height: auto;
-  left: 85px;
+  left: 150px;
   background-color: transparent;
 }
 
@@ -422,6 +422,11 @@
 .button__85643[aria-label="Pomoc"],
 .button__85643[aria-label="Help"] {
   display: none;
+}
+
+/* back forward buttons  */
+.backForwardButtons__63abb .button__63abb:not(.disabled__63abb):hover {
+  background-color: transparent;
 }
 
 /* 1.d. Mac Buttons NIE MA */
@@ -527,7 +532,7 @@
   border-radius: 0;
 }
 
-.container_b6544f {
+.container__16eb0 {
   background-color: var(--input-color);
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
@@ -858,7 +863,7 @@
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles by swinny*/
-.roleCircle__4f569{
+.roleCircle__4f569 {
   height: 0px;
   width: 0px;
 }
@@ -1203,6 +1208,11 @@
   background-color: var(--accentcolor) !important;
 }
 
+.theme-dark .productCardBadge_b8a6bd {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
 .unreadMentionsIndicatorTop_ef3116 {
   top: 45px
 }
@@ -1231,6 +1241,12 @@
   min-width: 5px !important;
   min-height: 5px !important;
   padding: 0;
+}
+
+.newBadgeWrapper_faa96b .textBadge__2b1f5 {
+  background-color: var(--accentcolor3) !important;
+  color: #000;
+  font-weight: 600;
 }
 
 .newChannel__599fa {
@@ -1600,6 +1616,22 @@
 }
 
 /* 5.h. Unread Messages Popout inbox */
+/* Topbar color */
+.top_aa8da2 .item_aa8da2.selected_aa8da2 {
+  color: #FFFFFF;
+}
+
+.top_aa8da2 .item_aa8da2:after {
+  border-radius: 0 !important;
+}
+
+.top_aa8da2 .item_aa8da2.selected_aa8da2:after {
+  background-color: var(--accentcolor);
+}
+
+.top_aa8da2 .item_aa8da2:hover:after {
+  background-color: var(--accentcolor3);
+}
 
 /* mentions  */
 .container_fc561d {
@@ -1990,6 +2022,14 @@ button.button__67645 {
   background-color: var(--input-color);
 }
 
+.modalContent__4d95d .codeView__4d95d {
+  background-color: var(--channellistcolor);
+}
+
+.modalFooter__4d95d {
+  padding: 8px;
+}
+
 /* notatnik  */
 .newMosaicStyle__4d95d .textContainer__4d95d {
   background-color: var(--guildlistcolor);
@@ -2071,11 +2111,6 @@ button.button__67645 {
 
 .wrapper_c19a55:hover .container__122e4 {
   background-color: var(--input-color);
-}
-
-.visualMediaItemContainer_f4758a.isInAppComponentsV2_f4758a,
-.container__122e4 .visualMediaItemContainer_f4758a {
-  border: none !important;
 }
 
 /* 8.i. DM Chat */
@@ -2187,6 +2222,7 @@ button.button__67645 {
 /* 8.m. Typing Bar */
 .inTextChannel_b88801.base_b88801 {
   background: linear-gradient(0deg, var(--chatbackground) 0%, var(--chatbackground) 70%, rgba(255, 255, 255, 0) 100%);
+  margin-right: 0 !important;
 }
 
 /* 
@@ -2309,6 +2345,13 @@ button.button__67645 {
 .scrollerInner__36d07 .container__34c2c {
   background-color: var(--chatbackground);
   z-index: 0;
+}
+
+.container__34c2c,
+.header__34c2c {
+  background-color: var(--titlebar);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: none;
 }
 
 .emptyChannelIcon__00de6,
@@ -2708,6 +2751,10 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 0 !important;
 }
 
+.media__41ea0 {
+  padding: 5px;
+}
+
 /* 15. Scrollbars */
 .thin_d125d2::-webkit-scrollbar,
 .scroller__99e7c::-webkit-scrollbar,
@@ -2720,7 +2767,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 /* 15.1.b. Sliders */
 /* 15.1.c  Snippets */
 /* devilbro badge remove */
-.avatar_c19a55.dev_e9c564.hasBadge_e9c564 > img{
+.avatar_c19a55.dev_e9c564.hasBadge_e9c564>img {
   border: none;
 }
 
@@ -3140,15 +3187,15 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* User profile sidebar  */
-.user-profile-sidebar{
+.user-profile-sidebar {
   background-color: var(--channellistcolor);
-  border-left:1px solid var(--border-color)
+  border-left: 1px solid var(--border-color)
 }
+
 .footer__7f9c0 {
   background-color: var(--input-color);
   border-top: 1px solid var(--border-color);
-} 
-
+}
 
 /* 16.e. Role User Popout */
 .rolePopout__75297 {
@@ -3201,14 +3248,31 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* list dropdown  */
+.languageSelector__4d95d,
+.selectDropdown__5fa2f,
+.selectDropdown__0edde,
+.baseCardOutline__1ab14,
+.gameSearchCombobox__36be8,
+.popout_a16aea,
 .popout__9047f {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color);
   border-radius: 5px;
+  box-shadow: none;
 }
 
+.radioGroupOption__64e61[data-selected] .outerRadioFill__64e61,
+.standaloneRadioIndicator__64e61[data-selected=true] .outerRadioFill__64e61,
+.selectedIcon_a16aea path,
 .radioIndicatorChecked__88a69 .refreshIconFill__88a69 {
   fill: var(--accentcolor);
+}
+
+.option_a16aea[aria-selected=true]:not(.option_a16aea.multi_a16aea),
+.option_a16aea.focused_a16aea,
+.option_a16aea:focus-visible,
+.option_a16aea:hover {
+  background-color: var(--guildlistcolor);
 }
 
 /* 16.p. DM Call Region Select Popout */
@@ -3477,6 +3541,10 @@ h3.membersGroup_c8ffbb:has(svg) {
   display: none;
 }
 
+.tags__41ea0 {
+  bottom: unset;
+}
+
 /* upload progress small window  */
 .visual-refresh .file__0ccae {
   background-color: var(--input-color);
@@ -3705,6 +3773,10 @@ span.clanTag__5d473,
 /* 21.a.16. Read All Button  */
 /* 21.a.17. Badges Everywhere */
 /* 21.a.18. Message Logger V2 */
+.bd-modal-root .bd-button-link.bd-button-color-primary {
+  margin-right: 10px;
+}
+
 /* 21.a.19. Status Everywhere */
 /* 21.a.20. Guild and Friend Removal Alerts */
 /* 21.a.21. Hide chat buttons 🠗*/
@@ -3718,8 +3790,7 @@ span.clanTag__5d473,
 .button__74017[aria-label="Otwórz wybieranie GIF-ów"],
 .button__74017[aria-label="Open sticker picker"],
 .button__74017[aria-label="Otwórz wybór naklejek"],
-.channelAppLauncher_e6e74f,
-.altText__0f481 {
+.buttonContainer_e6e74f {
   display: none !important;
 }
 
@@ -3874,6 +3945,7 @@ span.clanTag__5d473,
 }
 
 .avatarDecoration__44b0c foreignObject,
+.avatarDecorationContainer__44b0c foreignObject,
 .mask__44b0c foreignObject,
 .inner_c0bea0 .wrapper__44b0c foreignObject,
 /* .mask__68edb foreignObject, */
@@ -4196,15 +4268,17 @@ span.clanTag__5d473,
 
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu  */
-.container_b7e1cb .stickerAsset__31fc2,
-.visualMediaItemContainer_f4758a,
-.isComponentsV2__5e208 .oneByOneGridSingle_f4758a,
-.embedMedia__623de .imageWrapper_af017a {
+.inlineMediaEmbed__623de,
+.visualMediaItemContainer_f4758a {
   padding: 8px;
   background: var(--channellistcolor);
   border: 1px solid var(--border-color) !important;
   border-radius: 5px !important;
   /* height: unset; */
+}
+
+.oneByOneGrid_f4758a {
+  display: block;
 }
 
 .oneByOneGridSingle_f4758a {
@@ -4215,6 +4289,11 @@ span.clanTag__5d473,
   padding: 0;
 }
 
+.container_b7e1cb {
+  padding-right: 15px;
+  width: fit-content;
+}
+
 .inlineMediaEmbed__623de {
   max-width: fit-content;
 }
@@ -4222,7 +4301,7 @@ span.clanTag__5d473,
 .message__1ccd1 .visualMediaItemContainer_f4758a,
 .message__5126c .visualMediaItemContainer_f4758a {
   /* .message__5126c .imageContainer__0f481 { */
-  width: unset !important;
+  width: fit-content !important;
   height: unset;
 }
 
@@ -4295,8 +4374,9 @@ span.clanTag__5d473,
 
 .wrapper_c19a55:hover .embedFull__623de,
 .wrapper_c19a55:hover .stickerAsset__31fc2,
+.wrapper_c19a55:hover .oneByOneGrid_f4758a,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
-.wrapper_c19a55:hover .embedMedia__623de .imageWrapper_af017a,
+.wrapper_c19a55:hover .embed__623de,
 .wrapper_c19a55:hover .contents_c19a55 .messageContent_c19a55,
 .wrapper_c19a55:hover .container__60fa3 {
   background-color: var(--input-color) !important;
@@ -4388,7 +4468,7 @@ span.clanTag__5d473,
   animation: gradient-animation 1s linear infinite;
 } */
 
-
+.contents_c19a55 .username_c19a55[data-text=".szynkowy biurowy"],
 .contents_c19a55 .username_c19a55[data-text="kacqer"],
 .contents_c19a55 .username_c19a55[data-text="kacper"] {
   background: linear-gradient(90deg,
