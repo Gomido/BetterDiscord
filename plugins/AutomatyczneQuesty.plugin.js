@@ -1,8 +1,10 @@
 /**
  * @name AutomatyczneQuesty
- * @description Skrypt do automatycznego wykonywania questów
+ * @author Lilki | XenonColt | Aamia
  * @version 0.0.1
- * @author @aamiaa | Xenon Colt | Lilki
+ * @description Rozpocznij questa aby skrypt go automatycznie wykonał
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/CharCounter/
+ * @updateUrl https://gomido.github.io/BetterDiscord/plugins/AutomatyczneQuesty.plugin.js
  */
 
 const config = {
@@ -21,11 +23,11 @@ const config = {
              ]
          }
         //  {
-        //      title: "Changed Few Things",
+        //      title: "Zmiany",
         //      type: "changed",
         //      items: [
-        //          "Updated to use new BetterDiscord APIs.",
-        //          "Old update notification method replaced with new Notification API."
+        //          "Zmiana 1",
+        //          "Zmiana 2"
         //      ]
         // }
     ],
