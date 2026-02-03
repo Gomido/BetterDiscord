@@ -3,7 +3,7 @@
  * @author Lilki | XenonColt | Aamia
  * @version 0.0.1
  * @description Rozpocznij questa aby skrypt go automatycznie wykonał
- * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/CharCounter/
+ * @source https://github.com/Gomido/BetterDiscord
  * @updateUrl https://gomido.github.io/BetterDiscord/plugins/AutomatyczneQuesty.plugin.js
  */
 
@@ -11,15 +11,16 @@ const config = {
     main: 'AutomatyczneQuesty.plugin.js',
     info: {
         name: 'AutomatyczneQuesty',
-        version: "0.0.1",
+        version: "0.0.2",
         description: "Skrypt do automatycznego wykonywania Questów",
     },
     changelog: [
          {
-             title: "Newsiki",
-             type: "added",
+             title: "Zmiany",
+             type: "changed",
              items: [
-                 "Dodane powiadomienia o nowym queście",
+                 "Poprawiona opcja wyłączania powiadomienia o nowym queście",
+                 "Zmiana wersji skryptu"
              ]
          }
         //  {
