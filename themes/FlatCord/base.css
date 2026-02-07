@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.2 (310126)";
+  --version: "v0.3.3 (070226)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -322,9 +322,9 @@
     21.a.7. Theme and Plugin Repo
     21.a.8. Personal Pins
     21.a.9. Detailed Tooltip
-    21.a.10 Ghost Ping
-    21.a.11 Display Servers to Channels
-    21.a.12 Permissions Viewer
+    21.a.10. Ghost Ping
+    21.a.11. Display Servers to Channels
+    21.a.12. Permissions Viewer
     21.a.13. Staff Tag  
     21.a.14. Pin DMs  
     21.a.15. Server Counter 
@@ -1202,6 +1202,13 @@
 /* 4.b. Guilds */
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
+.circleBadge__2b1f5 {
+  background-color: var(--accentcolor) !important;
+  border: 4px solid var(--guildlistcolor);
+  left: 5px;
+  top: 5px;
+}
+
 .textBadge__2b1f5,
 .mention__3b95d,
 .mention__3b95d:active {
@@ -1221,6 +1228,7 @@
   bottom: 60px;
 }
 
+.badge_c2b88c,
 .shine__553bf,
 .glow__553bf,
 .withGradientAndBadge__553bf:after,
@@ -1228,18 +1236,14 @@
   display: none;
 }
 
-.container__23ba6 {
-  border-radius: 0;
-}
-
 .premiumOfferUnackedBadge__4c1e4,
 .newBadge__4ed1a,
 .badge__553bf {
   background: var(--accentcolor) !important;
   border: 2px solid var(--channellistcolor);
-  font-size: 0;
-  min-width: 5px !important;
-  min-height: 5px !important;
+  border-radius: 10px;
+  width: 8px !important;
+  height: 6px !important;
   padding: 0;
 }
 
@@ -2483,6 +2487,25 @@ button.button__67645 {
   background-color: var(--titlebar);
 }
 
+/* frequent friends  */
+.frequentFriendsRow__1fc18 {
+  height: 25px;
+}
+
+.frequentFriendsAvatars__1fc18 {
+  padding-inline-start: 0;
+  gap: 14px !important
+}
+
+.scrollMaskRight__1fc18 {
+  mask: none
+}
+
+.cutoutIcon__44b0c {
+  background-color: var(--channellistcolor);
+  border-radius: 100px;
+}
+
 /* 9.b. Action Buttons */
 /* 9.c. Active Now  */
 .nowPlayingColumn__133bf {
@@ -2862,7 +2885,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .message_fd14e0 .visualMediaItemContainer_f4758a {
   padding: 0;
-  width: 98%;
+  width: fit-content;
   border-radius: 0;
 }
 
@@ -3349,6 +3372,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 .item_c1e9c4[id="message-actions-apps"],
 .item_c1e9c4[id="message-actions-mark-unread"],
 .item_c1e9c4[id="message-actions-tts"],
+.item_c1e9c4[id="message-save-for-later-upsell"],
 .item_c1e9c4[id="user-context-mention"],
 .item_c1e9c4[id="user-context-call"],
 .item_c1e9c4[id="user-context-close-dm"],
@@ -3792,6 +3816,11 @@ span.clanTag__5d473,
 .button__74017[aria-label="Otwórz wybór naklejek"],
 .buttonContainer_e6e74f {
   display: none !important;
+}
+
+/* hide gif label/alt text  */
+.altText__0f481 {
+  display: none;
 }
 
 /* 21.a.22. Settings Modal by mwittrien*/
@@ -4267,7 +4296,9 @@ span.clanTag__5d473,
 }
 
 /* 21.b.3. Chat Bubbles */
-/* dymki chatu  */
+/* dymki chatu ramki grafika */
+.clickableSticker_abd7a8,
+.embedFull__623de .imageWrapper_af017a,
 .inlineMediaEmbed__623de,
 .visualMediaItemContainer_f4758a {
   padding: 8px;
@@ -4373,7 +4404,8 @@ span.clanTag__5d473,
 }
 
 .wrapper_c19a55:hover .embedFull__623de,
-.wrapper_c19a55:hover .stickerAsset__31fc2,
+.wrapper_c19a55:hover .embedFull__623de .imageWrapper_af017a,
+.wrapper_c19a55:hover .clickableSticker_abd7a8,
 .wrapper_c19a55:hover .oneByOneGrid_f4758a,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
 .wrapper_c19a55:hover .embed__623de,
