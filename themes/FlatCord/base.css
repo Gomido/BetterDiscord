@@ -4297,7 +4297,7 @@ span.clanTag__5d473,
 
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu ramki grafika */
-.clickableSticker_abd7a8,
+.container_b7e1cb .stickerAsset__31fc2,
 .embedFull__623de .imageWrapper_af017a,
 .inlineMediaEmbed__623de,
 .visualMediaItemContainer_f4758a {
@@ -4306,6 +4306,10 @@ span.clanTag__5d473,
   border: 1px solid var(--border-color) !important;
   border-radius: 5px !important;
   /* height: unset; */
+}
+
+.stickerContainer_abd7a8 {
+  height: 160px;
 }
 
 .oneByOneGrid_f4758a {
