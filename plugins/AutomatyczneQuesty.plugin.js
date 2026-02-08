@@ -11,7 +11,7 @@ const config = {
     main: 'AutomatyczneQuesty.plugin.js',
     info: {
         name: 'AutomatyczneQuesty',
-        version: "0.0.t",
+        version: "0.0.3",
         description: "Skrypt do automatycznego wykonywania Questów",
     },
     changelog: [
