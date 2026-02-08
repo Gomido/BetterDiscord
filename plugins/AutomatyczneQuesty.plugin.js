@@ -11,16 +11,15 @@ const config = {
     main: 'AutomatyczneQuesty.plugin.js',
     info: {
         name: 'AutomatyczneQuesty',
-        version: "0.0.3",
+        version: "0.0.t",
         description: "Skrypt do automatycznego wykonywania Questów",
     },
     changelog: [
          {
              title: "Zmiany",
-             type: "changed",
+             type: "added",
              items: [
-                 "Poprawiona opcja wyłączania powiadomienia o nowym queście",
-                 "Zmiana wersji skryptu"
+                 "test"
              ]
          }
         //  {
