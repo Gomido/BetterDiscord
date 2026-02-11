@@ -335,6 +335,8 @@
     21.a.20. Guild and Friend Removal Alerts
     21.a.21. Hide chat buttons 🠗
     21.a.22. Settings Modal by mwittrien
+    21.a.23. Platform indicator
+    
   
   21.b. Addon Optimization
     21.b.1. Custom Popouts
@@ -2123,6 +2125,7 @@ button.button__67645 {
 .visual-refresh .embedFull__623de {
   background-color: var(--guildlistcolor);
   border-radius: 0;
+  /* width: 800px; */
 }
 
 .mediaBarGrabber_b26b79,
@@ -2592,7 +2595,12 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .numberBadge__2b1f5 {
   position: absolute;
-  transform: translate(50%, -50%);
+  transform: translate(70%, -50%);
+box-shadow: 0px 0px 0px 3px var(--channellistcolor);
+}
+
+.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0:hover .numberBadge__2b1f5{
+box-shadow: 0px 0px 0px 3px var(--titlebar);
 }
 
 /* family center   */
@@ -3087,11 +3095,21 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* 16.d. User Popout */
 /* mini profile  */
-.user-profile-popout {
-  background-color: var(--guildlistcolor);
+.user-profile-popout :where(.avatar__75742) {
+  inset-inline-start: 19px;
+  top: 65px;
 }
 
-.body__5be3e {
+.accountPopout__37e49 {
+  margin-inline-start: -7px;
+}
+
+.user-profile-popout {
+  background-color: var(--guildlistcolor);
+  width: 315px;
+}
+
+.body_ce8328 {
   padding: 4px 16px 8px !important;
 }
 
@@ -3105,6 +3123,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .cardsList__9d597 {
   border: 1px solid var(--user-profile-border);
+}
+
+.icon_c2a763 .displayCount_c2a763 {
+  display: none;
 }
 
 .custom-user-profile-theme :where(.overlay_c0bea0),
@@ -3373,7 +3395,9 @@ h3.membersGroup_c8ffbb:has(svg) {
 .item_c1e9c4[id="message-actions-mark-unread"],
 .item_c1e9c4[id="message-actions-tts"],
 .item_c1e9c4[id="message-save-for-later-upsell"],
+.item_c1e9c4[id="message-actions-save-for-later-upsell"],
 .item_c1e9c4[id="user-context-mention"],
+.item_c1e9c4[id="message-translate"],
 .item_c1e9c4[id="user-context-call"],
 .item_c1e9c4[id="user-context-close-dm"],
 .item_c1e9c4[id="user-context-apps"],
@@ -3960,6 +3984,11 @@ span.clanTag__5d473,
   padding-top: 10px !important;
 }
 
+/* 21.a.23. Platform indicator*/
+.indicatorContainer svg {
+  z-index: 1;
+}
+
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
 /* 21.b.2. Radial Status by Gibbu (with small mods) */
@@ -3987,8 +4016,9 @@ span.clanTag__5d473,
   border-radius: var(--avatars);
 }
 
-.wrapper__44b0c .dots__5ad89 {
+.channel__972a0 .wrapper__44b0c .dots__5ad89 {
   transform: translateX(15px) translateY(15px);
+  z-index: 10 !important;
 }
 
 #app-mount .wrapper__44b0c .dots__5ad89 circle {
@@ -4026,6 +4056,7 @@ span.clanTag__5d473,
   height: 30px;
   x: 0px;
   y: 0px;
+  z-index: 2 !important;
 }
 
 .wrapper__44b0c .avatar__44b0c,
@@ -4298,7 +4329,7 @@ span.clanTag__5d473,
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu ramki grafika */
 .container_b7e1cb .stickerAsset__31fc2,
-.embedFull__623de .imageWrapper_af017a,
+.embedFull__623de .embedMedia__623de,
 .inlineMediaEmbed__623de,
 .visualMediaItemContainer_f4758a {
   padding: 8px;
@@ -4326,7 +4357,7 @@ span.clanTag__5d473,
 
 .container_b7e1cb {
   padding-right: 15px;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .inlineMediaEmbed__623de {
@@ -4481,7 +4512,6 @@ span.clanTag__5d473,
 }
 
 /* 23. @Media Edits */
-
 /* 24. Custom Nicknames/Badges */
 /* @keyframes gradient-animation {
   to {
