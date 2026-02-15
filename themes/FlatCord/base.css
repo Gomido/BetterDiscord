@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.3 (070226)";
+  --version: "v0.3.4 (150226)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -853,7 +853,6 @@
 }
 
 /* restart popout  */
-
 /* .bd-button-filled.bd-button-color-red {
   margin-left: 5px;
 } */
@@ -862,10 +861,20 @@
 /* 3.b. General Content Area */
 /* 3.c. Cards and Items */
 /* 3.d. Buttons, Switches, and Bars */
+/* switch active on */
+.switchIndicator_a28278[style*="background-color: rgb(88, 101, 242)"] {
+  background-color: var(--accentcolor) !important;
+}
+
+/* switch hover  */
+.switchIndicator_a28278[style*="background-color: rgb(68, 82, 187)"] {
+  background-color: color-mix(in srgb, var(--accentcolor), transparent 50%) !important
+}
+
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles by swinny*/
-.roleCircle__4f569 {
+.role_af3987 .roleCircle__4f569 {
   height: 0px;
   width: 0px;
 }
@@ -1971,6 +1980,31 @@ button.button__67645 {
   margin-left: 5px;
 }
 
+/* vote modal  */
+.container__0be77 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0px;
+  border: 1px solid var(--border-color);
+}
+
+.votedStyles_a1443c .answerInner__4c520,
+.answer__4c520 .answerInner__4c520.currentlyVoting__4c520.selected__4c520 {
+  outline: 1px solid var(--accentcolor);
+}
+
+.radioForeground_f4f0eb {
+  color: var(--accentcolor);
+}
+
+.votedStyles_a1443c .answerInner__4c520 path {
+  fill: var(--accentcolor);
+}
+
+.votedStyles_a1443c .votePercentageBar__4c520 {
+  background-color: var(--accentcolor);
+  opacity: 0.1;
+}
+
 /* 8.c. Blocked Messages */
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
@@ -2510,6 +2544,11 @@ button.button__67645 {
 }
 
 /* 9.b. Action Buttons */
+.activeButton_c15210,
+.activeButton_c15210:hover {
+  background-color: var(--accentcolor);
+}
+
 /* 9.c. Active Now  */
 .nowPlayingColumn__133bf {
   display: none;
@@ -2522,6 +2561,7 @@ button.button__67645 {
   border-radius: 2px;
   border: 1px solid var(--border-color);
   box-shadow: none;
+  margin: 0;
 }
 
 /* Members List "Activities" */
@@ -2596,11 +2636,15 @@ h3.membersGroup_c8ffbb:has(svg) {
 .privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .numberBadge__2b1f5 {
   position: absolute;
   transform: translate(70%, -50%);
-box-shadow: 0px 0px 0px 3px var(--channellistcolor);
+  box-shadow: 0px 0px 0px 3px var(--channellistcolor);
 }
 
-.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0:hover .numberBadge__2b1f5{
-box-shadow: 0px 0px 0px 3px var(--titlebar);
+.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0:hover .numberBadge__2b1f5 {
+  box-shadow: 0px 0px 0px 3px var(--titlebar);
+}
+
+.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactiveSelected__972a0 .numberBadge__2b1f5 {
+  box-shadow: 0px 0px 0px 3px var(--headercolor);
 }
 
 /* family center   */
@@ -2807,9 +2851,11 @@ box-shadow: 0px 0px 0px 3px var(--titlebar);
   border-radius: 0;
 }
 
+.checkboxOption__714a9[data-selected]:hover:not([data-disabled]) .checkboxIndicator__714a9,
+.checkboxOption__714a9[data-selected] .checkboxIndicator__714a9,
 .checkbox__09aca.checked__09aca {
   background-color: var(--accentcolor);
-  border-color: var(--accentcolor3);
+  /* border-color: var(--accentcolor3); */
 }
 
 /* 15.1.d. No Connection loading screens */
@@ -3282,6 +3328,8 @@ box-shadow: 0px 0px 0px 3px var(--titlebar);
 /* 16.m. More Users Popout */
 /* 16.n. Overflow Roles Popout */
 /* 16.o. Dropdown Menu Popout */
+.container__50e22,
+/* roles */
 .uploadDropModal_b78547 .bgScale_b78547 {
   background-color: var(--channellistcolor);
   border: 1px solid var(--border-color);
@@ -3559,6 +3607,15 @@ box-shadow: 0px 0px 0px 3px var(--titlebar);
   background: linear-gradient(180deg, transparent 0, var(--guildlistcolor) 100%);
 }
 
+/* event  */
+.card__88264 {
+  background-color: var(--channellistcolor);
+}
+
+.card__88264:hover {
+  background-color: var(--chatbackground);
+}
+
 /* 18.d. Join or Create New Guild */
 /* 18.e. Upload Modal */
 
@@ -3613,9 +3670,27 @@ box-shadow: 0px 0px 0px 3px var(--titlebar);
   padding: 0;
 }
 
+/* invite splash  */
+.modalContainer__9b0f4 {
+  margin: 0
+}
+
+.inviteSplash__9b0f4 {
+  border-radius: 0;
+}
+
+.iconActiveLarger_f34534 {
+  border-radius: var(--avatars);
+}
+
+.header__7e354 {
+  background-color: var(--channellistcolor);
+  border: 1px solid var(--border-color)
+}
+
 /* add friend to dm   */
 .bodyList__8a031 {
-  padding-right: 24px;
+  padding-right: 24px !important;
 }
 
 .theme-dark .friendSelected_bbd192 {
@@ -3624,10 +3699,6 @@ box-shadow: 0px 0px 0px 3px var(--titlebar);
 
 .protip_ac6cb0 {
   padding-bottom: 10px;
-}
-
-.container__8a031 .section__8a031 .actionBarTrailing__8a031 {
-  margin-top: 10px
 }
 
 .container__8a031 .scrollableContainer__74017 {
@@ -4016,6 +4087,7 @@ span.clanTag__5d473,
   border-radius: var(--avatars);
 }
 
+.member_c8ffbb .dots__5ad89,
 .channel__972a0 .wrapper__44b0c .dots__5ad89 {
   transform: translateX(15px) translateY(15px);
   z-index: 10 !important;
