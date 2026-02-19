@@ -1026,6 +1026,21 @@
   background-repeat: no-repeat;
   background-color: var(--headercolor) !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) inset;
+  border-radius: var(--avatars);
+}
+
+.centerTarget_d144f8.dragOver_d144f8:before,
+.target_d144f8.dragOver_d144f8:before {
+  background-color: var(--accentcolor);
+}
+
+.folderGroup__48112[data-drop-hovering=true].isExpanded__48112 .folderGroupBackground__48112 {
+  background-color: color-mix(in srgb, var(--accentcolor), transparent 80%);
+  border-color: var(--accentcolor);
+}
+
+.folderGroup__48112[data-drop-hovering=true]:not(.isExpanded__48112) .folderHeader__48112 {
+  outline: 1px solid var(--accentcolor);
 }
 
 /* 4.a.3 Folders */
@@ -2005,6 +2020,10 @@ button.button__67645 {
   opacity: 0.1;
 }
 
+.container_f69538 {
+  background-color: var(--guildlistcolor);
+}
+
 /* 8.c. Blocked Messages */
 /* 8.d. Spoiler Messages */
 /* 8.e. Chat Dividers */
@@ -2930,6 +2949,11 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 0;
 }
 
+.button_c97e55.right_c97e55,
+.button_c97e55.left_c97e55 {
+  border-radius: 0;
+}
+
 /* PPM - Pin/Delete message */
 .message_fd14e0 {
   background-color: var(--channellistcolor);
@@ -2941,6 +2965,14 @@ h3.membersGroup_c8ffbb:has(svg) {
   padding: 0;
   width: fit-content;
   border-radius: 0;
+}
+
+.disableInteraction__5126c .visualMediaItemContainer_f4758a {
+  max-width: 300px;
+}
+
+.disableInteraction__5126c .oneByOneGridSingle_f4758a {
+  max-width: 100%;
 }
 
 /* 16.b. Emoji Picker and Reactions */
@@ -3141,7 +3173,9 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* 16.d. User Popout */
 /* mini profile  */
-.user-profile-popout :where(.avatar__75742) {
+.user-profile-popout :where(.avatar__75742),
+/* shop preview  */
+.avatar_d28e10 {
   inset-inline-start: 19px;
   top: 65px;
 }
@@ -3157,6 +3191,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .body_ce8328 {
   padding: 4px 16px 8px !important;
+}
+
+.menuItemInner_ce8328 {
+  border-radius: 0;
 }
 
 /* radius user profile  */
@@ -4060,6 +4098,11 @@ span.clanTag__5d473,
   z-index: 1;
 }
 
+.indicatorContainer.type_Chat {
+  margin-top: 2px;
+  height: 20px;
+}
+
 /* 21.b. Addon Optimization */
 /* 21.b.1. Custom Popouts */
 /* 21.b.2. Radial Status by Gibbu (with small mods) */
@@ -4432,6 +4475,10 @@ span.clanTag__5d473,
   /* width: fit-content; */
 }
 
+.container_b7e1cb .container__122e4 {
+  width: fit-content;
+}
+
 .inlineMediaEmbed__623de {
   max-width: fit-content;
 }
@@ -4516,6 +4563,7 @@ span.clanTag__5d473,
 .wrapper_c19a55:hover .oneByOneGrid_f4758a,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
 .wrapper_c19a55:hover .embed__623de,
+.wrapper_c19a55:hover .stickerAsset__31fc2,
 .wrapper_c19a55:hover .contents_c19a55 .messageContent_c19a55,
 .wrapper_c19a55:hover .container__60fa3 {
   background-color: var(--input-color) !important;
