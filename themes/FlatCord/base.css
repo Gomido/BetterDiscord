@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.4 (150226)";
+  --version: "v0.3.5 (200226)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -86,30 +86,7 @@
   --black9: rgba(0, 0, 0, .9);
   --black10: rgba(0, 0, 0, 1);
 
-  /* Spacing */
-  --rs-small-spacing: 2px;
-  /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 3px;
-  /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 4px;
-  /* Gap between avatar and status for User profiles | MUST end in px */
-  /*
-    * Widths
-    */
-  --rs-small-width: 2px;
-  /* Thickness of status border for members list/dms | MUST end in px */
-  --rs-medium-width: 3px;
-  /* Thickness of status border for User popout | MUST end in px */
-  --rs-large-width: 4px;
-  /* Thickness of status border for User profile | MUST end in px */
-  /*
-    * Shape
-    */
-  --rs-avatar-shape: 50%;
-  /* 50% for round - 0% for square */
-  /*
-    * Colours
-    */
+  /* Colours    */
   --rs-online-color: #43b581;
   /* Colour for online status */
   --rs-idle-color: #faa61a;
@@ -126,30 +103,9 @@
   /* Colour for speaking ring in the bottom left while in a voice chat/call */
   --rs-phone-color: var(--rs-online-color);
   /* Colour of the ring & phone icon  */
-  /*
-    * Others
-    */
+  /* Others */
   --rs-phone-visible: block;
   /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-
-  /* dymki chatu */
-  --chat-bubble: 1;
-
-  --chat-bubble-background-color: #282828 !important;
-  --chat-bubble-border-color: #383838 !important;
-  --chat-bubble-code-background-color: #141414 !important;
-
-  --chat-bubble-max-width: 90%;
-  --chat-bubble-border-radius: 8px;
-
-  --chat-bubble-box-shadow-h-offset: 0;
-  --chat-bubble-box-shadow-v-offset: 4px;
-  --chat-bubble-box-shadow-blur: 4px;
-
-  --chat-bubble-box-shadow-color-h: 0;
-  --chat-bubble-box-shadow-color-s: 0%;
-  --chat-bubble-box-shadow-color-l: 0%;
-  --chat-bubble-box-shadow-color-a: 0.16;
 }
 
 /* Rozpiska elementów
@@ -1527,7 +1483,7 @@
   height: 25px !important;
 }
 
-.container__23ba6 {
+.container_a244c3 {
   padding: 0;
 }
 
@@ -1826,6 +1782,18 @@
   font-weight: 200;
 }
 
+/* buttons  */
+.container__37e49 .buttons__37e49 {
+  opacity: 0% !important;
+  /* width: 0px; */
+  transition: all 0.2s ease-in-out;
+}
+
+.container__37e49:hover .buttons__37e49 {
+  opacity: 100% !important;
+  /* width: 150px; */
+}
+
 /* games  */
 .theme-dark .panel__5dec7 {
   background-color: var(--titlebar);
@@ -1850,14 +1818,6 @@
 }
 
 /* 6.b. Buttons */
-.micButtonParent__37e49 .buttonChevron__37e49 {
-  display: none;
-}
-
-button.button__67645 {
-  border-radius: 50% !important;
-}
-
 .active_a22cb0,
 .primary_a22cb0,
 .lookFilled__201d5.colorBrand__201d5,
@@ -2066,6 +2026,57 @@ button.button__67645 {
 .mentioned__5126c {
   background-color: rgba(var(--mentionbackground), 0.1);
 } */
+
+.mention,
+.roleMention__75297 {
+  position: unset;
+  filter: none;
+}
+
+.mentioned__5126c .mention:after {
+  background-color: #FAA900 !important;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+.mentioned__5126c .mention:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--mentionbackground), 0.2) !important;
+  z-index: -1;
+}
+
+.hasReply_c19a55.mentioned__5126c:not(:has([class*="ention"])):before,
+.mentioned__5126c .roleMention__75297:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+.hasReply_c19a55.mentioned__5126c:not(:has([class*="ention"])):after,
+.mentioned__5126c .roleMention__75297:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.roleMention__75297[style]:before {
+  background-color: currentColor !important;
+}
+
+.roleMention__75297[style]:after {
+  background: currentColor !important;
+  opacity: 0.1;
+}
 
 /* 8.g. Code Blocks */
 .visual-refresh .markup__75297 code {
@@ -2713,7 +2724,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
+.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -2826,7 +2837,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 /* 13. Roundness */
 /* 14. Borders */
 .tabBody__133bf,
-.sectionsContainer_f48ee4,
+.sectionsContainer__02f2d,
 .scroller__23746,
 .chatContent_f75fb0 {
   background-color: var(--chatbackground);
@@ -3067,7 +3078,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   border: 1px solid var(--border-color)
 }
 
-.visual-refresh .wrapper__0d1ef {
+.visual-refresh .wrapper_d852db {
   background-color: transparent;
 }
 
@@ -3380,7 +3391,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* list dropdown  */
 .languageSelector__4d95d,
-.selectDropdown__5fa2f,
+.selectDropdown__0edde,
 .selectDropdown__0edde,
 .baseCardOutline__1ab14,
 .gameSearchCombobox__36be8,
@@ -3695,7 +3706,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   border: 1px solid var(--border-color)
 }
 
-.progressBar__5a6ab {
+.progressBar__45530 {
   background: linear-gradient(to right, var(--accentcolor), var(--accentcolor2)) !important;
 }
 
@@ -4513,8 +4524,9 @@ span.clanTag__5d473,
 }
 
 .mentioned__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
-  background: rgba(var(--mentionbackground), 0.1) !important;
-  border-left: 3px solid rgba(var(--mentionbackground), 1) !important;
+  /* background: rgba(var(--mentionbackground), 0.1) !important; */
+  /* border-left: 3px solid rgba(var(--mentionbackground), 1) !important; */
+  background-color: transparent;
   border-radius: 0 5px 5px 0 !important;
 }
 
