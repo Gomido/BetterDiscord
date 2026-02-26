@@ -36,16 +36,6 @@
   /* kolor ramek  */
   --border-color: #393a3f;
   --avatar-size: 50px;
-  /*grubośc ramki nowych wiadomości - kółka*/
-  --notification-width: 2px;
-  /*wielkość ramki wokół okna aplikacji - 0 wyłącza*/
-  --spacing-width: 2px;
-  /* wielkość ramki statusu, grubość */
-  --rs-width: 2px;
-  /* odstęp między awatarem a ramką statusu (chat, lista osób) */
-  --rs-spacing: 2px;
-  /* 17b641 kolor statusu */
-  --text-link: var(--accentcolor2);
   --guildbar-folder-size: 40px;
   /* ilosc zakladek znajomi */
   --dm-columns: 4;
@@ -85,27 +75,6 @@
   --black8: rgba(0, 0, 0, .8);
   --black9: rgba(0, 0, 0, .9);
   --black10: rgba(0, 0, 0, 1);
-
-  /* Colours    */
-  --rs-online-color: #43b581;
-  /* Colour for online status */
-  --rs-idle-color: #faa61a;
-  /* Colour for idle status */
-  --rs-dnd-color: #f04747;
-  /* Colour for dnd status */
-  --rs-offline-color: #636b75;
-  /* Colour for offline status */
-  --rs-streaming-color: #643da7;
-  /* Colour for streaming status */
-  --rs-invisible-color: #747f8d;
-  /* Colour for invisible status - Note: this will only show for your own invisibility */
-  --rs-self-speaking-color: #57d39b;
-  /* Colour for speaking ring in the bottom left while in a voice chat/call */
-  --rs-phone-color: var(--rs-online-color);
-  /* Colour of the ring & phone icon  */
-  /* Others */
-  --rs-phone-visible: block;
-  /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
 
 /* Rozpiska elementów
@@ -308,7 +277,7 @@
 /* 1.a. Main Title Bar */
 .bar_c38106 {
   background: var(--titlebar) !important;
-  /* border: var(--spacing-width) solid var(--accentcolor); */
+  /* border: 2px solid var(--accentcolor); */
 }
 
 /* 1.b. Wordmark   */
@@ -353,7 +322,7 @@
   top: 15px;
   color: var(--accentcolor3);
   height: auto;
-  left: 150px;
+  left: 145px;
   background-color: transparent;
 }
 
@@ -830,12 +799,14 @@
 /* 3.e. Overlay Notifications */
 /* 3.f. Nitro and Hypesquad Section */
 /* 3.g. Server Roles by swinny*/
+.role__5d7c9 .roleCircle__4f569,
 .role_af3987 .roleCircle__4f569 {
   height: 0px;
   width: 0px;
 }
 
 /* Roles Background */
+.role__5d7c9 .roleCircle__4f569:after,
 .role_af3987 .roleCircle__4f569:after,
 .role_af3987 .roleFlowerStar_af3987:after {
   content: '';
@@ -850,12 +821,14 @@
 }
 
 /* Roles Borders */
+.role__5d7c9,
 .role_af3987 {
   transform: translate(0);
   border: 0;
   border-radius: 0;
 }
 
+.role__5d7c9 .roleCircle__4f569:before,
 .role_af3987 .roleCircle__4f569:before,
 .role_af3987 .roleFlowerStar_af3987:before {
   content: '';
@@ -1197,6 +1170,7 @@
   background-color: var(--accentcolor) !important;
 }
 
+.top_aa8da2 .item_aa8da2 .newBadge__0b563,
 .theme-dark .productCardBadge_b8a6bd {
   color: #FFFFFF;
   font-weight: 500;
@@ -1631,7 +1605,7 @@
 }
 
 .recentMentionsPopout__95796 {
-  top: -4px;
+  top: -6px;
 }
 
 .icon_d404a3 {
@@ -1817,6 +1791,11 @@
   padding-right: 0;
 }
 
+.progress__146e2[stroke*="98, 196, 101"] {
+  stroke: var(--online);
+  stroke-width: 3px;
+}
+
 /* 6.b. Buttons */
 .active_a22cb0,
 .primary_a22cb0,
@@ -1958,8 +1937,12 @@
 /* vote modal  */
 .container__0be77 {
   background-color: var(--guildlistcolor);
-  border-radius: 0px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
+}
+
+.container_b7e1cb {
+  grid-gap: 0px !important;
 }
 
 .votedStyles_a1443c .answerInner__4c520,
@@ -2445,6 +2428,15 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.botTagCozy_c19a55 .botText__82f07 {
+  font-weight: 300 !important;
+}
+
+.botTagOP__82f07 {
+  color: var(--white6);
+
+}
+
 /* post guidelines toolbar setting  */
 .theme-dark .staticToolbar_bba883 {
   background-color: var(--input-color);
@@ -2496,9 +2488,8 @@
 
 /* choose your channels  */
 .container_bc0d35,
-.channelRow_e4503a:not(.disabled_e4503a) {
+.channelRow_e4503a {
   background-color: var(--guildlistcolor);
-  border: 1px solid var(--border-color);
 }
 
 .channelRow_e4503a:hover:not(.disabled_e4503a) {
@@ -3719,9 +3710,38 @@ h3.membersGroup_c8ffbb:has(svg) {
   padding: 0;
 }
 
-/* invite splash  */
+/* invite modal  */
 .modalContainer__9b0f4 {
   margin: 0
+}
+
+.inviteContent__9b0f4 {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.inviteContent__9b0f4 .secondary__7a01b {
+  min-width: 100%;
+  background-color: var(--status-danger);
+  border-radius: 5px;
+  height: 40px;
+  color: #FFF;
+  text-align: center !important;
+  display: inline;
+}
+
+.inviteContent__9b0f4 .secondary__7a01b:hover {
+  background-color: var(--accentcolor3);
+  text-decoration: none;
+  color: #000;
+}
+
+.inviteContent__9b0f4 .textButton__7a01b:hover .text__7a01b {
+  text-decoration: none;
+}
+
+.pillIconOnline__921c5 {
+  background-color: var(--online);
 }
 
 .inviteSplash__9b0f4 {
@@ -3772,6 +3792,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .auto_d125d2::-webkit-scrollbar {
   width: 0;
+}
+
+.bodyControlsWithFade__8a031:after {
+  display: none;
 }
 
 .input_ac6cb0 {
@@ -4454,7 +4478,7 @@ span.clanTag__5d473,
 
 /* 21.b.3. Chat Bubbles */
 /* dymki chatu ramki grafika */
-.container_b7e1cb .stickerAsset__31fc2,
+.stickerContainer_abd7a8,
 .embedFull__623de .embedMedia__623de,
 .inlineMediaEmbed__623de,
 .visualMediaItemContainer_f4758a {
@@ -4475,10 +4499,6 @@ span.clanTag__5d473,
 
 .oneByOneGridSingle_f4758a {
   max-width: 500px;
-}
-
-.container_b7e1cb .stickerAsset__31fc2 {
-  padding: 0;
 }
 
 .container_b7e1cb {
@@ -4569,9 +4589,10 @@ span.clanTag__5d473,
   background-color: transparent;
 }
 
+.wrapper_c19a55:hover .container__0be77,
 .wrapper_c19a55:hover .embedFull__623de,
 .wrapper_c19a55:hover .embedFull__623de .imageWrapper_af017a,
-.wrapper_c19a55:hover .clickableSticker_abd7a8,
+.wrapper_c19a55:hover .stickerContainer_abd7a8,
 .wrapper_c19a55:hover .oneByOneGrid_f4758a,
 .wrapper_c19a55:hover .visualMediaItemContainer_f4758a,
 .wrapper_c19a55:hover .embed__623de,
