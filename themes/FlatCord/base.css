@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.5 (200226)";
+  --version: "v0.3.6 (030326)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1457,7 +1457,7 @@
   height: 25px !important;
 }
 
-.container_a244c3 {
+.container__23ba6 {
   padding: 0;
 }
 
@@ -2715,7 +2715,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
+.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
