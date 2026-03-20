@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.7 (130326)";
+  --version: "v0.3.7 (200326)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -2201,7 +2201,7 @@ badge unread/ping Home Icon*/
   border-radius: 0;
 }
 
-.container__60fa3.withAccentColor__60fa3:before{
+.container__60fa3.withAccentColor__60fa3:before {
   width: 2px;
 }
 
@@ -3011,9 +3011,11 @@ h3.membersGroup_c8ffbb:has(svg) {
   box-shadow: none;
 }
 
-.visual-refresh .header__8ef02,
-.visual-refresh .header_fed6d3,
-.visual-refresh .header_c0e32c {
+
+.header__81b99,
+.header__8ef02,
+.header_fed6d3,
+.header_c0e32c {
   border-radius: 0px;
   background-color: var(--channellistcolor);
 }
@@ -3641,8 +3643,12 @@ h3.membersGroup_c8ffbb:has(svg) {
 .wrapper_d5f3cd,
 .guildInviteContainer__083ae,
 .footerContent__083ae {
-  background-color: var(--guildlistcolor);
+  background: var(--guildlistcolor);
   border-radius: 2px;
+}
+
+.guildInviteContainer__083ae{
+  margin-bottom: 5px;
 }
 
 .clickable_da5e8d:hover,
@@ -4498,7 +4504,10 @@ span.clanTag__5d473,
   background: var(--channellistcolor);
   border: 1px solid var(--border-color) !important;
   border-radius: 5px !important;
-  width:fit-content;
+}
+
+.imageContent__0f481 {
+  width: fit-content;
 }
 
 .stickerContainer_abd7a8 {
