@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.7 (200326)";
+  --version: "v0.3.8 (050426)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -662,20 +662,20 @@
 }
 
 /*content & social -> blocked accounts */
-.header__5cea9 {
+.header__416c7 {
   background-color: var(--headercolor);
 }
 
-.container__6b700 .card__5cea9 {
+.container_fe18a9 .card__416c7 {
   background-color: var(--input-color);
 }
 
-.settingsPage_f131e9 .loadMoreButton__5cea9 {
+.settingsPage_f131e9 .loadMoreButton__416c7 {
   background-color: var(--guildlistcolor);
 }
 
 /* settings -> server boosts  */
-.guildContainer__5dba5 {
+.guildContainer__299c6 {
   background-color: var(--chatbackground);
   border: 1px solid var(--border-color)
 }
@@ -684,7 +684,7 @@
 /* keybindings - default binds  */
 .wrapper__5b98e,
 .paymentPane__01014,
-.defaultKeybindGroup__740f2 {
+.defaultKeybindGroup__57111 {
   background-color: var(--guildlistcolor);
 }
 
@@ -694,8 +694,8 @@
 }
 
 /* registred games  */
-.notDetected_cc46f0,
-.game_cc46f0 {
+.notDetected__497cd,
+.game__497cd {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color);
   margin: 0;
@@ -706,12 +706,12 @@
 }
 
 /* game overlay  */
-.groupContent__9d98d,
-.collapseable__9d98d {
+.groupContent__70d86,
+.collapseable__70d86 {
   background-color: var(--guildlistcolor) !important;
 }
 
-.groupCollapsedContainer__9d98d {
+.groupCollapsedContainer__70d86 {
   background-color: var(--guildlistcolor);
 }
 
@@ -1304,16 +1304,16 @@ badge unread/ping Home Icon*/
   position: absolute;
   background-color: var(--accentcolor);
   border-radius: 2px;
-  height: 20px;
+  height: 24px;
   width: 4px;
-  top: calc(50% - 10px);
+  top: calc(50% - 12px);
   margin-left: 4px;
 }
 
 .unread__2ea32 {
   height: 4px;
   border-radius: 2px;
-  left: 2px;
+  left: 3px;
   top: 18px;
 }
 
@@ -1459,7 +1459,7 @@ badge unread/ping Home Icon*/
   height: 25px !important;
 }
 
-.container__23ba6 {
+.container_a244c3 {
   padding: 0;
 }
 
@@ -1552,6 +1552,11 @@ badge unread/ping Home Icon*/
   border-radius: 0;
 }
 
+.interactive_bf202d:focus-within,
+.interactive_bf202d:hover {
+  background: transparent;
+}
+
 /* add dm  */
 .privateChannelsHeaderContainer__99e7c .primary_a22cb0 {
   background-color: transparent;
@@ -1600,6 +1605,10 @@ badge unread/ping Home Icon*/
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
   border-radius: 0px;
+}
+
+.header_ab6641 {
+  border-bottom: 1px solid transparent;
 }
 
 .recentMentionsPopout__95796 .messagesPopoutWrap_e8b59c {
@@ -2727,7 +2736,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
+.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -3011,7 +3020,6 @@ h3.membersGroup_c8ffbb:has(svg) {
   box-shadow: none;
 }
 
-
 .header__81b99,
 .header__8ef02,
 .header_fed6d3,
@@ -3215,6 +3223,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* radius user profile  */
 /* .user-profile-popout, */
+.layoutContainer__9c3be .profileContentContainer__9c3be,
 .header__5be3e,
 :where(.overlay_c0bea0),
 .expandButton_fccfdf {
@@ -3337,9 +3346,14 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-left: 1px solid var(--border-color)
 }
 
-.footer__7f9c0 {
+.footer__272c7 {
   background-color: var(--input-color);
   border-top: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.footerButton__272c7 {
+  background-color: var(--channellistcolor);
 }
 
 /* 16.e. Role User Popout */
@@ -3624,6 +3638,19 @@ h3.membersGroup_c8ffbb:has(svg) {
   background-color: var(--guildlistcolor);
 }
 
+/* video quest  */
+.contentFooter_e40371,
+.modalContent_b824c5 {
+  background-color: var(--guildlistcolor);
+  border-radius: 0;
+}
+
+.modalBg_b824c5,
+.modalBody_b824c5,
+.videoCont_b824c5 {
+  border-radius: 0 !important;
+}
+
 /* quest share on chat */
 .questsCard__12e16 {
   border: 1px solid var(--border-color);
@@ -3647,7 +3674,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 2px;
 }
 
-.guildInviteContainer__083ae{
+.guildInviteContainer__083ae {
   margin-bottom: 5px;
 }
 
@@ -3880,7 +3907,8 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* 18.m. Gift Nitro Modal & Nitro Boost */
-.floatingNitroUpsell__39749 {
+.floatingNitroUpsell_e110d6,
+.upsellContainer__0b69f {
   display: none;
 }
 
@@ -4019,14 +4047,14 @@ span.clanTag__5d473,
   background: var(--chatbackground);
 }
 
-.accountProfileCard__1fed1 {
+.accountProfileCard_a27e58 {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color);
 }
 
 .credentialList__6c75d,
-.background__1fed1,
-.fieldList__1fed1 {
+.background_a27e58,
+.fieldList_a27e58 {
   background-color: var(--input-color);
   border-radius: 5px;
 }
