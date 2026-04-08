@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.8 (050426)";
+  --version: "v0.3.9 (080426)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1190,11 +1190,12 @@ badge unread/ping Home Icon*/
 .shine__553bf,
 .glow__553bf,
 .withGradientAndBadge__553bf:after,
-.premiumOfferBadgeCopy__4c1e4 {
+.BadgeClockIcon__6d7da,
+.eyebrow_cf4812 {
   display: none;
 }
 
-.premiumOfferUnackedBadge__4c1e4,
+.premiumBadge__6d7da,
 .newBadge__4ed1a,
 .badge__553bf {
   background: var(--accentcolor) !important;
@@ -1224,12 +1225,12 @@ badge unread/ping Home Icon*/
   width: 12px;
 }
 
-.link__972a0[href="/store"] .premiumOfferUnackedBadge__4c1e4 {
-  right: 0px !important;
+.link__972a0[href="/store"] .premiumBadge__6d7da {
+  right: -2px !important;
   bottom: 8px;
   position: relative;
-  height: 8px !important;
-  width: 12px;
+  height: 6px !important;
+  width: 8px;
 }
 
 .scroller__99e7c .marketingButtonBackground__4ed1a {
