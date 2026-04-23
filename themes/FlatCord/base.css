@@ -1688,6 +1688,10 @@ badge unread/ping Home Icon*/
   top: 0px
 }
 
+.messageContainer__1ccd1 .imageWrapper_af017a {
+  max-width: 350px !important;
+}
+
 /* for you  */
 .container__0f711 {
   background-color: var(--input-color);
@@ -2991,8 +2995,8 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 0;
 }
 
-.disableInteraction__5126c .visualMediaItemContainer_f4758a {
-  max-width: 300px;
+.disableInteraction__5126c .visualMediaItemContainer_f4758a .imageContent__0f481 {
+  max-width: 300px !important;
 }
 
 .disableInteraction__5126c .oneByOneGridSingle_f4758a {
