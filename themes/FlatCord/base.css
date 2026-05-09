@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.9 (080426)";
+  --version: "v0.3.11 (090526)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -361,6 +361,7 @@
 
 /* 2. Chat Header */
 /* 2.a Main Headers */
+.header__1add6,
 .theme-dark .themed__9293f {
   background-color: var(--headercolor) !important;
   border-image-slice: 1;
@@ -1166,6 +1167,11 @@ badge unread/ping Home Icon*/
   top: 5px;
 }
 
+.iconBadge__650eb {
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+}
+
 .textBadge__2b1f5,
 .mention__3b95d,
 .mention__3b95d:active {
@@ -1191,7 +1197,7 @@ badge unread/ping Home Icon*/
 .glow__553bf,
 .withGradientAndBadge__553bf:after,
 .BadgeClockIcon__6d7da,
-.eyebrow_cf4812 {
+.friendsButtonContainer_e6b769 .eyebrow_cf4812 {
   display: none;
 }
 
@@ -2990,8 +2996,9 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 .message_fd14e0 .visualMediaItemContainer_f4758a {
-  padding: 0;
+  padding: 2px;
   width: fit-content;
+  height: fit-content;
   border-radius: 0;
 }
 
@@ -4216,6 +4223,7 @@ span.clanTag__5d473,
   border-radius: var(--avatars);
 }
 
+.member__5d473 .dots__5ad89,
 .member_c8ffbb .dots__5ad89,
 .channel__972a0 .wrapper__44b0c .dots__5ad89 {
   transform: translateX(15px) translateY(15px);
