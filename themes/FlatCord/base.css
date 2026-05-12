@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.11 (090526)";
+  --version: "v0.3.12 (090526)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -663,20 +663,20 @@
 }
 
 /*content & social -> blocked accounts */
-.header__416c7 {
+.header_a72ffc {
   background-color: var(--headercolor);
 }
 
-.container_fe18a9 .card__416c7 {
+.container_d80c36 .card_a72ffc {
   background-color: var(--input-color);
 }
 
-.settingsPage_f131e9 .loadMoreButton__416c7 {
+.settingsPage_f131e9 .loadMoreButton_a72ffc {
   background-color: var(--guildlistcolor);
 }
 
 /* settings -> server boosts  */
-.guildContainer__299c6 {
+.guildContainer_f778dc {
   background-color: var(--chatbackground);
   border: 1px solid var(--border-color)
 }
@@ -685,7 +685,7 @@
 /* keybindings - default binds  */
 .wrapper__5b98e,
 .paymentPane__01014,
-.defaultKeybindGroup__57111 {
+.defaultKeybindGroup_f82450 {
   background-color: var(--guildlistcolor);
 }
 
@@ -695,8 +695,8 @@
 }
 
 /* registred games  */
-.notDetected__497cd,
-.game__497cd {
+.notDetected_b53c4e,
+.game_b53c4e {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color);
   margin: 0;
@@ -707,12 +707,12 @@
 }
 
 /* game overlay  */
-.groupContent__70d86,
-.collapseable__70d86 {
+.groupContent_ef8d95,
+.collapseable_ef8d95 {
   background-color: var(--guildlistcolor) !important;
 }
 
-.groupCollapsedContainer__70d86 {
+.groupCollapsedContainer_ef8d95 {
   background-color: var(--guildlistcolor);
 }
 
@@ -1466,7 +1466,7 @@ badge unread/ping Home Icon*/
   height: 25px !important;
 }
 
-.container_a244c3 {
+.container__23ba6 {
   padding: 0;
 }
 
@@ -2747,7 +2747,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
+.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -3396,7 +3396,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* emoji name  */
-.reactionTooltip_b49891 {
+.reactionTooltip_bbcccb {
   background-color: var(--input-color);
   border: 1px solid var(--border-color);
   box-shadow: none;
@@ -3919,7 +3919,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* 18.m. Gift Nitro Modal & Nitro Boost */
-.floatingNitroUpsell_e110d6,
+.floatingNitroUpsell__1abfe,
 .upsellContainer__0b69f {
   display: none;
 }
@@ -4059,14 +4059,14 @@ span.clanTag__5d473,
   background: var(--chatbackground);
 }
 
-.accountProfileCard_a27e58 {
+.accountProfileCard_a9178b {
   background-color: var(--guildlistcolor);
   border: 1px solid var(--border-color);
 }
 
 .credentialList__6c75d,
-.background_a27e58,
-.fieldList_a27e58 {
+.background_a9178b,
+.fieldList_a9178b {
   background-color: var(--input-color);
   border-radius: 5px;
 }
@@ -4605,12 +4605,12 @@ span.clanTag__5d473,
   height: calc(100% - 1rem - 20px) !important;
 }
 
-.mentioned__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
-  /* background: rgba(var(--mentionbackground), 0.1) !important; */
-  /* border-left: 3px solid rgba(var(--mentionbackground), 1) !important; */
+/* .mentioned__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
+  background: rgba(var(--mentionbackground), 0.1) !important;
+  border-left: 3px solid rgba(var(--mentionbackground), 1) !important;
   background-color: transparent;
   border-radius: 0 5px 5px 0 !important;
-}
+} */
 
 .replying__5126c.cozy_c19a55 .visualMediaItemContainer_f4758a,
 .replying__5126c.cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
