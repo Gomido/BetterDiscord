@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.12 (090526)";
+  --version: "v0.3.12 (140526)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1192,24 +1192,30 @@ badge unread/ping Home Icon*/
   bottom: 60px;
 }
 
-.badge_c2b88c,
 .shine__553bf,
 .glow__553bf,
 .withGradientAndBadge__553bf:after,
-.BadgeClockIcon__6d7da,
-.friendsButtonContainer_e6b769 .eyebrow_cf4812 {
+.BadgeClockIcon__6d7da {
   display: none;
 }
 
+.channel__972a0 .eyebrow_cf4812 {
+  font-size: 0;
+}
+
+.privateChannels_e6b769 .badge_c2b88c,
 .premiumBadge__6d7da,
-.newBadge__4ed1a,
 .badge__553bf {
   background: var(--accentcolor) !important;
   border: 2px solid var(--channellistcolor);
   border-radius: 10px;
-  width: 8px !important;
-  height: 6px !important;
+  width: 10px !important;
+  height: 10px !important;
   padding: 0;
+}
+
+.tabHoverGradient__972a0 {
+  border-radius: 0;
 }
 
 .newBadgeWrapper_faa96b .textBadge__2b1f5 {
@@ -1231,12 +1237,12 @@ badge unread/ping Home Icon*/
   width: 12px;
 }
 
-.link__972a0[href="/store"] .premiumBadge__6d7da {
+.link__972a0[href="/store"] .badge_c2b88c {
   right: -2px !important;
   bottom: 8px;
   position: relative;
-  height: 6px !important;
-  width: 8px;
+  height: 10px !important;
+  width: 12px !important;
 }
 
 .scroller__99e7c .marketingButtonBackground__4ed1a {
