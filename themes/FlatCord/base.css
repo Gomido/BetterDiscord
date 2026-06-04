@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: Discord;
-  src: url("https://strencher.github.io/BetterDiscordStuff/Discord.otf") format("opentype");
+  src: url("https://gomido.github.io/BetterDiscord/assets/Discord.otf") format("opentype");
 }
 
 :root {
-  --version: "v0.3.12 (140526)";
+  --version: "v0.3.13 (040626)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -740,6 +740,14 @@
   border: 1px solid var(--border-color)
 }
 
+.bd-install-modal-author-mask{
+  background-color: var(--guildlistcolor);
+}
+
+.bd-install-modal-items{
+  background-color: var(--channellistcolor);
+}
+
 /* betterdiscord update popout */
 .bd-modal-root {
   background-color: var(--guildlistcolor);
@@ -776,6 +784,25 @@
 
 .bd-notification-close:hover {
   color: #FFFFFF;
+}
+
+/* store   */
+.theme-dark .bd-addon-store-card {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+}
+
+.bd-addon-store-card:hover {
+  background-color: var(--titlebar) !important;
+  transform: none !important;
+}
+
+.theme-dark .bd-addon-store-card-author-mask {
+  background-color: var(--guildlistcolor);
+}
+
+.bd-paginator-bubble:where([data-selected=true], :hover) {
+  background-color: var(--accentcolor);
 }
 
 /* restart popout  */
@@ -1172,6 +1199,7 @@ badge unread/ping Home Icon*/
   border: 1px solid var(--border-color);
 }
 
+.bd-addon-store-card-badge,
 .textBadge__2b1f5,
 .mention__3b95d,
 .mention__3b95d:active {
@@ -1472,7 +1500,7 @@ badge unread/ping Home Icon*/
   height: 25px !important;
 }
 
-.container__23ba6 {
+.container_a244c3 {
   padding: 0;
 }
 
@@ -1805,6 +1833,7 @@ badge unread/ping Home Icon*/
 }
 
 /* quests  */
+
 .postEnrollmentBackground__24e2c {
   background-color: var(--titlebar);
   border-top: none;
@@ -1836,7 +1865,8 @@ badge unread/ping Home Icon*/
 .active_a22cb0:hover,
 .primary_a22cb0:hover,
 .lookFilled__201d5.colorBrand__201d5:hover,
-.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover,
+.bd-button-filled.bd-button-color-brand:hover {
   background-color: var(--accentcolor3);
   color: #000;
 }
@@ -2753,7 +2783,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
+.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -3215,20 +3245,31 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* 16.d. User Popout */
 /* mini profile  */
-.user-profile-popout :where(.avatar__75742),
+.user-profile-popout :where(.avatar__75742) {
+  inset-inline-start: 15px !important;
+  top: 60px !important;
+}
+
 /* shop preview  */
-.avatar_d28e10 {
-  inset-inline-start: 19px;
-  top: 65px;
+.inner_c0bea0.avatar_d28e10 {
+  inset-inline-start: 19px !important;
+  top: 65px !important;
 }
 
 .accountPopout__37e49 {
   margin-inline-start: -7px;
 }
 
+.profilePopout__1add6,
+.profileBanner__1add6,
 .user-profile-popout {
   background-color: var(--guildlistcolor);
   width: 315px;
+}
+
+.profileAvatar__1add6 {
+  background-color: #282828;
+  border: 6px solid #2e2e2e;
 }
 
 .body_ce8328 {
@@ -3499,6 +3540,19 @@ h3.membersGroup_c8ffbb:has(svg) {
   box-shadow: none;
 }
 
+.menu_c1e9c4[aria-label="Channel Actions"] {
+  background-color: var(--input-color);
+  margin-bottom: 4px !important;
+  margin-left: -12px;
+  border-radius: 5px;
+}
+
+.menu_c1e9c4[aria-activedescendant*="channel-attach-scheduled_message"] {
+  background-color: var(--input-color) !important;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
 .actionButton_cc1819:hover {
   background-color: var(--control-background-icon-only-hover);
   border: 1px solid var(--control-border-icon-only-hover);
@@ -3657,6 +3711,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* video quest  */
+.contentFooterPortrait_e40371,
 .contentFooter_e40371,
 .modalContent_b824c5 {
   background-color: var(--guildlistcolor);
