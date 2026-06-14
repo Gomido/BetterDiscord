@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.13 (040626)";
+  --version: "v0.3.14 (140626)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -740,11 +740,11 @@
   border: 1px solid var(--border-color)
 }
 
-.bd-install-modal-author-mask{
+.bd-install-modal-author-mask {
   background-color: var(--guildlistcolor);
 }
 
-.bd-install-modal-items{
+.bd-install-modal-items {
   background-color: var(--channellistcolor);
 }
 
@@ -1187,59 +1187,99 @@ badge unread/ping Home Icon*/
 /* 4.b. Guilds */
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
-.circleBadge__2b1f5 {
+.iconBadge__650eb,
+.numberBadge__463b7 {
   background-color: var(--accentcolor) !important;
-  border: 4px solid var(--guildlistcolor);
-  left: 5px;
-  top: 5px;
 }
 
+.tutorialContainer__1f388 .lowerBadge_cc5dd2 {
+  border: 4px solid var(--headercolor);
+  border-radius: 50%;
+}
+
+.folderButton__48112 .upperBadge_cc5dd2 {
+  border: 4px solid var(--guildlistcolor);
+  border-radius: 50%;
+  top: -4px;
+  right: 3px;
+}
+
+.blobContainer_e5445c .upperBadge_cc5dd2 {
+  right: 2px !important;
+  top: 2px;
+}
+
+.blobContainer_e5445c .upperBadge_cc5dd2 .iconBadge__463b7 {
+  border: 2px solid var(--guildlistcolor);
+}
+
+/* 
 .iconBadge__650eb {
   background-color: var(--border-color);
   border: 1px solid var(--border-color);
-}
-
+} */
+/* 
 .bd-addon-store-card-badge,
 .textBadge__2b1f5,
 .mention__3b95d,
 .mention__3b95d:active {
   background-color: var(--accentcolor) !important;
-}
-
+} */
+/* 
 .top_aa8da2 .item_aa8da2 .newBadge__0b563,
 .theme-dark .productCardBadge_b8a6bd {
   color: #FFFFFF;
   font-weight: 500;
-}
-
+} */
+/* 
 .unreadMentionsIndicatorTop_ef3116 {
   top: 45px
-}
-
+} */
+/* 
 .visual-refresh .unreadMentionsFixedFooter_ef3116 {
   bottom: 60px;
-}
-
+} */
+/* 
 .shine__553bf,
 .glow__553bf,
 .withGradientAndBadge__553bf:after,
 .BadgeClockIcon__6d7da {
   display: none;
-}
+} */
 
 .channel__972a0 .eyebrow_cf4812 {
   font-size: 0;
 }
 
-.privateChannels_e6b769 .badge_c2b88c,
-.premiumBadge__6d7da,
-.badge__553bf {
+.privateChannels_e6b769 .premiumTrialBadge__4c1e4 {
   background: var(--accentcolor) !important;
-  border: 2px solid var(--channellistcolor);
   border-radius: 10px;
-  width: 10px !important;
-  height: 10px !important;
+  width: 9px !important;
+  height: 6px !important;
   padding: 0;
+  margin-top: -15px !important;
+}
+
+.privateChannels_e6b769 .numberBadge__463b7 {
+  box-shadow: 0px 0px 0px 3px var(--guildlistcolor);
+  margin-right: -4px !important;
+  margin-top: -10px !important
+}
+
+.interactiveSelected__972a0 .numberBadge__463b7 {
+  box-shadow: 0px 0px 0px 3px var(--headercolor);
+}
+
+.interactiveSelected__972a0:hover .numberBadge__463b7 {
+  box-shadow: 0px 0px 0px 3px var(--titlebar);
+}
+
+.interactive__972a0:hover .numberBadge__463b7 {
+  box-shadow: 0px 0px 0px 3px var(--titlebar);
+}
+
+.premiumTrialBadge__4c1e4 {
+  border: 2px solid var(--channellistcolor);
 }
 
 .tabHoverGradient__972a0 {
