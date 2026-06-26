@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.14 (140626)";
+  --version: "v0.3.15 (260626)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1193,15 +1193,22 @@ badge unread/ping Home Icon*/
 }
 
 .tutorialContainer__1f388 .lowerBadge_cc5dd2 {
-  border: 4px solid var(--headercolor);
+  border: 3px solid var(--headercolor) !important;
   border-radius: 50%;
 }
 
 .folderButton__48112 .upperBadge_cc5dd2 {
-  border: 4px solid var(--guildlistcolor);
+  border: 3px solid var(--guildlistcolor);
   border-radius: 50%;
   top: -4px;
   right: 3px;
+}
+
+.listItem__650eb .lowerBadge_cc5dd2 {
+  border: 3px solid var(--guildlistcolor);
+  border-radius: 50%;
+  right: -6px;
+  bottom: -2px;
 }
 
 .blobContainer_e5445c .upperBadge_cc5dd2 {
@@ -1331,10 +1338,16 @@ badge unread/ping Home Icon*/
 }
 
 /* 5. Channels */
-/* 5.a. Main Channels Area */
-.visual-refresh .container__2637a {
+/* 5.a. Main Channels Area 
+Age restricted channel notification*/
+.visual-refresh .container__2637a,
+.scroller_f35c3c {
   background-color: var(--channellistcolor);
   /* padding-bottom: 30px; */
+}
+
+.scroller_f35c3c {
+  border-left: 1px solid var(--border-color);
 }
 
 .visual-refresh .wrapper_ef3116 {
@@ -1888,8 +1901,12 @@ badge unread/ping Home Icon*/
   padding-right: 0;
 }
 
-.progress__146e2[stroke*="98, 196, 101"] {
-  stroke: var(--online);
+.shelfCardQuest_c676ef {
+  background-color: var(--guildlistcolor);
+}
+
+.progress__146e2[stroke*="var(--status-positive)"] {
+  stroke: var(--online) !important;
   stroke-width: 3px;
 }
 
@@ -3476,10 +3493,15 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* 16.h. Group DM Invite Popout */
 /* 16.i. Tooltips */
-.tooltipPrimary_c36707,
-.tooltip__4e35b {
+.theme-dark .tooltipPrimary_c36707,
+.theme-dark .tooltip__4e35b {
   background-color: var(--guildlistcolor);
   --background-surface-high: var(--guildlistcolor) !important;
+}
+
+.theme-light .tooltip__4e35b {
+  background-color: var(--white10);
+  --background-surface-high: var(--white10) !important;
 }
 
 /* emoji name  */
