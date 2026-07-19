@@ -1369,6 +1369,7 @@ Age restricted channel notification*/
 
 .link__2ea32 {
   background-color: transparent !important;
+  padding-left: 12px;
 }
 
 .voiceChannelHighlightContainer_c69b6d:hover,
@@ -2135,11 +2136,11 @@ Age restricted channel notification*/
   color: var(--accentcolor);
 }
 
-
 /* sticky menu threads divider  */
-.divider_ee23ac{
+.divider_ee23ac {
   display: none;
 }
+
 /* 8.f. Mentions */
 /* .mentioned__5126c:before {
   background: var(--accentcolor);
@@ -2607,9 +2608,9 @@ Age restricted channel notification*/
   border-radius: 0;
 }
 
-.imageWrapper_af017a{
+.imageWrapper_af017a {
   max-width: 600px;
-  width: fit-content !important;
+  height: fit-content !important;
 }
 
 /* Channels & roles */
@@ -3614,37 +3615,40 @@ h3.membersGroup_c8ffbb:has(svg) {
 /* 16.p. DM Call Region Select Popout */
 /* 16.r. Image Preview */
 .actionButtons_cc1819,
-.buttonInner_aec7ab {
-  background-color: var(--chatbackground);
+.closeButton__6088c,
+.nav_b2eddf,
+.nav_b2eddf:hover {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
   border-radius: 0;
 }
 
-.carouselModal_d3a6f0 {
-  margin: 46px 24px;
+.closeButton__6088c,
+.nav_b2eddf {
+  height: 38px;
+  width: 38px;
 }
 
-.actionButton_cc1819:hover,
-.icon-only_a22cb0:hover {
-  border: 1px solid var(--border-color);
+.carouselModal_d3a6f0 .actionButton_cc1819,
+.carouselModal_d3a6f0 .buttonInner_aec7ab,
+.carouselModal_d3a6f0 .button_a22cb0 {
   transition: none;
 }
 
 .actionButton_cc1819:hover,
-.icon-only_a22cb0:hover {
-  background-color: var(--guildlistcolor);
-  border-radius: 5px;
-}
-
-/* close button  */
+.icon-only_a22cb0:hover,
 .buttonInner_aec7ab:hover {
-  background-color: transparent;
+  border: 1px solid var(--border-color) !important;
+  color: var(--white6) !important;
+  background-color: var(--guildlistcolor) !important;
+  border-radius: 0px;
 }
 
-.buttonInner_aec7ab:hover svg {
-  background-color: var(--guildlistcolor);
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
+.buttonInner_aec7ab {
+  width: 30px;
+  height: 30px;
+  background-color: var(--titlebar);
+  border: none;
 }
 
 /* 17. Menus */
