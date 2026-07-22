@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.17 (190726)";
+  --version: "v0.3.18 (220726)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1095,6 +1095,10 @@
   /* transition: var(--wintransition); */
 }
 
+.tutorialContainer__1f388 .item__58105.selected__58105 {
+  height: 0
+}
+
 /* .guilds__5e434 .item__58105[style*="height: 0"],
 .guilds__5e434 .item__58105[style*="height: 1"],
 .guilds__5e434 .item__58105[style*="height: 2"],
@@ -1553,7 +1557,7 @@ Age restricted channel notification*/
   height: 25px !important;
 }
 
-.container__23ba6 {
+.container_a244c3 {
   padding: 0;
 }
 
@@ -1706,7 +1710,7 @@ Age restricted channel notification*/
   background-color: var(--headercolor);
 }
 
-.recentMentionsPopout__95796 .messagesPopoutWrap_e8b59c {
+.recentMentionsPopout__95796 .messagesPopoutWrap__432f4 {
   border: none;
 }
 
@@ -1728,7 +1732,7 @@ Age restricted channel notification*/
   border-radius: 0;
 }
 
-.messagesPopoutWrap_e8b59c .channelHeader__35a7e {
+.messagesPopoutWrap__432f4 .channelHeader__35a7e {
   background-color: var(--chatbackground);
   border-radius: 0;
   padding: 0 15px 0 15px;
@@ -2608,9 +2612,9 @@ Age restricted channel notification*/
   border-radius: 0;
 }
 
-.imageWrapper_af017a {
+.message__5126c .imageWrapper_af017a {
   max-width: 600px;
-  height: fit-content !important;
+  width: fit-content !important;
 }
 
 /* Channels & roles */
@@ -2862,7 +2866,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
+.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -3056,78 +3060,63 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 /* 16. Popouts */
 /* 16.a. Pinned Messages */
-.messagesPopoutWrap_e8b59c {
+.container__8cb2e {
   background-color: var(--input-color);
+  border-top: none;
   border-left: 2px solid var(--accentcolor2);
   border-bottom: 2px solid var(--accentcolor2);
   border-right: 2px solid var(--accentcolor2);
   border-radius: 0;
-  top: -1px;
-}
-
-.container__9497c,
-.container__2692d,
-.messagesPopoutWrap_e8b59c {
+  top: -3px;
   box-shadow: none;
 }
 
-.header_e8b59c {
+.header__06f80 {
   background-color: var(--headercolor);
 }
 
-.messageGroupWrapper_e8b59c {
-  background-color: var(--guildlistcolor);
-  border-radius: 0;
+/* unreads  */
+.tutorial_d15d9e {
+  background-color: var(--titlebar);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-top: 0px;
 }
 
-.messageGroupWrapper_e8b59c .imageWrapper_af017a {
+.tutorialIcon_d15d9e {
+  background-color: var(--headercolor);
+}
+
+.box__376cb {
+  background-color: var(--guildlistcolor);
+  border-radius: 5px;
+}
+
+.channelHeader__5d903 {
+  background-color: var(--titlebar);
+}
+
+.messages_d06995 .imageWrapper_af017a {
   width: unset !important;
 }
 
-.messageGroupWrapper_e8b59c .visualMediaItemContainer_f4758a {
+.messages_d06995 .visualMediaItemContainer_f4758a {
   max-width: 300px !important;
   height: unset;
 }
 
-.messagesPopout_e8b59c .actionButtons_e8b59c .button_a22cb0 {
+.messagesPopout__432f4 .actionButtons__432f4 .button_a22cb0 {
   color: var(--white9);
   background-color: var(--titlebar);
   border: 1px solid var(--border-color);
+  z-index: 1;
 }
 
-.messagesPopout_e8b59c .actionButtons_e8b59c .button_a22cb0:hover {
+.box__376cb .buttonGroup__5d903 .button_a22cb0:hover {
   background-color: var(--accentcolor);
 }
 
-/* friends  request*/
-.container_e73f2a {
-  background-color: var(--input-color);
-  border-radius: 0;
-  box-shadow: none;
-  margin-top: -8px;
-}
-
-.header_e73f2a {
-  background-color: var(--headercolor);
-}
-
-.searchContainer_e73f2a {
-  background-color: var(--headercolor);
-}
-
-.container__91a9d {
-  border-left: 2px solid transparent;
-}
-
-.wrapper_f7ecac {
-  background-color: var(--titlebar);
-  border-radius: 0;
-}
-
-.button_c97e55.right_c97e55,
-.button_c97e55.left_c97e55 {
-  border-radius: 0;
-}
+/* friends  request temp removed*/
 
 /* PPM - Pin/Delete message */
 .message_fd14e0 {
@@ -4494,7 +4483,7 @@ span.clanTag__5d473,
 .wrapper__44b0c .avatar__44b0c,
 .userInfo__0a06e .avatar__44b0c,
 .iconActiveMedium_f34534,
-.messageGroupWrapper_e8b59c .avatar_c19a55,
+.messageGroupWrapper__432f4 .avatar_c19a55,
 .cozy_c19a55.wrapper_c19a55 .avatar_c19a55,
 .messagesWrapper__36d07 .avatar_c19a55,
 .wrapper__44b0c.avatar__91a9d {
