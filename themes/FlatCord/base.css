@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.18 (220726)";
+  --version: "v0.3.18 (230726)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -2614,7 +2614,7 @@ Age restricted channel notification*/
 
 .message__5126c .imageWrapper_af017a {
   max-width: 600px;
-  width: fit-content !important;
+  /* width: fit-content !important; */
 }
 
 /* Channels & roles */
@@ -4772,7 +4772,7 @@ span.clanTag__5d473,
 }
 
 .oneByOneGridSingle_f4758a {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .container_b7e1cb {
