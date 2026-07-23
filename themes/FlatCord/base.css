@@ -676,9 +676,12 @@
 }
 
 /* settings -> server boosts  */
-.guildContainer_f778dc {
-  background-color: var(--chatbackground);
-  border: 1px solid var(--border-color)
+.card_a12047,
+.card__4b63d,
+.listItem_a04c02 {
+  background-color: var(--guildlistcolor);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
 }
 
 /* billing  */
@@ -1201,6 +1204,12 @@ badge unread/ping Home Icon*/
 /* 4.b. Guilds */
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
+.base__463b7,
+.eyebrow_cf4812 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .iconBadge__650eb,
 .numberBadge__463b7 {
   background-color: var(--accentcolor) !important;
@@ -1282,18 +1291,15 @@ badge unread/ping Home Icon*/
   display: none;
 } */
 
-.channel__972a0 .eyebrow_cf4812 {
-  font-size: 0;
-}
-
-.privateChannels_e6b769 .premiumTrialBadge__4c1e4 {
+/* nitro off  */
+/* .privateChannels_e6b769 .premiumTrialBadge__4c1e4 {
   background: var(--accentcolor) !important;
   border-radius: 10px;
   width: 9px !important;
   height: 6px !important;
   padding: 0;
   margin-top: -15px !important;
-}
+} */
 
 .interactiveSelected__972a0 .numberBadge__463b7 {
   box-shadow: 0px 0px 0px 3px var(--headercolor);
@@ -2950,9 +2956,8 @@ h3.membersGroup_c8ffbb:has(svg) {
   border: 1px solid var(--channellistcolor);
 }
 
-.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 .eyebrow_cf4812,
-.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 .premiumTrialBadgeIcon__4c1e4,
-.scroller__99e7c .premiumTrialBadge_e4ef22 .clockIcon__23e21 {
+.scroller__99e7c .premiumOfferWithTimerAcknowledgedBadge__4c1e4 svg,
+.privateChannels_e6b769 .premiumTrialBadge__4c1e4 .eyebrow_cf4812 {
   display: none;
 }
 
@@ -3580,7 +3585,6 @@ h3.membersGroup_c8ffbb:has(svg) {
 .titleContainer_e29cd7,
 .header_c6bf1b {
   background-color: var(--chatbackground);
-
 }
 
 .contentWidth_c6bf1b {
@@ -4203,7 +4207,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   text-transform: initial;
 } */
 
-.bd-version-info::before {
+.compact__081d7::before {
   content: "FlatCord " var(--version);
   font-size: 10px;
   line-height: 16px;
