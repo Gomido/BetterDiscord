@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.18 (230726)";
+  --version: "v0.3.19 (020826)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -17,8 +17,9 @@
   --accentcolor2: #00BBE0;
   /*drugi kolor akcentu*/
   --accentcolor3: #FFFFFF;
-  /* W RGB, kolor tła oznaczenia*/
+  /* W RGB, kolor tła oznaczenia, reakcji*/
   --mentionbackground: 236, 145, 15;
+  --reactioncolor: 60, 112, 230;
   /*kolor paska górnego z napisem discord*/
   --titlebar: #141414;
   /*kolor chatu pod wiadomosciami*/
@@ -1352,10 +1353,16 @@ badge unread/ping Home Icon*/
   display: none !important;
 }
 
-/* quest nowe  */
-/* .link__972a0[href="/quest-home"] .avatarWithText__972a0{
+/* quest plugin liczba  */
+/* .link__972a0[href="/quest-home"] .avatarWithText__972a0 {
   margin:0px !important
 } */
+
+.link__972a0[href="/quest-home"] .numberBadge__463b7 {
+  /* top:16px;
+  right:20px; */
+  transform: translate(50%, -95%) !important;
+}
 
 .badge__553bf {
   right: -5px !important;
@@ -1806,6 +1813,15 @@ Age restricted channel notification*/
   box-shadow: none;
 }
 
+.forumPost__8a0ec {
+  margin: 5px;
+}
+
+.container__8a0ec .forumPost__8a0ec:last-of-type {
+  border-radius: 0;
+  margin-bottom: 5px
+}
+
 .jumpButton_ed0c8c {
   background-color: var(--titlebar);
   border: 1px solid var(--border-color);
@@ -1897,6 +1913,11 @@ Age restricted channel notification*/
 }
 
 /* buttons  */
+.pill_a2c9e8,
+.button__201d5 {
+  border-radius: 2px;
+}
+
 .container__37e49 .buttons__37e49 {
   opacity: 0% !important;
   /* width: 0px; */
@@ -1969,13 +1990,32 @@ Age restricted channel notification*/
   color: #000;
 }
 
+.bd-button-filled.bd-button-color-brand:hover svg {
+  color: #000 !important;
+}
+
 .tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf[aria-selected=true] {
   background-color: var(--accentcolor);
   color: #FFFFFF;
 }
 
+.reactionBtn__23977.forceShow__23977,
+.reaction__23977,
+.addReactButton__34c2c,
+.button_a22cb0,
 .lookFilled__201d5.colorPrimary__201d5 {
+  border-radius: 2px !important;
+}
+
+.reaction_f8896c {
   border-radius: 2px;
+  border: 1px solid var(--border-color);
+}
+
+.reaction__23977.reactionMe__23977,
+.reaction_f8896c.reactionMe_f8896c {
+  background-color: var(--titlebar);
+  border-color: var(--accentcolor);
 }
 
 /* 6.c. Light Theme Recolor NIE MA */
@@ -3106,8 +3146,10 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 5px;
 }
 
+.messagesPopoutWrap__432f4
+
 /* inbox/unreads */
-.widerInbox__8cb2e {
+.container__8cb2e {
   background-color: var(--input-color);
   border-radius: 0;
   margin-top: -4px;
@@ -3133,7 +3175,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 
 .box__376cb {
   background-color: var(--guildlistcolor);
-  border-radius: 5px;
+  border-radius: 0px;
   border-top: none;
 }
 
@@ -3142,13 +3184,21 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-top: 1px solid var(--border-color)
 }
 
+/* pinned inbox img fix  */
+.messagesPopoutWrap__432f4 .imageWrapper_af017a,
 .messages_d06995 .imageWrapper_af017a {
   width: unset !important;
 }
 
+.messagesPopoutWrap__432f4 .imageWrapper_af017a,
 .messages_d06995 .visualMediaItemContainer_f4758a {
   max-width: 300px !important;
   height: unset;
+}
+
+.messagesPopoutWrap__432f4 .visualMediaItemContainer_f4758a {
+  height: unset;
+  width: unset;
 }
 
 /* jump to button pinned/inbox  */
@@ -3438,6 +3488,16 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 0;
 }
 
+/* shop chat share item  */
+.container_deb389 {
+  border-radius: 5px;
+  background-color: var(--channellistcolor);
+}
+
+.preview_deb389 .card_deb389 {
+  border-radius: 0px;
+}
+
 /* radius user profile  */
 /* .user-profile-popout, */
 .layoutContainer__9c3be .profileContentContainer__9c3be,
@@ -3558,19 +3618,24 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* User profile sidebar  */
-.user-profile-sidebar {
+.aside_f58343 {
   background-color: var(--channellistcolor);
   border-left: 1px solid var(--border-color)
 }
 
-.footer__272c7 {
+.aside_f58343 .inner_c0bea0 {
+  background-color: var(--channellistcolor);
+}
+
+.redesignFooter__272c7 {
   background-color: var(--input-color);
   border-top: 1px solid var(--border-color);
   padding: 10px;
 }
 
-.footerButton__272c7 {
+.redesignFooter__272c7 .secondary_a22cb0 {
   background-color: var(--channellistcolor);
+  border-radius: 2px;
 }
 
 /* 16.e. Role User Popout */
@@ -4293,6 +4358,11 @@ span.clanTag__5d473,
 
 /* hide gif label/alt text  */
 .altText__0f481 {
+  display: none;
+}
+
+/* hide ? help on top bar  */
+.anchor_edefb8 {
   display: none;
 }
 
