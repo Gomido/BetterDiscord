@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.19 (020826)";
+  --version: "v0.3.19 (050826)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1347,6 +1347,16 @@ badge unread/ping Home Icon*/
   position: relative;
   height: 10px !important;
   width: 12px !important;
+}
+
+.link__972a0[href="/store"] .expressive_c2b88c {
+  width: 14px !important;
+  height: 11px !important;
+  border: 2px solid var(--channellistcolor);
+}
+
+.link__972a0[href="/store"] .expressive_c2b88c .label_c2b88c {
+  display: none;
 }
 
 .scroller__99e7c .marketingButtonBackground__4ed1a {
@@ -3146,8 +3156,6 @@ h3.membersGroup_c8ffbb:has(svg) {
   border-radius: 5px;
 }
 
-.messagesPopoutWrap__432f4
-
 /* inbox/unreads */
 .container__8cb2e {
   background-color: var(--input-color);
@@ -3182,6 +3190,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 .channelHeader__5d903 {
   background-color: var(--titlebar);
   border-top: 1px solid var(--border-color)
+}
+
+.container__8cb2e {
+  background-color: var(--input-color);
 }
 
 /* pinned inbox img fix  */
@@ -3449,8 +3461,8 @@ h3.membersGroup_c8ffbb:has(svg) {
 /* 16.d. User Popout */
 /* mini profile  */
 .user-profile-popout :where(.avatar__75742) {
-  inset-inline-start: 19px;
-  top: 65px;
+  inset-inline-start: 17px;
+  top: 60px;
 }
 
 .custom-user-profile-theme.user-profile-popout :where(.avatar__75742) {
