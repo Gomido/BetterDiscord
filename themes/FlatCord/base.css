@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.20 (060826)";
+  --version: "v0.3.21 (020926)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -809,6 +809,16 @@
   background-color: var(--accentcolor);
 }
 
+.artwork_deb389 {
+  border-radius: 0;
+  background-color: var(--guildlistcolor);
+}
+
+.leftRail__863fd,
+.details_deb389 {
+  background-color: var(--input-color);
+}
+
 /* restart popout  */
 /* .bd-button-filled.bd-button-color-red {
   margin-left: 5px;
@@ -1349,7 +1359,7 @@ badge unread/ping Home Icon*/
   width: 12px !important;
 }
 
-.link__972a0[href="/shop"] .expressive_c2b88c{
+.link__972a0[href="/shop"] .expressive_c2b88c {
   width: 11px !important;
   height: 11px !important;
   border: 2px solid var(--channellistcolor);
@@ -1358,7 +1368,7 @@ badge unread/ping Home Icon*/
 }
 
 .link__972a0[href="/store"] .expressive_c2b88c {
-  width: 14px !important;
+  width: 11px !important;
   height: 11px !important;
   border: 2px solid var(--channellistcolor);
   background-color: var(--accentcolor);
@@ -1576,6 +1586,10 @@ Age restricted channel notification*/
 .moreContainer__55bab {
   border: none;
   margin-top: 2px;
+}
+
+.buttonSection_a62174 {
+  border-radius: 0;
 }
 
 /* live  */
@@ -2023,6 +2037,8 @@ Age restricted channel notification*/
 .reactionBtn__23977.forceShow__23977,
 .reaction__23977,
 .addReactButton__34c2c,
+.wishlistButton__979b1,
+.utilityButton_deb389,
 .button_a22cb0,
 .lookFilled__201d5.colorPrimary__201d5 {
   border-radius: 2px !important;
@@ -2335,6 +2351,7 @@ Age restricted channel notification*/
 }
 
 /* 8.h. New Messages Bar and Loading Symbols */
+.newTopicsBarContainer__0f481,
 .newMessagesBar__0f481 {
   border-radius: 8px !important;
   top: 2px;
@@ -2437,6 +2454,17 @@ Age restricted channel notification*/
 .embedAuthor__623de,
 .embedTitle__623de {
   margin: 0;
+}
+
+/* embeds components  */
+.container__5e208.isComponentsV2__5e208 {
+  max-width: 650px;
+}
+
+/* app embed  */
+.embed__98ba8 {
+  margin-bottom: 5px;
+  border-radius: 0;
 }
 
 /* 8.l. Text Area */
@@ -2874,12 +2902,14 @@ h3.membersGroup_c8ffbb:has(svg) {
   margin-left: calc(100% / var(--dm-columns)) !important;
 }
 
-.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .content__20a53 {
+.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .content__20a53,
+.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0:before,
+.privateChannels_e6b769 .glowAnimation__76394 {
   display: none;
 }
 
-.privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0:before {
-  display: none;
+.privateChannels_e6b769 .card_b5dd01 {
+  background-color: transparent !important;
 }
 
 .privateChannels_e6b769 .channel__972a0:not(.dm__972a0) .interactive__972a0 {
@@ -3075,10 +3105,11 @@ h3.membersGroup_c8ffbb:has(svg) {
   border: 1px solid var(--border-color);
 }
 
+/* 
 .previewSurface__7f14f .avatar_d28e10 {
   left: 19px;
   top: 65px
-}
+} */
 
 /* game shop tab  rust, marvel etc*/
 .wrapper__2ea32 .gradient__5d64c {
@@ -3189,7 +3220,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 .tutorial_d15d9e {
   background-color: var(--titlebar);
   border: 1px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: 0px;
   margin-top: 0px;
 }
 
@@ -3222,6 +3253,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 .messages_d06995 .visualMediaItemContainer_f4758a {
   max-width: 300px !important;
   height: unset;
+}
+
+.messages_d06995 {
+  padding-top: 8px
 }
 
 .messagesPopoutWrap__432f4 .visualMediaItemContainer_f4758a {
@@ -3484,6 +3519,11 @@ h3.membersGroup_c8ffbb:has(svg) {
 .custom-user-profile-theme.user-profile-popout :where(.avatar__75742) {
   inset-inline-start: 17px;
   top: 62px;
+}
+
+/* custom frame  */
+.themeContainer_ce8328.custom-profile-frame {
+  margin-inline-start: 0;
 }
 
 /* shop preview  */
@@ -3911,6 +3951,16 @@ h3.membersGroup_c8ffbb:has(svg) {
 .wrapper__72c38 {
   background-color: var(--input-color);
   border-radius: 0;
+}
+
+/* threads/channels right sidebar  */
+.chatLayerWrapper__01ae2 .visualMediaItemContainer_f4758a,
+.chatLayerWrapper__01ae2 .visualMediaItemContainer_f4758a .oneByOneGridSingle_f4758a {
+  max-width: 100%;
+}
+
+.chatLayerWrapper__01ae2 .imageWrapper_af017a {
+  width: fit-content !important;
 }
 
 /* 17.b. Status Picker */
