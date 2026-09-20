@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.21 (020926)";
+  --version: "v0.3.22 (200926)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1284,7 +1284,7 @@ badge unread/ping Home Icon*/
 } */
 
 /* 
-.top_aa8da2 .item_aa8da2 .newBadge__0b563,
+.top_aa8da2 .item_aa8da2 .numberBadge__0b563,
 .theme-dark .productCardBadge_b8a6bd {
   color: #FFFFFF;
   font-weight: 500;
@@ -1625,7 +1625,7 @@ Age restricted channel notification*/
   height: 25px !important;
 }
 
-.container_a244c3 {
+.container__23ba6 {
   padding: 0;
 }
 
@@ -1998,7 +1998,7 @@ Age restricted channel notification*/
   display: none;
 }
 
-.shelfCardQuest_c676ef {
+.shelfCardQuest__2b19e {
   background-color: var(--guildlistcolor);
 }
 
@@ -2989,7 +2989,7 @@ h3.membersGroup_c8ffbb:has(svg) {
   font-size: 14px;
 }
 
-.content__99f8c .channel__972a0 .container_a244c3 .link__972a0,
+.content__99f8c .channel__972a0 .container__23ba6 .link__972a0,
 .channel__972a0 .link__972a0[href="/library"],
 .channel__972a0 .link__972a0[href="/shop"] {
   display: inline-block !important;
@@ -3342,10 +3342,6 @@ h3.membersGroup_c8ffbb:has(svg) {
   background-color: var(--channellistcolor);
 }
 
-.visual-refresh .header_c0e32c .button__201d5 {
-  display: none;
-}
-
 .drawerSizingWrapper__08434 .header_c0e32c {
   border-bottom: 1px solid var(--border-color) !important
 }
@@ -3359,8 +3355,21 @@ h3.membersGroup_c8ffbb:has(svg) {
   background-color: var(--input-color);
 }
 
+.stickerInspected_c6367b .inspectedIndicator_c6367b,
+.firstPartyCategorySelected__3ad28,
+.firstPartyCategorySelected__3ad28:hover,
+.stickerCategoryGenericSelected__3ad28,
+.stickerCategoryGenericSelected__3ad28:hover,
+.categoryItemDefaultCategorySelected_b9ee0c,
+.categoryItemDefaultCategorySelected_b9ee0c:hover,
+.stickerCategory__3ad28,
 .stickerCategoryGeneric__3ad28 {
-  border-radius: 50%;
+  border-radius: 20% !important;
+}
+
+.categoryPill_b9ee0c,
+.categoryPill__3ad28 {
+  left: -12px
 }
 
 .wrapper_c0e32c {
@@ -3606,7 +3615,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 }
 
 /* roles  */
-.button_b46968,
+.button__9a406,
 .pill_dfa8b6 {
   /* background: var(--channellistcolor) !important; */
   border-radius: 0px;
@@ -3630,7 +3639,7 @@ h3.membersGroup_c8ffbb:has(svg) {
 .user-profile-modal-v2 .inner_c0bea0 {
   background-color: var(--channellistcolor);
   border-radius: 0;
-  padding: 36px
+  /* padding: 36px */
 }
 
 .user-profile-modal-v2 .profileBody__9c3be {
@@ -3704,6 +3713,10 @@ h3.membersGroup_c8ffbb:has(svg) {
 .redesignFooter__272c7 .secondary_a22cb0 {
   background-color: var(--channellistcolor);
   border-radius: 2px;
+}
+
+.user-profile-sidebar.user-profile-sidebar-redesign {
+  box-shadow: none;
 }
 
 /* 16.e. Role User Popout */
@@ -4440,7 +4453,7 @@ span.clanTag__5d473,
 }
 
 /* hide ? help on top bar  */
-.trailing_c38106 .anchor_edefb8 {
+.trailing_c38106 .anchor__14d82 {
   display: none;
 }
 
@@ -4450,7 +4463,7 @@ span.clanTag__5d473,
   background-color: var(--channellistcolor);
 }
 
-.contentRegionScroller__23e6b {
+.sidebar__409aa {
   background: var(--chatbackground);
 }
 
