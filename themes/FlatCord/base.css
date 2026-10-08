@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.22 (200926)";
+  --version: "v0.3.23 (061026)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -660,7 +660,7 @@
 }
 
 .fixedContent__409aa:after {
-  background: linear-gradient(to bottom, var(--guildlistcolor), transparent);
+  background: linear-gradient(to bottom, var(--chatbackground), transparent);
 }
 
 /*content & social -> blocked accounts */
@@ -769,6 +769,7 @@
 
 .bd-button-filled.bd-button-color-red {
   background-color: #c92c2c;
+  top: 0px
 }
 
 .bd-button-link.bd-button-color-primary,
@@ -1213,6 +1214,24 @@ badge unread/ping Home Icon*/
 }
 
 /* 4.b. Guilds */
+
+/* Server custom themes  */
+
+.custom-theme-background .cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
+  margin-left: 0;
+  padding: 8px 12px 8px 12px !important;
+  background-color: var(--background-mod-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  display: inline-block;
+  max-width: calc(100% - 45px);
+}
+
+.custom-theme-background .embedFull__623de,
+.custom-theme-background .visualMediaItemContainer_f4758a {
+  background-color: var(--background-mod-subtle) !important;
+}
+
 /* 4.c. Guilds Add */
 /* 4.d. Badges */
 .base__463b7,
@@ -1231,9 +1250,14 @@ badge unread/ping Home Icon*/
   border-radius: 50%;
 }
 
-.folderButton__48112 .lowerBadge_cc5dd2 {
-  bottom: 9px;
-  right: 9px;
+.folderGroup__48112 .lowerBadge_cc5dd2 {
+  bottom: 6px !important;
+  right: 2px !important;
+}
+
+.folderGroup__48112.isExpanded__48112 .listItem__650eb .lowerBadge_cc5dd2 {
+  bottom: -3px !important;
+  right: 0 !important;
 }
 
 .folderButton__48112 .upperBadge_cc5dd2 {
@@ -1244,7 +1268,7 @@ badge unread/ping Home Icon*/
 }
 
 .folderGroup__48112.isExpanded__48112 .blobContainer_e5445c .upperBadge_cc5dd2 {
-  top: 2px !important;
+  top: -2px !important;
   right: 0px !important
 }
 
@@ -1261,9 +1285,9 @@ badge unread/ping Home Icon*/
 }
 
 .iconBadge__463b7 {
-  border: 2px solid var(--guildlistcolor);
-  width: 20px;
-  height: 20px;
+  border: 3px solid var(--guildlistcolor);
+  width: 22px;
+  height: 22px;
 }
 
 .unreadMentionsIndicatorTop_ef3116 {
@@ -1812,6 +1836,11 @@ Age restricted channel notification*/
   background-color: var(--channellistcolor);
   font-size: 12px;
   border: 1px solid var(--border-color)
+}
+
+/* channel list mention  */
+.mentionsBar__7aaec {
+  background-color: var(--accentcolor);
 }
 
 /* unreads */
@@ -2848,6 +2877,7 @@ Age restricted channel notification*/
 }
 
 /* activity panel voice  */
+.container_d7bc5d,
 .root__92958,
 .container__4e30a {
   background-color: var(--guildlistcolor);
@@ -3243,7 +3273,17 @@ h3.membersGroup_c8ffbb:has(svg) {
   background-color: var(--input-color);
 }
 
+/* bookmarks */
+.messages_d42d06{
+  background-color: var(--chatbackground);
+}
+
+.menu_d42d06{
+  background-color: var(--guildlistcolor);
+}
+
 /* pinned inbox img fix  */
+.container__8cb2e .imageWrapper_af017a,
 .messagesPopoutWrap__432f4 .imageWrapper_af017a,
 .messages_d06995 .imageWrapper_af017a {
   width: unset !important;
@@ -3255,10 +3295,16 @@ h3.membersGroup_c8ffbb:has(svg) {
   height: unset;
 }
 
+.message__5126c .visualMediaItemContainer_f4758a,
+.container__8cb2e .visualMediaItemContainer_f4758a{
+  margin-bottom: 5px;
+}
+
 .messages_d06995 {
   padding-top: 8px
 }
 
+.container__8cb2e .visualMediaItemContainer_f4758a,
 .messagesPopoutWrap__432f4 .visualMediaItemContainer_f4758a {
   height: unset;
   width: unset;
@@ -3903,6 +3949,9 @@ h3.membersGroup_c8ffbb:has(svg) {
 .item_c1e9c4[id="message-actions-apps"],
 .item_c1e9c4[id="message-actions-mark-unread"],
 .item_c1e9c4[id="message-actions-tts"],
+.item_c1e9c4[id="message-thread"],
+.item_c1e9c4[id="message-bookmark"],
+.item_c1e9c4[id="message-reminder"],
 .item_c1e9c4[id="message-save-for-later-upsell"],
 .item_c1e9c4[id="message-actions-save-for-later-upsell"],
 .item_c1e9c4[id="user-context-mention"],
@@ -5020,16 +5069,6 @@ span.clanTag__5d473,
 
 .container_b7e1cb {
   grid-gap: 10px;
-}
-
-.custom-theme-background .cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
-  margin-left: 0;
-  padding: 8px 12px 8px 12px !important;
-  background-color: var(--background-mod-subtle);
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  display: inline-block;
-  max-width: calc(100% - 45px);
 }
 
 .cozy_c19a55 .contents_c19a55>.messageContent_c19a55:not(:empty) {
