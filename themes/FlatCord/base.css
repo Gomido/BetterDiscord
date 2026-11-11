@@ -7,7 +7,7 @@
 }
 
 :root {
-  --version: "v0.3.24 (081126)";
+  --version: "v0.3.24 (111126)";
 
   /* kształt awatarów - 0px kwadratowe, 100px okragle*/
   --avatars: 0px;
@@ -1412,22 +1412,23 @@ badge unread/ping Home Icon*/
 }
 
 /* quest plugin liczba  */
-/* .link_zln_tS[href="/quest-home"] .avatarWithText_zln_tS {
-  margin:0px !important
-} */
-
-.link_zln_tS[href="/quest-home"] .numberBadge_lMvXrQ {
-  /* top:16px;
-  right:20px; */
-  transform: translate(50%, -95%) !important;
+.link_zln_tS[href="/quest-home"] .avatarWithText_zln_tS {
+  margin: 0px !important
 }
 
-.badge_hjotnx {
-  right: -5px !important;
-  bottom: 8px;
-  position: relative;
-  height: 12px !important;
-  width: 12px;
+.privateChannels_u88IQl .channel_zln_tS:not(.dm_zln_tS) .link_zln_tS[href="/quest-home"] .numberBadge_lMvXrQ[style*="background-color: var(--blurple-50)"] {
+  transform: translate(60%, -100%) !important
+}
+
+.privateChannels_u88IQl .channel_zln_tS:not(.dm_zln_tS) .link_zln_tS[href="/quest-home"] .numberBadge_lMvXrQ[style*="background-color: var(--status-danger)"] {
+  transform: translate(-200%, -180%) !important;
+  width: 7px !important;
+  height: 7px !important;
+  /* border: 2px solid var(--channellistcolor); */
+  min-height: unset;
+  min-width: unset;
+  padding: 0;
+  font-size: 0
 }
 
 /* 5. Channels */
